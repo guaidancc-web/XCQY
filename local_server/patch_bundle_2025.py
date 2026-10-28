@@ -125,8 +125,8 @@ def patch_login_view(text):
 def patch_pet_manual(text):
     old = "    local sortfunction = function(a,b) return a.data.manual_sort < b.data.manual_sort end"
     new = """    local sortfunction = function(a,b)
-        local __a_new = a.data.id >= 20022 and a.data.id <= 20038
-        local __b_new = b.data.id >= 20022 and b.data.id <= 20038
+        local __a_new = a.data.id >= 20022 and a.data.id <= 20069
+        local __b_new = b.data.id >= 20022 and b.data.id <= 20069
         if __a_new ~= __b_new then return __a_new end
         return a.data.manual_sort < b.data.manual_sort
     end"""

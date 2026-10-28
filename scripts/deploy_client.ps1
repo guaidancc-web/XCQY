@@ -5,6 +5,7 @@ $Root = Split-Path -Parent $PSScriptRoot
 $adb = Join-Path $Root "tools\platform-tools\adb.exe"
 $apk = Join-Path $Root "base_icon.apk"
 $bundle = Join-Path $Root "dist\textures_business.unity3d"
+$dataBundle = Join-Path $Root "dist\textures_business_data.unity3d"
 $zip = Join-Path $Root "client_data\com.xcqy.ceshi_files.zip"
 $dev = "127.0.0.1:58526"
 $pkg = "com.xcqy.ceshi"
@@ -26,14 +27,19 @@ if (-not $BundleOnly) {
     }
 }
 
-Write-Host "推送客户端 Lua bundle ..."
-$staging = "/sdcard/Android/data/$pkg/files/xcqy_bundle.unity3d"
-& $adb -s $dev push $bundle $staging | Out-Null
-foreach ($d in @("/sdcard/Android/data/$pkg/files/res/textures", "/sdcard/Android/data/$pkg/files/res_theone/textures")) {
-    & $adb -s $dev shell mkdir -p $d | Out-Null
-    & $adb -s $dev shell "cp $staging $d/textures_business.unity3d && chmod 777 $d/textures_business.unity3d" | Out-Null
+Write-Host "推送客户端 bundle ..."
+$files = @()
+if (Test-Path $bundle) { $files += @{ Src = $bundle; Name = "textures_business.unity3d" } }
+if (Test-Path $dataBundle) { $files += @{ Src = $dataBundle; Name = "textures_business_data.unity3d" } }
+foreach ($f in $files) {
+    $staging = "/sdcard/Android/data/$pkg/files/xcqy_$($f.Name)"
+    & $adb -s $dev push $f.Src $staging | Out-Null
+    foreach ($d in @("/sdcard/Android/data/$pkg/files/res/textures", "/sdcard/Android/data/$pkg/files/res_theone/textures")) {
+        & $adb -s $dev shell mkdir -p $d | Out-Null
+        & $adb -s $dev shell "rm -f $d/$($f.Name); cp $staging $d/$($f.Name) && chmod 777 $d/$($f.Name)" | Out-Null
+    }
+    & $adb -s $dev shell rm -f $staging | Out-Null
 }
-& $adb -s $dev shell rm -f $staging | Out-Null
 
 if (-not $BundleOnly -and (Test-Path $zip)) {
     Write-Host "恢复客户端资源包 ..."

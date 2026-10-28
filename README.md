@@ -48,6 +48,7 @@ WSA 里的 `127.0.0.1:8081 / :8001` 通过 `adb reverse` 转到 Windows 本机�
 | `YCserver/data/zone/` | 4 个节点的静态数据 |
 | `YCserver/run/` | 启动脚本、节点 env.cfg（运行状态不入库） |
 | `dist/textures_business.unity3d` | 2025 版客户端 Lua bundle，已打本地服补丁（登录/列表指向 127.0.0.1、图鉴新宠物置顶等） |
+| `dist/textures_business_data.unity3d` | 2025 版数据 bundle，已把 20022–20039、20041–20069 的 `show_manual` 改为 1（图鉴可见） |
 | `client_data/` | 2021 版客户端资源目录打包（6.3MB，作为全新安装的基底，之后靠在线更新升到 2025） |
 | `db/fswy_current.sql` | 当前 4 个数据库导出（含角色进度） |
 | `scripts/` | 新电脑部署脚本 |
@@ -70,13 +71,33 @@ WSA 里的 `127.0.0.1:8081 / :8001` 通过 `adb reverse` 转到 Windows 本机�
 
 2025 客户端在本地 `base_setting.json` 的 `check_apk` 为 `true` 时会请求 `GET <check_apk_path>/check_apk_version.php`；本服默认返回 `check_apk=false` 且该接口返回完整 JSON，避免卡在「检查游戏版本」。
 
+## 新宠物（2022–2025）
+
+2025 客户端 `data_pet` 比 2021 多 26 只（20041–20069，缺 20054/20056/20059），并且把之前补过的 20022–20039 的 `show_manual` 改成了 0。现在已完整接入：
+
+- 客户端：`local_server/patch_data_2025.py` 把 20022–20039、20041–20069 的 `show_manual` 改回 1；`patch_bundle_2025.py` 的图鉴置顶范围扩到 20069。
+- 服务端：`local_server/patch_pets_2025.py` 为 26 只宠物补 `get_base`/`model`/`get_polish`/`allow_stone`，并补齐它们引用的 119 个技能（43 主动 + 76 被动）。技能优先从同族 60xxx 继承数值，找不到模板的用 60089/60019（主动）或 60830（被动）。
+- 产物：`dist/textures_business.unity3d` + `dist/textures_business_data.unity3d`；`deploy_client.ps1`（含 `-BundleOnly`）会一起推送。
+- 效果：特殊宠物图鉴 95 只可见，20022–20069 排最前；4 个 Erlang 节点已热加载，`pet_data:get_base(20041)` 等 RPC 可查。
+
+重新生成：
+
+```bash
+python local_server/patch_data_2025.py     # 客户端 data bundle
+python local_server/patch_bundle_2025.py   # 客户端 business bundle
+python local_server/patch_pets_2025.py --install  # 服务端 + 差分验证 + 热加载
+```
+
+`patch_pets_2025.py` 的基线优先用 `tmp/build/src`（含 20022–20039 的已补状态），没有则用 `YCserver/erl_src`；脚本幂等，已存在的宠物/技能会跳过。
+
 ## 继续修改
 
 ### 客户端 Lua（2025）
 1. 准备官方 2025 bundle：进游戏更新一次后会自动缓存在 `cdn/patch_android/202505180009/textures/textures_business.unity3d`，也可放到 `tmp/updated_client/business_2025.unity3d`。
 2. 在 `local_server/patch_bundle_2025.py` 里给目标 TextAsset 增加补丁函数并注册到 `PATCHERS`。
 3. 运行 `python local_server/patch_bundle_2025.py`，产物在 `tmp/bundle_2025_patched/textures_business.unity3d`；复制到 `dist/`。
-4. `deploy_client.ps1 -BundleOnly` 推到设备的 `res`/`res_theone`，重启游戏生效。
+4. 改数据表（如 `data_pet`）用 `python local_server/patch_data_2025.py`，产物同时写入 `dist/textures_business_data.unity3d`。
+5. `deploy_client.ps1 -BundleOnly` 会把两个 bundle 一起推到设备的 `res`/`res_theone`，重启游戏生效。
 
 2021 版（APK 内置）bundle 的旧流程仍保留在 `local_server/patch_bundle.py`，仅作参考。
 

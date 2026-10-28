@@ -1,0 +1,13 @@
+{
+  "debug": "true",
+  "editor": "false",
+  "apk_version": "15122615",
+  "remote_log": "false",
+  "server_list_path": "http://42.192.118.16/android/list.php",
+  "check_apk": "false",
+  "check_apk_path": "http://127.0.0.1/apkcheck",
+  "res_version": "202011160759",
+  "cdn_path": "http://42.192.118.16",
+  "download_apk_path": "http://127.0.0.1//res/apk",
+  "first_cdn_path": "http://42.192.118.16"
+}

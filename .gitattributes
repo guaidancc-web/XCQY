@@ -1,0 +1,4 @@
+# Windows 批处理必须是 CRLF + GBK，禁止自动换行转换
+*.bat -text
+# Shell 脚本在 Git Bash 下运行，必须是 LF
+*.sh text eol=lf

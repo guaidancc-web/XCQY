@@ -1,0 +1,270 @@
+-file("src/mod/qualifying/qualifying_ver.erl", 1).
+
+-module(qualifying_ver).
+
+-export([convert/1]).
+
+-file("inc/common.hrl", 1).
+
+-type p() :: bitstring().
+
+-type z() :: non_neg_integer().
+
+-type role_id() :: {pos_integer(), p(), z()}.
+
+-type unit_id() :: {pos_integer(), pos_integer()}.
+
+-type pos() :: {pos_integer(),
+                non_neg_integer(),
+                non_neg_integer()}.
+
+-record(center,
+        {ready = 0 :: 1 | 0,
+         pid :: undefined | pid(),
+         node :: undefined | atom(),
+         center_platform = "" :: list(),
+         center_zone_id = 0 :: non_neg_integer(),
+         platform = <<>> :: bitstring(),
+         zone_id = 0 :: non_neg_integer(),
+         combine = [] :: [{bitstring(), non_neg_integer()}]}).
+
+-record(notice_rec,
+        {type = 11, digit_attr = [], str_attr = []}).
+
+-file("src/mod/qualifying/qualifying_ver.erl", 9).
+
+-file("inc/qualifying.hrl", 1).
+
+-record(m_qualifying,
+        {rank_point = 1000,
+         season_combat_count = 0,
+         season_win_count = 0,
+         update_time = 0,
+         day_win = 0,
+         day_log = [],
+         sign_type = 0,
+         win_flag = 0,
+         win_five_flag = 0}).
+
+-record(qualifying_role_mark,
+        {id = {0, "", 0},
+         ver = 4,
+         name = "",
+         rank_lev = 0,
+         rank_type = 0,
+         rank_point = 1000,
+         lev = 0,
+         sex = 0,
+         classes = 0,
+         looks = [],
+         thumb_up = 0,
+         thumb_up_other = 0,
+         day_flag = 0,
+         day_win = 0,
+         day_win_streak = 0,
+         season_max_rank_point = 1000,
+         season_combat_count = 0,
+         season_win_count = 0,
+         season_win_streak = 0,
+         season_max_win_streak = 0,
+         week_flag = 0,
+         week_max_rank_point = 0,
+         up_ranklev_reward = []}).
+
+-record(qualifying_role,
+        {id = {0, "", 0},
+         status = 0,
+         name = "",
+         sex = 0,
+         classes = 0,
+         lev = 0,
+         fc = 0,
+         rank_lev = 1,
+         rank_point = 1000,
+         looks = [],
+         type = 1,
+         times = 1,
+         point = 1,
+         cross_group = 0 :: non_neg_integer()}).
+
+-record(qualifying_team,
+        {ids = [],
+         origin_team = [],
+         rank_point = 1,
+         point = 1,
+         match_time = 0,
+         reward_point = 1,
+         cross_group = 0 :: non_neg_integer()}).
+
+-record(qualifying_rank_data,
+        {lev = 1,
+         max_lev = 1,
+         point = 0,
+         need_point = 200,
+         rank_type = 0,
+         lev_name = "",
+         gain = [],
+         five_gain = [],
+         rank_type_name = [],
+         uplev_reward = 0}).
+
+-record(qualifying_zone_role,
+        {id = {0, "", 0},
+         name = "",
+         is_online = 1,
+         zone_pid,
+         pid,
+         zone_id = 0}).
+
+-record(qualifying_season_data,
+        {ver = 1,
+         id = 1 :: pos_integer(),
+         end_time = 0,
+         count = 0,
+         champion_list = []}).
+
+-file("src/mod/qualifying/qualifying_ver.erl", 10).
+
+convert({qualifying_role_mark,
+         RoleId,
+         Ver = 1,
+         Name,
+         RankLev,
+         RankType,
+         RankPoint,
+         Lev,
+         Sex,
+         Classes,
+         ThumbUp,
+         ThumbUpOther,
+         DayFlag,
+         DayWin,
+         DayWinStreak,
+         SeasonMaxRankPoint,
+         SeasonCombatCount,
+         SeasonWinCount,
+         SeasonWinStreak,
+         SeasonMaxWinStreak}) ->
+    WeekFlag = date:unixtime(),
+    WeekMaxRankPoint = RankPoint,
+    convert({qualifying_role_mark,
+             RoleId,
+             Ver + 1,
+             Name,
+             RankLev,
+             RankType,
+             RankPoint,
+             Lev,
+             Sex,
+             Classes,
+             ThumbUp,
+             ThumbUpOther,
+             DayFlag,
+             DayWin,
+             DayWinStreak,
+             SeasonMaxRankPoint,
+             SeasonCombatCount,
+             SeasonWinCount,
+             SeasonWinStreak,
+             SeasonMaxWinStreak,
+             WeekFlag,
+             WeekMaxRankPoint});
+convert({qualifying_role_mark,
+         RoleId,
+         Ver = 2,
+         Name,
+         RankLev,
+         RankType,
+         RankPoint,
+         Lev,
+         Sex,
+         Classes,
+         ThumbUp,
+         ThumbUpOther,
+         DayFlag,
+         DayWin,
+         DayWinStreak,
+         SeasonMaxRankPoint,
+         SeasonCombatCount,
+         SeasonWinCount,
+         SeasonWinStreak,
+         SeasonMaxWinStreak,
+         WeekFlag,
+         WeekMaxRankPoint}) ->
+    Looks = [],
+    convert({qualifying_role_mark,
+             RoleId,
+             Ver + 1,
+             Name,
+             RankLev,
+             RankType,
+             RankPoint,
+             Lev,
+             Sex,
+             Classes,
+             Looks,
+             ThumbUp,
+             ThumbUpOther,
+             DayFlag,
+             DayWin,
+             DayWinStreak,
+             SeasonMaxRankPoint,
+             SeasonCombatCount,
+             SeasonWinCount,
+             SeasonWinStreak,
+             SeasonMaxWinStreak,
+             WeekFlag,
+             WeekMaxRankPoint});
+convert({qualifying_role_mark,
+         RoleId,
+         Ver = 3,
+         Name,
+         RankLev,
+         RankType,
+         RankPoint,
+         Lev,
+         Sex,
+         Classes,
+         Looks,
+         ThumbUp,
+         ThumbUpOther,
+         DayFlag,
+         DayWin,
+         DayWinStreak,
+         SeasonMaxRankPoint,
+         SeasonCombatCount,
+         SeasonWinCount,
+         SeasonWinStreak,
+         SeasonMaxWinStreak,
+         WeekFlag,
+         WeekMaxRankPoint}) ->
+    UpRankLevReward = [],
+    convert({qualifying_role_mark,
+             RoleId,
+             Ver + 1,
+             Name,
+             RankLev,
+             RankType,
+             RankPoint,
+             Lev,
+             Sex,
+             Classes,
+             Looks,
+             ThumbUp,
+             ThumbUpOther,
+             DayFlag,
+             DayWin,
+             DayWinStreak,
+             SeasonMaxRankPoint,
+             SeasonCombatCount,
+             SeasonWinCount,
+             SeasonWinStreak,
+             SeasonMaxWinStreak,
+             WeekFlag,
+             WeekMaxRankPoint,
+             UpRankLevReward});
+convert(QualifyingRoleMark = #qualifying_role_mark{ver =
+                                                       4}) ->
+    {ok, QualifyingRoleMark};
+convert(_Mopt) -> {false, lang:get("设置版本转换失败")}.
+

@@ -1,0 +1,968 @@
+-- MySQL dump 10.13  Distrib 5.6.50, for Linux (x86_64)
+--
+-- Host: localhost    Database: fswy_dev_1
+-- ------------------------------------------------------
+-- Server version	5.6.50-log
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `auth_sfz_cfg`
+--
+
+DROP TABLE IF EXISTS `auth_sfz_cfg`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `auth_sfz_cfg` (
+  `platform` varchar(30) NOT NULL COMMENT 'ID编号',
+  `channel_reg` int(11) NOT NULL DEFAULT '0' COMMENT '渠道编号',
+  `can_charge` tinyint(4) NOT NULL COMMENT '未认证是否能充值(0:否 1:是)',
+  `is_nonage` tinyint(4) NOT NULL COMMENT '未成年是否限制充值(0:否 1:是)',
+  `charge_limit` int(11) NOT NULL COMMENT '未成年充值额度',
+  `is_wallow` tinyint(4) NOT NULL COMMENT '是否开启防沉迷(0:否 1:是)',
+  `down_sec` int(11) NOT NULL COMMENT '沉迷时间(秒)',
+  `is_show_phone` tinyint(4) NOT NULL COMMENT '是否显示未到账联系方式(0:否 1:是)',
+  `is_mail` tinyint(4) NOT NULL COMMENT '充值发送邮件(0:否 1:是)',
+  `show_info` varchar(50) NOT NULL COMMENT '联系信息(0:否 1:是)',
+  `is_mid_exp` tinyint(4) NOT NULL COMMENT '是否收益减半(0:否 1:是)',
+  `is_lev_60` tinyint(4) NOT NULL COMMENT '只针对60级以下(0:否 1:是)',
+  `is_need_check` tinyint(4) NOT NULL DEFAULT '0' COMMENT '是否开启标签页',
+  PRIMARY KEY (`platform`,`channel_reg`),
+  KEY `platform` (`platform`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='防沉迷设置';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `auth_sfz_cfg`
+--
+
+LOCK TABLES `auth_sfz_cfg` WRITE;
+/*!40000 ALTER TABLE `auth_sfz_cfg` DISABLE KEYS */;
+/*!40000 ALTER TABLE `auth_sfz_cfg` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `camp_web`
+--
+
+DROP TABLE IF EXISTS `camp_web`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `camp_web` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `total_id` int(11) NOT NULL COMMENT '活动ID',
+  `camp_id` int(11) NOT NULL COMMENT '活动条件ID',
+  `start_time` int(11) NOT NULL COMMENT '开始时间',
+  `end_time` int(11) NOT NULL COMMENT '结束时间',
+  `type` int(11) NOT NULL COMMENT '类型',
+  `sec_type` int(11) NOT NULL COMMENT '具体类型',
+  `settlement` int(4) NOT NULL COMMENT '结算类型',
+  `reward_mod` int(4) NOT NULL COMMENT '奖励模式',
+  `reward_num` int(11) NOT NULL COMMENT '最大奖励次数',
+  `star` int(11) NOT NULL DEFAULT '2' COMMENT '星级',
+  `mail_title` varchar(64) NOT NULL DEFAULT '' COMMENT '信件标题',
+  `mail_content` text NOT NULL COMMENT '信件内容',
+  `sort_val` int(11) NOT NULL DEFAULT '5' COMMENT '显示排序字段',
+  `title` varchar(128) NOT NULL DEFAULT '' COMMENT '标题',
+  `title2` varchar(128) NOT NULL DEFAULT '' COMMENT '标题2',
+  `title_ico` varchar(64) NOT NULL COMMENT '标题图片',
+  `ico` varchar(64) NOT NULL DEFAULT '' COMMENT '图标',
+  `type_ico` varchar(32) NOT NULL DEFAULT '' COMMENT '类型图标',
+  `total_ico` int(11) NOT NULL DEFAULT '0' COMMENT '独立总图标',
+  `top_banner` varchar(64) NOT NULL DEFAULT '' COMMENT '顶部横幅',
+  `rule_str` varchar(1024) NOT NULL DEFAULT '' COMMENT '规则描述',
+  `time_str` varchar(128) NOT NULL DEFAULT '' COMMENT '时间描述',
+  `bottom_alert` varchar(1024) NOT NULL DEFAULT '' COMMENT '底部描述',
+  `reward_title` varchar(128) NOT NULL DEFAULT '' COMMENT '奖励表头',
+  `panel_type` varchar(128) NOT NULL DEFAULT '' COMMENT '面板类型',
+  `reward` varchar(2048) NOT NULL DEFAULT '' COMMENT '子活动奖励',
+  `cli_reward` varchar(1024) NOT NULL DEFAULT '' COMMENT '客户端奖励',
+  `notice_msg` varchar(512) NOT NULL DEFAULT '' COMMENT '传闻公告',
+  `button_text` varchar(48) NOT NULL DEFAULT '' COMMENT '按钮内容',
+  `is_button` int(4) NOT NULL DEFAULT '1' COMMENT '是否按钮',
+  `web_id` int(11) NOT NULL COMMENT '活动类型编号web端用',
+  `ctime` int(11) NOT NULL COMMENT '创建时间',
+  `tran_info` varchar(512) NOT NULL DEFAULT '' COMMENT '跳转内容',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `camp_id` (`camp_id`),
+  KEY `total_id` (`total_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='后台子活动规则表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `camp_web`
+--
+
+LOCK TABLES `camp_web` WRITE;
+/*!40000 ALTER TABLE `camp_web` DISABLE KEYS */;
+/*!40000 ALTER TABLE `camp_web` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `camp_web_ico`
+--
+
+DROP TABLE IF EXISTS `camp_web_ico`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `camp_web_ico` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '活动ID',
+  `total_id` int(11) NOT NULL COMMENT '总活动ID_唯一值',
+  `name` varchar(64) NOT NULL DEFAULT '' COMMENT '总活动名称',
+  `title` varchar(128) DEFAULT '' COMMENT '总活动标题',
+  `ico` varchar(256) NOT NULL DEFAULT '' COMMENT '总活动图标',
+  `alert` varchar(256) NOT NULL DEFAULT '' COMMENT '总活动提示',
+  `gif` varchar(256) NOT NULL DEFAULT '' COMMENT '总活动动画',
+  `start_time` int(11) NOT NULL COMMENT '活动开始时间',
+  `end_time` int(11) NOT NULL COMMENT '活动结束时间',
+  `status` int(11) NOT NULL COMMENT '活动状态[1:等待审核 2:审核已发送 3:拒绝]',
+  `open_day` int(11) NOT NULL DEFAULT '0' COMMENT '开服多少天后起作用',
+  `merge_day` int(11) NOT NULL DEFAULT '0' COMMENT '合服多少天后起作用',
+  `login_open` int(4) NOT NULL DEFAULT '0' COMMENT '是否登录打开界面',
+  `is_show_time` int(4) NOT NULL DEFAULT '0' COMMENT '是否显示倒计时',
+  `ctime` int(11) NOT NULL COMMENT '创建时间',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `total_id` (`total_id`),
+  KEY `name` (`name`),
+  KEY `start_time` (`start_time`),
+  KEY `end_time` (`end_time`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='后台总活动';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `camp_web_ico`
+--
+
+LOCK TABLES `camp_web_ico` WRITE;
+/*!40000 ALTER TABLE `camp_web_ico` DISABLE KEYS */;
+/*!40000 ALTER TABLE `camp_web_ico` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `charge`
+--
+
+DROP TABLE IF EXISTS `charge`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `charge` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `sn` varchar(120) NOT NULL COMMENT '订单号',
+  `type` tinyint(3) unsigned NOT NULL COMMENT '充值类型(0:银行卡, 1:手机充值)',
+  `status` tinyint(4) NOT NULL COMMENT '状态(0:未收取，1:已收取)',
+  `gold` int(11) NOT NULL COMMENT '钻石数',
+  `charge_type` int(11) NOT NULL DEFAULT '0' COMMENT '充值类型(0 普通充值 1 礼品充值)',
+  `money` decimal(10,2) NOT NULL COMMENT '金额数',
+  `account` varchar(120) NOT NULL COMMENT '帐号名',
+  `rid` int(10) unsigned NOT NULL COMMENT '角色id',
+  `platform` char(20) NOT NULL COMMENT '平台标识',
+  `zone_id` int(11) NOT NULL COMMENT '区号',
+  `channel_reg` int(11) NOT NULL DEFAULT '0' COMMENT '注册渠道',
+  `name` varchar(60) NOT NULL COMMENT '角色名称',
+  `classes` tinyint(3) unsigned NOT NULL COMMENT '职业',
+  `lev` tinyint(3) unsigned NOT NULL COMMENT '等级',
+  `is_test` tinyint(1) unsigned NOT NULL DEFAULT '0' COMMENT '是否是测试充值',
+  `ts` int(11) unsigned NOT NULL COMMENT '订单插入时间',
+  `time_deal` int(11) NOT NULL DEFAULT '0' COMMENT '处理时间',
+  `rmb` int(11) NOT NULL DEFAULT '0' COMMENT '充值余额',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `sn` (`sn`),
+  KEY `rid` (`rid`,`name`),
+  KEY `account` (`account`),
+  KEY `acc_search_idx` (`account`,`platform`,`zone_id`,`status`),
+  KEY `rid_search_idx` (`rid`,`platform`,`zone_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `charge`
+--
+
+LOCK TABLES `charge` WRITE;
+/*!40000 ALTER TABLE `charge` DISABLE KEYS */;
+/*!40000 ALTER TABLE `charge` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `feedback`
+--
+
+DROP TABLE IF EXISTS `feedback`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `feedback` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `state` enum('unreply','replied') NOT NULL DEFAULT 'unreply' COMMENT '回复状态',
+  `account` varchar(120) NOT NULL DEFAULT '' COMMENT '帐号名',
+  `rid` int(10) unsigned NOT NULL COMMENT '角色id',
+  `platform` varchar(20) NOT NULL COMMENT '平台标识',
+  `zone_id` int(11) NOT NULL DEFAULT '0' COMMENT '区号',
+  `channel_reg` int(11) NOT NULL DEFAULT '0' COMMENT '注册渠道',
+  `name` varchar(20) NOT NULL DEFAULT '' COMMENT '角色名',
+  `charge` int(11) NOT NULL COMMENT '累计充值钻石数',
+  `content` text NOT NULL COMMENT '反馈内容',
+  `contact` varchar(40) NOT NULL COMMENT '联系方式',
+  `post_time` int(10) unsigned NOT NULL COMMENT '留言日期（unix_time）',
+  `feedback_ip` char(16) DEFAULT NULL COMMENT '反馈ip',
+  `gm_name` varchar(20) DEFAULT NULL,
+  `reply` text,
+  `reply_time` int(10) unsigned DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `state` (`state`,`rid`),
+  KEY `date` (`post_time`,`reply_time`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='玩家意见反馈表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `feedback`
+--
+
+LOCK TABLES `feedback` WRITE;
+/*!40000 ALTER TABLE `feedback` DISABLE KEYS */;
+/*!40000 ALTER TABLE `feedback` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `friend_circle_report`
+--
+
+DROP TABLE IF EXISTS `friend_circle_report`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `friend_circle_report` (
+  `id` int(11) unsigned NOT NULL COMMENT '被举报动态id',
+  `platform` varchar(20) NOT NULL COMMENT '被举报动态平台标识',
+  `zone_id` int(11) NOT NULL DEFAULT '0' COMMENT '被举报动态区号',
+  `report_type` tinyint(4) unsigned NOT NULL DEFAULT '0' COMMENT '0:动态 1:评论 2:图片',
+  `spec_id` int(11) unsigned NOT NULL COMMENT '被举报内容id',
+  `role_id` int(11) unsigned NOT NULL COMMENT '被举报角色id',
+  `role_platform` varchar(20) NOT NULL COMMENT '被举报平台标识',
+  `role_zone_id` int(11) NOT NULL DEFAULT '0' COMMENT '被举报区号',
+  `time` int(11) unsigned NOT NULL COMMENT '举报产生时间戳',
+  `lev` tinyint(4) NOT NULL DEFAULT '0' COMMENT '被举报等级',
+  `name` varchar(20) NOT NULL DEFAULT '' COMMENT '被举报角色名',
+  `content` varchar(200) NOT NULL DEFAULT '' COMMENT '被举报内容',
+  `state` tinyint(4) unsigned DEFAULT '0' COMMENT '0:未处理 1:删除 2:无效',
+  `items` varchar(1024) NOT NULL DEFAULT '' COMMENT '物品奖励({Id,Bind,Num})',
+  `reporter_id` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '举报角色id',
+  `reporter_platform` varchar(20) NOT NULL DEFAULT '' COMMENT '举报角色平台标识',
+  `reporter_zone_id` int(11) NOT NULL DEFAULT '0' COMMENT '举报角色区号',
+  `reporter_name` varchar(20) NOT NULL DEFAULT '' COMMENT '举报角色名字',
+  `reporter_lev` tinyint(4) NOT NULL DEFAULT '0' COMMENT '举报角色等级',
+  PRIMARY KEY (`id`,`platform`,`zone_id`,`report_type`,`spec_id`),
+  KEY `time` (`time`),
+  KEY `state` (`state`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='朋友圈举报表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `friend_circle_report`
+--
+
+LOCK TABLES `friend_circle_report` WRITE;
+/*!40000 ALTER TABLE `friend_circle_report` DISABLE KEYS */;
+/*!40000 ALTER TABLE `friend_circle_report` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `friend_moment_wish`
+--
+
+DROP TABLE IF EXISTS `friend_moment_wish`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `friend_moment_wish` (
+  `id` int(11) unsigned NOT NULL COMMENT '寄语动态id',
+  `platform` varchar(20) NOT NULL COMMENT '平台标识',
+  `zone_id` int(11) NOT NULL DEFAULT '0' COMMENT '动态区号',
+  `role_id` int(11) unsigned NOT NULL COMMENT '角色id',
+  `role_platform` varchar(20) NOT NULL COMMENT '角色平台标识',
+  `role_zone_id` int(11) NOT NULL DEFAULT '0' COMMENT '角色区号',
+  `time` int(11) unsigned NOT NULL COMMENT '产生时间戳',
+  `lev` tinyint(4) NOT NULL DEFAULT '0' COMMENT '角色等级',
+  `name` varchar(20) NOT NULL DEFAULT '' COMMENT '角色名',
+  `camp_id` int(11) NOT NULL DEFAULT '0' COMMENT '活动ID',
+  `theme` varchar(20) NOT NULL COMMENT '活动主题',
+  `content` varchar(200) NOT NULL DEFAULT '' COMMENT '内容',
+  `is_photo` tinyint(4) NOT NULL DEFAULT '0' COMMENT '活动主题',
+  `state` tinyint(4) unsigned DEFAULT '0' COMMENT '0:未处理 1:审核通过 2:不通过',
+  PRIMARY KEY (`id`,`platform`,`zone_id`),
+  KEY `time` (`time`),
+  KEY `state` (`state`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='庆典寄语表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `friend_moment_wish`
+--
+
+LOCK TABLES `friend_moment_wish` WRITE;
+/*!40000 ALTER TABLE `friend_moment_wish` DISABLE KEYS */;
+/*!40000 ALTER TABLE `friend_moment_wish` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `goodvoice_report`
+--
+
+DROP TABLE IF EXISTS `goodvoice_report`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `goodvoice_report` (
+  `id` int(10) unsigned NOT NULL COMMENT '被举报角色id',
+  `platform` varchar(20) NOT NULL COMMENT '被举报平台标识',
+  `zone_id` int(11) NOT NULL DEFAULT '0' COMMENT '被举报区号',
+  `time` int(10) unsigned NOT NULL COMMENT '举报产生时间戳',
+  `lev` tinyint(4) NOT NULL DEFAULT '0' COMMENT '被举报等级',
+  `name` varchar(20) NOT NULL DEFAULT '' COMMENT '被举报角色名',
+  `state` smallint(6) unsigned DEFAULT '0' COMMENT '0:未处理 1:删除录音 2:无效, 3除名',
+  `items` varchar(1024) NOT NULL DEFAULT '' COMMENT '物品奖励({Id,Bind,Num})',
+  `id_1` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '举报角色1-id',
+  `platform_1` varchar(20) NOT NULL DEFAULT '' COMMENT '举报角色1-平台标识',
+  `zone_id_1` int(11) NOT NULL DEFAULT '0' COMMENT '举报角色1-区号',
+  `name_1` varchar(20) NOT NULL DEFAULT '' COMMENT '举报角色1-名字',
+  `lev_1` tinyint(4) NOT NULL DEFAULT '0' COMMENT '举报角色1-等级',
+  `time_1` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '举报1-时间戳',
+  `filename_1` varchar(40) NOT NULL DEFAULT '' COMMENT '被举报音频文件名1',
+  `id_2` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '举报角色2-id',
+  `platform_2` varchar(20) NOT NULL DEFAULT '' COMMENT '举报角色2-平台标识',
+  `zone_id_2` int(11) NOT NULL DEFAULT '0' COMMENT '举报角色2-区号',
+  `name_2` varchar(20) NOT NULL DEFAULT '' COMMENT '举报角色2-名字',
+  `lev_2` tinyint(4) NOT NULL DEFAULT '0' COMMENT '举报角色2-等级',
+  `time_2` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '举报2-时间戳',
+  `filename_2` varchar(40) NOT NULL DEFAULT '' COMMENT '被举报音频文件名2',
+  `id_3` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '举报角色3-id',
+  `platform_3` varchar(20) NOT NULL DEFAULT '' COMMENT '举报角色3-平台标识',
+  `zone_id_3` int(11) NOT NULL DEFAULT '0' COMMENT '举报角色3-区号',
+  `name_3` varchar(20) NOT NULL DEFAULT '' COMMENT '举报角色3-名字',
+  `lev_3` tinyint(4) NOT NULL DEFAULT '0' COMMENT '举报角色3-等级',
+  `time_3` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '举报2-时间戳',
+  `filename_3` varchar(40) NOT NULL DEFAULT '' COMMENT '被举报音频文件名3',
+  PRIMARY KEY (`id`,`platform`,`zone_id`,`time`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='好声音举报表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `goodvoice_report`
+--
+
+LOCK TABLES `goodvoice_report` WRITE;
+/*!40000 ALTER TABLE `goodvoice_report` DISABLE KEYS */;
+/*!40000 ALTER TABLE `goodvoice_report` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `lock_role`
+--
+
+DROP TABLE IF EXISTS `lock_role`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `lock_role` (
+  `id` int(10) unsigned NOT NULL COMMENT '角色id',
+  `platform` varchar(20) NOT NULL COMMENT '平台标识',
+  `zone_id` int(11) NOT NULL DEFAULT '0' COMMENT '区号',
+  `admin_name` varchar(20) NOT NULL COMMENT '管理员名称',
+  `lock_type` tinyint(1) NOT NULL DEFAULT '0' COMMENT '0解禁, 1时间型封号, 2永久封号',
+  `lock_ctime` int(10) NOT NULL DEFAULT '0' COMMENT '封号时间',
+  `lock_timeout` int(10) NOT NULL DEFAULT '0' COMMENT '封号过期时间',
+  `lock_info` varchar(200) NOT NULL DEFAULT '' COMMENT '封号原因',
+  `silent_type` tinyint(1) NOT NULL DEFAULT '0' COMMENT '0解禁, 1时间禁言, 2永久禁言',
+  `silent_ctime` int(10) NOT NULL DEFAULT '0' COMMENT '禁言时间',
+  `silent_timeout` int(10) NOT NULL DEFAULT '0' COMMENT '禁言过期时间',
+  `silent_hide` tinyint(1) DEFAULT '0' COMMENT '是否通知被禁言人,1:不通知,2:通知',
+  `silent_info` varchar(200) NOT NULL DEFAULT '' COMMENT '禁言原因',
+  PRIMARY KEY (`id`,`platform`,`zone_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='角色封号禁言列表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `lock_role`
+--
+
+LOCK TABLES `lock_role` WRITE;
+/*!40000 ALTER TABLE `lock_role` DISABLE KEYS */;
+/*!40000 ALTER TABLE `lock_role` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `log_online`
+--
+
+DROP TABLE IF EXISTS `log_online`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `log_online` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `channel_reg` int(11) NOT NULL DEFAULT '0' COMMENT '渠道id',
+  `ts` int(11) NOT NULL DEFAULT '0' COMMENT '统计时间',
+  `role_num` int(10) NOT NULL COMMENT '在线人数',
+  `platform` varchar(20) NOT NULL COMMENT '平台标识',
+  `zone_id` int(11) NOT NULL DEFAULT '0' COMMENT '区号',
+  PRIMARY KEY (`id`),
+  KEY `ts` (`ts`),
+  KEY `channel_reg` (`channel_reg`)
+) ENGINE=InnoDB AUTO_INCREMENT=71 DEFAULT CHARSET=utf8 COMMENT='实时在线人数统计';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `log_online`
+--
+
+LOCK TABLES `log_online` WRITE;
+/*!40000 ALTER TABLE `log_online` DISABLE KEYS */;
+INSERT INTO `log_online` VALUES (1,0,1619872961,1,'dev',1),(2,0,1619873021,1,'dev',1),(3,0,1619873081,1,'dev',1),(4,0,1619873141,1,'dev',1),(5,0,1619873201,1,'dev',1),(6,0,1619873261,1,'dev',1),(7,0,1619873321,1,'dev',1),(8,0,1619873381,1,'dev',1),(9,0,1619873441,1,'dev',1),(10,0,1619873501,1,'dev',1),(11,0,1619873861,1,'dev',1),(12,0,1619873921,1,'dev',1),(13,0,1619873981,1,'dev',1),(14,0,1619874041,1,'dev',1),(15,0,1619874101,1,'dev',1),(16,0,1619874161,1,'dev',1),(17,0,1619874221,1,'dev',1),(18,0,1619874281,1,'dev',1),(19,0,1619874341,1,'dev',1),(20,0,1619874401,1,'dev',1),(21,0,1619874461,1,'dev',1),(22,0,1619874521,1,'dev',1),(23,0,1619874581,1,'dev',1),(24,0,1619874641,1,'dev',1),(25,0,1619874701,1,'dev',1),(26,0,1619874761,1,'dev',1),(27,0,1619874821,1,'dev',1),(28,0,1619874881,1,'dev',1),(29,0,1619874941,1,'dev',1),(30,0,1619875001,1,'dev',1),(31,0,1619875061,1,'dev',1),(32,0,1619875121,1,'dev',1),(33,0,1619875181,1,'dev',1),(34,0,1619875241,1,'dev',1),(35,0,1619875301,1,'dev',1),(36,0,1619875361,1,'dev',1),(37,0,1619875421,1,'dev',1),(38,0,1619875481,1,'dev',1),(39,0,1619875541,1,'dev',1),(40,0,1619875601,1,'dev',1),(41,0,1619875661,1,'dev',1),(42,0,1619876689,1,'dev',1),(43,0,1619876749,1,'dev',1),(44,0,1619876809,1,'dev',1),(45,0,1619876869,1,'dev',1),(46,0,1619876929,1,'dev',1),(47,0,1619876989,1,'dev',1),(48,0,1619877049,1,'dev',1),(49,0,1619877109,1,'dev',1),(50,0,1619877169,1,'dev',1),(51,0,1619877229,1,'dev',1),(52,0,1619877289,1,'dev',1),(53,0,1619877349,1,'dev',1),(54,0,1619877409,1,'dev',1),(55,0,1619877469,1,'dev',1),(56,0,1619877529,1,'dev',1),(57,0,1619877589,1,'dev',1),(58,0,1619877649,1,'dev',1),(59,0,1619877709,1,'dev',1),(60,0,1619877769,1,'dev',1),(61,0,1619877829,1,'dev',1),(62,0,1619877889,1,'dev',1),(63,0,1619877949,1,'dev',1),(64,0,1619878009,1,'dev',1),(65,0,1619878069,1,'dev',1),(66,0,1619878129,1,'dev',1),(67,0,1619878189,1,'dev',1),(68,0,1619878249,1,'dev',1),(69,0,1619878309,1,'dev',1),(70,0,1619878369,1,'dev',1);
+/*!40000 ALTER TABLE `log_online` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `media_card`
+--
+
+DROP TABLE IF EXISTS `media_card`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `media_card` (
+  `card_num` varchar(48) NOT NULL COMMENT '卡号',
+  `type` int(11) NOT NULL DEFAULT '0' COMMENT '类型编号',
+  `batch_num` int(11) NOT NULL DEFAULT '1' COMMENT '批次',
+  `rid` int(11) NOT NULL DEFAULT '0' COMMENT '角色id',
+  `platform` varchar(20) DEFAULT NULL COMMENT '平台名称',
+  `zone_id` int(11) NOT NULL DEFAULT '0' COMMENT '平台号',
+  `name` varchar(20) DEFAULT NULL COMMENT '角色名',
+  `get_time` int(11) DEFAULT NULL COMMENT '领取时间',
+  `ctime` int(11) NOT NULL COMMENT '新建时间',
+  PRIMARY KEY (`card_num`),
+  KEY `role_index` (`type`,`rid`,`platform`,`zone_id`),
+  KEY `type` (`type`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='媒体卡';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `media_card`
+--
+
+LOCK TABLES `media_card` WRITE;
+/*!40000 ALTER TABLE `media_card` DISABLE KEYS */;
+/*!40000 ALTER TABLE `media_card` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `media_card_type`
+--
+
+DROP TABLE IF EXISTS `media_card_type`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `media_card_type` (
+  `id` int(11) NOT NULL COMMENT 'ID编号',
+  `name` varchar(22) NOT NULL COMMENT '名称',
+  `start_time` int(11) NOT NULL COMMENT '开始时间',
+  `end_time` int(11) NOT NULL COMMENT '结束时间',
+  `lev` int(8) NOT NULL COMMENT '等级',
+  `num` int(10) NOT NULL COMMENT '次数限制',
+  `status` tinyint(4) NOT NULL COMMENT '状态(0:失效 1:启动)',
+  `items` varchar(1024) NOT NULL COMMENT '物品奖励({Id,Bind,Num})',
+  `ctime` int(11) NOT NULL COMMENT '创建时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='媒体卡类型';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `media_card_type`
+--
+
+LOCK TABLES `media_card_type` WRITE;
+/*!40000 ALTER TABLE `media_card_type` DISABLE KEYS */;
+/*!40000 ALTER TABLE `media_card_type` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `oms_mirrors`
+--
+
+DROP TABLE IF EXISTS `oms_mirrors`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `oms_mirrors` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `platform` varchar(60) NOT NULL DEFAULT '' COMMENT '平台标识',
+  `zone_id` int(11) NOT NULL COMMENT '区号',
+  `disabled` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否禁用',
+  `auto_connect` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否启动后自动连接中央服',
+  `nodename` varchar(255) NOT NULL DEFAULT '' COMMENT '节点名称',
+  `type` varchar(10) NOT NULL DEFAULT 'zone' COMMENT '节点类型，zone:普通游戏区 center:中央服 world:世界主服务器 world_slave:世界从服务器',
+  `cookie` varchar(255) NOT NULL DEFAULT '' COMMENT 'erlang节点使用的magic cookie',
+  `ver` varchar(30) NOT NULL DEFAULT '' COMMENT '当前版本(此版本号用于标识当前版本，由安装工具自动填写)',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `zone` (`platform`,`zone_id`),
+  UNIQUE KEY `nodename` (`nodename`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='节点信息';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `oms_mirrors`
+--
+
+LOCK TABLES `oms_mirrors` WRITE;
+/*!40000 ALTER TABLE `oms_mirrors` DISABLE KEYS */;
+/*!40000 ALTER TABLE `oms_mirrors` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `review_log`
+--
+
+DROP TABLE IF EXISTS `review_log`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `review_log` (
+  `id` int(11) unsigned NOT NULL COMMENT '评论id',
+  `platform` varchar(20) NOT NULL COMMENT '平台标识',
+  `zone_id` int(11) NOT NULL DEFAULT '0' COMMENT '区号',
+  `log_type` tinyint(4) unsigned DEFAULT '0' COMMENT '1宠物，2守护',
+  `base_id` int(11) unsigned NOT NULL COMMENT '宠物或守护id',
+  `role_id` int(11) unsigned NOT NULL COMMENT '角色id',
+  `role_platform` varchar(20) NOT NULL COMMENT '平台标识',
+  `role_zone_id` int(11) NOT NULL DEFAULT '0' COMMENT '区号',
+  `time` int(11) unsigned NOT NULL COMMENT '产生时间戳',
+  `lev` tinyint(4) NOT NULL DEFAULT '0' COMMENT '等级',
+  `name` varchar(20) NOT NULL DEFAULT '' COMMENT '角色名',
+  `content` varchar(200) NOT NULL DEFAULT '' COMMENT '被举报内容',
+  `state` tinyint(4) unsigned DEFAULT '1' COMMENT '1增加，2删除',
+  `base_name` varchar(20) NOT NULL DEFAULT '' COMMENT '宠物或守护名',
+  `pro` varchar(20) NOT NULL DEFAULT '0' COMMENT '点赞数',
+  PRIMARY KEY (`id`,`platform`,`zone_id`),
+  KEY `time` (`time`),
+  KEY `state` (`state`),
+  KEY `log_type` (`log_type`,`base_id`,`state`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='评论日志';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `review_log`
+--
+
+LOCK TABLES `review_log` WRITE;
+/*!40000 ALTER TABLE `review_log` DISABLE KEYS */;
+/*!40000 ALTER TABLE `review_log` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `review_report`
+--
+
+DROP TABLE IF EXISTS `review_report`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `review_report` (
+  `id` int(11) unsigned NOT NULL COMMENT '被举报动态id',
+  `platform` varchar(20) NOT NULL COMMENT '被举报动态平台标识',
+  `zone_id` int(11) NOT NULL DEFAULT '0' COMMENT '被举报动态区号',
+  `report_type` tinyint(4) unsigned DEFAULT '0' COMMENT '1宠物，2守护',
+  `base_id` int(11) unsigned NOT NULL COMMENT '被举报内容id',
+  `role_id` int(11) unsigned NOT NULL COMMENT '被举报角色id',
+  `role_platform` varchar(20) NOT NULL COMMENT '被举报平台标识',
+  `role_zone_id` int(11) NOT NULL DEFAULT '0' COMMENT '被举报区号',
+  `time` int(11) unsigned NOT NULL COMMENT '举报产生时间戳',
+  `lev` tinyint(4) NOT NULL DEFAULT '0' COMMENT '被举报等级',
+  `name` varchar(20) NOT NULL DEFAULT '' COMMENT '被举报角色名',
+  `content` varchar(200) NOT NULL DEFAULT '' COMMENT '被举报内容',
+  `state` tinyint(4) unsigned DEFAULT '0' COMMENT '0:未处理 1:删除 2:无效',
+  `items` varchar(1024) NOT NULL DEFAULT '' COMMENT '物品奖励({Id,Bind,Num})',
+  `reporter_id` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '举报角色id',
+  `reporter_platform` varchar(20) NOT NULL DEFAULT '' COMMENT '举报角色平台标识',
+  `reporter_zone_id` int(11) NOT NULL DEFAULT '0' COMMENT '举报角色区号',
+  `reporter_name` varchar(20) NOT NULL DEFAULT '' COMMENT '举报角色名字',
+  `reporter_lev` tinyint(4) NOT NULL DEFAULT '0' COMMENT '举报角色等级',
+  PRIMARY KEY (`id`,`platform`,`zone_id`),
+  KEY `time` (`time`),
+  KEY `state` (`state`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='评论举报表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `review_report`
+--
+
+LOCK TABLES `review_report` WRITE;
+/*!40000 ALTER TABLE `review_report` DISABLE KEYS */;
+/*!40000 ALTER TABLE `review_report` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `role`
+--
+
+DROP TABLE IF EXISTS `role`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `role` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `platform` varchar(20) NOT NULL COMMENT '平台标识',
+  `zone_id` int(11) NOT NULL DEFAULT '0' COMMENT '区号',
+  `account` varchar(120) NOT NULL DEFAULT '' COMMENT '帐号名',
+  `channel_reg` int(11) NOT NULL DEFAULT '0' COMMENT '注册渠道',
+  `dispense` varchar(20) NOT NULL DEFAULT '' COMMENT '分发号',
+  `name` varchar(20) NOT NULL DEFAULT '' COMMENT '角色名',
+  `lock_status` int(8) NOT NULL DEFAULT '0' COMMENT '账号锁定状态:0:正常,1禁言2封号3封号且禁言',
+  `reg_ip` char(16) DEFAULT NULL COMMENT '注册IP',
+  `reg_time` int(11) NOT NULL DEFAULT '0' COMMENT '注册时间',
+  `login_ip` char(16) DEFAULT NULL COMMENT '最后一次登陆IP',
+  `login_time` int(11) NOT NULL DEFAULT '0' COMMENT '登陆时间',
+  `logout_time` int(11) NOT NULL DEFAULT '0' COMMENT '登出时间',
+  `label` tinyint(4) NOT NULL DEFAULT '0' COMMENT '标志,0:玩家 1:GM 2:新手指导员',
+  `sex` tinyint(4) NOT NULL DEFAULT '0' COMMENT '性别',
+  `classes` tinyint(4) NOT NULL DEFAULT '0' COMMENT '职业',
+  `lev` tinyint(4) NOT NULL DEFAULT '0' COMMENT '等级',
+  `ver` int(11) NOT NULL COMMENT '版本号',
+  `data` mediumblob NOT NULL COMMENT '序列化后的角色数据',
+  PRIMARY KEY (`id`,`platform`,`zone_id`),
+  UNIQUE KEY `name` (`name`,`platform`,`zone_id`),
+  UNIQUE KEY `acc` (`account`,`platform`,`zone_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='角色数据';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `role`
+--
+
+LOCK TABLES `role` WRITE;
+/*!40000 ALTER TABLE `role` DISABLE KEYS */;
+INSERT INTO `role` VALUES (1,'dev',1,'2017682741_0',0,'5470','亲测源码网',0,'120.11.121.114',1619872924,'120.11.121.114',1619873997,1619875682,0,1,6,100,76,'{role,76,undefined,64,false,false,{1619873997,1619875682},1619872924,{120,11,121,114},{120,11,121,114},0,{1,[100,101,118],1},[100,101,118],1,0,[53,52,55,48],[56,52,53,102,52,50,55,54,102,55,50,50,98,53,52,56,54,48,51,57,56,102,53,99,57,53,101,53,56,99,52,57],1,[56,54,53,49,54,54,48,50,56,56,57,53,48,54,49],[50,48,49,55,54,56,50,55,52,49,95,48],[22810,36164,28304,28216,25103],0,27122,0,1,6,100,0,260,11445,3556,1,1,1,{assets,41,0,99927256,190000000,189972878,370054000,0,10000,1800,258,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{attr,3,0,260,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},undefined,{1,[]},{rtimer,undefined,undefined,[]},{pos,10003,[100,101,118],1,{pos_history,50031,[100,101,118],1,1298,888},10003,undefined,undefined,0,1040,1511,2},[],0,0,0,0,undefined,0,[],[],false,[38634,12398,26684,26519],0,{m_attr_point,2,[],1,1,[{attr_point_plan,1,[],0,0,0,0,0,0,0,4,0,1}],0},{m_combat,3,undefined,undefined,0,[],[],[],0},{m_quest,19,[{quest,44000,[],2,2,1,0,[],0,0,0,0},{quest,44510,[],1,1,1,0,[{quest_progress,0,evt_levup,0,[],1,undefined,90,90,[91,93],[],[]}],0,0,0,0},{quest,41703,[],2,13,0,0,[{quest_progress,0,evt_mount_lev,0,[],0,{evt_mount_lev,1139},20,0,[91,57,57,44,49,55,48,53,48,44,50,93],[],[]}],0,0,0,0},{quest,41704,[],2,13,0,0,[{quest_progress,0,evt_mount_lev,0,[],0,{evt_mount_lev,1138},25,0,[91,57,57,44,49,55,48,53,48,44,50,93],[],[]}],0,0,0,0},{quest,22066,[],1,1,0,0,[{quest_progress,0,evt_enter_map,20001,[],1,undefined,1,1,[91,48,44,49,48,48,53,50,93],[],[]},{quest_progress,1,evt_unit_click,41001,[{create_unit,20023,41001,{point,20001,1508,1628},1,[115,116,97,110,100]}],0,{evt_unit_click,1130},1,0,[91,48,44,50,48,48,50,51,93],[],[]},{quest_progress,2,evt_unit_click,41046,[{create_unit,20025,41046,{point,20001,809,838},7,[115,116,97,110,100]}],0,{evt_unit_click,1131},1,0,[91,48,44,50,48,48,50,53,93],[],[]},{quest_progress,3,evt_fight_unit,41040,[],0,{evt_fight_unit,1132},1,0,[91,48,44,50,48,48,50,54,93],[],[]}],0,0,0,0},{quest,41910,[],2,2,1,0,[],0,0,0,0},{quest,41036,[],2,13,0,0,[{quest_progress,0,evt_dungeon_pass,10180,[],0,{evt_dungeon_pass,1117},1,0,[91,57,57,44,49,50,49,51,48,93],[],[]}],0,0,0,0},{quest,41381,[],2,13,0,0,[{quest_progress,0,evt_enchant,9,[],0,{evt_enchant,1116},8,0,[91,57,57,44,49,48,54,48,48,44,52,93],[],[]}],0,0,0,0},{quest,41590,[],2,13,0,0,[{quest_progress,0,evt_kill_npc,52011,[],0,{evt_kill_npc,1115},1,0,[91,57,57,44,49,50,48,48,50,44,49,93],[],[]}],0,0,0,0},{quest,41600,[],2,13,0,0,[{quest_progress,0,evt_kill_npc,52041,[],0,{evt_kill_npc,1114},1,0,[91,57,57,44,49,50,48,48,50,44,49,93],[],[]}],0,0,0,0},{quest,41610,[],2,13,0,0,[{quest_progress,0,evt_kill_npc,52081,[],0,{evt_kill_npc,1113},1,0,[91,57,57,44,49,50,48,48,50,44,49,93],[],[]}],0,0,0,0},{quest,41630,[],2,13,0,0,[{quest_progress,0,evt_wing_skill,0,[],0,{evt_wing_skill,1112},2,0,[91,57,57,44,49,48,51,48,48,44,51,44,49,93],[],[]}],0,0,0,0},{quest,41640,[],2,13,0,0,[{quest_progress,0,evt_comprehend_eqm,0,[{craft_num,1}],0,{evt_comprehend_eqm,1111},1,0,[91,57,57,44,49,48,54,48,48,44,53,93],[],[]}],0,0,0,0},{quest,41650,[],2,13,0,0,[{quest_progress,0,evt_comprehend_eqm,0,[{craft_num,1}],0,{evt_comprehend_eqm,1110},8,0,[91,57,57,44,49,48,54,48,48,44,53,93],[],[]}],0,0,0,0},{quest,41660,[],2,13,0,0,[{quest_progress,0,evt_comprehend_eqm,0,[{craft_num,2}],0,{evt_comprehend_eqm,1109},1,0,[91,57,57,44,49,48,54,48,48,44,53,93],[],[]}],0,0,0,0},{quest,41701,[],2,13,0,0,[{quest_progress,0,evt_mount_lev,0,[],0,{evt_mount_lev,1108},10,0,[91,57,57,44,49,55,48,53,48,44,50,93],[],[]}],0,0,0,0},{quest,41702,[],2,13,0,0,[{quest_progress,0,evt_mount_lev,0,[],0,{evt_mount_lev,1107},15,0,[91,57,57,44,49,55,48,53,48,44,50,93],[],[]}],0,0,0,0},{quest,41060,[],2,13,0,0,[{quest_progress,0,evt_commit_quest,0,[{quest_classes,10}],0,{evt_commit_quest,1011},1,0,[91,57,57,44,49,50,48,48,50,93],[],[]}],0,0,0,0},{quest,41760,[],2,13,1,0,[{quest_progress,0,evt_skill_up,15,[],1,undefined,3,3,[91,57,57,44,49,48,56,48,48,93],[],[]}],0,0,0,0},{quest,41011,[],2,13,0,0,[{quest_progress,0,evt_arena_fight,0,[],0,{evt_arena_fight,1009},1,0,[91,57,57,44,49,50,50,48,48,93],[],[]}],0,0,0,0},{quest,41012,[],2,13,1,0,[{quest_progress,0,evt_teacher_to_sudent,0,[],1,undefined,1,1,[91,49,44,50,93],[],[]}],0,0,0,0},{quest,41140,[],2,13,0,0,[{quest_progress,0,evt_friend,0,[],0,{evt_friend,1008},1,0,[91,57,57,44,49,49,56,48,48,93],[],[]}],0,0,0,0},{quest,41218,[],2,13,0,0,[{quest_progress,0,evt_skill_life_produce,0,[],0,{evt_skill_life_produce,1007},1,0,[91,57,57,44,49,48,56,48,48,44,51,93],[],[]}],0,0,0,0},{quest,41220,[],2,13,0,0,[{quest_progress,0,evt_market_silver_first_on_sale,0,[],0,{evt_market_silver_first_on_sale,1006},1,0,[91,57,57,44,49,50,52,48,49,93],[],[]}],0,0,0,0},{quest,41770,[],2,13,1,0,[{quest_progress,0,evt_skill_up,25,[],1,undefined,4,4,[91,57,57,44,49,48,56,48,48,93],[],[]}],0,0,0,0},{quest,41790,[],2,13,0,0,[{quest_progress,0,evt_combat_over,13,[win],0,{evt_combat_over,1004},5,0,[91,57,57,44,49,50,48,48,50,93],[],[]}],0,0,0,0},{quest,41800,[],2,13,1,0,[{quest_progress,0,evt_pet_add_point,0,[],1,undefined,1,1,[91,57,57,44,49,48,53,48,48,93],[],[]}],0,0,0,0},{quest,41820,[],2,13,0,0,[{quest_progress,0,evt_market_gold_bind_sold,0,[],0,{evt_market_gold_bind_sold,1002},1,0,[91,57,57,44,49,50,52,48,48,93],[],[]}],0,0,0,0},{quest,41830,[],2,13,1,0,[{quest_progress,0,evt_wing_lev,0,[{star_lev,3}],1,undefined,1,1,[91,57,57,44,49,48,51,48,48,44,51,93],[],[]}],0,0,0,0},{quest,41001,[],2,13,0,0,[{quest_progress,0,evt_quest_offer_ring,0,[],0,{evt_quest_offer_ring,1000},1,0,[91,49,44,50,53,93],[],[]}],0,0,0,0},{quest,41030,[],2,13,0,0,[{quest_progress,0,evt_dungeon_pass,10135,[],0,{evt_dungeon_pass,999},1,0,[91,57,57,44,49,50,49,51,48,93],[],[]}],0,0,0,0},{quest,41040,[],2,13,1,0,[{quest_progress,0,evt_guild,0,[],1,undefined,1,1,[91,57,57,44,49,49,49,48,48,93],[],[]}],0,0,0,0},{quest,41080,[],2,13,0,0,[{quest_progress,0,evt_commit_quest,0,[{quest_guild,5}],0,{evt_commit_quest,997},1,0,[91,57,57,44,49,50,48,48,50,93],[],[]}],0,0,0,0},{quest,41090,[],2,13,0,0,[{quest_progress,0,evt_kill_guild_robber,0,[],0,{evt_kill_guild_robber,996},1,0,[91,57,57,44,49,50,48,48,50,93],[],[]}],0,0,0,0},{quest,41110,[],2,13,0,0,[{quest_progress,0,evt_quest_offer_ring,0,[],0,{evt_quest_offer_ring,995},3,0,[91,49,44,50,53,93],[],[]}],0,0,0,0},{quest,41120,[],2,13,0,0,[{quest_progress,0,evt_arena_win,0,[],0,{evt_arena_win,994},5,0,[91,57,57,44,49,50,50,48,48,93],[],[]}],0,0,0,0},{quest,41130,[],2,13,0,0,[{quest_progress,0,evt_shipping_sail,0,[],0,{evt_shipping_sail,993},1,0,[91,49,44,57,93],[],[]}],0,0,0,0},{quest,41150,[],2,13,0,0,[{quest_progress,0,evt_trial,0,[],0,{evt_trial,992},1,0,[91,57,57,44,49,50,48,48,50,93],[],[]}],0,0,0,0},{quest,41180,[],2,13,1,0,[],0,0,0,0},{quest,41190,[],2,13,0,0,[{quest_progress,0,evt_maze,0,[],0,{evt_maze,991},1,0,[91,57,57,44,49,56,56,48,48,93],[],[]}],0,0,0,0},{quest,41200,[],2,13,0,0,[{quest_progress,0,evt_parade,0,[],0,{evt_parade,990},1,0,[91,93],[],[]}],0,0,0,0},{quest,41250,[],2,13,0,0,[{quest_progress,0,evt_skill_prac_levup,0,[{lev,1}],0,{evt_skill_prac_levup,989},1,0,[91,57,57,44,49,48,56,48,48,44,50,93],[],[]}],0,0,0,0},{quest,41390,[],2,13,0,0,[{quest_progress,0,evt_fairyland,0,[],0,{evt_fairyland,988},1,0,[91,57,57,44,49,50,48,48,50,44,51,93],[],[]}],0,0,0,0},{quest,41410,[],2,13,0,0,[{quest_progress,0,evt_warrior,0,[],0,{evt_warrior,987},1,0,[91,57,57,44,49,50,48,48,50,44,51,93],[],[]}],0,0,0,0},{quest,41430,[],2,13,0,0,[{quest_progress,0,evt_examination,1,[],0,{evt_examination,986},1,0,[91,57,57,44,49,50,48,48,50,44,51,93],[],[]}],0,0,0,0},{quest,41480,[],2,13,0,0,[{quest_progress,0,evt_friend,0,[],0,{evt_friend,985},5,0,[91,57,57,44,49,49,56,48,48,93],[],[]}],0,0,0,0},{quest,41510,[],2,13,1,0,[],0,0,0,0},{quest,41780,[],2,13,1,0,[{quest_progress,0,evt_skill_up,30,[],1,undefined,4,4,[91,57,57,44,49,48,56,48,48,93],[],[]}],0,0,0,0},{quest,41810,[],2,13,1,0,[{quest_progress,0,evt_pet_add_point,0,[],1,undefined,1,1,[91,57,57,44,49,48,53,48,48,93],[],[]}],0,0,0,0},{quest,41850,[],2,13,1,0,[{quest_progress,0,evt_guard,0,[],1,undefined,4,4,[91,57,57,44,49,48,57,48,48,93],[],[]}],0,0,0,0},{quest,41021,[],2,13,0,0,[{quest_progress,0,evt_eqm,0,[{eqm_lev,[{lev,40},{num,1}]}],0,{evt_eqm,981},1,0,[91,57,57,44,49,48,54,48,48,93],[],[]}],0,0,0,0},{quest,41210,[],2,13,0,0,[{quest_progress,0,evt_qualifying_combat,0,[],0,{evt_qualifying_combat,980},1,0,[91,49,44,51,57,93],[],[]}],0,0,0,0},{quest,41230,[],2,13,0,0,[{quest_progress,0,evt_kill_npc,0,[{type,6}],0,{evt_kill_npc,979},1,0,[91,57,57,44,49,51,48,48,48,93],[],[]}],0,0,0,0},{quest,41240,[],2,13,0,0,[{quest_progress,0,evt_tower,20001,[],0,{evt_tower,978},1,0,[91,57,57,44,49,50,48,48,50,93],[],[]}],0,0,0,0},{quest,41244,[],2,13,0,0,[{quest_progress,0,evt_tower_floor,1,[],0,{evt_tower_floor,977},1,0,[91,57,57,44,49,50,48,48,50,93],[],[]}],0,0,0,0},{quest,41261,[],2,13,0,0,[{quest_progress,0,evt_blacksmith_embed,0,[],0,{evt_blacksmith_embed,976},1,0,[91,57,57,44,49,48,54,48,48,44,51,93],[],[]}],0,0,0,0},{quest,41262,[],2,13,0,0,[{quest_progress,0,evt_blacksmith_embed_lev,1,[],0,{evt_blacksmith_embed_lev,975},8,0,[91,57,57,44,49,48,54,48,48,44,51,93],[],[]}],0,0,0,0},{quest,41271,[],2,13,0,0,[{quest_progress,0,evt_reset_eqm,0,[],0,{evt_reset_eqm,974},1,0,[91,57,57,44,49,48,54,48,48,44,50,93],[],[]}],0,0,0,0},{quest,41280,[],2,13,0,0,[{quest_progress,0,evt_glory,0,[],0,{evt_glory,973},1,0,[91,57,57,44,49,51,56,48,48,93],[],[]}],0,0,0,0},{quest,41284,[],2,13,0,0,[{quest_progress,0,evt_glory,0,[],0,{evt_glory,972},5,0,[91,57,57,44,49,51,56,48,48,93],[],[]}],0,0,0,0},{quest,41310,[],2,13,0,0,[{quest_progress,0,evt_enchant,1,[],0,{evt_enchant,971},1,0,[91,57,57,44,49,48,54,48,48,44,52,93],[],[]}],0,0,0,0},{quest,41400,[],2,13,0,0,[{quest_progress,0,evt_fairyland,0,[],0,{evt_fairyland,970},3,0,[91,57,57,44,49,50,48,48,50,44,51,93],[],[]}],0,0,0,0},{quest,41420,[],2,13,0,0,[{quest_progress,0,evt_warrior,0,[],0,{evt_warrior,969},3,0,[91,57,57,44,49,50,48,48,50,44,51,93],[],[]}],0,0,0,0},{quest,41440,[],2,13,0,0,[{quest_progress,0,evt_examination,2,[],0,{evt_examination,968},1,0,[91,57,57,44,49,50,48,48,50,44,51,93],[],[]}],0,0,0,0},{quest,41450,[],2,13,0,0,[{quest_progress,0,evt_examination,3,[],0,{evt_examination,967},1,0,[91,57,57,44,49,50,48,48,50,44,51,93],[],[]}],0,0,0,0},{quest,41550,[],2,13,0,0,[{quest_progress,0,evt_pet_stone_upgrade,0,[],0,{evt_pet_stone_upgrade,966},1,0,[91,57,57,44,49,48,53,48,48,93],[],[]}],0,0,0,0},{quest,41558,[],2,13,0,0,[{quest_progress,0,evt_get_pet_item_skill_guide,0,[{items,[20140,20141]}],0,{evt_get_pet_item_skill_guide,965},1,0,[91,49,44,51,93],[],[]}],0,0,0,0},{quest,41560,[],2,13,0,0,[{quest_progress,0,evt_pet_use_item,100,[type],0,{evt_pet_use_item,964},1,0,[91,57,57,44,49,48,53,48,48,44,49,44,50,93],[],[]}],0,0,0,0},{quest,41570,[],2,13,1,0,[{quest_progress,0,evt_guard_upgrade_eqm,0,[],1,undefined,1,1,[91,57,57,44,49,48,57,48,48,93],[],[]}],0,0,0,0},{quest,41580,[],2,13,0,0,[{quest_progress,0,evt_guard_embed_gem,0,[],0,{evt_guard_embed_gem,962},1,0,[91,57,57,44,49,48,57,48,48,93],[],[]}],0,0,0,0},{quest,41032,[],2,13,0,0,[{quest_progress,0,evt_dungeon_pass,10150,[],0,{evt_dungeon_pass,961},1,0,[91,57,57,44,49,50,49,51,48,93],[],[]}],0,0,0,0},{quest,41245,[],2,13,0,0,[{quest_progress,0,evt_tower_floor,2,[],0,{evt_tower_floor,960},1,0,[91,57,57,44,49,50,48,48,50,93],[],[]}],0,0,0,0},{quest,41263,[],2,13,0,0,[{quest_progress,0,evt_blacksmith_embed_lev,3,[],0,{evt_blacksmith_embed_lev,959},1,0,[91,57,57,44,49,48,54,48,48,44,51,93],[],[]}],0,0,0,0},{quest,41289,[],2,13,0,0,[{quest_progress,0,evt_glory,0,[],0,{evt_glory,958},10,0,[91,57,57,44,49,51,56,48,48,93],[],[]}],0,0,0,0},{quest,41294,[],2,13,0,0,[{quest_progress,0,evt_glory,0,[],0,{evt_glory,957},15,0,[91,57,57,44,49,51,56,48,48,93],[],[]}],0,0,0,0},{quest,41320,[],2,13,0,0,[{quest_progress,0,evt_enchant,3,[],0,{evt_enchant,956},1,0,[91,57,57,44,49,48,54,48,48,44,52,93],[],[]}],0,0,0,0},{quest,41330,[],2,13,0,0,[{quest_progress,0,evt_enchant,5,[],0,{evt_enchant,955},1,0,[91,57,57,44,49,48,54,48,48,44,52,93],[],[]}],0,0,0,0},{quest,41490,[],2,13,0,0,[{quest_progress,0,evt_skill_prac_levup,0,[{lev,5}],0,{evt_skill_prac_levup,954},6,0,[91,57,57,44,49,48,56,48,48,44,50,93],[],[]}],0,0,0,0},{quest,41670,[],2,13,0,0,[{quest_progress,0,evt_family,0,[],0,{evt_family,953},1,0,[91,49,44,53,53,93],[],[]}],0,0,0,0},{quest,41671,[],2,13,0,0,[{quest_progress,0,evt_family,0,[],0,{evt_family,952},3,0,[91,49,44,53,53,93],[],[]}],0,0,0,0},{quest,41672,[],2,13,0,0,[{quest_progress,0,evt_family,0,[],0,{evt_family,951},4,0,[91,49,44,53,53,93],[],[]}],0,0,0,0},{quest,41673,[],2,13,0,0,[{quest_progress,0,evt_family_self_magic_beans,0,[],0,{evt_family_self_magic_beans,950},1,0,[91,57,56,44,50,48,48,56,49,93],[],[]}],0,0,0,0},{quest,41851,[],2,13,0,0,[{quest_progress,0,evt_guard_activate,0,[],0,{evt_guard_activate,949},1,0,[91,57,57,44,49,48,57,48,48,93],[],[]}],0,0,0,0},{quest,41900,[],2,13,1,0,[],0,0,0,0},{quest,41013,[],2,13,0,0,[{quest_progress,0,evt_teacher,0,[],0,{evt_teacher,948},1,0,[91,49,44,50,93],[],[]}],0,0,0,0},{quest,41264,[],2,13,0,0,[{quest_progress,0,evt_blacksmith_embed_lev,5,[],0,{evt_blacksmith_embed_lev,947},1,0,[91,57,57,44,49,48,54,48,48,44,51,93],[],[]}],0,0,0,0},{quest,41299,[],2,13,0,0,[{quest_progress,0,evt_glory,0,[],0,{evt_glory,946},20,0,[91,57,57,44,49,51,56,48,48,93],[],[]}],0,0,0,0},{quest,41304,[],2,13,0,0,[{quest_progress,0,evt_glory,0,[],0,{evt_glory,945},25,0,[91,57,57,44,49,51,56,48,48,93],[],[]}],0,0,0,0},{quest,41340,[],2,13,0,0,[{quest_progress,0,evt_enchant,3,[],0,{evt_enchant,944},8,0,[91,57,57,44,49,48,54,48,48,44,52,93],[],[]}],0,0,0,0},{quest,41350,[],2,13,0,0,[{quest_progress,0,evt_enchant,7,[],0,{evt_enchant,943},1,0,[91,57,57,44,49,48,54,48,48,44,52,93],[],[]}],0,0,0,0},{quest,41674,[],2,13,0,0,[{quest_progress,0,evt_family_self_magic_beans,0,[],0,{evt_family_self_magic_beans,942},10,0,[91,57,56,44,50,48,48,56,49,93],[],[]}],0,0,0,0},{quest,41740,[],2,13,0,0,[{quest_progress,0,evt_child_deliver,0,[],0,{evt_child_deliver,941},1,0,[91,57,56,44,55,49,49,53,48,93],[],[]}],0,0,0,0},{quest,41750,[],2,13,1,0,[],0,0,0,0},{quest,41751,[],2,13,0,0,[{quest_progress,0,evt_talisman,0,[num],0,{evt_talisman,940},1,0,[91,57,57,44,49,48,51,48,48,44,52,93],[],[]}],0,0,0,0},{quest,41034,[],2,13,0,0,[{quest_progress,0,evt_dungeon_pass,10165,[],0,{evt_dungeon_pass,939},1,0,[91,57,57,44,49,50,49,51,48,93],[],[]}],0,0,0,0},{quest,41730,[],2,2,1,0,[],0,0,0,0},{quest,41360,[],2,13,0,0,[{quest_progress,0,evt_enchant,5,[],0,{evt_enchant,938},8,0,[91,57,57,44,49,48,54,48,48,44,52,93],[],[]}],0,0,0,0},{quest,41370,[],2,13,0,0,[{quest_progress,0,evt_enchant,9,[],0,{evt_enchant,937},1,0,[91,57,57,44,49,48,54,48,48,44,52,93],[],[]}],0,0,0,0},{quest,41380,[],2,13,0,0,[{quest_progress,0,evt_enchant,7,[],0,{evt_enchant,936},8,0,[91,57,57,44,49,48,54,48,48,44,52,93],[],[]}],0,0,0,0},{quest,41620,[],2,13,0,0,[{quest_progress,0,evt_wing_skill,0,[],0,{evt_wing_skill,935},1,0,[91,57,57,44,49,48,51,48,48,44,51,44,49,93],[],[]}],0,0,0,0},{quest,41680,[],2,13,0,0,[{quest_progress,0,evt_own_mount,1,[],0,{evt_own_mount,934},1,0,[91,57,57,44,49,55,48,53,48,93],[],[]}],0,0,0,0},{quest,41690,[],2,13,0,0,[{quest_progress,0,evt_own_mount,3,[],0,{evt_own_mount,933},1,0,[91,57,57,44,49,55,48,53,48,93],[],[]}],0,0,0,0},{quest,41700,[],2,13,0,0,[{quest_progress,0,evt_mount_lev,0,[],0,{evt_mount_lev,932},5,0,[91,57,57,44,49,55,48,53,48,44,50,93],[],[]}],0,0,0,0},{quest,41710,[],2,13,0,0,[{quest_progress,0,evt_mount_mange_pet,0,[],0,{evt_mount_mange_pet,931},1,0,[91,57,57,44,49,55,48,53,48,44,52,93],[],[]}],0,0,0,0}],[],[44500,22060,40103,22054,22050,22030,22000],[],{quest_classes,0,0,1,0,0,[]},{quest_offer,0,0,0,0,0,0,[]},{quest_prac,1,2,0},{quest_treasure,0,0,0},{quest_guild,0,0,1,0,0,[]},{quest_chain,0,0,0,[],0,0,undefined},{quest_marriage,0,0,0,0,0,#{mid=>0,robot_id=>undefined}},{quest_couple,0,0,0,0,0,undefined,#{mid=>0,partner_name=>[],robot_id=>undefined,triggers=>[]}},{quest_plant,0,0,0,0,0,0,{0,0,0},[]},{quest_teacher,0,0,0,undefined,0,0,[],#{appoint_trigger=>undefined,ask_id=>{<<>>,0,0},ask_start_time=>0}},{quest_shipping,[]},{quest_pursue,0,0,0,1,0,0,[]},2,{quest_child,0,0,0,0,1,0,[]},{quest_pregnancy,0,0,0,0,1,[]},{quest_acquaintance,0,0,0,0,0,[],[],0,0},{quest_king,1,1,[],[],0},{quest_summer,1,[],[],0,[]},{quest_single_dog,1,[],1,#{}},{quest_sign_draw,[],[]},{quest_score_exchange,[],[]},{quest_long_active,[],[]}},{m_pet,2,4,4,[{pet,32,1,1,[27874,27874],94,2146,679,4,0,0,0,3485776,1,10001,{attr,3,0,520,11805,1121,405,4324,1810,2008,1760,0,0,0,0,0,0,0,0,0,779,507,0,0,0,600,600,30,0,0,0,0,0,0,0,0,0,0,500,500,467,188,95,95,95,0},11805,1121,11805,1121,{pet_attr,0,467,188,95,95,95,0,0,0,0,0,0,0,0,0,0,1188,1265,1009,831,1246,1188,1265,1009,831,1246},7785,[],[{pet_skill,60033,1,1,1,33,1,0,0},{pet_skill,60037,1,1,1,37,1,0,0},{pet_skill,60039,1,1,1,39,1,0,0}],1,0,[],[],[],0,0,[{1,[20154,23478,33258,24102,36830,20987,36861,20987,21734,27874,123,102,97,99,101,95,49,44,49,125]},{2,[30475,25105,30340,36830,20987,36861,20987,27969,123,102,97,99,101,95,49,44,51,54,125]},{3,[20307,21147,21152,28857,33021,35753,25105,26356,25239,25549,27874,123,102,97,99,101,95,49,44,32,49,49,125]},{4,[21710,21568,65292,26159,19981,26159,24536,35760,32473,25105,21152,28857,20102,123,102,97,99,101,95,49,44,32,50,49,125]},{7,[25105,20808,21435,21969,26412,23456,29289,32463,39564,20070,123,102,97,99,101,95,49,44,49,53,125]}],0,0,0,[],0,0,[],0,0,{pet_tmp_aptitude,0,0,{pet_attr,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},[],0,0,0,0},0,{pet_skin,0,[],0,0,0,0,0,0},0,0,[],[],[],0,{0,[],0},0,[{pet_rune,2,1,0,0,0,0,[]},{pet_rune,1,2,0,0,0,0,[]}]},{pet,32,2,1,[33457,33721],15,2108,721,4,0,0,0,1437,0,10003,{attr,3,0,520,1334,932,37,736,455,477,442,0,0,0,0,0,0,0,0,0,600,400,0,0,0,600,600,30,0,0,0,0,0,0,0,0,0,0,500,500,72,30,16,16,16,0},1334,932,1334,932,{pet_attr,0,72,30,16,16,16,0,0,0,0,0,0,0,0,0,0,1188,1365,1093,890,1188,1188,1365,1093,890,1188},8276,[],[{pet_skill,60038,1,1,1,38,1,0,0},{pet_skill,60037,1,1,1,37,1,0,0}],1,0,[],[],[],0,0,[{1,[33258,24102,39640,32423,36830,20987,30340,24378,21147,23456,29289,23601,26159,25105,21862,123,102,97,99,101,95,49,44,50,48,125]},{2,[27599,27425,21319,32423,35760,24471,32473,25105,21152,28857,21734,123,102,97,99,101,95,49,44,32,55,125]},{3,[23567,24515,25105,20027,20154,25549,20320,21734,123,102,97,99,101,95,49,44,32,50,49,125]},{4,[21710,21568,65292,26159,19981,26159,24536,35760,32473,25105,21152,28857,20102,123,102,97,99,101,95,49,44,32,50,49,125]},{7,[25105,20808,21435,21969,26412,23456,29289,32463,39564,20070,123,102,97,99,101,95,49,44,49,53,125]}],0,0,0,[],0,0,[],0,0,{pet_tmp_aptitude,0,0,{pet_attr,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},[],0,0,0,0},0,{pet_skin,0,[],0,0,0,0,0,0},0,0,[],[],[],0,{0,[],0},0,[{pet_rune,2,1,0,0,0,0,[]},{pet_rune,1,2,0,0,0,0,[]}]},{pet,32,3,1,[27874,27874],1,2075,679,4,0,0,0,864,0,10001,{attr,3,0,520,193,822,2,366,334,336,320,0,0,0,0,0,0,0,0,0,600,400,0,0,0,600,600,30,0,0,0,0,0,0,0,0,0,0,500,500,2,2,2,2,2,0},193,822,193,822,{pet_attr,0,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,1104,1215,1009,817,1181,1104,1215,1009,875,1290},7908,[],[{pet_skill,60033,1,1,1,33,1,0,0},{pet_skill,60037,1,1,1,37,1,0,0},{pet_skill,60039,1,1,1,39,1,0,0}],1,0,[],[],[],0,0,[{1,[20154,23478,33258,24102,36830,20987,36861,20987,21734,27874,123,102,97,99,101,95,49,44,49,125]},{2,[30475,25105,30340,36830,20987,36861,20987,27969,123,102,97,99,101,95,49,44,51,54,125]},{3,[20307,21147,21152,28857,33021,35753,25105,26356,25239,25549,27874,123,102,97,99,101,95,49,44,32,49,49,125]},{4,[21710,21568,65292,26159,19981,26159,24536,35760,32473,25105,21152,28857,20102,123,102,97,99,101,95,49,44,32,50,49,125]},{7,[25105,20808,21435,21969,26412,23456,29289,32463,39564,20070,123,102,97,99,101,95,49,44,49,53,125]}],0,0,0,[],0,0,[],0,0,{pet_tmp_aptitude,0,0,{pet_attr,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},[],0,0,0,0},0,{pet_skin,0,[],0,0,0,0,0,0},0,0,[],[],[],0,{0,[],0},0,[{pet_rune,2,1,0,0,0,0,[]},{pet_rune,1,2,0,0,0,0,[]}]}],3,5,1619884800},{m_skill,6,[{69001,91},{69002,91},{69004,91},{69003,91},{69005,91},{69006,91},{69007,91},{69008,91}],1,62000,[{skl_prac,62500,4,20,1,[]},{skl_prac,62400,4,20,1,[]},{skl_prac,62300,4,20,1,[]},{skl_prac,62200,1,20,1,[]},{skl_prac,62100,1,20,1,[]},{skl_prac,62000,1,20,1,[]}],[],[],[],[],[],0,100,0,0,[]},{m_var,1,1619872923,1619872923,1619872923,[{27,1},{90,1},{141,[{100,1}]}],[{143,2400}],[{301,1}],0,2460,[{1016,0},{1001,440},{1005,1},{1012,1}],[{2094,1},{2000,{95,0}},{2134,1},{2137,1},{2022,{card_state,0,0,0,0,0,0,1619872924}},{2115,0},{2032,[]},{2110,1},{2102,1},{2118,1},{2105,1},{2136,1},{2123,1},{2124,1},{2125,[{fashion_repaire,1}]},{2082,1},{2005,[{8,100,1620220151,0},{7,90,1620220020,1},{6,80,1620219663,1},{5,70,1620219645,1},{4,60,1620219645,1},{3,50,1620219645,1},{2,40,1620046845,1},{1,30,1619960445,1}]},{2023,[create_1,compensate_2]},{2004,1619960400},{2067,1},{2068,{0,0}}]},{m_guard,1,[],[1,2,3,4,5,6],[],[{guard,2,1018,5,[20975,24681],[20975,24681],4,1,1,0,[61102,61103,61104,61105],[{guard_eqm,5,43032,19,30,[{attr_base,0,7,14,1,57},{attr_base,0,5,14,1,319},{attr_base,2,104,2091,1,8}],0,[],[],1,0,0,[]},{guard_eqm,5,43034,20,30,[{attr_base,0,6,14,1,23},{attr_base,0,1,14,1,673},{attr_base,2,105,4092,1,5},{attr_base,2,102,4091,1,5}],0,[],[],1,0,0,[]},{guard_eqm,5,43036,18,30,[{attr_base,0,6,14,1,45},{attr_base,0,3,14,1,64},{attr_base,2,105,4092,1,5},{attr_base,2,104,4091,1,5}],0,[],[],1,0,0,[]},{guard_eqm,5,43035,17,30,[{attr_base,0,7,14,1,85},{attr_base,0,2,14,1,487},{attr_base,2,105,4092,1,5},{attr_base,2,104,4091,1,5}],0,[],[],1,0,0,[]},{guard_eqm,5,43033,16,30,[{attr_base,0,6,14,1,155},{attr_base,2,103,4092,1,5},{attr_base,2,102,4091,1,5}],0,[],[],1,0,0,[]},{guard_eqm,5,43031,15,30,[{attr_base,0,43,14,1,450},{attr_base,0,5,14,1,172},{attr_base,0,4,14,1,477},{attr_base,2,101,3092,1,-3},{attr_base,2,102,3091,1,11}],0,[],[],1,0,0,[]}],{attr,3,0,0,14735,3688,692,3274,2764,2546,1596,0,0,0,0,0,0,0,0,0,794,594,0,0,0,600,600,0,0,0,0,0,0,0,0,450,0,0,500,500,-3,21,5,18,15,0},571,{guard_astroid,2,[],[],[],500,0}},{guard,2,1012,4,[34013,38639],[34013,38639],2,1,1,0,[61065,61066,61067,61068],[{guard_eqm,5,41031,15,30,[{attr_base,0,43,14,1,450},{attr_base,0,5,14,1,172},{attr_base,0,4,14,1,477},{attr_base,2,101,3092,1,-3},{attr_base,2,103,3091,1,11}],0,[],[],1,0,0,[]},{guard_eqm,5,41033,16,30,[{attr_base,0,6,14,1,155},{attr_base,2,103,4092,1,5},{attr_base,2,102,4091,1,5}],0,[],[],1,0,0,[]},{guard_eqm,5,41035,17,30,[{attr_base,0,7,14,1,85},{attr_base,0,2,14,1,487},{attr_base,2,105,4092,1,5},{attr_base,2,102,4091,1,5}],0,[],[],1,0,0,[]},{guard_eqm,5,41036,18,30,[{attr_base,0,6,14,1,45},{attr_base,0,3,14,1,64},{attr_base,2,105,4092,1,5},{attr_base,2,104,4091,1,5}],0,[],[],1,0,0,[]},{guard_eqm,5,41034,20,30,[{attr_base,0,6,14,1,23},{attr_base,0,1,14,1,673},{attr_base,2,103,4092,1,5},{attr_base,2,102,4091,1,5}],0,[],[],1,0,0,[]},{guard_eqm,5,41032,19,30,[{attr_base,0,7,14,1,57},{attr_base,0,5,14,1,319},{attr_base,2,105,2091,1,8}],0,[],[],1,0,0,[]}],{attr,3,0,0,8670,3688,246,3016,4403,1796,2543,0,0,0,0,0,0,0,0,0,794,594,0,0,0,600,600,0,0,0,0,0,0,0,0,450,0,0,500,500,-3,15,21,5,18,0},469,{guard_astroid,2,[],[],[],380,0}},{guard,2,1008,3,[29748,38597],[29748,38597],5,1,1,0,[61041,61042,61044,61043],[{guard_eqm,5,44042,19,40,[{attr_base,0,7,14,1,78},{attr_base,0,5,14,1,435},{attr_base,2,104,2091,1,12}],0,[],[],1,0,0,[]},{guard_eqm,5,44044,20,40,[{attr_base,0,6,14,1,31},{attr_base,0,1,14,1,917},{attr_base,2,102,4091,1,7},{attr_base,2,105,4092,1,7}],0,[],[],1,0,0,[]},{guard_eqm,5,44046,18,40,[{attr_base,0,6,14,1,61},{attr_base,0,3,14,1,81},{attr_base,2,104,4091,1,7},{attr_base,2,105,4092,1,7}],0,[],[],1,0,0,[]},{guard_eqm,5,44045,17,40,[{attr_base,0,7,14,1,116},{attr_base,0,2,14,1,568},{attr_base,2,104,4091,1,7},{attr_base,2,105,4092,1,7}],0,[],[],1,0,0,[]},{guard_eqm,5,44043,16,40,[{attr_base,0,6,14,1,212},{attr_base,2,102,4091,1,7},{attr_base,2,103,4092,1,7}],0,[],[],1,0,0,[]},{guard_eqm,5,44041,15,40,[{attr_base,0,43,14,1,615},{attr_base,0,5,14,1,234},{attr_base,0,4,14,1,650},{attr_base,2,102,3091,1,16},{attr_base,2,101,3092,1,-4}],0,[],[],1,0,0,[]}],{attr,3,0,0,14849,3769,544,3315,2848,3165,1598,0,0,0,0,0,0,0,0,0,794,594,0,0,0,600,600,0,0,0,0,0,0,0,0,615,0,0,500,500,-4,30,7,26,21,0},530,{guard_astroid,2,[],[],[],440,0}},{guard,2,1002,2,[33778,38597],[33778,38597],1,1,1,0,[61006,61005,61007,61008],[{guard_eqm,5,40032,19,30,[{attr_base,0,7,14,1,57},{attr_base,0,5,14,1,319},{attr_base,2,104,2091,1,8}],0,[],[],1,0,0,[]},{guard_eqm,5,40034,20,30,[{attr_base,0,6,14,1,23},{attr_base,0,1,14,1,673},{attr_base,2,102,4092,1,5},{attr_base,2,101,4091,1,5}],0,[],[],1,0,0,[]},{guard_eqm,5,40036,18,30,[{attr_base,0,6,14,1,45},{attr_base,0,3,14,1,64},{attr_base,2,105,4092,1,5},{attr_base,2,104,4091,1,5}],0,[],[],1,0,0,[]},{guard_eqm,5,40035,17,30,[{attr_base,0,7,14,1,85},{attr_base,0,2,14,1,487},{attr_base,2,104,4092,1,5},{attr_base,2,102,4091,1,5}],0,[],[],1,0,0,[]},{guard_eqm,5,40033,16,30,[{attr_base,0,6,14,1,155},{attr_base,2,102,4092,1,5},{attr_base,2,101,4091,1,5}],0,[],[],1,0,0,[]},{guard_eqm,5,40031,15,30,[{attr_base,0,43,14,1,450},{attr_base,0,5,14,1,172},{attr_base,0,4,14,1,477},{attr_base,2,103,3092,1,-3},{attr_base,2,101,3091,1,11}],0,[],[],1,0,0,[]}],{attr,3,0,0,8241,3688,395,4178,2433,1640,1420,0,0,0,0,0,0,0,0,0,794,594,0,0,0,600,600,0,0,0,0,0,0,0,0,450,0,0,500,500,21,15,-3,18,5,0},425,{guard_astroid,2,[],[],[],320,0}}]},{m_plot,1,1,[70046,30070,70044,70050,70040,70039,70038,70035,70020,70000,100,70037,70036],[],[{plot,44002,0,0},{plot,44000,0,0},{plot,11630,0,0},{plot,44580,0,0},{plot,44570,0,0},{plot,44560,0,0},{plot,44550,0,0},{plot,44540,0,0},{plot,44535,0,0},{plot,44531,0,0},{plot,44530,0,0},{plot,44520,0,0},{plot,44510,0,0},{plot,11550,0,0},{plot,70048,1,0},{plot,70140,0,0},{plot,44500,0,0},{plot,30400,0,0},{plot,11470,0,0},{plot,11460,0,0},{plot,11434,0,0},{plot,11404,0,0},{plot,11390,0,0},{plot,11330,0,0},{plot,11260,0,0},{plot,83210,0,0},{plot,83200,0,0},{plot,83190,0,0},{plot,83180,0,0},{plot,83170,0,0},{plot,83165,0,0},{plot,83160,0,0},{plot,83140,0,0},{plot,83130,0,0},{plot,83129,0,0},{plot,83120,0,0},{plot,83110,0,0},{plot,83100,0,0},{plot,83026,0,0},{plot,83025,0,0},{plot,83001,0,0},{plot,83000,0,0},{plot,82003,0,0},{plot,60010,0,0},{plot,60000,0,0},{plot,50112,0,0},{plot,50042,0,0},{plot,50041,0,0},{plot,50040,0,0},{plot,50031,0,0},{plot,50030,0,0},{plot,50021,0,0},{plot,50020,0,0},{plot,50011,0,0},{plot,50010,0,0},{plot,50001,0,0},{plot,50000,0,0},{plot,43212,0,0},{plot,43211,0,0},{plot,43210,0,0},{plot,43170,0,0},{plot,43120,0,0},{plot,43050,0,0},{plot,43000,0,0},{plot,41730,0,0},{plot,30700,0,0},{plot,30600,0,0},{plot,30500,0,0},{plot,30300,0,0},{plot,30200,0,0},{plot,30190,0,0},{plot,30180,0,0},{plot,30170,0,0},{plot,30120,0,0},{plot,30140,0,0},{plot,30100,0,0},{plot,30080,0,0},{plot,30050,0,0},{plot,30040,0,0},{plot,30030,0,0},{plot,30020,0,0},{plot,30000,0,0},{plot,11250,0,0},{plot,11230,0,0},{plot,11200,0,0},{plot,11170,0,0},{plot,11152,0,0},{plot,11130,0,0},{plot,11070,0,0},{plot,11000,0,0},{plot,10940,0,0},{plot,10870,0,0},{plot,10830,0,0},{plot,10740,0,0},{plot,10700,0,0},{plot,10640,0,0},{plot,70347,0,0},{plot,10372,0,0},{plot,30150,0,0},{plot,70176,0,0},{plot,70174,0,0},{plot,70060,0,0},{plot,10046,0,0},{plot,10044,0,0},{plot,10574,0,0},{plot,10510,0,0},{plot,10440,0,0},{plot,70384,0,0},{plot,70300,0,0},{plot,70190,0,0},{plot,70185,0,0},{plot,70180,0,0}],[{plot,70177,0,0},{plot,70010,0,0},{plot,120,0,0},{plot,110,0,0},{plot,101,0,0}],[5],[{plot_unit,20023,[26460,32500],41001,4,1,0,20001,1508,1628,1,[115,116,97,110,100],[],0,22066,1,2,0},{plot_unit,20025,[26519,38647],41046,4,1,0,20001,809,838,7,[115,116,97,110,100],[],0,22066,2,2,0},{plot_unit,10052,[26143,21488],10007,1,1,0,10001,1646,2032,0,[115,116,97,110,100],[],0,0,0,0,0}],[],[],0,0,[],[],0},{m_dungeon,4,0,0,[],[],0},{m_guild,3,{1,[100,101,118],1},[22810,36164,28304],<0.1253.0>,1519874564,3,60,0,0,[],[],[],0},undefined,{m_option,1,[]},{m_wing,11,4,1,0,20008,0,[],0,0,0,1,1,[{wing_skill_plan,1,[],[],[]}],0,0,[],[20008],0,0,0,[],1,[{wing_group,1,2,[20008],0,0}],100},{m_team,0,undefined,3,[],0,0,0,[1,2,3,4,5],[],0},{m_honor,3,11010,11106,[{honor,11010,0},{honor,11106,0},{honor,32100,0}],0,[],[]},{m_friend,2,[],0,0,1,0,0,0,[],0,1,1,1,[],[],0,0,[],0},{m_wake,0,0,0,0,0,0,0,0,[],[]},{m_arena,1,0,0,1000,0,0,[{arena_graph,1,90012,5,0,1},{arena_graph,2,22400,1,0,1},{arena_graph,3,90012,4,0,1},{arena_graph,4,90012,3,0,1},{arena_graph,5,20020,1,0,2},{arena_graph,6,22400,1,0,2},{arena_graph,7,22400,1,0,2},{arena_graph,8,22400,1,0,2},{arena_graph,9,20088,1,0,3},{arena_graph,10,22400,1,0,3},{arena_graph,11,90012,8,0,3},{arena_graph,12,22400,1,0,3},{arena_graph,13,22400,2,0,4},{arena_graph,14,29006,1,0,4},{arena_graph,15,22400,1,0,4},{arena_graph,16,90012,7,0,4}]},{m_market_silver,1,0,1,[]},{m_escort,0,32000,0,0,0,0,[],0,0,0,0,0,0,0,0,{0,0},0,0,0,[]},{m_buff,2,[{buff,4,12140,12140,10,0,1,1,1,7200,7200,1,0,1619874484,[],[],0,[],1}],1},{m_formation,1,1,1,[{formation,1,1,0}],[1002,1008,1012,1018]},{m_skill_life,2,[{skill_life,10000,15,0},{skill_life,10001,15,0},{skill_life,10005,0,0},{skill_life,10006,0,0},{skill_life,10007,30,0},{skill_life,10008,0,0},{skill_life,10009,0,0}]},{m_trial,3,0,0,undefined,{trial_unit,0,0,0,[],0,0,0,0,[],0,0,0},0,0,0,2,0,2,0,0,[],[],[]},{m_fashion,5,[],[],[],[],[],[],[{fashion_dress,53057,0,0,1}],0,20,0,[]},{m_satiety,1,0,1,0},{m_agenda,1,[{agenda_prog,1,1000,0,0},{agenda_prog,1,1001,0,0},{agenda_prog,1,1002,0,0},{agenda_prog,1,1004,0,0},{agenda_prog,1,1006,0,0},{agenda_prog,1,1007,0,0},{agenda_prog,1,1008,0,0},{agenda_prog,1,1009,0,0},{agenda_prog,1,1010,0,0},{agenda_prog,1,1013,0,0},{agenda_prog,1,1014,0,0},{agenda_prog,1,1017,0,0},{agenda_prog,1,1018,0,0},{agenda_prog,1,1020,0,0},{agenda_prog,1,1021,0,0},{agenda_prog,1,1022,0,0},{agenda_prog,1,1023,0,0},{agenda_prog,1,1024,0,0},{agenda_prog,1,1025,0,0},{agenda_prog,1,1026,0,0},{agenda_prog,1,1027,0,0},{agenda_prog,1,1028,0,0},{agenda_prog,1,1029,0,0},{agenda_prog,1,1030,0,0},{agenda_prog,1,1031,0,0},{agenda_prog,1,2002,0,0},{agenda_prog,1,2003,0,0},{agenda_prog,1,2004,0,0},{agenda_prog,1,2005,0,0},{agenda_prog,1,2006,0,0},{agenda_prog,1,2007,0,0},{agenda_prog,1,2008,0,0},{agenda_prog,1,2009,0,0},{agenda_prog,1,2010,0,0},{agenda_prog,1,2011,0,0},{agenda_prog,1,2012,0,0},{agenda_prog,1,2013,0,0},{agenda_prog,1,2014,0,0},{agenda_prog,1,2015,0,0},{agenda_prog,1,2016,0,0},{agenda_prog,1,2017,0,0},{agenda_prog,1,2018,0,0},{agenda_prog,1,2019,0,0},{agenda_prog,1,2020,0,0},{agenda_prog,1,2021,0,0},{agenda_prog,1,2022,0,0},{agenda_prog,1,2023,0,0},{agenda_prog,1,2024,0,0},{agenda_prog,1,2025,0,0},{agenda_prog,1,2026,0,0},{agenda_prog,1,2027,0,0},{agenda_prog,1,2028,0,0},{agenda_prog,1,2029,0,0},{agenda_prog,1,2030,0,0},{agenda_prog,1,2031,0,0},{agenda_prog,1,2032,0,0},{agenda_prog,1,2033,0,0},{agenda_prog,1,2034,0,0},{agenda_prog,1,2035,0,0},{agenda_prog,1,2036,0,0},{agenda_prog,1,2038,0,0},{agenda_prog,1,2039,0,0},{agenda_prog,1,2040,0,0},{agenda_prog,1,2041,0,0},{agenda_prog,1,2042,0,0},{agenda_prog,1,2043,0,0},{agenda_prog,1,2044,0,0},{agenda_prog,1,2045,0,0},{agenda_prog,1,2046,0,0},{agenda_prog,1,2047,0,0},{agenda_prog,1,2048,0,0},{agenda_prog,1,2049,0,0},{agenda_prog,1,2050,0,0},{agenda_prog,1,2051,0,0},{agenda_prog,1,2052,0,0},{agenda_prog,1,2053,0,0},{agenda_prog,1,2054,0,0},{agenda_prog,1,2055,0,0},{agenda_prog,1,2056,0,0},{agenda_prog,1,2057,0,0},{agenda_prog,1,2058,0,0},{agenda_prog,1,2059,0,0},{agenda_prog,1,2060,0,0},{agenda_prog,1,2061,0,0},{agenda_prog,1,2062,0,0},{agenda_prog,1,2063,0,0},{agenda_prog,1,2064,0,0},{agenda_prog,1,2065,0,0},{agenda_prog,1,2066,0,0},{agenda_prog,1,2067,0,0},{agenda_prog,1,2068,0,0},{agenda_prog,1,2069,0,0},{agenda_prog,1,2070,0,0},{agenda_prog,1,2071,0,0},{agenda_prog,1,2072,0,0},{agenda_prog,1,2073,0,0},{agenda_prog,1,2074,0,0},{agenda_prog,1,2075,0,0},{agenda_prog,1,2076,0,0},{agenda_prog,1,2077,0,0},{agenda_prog,1,2078,0,0},{agenda_prog,1,2079,0,0},{agenda_prog,1,2080,0,0},{agenda_prog,1,2081,0,0},{agenda_prog,1,2082,0,0},{agenda_prog,1,2083,0,0},{agenda_prog,1,2084,0,0},{agenda_prog,1,2085,0,0},{agenda_prog,1,2086,0,0},{agenda_prog,1,2087,0,0},{agenda_prog,1,2088,0,0},{agenda_prog,1,2089,0,0},{agenda_prog,1,2090,0,0},{agenda_prog,1,2091,0,0},{agenda_prog,1,2092,0,0},{agenda_prog,1,2093,0,0},{agenda_prog,1,2094,0,0},{agenda_prog,1,2095,0,0},{agenda_prog,1,2096,0,0},{agenda_prog,1,2097,0,0},{agenda_prog,1,2098,0,0},{agenda_prog,1,2099,0,0},{agenda_prog,1,2100,0,0},{agenda_prog,1,2101,0,0},{agenda_prog,1,2102,0,0},{agenda_prog,1,2103,0,0},{agenda_prog,1,2104,0,0},{agenda_prog,1,2105,0,0},{agenda_prog,1,2106,0,0},{agenda_prog,1,2107,0,0},{agenda_prog,1,2108,0,0},{agenda_prog,1,2109,0,0},{agenda_prog,1,2110,0,0},{agenda_prog,1,2111,0,0},{agenda_prog,1,2112,0,0},{agenda_prog,1,99,0,0}],50,0,[],1619874262,[1009],1619872924},{m_parade,0,undefined},[{mail,{3,[100,101,118],1},{1,[100,101,118],1},{0,[100,101,118],1},0,[],0,[],1,1,0,<<232,180,173,228,185,176,231,173,137,231,186,167,231,164,188,229,140,133>>,<<232,180,173,228,185,176,231,173,137,231,186,167,231,164,188,229,140,133,230,151,182,239,188,140,232,131,140,229,140,133,229,183,178,230,187,161>>,[{item,0,0,20114,1,0,100,0,3,0,-1,0,0,0,1,0,0,0,[],[],1,0,2,[],[]},{item,0,0,20022,1,0,0,0,3,0,-1,0,0,0,10,0,0,0,[],[],1,0,2,[],[]},{item,0,0,22556,1,0,111,1,3,0,-1,0,0,0,5,0,0,0,[],[],80,0,2,[],[]},{item,0,0,22306,1,0,111,1,3,0,-1,0,0,0,5,0,0,0,[],[],75,0,2,[],[]},{item,0,0,20006,1,0,0,0,2,0,-1,0,0,0,200,0,0,0,[],[],5,0,2,[],[]}],0,1619874497,1619874497,1619874634},{mail,{4,[100,101,118],1},{1,[100,101,118],1},{0,[100,101,118],1},0,[],0,[],1,1,0,<<232,180,173,228,185,176,231,173,137,231,186,167,231,164,188,229,140,133>>,<<232,180,173,228,185,176,231,173,137,231,186,167,231,164,188,229,140,133,230,151,182,239,188,140,232,131,140,229,140,133,229,183,178,230,187,161>>,[{item,0,0,20401,1,0,0,0,3,0,-1,0,0,0,1,0,0,0,[],[],1,0,2,[],[]},{item,0,0,20405,1,0,0,0,4,0,-1,0,0,0,2,0,0,0,[],[],1,0,2,[],[]},{item,0,0,22311,1,0,111,1,4,0,-1,0,0,0,5,0,0,0,[],[],90,0,2,[],[]},{item,0,0,22306,1,0,111,1,3,0,-1,0,0,0,8,0,0,0,[],[],75,0,2,[],[]},{item,0,0,20022,1,0,0,0,3,0,-1,0,0,0,10,0,0,0,[],[],1,0,2,[],[]}],0,1619874498,1619874498,1619874633},{mail,{5,[100,101,118],1},{1,[100,101,118],1},{0,[100,101,118],1},0,[],0,[],1,1,0,<<228,188,154,233,149,191,231,164,188,229,140,133>>,<<231,148,177,228,186,142,232,131,140,229,140,133,229,183,178,230,187,161,44,230,130,168,229,136,155,229,187,186,229,133,172,228,188,154,231,154,132,231,164,188,229,140,133,233,128,154,232,191,135,233,130,174,228,187,182,229,143,145,233,128,129,44,232,175,183,230,159,165,230,148,182>>,[{item,0,0,70053,1,0,111,1,3,0,-1,0,0,0,1,0,0,0,[],[],1,0,2,[],[]}],0,1619874505,1619874505,1619874632}],{m_qualifying,1000,0,0,0,0,[],0,0,0},{m_treasure,0,{treasure_reward,0,0,0,0,[]},{treasure_compass,0,0,0,0,0,0},0},{m_campaign,27,[{1001,1619873044,2400}],[{1001,1619873044,1}],[],{campaign_eggs,0,0,[],0,0,[]},{campaign_bags,0,[],0,0},[],{camp_login,0,0,0,[],[]},{camp_hide_seek,0,0,[],0,[]},{camp_login_roll,0,0,[],[],0,0,0},{camp_series_recharge,1,{2021,5,1},0,[{1,0}],0,0,0,0},{campaign_card,0,0,0,0,[]},0,[],{campaign_card_open,0,0,0,0,[]},{camp_series_recharge,1,0,0,[],0,0,0,0},{camp_wish_flower,1,1,0,0,0},{camp_doll,3,0,1,0,[{camp_doll_data,4,0,1,[]},{camp_doll_data,7,0,1,[]},{camp_doll_data,8,0,1,[]},{camp_doll_data,3,0,1,[]},{camp_doll_data,2,0,1,[]},{camp_doll_data,5,0,1,[]},{camp_doll_data,6,0,1,[]},{camp_doll_data,1,0,1,[]}],0,[],0,0,[]},{camp_sign,{0,0,0},0,0},{camp_exchange,0,0,[],0},{m_animal_chess,1,0,0},{camp_new_flop,1,0,0,[],0},25,{camp_consume_rebate,1,[]},{m_black_white_chess,1,0,0,1},{m_camp_scratch_card,0,[],[]},{camp_new_acc_charge,1,0,[]},{camp_charge_seven_gift,1,0,0,[]},{camp_lucky_tree,0,0,[],[]},{camp_long_active,1,0,0,[],[],0,0},{camp_gift_custom,1,0,[],[],0}},{m_shipping,1,0},{m_checkin,3,[{{2021,5,1},1,1}],{checkin_everyday,3,0,{0,0,0},0,[{{2021,5,1},0}],0,0,0,[],0},[]},{m_tower,[],[]},{m_classes_challenge,2,0,0,[],[],0,0,[],0,[]},{m_fairyland,0,[],[],0,0,[],0,[]},{m_glory,2,0,0,0,60,0,0,60,0,1619872924,0,[],0,0},{m_examination,1,0,0,0,0,0,[],[],0,0,0,[],[]},{m_adm,0},{m_alchemy,0,[{alchemy_shop,1,1,2,[],1},{alchemy_shop,1,2,2,[],1},{alchemy_shop,1,3,2,[],1},{alchemy_shop,1,4,2,[],1}]},{m_pet_store,1,1,[],4},{m_store,1619960400,[{s_item,20095,22,1,0,90002,119,1},{s_item,20064,3,1,0,90002,99,0},{s_item,20006,36,10,0,90003,910,0},{s_item,20066,27,1,0,90003,7600,0},{s_item,21100,17,1,0,90002,67,0},{s_item,20038,21,1,0,90002,237,0},{s_item,20062,1,1,0,90002,102,0},{s_item,20014,28,1,0,90003,22513,0},{s_item,20053,9,1,0,90002,213,0},{s_item,20616,15,1,0,90002,308,0},{s_item,20617,16,1,0,90002,1269,0}]},{m_achievement,3,201,[{140240,1619875169},{640331,1619874578},{110108,1619874551},{150133,1619874526},{150132,1619874521},{150131,1619874521},{150130,1619874521},{510201,1619874505},{510101,1619874505},{110107,1619874420},{120103,1619874420},{120102,1619874420},{120101,1619874420},{120003,1619874420},{640520,1619874262},{130261,1619874315},{130250,1619874304},{510231,1619874262},{510230,1619874262},{220521,1619874209},{220520,1619874209},{120002,1619874075},{120001,1619874075},{110106,1619874063},{310110,1619874052},{110105,1619874045},{110104,1619874045},{110103,1619874045},{110102,1619874045},{110101,1619874045},{130104,1619874045},{130103,1619874045},{130102,1619874045},{130101,1619874045}],[{quest,640332,[],1,1,0,0,[{quest_progress,0,evt_fashion,3,[],0,{evt_fashion,1159},10,1,[],[],[]}],0,0,0,0},{quest,110121,[],1,1,0,0,[{quest_progress,0,evt_lev_break,0,[],0,{evt_lev_break,1155},1,0,[],[],[]}],0,0,0,0},{quest,110120,[],1,1,0,0,[{quest_progress,0,evt_lev_break_active,0,[],0,{evt_lev_break_active,1154},1,0,[],[],[]}],0,0,0,0},{quest,110109,[],1,1,0,0,[{quest_progress,0,evt_levup,0,[],0,{evt_levup,1153},101,100,[],[],[]}],0,0,0,0},{quest,640660,[],1,1,0,0,[{quest_progress,0,evt_kill_npc,73020,[],0,{evt_kill_npc,1152},1,0,[],[],[]}],0,0,0,0},{quest,220522,[],1,1,0,0,[{quest_progress,0,evt_pet_lev,100,[],0,{evt_pet_lev,1151},1,0,[],[],[]}],0,0,0,0},{quest,631354,[],1,1,0,0,[{quest_progress,0,evt_oracle_treasure_boss_times,0,[],0,{evt_oracle_treasure_boss_times,1137},5,0,[],[],[]}],0,0,0,0},{quest,631351,[],1,1,0,0,[{quest_progress,0,evt_oracle_treasure_boss_wave,1,[],0,{evt_oracle_treasure_boss_wave,1136},1,0,[],[],[]}],0,0,0,0},{quest,631350,[],1,1,0,0,[{quest_progress,0,evt_oracle_treasure_offer_star,1,[],0,{evt_oracle_treasure_offer_star,1135},1,0,[],[],[]}],0,0,0,0},{quest,420111,[],1,1,0,0,[{quest_progress,0,evt_enchant,15,[],0,{evt_enchant,1106},8,0,[],[],[]}],0,0,0,0},{quest,630377,[],1,1,0,0,[{quest_progress,0,evt_constellation,77008,[{lev,14}],0,{evt_constellation,1104},14,0,[],[],[]}],0,0,0,0},{quest,630376,[],1,1,0,0,[{quest_progress,0,evt_constellation,77011,[{lev,14}],0,{evt_constellation,1103},14,0,[],[],[]}],0,0,0,0},{quest,630375,[],1,1,0,0,[{quest_progress,0,evt_constellation,77009,[{lev,14}],0,{evt_constellation,1102},14,0,[],[],[]}],0,0,0,0},{quest,630374,[],1,1,0,0,[{quest_progress,0,evt_constellation,77005,[{lev,14}],0,{evt_constellation,1101},14,0,[],[],[]}],0,0,0,0},{quest,630373,[],1,1,0,0,[{quest_progress,0,evt_constellation,77003,[{lev,14}],0,{evt_constellation,1100},14,0,[],[],[]}],0,0,0,0},{quest,630372,[],1,1,0,0,[{quest_progress,0,evt_constellation,77002,[{lev,14}],0,{evt_constellation,1099},14,0,[],[],[]}],0,0,0,0},{quest,630371,[],1,1,0,0,[{quest_progress,0,evt_constellation,77001,[{lev,14}],0,{evt_constellation,1098},14,0,[],[],[]}],0,0,0,0},{quest,661192,[],1,1,0,0,[{quest_progress,0,evt_kill_npc,85040,[],0,{evt_kill_npc,1097},5,0,[],[],[]}],0,0,0,0},{quest,661191,[],1,1,0,0,[{quest_progress,0,evt_kill_npc,85020,[],0,{evt_kill_npc,1096},5,0,[],[],[]}],0,0,0,0},{quest,661190,[],1,1,0,0,[{quest_progress,0,evt_kill_npc,85001,[],0,{evt_kill_npc,1095},5,0,[],[],[]}],0,0,0,0},{quest,120256,[],1,1,0,0,[{quest_progress,0,evt_skill_life_levup,10008,[],0,{evt_skill_life_levup,1094},100,0,[],[],[]}],0,0,0,0},{quest,120228,[],1,1,0,0,[{quest_progress,0,evt_skill_prac_levup,0,[{lev,22}],0,{evt_skill_prac_levup,1093},6,0,[],[],[]}],0,0,0,0},{quest,620167,[],1,1,0,0,[{quest_progress,0,evt_boss_first,71007,[],0,{evt_boss_first,1092},1,0,[],[],[]}],0,0,0,0},{quest,620166,[],1,1,0,0,[{quest_progress,0,evt_boss_first,71006,[],0,{evt_boss_first,1091},1,0,[],[],[]}],0,0,0,0},{quest,620165,[],1,1,0,0,[{quest_progress,0,evt_boss_first,71005,[],0,{evt_boss_first,1090},1,0,[],[],[]}],0,0,0,0},{quest,420110,[],1,1,0,0,[{quest_progress,0,evt_enchant,14,[],0,{evt_enchant,1089},8,0,[],[],[]}],0,0,0,0},{quest,661046,[],1,1,0,0,[{quest_progress,0,evt_mount_dye_diff,0,[{dye_id,2023}],0,{evt_mount_dye_diff,1088},3,0,[],[],[]}],0,0,0,0},{quest,661045,[],1,1,0,0,[{quest_progress,0,evt_mount_dye_diff,1,[{dye_id,2023}],0,{evt_mount_dye_diff,1087},1,0,[],[],[]}],0,0,0,0},{quest,310111,[],1,1,0,0,[{quest_progress,0,evt_guard,0,[],0,{evt_guard,1086},5,4,[],[],[]}],0,0,0,0},{quest,310103,[],1,1,0,0,[{quest_progress,0,evt_guard,1021,[],0,{evt_guard,930},1,0,[],[],[]}],0,0,0,0},{quest,640651,[],1,1,0,0,[{quest_progress,0,evt_mount_lev,0,[],0,{evt_mount_lev,929},15,0,[],[],[]}],0,0,0,0},{quest,640641,[],1,1,0,0,[{quest_progress,0,evt_mount_appearand,0,[],0,{evt_mount_appearand,928},1,0,[],[],[]}],0,0,0,0},{quest,640631,[],1,1,0,0,[{quest_progress,0,evt_mount_mange_pet,0,[],0,{evt_mount_mange_pet,927},1,0,[],[],[]}],0,0,0,0},{quest,640621,[],1,1,0,0,[{quest_progress,0,evt_mount_growth,0,[],0,{evt_mount_growth,926},6,0,[],[],[]}],0,0,0,0},{quest,640611,[],1,1,0,0,[{quest_progress,0,evt_own_mount,3,[],0,{evt_own_mount,925},1,0,[],[],[]}],0,0,0,0},{quest,640530,[],1,1,0,0,[{quest_progress,0,evt_achievement,0,[point],0,{evt_achievement,924},5200,201,[],[],[]}],0,0,0,0},{quest,630379,[],1,1,0,0,[{quest_progress,0,evt_achievement,0,[{id,630371}],0,{evt_achievement,917},1,0,[],[],[]},{quest_progress,1,evt_achievement,0,[{id,630372}],0,{evt_achievement,918},1,0,[],[],[]},{quest_progress,2,evt_achievement,0,[{id,630373}],0,{evt_achievement,919},1,0,[],[],[]},{quest_progress,3,evt_achievement,0,[{id,630374}],0,{evt_achievement,920},1,0,[],[],[]},{quest_progress,4,evt_achievement,0,[{id,630375}],0,{evt_achievement,921},1,0,[],[],[]},{quest_progress,5,evt_achievement,0,[{id,630376}],0,{evt_achievement,922},1,0,[],[],[]},{quest_progress,6,evt_achievement,0,[{id,630377}],0,{evt_achievement,923},1,0,[],[],[]}],0,0,0,0},{quest,630378,[],1,1,0,0,[{quest_progress,0,evt_achievement,0,[{id,630364}],0,{evt_achievement,910},1,0,[],[],[]},{quest_progress,1,evt_achievement,0,[{id,630365}],0,{evt_achievement,911},1,0,[],[],[]},{quest_progress,2,evt_achievement,0,[{id,630366}],0,{evt_achievement,912},1,0,[],[],[]},{quest_progress,3,evt_achievement,0,[{id,630367}],0,{evt_achievement,913},1,0,[],[],[]},{quest_progress,4,evt_achievement,0,[{id,630368}],0,{evt_achievement,914},1,0,[],[],[]},{quest_progress,5,evt_achievement,0,[{id,630369}],0,{evt_achievement,915},1,0,[],[],[]},{quest_progress,6,evt_achievement,0,[{id,630370}],0,{evt_achievement,916},1,0,[],[],[]}],0,0,0,0},{quest,630370,[],1,1,0,0,[{quest_progress,0,evt_constellation,77008,[{lev,13}],0,{evt_constellation,909},13,0,[],[],[]}],0,0,0,0},{quest,630369,[],1,1,0,0,[{quest_progress,0,evt_constellation,77011,[{lev,13}],0,{evt_constellation,908},13,0,[],[],[]}],0,0,0,0},{quest,630368,[],1,1,0,0,[{quest_progress,0,evt_constellation,77009,[{lev,13}],0,{evt_constellation,907},13,0,[],[],[]}],0,0,0,0},{quest,630367,[],1,1,0,0,[{quest_progress,0,evt_constellation,77005,[{lev,13}],0,{evt_constellation,906},13,0,[],[],[]}],0,0,0,0},{quest,630366,[],1,1,0,0,[{quest_progress,0,evt_constellation,77003,[{lev,13}],0,{evt_constellation,905},13,0,[],[],[]}],0,0,0,0},{quest,630365,[],1,1,0,0,[{quest_progress,0,evt_constellation,77002,[{lev,13}],0,{evt_constellation,904},13,0,[],[],[]}],0,0,0,0},{quest,630364,[],1,1,0,0,[{quest_progress,0,evt_constellation,77001,[{lev,13}],0,{evt_constellation,903},13,0,[],[],[]}],0,0,0,0},{quest,641091,[],1,1,0,0,[{quest_progress,0,evt_gods_duel_score,0,[],0,{evt_gods_duel_score,902},2500,0,[],[],[]}],0,0,0,0},{quest,641081,[],1,1,0,0,[{quest_progress,0,evt_gods_duel_score,0,[],0,{evt_gods_duel_score,901},2000,0,[],[],[]}],0,0,0,0},{quest,641071,[],1,1,0,0,[{quest_progress,0,evt_gods_duel_score,0,[],0,{evt_gods_duel_score,900},1600,0,[],[],[]}],0,0,0,0},{quest,641061,[],1,1,0,0,[{quest_progress,0,evt_gods_duel_score,0,[],0,{evt_gods_duel_score,899},1200,0,[],[],[]}],0,0,0,0},{quest,641051,[],1,1,0,0,[{quest_progress,0,evt_gods_duel_score,0,[],0,{evt_gods_duel_score,898},900,0,[],[],[]}],0,0,0,0},{quest,641041,[],1,1,0,0,[{quest_progress,0,evt_gods_duel_score,0,[],0,{evt_gods_duel_score,897},600,0,[],[],[]}],0,0,0,0},{quest,641031,[],1,1,0,0,[{quest_progress,0,evt_gods_duel_score,0,[],0,{evt_gods_duel_score,896},380,0,[],[],[]}],0,0,0,0},{quest,641021,[],1,1,0,0,[{quest_progress,0,evt_gods_duel_score,0,[],0,{evt_gods_duel_score,895},220,0,[],[],[]}],0,0,0,0},{quest,641011,[],1,1,0,0,[{quest_progress,0,evt_gods_duel_score,0,[],0,{evt_gods_duel_score,894},120,0,[],[],[]}],0,0,0,0},{quest,641001,[],1,1,0,0,[{quest_progress,0,evt_gods_duel_score,0,[],0,{evt_gods_duel_score,893},50,0,[],[],[]}],0,0,0,0},{quest,630405,[],1,1,0,0,[{quest_progress,0,evt_kill_npc,52091,[],0,{evt_kill_npc,892},1,0,[],[],[]}],0,0,0,0},{quest,661246,[],1,1,0,0,[{quest_progress,0,evt_canyon_summit_win,0,[],0,{evt_canyon_summit_win,891},1,0,[],[],[]}],0,0,0,0},{quest,661243,[],1,1,0,0,[{quest_progress,0,evt_canyon_summit_cannon,0,[],0,{evt_canyon_summit_cannon,890},1,0,[],[],[]}],0,0,0,0},{quest,661240,[],1,1,0,0,[{quest_progress,0,evt_canyon_summit_join,0,[],0,{evt_canyon_summit_join,889},1,0,[],[],[]}],0,0,0,0},{quest,661088,[],1,1,0,0,[{quest_progress,0,evt_kingbadge,241,[],0,{evt_kingbadge,888},1,0,[],[],[]}],0,0,0,0},{quest,661087,[],1,1,0,0,[{quest_progress,0,evt_kingbadge,240,[],0,{evt_kingbadge,887},1,0,[],[],[]}],0,0,0,0},{quest,661086,[],1,1,0,0,[{quest_progress,0,evt_kingbadge,239,[],0,{evt_kingbadge,886},1,0,[],[],[]}],0,0,0,0},{quest,661085,[],1,1,0,0,[{quest_progress,0,evt_kingbadge,238,[],0,{evt_kingbadge,885},1,0,[],[],[]}],0,0,0,0},{quest,661084,[],1,1,0,0,[{quest_progress,0,evt_kingbadge,237,[],0,{evt_kingbadge,884},1,0,[],[],[]}],0,0,0,0},{quest,661083,[],1,1,0,0,[{quest_progress,0,evt_kingbadge,236,[],0,{evt_kingbadge,883},1,0,[],[],[]}],0,0,0,0},{quest,661082,[],1,1,0,0,[{quest_progress,0,evt_kingbadge,235,[],0,{evt_kingbadge,882},1,0,[],[],[]}],0,0,0,0},{quest,661081,[],1,1,0,0,[{quest_progress,0,evt_kingbadge,234,[],0,{evt_kingbadge,881},1,0,[],[],[]}],0,0,0,0},{quest,661080,[],1,1,0,0,[{quest_progress,0,evt_kingbadge,233,[],0,{evt_kingbadge,880},1,0,[],[],[]}],0,0,0,0},{quest,640529,[],1,1,0,0,[{quest_progress,0,evt_achievement,0,[point],0,{evt_achievement,879},4500,201,[],[],[]}],0,0,0,0},{quest,639240,[],1,1,0,0,[{quest_progress,0,evt_tournament,0,[awesome_control],0,{evt_tournament,878},1,0,[],[],[]}],0,0,0,0},{quest,639230,[],1,1,0,0,[{quest_progress,0,evt_tournament,0,[awesome_heal],0,{evt_tournament,877},1,0,[],[],[]}],0,0,0,0},{quest,639220,[],1,1,0,0,[{quest_progress,0,evt_tournament,0,[mvp],0,{evt_tournament,876},1,0,[],[],[]}],0,0,0,0},{quest,639210,[],1,1,0,0,[{quest_progress,0,evt_tournament,0,[awesome_kill_num],0,{evt_tournament,875},5,0,[],[],[]}],0,0,0,0},{quest,639200,[],1,1,0,0,[{quest_progress,0,evt_tournament,0,[awesome_dmg],0,{evt_tournament,874},3,0,[],[],[]}],0,0,0,0},{quest,639190,[],1,1,0,0,[{quest_progress,0,evt_tournament,0,[awesome_kill],0,{evt_tournament,873},1,0,[],[],[]}],0,0,0,0},{quest,639180,[],1,1,0,0,[{quest_progress,0,evt_tournament,0,[liked],0,{evt_tournament,872},10,0,[],[],[]}],0,0,0,0},{quest,639170,[],1,1,0,0,[{quest_progress,0,evt_tournament,0,[win_count],0,{evt_tournament,871},10,0,[],[],[]}],0,0,0,0},{quest,639167,[],1,1,0,0,[{quest_progress,0,evt_tournament,0,[rank_lev],0,{evt_tournament,870},11,1,[],[],[]}],0,0,0,0},{quest,639166,[],1,1,0,0,[{quest_progress,0,evt_tournament,0,[rank_lev],0,{evt_tournament,869},10,1,[],[],[]}],0,0,0,0},{quest,639165,[],1,1,0,0,[{quest_progress,0,evt_tournament,0,[rank_lev],0,{evt_tournament,868},9,1,[],[],[]}],0,0,0,0},{quest,639164,[],1,1,0,0,[{quest_progress,0,evt_tournament,0,[rank_lev],0,{evt_tournament,867},8,1,[],[],[]}],0,0,0,0},{quest,639163,[],1,1,0,0,[{quest_progress,0,evt_tournament,0,[rank_lev],0,{evt_tournament,866},7,1,[],[],[]}],0,0,0,0},{quest,639162,[],1,1,0,0,[{quest_progress,0,evt_tournament,0,[rank_lev],0,{evt_tournament,865},6,1,[],[],[]}],0,0,0,0},{quest,639161,[],1,1,0,0,[{quest_progress,0,evt_tournament,0,[rank_lev],0,{evt_tournament,864},5,1,[],[],[]}],0,0,0,0},{quest,631132,[],1,1,0,0,[{quest_progress,0,evt_honor,30122,[],0,{evt_honor,863},1,0,[],[],[]}],0,0,0,0},{quest,631131,[],1,1,0,0,[{quest_progress,0,evt_honor,30121,[],0,{evt_honor,862},1,0,[],[],[]}],0,0,0,0},{quest,631130,[],1,1,0,0,[{quest_progress,0,evt_honor,30120,[],0,{evt_honor,861},1,0,[],[],[]}],0,0,0,0},{quest,631120,[],1,1,0,0,[{quest_progress,0,evt_guild_league_win,0,[],0,{evt_guild_league_win,860},1,0,[],[],[]}],0,0,0,0},{quest,631110,[],1,1,0,0,[{quest_progress,0,evt_guild_league_cannon,0,[],0,{evt_guild_league_cannon,859},1,0,[],[],[]}],0,0,0,0},{quest,631100,[],1,1,0,0,[{quest_progress,0,evt_guild_league_join,0,[],0,{evt_guild_league_join,858},1,0,[],[],[]}],0,0,0,0},{quest,630414,[],1,1,0,0,[{quest_progress,0,evt_dun_first,10085,[9],0,{evt_dun_first,857},1,0,[],[],[]}],0,0,0,0},{quest,630413,[],1,1,0,0,[{quest_progress,0,evt_dun_first,10085,[8],0,{evt_dun_first,856},1,0,[],[],[]}],0,0,0,0},{quest,630412,[],1,1,0,0,[{quest_progress,0,evt_dun_first,10085,[7],0,{evt_dun_first,855},1,0,[],[],[]}],0,0,0,0},{quest,630411,[],1,1,0,0,[{quest_progress,0,evt_dun_first,10085,[6],0,{evt_dun_first,854},1,0,[],[],[]}],0,0,0,0},{quest,630410,[],1,1,0,0,[{quest_progress,0,evt_dun_first,10085,[5],0,{evt_dun_first,853},1,0,[],[],[]}],0,0,0,0},{quest,630404,[],1,1,0,0,[{quest_progress,0,evt_kill_npc,52081,[],0,{evt_kill_npc,852},1,0,[],[],[]}],0,0,0,0},{quest,630363,[],1,1,0,0,[{quest_progress,0,evt_constellation_first,14,[],0,{evt_constellation_first,851},1,0,[],[],[]}],0,0,0,0},{quest,620212,[],1,1,0,0,[{quest_progress,0,endless_challenge_card,0,[],0,{endless_challenge_card,850},100,0,[],[],[]}],0,0,0,0},{quest,620211,[],1,1,0,0,[{quest_progress,0,endless_challenge_card,0,[],0,{endless_challenge_card,849},20,0,[],[],[]}],0,0,0,0},{quest,620210,[],1,1,0,0,[{quest_progress,0,endless_challenge_card,0,[],0,{endless_challenge_card,848},5,0,[],[],[]}],0,0,0,0},{quest,620205,[],1,1,0,0,[{quest_progress,0,endless_challenge_cross,0,[],0,{endless_challenge_cross,847},32,0,[],[],[]}],0,0,0,0},{quest,620204,[],1,1,0,0,[{quest_progress,0,endless_challenge_cross,0,[],0,{endless_challenge_cross,846},28,0,[],[],[]}],0,0,0,0},{quest,620203,[],1,1,0,0,[{quest_progress,0,endless_challenge_cross,0,[],0,{endless_challenge_cross,845},24,0,[],[],[]}],0,0,0,0},{quest,620202,[],1,1,0,0,[{quest_progress,0,endless_challenge_cross,0,[],0,{endless_challenge_cross,844},20,0,[],[],[]}],0,0,0,0},{quest,620201,[],1,1,0,0,[{quest_progress,0,endless_challenge_cross,0,[],0,{endless_challenge_cross,843},16,0,[],[],[]}],0,0,0,0},{quest,639160,[],1,1,0,0,[{quest_progress,0,evt_tournament,0,[rank_lev],0,{evt_tournament,842},4,1,[],[],[]}],0,0,0,0},{quest,630409,[],1,1,0,0,[{quest_progress,0,evt_dun_first,10085,[4],0,{evt_dun_first,841},1,0,[],[],[]}],0,0,0,0},{quest,630401,[],1,1,0,0,[{quest_progress,0,evt_kill_npc,52031,[],0,{evt_kill_npc,840},1,0,[],[],[]}],0,0,0,0},{quest,620164,[],1,1,0,0,[{quest_progress,0,evt_boss_first,71004,[],0,{evt_boss_first,839},1,0,[],[],[]}],0,0,0,0},{quest,420109,[],1,1,0,0,[{quest_progress,0,evt_enchant,13,[],0,{evt_enchant,838},8,0,[],[],[]}],0,0,0,0},{quest,420108,[],1,1,0,0,[{quest_progress,0,evt_enchant,12,[],0,{evt_enchant,837},8,0,[],[],[]}],0,0,0,0},{quest,420107,[],1,1,0,0,[{quest_progress,0,evt_enchant,12,[],0,{evt_enchant,836},1,0,[],[],[]}],0,0,0,0},{quest,310102,[],1,1,0,0,[{quest_progress,0,evt_guard,1006,[],0,{evt_guard,835},1,0,[],[],[]}],0,0,0,0},{quest,640528,[],1,1,0,0,[{quest_progress,0,evt_achievement,0,[point],0,{evt_achievement,834},3800,201,[],[],[]}],0,0,0,0},{quest,631456,[],1,1,0,0,[{quest_progress,0,evt_guild_dragon_rank,1,[{rank,1}],0,{evt_guild_dragon_rank,833},1,0,[],[],[]}],0,0,0,0},{quest,631453,[],1,1,0,0,[{quest_progress,0,evt_guild_dragon_total_point,0,[],0,{evt_guild_dragon_total_point,832},10000,0,[],[],[]}],0,0,0,0},{quest,631450,[],1,1,0,0,[{quest_progress,0,evt_guild_dragon_times,0,[],0,{evt_guild_dragon_times,831},1,0,[],[],[]}],0,0,0,0},{quest,631401,[],1,1,0,0,[{quest_progress,0,evt_exquisite_shelf_wave,6,[],0,{evt_exquisite_shelf_wave,830},1,0,[],[],[]}],0,0,0,0},{quest,631400,[],1,1,0,0,[{quest_progress,0,evt_exquisite_shelf_wave,9,[],0,{evt_exquisite_shelf_wave,829},1,0,[],[],[]}],0,0,0,0},{quest,631308,[],1,1,0,0,[{quest_progress,0,evt_spirit_treasure_boss_wave,3,[],0,{evt_spirit_treasure_boss_wave,828},30,0,[],[],[]}],0,0,0,0},{quest,631304,[],1,1,0,0,[{quest_progress,0,evt_spirit_treasure_offer_star,5,[],0,{evt_spirit_treasure_offer_star,827},1,0,[],[],[]}],0,0,0,0},{quest,631303,[],1,1,0,0,[{quest_progress,0,evt_spirit_treasure_offer_star,3,[],0,{evt_spirit_treasure_offer_star,826},1,0,[],[],[]}],0,0,0,0},{quest,631302,[],1,1,0,0,[{quest_progress,0,evt_spirit_treasure_first_kill,0,[],0,{evt_spirit_treasure_first_kill,825},1,0,[],[],[]}],0,0,0,0},{quest,631300,[],1,1,0,0,[{quest_progress,0,evt_spirit_treasure_offer_star,1,[],0,{evt_spirit_treasure_offer_star,824},1,0,[],[],[]}],0,0,0,0},{quest,620200,[],1,1,0,0,[{quest_progress,0,endless_challenge_cross,0,[],0,{endless_challenge_cross,823},12,0,[],[],[]}],0,0,0,0},{quest,630322,[],1,1,0,0,[{quest_progress,0,evt_constellation,0,[],0,{evt_constellation,822},12,0,[],[],[]}],0,0,0,0},{quest,661219,[],1,1,0,0,[{quest_progress,0,evt_stars_trial_combat,0,[after_die_done],0,{evt_stars_trial_combat,821},1,0,[],[],[]}],0,0,0,0},{quest,661218,[],1,1,0,0,[{quest_progress,0,evt_stars_trial_combat,15,[die_times],0,{evt_stars_trial_combat,820},1,0,[],[],[]}],0,0,0,0},{quest,661217,[],1,1,0,0,[{quest_progress,0,evt_stars_trial_combat,5,[{use_skill,120001}],0,{evt_stars_trial_combat,819},1,0,[],[],[]}],0,0,0,0},{quest,661216,[],1,1,0,0,[{quest_progress,0,evt_stars_trial_combat_round,5,[{kill_npc,[82501,82502,82503,82504,82505,82506,82507,82508,82509,82510,82511,82512,82513,82514,82515,82516,82517,82518]}],0,{evt_stars_trial_combat_round,818},1,0,[],[],[]}],0,0,0,0},{quest,661215,[],1,1,0,0,[{quest_progress,0,evt_stars_trial_combat_round,5,[{kill_npc,[82001,82002,82003,82004,82005,82006,82007,82008,82009,82010,82011,82012,82013,82014,82015,82016,82017,82018,82019,82020,82021,82022,82023,82024,82025,82026,82027,82028,82029,82030,82031,82032,82033,82034,82035,82036,82037,82038,82039,82040,82041,82042,82043,82044,82045,82046,82047,82048,82049]}],0,{evt_stars_trial_combat_round,817},1,0,[],[],[]}],0,0,0,0},{quest,661214,[],1,1,0,0,[{quest_progress,0,evt_stars_trial,1,[combat_formation],0,{evt_stars_trial,816},1,0,[],[],[]}],0,0,0,0},{quest,661213,[],1,1,0,0,[{quest_progress,0,evt_stars_trial,0,[pet_summon],0,{evt_stars_trial,815},1,0,[],[],[]}],0,0,0,0},{quest,661212,[],1,1,0,0,[{quest_progress,0,evt_stars_trial,5,[self_die],0,{evt_stars_trial,814},1,0,[],[],[]}],0,0,0,0},{quest,661211,[],1,1,0,0,[{quest_progress,0,evt_stars_trial,0,[use_item],0,{evt_stars_trial,813},1,0,[],[],[]}],0,0,0,0},{quest,661210,[],1,1,0,0,[{quest_progress,0,evt_stars_trial,10,[round],0,{evt_stars_trial,812},1,0,[],[],[]}],0,0,0,0},{quest,661209,[],1,1,0,0,[{quest_progress,0,evt_stars_trial,82001,[],0,{evt_stars_trial,763},1,0,[],[],[]},{quest_progress,1,evt_stars_trial,82002,[],0,{evt_stars_trial,764},1,0,[],[],[]},{quest_progress,2,evt_stars_trial,82003,[],0,{evt_stars_trial,765},1,0,[],[],[]},{quest_progress,3,evt_stars_trial,82004,[],0,{evt_stars_trial,766},1,0,[],[],[]},{quest_progress,4,evt_stars_trial,82005,[],0,{evt_stars_trial,767},1,0,[],[],[]},{quest_progress,5,evt_stars_trial,82006,[],0,{evt_stars_trial,768},1,0,[],[],[]},{quest_progress,6,evt_stars_trial,82007,[],0,{evt_stars_trial,769},1,0,[],[],[]},{quest_progress,7,evt_stars_trial,82008,[],0,{evt_stars_trial,770},1,0,[],[],[]},{quest_progress,8,evt_stars_trial,82009,[],0,{evt_stars_trial,771},1,0,[],[],[]},{quest_progress,9,evt_stars_trial,82010,[],0,{evt_stars_trial,772},1,0,[],[],[]},{quest_progress,10,evt_stars_trial,82011,[],0,{evt_stars_trial,773},1,0,[],[],[]},{quest_progress,11,evt_stars_trial,82012,[],0,{evt_stars_trial,774},1,0,[],[],[]},{quest_progress,12,evt_stars_trial,82013,[],0,{evt_stars_trial,775},1,0,[],[],[]},{quest_progress,13,evt_stars_trial,82014,[],0,{evt_stars_trial,776},1,0,[],[],[]},{quest_progress,14,evt_stars_trial,82015,[],0,{evt_stars_trial,777},1,0,[],[],[]},{quest_progress,15,evt_stars_trial,82016,[],0,{evt_stars_trial,778},1,0,[],[],[]},{quest_progress,16,evt_stars_trial,82017,[],0,{evt_stars_trial,779},1,0,[],[],[]},{quest_progress,17,evt_stars_trial,82018,[],0,{evt_stars_trial,780},1,0,[],[],[]},{quest_progress,18,evt_stars_trial,82019,[],0,{evt_stars_trial,781},1,0,[],[],[]},{quest_progress,19,evt_stars_trial,82020,[],0,{evt_stars_trial,782},1,0,[],[],[]},{quest_progress,20,evt_stars_trial,82021,[],0,{evt_stars_trial,783},1,0,[],[],[]},{quest_progress,21,evt_stars_trial,82022,[],0,{evt_stars_trial,784},1,0,[],[],[]},{quest_progress,22,evt_stars_trial,82023,[],0,{evt_stars_trial,785},1,0,[],[],[]},{quest_progress,23,evt_stars_trial,82024,[],0,{evt_stars_trial,786},1,0,[],[],[]},{quest_progress,24,evt_stars_trial,82025,[],0,{evt_stars_trial,787},1,0,[],[],[]},{quest_progress,25,evt_stars_trial,82026,[],0,{evt_stars_trial,788},1,0,[],[],[]},{quest_progress,26,evt_stars_trial,82027,[],0,{evt_stars_trial,789},1,0,[],[],[]},{quest_progress,27,evt_stars_trial,82028,[],0,{evt_stars_trial,790},1,0,[],[],[]},{quest_progress,28,evt_stars_trial,82029,[],0,{evt_stars_trial,791},1,0,[],[],[]},{quest_progress,29,evt_stars_trial,82030,[],0,{evt_stars_trial,792},1,0,[],[],[]},{quest_progress,30,evt_stars_trial,82031,[],0,{evt_stars_trial,793},1,0,[],[],[]},{quest_progress,31,evt_stars_trial,82032,[],0,{evt_stars_trial,794},1,0,[],[],[]},{quest_progress,32,evt_stars_trial,82033,[],0,{evt_stars_trial,795},1,0,[],[],[]},{quest_progress,33,evt_stars_trial,82034,[],0,{evt_stars_trial,796},1,0,[],[],[]},{quest_progress,34,evt_stars_trial,82035,[],0,{evt_stars_trial,797},1,0,[],[],[]},{quest_progress,35,evt_stars_trial,82036,[],0,{evt_stars_trial,798},1,0,[],[],[]},{quest_progress,36,evt_stars_trial,82037,[],0,{evt_stars_trial,799},1,0,[],[],[]},{quest_progress,37,evt_stars_trial,82038,[],0,{evt_stars_trial,800},1,0,[],[],[]},{quest_progress,38,evt_stars_trial,82039,[],0,{evt_stars_trial,801},1,0,[],[],[]},{quest_progress,39,evt_stars_trial,82040,[],0,{evt_stars_trial,802},1,0,[],[],[]},{quest_progress,40,evt_stars_trial,82041,[],0,{evt_stars_trial,803},1,0,[],[],[]},{quest_progress,41,evt_stars_trial,82042,[],0,{evt_stars_trial,804},1,0,[],[],[]},{quest_progress,42,evt_stars_trial,82043,[],0,{evt_stars_trial,805},1,0,[],[],[]},{quest_progress,43,evt_stars_trial,82044,[],0,{evt_stars_trial,806},1,0,[],[],[]},{quest_progress,44,evt_stars_trial,82045,[],0,{evt_stars_trial,807},1,0,[],[],[]},{quest_progress,45,evt_stars_trial,82046,[],0,{evt_stars_trial,808},1,0,[],[],[]},{quest_progress,46,evt_stars_trial,82047,[],0,{evt_stars_trial,809},1,0,[],[],[]},{quest_progress,47,evt_stars_trial,82048,[],0,{evt_stars_trial,810},1,0,[],[],[]},{quest_progress,48,evt_stars_trial,82049,[],0,{evt_stars_trial,811},1,0,[],[],[]}],0,0,0,0},{quest,661208,[],1,1,0,0,[{quest_progress,0,evt_stars_trial,82043,[],0,{evt_stars_trial,756},1,0,[],[],[]},{quest_progress,1,evt_stars_trial,82044,[],0,{evt_stars_trial,757},1,0,[],[],[]},{quest_progress,2,evt_stars_trial,82045,[],0,{evt_stars_trial,758},1,0,[],[],[]},{quest_progress,3,evt_stars_trial,82046,[],0,{evt_stars_trial,759},1,0,[],[],[]},{quest_progress,4,evt_stars_trial,82047,[],0,{evt_stars_trial,760},1,0,[],[],[]},{quest_progress,5,evt_stars_trial,82048,[],0,{evt_stars_trial,761},1,0,[],[],[]},{quest_progress,6,evt_stars_trial,82049,[],0,{evt_stars_trial,762},1,0,[],[],[]}],0,0,0,0},{quest,661207,[],1,1,0,0,[{quest_progress,0,evt_stars_trial,82036,[],0,{evt_stars_trial,749},1,0,[],[],[]},{quest_progress,1,evt_stars_trial,82037,[],0,{evt_stars_trial,750},1,0,[],[],[]},{quest_progress,2,evt_stars_trial,82038,[],0,{evt_stars_trial,751},1,0,[],[],[]},{quest_progress,3,evt_stars_trial,82039,[],0,{evt_stars_trial,752},1,0,[],[],[]},{quest_progress,4,evt_stars_trial,82040,[],0,{evt_stars_trial,753},1,0,[],[],[]},{quest_progress,5,evt_stars_trial,82041,[],0,{evt_stars_trial,754},1,0,[],[],[]},{quest_progress,6,evt_stars_trial,82042,[],0,{evt_stars_trial,755},1,0,[],[],[]}],0,0,0,0},{quest,661206,[],1,1,0,0,[{quest_progress,0,evt_stars_trial,82029,[],0,{evt_stars_trial,742},1,0,[],[],[]},{quest_progress,1,evt_stars_trial,82030,[],0,{evt_stars_trial,743},1,0,[],[],[]},{quest_progress,2,evt_stars_trial,82031,[],0,{evt_stars_trial,744},1,0,[],[],[]},{quest_progress,3,evt_stars_trial,82032,[],0,{evt_stars_trial,745},1,0,[],[],[]},{quest_progress,4,evt_stars_trial,82033,[],0,{evt_stars_trial,746},1,0,[],[],[]},{quest_progress,5,evt_stars_trial,82034,[],0,{evt_stars_trial,747},1,0,[],[],[]},{quest_progress,6,evt_stars_trial,82035,[],0,{evt_stars_trial,748},1,0,[],[],[]}],0,0,0,0},{quest,661205,[],1,1,0,0,[{quest_progress,0,evt_stars_trial,82022,[],0,{evt_stars_trial,735},1,0,[],[],[]},{quest_progress,1,evt_stars_trial,82023,[],0,{evt_stars_trial,736},1,0,[],[],[]},{quest_progress,2,evt_stars_trial,82024,[],0,{evt_stars_trial,737},1,0,[],[],[]},{quest_progress,3,evt_stars_trial,82025,[],0,{evt_stars_trial,738},1,0,[],[],[]},{quest_progress,4,evt_stars_trial,82026,[],0,{evt_stars_trial,739},1,0,[],[],[]},{quest_progress,5,evt_stars_trial,82027,[],0,{evt_stars_trial,740},1,0,[],[],[]},{quest_progress,6,evt_stars_trial,82028,[],0,{evt_stars_trial,741},1,0,[],[],[]}],0,0,0,0},{quest,661204,[],1,1,0,0,[{quest_progress,0,evt_stars_trial,82015,[],0,{evt_stars_trial,728},1,0,[],[],[]},{quest_progress,1,evt_stars_trial,82016,[],0,{evt_stars_trial,729},1,0,[],[],[]},{quest_progress,2,evt_stars_trial,82017,[],0,{evt_stars_trial,730},1,0,[],[],[]},{quest_progress,3,evt_stars_trial,82018,[],0,{evt_stars_trial,731},1,0,[],[],[]},{quest_progress,4,evt_stars_trial,82019,[],0,{evt_stars_trial,732},1,0,[],[],[]},{quest_progress,5,evt_stars_trial,82020,[],0,{evt_stars_trial,733},1,0,[],[],[]},{quest_progress,6,evt_stars_trial,82021,[],0,{evt_stars_trial,734},1,0,[],[],[]}],0,0,0,0},{quest,661203,[],1,1,0,0,[{quest_progress,0,evt_stars_trial,82008,[],0,{evt_stars_trial,721},1,0,[],[],[]},{quest_progress,1,evt_stars_trial,82009,[],0,{evt_stars_trial,722},1,0,[],[],[]},{quest_progress,2,evt_stars_trial,82010,[],0,{evt_stars_trial,723},1,0,[],[],[]},{quest_progress,3,evt_stars_trial,82011,[],0,{evt_stars_trial,724},1,0,[],[],[]},{quest_progress,4,evt_stars_trial,82012,[],0,{evt_stars_trial,725},1,0,[],[],[]},{quest_progress,5,evt_stars_trial,82013,[],0,{evt_stars_trial,726},1,0,[],[],[]},{quest_progress,6,evt_stars_trial,82014,[],0,{evt_stars_trial,727},1,0,[],[],[]}],0,0,0,0},{quest,661202,[],1,1,0,0,[{quest_progress,0,evt_stars_trial,82001,[],0,{evt_stars_trial,714},1,0,[],[],[]},{quest_progress,1,evt_stars_trial,82002,[],0,{evt_stars_trial,715},1,0,[],[],[]},{quest_progress,2,evt_stars_trial,82003,[],0,{evt_stars_trial,716},1,0,[],[],[]},{quest_progress,3,evt_stars_trial,82004,[],0,{evt_stars_trial,717},1,0,[],[],[]},{quest_progress,4,evt_stars_trial,82005,[],0,{evt_stars_trial,718},1,0,[],[],[]},{quest_progress,5,evt_stars_trial,82006,[],0,{evt_stars_trial,719},1,0,[],[],[]},{quest_progress,6,evt_stars_trial,82007,[],0,{evt_stars_trial,720},1,0,[],[],[]}],0,0,0,0},{quest,661201,[],1,1,0,0,[{quest_progress,0,evt_stars_trial,0,[],0,{evt_stars_trial,713},1,0,[],[],[]}],0,0,0,0},{quest,651010,[],1,1,0,0,[{quest_progress,0,evt_guild_siege_combat,0,[win],0,{evt_guild_siege_combat,712},1,0,[],[],[]}],0,0,0,0},{quest,651001,[],1,1,0,0,[{quest_progress,0,evt_guild_siege_combat,0,[star],0,{evt_guild_siege_combat,711},10,0,[],[],[]}],0,0,0,0},{quest,640527,[],1,1,0,0,[{quest_progress,0,evt_achievement,0,[point],0,{evt_achievement,710},3200,201,[],[],[]}],0,0,0,0},{quest,640320,[],1,1,0,0,[{quest_progress,0,evt_use_fruit_limit,21388,[],0,{evt_use_fruit_limit,705},1,0,[],[],[]},{quest_progress,1,evt_use_fruit_limit,21389,[],0,{evt_use_fruit_limit,706},1,0,[],[],[]},{quest_progress,2,evt_use_fruit_limit,21390,[],0,{evt_use_fruit_limit,707},1,0,[],[],[]},{quest_progress,3,evt_use_fruit_limit,21391,[],0,{evt_use_fruit_limit,708},1,0,[],[],[]},{quest_progress,4,evt_use_fruit_limit,21392,[],0,{evt_use_fruit_limit,709},1,0,[],[],[]}],0,0,0,0},{quest,630362,[],1,1,0,0,[{quest_progress,0,evt_constellation_first,13,[],0,{evt_constellation_first,704},1,0,[],[],[]}],0,0,0,0},{quest,630361,[],1,1,0,0,[{quest_progress,0,evt_constellation,77008,[{lev,12}],0,{evt_constellation,703},12,0,[],[],[]}],0,0,0,0},{quest,630358,[],1,1,0,0,[{quest_progress,0,evt_constellation,77011,[{lev,12}],0,{evt_constellation,702},12,0,[],[],[]}],0,0,0,0},{quest,630355,[],1,1,0,0,[{quest_progress,0,evt_constellation,77009,[{lev,12}],0,{evt_constellation,701},12,0,[],[],[]}],0,0,0,0},{quest,630352,[],1,1,0,0,[{quest_progress,0,evt_constellation,77005,[{lev,12}],0,{evt_constellation,700},12,0,[],[],[]}],0,0,0,0},{quest,630349,[],1,1,0,0,[{quest_progress,0,evt_constellation,77003,[{lev,12}],0,{evt_constellation,699},12,0,[],[],[]}],0,0,0,0},{quest,630346,[],1,1,0,0,[{quest_progress,0,evt_constellation,77002,[{lev,12}],0,{evt_constellation,698},12,0,[],[],[]}],0,0,0,0},{quest,630343,[],1,1,0,0,[{quest_progress,0,evt_constellation,77001,[{lev,12}],0,{evt_constellation,697},12,0,[],[],[]}],0,0,0,0},{quest,240061,[],1,1,0,0,[{quest_progress,0,evt_child_eat,0,[23830,23831],0,{evt_child_eat,696},10,0,[],[],[]}],0,0,0,0},{quest,240051,[],1,1,0,0,[{quest_progress,0,evt_child_info,0,[talent_skill_sum_lev],0,{evt_child_info,695},8,0,[],[],[]}],0,0,0,0},{quest,240041,[],1,1,0,0,[{quest_progress,0,evt_child_info,0,[talent_skill_max_lev],0,{evt_child_info,694},5,0,[],[],[]}],0,0,0,0},{quest,240031,[],1,1,0,0,[{quest_progress,0,evt_child_info,0,[skill_num],0,{evt_child_info,693},9,0,[],[],[]}],0,0,0,0},{quest,240021,[],1,1,0,0,[{quest_progress,0,evt_child_info,0,[{growth_num,5}],0,{evt_child_info,692},1,0,[],[],[]}],0,0,0,0},{quest,240011,[],1,1,0,0,[{quest_progress,0,evt_child_grow,3,[],0,{evt_child_grow,691},1,0,[],[],[]}],0,0,0,0},{quest,240001,[],1,1,0,0,[{quest_progress,0,evt_child_deliver,0,[],0,{evt_child_deliver,690},1,0,[],[],[]}],0,0,0,0},{quest,620163,[],1,1,0,0,[{quest_progress,0,evt_boss_first,71003,[],0,{evt_boss_first,689},1,0,[],[],[]}],0,0,0,0},{quest,430105,[],1,1,0,0,[{quest_progress,0,evt_blacksmith_embed_lev,10,[],0,{evt_blacksmith_embed_lev,688},16,0,[],[],[]}],0,0,0,0},{quest,330125,[],1,1,0,0,[{quest_progress,0,evt_combat_statistics,600,[{guard,4}],0,{evt_combat_statistics,687},1,0,[],[],[]}],0,0,0,0},{quest,620153,[],1,1,0,0,[{quest_progress,0,evt_kill_npc,71003,[],0,{evt_kill_npc,686},200,0,[],[],[]}],0,0,0,0},{quest,620103,[],1,1,0,0,[{quest_progress,0,evt_commit_quest,0,[{sec_type,3}],0,{evt_commit_quest,685},10000,0,[],[],[]}],0,0,0,0},{quest,310101,[],1,1,0,0,[{quest_progress,0,evt_guard,1013,[],0,{evt_guard,684},1,0,[],[],[]}],0,0,0,0},{quest,640050,[],1,1,0,0,[{quest_progress,0,evt_provocation_5v5,0,[],0,{evt_provocation_5v5,683},1,0,[],[],[]}],0,0,0,0},{quest,630340,[],1,1,0,0,[{quest_progress,0,evt_constellation_first,12,[],0,{evt_constellation_first,682},1,0,[],[],[]}],0,0,0,0},{quest,110131,[],1,1,0,0,[{quest_progress,0,evt_classes_modify_times,0,[],0,{evt_classes_modify_times,681},1,0,[],[],[]}],0,0,0,0},{quest,630339,[],1,1,0,0,[{quest_progress,0,evt_constellation_first,11,[],0,{evt_constellation_first,680},1,0,[],[],[]}],0,0,0,0},{quest,630120,[],1,1,0,0,[{quest_progress,0,evt_warrior_fight,1,[],0,{evt_warrior_fight,679},500,0,[],[],[]}],0,0,0,0},{quest,610213,[],1,1,0,0,[{quest_progress,0,evt_shipping_sail,0,[],0,{evt_shipping_sail,678},300,0,[],[],[]}],0,0,0,0},{quest,420105,[],1,1,0,0,[{quest_progress,0,evt_enchant,9,[],0,{evt_enchant,677},1,0,[],[],[]}],0,0,0,0},{quest,630338,[],1,1,0,0,[{quest_progress,0,evt_constellation_first,10,[],0,{evt_constellation_first,676},1,0,[],[],[]}],0,0,0,0},{quest,540340,[],1,1,0,0,[{quest_progress,0,evt_family_env,0,[],0,{evt_family_env,675},666,0,[],[],[]}],0,0,0,0},{quest,540335,[],1,1,0,0,[{quest_progress,0,evt_family_help_magic_beans,0,[],0,{evt_family_help_magic_beans,674},20,0,[],[],[]}],0,0,0,0},{quest,540332,[],1,1,0,0,[{quest_progress,0,evt_family_self_magic_beans,0,[],0,{evt_family_self_magic_beans,673},20,0,[],[],[]}],0,0,0,0},{quest,540325,[],1,1,0,0,[{quest_progress,0,evt_family,0,[],0,{evt_family,672},7,0,[],[],[]}],0,0,0,0},{quest,540324,[],1,1,0,0,[{quest_progress,0,evt_family,0,[],0,{evt_family,671},6,0,[],[],[]}],0,0,0,0},{quest,540323,[],1,1,0,0,[{quest_progress,0,evt_family,0,[],0,{evt_family,670},5,0,[],[],[]}],0,0,0,0},{quest,540322,[],1,1,0,0,[{quest_progress,0,evt_family,0,[],0,{evt_family,669},4,0,[],[],[]}],0,0,0,0},{quest,540321,[],1,1,0,0,[{quest_progress,0,evt_family,0,[],0,{evt_family,668},3,0,[],[],[]}],0,0,0,0},{quest,540320,[],1,1,0,0,[{quest_progress,0,evt_family,0,[],0,{evt_family,667},2,0,[],[],[]}],0,0,0,0},{quest,540319,[],1,1,0,0,[{quest_progress,0,evt_family,0,[],0,{evt_family,666},1,0,[],[],[]}],0,0,0,0},{quest,540316,[],1,1,0,0,[{quest_progress,0,evt_family_furnishing,14,[],0,{evt_family_furnishing,665},2,0,[],[],[]}],0,0,0,0},{quest,540313,[],1,1,0,0,[{quest_progress,0,evt_family_furnishing,1,[],0,{evt_family_furnishing,664},8,0,[],[],[]}],0,0,0,0},{quest,540310,[],1,1,0,0,[{quest_progress,0,evt_family_furnishing,8,[],0,{evt_family_furnishing,663},5,0,[],[],[]}],0,0,0,0},{quest,520323,[],1,1,0,0,[{quest_progress,0,evt_teacher_score_sum,0,[],0,{evt_teacher_score_sum,662},9000,0,[],[],[]}],0,0,0,0},{quest,630337,[],1,1,0,0,[{quest_progress,0,evt_constellation_first,9,[],0,{evt_constellation_first,661},1,0,[],[],[]}],0,0,0,0},{quest,610310,[],1,1,0,0,[{quest_progress,0,evt_commit_quest_chain,1,[],0,{evt_commit_quest_chain,660},2000,0,[],[],[]}],0,0,0,0},{quest,540307,[],1,1,0,0,[{quest_progress,0,evt_family_furnishing,6,[],0,{evt_family_furnishing,659},5,0,[],[],[]}],0,0,0,0},{quest,540304,[],1,1,0,0,[{quest_progress,0,evt_family_furnishing,0,[],0,{evt_family_furnishing,658},55,0,[],[],[]}],0,0,0,0},{quest,520322,[],1,1,0,0,[{quest_progress,0,evt_teacher_score_sum,0,[],0,{evt_teacher_score_sum,657},3000,0,[],[],[]}],0,0,0,0},{quest,420203,[],1,1,0,0,[{quest_progress,0,evt_blacksmith_enchant,0,[fail],0,{evt_blacksmith_enchant,656},1000,0,[],[],[]}],0,0,0,0},{quest,640526,[],1,1,0,0,[{quest_progress,0,evt_achievement,0,[point],0,{evt_achievement,655},2000,201,[],[],[]}],0,0,0,0},{quest,630336,[],1,1,0,0,[{quest_progress,0,evt_constellation_first,8,[],0,{evt_constellation_first,654},1,0,[],[],[]}],0,0,0,0},{quest,630321,[],1,1,0,0,[{quest_progress,0,evt_constellation,0,[],0,{evt_constellation,653},9,0,[],[],[]}],0,0,0,0},{quest,610605,[],1,1,0,0,[{quest_progress,0,evt_treasure_compass,0,[],0,{evt_treasure_compass,652},50,0,[],[],[]}],0,0,0,0},{quest,610320,[],1,1,0,0,[{quest_progress,0,evt_commit_quest_chain,4,[],0,{evt_commit_quest_chain,651},500,0,[],[],[]}],0,0,0,0},{quest,540303,[],1,1,0,0,[{quest_progress,0,evt_family_update,4,[],0,{evt_family_update,650},5,0,[],[],[]}],0,0,0,0},{quest,540302,[],1,1,0,0,[{quest_progress,0,evt_family_update,3,[],0,{evt_family_update,649},5,0,[],[],[]}],0,0,0,0},{quest,540301,[],1,1,0,0,[{quest_progress,0,evt_family_update,2,[],0,{evt_family_update,648},5,0,[],[],[]}],0,0,0,0},{quest,540300,[],1,1,0,0,[{quest_progress,0,evt_family_update,1,[],0,{evt_family_update,647},5,0,[],[],[]}],0,0,0,0},{quest,520321,[],1,1,0,0,[{quest_progress,0,evt_teacher_score_sum,0,[],0,{evt_teacher_score_sum,646},800,0,[],[],[]}],0,0,0,0},{quest,420202,[],1,1,0,0,[{quest_progress,0,evt_blacksmith_enchant,0,[fail],0,{evt_blacksmith_enchant,645},100,0,[],[],[]}],0,0,0,0},{quest,661230,[],1,1,0,0,[{quest_progress,0,evt_black_white_chess_lose_remain_one_color,0,[],0,{evt_black_white_chess_lose_remain_one_color,644},1,0,[],[],[]}],0,0,0,0},{quest,661229,[],1,1,0,0,[{quest_progress,0,evt_black_white_chess_win_remain_one_color,0,[],0,{evt_black_white_chess_win_remain_one_color,643},1,0,[],[],[]}],0,0,0,0},{quest,661228,[],1,1,0,0,[{quest_progress,0,evt_black_white_chess_more_than_ops_chess,30,[],0,{evt_black_white_chess_more_than_ops_chess,642},1,0,[],[],[]}],0,0,0,0},{quest,661227,[],1,1,0,0,[{quest_progress,0,evt_black_white_chess_more_than_ops_chess,64,[],0,{evt_black_white_chess_more_than_ops_chess,641},1,0,[],[],[]}],0,0,0,0},{quest,661226,[],1,1,0,0,[{quest_progress,0,evt_black_white_chess_draw_whitout_ask_draw,0,[],0,{evt_black_white_chess_draw_whitout_ask_draw,640},1,0,[],[],[]}],0,0,0,0},{quest,661225,[],1,1,0,0,[{quest_progress,0,evt_black_white_chess_lose,0,[],0,{evt_black_white_chess_lose,639},130,0,[],[],[]}],0,0,0,0},{quest,661223,[],1,1,0,0,[{quest_progress,0,evt_black_white_chess_win,0,[],0,{evt_black_white_chess_win,638},50,0,[],[],[]}],0,0,0,0},{quest,661220,[],1,1,0,0,[{quest_progress,0,evt_black_white_chess_change_in_round,5,[],0,{evt_black_white_chess_change_in_round,637},1,0,[],[],[]}],0,0,0,0},{quest,661071,[],1,1,0,0,[{quest_progress,0,evt_animal_chess_kill_coach,0,[],0,{evt_animal_chess_kill_coach,636},10,0,[],[],[]}],0,0,0,0},{quest,661070,[],1,1,0,0,[{quest_progress,0,evt_animal_chess_coach_killed,0,[],0,{evt_animal_chess_coach_killed,635},10,0,[],[],[]}],0,0,0,0},{quest,661067,[],1,1,0,0,[{quest_progress,0,evt_animal_chess_kill_soldier,0,[],0,{evt_animal_chess_kill_soldier,634},10,0,[],[],[]}],0,0,0,0},{quest,661064,[],1,1,0,0,[{quest_progress,0,evt_animal_chess_fail,0,[],0,{evt_animal_chess_fail,633},3,0,[],[],[]}],0,0,0,0},{quest,661061,[],1,1,0,0,[{quest_progress,0,evt_animal_chess_soldier,0,[],0,{evt_animal_chess_soldier,632},1,0,[],[],[]}],0,0,0,0},{quest,661058,[],1,1,0,0,[{quest_progress,0,evt_animal_chess_win,0,[],0,{evt_animal_chess_win,631},1,0,[],[],[]}],0,0,0,0},{quest,640319,[],1,1,0,0,[{quest_progress,0,evt_use_fruit_limit,21361,[],0,{evt_use_fruit_limit,624},1,0,[],[],[]},{quest_progress,1,evt_use_fruit_limit,21362,[],0,{evt_use_fruit_limit,625},1,0,[],[],[]},{quest_progress,2,evt_use_fruit_limit,21363,[],0,{evt_use_fruit_limit,626},1,0,[],[],[]},{quest_progress,3,evt_use_fruit_limit,21384,[],0,{evt_use_fruit_limit,627},1,0,[],[],[]},{quest_progress,4,evt_use_fruit_limit,21385,[],0,{evt_use_fruit_limit,628},1,0,[],[],[]},{quest_progress,5,evt_use_fruit_limit,21386,[],0,{evt_use_fruit_limit,629},1,0,[],[],[]},{quest_progress,6,evt_use_fruit_limit,21387,[],0,{evt_use_fruit_limit,630},1,0,[],[],[]}],0,0,0,0},{quest,640057,[],1,1,0,0,[{quest_progress,0,evt_provocation_duel_win,0,[],0,{evt_provocation_duel_win,623},20,0,[],[],[]}],0,0,0,0},{quest,640056,[],1,1,0,0,[{quest_progress,0,evt_provocation_duel_win,0,[],0,{evt_provocation_duel_win,622},5,0,[],[],[]}],0,0,0,0},{quest,640055,[],1,1,0,0,[{quest_progress,0,evt_provocation_duel_win,0,[],0,{evt_provocation_duel_win,621},1,0,[],[],[]}],0,0,0,0},{quest,630360,[],1,1,0,0,[{quest_progress,0,evt_constellation,77008,[{lev,9}],0,{evt_constellation,620},9,0,[],[],[]}],0,0,0,0},{quest,630357,[],1,1,0,0,[{quest_progress,0,evt_constellation,77011,[{lev,9}],0,{evt_constellation,619},9,0,[],[],[]}],0,0,0,0},{quest,630354,[],1,1,0,0,[{quest_progress,0,evt_constellation,77009,[{lev,9}],0,{evt_constellation,618},9,0,[],[],[]}],0,0,0,0},{quest,630351,[],1,1,0,0,[{quest_progress,0,evt_constellation,77005,[{lev,9}],0,{evt_constellation,617},9,0,[],[],[]}],0,0,0,0},{quest,630348,[],1,1,0,0,[{quest_progress,0,evt_constellation,77003,[{lev,9}],0,{evt_constellation,616},9,0,[],[],[]}],0,0,0,0},{quest,630345,[],1,1,0,0,[{quest_progress,0,evt_constellation,77002,[{lev,9}],0,{evt_constellation,615},9,0,[],[],[]}],0,0,0,0},{quest,630342,[],1,1,0,0,[{quest_progress,0,evt_constellation,77001,[{lev,9}],0,{evt_constellation,614},9,0,[],[],[]}],0,0,0,0},{quest,420220,[],1,1,0,0,[{quest_progress,0,evt_blacksmith_enchant,0,[luck_item],0,{evt_blacksmith_enchant,613},50,0,[],[],[]}],0,0,0,0},{quest,420103,[],1,1,0,0,[{quest_progress,0,evt_enchant,5,[],0,{evt_enchant,612},1,0,[],[],[]}],0,0,0,0},{quest,620162,[],1,1,0,0,[{quest_progress,0,evt_boss_first,71002,[],0,{evt_boss_first,611},1,0,[],[],[]}],0,0,0,0},{quest,520441,[],1,1,0,0,[{quest_progress,0,evt_sworn_skill,0,[],0,{evt_sworn_skill,610},1,0,[],[],[]}],0,0,0,0},{quest,520431,[],1,1,0,0,[{quest_progress,0,evt_sworn_defined_name,0,[],0,{evt_sworn_defined_name,609},1,0,[],[],[]}],0,0,0,0},{quest,520421,[],1,1,0,0,[{quest_progress,0,evt_sworn_name,0,[],0,{evt_sworn_name,608},1,0,[],[],[]}],0,0,0,0},{quest,520411,[],1,1,0,0,[{quest_progress,0,evt_sworn_invite,0,[],0,{evt_sworn_invite,607},1,0,[],[],[]}],0,0,0,0},{quest,520401,[],1,1,0,0,[{quest_progress,0,evt_sworn_finish,0,[],0,{evt_sworn_finish,606},1,0,[],[],[]}],0,0,0,0},{quest,520320,[],1,1,0,0,[{quest_progress,0,evt_teacher_score_sum,0,[],0,{evt_teacher_score_sum,605},300,0,[],[],[]}],0,0,0,0},{quest,420210,[],1,1,0,0,[{quest_progress,0,evt_enchant,0,[],0,{evt_enchant,604},20,8,[],[],[]}],0,0,0,0},{quest,420201,[],1,1,0,0,[{quest_progress,0,evt_blacksmith_enchant,0,[fail],0,{evt_blacksmith_enchant,603},1,0,[],[],[]}],0,0,0,0},{quest,420101,[],1,1,0,0,[{quest_progress,0,evt_enchant,3,[],0,{evt_enchant,602},1,0,[],[],[]}],0,0,0,0},{quest,320120,[],1,1,0,0,[{quest_progress,0,evt_guard_score,0,[],0,{evt_guard_score,601},600,439,[],[],[]}],0,0,0,0},{quest,620152,[],1,1,0,0,[{quest_progress,0,evt_kill_npc,71002,[],0,{evt_kill_npc,600},200,0,[],[],[]}],0,0,0,0},{quest,610301,[],1,1,0,0,[{quest_progress,0,evt_commit_quest,0,[{sec_type,14}],0,{evt_commit_quest,599},200,0,[],[],[]}],0,0,0,0},{quest,430101,[],1,1,0,0,[{quest_progress,0,evt_blacksmith_embed_lev,3,[],0,{evt_blacksmith_embed_lev,598},8,0,[],[],[]}],0,0,0,0},{quest,620115,[],1,1,0,0,[{quest_progress,0,evt_dungeon_pass,10150,[],0,{evt_dungeon_pass,597},10,0,[],[],[]}],0,0,0,0},{quest,430100,[],1,1,0,0,[{quest_progress,0,evt_blacksmith_embed_lev,1,[],0,{evt_blacksmith_embed_lev,596},8,0,[],[],[]}],0,0,0,0},{quest,530120,[],1,1,0,0,[{quest_progress,0,evt_lover_combat,1,[],0,{evt_lover_combat,595},9999,0,[],[],[]}],0,0,0,0},{quest,640203,[],1,1,0,0,[{quest_progress,0,evt_achievement,0,[point],0,{evt_achievement,594},2600,201,[],[],[]}],0,0,0,0},{quest,610515,[],1,1,0,0,[{quest_progress,0,evt_shipping_help,0,[],0,{evt_shipping_help,593},200,0,[],[],[]}],0,0,0,0},{quest,610401,[],1,1,0,0,[{quest_progress,0,evt_glory,0,[],0,{evt_glory,592},5,0,[],[],[]}],0,0,0,0},{quest,210101,[],1,1,0,0,[{quest_progress,0,evt_get_pet,0,[catch_num],0,{evt_get_pet,591},1,0,[],[],[]}],0,0,0,0},{quest,150135,[],1,1,0,0,[{quest_progress,0,evt_wing_lev,10,[],0,{evt_wing_lev,590},1,0,[],[],[]}],0,0,0,0},{quest,150134,[],1,1,0,0,[{quest_progress,0,evt_wing_lev,8,[],0,{evt_wing_lev,589},1,0,[],[],[]}],0,0,0,0},{quest,150105,[],1,1,0,0,[{quest_progress,0,evt_wing,0,[],0,{evt_wing,588},5,0,[],[],[]}],0,0,0,0},{quest,640525,[],1,1,0,0,[{quest_progress,0,evt_achievement,0,[point],0,{evt_achievement,587},1500,201,[],[],[]}],0,0,0,0},{quest,630335,[],1,1,0,0,[{quest_progress,0,evt_constellation_first,7,[],0,{evt_constellation_first,586},1,0,[],[],[]}],0,0,0,0},{quest,610212,[],1,1,0,0,[{quest_progress,0,evt_shipping_sail,0,[],0,{evt_shipping_sail,585},50,0,[],[],[]}],0,0,0,0},{quest,640524,[],1,1,0,0,[{quest_progress,0,evt_achievement,0,[point],0,{evt_achievement,583},1000,201,[],[],[]}],0,0,0,0},{quest,630334,[],1,1,0,0,[{quest_progress,0,evt_constellation_first,6,[],0,{evt_constellation_first,582},1,0,[],[],[]}],0,0,0,0},{quest,640523,[],1,1,0,0,[{quest_progress,0,evt_achievement,0,[point],0,{evt_achievement,581},800,201,[],[],[]}],0,0,0,0},{quest,640212,[],1,1,0,0,[{quest_progress,0,evt_gain_character,0,[],0,{evt_gain_character,580},99999,0,[],[],[]}],0,0,0,0},{quest,630333,[],1,1,0,0,[{quest_progress,0,evt_constellation_first,5,[],0,{evt_constellation_first,579},1,0,[],[],[]}],0,0,0,0},{quest,630320,[],1,1,0,0,[{quest_progress,0,evt_constellation,0,[],0,{evt_constellation,578},6,0,[],[],[]}],0,0,0,0},{quest,630106,[],1,1,0,0,[{quest_progress,0,evt_qualifying_combat_over,1,[],0,{evt_qualifying_combat_over,577},500,0,[],[],[]}],0,0,0,0},{quest,661279,[],1,1,0,0,[{quest_progress,0,evt_dragon_boat_cplt,600,[{camp_id,3006}],0,{evt_dragon_boat_cplt,576},1,0,[],[],[]}],0,0,0,0},{quest,661278,[],1,1,0,0,[{quest_progress,0,evt_dragon_boat_rank,1,[{camp_id,3006}],0,{evt_dragon_boat_rank,575},3,0,[],[],[]}],0,0,0,0},{quest,661277,[],1,1,0,0,[{quest_progress,0,evt_dragon_boat_rank,1,[{camp_id,3006}],0,{evt_dragon_boat_rank,574},1,0,[],[],[]}],0,0,0,0},{quest,661276,[],1,1,0,0,[{quest_progress,0,evt_dragon_boat_rank,10,[{camp_id,3006}],0,{evt_dragon_boat_rank,573},1,0,[],[],[]}],0,0,0,0},{quest,661275,[],1,1,0,0,[{quest_progress,0,evt_dragon_boat,0,[{camp_id,3006}],0,{evt_dragon_boat,572},5,0,[],[],[]}],0,0,0,0},{quest,661274,[],1,1,0,0,[{quest_progress,0,evt_dragon_boat,0,[{camp_id,3006}],0,{evt_dragon_boat,571},1,0,[],[],[]}],0,0,0,0},{quest,661097,[],1,1,0,0,[{quest_progress,0,evt_dragon_boat_cplt,600,[{camp_id,836}],0,{evt_dragon_boat_cplt,570},1,0,[],[],[]}],0,0,0,0},{quest,661096,[],1,1,0,0,[{quest_progress,0,evt_dragon_boat_rank,1,[{camp_id,836}],0,{evt_dragon_boat_rank,569},3,0,[],[],[]}],0,0,0,0},{quest,661095,[],1,1,0,0,[{quest_progress,0,evt_dragon_boat_rank,1,[{camp_id,836}],0,{evt_dragon_boat_rank,568},1,0,[],[],[]}],0,0,0,0},{quest,661094,[],1,1,0,0,[{quest_progress,0,evt_dragon_boat_rank,10,[{camp_id,836}],0,{evt_dragon_boat_rank,567},1,0,[],[],[]}],0,0,0,0},{quest,661093,[],1,1,0,0,[{quest_progress,0,evt_dragon_boat,0,[{camp_id,836}],0,{evt_dragon_boat,566},5,0,[],[],[]}],0,0,0,0},{quest,661092,[],1,1,0,0,[{quest_progress,0,evt_dragon_boat,0,[{camp_id,836}],0,{evt_dragon_boat,565},1,0,[],[],[]}],0,0,0,0},{quest,640380,[],1,1,0,0,[{quest_progress,0,evt_expression,0,[],0,{evt_expression,564},1,0,[],[],[]}],0,0,0,0},{quest,640318,[],1,1,0,0,[{quest_progress,0,evt_use_fruit_limit,21316,[],0,{evt_use_fruit_limit,554},1,0,[],[],[]},{quest_progress,1,evt_use_fruit_limit,21317,[],0,{evt_use_fruit_limit,555},1,0,[],[],[]},{quest_progress,2,evt_use_fruit_limit,21318,[],0,{evt_use_fruit_limit,556},1,0,[],[],[]},{quest_progress,3,evt_use_fruit_limit,21319,[],0,{evt_use_fruit_limit,557},1,0,[],[],[]},{quest_progress,4,evt_use_fruit_limit,21320,[],0,{evt_use_fruit_limit,558},1,0,[],[],[]},{quest_progress,5,evt_use_fruit_limit,21321,[],0,{evt_use_fruit_limit,559},1,0,[],[],[]},{quest_progress,6,evt_use_fruit_limit,21380,[],0,{evt_use_fruit_limit,560},1,0,[],[],[]},{quest_progress,7,evt_use_fruit_limit,21381,[],0,{evt_use_fruit_limit,561},1,0,[],[],[]},{quest_progress,8,evt_use_fruit_limit,21382,[],0,{evt_use_fruit_limit,562},1,0,[],[],[]},{quest_progress,9,evt_use_fruit_limit,21383,[],0,{evt_use_fruit_limit,563},1,0,[],[],[]}],0,0,0,0},{quest,630359,[],1,1,0,0,[{quest_progress,0,evt_constellation,77008,[{lev,6}],0,{evt_constellation,553},6,0,[],[],[]}],0,0,0,0},{quest,630356,[],1,1,0,0,[{quest_progress,0,evt_constellation,77011,[{lev,6}],0,{evt_constellation,552},6,0,[],[],[]}],0,0,0,0},{quest,630353,[],1,1,0,0,[{quest_progress,0,evt_constellation,77009,[{lev,6}],0,{evt_constellation,551},6,0,[],[],[]}],0,0,0,0},{quest,630350,[],1,1,0,0,[{quest_progress,0,evt_constellation,77005,[{lev,6}],0,{evt_constellation,550},6,0,[],[],[]}],0,0,0,0},{quest,630347,[],1,1,0,0,[{quest_progress,0,evt_constellation,77003,[{lev,6}],0,{evt_constellation,549},6,0,[],[],[]}],0,0,0,0},{quest,630344,[],1,1,0,0,[{quest_progress,0,evt_constellation,77002,[{lev,6}],0,{evt_constellation,548},6,0,[],[],[]}],0,0,0,0},{quest,630341,[],1,1,0,0,[{quest_progress,0,evt_constellation,77001,[{lev,6}],0,{evt_constellation,547},6,0,[],[],[]}],0,0,0,0},{quest,630323,[],1,1,0,0,[{quest_progress,0,evt_constellation,0,[],0,{evt_constellation,546},1,0,[],[],[]}],0,0,0,0},{quest,630132,[],1,1,0,0,[{quest_progress,0,evt_warrior_reward,0,[fail_flag],0,{evt_warrior_reward,545},10,0,[],[],[]}],0,0,0,0},{quest,630131,[],1,1,0,0,[{quest_progress,0,evt_warrior_reward,0,[win_flag],0,{evt_warrior_reward,544},10,0,[],[],[]}],0,0,0,0},{quest,530113,[],1,1,0,0,[{quest_progress,0,evt_wedding_day,0,[],0,{evt_wedding_day,543},30,0,[],[],[]}],0,0,0,0},{quest,639155,[],1,1,0,0,[{quest_progress,0,evt_achievement,0,[{id,639132}],0,{evt_achievement,540},1,0,[],[],[]},{quest_progress,1,evt_achievement,0,[{id,639142}],0,{evt_achievement,541},1,0,[],[],[]},{quest_progress,2,evt_achievement,0,[{id,639152}],0,{evt_achievement,542},1,0,[],[],[]}],0,0,0,0},{quest,630332,[],1,1,0,0,[{quest_progress,0,evt_constellation_first,4,[],0,{evt_constellation_first,539},1,0,[],[],[]}],0,0,0,0},{quest,630331,[],1,1,0,0,[{quest_progress,0,evt_constellation_first,3,[],0,{evt_constellation_first,538},1,0,[],[],[]}],0,0,0,0},{quest,630111,[],1,1,0,0,[{quest_progress,0,evt_warrior_reward,0,[score],0,{evt_warrior_reward,537},1000,0,[],[],[]}],0,0,0,0},{quest,630101,[],1,1,0,0,[{quest_progress,0,evt_qualifying_combat,0,[],0,{evt_qualifying_combat,536},10,0,[],[],[]}],0,0,0,0},{quest,620161,[],1,1,0,0,[{quest_progress,0,evt_boss_first,71001,[],0,{evt_boss_first,535},1,0,[],[],[]}],0,0,0,0},{quest,620141,[],1,1,0,0,[{quest_progress,0,evt_kill_npc,0,[{type,6}],0,{evt_kill_npc,534},10,0,[],[],[]}],0,0,0,0},{quest,620131,[],1,1,0,0,[{quest_progress,0,evt_tower,0,[],0,{evt_tower,533},50,0,[],[],[]}],0,0,0,0},{quest,620121,[],1,1,0,0,[{quest_progress,0,evt_tower_floor,0,[],0,{evt_tower_floor,532},1,0,[],[],[]}],0,0,0,0},{quest,520311,[],1,1,0,0,[{quest_progress,0,evt_friend_zone_photo,0,[],0,{evt_friend_zone_photo,531},1,0,[],[],[]}],0,0,0,0},{quest,630110,[],1,1,0,0,[{quest_progress,0,evt_warrior,0,[],0,{evt_warrior,530},1,0,[],[],[]}],0,0,0,0},{quest,630105,[],1,1,0,0,[{quest_progress,0,evt_qualifying,0,[day_win],0,{evt_qualifying,529},8,0,[],[],[]}],0,0,0,0},{quest,630001,[],1,1,0,0,[{quest_progress,0,evt_qualifying,0,[rank_point],0,{evt_qualifying,528},1050,1000,[],[],[]}],0,0,0,0},{quest,620151,[],1,1,0,0,[{quest_progress,0,evt_kill_npc,71001,[],0,{evt_kill_npc,527},200,0,[],[],[]}],0,0,0,0},{quest,120253,[],1,1,0,0,[{quest_progress,0,evt_skill_life_levup,10008,[],0,{evt_skill_life_levup,526},30,0,[],[],[]}],0,0,0,0},{quest,120250,[],1,1,0,0,[{quest_progress,0,evt_skill_life_levup,10006,[],0,{evt_skill_life_levup,525},40,0,[],[],[]}],0,0,0,0},{quest,120247,[],1,1,0,0,[{quest_progress,0,evt_skill_life_levup,10005,[],0,{evt_skill_life_levup,524},40,0,[],[],[]}],0,0,0,0},{quest,639150,[],1,1,0,0,[{quest_progress,0,evt_hide_seek_reward,0,[],0,{evt_hide_seek_reward,523},1,0,[],[],[]}],0,0,0,0},{quest,639140,[],1,1,0,0,[{quest_progress,0,evt_kill_npc,76653,[],0,{evt_kill_npc,522},3,0,[],[],[]}],0,0,0,0},{quest,639135,[],1,1,0,0,[{quest_progress,0,evt_camp_fruit_help,0,[],0,{evt_camp_fruit_help,521},5,0,[],[],[]}],0,0,0,0},{quest,639130,[],1,1,0,0,[{quest_progress,0,evt_camp_fruit_reward,0,[],0,{evt_camp_fruit_reward,520},1,0,[],[],[]}],0,0,0,0},{quest,610240,[],1,1,0,0,[{quest_progress,0,evt_trial,0,[count],0,{evt_trial,519},100,0,[],[],[]}],0,0,0,0},{quest,330130,[],1,1,0,0,[{quest_progress,0,evt_combat_statistics,0,[{guard,1}],0,{evt_combat_statistics,518},1000,2,[],[],[]}],0,0,0,0},{quest,640431,[],1,1,0,0,[{quest_progress,0,evt_roll,1,[],0,{evt_roll,517},1,0,[],[],[]}],0,0,0,0},{quest,640426,[],1,1,0,0,[{quest_progress,0,evt_roll,15,[reward],0,{evt_roll,516},1,0,[],[],[]}],0,0,0,0},{quest,640425,[],1,1,0,0,[{quest_progress,0,evt_roll,99,[no_reward],0,{evt_roll,515},1,0,[],[],[]}],0,0,0,0},{quest,640202,[],1,1,0,0,[{quest_progress,0,evt_achievement,0,[point],0,{evt_achievement,514},1800,201,[],[],[]}],0,0,0,0},{quest,640103,[],1,1,0,0,[{quest_progress,0,evt_alchemy_melt,200,[],0,{evt_alchemy_melt,513},1,0,[],[],[]}],0,0,0,0},{quest,640110,[],1,1,0,0,[{quest_progress,0,evt_alchemy_produce,0,[],0,{evt_alchemy_produce,512},50,0,[],[],[]}],0,0,0,0},{quest,640100,[],1,1,0,0,[{quest_progress,0,evt_alchemy_melt,0,[],0,{evt_alchemy_melt,511},100,0,[],[],[]}],0,0,0,0},{quest,661041,[],1,1,0,0,[{quest_progress,0,evt_maze_cat,0,[],0,{evt_maze_cat,510},1,0,[],[],[]}],0,0,0,0},{quest,661031,[],1,1,0,0,[{quest_progress,0,evt_maze_monkey,0,[],0,{evt_maze_monkey,509},1,0,[],[],[]}],0,0,0,0},{quest,661021,[],1,1,0,0,[{quest_progress,0,evt_maze_gold,0,[],0,{evt_maze_gold,508},2000,0,[],[],[]}],0,0,0,0},{quest,661011,[],1,1,0,0,[{quest_progress,0,evt_maze_monster,0,[],0,{evt_maze_monster,507},10,0,[],[],[]}],0,0,0,0},{quest,661001,[],1,1,0,0,[{quest_progress,0,evt_maze_sweep,0,[],0,{evt_maze_sweep,506},10,0,[],[],[]}],0,0,0,0},{quest,640410,[],1,1,0,0,[{quest_progress,0,evt_roll,100,[],0,{evt_roll,505},1,0,[],[],[]}],0,0,0,0},{quest,220315,[],1,1,0,0,[{quest_progress,0,evt_pet_skill,1,[one_count],0,{evt_pet_skill,504},7,3,[],[],[]}],0,0,0,0},{quest,150104,[],1,1,0,0,[{quest_progress,0,evt_wing,0,[],0,{evt_wing,502},4,0,[],[],[]}],0,0,0,0},{quest,610604,[],1,1,0,0,[{quest_progress,0,evt_treasure,20053,[],0,{evt_treasure,501},50,0,[],[],[]}],0,0,0,0},{quest,150111,[],1,1,0,0,[{quest_progress,0,evt_wing,0,[{growth,5}],0,{evt_wing,500},4,0,[],[],[]}],0,0,0,0},{quest,610211,[],1,1,0,0,[{quest_progress,0,evt_shipping_sail,0,[],0,{evt_shipping_sail,499},5,0,[],[],[]}],0,0,0,0},{quest,450102,[],1,1,0,0,[{quest_progress,0,evt_fuse,20512,[],0,{evt_fuse,498},1,0,[],[],[]}],0,0,0,0},{quest,640522,[],1,1,0,0,[{quest_progress,0,evt_achievement,0,[point],0,{evt_achievement,497},600,201,[],[],[]}],0,0,0,0},{quest,640211,[],1,1,0,0,[{quest_progress,0,evt_gain_character,0,[],0,{evt_gain_character,496},6000,0,[],[],[]}],0,0,0,0},{quest,610510,[],1,1,0,0,[{quest_progress,0,evt_shipping_commit,0,[helped],0,{evt_shipping_commit,495},20,0,[],[],[]}],0,0,0,0},{quest,610201,[],1,1,0,0,[{quest_progress,0,evt_arena_fight,0,[],0,{evt_arena_fight,494},50,0,[],[],[]}],0,0,0,0},{quest,540101,[],1,1,0,0,[{quest_progress,0,evt_friend_zone_liked,0,[],0,{evt_friend_zone_liked,493},999,0,[],[],[]}],0,0,0,0},{quest,450101,[],1,1,0,0,[{quest_progress,0,evt_fuse,20511,[],0,{evt_fuse,492},1,0,[],[],[]}],0,0,0,0},{quest,149039,[],1,1,0,0,[{quest_progress,0,evt_formation_lev,8,[formation],0,{evt_formation_lev,491},1,0,[],[],[]}],0,0,0,0},{quest,149034,[],1,1,0,0,[{quest_progress,0,evt_formation_lev,7,[formation],0,{evt_formation_lev,490},1,0,[],[],[]}],0,0,0,0},{quest,149029,[],1,1,0,0,[{quest_progress,0,evt_formation_lev,6,[formation],0,{evt_formation_lev,489},1,0,[],[],[]}],0,0,0,0},{quest,149024,[],1,1,0,0,[{quest_progress,0,evt_formation_lev,5,[formation],0,{evt_formation_lev,488},1,0,[],[],[]}],0,0,0,0},{quest,149019,[],1,1,0,0,[{quest_progress,0,evt_formation_lev,4,[formation],0,{evt_formation_lev,487},1,0,[],[],[]}],0,0,0,0},{quest,149014,[],1,1,0,0,[{quest_progress,0,evt_formation_lev,3,[formation],0,{evt_formation_lev,486},1,0,[],[],[]}],0,0,0,0},{quest,149009,[],1,1,0,0,[{quest_progress,0,evt_formation_lev,2,[formation],0,{evt_formation_lev,485},1,0,[],[],[]}],0,0,0,0},{quest,140230,[],1,1,0,0,[{quest_progress,0,evt_combat_statistics,0,[use_item],0,{evt_combat_statistics,484},2000,0,[],[],[]}],0,0,0,0},{quest,120301,[],1,1,0,0,[{quest_progress,0,evt_skill_life_produce,21400,[],0,{evt_skill_life_produce,483},1000,0,[],[],[]}],0,0,0,0},{quest,661272,[],1,1,0,0,[{quest_progress,0,evt_truth_dare_one_shot,0,[],0,{evt_truth_dare_one_shot,482},1,0,[],[],[]}],0,0,0,0},{quest,661271,[],1,1,0,0,[{quest_progress,0,evt_truth_dare_two_fail,0,[],0,{evt_truth_dare_two_fail,481},1,0,[],[],[]}],0,0,0,0},{quest,661268,[],1,1,0,0,[{quest_progress,0,evt_truth_dare_end,3,[],0,{evt_truth_dare_end,480},1,0,[],[],[]}],0,0,0,0},{quest,661265,[],1,1,0,0,[{quest_progress,0,evt_truth_dare_end,2,[],0,{evt_truth_dare_end,479},1,0,[],[],[]}],0,0,0,0},{quest,661262,[],1,1,0,0,[{quest_progress,0,evt_truth_dare_end,1,[],0,{evt_truth_dare_end,478},1,0,[],[],[]}],0,0,0,0},{quest,661259,[],1,1,0,0,[{quest_progress,0,evt_truth_dare_lucky_choose,2,[],0,{evt_truth_dare_lucky_choose,477},1,0,[],[],[]}],0,0,0,0},{quest,661256,[],1,1,0,0,[{quest_progress,0,evt_truth_dare_lucky_choose,1,[],0,{evt_truth_dare_lucky_choose,476},1,0,[],[],[]}],0,0,0,0},{quest,661253,[],1,1,0,0,[{quest_progress,0,evt_truth_dare_lucky,0,[],0,{evt_truth_dare_lucky,475},1,0,[],[],[]}],0,0,0,0},{quest,661250,[],1,1,0,0,[{quest_progress,0,evt_truth_dare_join,0,[],0,{evt_truth_dare_join,474},1,0,[],[],[]}],0,0,0,0},{quest,661100,[],1,1,0,0,[{quest_progress,0,evt_may_day_clean,0,[{camp_id,885}],0,{evt_may_day_clean,473},1,0,[],[],[]}],0,0,0,0},{quest,661077,[],1,1,0,0,[{quest_progress,0,evt_dragon_boat_cplt,600,[{camp_id,1618}],0,{evt_dragon_boat_cplt,472},1,0,[],[],[]}],0,0,0,0},{quest,661076,[],1,1,0,0,[{quest_progress,0,evt_dragon_boat_rank,1,[{camp_id,1618}],0,{evt_dragon_boat_rank,471},3,0,[],[],[]}],0,0,0,0},{quest,661075,[],1,1,0,0,[{quest_progress,0,evt_dragon_boat_rank,1,[{camp_id,1618}],0,{evt_dragon_boat_rank,470},1,0,[],[],[]}],0,0,0,0},{quest,661074,[],1,1,0,0,[{quest_progress,0,evt_dragon_boat_rank,10,[{camp_id,1618}],0,{evt_dragon_boat_rank,469},1,0,[],[],[]}],0,0,0,0},{quest,661073,[],1,1,0,0,[{quest_progress,0,evt_dragon_boat,0,[{camp_id,1618}],0,{evt_dragon_boat,468},5,0,[],[],[]}],0,0,0,0},{quest,661072,[],1,1,0,0,[{quest_progress,0,evt_dragon_boat,0,[{camp_id,1618}],0,{evt_dragon_boat,467},1,0,[],[],[]}],0,0,0,0},{quest,661056,[],1,1,0,0,[{quest_progress,0,evt_may_day_clean,0,[{camp_id,1976}],0,{evt_may_day_clean,466},1,0,[],[],[]}],0,0,0,0},{quest,661053,[],1,1,0,0,[{quest_progress,0,evt_kill_npc,76620,[],0,{evt_kill_npc,465},5,0,[],[],[]}],0,0,0,0},{quest,661052,[],1,1,0,0,[{quest_progress,0,evt_may_day_help,0,[],0,{evt_may_day_help,464},3,0,[],[],[]}],0,0,0,0},{quest,661050,[],1,1,0,0,[{quest_progress,0,evt_may_day_bags,0,[],0,{evt_may_day_bags,463},1,0,[],[],[]}],0,0,0,0},{quest,661089,[],1,1,0,0,[{quest_progress,0,evt_mount_dye_diff,1,[{dye_id,2031}],0,{evt_mount_dye_diff,462},1,0,[],[],[]}],0,0,0,0},{quest,640472,[],1,1,0,0,[{quest_progress,0,evt_pre_honor,39,[],0,{evt_pre_honor,461},1,0,[],[],[]}],0,0,0,0},{quest,640471,[],1,1,0,0,[{quest_progress,0,evt_pre_honor,38,[],0,{evt_pre_honor,460},1,0,[],[],[]}],0,0,0,0},{quest,640470,[],1,1,0,0,[{quest_progress,0,evt_pre_honor,19,[],0,{evt_pre_honor,459},1,0,[],[],[]}],0,0,0,0},{quest,640469,[],1,1,0,0,[{quest_progress,0,evt_pre_honor,17,[],0,{evt_pre_honor,458},1,0,[],[],[]}],0,0,0,0},{quest,640468,[],1,1,0,0,[{quest_progress,0,evt_pre_honor,16,[],0,{evt_pre_honor,457},1,0,[],[],[]}],0,0,0,0},{quest,640467,[],1,1,0,0,[{quest_progress,0,evt_pre_honor,15,[],0,{evt_pre_honor,456},1,0,[],[],[]}],0,0,0,0},{quest,640464,[],1,1,0,0,[{quest_progress,0,evt_pre_honor,0,[],0,{evt_pre_honor,455},1,0,[],[],[]}],0,0,0,0},{quest,640461,[],1,1,0,0,[{quest_progress,0,evt_quest_prac_help,0,[],0,{evt_quest_prac_help,454},20,0,[],[],[]}],0,0,0,0},{quest,640317,[],1,1,0,0,[{quest_progress,0,evt_use_fruit_limit,21311,[],0,{evt_use_fruit_limit,451},1,0,[],[],[]},{quest_progress,1,evt_use_fruit_limit,21314,[],0,{evt_use_fruit_limit,452},1,0,[],[],[]},{quest_progress,2,evt_use_fruit_limit,21360,[],0,{evt_use_fruit_limit,453},1,0,[],[],[]}],0,0,0,0},{quest,639573,[],1,1,0,0,[{quest_progress,0,evt_campaign_unit_heap2,0,[{val,100}],0,{evt_campaign_unit_heap2,450},2,0,[],[],[]}],0,0,0,0},{quest,639570,[],1,1,0,0,[{quest_progress,0,evt_campaign_unit_heap2,0,[{val,0}],0,{evt_campaign_unit_heap2,449},1,0,[],[],[]}],0,0,0,0},{quest,639567,[],1,1,0,0,[{quest_progress,0,evt_mid_pudding_win,0,[],0,{evt_mid_pudding_win,448},1,0,[],[],[]}],0,0,0,0},{quest,639566,[],1,1,0,0,[{quest_progress,0,evt_mid_pudding_answer,0,[],0,{evt_mid_pudding_answer,447},5,0,[],[],[]}],0,0,0,0},{quest,639565,[],1,1,0,0,[{quest_progress,0,evt_mid_pudding_answer,1,[],0,{evt_mid_pudding_answer,446},20,0,[],[],[]}],0,0,0,0},{quest,639564,[],1,1,0,0,[{quest_progress,0,evt_join_mid_pudding,0,[],0,{evt_join_mid_pudding,445},1,0,[],[],[]}],0,0,0,0},{quest,639561,[],1,1,0,0,[{quest_progress,0,evt_glue_pudding_win,0,[],0,{evt_glue_pudding_win,444},1,0,[],[],[]}],0,0,0,0},{quest,639560,[],1,1,0,0,[{quest_progress,0,evt_glue_pudding_answer,0,[],0,{evt_glue_pudding_answer,443},5,0,[],[],[]}],0,0,0,0},{quest,639559,[],1,1,0,0,[{quest_progress,0,evt_glue_pudding_answer,1,[],0,{evt_glue_pudding_answer,442},20,0,[],[],[]}],0,0,0,0},{quest,639558,[],1,1,0,0,[{quest_progress,0,evt_join_glue_pudding,0,[],0,{evt_join_glue_pudding,441},1,0,[],[],[]}],0,0,0,0},{quest,639555,[],1,1,0,0,[{quest_progress,0,evt_campaign_unit_heap2,0,[{val,100}],0,{evt_campaign_unit_heap2,440},2,0,[],[],[]}],0,0,0,0},{quest,639550,[],1,1,0,0,[{quest_progress,0,evt_campaign_unit_heap2,0,[{val,0}],0,{evt_campaign_unit_heap2,439},1,0,[],[],[]}],0,0,0,0},{quest,639545,[],1,1,0,0,[{quest_progress,0,evt_kongming_lanterns_win,0,[],0,{evt_kongming_lanterns_win,438},1,0,[],[],[]}],0,0,0,0},{quest,639544,[],1,1,0,0,[{quest_progress,0,evt_kongming_lanterns_answer,0,[],0,{evt_kongming_lanterns_answer,437},5,0,[],[],[]}],0,0,0,0},{quest,639543,[],1,1,0,0,[{quest_progress,0,evt_kongming_lanterns_answer,1,[],0,{evt_kongming_lanterns_answer,436},20,0,[],[],[]}],0,0,0,0},{quest,639542,[],1,1,0,0,[{quest_progress,0,evt_join_kongming_lanterns,0,[],0,{evt_join_kongming_lanterns,435},1,0,[],[],[]}],0,0,0,0},{quest,639540,[],1,1,0,0,[{quest_progress,0,evt_camp_halloween_rank,1,[1],0,{evt_camp_halloween_rank,434},3,0,[],[],[]}],0,0,0,0},{quest,639530,[],1,1,0,0,[{quest_progress,0,evt_camp_halloween_first,0,[],0,{evt_camp_halloween_first,433},5,0,[],[],[]}],0,0,0,0},{quest,639520,[],1,1,0,0,[{quest_progress,0,evt_camp_halloween,0,[],0,{evt_camp_halloween,432},3,0,[],[],[]}],0,0,0,0},{quest,639510,[],1,1,0,0,[{quest_progress,0,evt_campaign_unit_card_boss,0,[],0,{evt_campaign_unit_card_boss,431},2,0,[],[],[]}],0,0,0,0},{quest,639500,[],1,1,0,0,[{quest_progress,0,evt_campaign_unit_card,0,[],0,{evt_campaign_unit_card,430},5,0,[],[],[]}],0,0,0,0},{quest,639400,[],1,1,0,0,[{quest_progress,0,evt_rainbow_lottery_day,0,[],0,{evt_rainbow_lottery_day,429},1,0,[],[],[]}],0,0,0,0},{quest,639393,[],1,1,0,0,[{quest_progress,0,evt_national_wisdom_luckyer,0,[],0,{evt_national_wisdom_luckyer,428},1,0,[],[],[]}],0,0,0,0},{quest,639390,[],1,1,0,0,[{quest_progress,0,evt_national_wisdom_right,0,[],0,{evt_national_wisdom_right,427},5,0,[],[],[]}],0,0,0,0},{quest,639380,[],1,1,0,0,[{quest_progress,0,evt_camp_cake_finish,0,[],0,{evt_camp_cake_finish,426},8,0,[],[],[]}],0,0,0,0},{quest,639370,[],1,1,0,0,[{quest_progress,0,evt_campaign_bag_reward,0,[],0,{evt_campaign_bag_reward,425},1,0,[],[],[]}],0,0,0,0},{quest,639360,[],1,1,0,0,[{quest_progress,0,evt_kongming_lanterns_win,0,[{camp_id,1779}],0,{evt_kongming_lanterns_win,424},1,0,[],[],[]}],0,0,0,0},{quest,639350,[],1,1,0,0,[{quest_progress,0,evt_kongming_lanterns_answer,0,[{camp_id,1779}],0,{evt_kongming_lanterns_answer,423},5,0,[],[],[]}],0,0,0,0},{quest,639340,[],1,1,0,0,[{quest_progress,0,evt_kongming_lanterns_answer,1,[{camp_id,1779}],0,{evt_kongming_lanterns_answer,422},20,0,[],[],[]}],0,0,0,0},{quest,639330,[],1,1,0,0,[{quest_progress,0,evt_join_kongming_lanterns,0,[{camp_id,1779}],0,{evt_join_kongming_lanterns,421},1,0,[],[],[]}],0,0,0,0},{quest,639320,[],1,1,0,0,[{quest_progress,0,evt_enjoy_moon_wish,0,[{wish,2}],0,{evt_enjoy_moon_wish,420},10,0,[],[],[]}],0,0,0,0},{quest,639310,[],1,1,0,0,[{quest_progress,0,evt_enjoy_moon_wish,0,[{wish,1}],0,{evt_enjoy_moon_wish,419},10,0,[],[],[]}],0,0,0,0},{quest,639300,[],1,1,0,0,[{quest_progress,0,evt_enjoy_moon,0,[],0,{evt_enjoy_moon,418},1,0,[],[],[]}],0,0,0,0},{quest,639145,[],1,1,0,0,[{quest_progress,0,evt_rushing_top_final_times,0,[],0,{evt_rushing_top_final_times,417},1,0,[],[],[]}],0,0,0,0},{quest,631209,[],1,1,0,0,[{quest_progress,0,evt_question_match_last_right,20,[],0,{evt_question_match_last_right,416},1,0,[],[],[]}],0,0,0,0},{quest,631206,[],1,1,0,0,[{quest_progress,0,evt_question_match_last_right,15,[],0,{evt_question_match_last_right,415},1,0,[],[],[]}],0,0,0,0},{quest,631203,[],1,1,0,0,[{quest_progress,0,evt_question_match_mvp,0,[],0,{evt_question_match_mvp,414},3,0,[],[],[]}],0,0,0,0},{quest,631200,[],1,1,0,0,[{quest_progress,0,evt_question_match_answer,0,[],0,{evt_question_match_answer,413},3,0,[],[],[]}],0,0,0,0},{quest,630201,[],1,1,0,0,[{quest_progress,0,evt_kill_npc,79630,[],0,{evt_kill_npc,412},1,0,[],[],[]}],0,0,0,0},{quest,639102,[],1,1,0,0,[{quest_progress,0,evt_examination_answer,1,[],0,{evt_examination_answer,411},10000,0,[],[],[]}],0,0,0,0},{quest,620111,[],1,1,0,0,[{quest_progress,0,evt_dungeon_pass,10135,[],0,{evt_dungeon_pass,410},1,0,[],[],[]}],0,0,0,0},{quest,610601,[],1,1,0,0,[{quest_progress,0,evt_treasure,0,[],0,{evt_treasure,409},10,0,[],[],[]}],0,0,0,0},{quest,610530,[],1,1,0,0,[{quest_progress,0,evt_shipping_sail,3,[],0,{evt_shipping_sail,408},1,0,[],[],[]}],0,0,0,0},{quest,610220,[],1,1,0,0,[{quest_progress,0,evt_trial,1,[],0,{evt_trial,407},6,0,[],[],[]}],0,0,0,0},{quest,540111,[],1,1,0,0,[{quest_progress,0,evt_friend_zone_leave_trend,0,[],0,{evt_friend_zone_leave_trend,406},1,0,[],[],[]}],0,0,0,0},{quest,320110,[],1,1,0,0,[{quest_progress,0,evt_guard_reset_eqm,0,[],0,{evt_guard_reset_eqm,405},50,0,[],[],[]}],0,0,0,0},{quest,320101,[],1,1,0,0,[{quest_progress,0,evt_guard_upgrade_eqm,0,[],0,{evt_guard_upgrade_eqm,404},20,6,[],[],[]}],0,0,0,0},{quest,120320,[],1,1,0,0,[{quest_progress,0,evt_skill_life_produce,0,[{skill,10000}],0,{evt_skill_life_produce,403},100,0,[],[],[]}],0,0,0,0},{quest,639101,[],1,1,0,0,[{quest_progress,0,evt_examination_answer,1,[],0,{evt_examination_answer,402},1000,0,[],[],[]}],0,0,0,0},{quest,610722,[],1,1,0,0,[{quest_progress,0,evt_arena_roll,5,[no_finish],0,{evt_arena_roll,401},1,0,[],[],[]}],0,0,0,0},{quest,610710,[],1,1,0,0,[{quest_progress,0,evt_arena_roll,0,[],0,{evt_arena_roll,400},5,0,[],[],[]}],0,0,0,0},{quest,610701,[],1,1,0,0,[{quest_progress,0,evt_arena_cup,0,[],0,{evt_arena_cup,399},1300,0,[],[],[]}],0,0,0,0},{quest,610540,[],1,1,0,0,[{quest_progress,0,evt_shipping_sail,2,[],0,{evt_shipping_sail,398},1,0,[],[],[]}],0,0,0,0},{quest,120310,[],1,1,0,0,[{quest_progress,0,evt_skill_life_produce,0,[{skill,10007}],0,{evt_skill_life_produce,397},100,0,[],[],[]}],0,0,0,0},{quest,120244,[],1,1,0,0,[{quest_progress,0,evt_skill_life_levup,10001,[],0,{evt_skill_life_levup,396},30,0,[],[],[]}],0,0,0,0},{quest,120241,[],1,1,0,0,[{quest_progress,0,evt_skill_life_levup,10000,[],0,{evt_skill_life_levup,395},30,0,[],[],[]}],0,0,0,0},{quest,639120,[],1,1,0,0,[{quest_progress,0,evt_parade,0,[],0,{evt_parade,394},1,0,[],[],[]}],0,0,0,0},{quest,639110,[],1,1,0,0,[{quest_progress,0,evt_examination_answer,2,[],0,{evt_examination_answer,393},100,0,[],[],[]}],0,0,0,0},{quest,639100,[],1,1,0,0,[{quest_progress,0,evt_examination_answer,1,[],0,{evt_examination_answer,392},100,0,[],[],[]}],0,0,0,0},{quest,620102,[],1,1,0,0,[{quest_progress,0,evt_commit_quest,0,[{sec_type,3}],0,{evt_commit_quest,391},2000,0,[],[],[]}],0,0,0,0},{quest,610721,[],1,1,0,0,[{quest_progress,0,evt_arena_roll,3,[finish],0,{evt_arena_roll,390},1,0,[],[],[]}],0,0,0,0},{quest,540121,[],1,1,0,0,[{quest_progress,0,evt_friend_zone_leave_trended,0,[],0,{evt_friend_zone_leave_trended,389},8,0,[],[],[]}],0,0,0,0},{quest,220401,[],1,1,0,0,[{quest_progress,0,evt_aptitude_pet,0,[count],0,{evt_aptitude_pet,388},100,0,[],[],[]}],0,0,0,0},{quest,220320,[],1,1,0,0,[{quest_progress,0,evt_pet_skill,2,[one_count],0,{evt_pet_skill,387},4,0,[],[],[]}],0,0,0,0},{quest,120221,[],1,1,0,0,[{quest_progress,0,evt_skill_prac_levup,0,[{lev,3}],0,{evt_skill_prac_levup,386},6,0,[],[],[]}],0,0,0,0},{quest,120201,[],1,1,0,0,[{quest_progress,0,evt_skill_prac_levup,0,[{lev,3}],0,{evt_skill_prac_levup,385},1,0,[],[],[]}],0,0,0,0},{quest,640450,[],1,1,0,0,[{quest_progress,0,evt_honor,0,[],0,{evt_honor,384},5,3,[],[],[]}],0,0,0,0},{quest,640201,[],1,1,0,0,[{quest_progress,0,evt_achievement,0,[point],0,{evt_achievement,383},1000,201,[],[],[]}],0,0,0,0},{quest,640601,[],1,1,0,0,[{quest_progress,0,evt_wedding_guest,0,[],0,{evt_wedding_guest,382},25,0,[],[],[]}],0,0,0,0},{quest,220310,[],1,1,0,0,[{quest_progress,0,evt_pet_use_item,20007,[],0,{evt_pet_use_item,381},10,0,[],[],[]}],0,0,0,0},{quest,150103,[],1,1,0,0,[{quest_progress,0,evt_wing,0,[],0,{evt_wing,379},3,0,[],[],[]}],0,0,0,0},{quest,150110,[],1,1,0,0,[{quest_progress,0,evt_wing,0,[{growth,5}],0,{evt_wing,378},3,0,[],[],[]}],0,0,0,0},{quest,520103,[],1,1,0,0,[{quest_progress,0,evt_friend,0,[],0,{evt_friend,377},50,0,[],[],[]}],0,0,0,0},{quest,230101,[],1,1,0,0,[{quest_progress,0,evt_combat_statistics,0,[pet_revive],0,{evt_combat_statistics,376},5,0,[],[],[]}],0,0,0,0},{quest,220151,[],1,1,0,0,[{quest_progress,0,evt_pet_use_item,21312,[],0,{evt_pet_use_item,375},1,0,[],[],[]}],0,0,0,0},{quest,640521,[],1,1,0,0,[{quest_progress,0,evt_achievement,0,[point],0,{evt_achievement,374},300,201,[],[],[]}],0,0,0,0},{quest,640210,[],1,1,0,0,[{quest_progress,0,evt_gain_character,0,[],0,{evt_gain_character,373},1000,0,[],[],[]}],0,0,0,0},{quest,520102,[],1,1,0,0,[{quest_progress,0,evt_friend,0,[],0,{evt_friend,372},20,0,[],[],[]}],0,0,0,0},{quest,510121,[],1,1,0,0,[{quest_progress,0,evt_kill_npc,0,[{type,9}],0,{evt_kill_npc,371},50,0,[],[],[]}],0,0,0,0},{quest,230201,[],1,1,0,0,[{quest_progress,0,evt_combat_statistics,0,[cast_pet],0,{evt_combat_statistics,370},10,0,[],[],[]}],0,0,0,0},{quest,220510,[],1,1,0,0,[{quest_progress,0,evt_pet,3333,[sum_talent],0,{evt_pet,369},1,0,[],[],[]}],0,0,0,0},{quest,210161,[],1,1,0,0,[{quest_progress,0,evt_pet_use_item,21301,[],0,{evt_pet_use_item,368},1,0,[],[],[]}],0,0,0,0},{quest,140241,[],1,1,0,0,[{quest_progress,0,evt_combat_statistics,0,[is_die],0,{evt_combat_statistics,367},99,2,[],[],[]}],0,0,0,0},{quest,140220,[],1,1,0,0,[{quest_progress,0,evt_combat_statistics,0,[revive],0,{evt_combat_statistics,366},100,1,[],[],[]}],0,0,0,0},{quest,130220,[],1,1,0,0,[{quest_progress,0,evt_market_silver_sold,0,[],0,{evt_market_silver_sold,365},1000,0,[],[],[]}],0,0,0,0},{quest,640316,[],1,1,0,0,[{quest_progress,0,evt_use_fruit_limit,21309,[],0,{evt_use_fruit_limit,360},1,0,[],[],[]},{quest_progress,1,evt_use_fruit_limit,21356,[],0,{evt_use_fruit_limit,361},1,0,[],[],[]},{quest_progress,2,evt_use_fruit_limit,21357,[],0,{evt_use_fruit_limit,362},1,0,[],[],[]},{quest_progress,3,evt_use_fruit_limit,21358,[],0,{evt_use_fruit_limit,363},1,0,[],[],[]},{quest_progress,4,evt_use_fruit_limit,21359,[],0,{evt_use_fruit_limit,364},1,0,[],[],[]}],0,0,0,0},{quest,640445,[],1,1,0,0,[{quest_progress,0,evt_combat_statistics,1,[kill_group_pet],0,{evt_combat_statistics,359},1,0,[],[],[]}],0,0,0,0},{quest,610101,[],1,1,0,0,[{quest_progress,0,evt_commit_quest,0,[{sec_type,4}],0,{evt_commit_quest,358},50,0,[],[],[]}],0,0,0,0},{quest,520205,[],1,1,0,0,[{quest_progress,0,evt_wedding_treasure,0,[],0,{evt_wedding_treasure,357},99,0,[],[],[]}],0,0,0,0},{quest,410102,[],1,1,0,0,[{quest_progress,0,evt_eqm,0,[{eqm_lev_num,40}],0,{evt_eqm,355},8,0,[],[],[]}],0,0,0,0},{quest,220301,[],1,1,0,0,[{quest_progress,0,evt_pet_repleace_skill,0,[],0,{evt_pet_repleace_skill,354},1,0,[],[],[]}],0,0,0,0},{quest,149006,[],1,1,0,0,[{quest_progress,0,evt_formation_lev,4,[],0,{evt_formation_lev,353},1,0,[],[],[]}],0,0,0,0},{quest,149004,[],1,1,0,0,[{quest_progress,0,evt_formation_lev,3,[],0,{evt_formation_lev,352},1,0,[],[],[]}],0,0,0,0},{quest,130230,[],1,1,0,0,[{quest_progress,0,evt_market_silver_buy,0,[],0,{evt_market_silver_buy,351},1000,0,[],[],[]}],0,0,0,0},{quest,640440,[],1,1,0,0,[{quest_progress,0,evt_combat_statistics,1,[killed_group],0,{evt_combat_statistics,350},1,0,[],[],[]}],0,0,0,0},{quest,640311,[],1,1,0,0,[{quest_progress,0,evt_use_item,0,[21350,21303,21351,21352,21307,21353,21354,21355,21305,21313,21356,21357,21359,21309,21358,21360,21311,21314,21317,21318,21316,21319,21320,21321,21361,21362,21363,21380,21381,21382,21383,21384,21385,21386,21387,21388,21389,21390,21391,21392],0,{evt_use_item,349},72,0,[],[],[]}],0,0,0,0},{quest,620101,[],1,1,0,0,[{quest_progress,0,evt_commit_quest,0,[{sec_type,3}],0,{evt_commit_quest,348},200,0,[],[],[]}],0,0,0,0},{quest,510111,[],1,1,0,0,[{quest_progress,0,evt_commit_quest,0,[{sec_type,12}],0,{evt_commit_quest,347},100,0,[],[],[]}],0,0,0,0},{quest,220210,[],1,1,0,0,[{quest_progress,0,evt_pet_use_item,100,[type],0,{evt_pet_use_item,346},1,0,[],[],[]}],0,0,0,0},{quest,210155,[],1,1,0,0,[{quest_progress,0,evt_get_pet,20005,[base_id],0,{evt_get_pet,345},1,0,[],[],[]}],0,0,0,0},{quest,149001,[],1,1,0,0,[{quest_progress,0,evt_formation_lev,1,[],0,{evt_formation_lev,344},8,1,[],[],[]}],0,0,0,0},{quest,140201,[],1,1,0,0,[{quest_progress,0,evt_kill_npc,0,[],0,{evt_kill_npc,343},1000,0,[],[],[]}],0,0,0,0},{quest,130240,[],1,1,0,0,[{quest_progress,0,evt_market_silver_sold,0,[{percent,130}],0,{evt_market_silver_sold,342},1,0,[],[],[]}],0,0,0,0},{quest,130001,[],1,1,0,0,[{quest_progress,0,evt_market_silver_first_on_sale,0,[],0,{evt_market_silver_first_on_sale,341},1,0,[],[],[]}],0,0,0,0},{quest,520301,[],1,1,0,0,[{quest_progress,0,evt_friend_zone_like,0,[],0,{evt_friend_zone_like,340},66,0,[],[],[]}],0,0,0,0},{quest,210160,[],1,1,0,0,[{quest_progress,0,evt_pet_use_item,20004,[],0,{evt_pet_use_item,339},1,0,[],[],[]}],0,0,0,0},{quest,149002,[],1,1,0,0,[{quest_progress,0,evt_formation_lev,2,[],0,{evt_formation_lev,338},1,0,[],[],[]}],0,0,0,0},{quest,149000,[],1,1,0,0,[{quest_progress,0,evt_formation_lev,1,[],0,{evt_formation_lev,337},2,1,[],[],[]}],0,0,0,0},{quest,130210,[],1,1,0,0,[{quest_progress,0,evt_market_silver_sold,0,[{assets,coin}],0,{evt_market_silver_sold,336},1000000,0,[],[],[]}],0,0,0,0},{quest,210150,[],1,1,0,0,[{quest_progress,0,evt_pet,4,[sum_genre],0,{evt_pet,335},1,0,[],[],[]}],0,0,0,0},{quest,210140,[],1,1,0,0,[{quest_progress,0,evt_pet,2,[sum_genre],0,{evt_pet,334},1,0,[],[],[]}],0,0,0,0},{quest,210110,[],1,1,0,0,[{quest_progress,0,evt_get_pet,0,[catch_num],0,{evt_get_pet,333},50,0,[],[],[]}],0,0,0,0},{quest,130201,[],1,1,0,0,[{quest_progress,0,evt_market_gold_bind_buy,0,[{percent,1250}],0,{evt_market_gold_bind_buy,332},1,0,[],[],[]}],0,0,0,0},{quest,630312,[],1,1,0,0,[{quest_progress,0,evt_classes_challenge_up_rank,0,[],0,{evt_classes_challenge_up_rank,330},10,0,[],[],[]}],0,0,0,0},{quest,630311,[],1,1,0,0,[{quest_progress,0,evt_classes_challenge_rank,15,[],0,{evt_classes_challenge_rank,329},1,0,[],[],[]}],0,0,0,0},{quest,630301,[],1,1,0,0,[{quest_progress,0,evt_classes_challenge_order,10,[],0,{evt_classes_challenge_order,328},1,0,[],[],[]}],0,0,0,0},{quest,530130,[],1,1,0,0,[{quest_progress,0,evt_wedding_marry,0,[],0,{evt_wedding_marry,327},3,0,[],[],[]}],0,0,0,0},{quest,520201,[],1,1,0,0,[{quest_progress,0,evt_friend_intimacy,0,[],0,{evt_friend_intimacy,326},200,0,[],[],[]}],0,0,0,0},{quest,220160,[],1,1,0,0,[{quest_progress,0,evt_pet_stone_upgrade,0,[],0,{evt_pet_stone_upgrade,325},1,0,[],[],[]}],0,0,0,0},{quest,130200,[],1,1,0,0,[{quest_progress,0,evt_market_gold_bind_buy,0,[{percent,1100}],0,{evt_market_gold_bind_buy,324},1,0,[],[],[]}],0,0,0,0},{quest,530110,[],1,1,0,0,[{quest_progress,0,evt_wedding_score,0,[acc],0,{evt_wedding_score,323},199,0,[],[],[]}],0,0,0,0},{quest,530140,[],1,1,0,0,[{quest_progress,0,evt_wedding_divorce,0,[],0,{evt_wedding_divorce,319},1,0,[],[],[]}],0,0,0,0},{quest,530101,[],1,1,0,0,[{quest_progress,0,evt_wedding_marry,0,[],0,{evt_wedding_marry,318},1,0,[],[],[]}],0,0,0,0},{quest,220501,[],1,1,0,0,[{quest_progress,0,evt_pet,1,[sum_genre],0,{evt_pet,317},1,0,[],[],[]}],0,0,0,0},{quest,210130,[],1,1,0,0,[{quest_progress,0,evt_pet_free,0,[],0,{evt_pet_free,316},1,0,[],[],[]}],0,0,0,0},{quest,150102,[],1,1,0,0,[{quest_progress,0,evt_wing,0,[],0,{evt_wing,314},2,0,[],[],[]}],0,0,0,0},{quest,220202,[],1,1,0,0,[{quest_progress,0,evt_pet_use_item,101,[type],0,{evt_pet_use_item,312},1,0,[],[],[]}],0,0,0,0},{quest,140210,[],1,1,0,0,[{quest_progress,0,evt_combat_statistics,0,[win],0,{evt_combat_statistics,311},50,0,[],[],[]}],0,0,0,0},{quest,640351,[],1,1,0,0,[{quest_progress,0,evt_fashion_collect_lev,0,[],0,{evt_fashion_collect_lev,310},1,0,[],[],[]}],0,0,0,0},{quest,640341,[],1,1,0,0,[{quest_progress,0,evt_fashion,2,[],0,{evt_fashion,309},1,0,[],[],[]}],0,0,0,0},{quest,640325,[],1,1,0,0,[{quest_progress,0,evt_fashion,1,[],0,{evt_fashion,307},1,0,[],[],[]}],0,0,0,0},{quest,520221,[],1,1,0,0,[{quest_progress,0,evt_send_flower,20032,[],0,{evt_send_flower,306},1,0,[],[],[]}],0,0,0,0},{quest,520211,[],1,1,0,0,[{quest_progress,0,evt_send_flower,20031,[],0,{evt_send_flower,305},1,0,[],[],[]}],0,0,0,0},{quest,510210,[],1,1,0,0,[{quest_progress,0,evt_guild_post,30,[],0,{evt_guild_post,300},1,0,[],[],[]},{quest_progress,1,evt_guild_post,40,[],0,{evt_guild_post,301},1,0,[],[],[]},{quest_progress,2,evt_guild_post,50,[],0,{evt_guild_post,302},1,0,[],[],[]},{quest_progress,3,evt_guild_post,60,[],1,undefined,1,1,[],[],[]}],0,0,0,0},{quest,220201,[],1,1,0,0,[{quest_progress,0,evt_pet_use_item,102,[type],0,{evt_pet_use_item,299},1,0,[],[],[]}],0,0,0,0},{quest,150120,[],1,1,0,0,[{quest_progress,0,evt_wing_reset,0,[],0,{evt_wing_reset,297},5,0,[],[],[]}],0,0,0,0},{quest,150101,[],1,1,0,0,[{quest_progress,0,evt_wing,0,[],0,{evt_wing,296},1,0,[],[],[]}],0,0,0,0},{quest,640315,[],1,1,0,0,[{quest_progress,0,evt_use_fruit_limit,21303,[],0,{evt_use_fruit_limit,287},1,0,[],[],[]},{quest_progress,1,evt_use_fruit_limit,21305,[],0,{evt_use_fruit_limit,288},1,0,[],[],[]},{quest_progress,2,evt_use_fruit_limit,21307,[],0,{evt_use_fruit_limit,289},1,0,[],[],[]},{quest_progress,3,evt_use_fruit_limit,21313,[],0,{evt_use_fruit_limit,290},1,0,[],[],[]},{quest_progress,4,evt_use_fruit_limit,21350,[],0,{evt_use_fruit_limit,291},1,0,[],[],[]},{quest_progress,5,evt_use_fruit_limit,21351,[],0,{evt_use_fruit_limit,292},1,0,[],[],[]},{quest_progress,6,evt_use_fruit_limit,21352,[],0,{evt_use_fruit_limit,293},1,0,[],[],[]},{quest_progress,7,evt_use_fruit_limit,21353,[],0,{evt_use_fruit_limit,294},1,0,[],[],[]},{quest_progress,8,evt_use_fruit_limit,21354,[],0,{evt_use_fruit_limit,295},1,0,[],[],[]}],0,0,0,0},{quest,540210,[],1,1,0,0,[{quest_progress,0,evt_friend_circle,0,[mentions],0,{evt_friend_circle,286},3,0,[],[],[]}],0,0,0,0},{quest,540206,[],1,1,0,0,[{quest_progress,0,evt_friend_circle,0,[photos],0,{evt_friend_circle,285},4,0,[],[],[]}],0,0,0,0},{quest,510203,[],1,1,0,0,[{quest_progress,0,evt_guild_post,40,[],0,{evt_guild_post,284},1,0,[],[],[]}],0,0,0,0},{quest,510220,[],1,1,0,0,[{quest_progress,0,evt_guild_leave,0,[],0,{evt_guild_leave,283},1,0,[],[],[]}],0,0,0,0},{quest,510202,[],1,1,0,0,[{quest_progress,0,evt_guild_post,50,[],0,{evt_guild_post,282},1,0,[],[],[]}],0,0,0,0},{quest,210120,[],1,1,0,0,[{quest_progress,0,evt_pet_rename,0,[],0,{evt_pet_rename,281},1,0,[],[],[]}],0,0,0,0},{quest,520101,[],1,1,0,0,[{quest_progress,0,evt_friend,0,[],0,{evt_friend,279},1,0,[],[],[]}],0,0,0,0},{quest,140250,[],1,1,0,0,[{quest_progress,0,evt_combat_statistics,0,[win_die],0,{evt_combat_statistics,277},1,0,[],[],[]}],0,0,0,0},{quest,540223,[],1,1,0,0,[{quest_progress,0,evt_friend_circle,0,[day_num],0,{evt_friend_circle,114},3,0,[],[],[]}],0,0,0,0},{quest,540220,[],1,1,0,0,[{quest_progress,0,evt_friend_circle_commented,1,[],0,{evt_friend_circle_commented,113},10,0,[],[],[]}],0,0,0,0},{quest,540217,[],1,1,0,0,[{quest_progress,0,evt_friend_circle_comment,0,[],0,{evt_friend_circle_comment,112},10,0,[],[],[]}],0,0,0,0},{quest,540214,[],1,1,0,0,[{quest_progress,0,evt_friend_circle_liked,1,[],0,{evt_friend_circle_liked,111},10,0,[],[],[]}],0,0,0,0},{quest,540211,[],1,1,0,0,[{quest_progress,0,evt_friend_circle_like,0,[],0,{evt_friend_circle_like,110},10,0,[],[],[]}],0,0,0,0},{quest,540207,[],1,1,0,0,[{quest_progress,0,evt_friend_circle,0,[mentions_acc],0,{evt_friend_circle,109},20,0,[],[],[]}],0,0,0,0},{quest,540203,[],1,1,0,0,[{quest_progress,0,evt_friend_circle,0,[photos_acc],0,{evt_friend_circle,108},10,0,[],[],[]}],0,0,0,0},{quest,540200,[],1,1,0,0,[{quest_progress,0,evt_friend_circle,0,[],0,{evt_friend_circle,107},1,0,[],[],[]}],0,0,0,0}],[],201,[]},{m_wedding,1,{0,[],0},[],0,[],[],[]},{m_constellation,2,0,[],[]},{m_investment,2,0,[],2,0,[]},{m_privilege,2,0,[],[],[]},{m_limit_return,1,1,1619873997,1619874045,1619874045,1637,0,0,[],0,300,1},{m_pray,0,3,1,0,[3,3],[{21220,0,1}],1,12140},{m_teacher,{0,[],0},2,[],0,[],0,0,[],[],[],[],[],0,0,[],0},{m_help,1,1,[],[],[],[]},{m_achieve_shop,5,[{5,[{ashop_goods_info,1,423,1,1619962007}]},{3,[{ashop_goods_info,1,201,1,0},{ashop_goods_info,1,212,1,0}]}],0,423,301,0,[],0,0,0},{m_brave_trial,2,0,[],[],0,0,[],0,[]},{m_camp_dragon_boat,0,0,0,[],0,0,0,[]},{m_over_seas,0},{m_hook_setting,2,0,[]},{m_tournament,3,[],0,[],0,0,0,[],0},{m_market_gold,1,[]},{m_goal,2,[{810006,1619874045},{810005,1619874045},{810004,1619874045},{810003,1619874045},{810002,1619874045},{810001,1619874045},{810000,1619874045},{800150,1619874521},{800151,1619874521},{800152,1619874521},{800153,1619874521},{800154,1619874521},{800155,1619874525},{800156,1619874526}],[{quest,820156,[],1,1,0,0,[{quest_progress,0,evt_wing_lev,6,[{star_lev,1}],0,{evt_wing_lev,275},1,0,[],[],[]}],0,0,0,0},{quest,820125,[],1,1,0,0,[{quest_progress,0,evt_enchant,9,[],0,{evt_enchant,274},1,0,[],[],[]}],0,0,0,0},{quest,820109,[],1,1,0,0,[{quest_progress,0,evt_skill_life_levup,10008,[],0,{evt_skill_life_levup,273},50,0,[],[],[]}],0,0,0,0},{quest,800173,[],1,1,0,0,[{quest_progress,0,evt_blacksmith_embed_lev,6,[],0,{evt_blacksmith_embed_lev,272},16,0,[],[],[]}],0,0,0,0},{quest,800172,[],1,1,0,0,[{quest_progress,0,evt_blacksmith_embed_lev,5,[],0,{evt_blacksmith_embed_lev,271},16,0,[],[],[]}],0,0,0,0},{quest,800171,[],1,1,0,0,[{quest_progress,0,evt_blacksmith_embed_lev,4,[],0,{evt_blacksmith_embed_lev,270},16,0,[],[],[]}],0,0,0,0},{quest,800170,[],1,1,0,0,[{quest_progress,0,evt_blacksmith_embed_lev,5,[],0,{evt_blacksmith_embed_lev,269},8,0,[],[],[]}],0,0,0,0},{quest,800169,[],1,1,0,0,[{quest_progress,0,evt_blacksmith_embed_lev,5,[],0,{evt_blacksmith_embed_lev,268},5,0,[],[],[]}],0,0,0,0},{quest,800168,[],1,1,0,0,[{quest_progress,0,evt_blacksmith_embed_lev,4,[],0,{evt_blacksmith_embed_lev,267},8,0,[],[],[]}],0,0,0,0},{quest,800167,[],1,1,0,0,[{quest_progress,0,evt_blacksmith_embed_lev,7,[],0,{evt_blacksmith_embed_lev,266},1,0,[],[],[]}],0,0,0,0},{quest,800166,[],1,1,0,0,[{quest_progress,0,evt_blacksmith_embed_lev,6,[],0,{evt_blacksmith_embed_lev,265},1,0,[],[],[]}],0,0,0,0},{quest,800165,[],1,1,0,0,[{quest_progress,0,evt_blacksmith_embed_lev,5,[],0,{evt_blacksmith_embed_lev,264},1,0,[],[],[]}],0,0,0,0},{quest,800164,[],1,1,0,0,[{quest_progress,0,evt_arena_cup,0,[],0,{evt_arena_cup,263},2100,0,[],[],[]}],0,0,0,0},{quest,800163,[],1,1,0,0,[{quest_progress,0,evt_arena_cup,0,[],0,{evt_arena_cup,262},2000,0,[],[],[]}],0,0,0,0},{quest,800162,[],1,1,0,0,[{quest_progress,0,evt_arena_cup,0,[],0,{evt_arena_cup,261},1950,0,[],[],[]}],0,0,0,0},{quest,800161,[],1,1,0,0,[{quest_progress,0,evt_arena_cup,0,[],0,{evt_arena_cup,260},1900,0,[],[],[]}],0,0,0,0},{quest,800160,[],1,1,0,0,[{quest_progress,0,evt_arena_cup,0,[],0,{evt_arena_cup,259},1850,0,[],[],[]}],0,0,0,0},{quest,800159,[],1,1,0,0,[{quest_progress,0,evt_arena_cup,0,[],0,{evt_arena_cup,258},1800,0,[],[],[]}],0,0,0,0},{quest,800158,[],1,1,0,0,[{quest_progress,0,evt_arena_cup,0,[],0,{evt_arena_cup,257},1700,0,[],[],[]}],0,0,0,0},{quest,800157,[],1,1,0,0,[{quest_progress,0,evt_arena_cup,0,[],0,{evt_arena_cup,256},1600,0,[],[],[]}],0,0,0,0},{quest,800149,[],1,1,0,0,[{quest_progress,0,evt_constellation,0,[],0,{evt_constellation,248},8,0,[],[],[]}],0,0,0,0},{quest,800148,[],1,1,0,0,[{quest_progress,0,evt_constellation,0,[],0,{evt_constellation,247},7,0,[],[],[]}],0,0,0,0},{quest,800147,[],1,1,0,0,[{quest_progress,0,evt_constellation,0,[],0,{evt_constellation,246},6,0,[],[],[]}],0,0,0,0},{quest,800146,[],1,1,0,0,[{quest_progress,0,evt_constellation,0,[],0,{evt_constellation,245},5,0,[],[],[]}],0,0,0,0},{quest,800145,[],1,1,0,0,[{quest_progress,0,evt_constellation,0,[],0,{evt_constellation,244},3,0,[],[],[]}],0,0,0,0},{quest,800144,[],1,1,0,0,[{quest_progress,0,evt_constellation,0,[],0,{evt_constellation,243},1,0,[],[],[]}],0,0,0,0},{quest,800143,[],1,1,0,0,[{quest_progress,0,evt_skill_prac_levup,0,[{lev,10}],0,{evt_skill_prac_levup,242},1,0,[],[],[]}],0,0,0,0},{quest,800142,[],1,1,0,0,[{quest_progress,0,evt_skill_prac_levup,0,[{lev,8}],0,{evt_skill_prac_levup,241},6,0,[],[],[]}],0,0,0,0},{quest,800141,[],1,1,0,0,[{quest_progress,0,evt_skill_prac_levup,0,[{lev,8}],0,{evt_skill_prac_levup,240},3,0,[],[],[]}],0,0,0,0},{quest,800140,[],1,1,0,0,[{quest_progress,0,evt_skill_prac_levup,0,[{lev,7}],0,{evt_skill_prac_levup,239},6,0,[],[],[]}],0,0,0,0},{quest,800139,[],1,1,0,0,[{quest_progress,0,evt_skill_prac_levup,0,[{lev,7}],0,{evt_skill_prac_levup,238},3,0,[],[],[]}],0,0,0,0},{quest,800138,[],1,1,0,0,[{quest_progress,0,evt_skill_prac_levup,0,[{lev,9}],0,{evt_skill_prac_levup,237},1,0,[],[],[]}],0,0,0,0},{quest,800137,[],1,1,0,0,[{quest_progress,0,evt_skill_prac_levup,0,[{lev,6}],0,{evt_skill_prac_levup,236},6,0,[],[],[]}],0,0,0,0},{quest,800136,[],1,1,0,0,[{quest_progress,0,evt_skill_prac_levup,0,[{lev,5}],0,{evt_skill_prac_levup,235},6,0,[],[],[]}],0,0,0,0},{quest,800135,[],1,1,0,0,[{quest_progress,0,evt_skill_prac_levup,0,[{lev,8}],0,{evt_skill_prac_levup,234},1,0,[],[],[]}],0,0,0,0},{quest,800134,[],1,1,0,0,[{quest_progress,0,evt_shipping_help,0,[],0,{evt_shipping_help,233},5,0,[],[],[]}],0,0,0,0},{quest,800133,[],1,1,0,0,[{quest_progress,0,evt_shipping_help,0,[],0,{evt_shipping_help,232},1,0,[],[],[]}],0,0,0,0},{quest,800132,[],1,1,0,0,[{quest_progress,0,evt_shipping_sail,0,[],0,{evt_shipping_sail,231},12,0,[],[],[]}],0,0,0,0},{quest,800131,[],1,1,0,0,[{quest_progress,0,evt_shipping_sail,0,[],0,{evt_shipping_sail,230},10,0,[],[],[]}],0,0,0,0},{quest,800130,[],1,1,0,0,[{quest_progress,0,evt_shipping_sail,0,[],0,{evt_shipping_sail,229},8,0,[],[],[]}],0,0,0,0},{quest,800129,[],1,1,0,0,[{quest_progress,0,evt_shipping_sail,0,[],0,{evt_shipping_sail,228},6,0,[],[],[]}],0,0,0,0},{quest,800128,[],1,1,0,0,[{quest_progress,0,evt_shipping_sail,0,[],0,{evt_shipping_sail,227},5,0,[],[],[]}],0,0,0,0},{quest,800127,[],1,1,0,0,[{quest_progress,0,evt_shipping_sail,0,[],0,{evt_shipping_sail,226},3,0,[],[],[]}],0,0,0,0},{quest,800126,[],1,1,0,0,[{quest_progress,0,evt_shipping_sail,0,[],0,{evt_shipping_sail,225},1,0,[],[],[]}],0,0,0,0},{quest,800125,[],1,1,0,0,[{quest_progress,0,evt_enchant,7,[],0,{evt_enchant,224},8,0,[],[],[]}],0,0,0,0},{quest,800124,[],1,1,0,0,[{quest_progress,0,evt_enchant,8,[],0,{evt_enchant,223},1,0,[],[],[]}],0,0,0,0},{quest,800123,[],1,1,0,0,[{quest_progress,0,evt_enchant,5,[],0,{evt_enchant,222},8,0,[],[],[]}],0,0,0,0},{quest,800122,[],1,1,0,0,[{quest_progress,0,evt_enchant,4,[],0,{evt_enchant,221},8,0,[],[],[]}],0,0,0,0},{quest,800121,[],1,1,0,0,[{quest_progress,0,evt_enchant,3,[],0,{evt_enchant,220},8,0,[],[],[]}],0,0,0,0},{quest,800120,[],1,1,0,0,[{quest_progress,0,evt_enchant,5,[],0,{evt_enchant,219},1,0,[],[],[]}],0,0,0,0},{quest,800119,[],1,1,0,0,[{quest_progress,0,evt_enchant,4,[],0,{evt_enchant,218},1,0,[],[],[]}],0,0,0,0},{quest,800118,[],1,1,0,0,[{quest_progress,0,evt_enchant,3,[],0,{evt_enchant,217},1,0,[],[],[]}],0,0,0,0},{quest,800117,[],1,1,0,0,[{quest_progress,0,evt_glory,0,[],0,{evt_glory,216},13,0,[],[],[]}],0,0,0,0},{quest,800116,[],1,1,0,0,[{quest_progress,0,evt_glory,0,[],0,{evt_glory,215},11,0,[],[],[]}],0,0,0,0},{quest,800115,[],1,1,0,0,[{quest_progress,0,evt_glory,0,[],0,{evt_glory,214},10,0,[],[],[]}],0,0,0,0},{quest,800114,[],1,1,0,0,[{quest_progress,0,evt_glory,0,[],0,{evt_glory,213},8,0,[],[],[]}],0,0,0,0},{quest,800113,[],1,1,0,0,[{quest_progress,0,evt_glory,0,[],0,{evt_glory,212},6,0,[],[],[]}],0,0,0,0},{quest,800112,[],1,1,0,0,[{quest_progress,0,evt_glory,0,[],0,{evt_glory,211},5,0,[],[],[]}],0,0,0,0},{quest,800111,[],1,1,0,0,[{quest_progress,0,evt_glory,0,[],0,{evt_glory,210},4,0,[],[],[]}],0,0,0,0},{quest,800110,[],1,1,0,0,[{quest_progress,0,evt_glory,0,[],0,{evt_glory,209},2,0,[],[],[]}],0,0,0,0},{quest,800109,[],1,1,0,0,[{quest_progress,0,evt_skill_life_levup,10008,[],0,{evt_skill_life_levup,208},40,0,[],[],[]}],0,0,0,0},{quest,800108,[],1,1,0,0,[{quest_progress,0,evt_skill_life_levup,10008,[],0,{evt_skill_life_levup,207},30,0,[],[],[]}],0,0,0,0},{quest,800107,[],1,1,0,0,[{quest_progress,0,evt_skill_life_levup,10008,[],0,{evt_skill_life_levup,206},20,0,[],[],[]}],0,0,0,0},{quest,800106,[],1,1,0,0,[{quest_progress,0,evt_skill_life_levup,10008,[],0,{evt_skill_life_levup,205},10,0,[],[],[]}],0,0,0,0},{quest,800105,[],1,1,0,0,[{quest_progress,0,evt_skill_life_levup,0,[],0,{evt_skill_life_levup,204},60,0,[],[],[]}],0,0,0,0},{quest,800104,[],1,1,0,0,[{quest_progress,0,evt_skill_life_levup,0,[],0,{evt_skill_life_levup,203},50,0,[],[],[]}],0,0,0,0},{quest,800103,[],1,1,0,0,[{quest_progress,0,evt_skill_life_levup,0,[],0,{evt_skill_life_levup,202},40,0,[],[],[]}],0,0,0,0},{quest,800102,[],1,1,0,0,[{quest_progress,0,evt_skill_life_levup,0,[],0,{evt_skill_life_levup,201},31,0,[],[],[]}],0,0,0,0},{quest,800101,[],1,1,0,0,[{quest_progress,0,evt_kill_npc,71002,[],0,{evt_kill_npc,200},1,0,[],[],[]}],0,0,0,0},{quest,800100,[],1,1,0,0,[{quest_progress,0,evt_quest_guild_round,0,[],0,{evt_quest_guild_round,199},8,0,[],[],[]}],0,0,0,0},{quest,800099,[],1,1,0,0,[{quest_progress,0,evt_quest_guild_round,0,[],0,{evt_quest_guild_round,198},5,0,[],[],[]}],0,0,0,0},{quest,800098,[],1,1,0,0,[{quest_progress,0,evt_quest_guild_round,0,[],0,{evt_quest_guild_round,197},3,0,[],[],[]}],0,0,0,0},{quest,800097,[],1,1,0,0,[{quest_progress,0,evt_quest_guild_round,0,[],0,{evt_quest_guild_round,196},2,0,[],[],[]}],0,0,0,0},{quest,800096,[],1,1,0,0,[{quest_progress,0,evt_quest_guild_round,0,[],0,{evt_quest_guild_round,195},1,0,[],[],[]}],0,0,0,0},{quest,800095,[],1,1,0,0,[{quest_progress,0,evt_skill_prac_levup,0,[{lev,7}],0,{evt_skill_prac_levup,194},1,0,[],[],[]}],0,0,0,0},{quest,800094,[],1,1,0,0,[{quest_progress,0,evt_skill_prac_levup,0,[{lev,5}],0,{evt_skill_prac_levup,193},6,0,[],[],[]}],0,0,0,0},{quest,800093,[],1,1,0,0,[{quest_progress,0,evt_skill_prac_levup,0,[{lev,4}],0,{evt_skill_prac_levup,192},6,0,[],[],[]}],0,0,0,0},{quest,800092,[],1,1,0,0,[{quest_progress,0,evt_skill_prac_levup,0,[{lev,3}],0,{evt_skill_prac_levup,191},6,0,[],[],[]}],0,0,0,0},{quest,800091,[],1,1,0,0,[{quest_progress,0,evt_skill_prac_levup,0,[{lev,2}],0,{evt_skill_prac_levup,190},6,0,[],[],[]}],0,0,0,0},{quest,800090,[],1,1,0,0,[{quest_progress,0,evt_skill_prac_levup,0,[{lev,1}],0,{evt_skill_prac_levup,189},6,0,[],[],[]}],0,0,0,0},{quest,800089,[],1,1,0,0,[{quest_progress,0,evt_skill_prac_levup,0,[{lev,1}],0,{evt_skill_prac_levup,188},3,0,[],[],[]}],0,0,0,0},{quest,800088,[],1,1,0,0,[{quest_progress,0,evt_arena_cup,0,[],0,{evt_arena_cup,187},1500,0,[],[],[]}],0,0,0,0},{quest,800087,[],1,1,0,0,[{quest_progress,0,evt_arena_cup,0,[],0,{evt_arena_cup,186},1400,0,[],[],[]}],0,0,0,0},{quest,800086,[],1,1,0,0,[{quest_progress,0,evt_arena_cup,0,[],0,{evt_arena_cup,185},1300,0,[],[],[]}],0,0,0,0},{quest,800085,[],1,1,0,0,[{quest_progress,0,evt_arena_cup,0,[],0,{evt_arena_cup,184},1200,0,[],[],[]}],0,0,0,0},{quest,800084,[],1,1,0,0,[{quest_progress,0,evt_arena_cup,0,[],0,{evt_arena_cup,183},1100,0,[],[],[]}],0,0,0,0},{quest,800083,[],1,1,0,0,[{quest_progress,0,evt_arena_cup,0,[],0,{evt_arena_cup,182},1050,0,[],[],[]}],0,0,0,0},{quest,800082,[],1,1,0,0,[{quest_progress,0,evt_blacksmith_embed_lev,2,[],0,{evt_blacksmith_embed_lev,181},8,0,[],[],[]}],0,0,0,0},{quest,800081,[],1,1,0,0,[{quest_progress,0,evt_blacksmith_embed_lev,2,[],0,{evt_blacksmith_embed_lev,180},5,0,[],[],[]}],0,0,0,0},{quest,800080,[],1,1,0,0,[{quest_progress,0,evt_blacksmith_embed_lev,2,[],0,{evt_blacksmith_embed_lev,179},3,0,[],[],[]}],0,0,0,0},{quest,800079,[],1,1,0,0,[{quest_progress,0,evt_blacksmith_embed_lev,1,[],0,{evt_blacksmith_embed_lev,178},8,0,[],[],[]}],0,0,0,0},{quest,800078,[],1,1,0,0,[{quest_progress,0,evt_blacksmith_embed_lev,1,[],0,{evt_blacksmith_embed_lev,177},5,0,[],[],[]}],0,0,0,0},{quest,800077,[],1,1,0,0,[{quest_progress,0,evt_blacksmith_embed_lev,1,[],0,{evt_blacksmith_embed_lev,176},3,0,[],[],[]}],0,0,0,0},{quest,800076,[],1,1,0,0,[{quest_progress,0,evt_blacksmith_embed_lev,1,[],0,{evt_blacksmith_embed_lev,175},1,0,[],[],[]}],0,0,0,0},{quest,800075,[],1,1,0,0,[{quest_progress,0,evt_kill_npc,55499,[],0,{evt_kill_npc,174},1,0,[],[],[]}],0,0,0,0},{quest,800074,[],1,1,0,0,[{quest_progress,0,evt_trial,2,[],0,{evt_trial,173},5,0,[],[],[]}],0,0,0,0},{quest,800073,[],1,1,0,0,[{quest_progress,0,evt_trial,2,[],0,{evt_trial,172},3,0,[],[],[]}],0,0,0,0},{quest,800072,[],1,1,0,0,[{quest_progress,0,evt_trial,1,[],0,{evt_trial,171},6,0,[],[],[]}],0,0,0,0},{quest,800071,[],1,1,0,0,[{quest_progress,0,evt_trial,1,[],0,{evt_trial,170},5,0,[],[],[]}],0,0,0,0},{quest,800070,[],1,1,0,0,[{quest_progress,0,evt_trial,1,[],0,{evt_trial,169},3,0,[],[],[]}],0,0,0,0}],[{1,810000}],1,1619874045,[],[]},{m_family,1,{0,[],0},undefined,{0,[],0},{family_store,1,0,[]},[],[]},{m_charge_gift,1,0,1619873997,1619874045,0,0,0,0,[],0,0,0,[]},{m_mount,10,[],{mount_goal,1,[{500,1619874045},{1000,1619874063}],[],[]},1,0,[],[],[],[],0,[],{1,[],0},0},{m_camp_web,4,[],[],[],0,[],[],{0,0,0,[]}},{m_handbook,4,[],[],0,[{handbook_item,39,28691,1,75,0},{handbook_item,16,28643,1,32,0},{handbook_item,31,28683,1,32,0},{handbook_item,19,28646,1,45,0},{handbook_item,22,28649,1,53,0},{handbook_item,28,28680,1,32,0},{handbook_item,35,28687,1,48,0}],1619960400,[],[]},{m_endless_challenge,3,0,[],[],0,[],0,0,0},{m_lev_break,0,0,0,0,0},{m_head,2,0,0,0,[],0,0,0,[]},{m_extension,3,0,[],0,[],{0,[],0},[],[],0,0},{m_camp_cake,0,0,0,0,0,0,0,[],0,[]},{m_rainbow_lottery,1,[{rainbow_prize,1,1003,29384,1,0,250,15,1,50,0,1},{rainbow_prize,1,2004,23660,1,0,59,30,1,0,0,1},{rainbow_prize,1,3018,20062,1,0,50,40,0,0,0,1},{rainbow_prize,1,3020,20064,1,0,50,40,0,0,0,1},{rainbow_prize,1,4009,21421,1,0,100,60,0,0,0,1},{rainbow_prize,1,4006,23554,1,0,100,60,0,0,0,1},{rainbow_prize,1,5008,20653,1,0,9,260,0,0,0,0},{rainbow_prize,1,5004,20074,1,0,77,260,0,0,0,0},{rainbow_prize,1,5006,23555,1,0,77,260,0,0,0,0},{rainbow_prize,1,5014,20034,1,0,77,260,0,0,0,0},{rainbow_prize,1,6004,20060,1,0,41,200,0,0,0,0},{rainbow_prize,1,6018,20004,1,0,42,200,0,0,0,0},{rainbow_prize,1,6012,20004,1,0,42,200,0,0,0,0},{rainbow_prize,1,6022,20060,1,0,41,200,0,0,0,0},{rainbow_prize,1,6021,20052,1,0,42,200,0,0,0,0},{rainbow_prize,1,6007,20006,3,0,41,200,0,0,0,0}],0,[]},{m_sworn,0,{0,[],0},0,[],[],0},{m_gods_duel,2,{0,[],0},0},{m_preparation,0,undefined,0,0},{m_reward_back,3,1,[],1619872924,1619872924,40,1},{m_child,1,[],0,0,[]},{m_maze,4,0,10135,0,[{4,4},{2,4},{2,3},{3,4},{4,5}],[{maze_open,{1,1},1,1,1,0,3,2,0,0,0,0,[],0},{maze_open,{5,5},1,5,5,0,3,1,0,0,0,0,[],0}],[{{0,0},65,1,23529,1,1},{{0,0},163,2,6,1,4},{{0,0},10,1,20021,1,1},{{0,0},76,1,23532,1,1},{{0,0},75,1,23531,1,1},{{0,0},24,1,20087,1,3},{{0,0},24,1,20087,1,3},{{0,0},1,1,20052,1,1},{{0,0},86,1,20539,1,3},{{0,0},15,1,20088,1,1},{{0,0},37,1,21421,1,1},{{0,0},49,1,21850,1,1},{{0,0},149,2,1,1,1},{{5,4},6,1,20013,1,1},{{5,3},70,1,20531,1,1},{{5,2},137,1,21802,1,5},{{5,1},24,1,20087,1,1},{{4,3},65,1,23529,1,1},{{4,2},162,2,2,1,3},{{4,1},8,1,20020,2,1},{{3,5},52,1,90000,9000,1},{{3,3},73,1,20534,1,1},{{3,2},46,1,23522,1,1},{{3,1},21,1,20060,1,1},{{2,5},148,2,1,1,1},{{2,2},148,2,1,1,1},{{2,1},1,1,20052,1,1},{{1,5},1,1,20052,1,1},{{1,4},40,1,20521,1,1},{{1,3},36,1,21420,1,1},{{1,2},1,1,20052,1,1}],0,[],0,[],[],[],[]},{m_raffle,0,[]},{m_rencounter,1},{m_talisman,5,1,1,[],[],[],0,0,[],0,[],0,48},{m_month_gift,[]},{m_pay_turn,0,[]},{m_camp_box,0,[],[],[],0,0,0},{m_camp_pay_continus,0,0,[],0},{m_spirit_treasure,1,0,0,0,[],0,[]},{m_camp_discount,0,0,[],[],0,0},{m_camp_7_7th,{0,[],0},[],0,0,0,0,0,1,1619872924},{m_new_expression,[],[]},{m_exquisite_shelf,2,0,0,undefined,0,[],0,0},{m_camp_recharge,[]},{m_camp_recharge_gift,[]},{camp_collection,0,[],[],0,0},{m_camp_cut_price,0,[],[],undefined,[],[]},{m_camp_inquiry,1,[{camp_inquiry,1,860,[{camp_clue,1,6,83683,0,1},{camp_clue,1,5,83682,0,1},{camp_clue,1,4,83681,1,1}],0,-1,-1}]},{m_gods_place,3,0,0,0,0,0,0,1,1,0,0,0},{m_camp_slot_machine,1,0,[],0,[]},{m_camp_sign_draw,1,0,0,0,0,[],[]},{m_agenda_week,1,1,0,[],0},{m_exp_bottle,1,0,0,0,0},{m_camp_zillionaire,1,0,0,0,0,0,0,[],[]},{m_provocation,3,0,0,0,[],0,1,0,0,[],[],[],0,0},{m_oracle_treasure,2,0,0,0,[],0,[],0,0},{m_camp_pass_flower_language,1,0,[{7,0},{6,0},{5,0},{4,0},{3,0},{2,0},{1,0}],0},{m_camp_score_exchange,1,0,0,0,0,[],[]},{m_camp_pray,2,0,0,[],0,[]},{package,1,84,75,[67,68,69,70,71,72,73,74,75],[{item,0,83,23746,0,0,111,1,3,0,-1,0,0,0,1,26,0,0,[],[],1,0,2,[],[]},{item,0,27,20101,0,0,100,0,2,0,-1,0,0,0,3,27,0,0,[],[],1,0,2,[{1,3600,[]},{2,1,[]},{3,2,[]}],[]},{item,0,25,20121,0,0,100,0,2,0,-1,0,0,0,99,28,0,0,[],[],1,0,2,[],[]},{item,0,26,20122,0,0,100,0,2,0,-1,0,0,0,99,29,0,0,[],[],1,0,2,[],[]},{item,0,62,20206,0,0,100,0,3,0,-1,0,0,0,1,30,0,0,[],[],1,0,2,[{1,36000,[]},{2,1,[]},{3,2,[]}],[]},{item,0,21,20600,0,0,101,0,1,0,-1,0,0,0,10,31,0,0,[{attr_base,0,101,0,1,6}],[],30,0,2,[{1,2250,[]},{2,1,[]},{3,2,[]}],[]},{item,0,22,20612,0,0,101,0,1,0,-1,0,0,0,10,32,0,0,[{attr_base,0,104,0,1,6}],[],30,0,2,[{1,2250,[]},{2,1,[]},{3,2,[]}],[]},{item,0,11,20615,0,0,102,0,2,0,-1,0,0,0,1,34,0,0,[{attr_base,0,100,0,0,60034}],[],1,0,2,[{1,4000,[]},{2,1,[]},{3,2,[]}],[]},{item,0,12,20615,0,0,102,0,2,0,-1,0,0,0,1,35,0,0,[{attr_base,0,100,0,0,60056}],[],1,0,2,[{1,4000,[]},{2,1,[]},{3,2,[]}],[]},{item,0,13,20615,0,0,102,0,2,0,-1,0,0,0,1,36,0,0,[{attr_base,0,100,0,0,60001}],[],1,0,2,[{1,4000,[]},{2,1,[]},{3,2,[]}],[]},{item,0,14,20615,0,0,102,0,2,0,-1,0,0,0,1,37,0,0,[{attr_base,0,100,0,0,60046}],[],1,0,2,[{1,4000,[]},{2,1,[]},{3,2,[]}],[]},{item,0,15,20615,0,0,102,0,2,0,-1,0,0,0,1,38,0,0,[{attr_base,0,100,0,0,60059}],[],1,0,2,[{1,4000,[]},{2,1,[]},{3,2,[]}],[]},{item,0,16,20615,0,0,102,0,2,0,-1,0,0,0,1,39,0,0,[{attr_base,0,100,0,0,60035}],[],1,0,2,[{1,4000,[]},{2,1,[]},{3,2,[]}],[]},{item,0,17,20615,0,0,102,0,2,0,-1,0,0,0,1,40,0,0,[{attr_base,0,100,0,0,60048}],[],1,0,2,[{1,4000,[]},{2,1,[]},{3,2,[]}],[]},{item,0,18,20615,0,0,102,0,2,0,-1,0,0,0,1,41,0,0,[{attr_base,0,100,0,0,60063}],[],1,0,2,[{1,4000,[]},{2,1,[]},{3,2,[]}],[]},{item,0,19,20615,0,0,102,0,2,0,-1,0,0,0,1,42,0,0,[{attr_base,0,100,0,0,60048}],[],1,0,2,[{1,4000,[]},{2,1,[]},{3,2,[]}],[]},{item,0,20,20615,0,0,102,0,2,0,-1,0,0,0,1,43,0,0,[{attr_base,0,100,0,0,60039}],[],1,0,2,[{1,4000,[]},{2,1,[]},{3,2,[]}],[]},{item,0,61,20616,0,0,102,0,3,0,-1,0,0,0,1,44,0,0,[{attr_base,0,100,0,0,60013}],[],1,0,2,[],[]},{item,0,70,20617,0,0,102,0,4,0,-1,0,0,0,1,45,0,0,[{attr_base,0,100,0,0,60162}],[],1,0,2,[],[]},{item,0,76,20617,0,0,102,0,4,0,-1,0,0,0,1,46,0,0,[{attr_base,0,100,0,0,60152}],[],1,0,2,[],[]},{item,0,42,20653,0,0,110,0,3,0,-1,0,0,0,50,47,0,0,[],[],80,0,2,[{1,2700,[]},{2,1,[]},{3,2,[]}],[]},{item,0,43,20656,0,0,110,0,3,0,-1,0,0,0,50,48,0,0,[],[],90,0,2,[{1,8100,[]},{2,1,[]},{3,2,[]}],[]},{item,0,44,20659,0,0,110,0,4,0,-1,0,0,0,50,49,0,0,[],[],100,0,2,[{1,24300,[]},{2,1,[]},{3,2,[]}],[]},{item,0,30,20800,0,0,110,0,2,0,-1,0,0,0,50,50,0,0,[],[],40,0,2,[{1,810,[]},{2,1,[]},{3,2,[]}],[]},{item,0,31,20801,0,0,110,0,2,0,-1,0,0,0,50,51,0,0,[],[],40,0,2,[{1,1080,[]},{2,1,[]},{3,2,[]}],[]},{item,0,32,20802,0,0,110,0,2,0,-1,0,0,0,50,52,0,0,[],[],40,0,2,[{1,810,[]},{2,1,[]},{3,2,[]}],[]},{item,0,33,20803,0,0,110,0,2,0,-1,0,0,0,50,53,0,0,[],[],40,0,2,[{1,720,[]},{2,1,[]},{3,2,[]}],[]},{item,0,34,20804,0,0,110,0,2,0,-1,0,0,0,50,54,0,0,[],[],40,0,2,[{1,720,[]},{2,1,[]},{3,2,[]}],[]},{item,0,35,20805,0,0,110,0,2,0,-1,0,0,0,50,55,0,0,[],[],40,0,2,[{1,810,[]},{2,1,[]},{3,2,[]}],[]},{item,0,36,20806,0,0,110,0,2,0,-1,0,0,0,50,56,0,0,[],[],40,0,2,[{1,720,[]},{2,1,[]},{3,2,[]}],[]},{item,0,74,22308,0,0,111,1,3,0,-1,0,0,0,1,59,0,0,[],[],1,0,2,[],[]},{item,0,65,22553,0,0,111,1,3,0,-1,0,0,0,8,61,0,0,[],[],50,0,2,[],[]},{item,0,71,22554,0,0,111,1,3,0,-1,0,0,0,8,62,0,0,[],[],60,0,2,[],[]},{item,0,73,22555,0,0,111,1,3,0,-1,0,0,0,6,63,0,0,[],[],70,0,2,[],[]},{item,0,80,23201,0,0,111,1,3,0,-1,0,0,0,1,65,0,0,[],[],100,0,2,[],[]},{item,0,82,23551,0,0,132,0,3,0,-1,0,0,0,1,66,0,0,[],[],75,0,2,[],[]},{item,0,53,29560,0,0,0,1,3,0,-1,0,0,0,1,25,0,0,[],[],1,0,2,[],[]},{item,0,49,29545,0,0,0,1,3,0,-1,0,0,0,1,24,0,0,[],[],1,0,1,[],[]},{item,0,48,29545,0,0,0,1,3,0,-1,0,0,0,1,23,0,0,[],[],1,0,1,[],[]},{item,0,51,29484,0,0,0,1,3,0,-1,0,0,0,1,22,0,0,[],[],1,0,1,[],[]},{item,0,50,29484,0,0,0,1,3,0,-1,0,0,0,1,21,0,0,[],[],1,0,1,[],[]},{item,0,54,29277,0,0,0,1,3,0,-1,0,0,0,1,20,0,0,[],[],1,0,1,[],[]},{item,0,60,29008,0,0,0,1,3,0,-1,0,0,0,2,19,0,0,[],[],1,0,2,[],[]},{item,0,81,23550,0,0,0,0,3,0,-1,0,0,0,100,18,0,0,[],[],75,0,2,[{1,13500,[]},{2,1,[]},{3,2,[]}],[]},{item,0,67,22617,0,0,0,1,4,0,-1,0,0,0,1,17,0,0,[],[],1,0,2,[],[]},{item,0,79,21860,0,0,0,0,3,0,-1,0,0,0,1,16,0,0,[],[],40,0,2,[{1,24300,[]},{2,1,[]},{3,2,[]}],[]},{item,0,55,21220,0,0,0,0,2,0,-1,0,0,0,1,15,0,0,[],[],35,0,2,[],[]},{item,0,68,21101,0,0,0,0,3,0,-1,0,0,0,4,14,0,0,[],[],35,0,2,[{1,12600,[]},{2,1,[]},{3,2,[]}],[]},{item,0,37,20520,0,0,0,0,2,0,-1,0,0,0,50,13,0,0,[],[],40,0,2,[{1,585,[]},{2,1,[]},{3,2,[]}],[]},{item,0,29,20405,0,0,0,0,4,0,-1,0,0,0,99,12,0,0,[],[],1,0,2,[{1,22500,[]},{2,1,[]},{3,2,[]}],[]},{item,0,28,20405,0,0,0,0,4,0,-1,0,0,0,1,11,0,0,[],[],1,0,2,[{1,22500,[]},{2,1,[]},{3,2,[]}],[]},{item,0,78,20400,0,0,0,0,3,0,-1,0,0,0,6,10,0,0,[],[],50,0,2,[{1,2250,[]},{2,1,[]},{3,2,[]}],[]},{item,0,39,20095,0,0,0,0,3,0,-1,0,0,0,1,9,0,0,[],[],30,0,2,[{1,10350,[]},{2,1,[]},{3,2,[]}],[]},{item,0,57,20046,0,0,0,0,3,0,-1,0,0,0,4,8,0,0,[],[],20,0,2,[{1,7200,[]},{2,1,[]},{3,2,[]}],[]},{item,0,24,20040,0,0,0,0,3,0,-1,0,0,0,10,7,0,0,[],[],1,0,2,[{1,13500,[]},{2,1,[]},{3,2,[]}],[]},{item,0,23,20039,0,0,0,0,3,0,-1,0,0,0,10,6,0,0,[],[],1,0,2,[{1,4500,[]},{2,1,[]},{3,2,[]}],[]},{item,0,63,20020,0,0,0,0,2,0,-1,0,0,0,20,4,0,0,[],[],50,0,2,[{1,900,[]},{2,1,[]},{3,2,[]}],[]},{item,0,75,20011,0,0,0,0,3,0,-1,0,0,0,2,3,0,0,[],[],1,0,2,[{1,20000,[]},{2,1,[]},{3,2,[]}],[]},{item,0,69,20006,0,0,0,0,2,0,-1,0,0,0,810,2,0,0,[],[],5,0,2,[],[]},{item,0,45,22600,1,0,111,1,3,0,-1,0,0,0,1,64,0,0,[],[],1,0,2,[],[]},{item,0,47,22546,1,0,111,1,2,0,-1,0,0,0,1,60,0,0,[],[],1,0,2,[],[]},{item,0,46,22302,1,0,111,1,3,0,-1,0,0,0,2,58,0,0,[],[],1,0,2,[],[]},{item,0,40,22300,1,0,111,1,4,0,-1,0,0,0,2,57,0,0,[],[],1,0,2,[],[]},{item,0,6,20615,1,0,102,0,2,0,-1,0,0,0,1,33,0,0,[{attr_base,0,100,0,0,60076}],[],1,0,2,[],[]},{item,0,3,20025,1,0,0,0,2,0,-1,0,0,0,2,5,0,0,[],[],30,0,2,[],[]},{item,0,7,20006,1,0,0,0,2,0,-1,0,0,0,13,1,0,0,[],[],5,0,2,[],[]}]},{package,2,1,25,[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],[]},{package,3,1,20,[9,10,11,12,13,14,15,16,17,18,19,20],[{item,0,1,10691,0,10503,21,3,4,0,12,0,0,0,1,1,0,0,[{attr_base,0,43,4,1,1226},{attr_base,0,5,3,1,452},{attr_base,0,4,9,1,1444},{attr_base,1,55,12,3,30},{attr_base,1,43,0,1,294},{attr_base,1,5,0,1,108},{attr_base,1,4,0,1,347},{attr_base,2,103,4052,1,13},{attr_base,2,105,4111,1,16}],[],90,6,2,[],[]},{item,0,5,10692,0,0,10,3,4,0,12,0,0,0,1,5,0,0,[{attr_base,0,6,9,1,751},{attr_base,1,56,12,3,30},{attr_base,1,6,0,1,541},{attr_base,2,102,2081,1,25}],[],90,6,2,[],[]},{item,0,6,10693,0,0,11,3,4,0,12,0,0,0,1,6,0,0,[{attr_base,0,6,13,1,112},{attr_base,0,1,7,1,1955},{attr_base,1,6,0,1,81},{attr_base,1,1,0,1,1408},{attr_base,2,103,2081,1,25}],[],90,6,2,[],[]},{item,0,7,10694,0,0,12,3,4,0,12,0,0,0,1,7,0,0,[{attr_base,0,7,8,1,441},{attr_base,0,2,3,1,805},{attr_base,1,57,12,3,30},{attr_base,1,2,0,1,386},{attr_base,1,7,0,1,318},{attr_base,2,105,3112,1,-8},{attr_base,2,101,3111,1,36}],[],90,6,2,[],[]},{item,0,8,10696,0,0,14,3,4,0,12,0,0,0,1,8,0,0,[{attr_base,0,6,9,1,216},{attr_base,0,3,8,1,76},{attr_base,1,6,0,1,156},{attr_base,1,3,0,1,36},{attr_base,2,104,3072,1,-7},{attr_base,2,101,3041,1,29}],[],90,6,2,[],[]},{item,0,2,10581,0,0,6,3,4,0,12,0,0,0,1,2,0,0,[{attr_base,0,26,7,1,109},{attr_base,0,4,7,1,526},{attr_base,1,26,0,1,26},{attr_base,1,4,0,1,126},{attr_base,2,105,4042,1,11},{attr_base,2,101,4101,1,14}],[],80,0,2,[],[]},{item,0,3,10582,0,0,7,3,4,0,12,0,0,0,1,3,0,0,[{attr_base,0,7,6,1,254},{attr_base,0,5,9,1,855},{attr_base,1,7,0,1,183},{attr_base,1,5,0,1,205},{attr_base,2,101,3012,1,-5},{attr_base,2,103,3061,1,28}],[],80,0,2,[],[]},{item,0,4,10584,0,0,9,3,4,0,12,0,0,0,1,4,0,0,[{attr_base,0,25,9,1,114},{attr_base,0,1,8,1,759},{attr_base,1,25,0,1,27},{attr_base,1,1,0,1,546},{attr_base,2,103,1071,1,17}],[],80,0,2,[],[]}]},{package,4,1,0,[],[]}}');
+/*!40000 ALTER TABLE `role` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `role_charge_cfg`
+--
+
+DROP TABLE IF EXISTS `role_charge_cfg`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `role_charge_cfg` (
+  `id` int(11) NOT NULL COMMENT '角色id',
+  `platform` varchar(20) NOT NULL COMMENT '平台标识',
+  `zone_id` int(11) NOT NULL DEFAULT '0' COMMENT '区号',
+  `label` varchar(50) NOT NULL COMMENT '充值标签',
+  PRIMARY KEY (`id`,`platform`,`zone_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='玩家计费点';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `role_charge_cfg`
+--
+
+LOCK TABLES `role_charge_cfg` WRITE;
+/*!40000 ALTER TABLE `role_charge_cfg` DISABLE KEYS */;
+/*!40000 ALTER TABLE `role_charge_cfg` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `role_info`
+--
+
+DROP TABLE IF EXISTS `role_info`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `role_info` (
+  `rid` int(11) NOT NULL COMMENT '角色信息',
+  `platform` varchar(32) NOT NULL COMMENT '平台名称',
+  `zone_id` int(11) NOT NULL COMMENT '区号',
+  `account` varchar(64) NOT NULL COMMENT '账号',
+  `channel_reg` int(11) NOT NULL DEFAULT '0' COMMENT '注册渠道',
+  `dispense` varchar(20) NOT NULL DEFAULT '' COMMENT '分发号',
+  `name` varchar(22) NOT NULL COMMENT '角色',
+  `sex` tinyint(4) NOT NULL COMMENT '性别',
+  `classes` int(11) NOT NULL COMMENT '职业',
+  `fc` int(11) NOT NULL COMMENT '战力',
+  `lev` int(11) NOT NULL COMMENT '等级',
+  `exp` int(11) NOT NULL COMMENT '经验',
+  `gold` int(11) NOT NULL COMMENT '钻石',
+  `gold_bind` int(11) NOT NULL COMMENT '金币',
+  `coin` int(11) NOT NULL COMMENT '银币',
+  `lock_status` int(8) NOT NULL DEFAULT '0' COMMENT '账号锁定状态:0:正常,1禁言2封号3封号且禁言',
+  `reg_ip` char(16) DEFAULT NULL COMMENT '注册IP',
+  `reg_time` int(11) NOT NULL DEFAULT '0' COMMENT '注册时间',
+  `login_ip` char(16) DEFAULT NULL COMMENT '最后一次登陆IP',
+  `login_time` int(11) NOT NULL DEFAULT '0' COMMENT '登陆时间',
+  `logout_time` int(11) NOT NULL DEFAULT '0' COMMENT '登出时间',
+  `label` tinyint(4) NOT NULL DEFAULT '0' COMMENT '标志,0:玩家 1:GM 2:新手指导员',
+  `device_id` varchar(40) NOT NULL DEFAULT '' COMMENT '设备号',
+  `device_type` int(4) NOT NULL DEFAULT '1' COMMENT '设备类型 1:安卓 2:ios 3:windows',
+  `device_key` varchar(40) NOT NULL DEFAULT '' COMMENT '设备串号',
+  `break_times` tinyint(4) NOT NULL DEFAULT '0' COMMENT '等级突破次数',
+  PRIMARY KEY (`rid`,`platform`,`zone_id`),
+  KEY `channel_reg` (`channel_reg`),
+  KEY `name` (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='角色详细数据';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `role_info`
+--
+
+LOCK TABLES `role_info` WRITE;
+/*!40000 ALTER TABLE `role_info` DISABLE KEYS */;
+INSERT INTO `role_info` VALUES (1,'dev',1,'2017682741_0',0,'5470','亲测源码网',1,6,11465,100,8221,0,0,0,0,'120.11.121.114',1619872924,'120.11.121.114',1619876660,1619875682,0,'845f4276f722b54860398f5c95e58c49',1,'865166028895061',0);
+/*!40000 ALTER TABLE `role_info` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `strategy_title`
+--
+
+DROP TABLE IF EXISTS `strategy_title`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `strategy_title` (
+  `id` int(11) NOT NULL COMMENT '唯一ID',
+  `name` varchar(50) NOT NULL COMMENT '攻略标题',
+  `content` text NOT NULL COMMENT '攻略内容',
+  `role_id` int(10) unsigned NOT NULL COMMENT '角色id',
+  `platform` varchar(20) NOT NULL COMMENT '平台标识',
+  `zone_id` int(11) NOT NULL DEFAULT '0' COMMENT '区号',
+  `role_name` varchar(20) NOT NULL DEFAULT '' COMMENT '角色名',
+  `account` varchar(120) NOT NULL COMMENT '帐号名',
+  `type` int(11) NOT NULL COMMENT '1:新手成长;2职业装备;3:宠物培养;4:挑战攻略',
+  `gm` tinyint(2) NOT NULL DEFAULT '0' COMMENT '1-官方发布;0-玩家发布',
+  `order_type` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '默认排序序号',
+  `time` int(11) NOT NULL DEFAULT '0' COMMENT '创建时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='攻略系统';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `strategy_title`
+--
+
+LOCK TABLES `strategy_title` WRITE;
+/*!40000 ALTER TABLE `strategy_title` DISABLE KEYS */;
+/*!40000 ALTER TABLE `strategy_title` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `strategy_title_local`
+--
+
+DROP TABLE IF EXISTS `strategy_title_local`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `strategy_title_local` (
+  `id` int(11) NOT NULL COMMENT '唯一ID',
+  `name` varchar(50) NOT NULL COMMENT '攻略标题',
+  `content` text NOT NULL COMMENT '攻略内容',
+  `role_id` int(10) unsigned NOT NULL COMMENT '角色id',
+  `platform` varchar(20) NOT NULL COMMENT '平台标识',
+  `zone_id` int(11) NOT NULL DEFAULT '0' COMMENT '区号',
+  `role_name` varchar(20) NOT NULL DEFAULT '' COMMENT '角色名',
+  `account` varchar(120) NOT NULL COMMENT '帐号名',
+  `type` int(11) NOT NULL COMMENT '1:新手成长;2职业装备;3:宠物培养;4:挑战攻略',
+  `state` tinyint(2) NOT NULL DEFAULT '0' COMMENT '0-申请状态;1-审核通过;2-审核不通过',
+  `order_type` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '默认排序序号',
+  `time` int(11) NOT NULL DEFAULT '0' COMMENT '创建时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='攻略系统本地';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `strategy_title_local`
+--
+
+LOCK TABLES `strategy_title_local` WRITE;
+/*!40000 ALTER TABLE `strategy_title_local` DISABLE KEYS */;
+/*!40000 ALTER TABLE `strategy_title_local` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sys_notice_board`
+--
+
+DROP TABLE IF EXISTS `sys_notice_board`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `sys_notice_board` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `type` smallint(6) unsigned DEFAULT '1' COMMENT '通知类型 1:更新公告 2:gm补偿 3:奖励 4:普通',
+  `start_time` int(10) unsigned NOT NULL COMMENT '开始时间',
+  `end_time` int(10) unsigned NOT NULL COMMENT '结束时间',
+  `audit` tinyint(1) unsigned NOT NULL DEFAULT '1' COMMENT '1已审核，0为审核',
+  `title` text COMMENT '通知标题',
+  `content` text COMMENT '内容',
+  `msg` text COMMENT '通知内容',
+  `gain` text COMMENT '奖励',
+  `cond` text COMMENT '领取条件',
+  PRIMARY KEY (`id`),
+  KEY `start_time` (`start_time`),
+  KEY `end_time` (`end_time`),
+  KEY `audit` (`audit`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='通知公告板';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_notice_board`
+--
+
+LOCK TABLES `sys_notice_board` WRITE;
+/*!40000 ALTER TABLE `sys_notice_board` DISABLE KEYS */;
+/*!40000 ALTER TABLE `sys_notice_board` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sys_notice_scroll`
+--
+
+DROP TABLE IF EXISTS `sys_notice_scroll`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `sys_notice_scroll` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `type` smallint(6) unsigned DEFAULT '1' COMMENT '通知类型 1:更新公告 2:gm补偿 3:奖励 4:普通',
+  `start_time` int(10) unsigned NOT NULL COMMENT '开始时间',
+  `end_time` int(10) unsigned NOT NULL COMMENT '结束时间',
+  `interval_time` int(10) unsigned NOT NULL COMMENT '间隔时间',
+  `audit` tinyint(1) unsigned NOT NULL DEFAULT '1' COMMENT '1已审核，0为审核',
+  `msg` text COMMENT '通知内容',
+  PRIMARY KEY (`id`),
+  KEY `start_time` (`start_time`),
+  KEY `end_time` (`end_time`),
+  KEY `audit` (`audit`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='滚动广播';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_notice_scroll`
+--
+
+LOCK TABLES `sys_notice_scroll` WRITE;
+/*!40000 ALTER TABLE `sys_notice_scroll` DISABLE KEYS */;
+/*!40000 ALTER TABLE `sys_notice_scroll` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sys_report`
+--
+
+DROP TABLE IF EXISTS `sys_report`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `sys_report` (
+  `id` int(10) unsigned NOT NULL COMMENT '被举报角色id',
+  `platform` varchar(20) NOT NULL COMMENT '被举报平台标识',
+  `zone_id` int(11) NOT NULL DEFAULT '0' COMMENT '被举报区号',
+  `time` int(10) unsigned NOT NULL COMMENT '举报产生时间戳',
+  `classes` tinyint(4) NOT NULL DEFAULT '0' COMMENT '被举报职业',
+  `lev` tinyint(4) NOT NULL DEFAULT '0' COMMENT '被举报等级',
+  `name` varchar(20) NOT NULL DEFAULT '' COMMENT '被举报角色名',
+  `state` smallint(6) unsigned DEFAULT '0' COMMENT '0:未处理 1:禁言 2:封号 3:无效',
+  `ctime` int(10) NOT NULL DEFAULT '0' COMMENT '封号/禁言时间',
+  `items` varchar(1024) NOT NULL DEFAULT '' COMMENT '物品奖励({Id,Bind,Num})',
+  `id_1` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '举报角色1-id',
+  `platform_1` varchar(20) NOT NULL DEFAULT '' COMMENT '举报角色1-平台标识',
+  `zone_id_1` int(11) NOT NULL DEFAULT '0' COMMENT '举报角色1-区号',
+  `name_1` varchar(20) NOT NULL DEFAULT '' COMMENT '举报角色1-名字',
+  `lev_1` tinyint(4) NOT NULL DEFAULT '0' COMMENT '举报角色1-等级',
+  `time_1` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '举报1-时间戳',
+  `type_1` int(10) unsigned NOT NULL DEFAULT '1' COMMENT '举报1-类型,1:昵称不雅,2:骚扰谩骂,3:广告诈骗,4:色情暴力,5:反动,6:其他',
+  `reason_1` text COMMENT '原因1',
+  `msg_1` text COMMENT '证据1',
+  `id_2` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '举报角色2-id',
+  `platform_2` varchar(20) NOT NULL DEFAULT '' COMMENT '举报角色2-平台标识',
+  `zone_id_2` int(11) NOT NULL DEFAULT '0' COMMENT '举报角色2-区号',
+  `name_2` varchar(20) NOT NULL DEFAULT '' COMMENT '举报角色2-名字',
+  `lev_2` tinyint(4) NOT NULL DEFAULT '0' COMMENT '举报角色2-等级',
+  `time_2` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '举报2-时间戳',
+  `type_2` int(10) unsigned NOT NULL DEFAULT '1' COMMENT '举报2-类型1:昵称不雅,2:骚扰谩骂,3:广告诈骗,4:色情暴力,5:反动,6:其他',
+  `reason_2` text COMMENT '原因2',
+  `msg_2` text COMMENT '证据2',
+  `id_3` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '举报角色3-id',
+  `platform_3` varchar(20) NOT NULL DEFAULT '' COMMENT '举报角色3-平台标识',
+  `zone_id_3` int(11) NOT NULL DEFAULT '0' COMMENT '举报角色3-区号',
+  `name_3` varchar(20) NOT NULL DEFAULT '' COMMENT '举报角色3-名字',
+  `lev_3` tinyint(4) NOT NULL DEFAULT '0' COMMENT '举报角色3-等级',
+  `time_3` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '举报3-时间戳',
+  `type_3` int(10) unsigned NOT NULL DEFAULT '1' COMMENT '举报3-类型1:昵称不雅,2:骚扰谩骂,3:广告诈骗,4:色情暴力,5:反动,6:其他',
+  `reason_3` text COMMENT '原因3',
+  `msg_3` text COMMENT '证据3',
+  `id_4` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '举报角色4-id',
+  `platform_4` varchar(20) NOT NULL DEFAULT '' COMMENT '举报角色4-平台标识',
+  `zone_id_4` int(11) NOT NULL DEFAULT '0' COMMENT '举报角色4-区号',
+  `name_4` varchar(20) NOT NULL DEFAULT '' COMMENT '举报角色4-名字',
+  `lev_4` tinyint(4) NOT NULL DEFAULT '0' COMMENT '举报角色4-等级',
+  `time_4` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '举报4-时间戳',
+  `type_4` int(10) unsigned NOT NULL DEFAULT '1' COMMENT '举报4-类型1:昵称不雅,2:骚扰谩骂,3:广告诈骗,4:色情暴力,5:反动,6:其他',
+  `reason_4` text COMMENT '原因4',
+  `msg_4` text COMMENT '证据4',
+  `id_5` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '举报角色5-id',
+  `platform_5` varchar(20) NOT NULL DEFAULT '' COMMENT '举报角色5-平台标识',
+  `zone_id_5` int(11) NOT NULL DEFAULT '0' COMMENT '举报角色5-区号',
+  `name_5` varchar(20) NOT NULL DEFAULT '' COMMENT '举报角色5-名字',
+  `lev_5` tinyint(4) NOT NULL DEFAULT '0' COMMENT '举报角色5-等级',
+  `time_5` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '举报5-时间戳',
+  `type_5` int(10) unsigned NOT NULL DEFAULT '1' COMMENT '举报5-类型1:昵称不雅,2:骚扰谩骂,3:广告诈骗,4:色情暴力,5:反动,6:其他',
+  `reason_5` text COMMENT '原因5',
+  `msg_5` text COMMENT '证据5',
+  PRIMARY KEY (`id`,`platform`,`zone_id`,`time`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='举报表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_report`
+--
+
+LOCK TABLES `sys_report` WRITE;
+/*!40000 ALTER TABLE `sys_report` DISABLE KEYS */;
+/*!40000 ALTER TABLE `sys_report` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sys_white_list`
+--
+
+DROP TABLE IF EXISTS `sys_white_list`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `sys_white_list` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `account` varchar(120) NOT NULL COMMENT '帐号名',
+  `name` varchar(20) NOT NULL COMMENT '使用者',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='白名单列表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_white_list`
+--
+
+LOCK TABLES `sys_white_list` WRITE;
+/*!40000 ALTER TABLE `sys_white_list` DISABLE KEYS */;
+/*!40000 ALTER TABLE `sys_white_list` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping events for database 'fswy_dev_1'
+--
+
+--
+-- Dumping routines for database 'fswy_dev_1'
+--
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2021-05-01 22:13:41

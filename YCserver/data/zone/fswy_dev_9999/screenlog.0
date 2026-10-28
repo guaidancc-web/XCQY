@@ -1,0 +1,310 @@
+Erlang/OTP 17 [erts-6.1] [source] [64-bit] [smp:2:2] [async-threads:10] [kernel-poll:true]
+
+Eshell V6.1  (abort with ^G)
+(fswy_dev_9999@42.192.118.16)1> 
+
++------------------------------------------------------------+
+|                             o.O                            |
++------------------------------------------------------------+
+## info 2021/5/1 20:32:59[env:168] 已载入[env.cfg]的配置内容
+## info 2021/5/1 20:33:0[log:2170] [log] 正在启动...
+## info 2021/5/1 20:33:0[log_db:36] [log_db] 正在启动...
+## info 2021/5/1 20:33:0[log_db:41] [log_db] 启动完成
+## info 2021/5/1 20:33:0[log_db:36] [log_db] 正在启动...
+## info 2021/5/1 20:33:0[log_db:41] [log_db] 启动完成
+## info 2021/5/1 20:33:0[log_web:40] [log_web] 正在启动...
+## info 2021/5/1 20:33:0[log_web:46] [log_web] 启动完成
+## info 2021/5/1 20:33:0[log_web:40] [log_web] 正在启动...
+## info 2021/5/1 20:33:0[log_web:46] [log_web] 启动完成
+## info 2021/5/1 20:33:0[log_web:40] [log_web] 正在启动...
+## info 2021/5/1 20:33:0[log_web:46] [log_web] 启动完成
+## info 2021/5/1 20:33:0[log_web_3k:60] [log_web_3k] 正在启动...
+## info 2021/5/1 20:33:0[log_web_3k:66] [log_web_3k] 启动完成...
+## info 2021/5/1 20:33:0[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:33:0[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:33:0[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:33:0[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:33:0[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:33:0[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:33:0[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:33:0[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:33:0[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:33:0[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:33:0[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:33:0[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:33:0[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:33:0[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:33:0[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:33:0[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:33:0[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:33:0[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:33:0[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:33:0[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:33:0[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:33:0[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:33:0[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:33:0[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:33:0[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:33:0[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:33:0[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:33:0[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:33:0[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:33:0[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:33:0[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:33:0[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:33:0[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:33:0[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:33:0[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:33:0[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:33:0[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:33:0[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:33:0[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:33:0[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:33:0[log:2190] [log] 启动完成
+## info 2021/5/1 20:33:0[log_old:1100] [log_old] 正在启动...
+## info 2021/5/1 20:33:0[log_db:36] [log_db] 正在启动...
+## info 2021/5/1 20:33:0[log_db:41] [log_db] 启动完成
+## info 2021/5/1 20:33:0[log_db:36] [log_db] 正在启动...
+## info 2021/5/1 20:33:0[log_db:41] [log_db] 启动完成
+## info 2021/5/1 20:33:0[log_web:40] [log_web] 正在启动...
+## info 2021/5/1 20:33:0[log_web:46] [log_web] 启动完成
+## info 2021/5/1 20:33:0[log_web:40] [log_web] 正在启动...
+## info 2021/5/1 20:33:0[log_web:46] [log_web] 启动完成
+## info 2021/5/1 20:33:0[log_web:40] [log_web] 正在启动...
+## info 2021/5/1 20:33:0[log_web:46] [log_web] 启动完成
+## info 2021/5/1 20:33:0[log_old:1119] [log_old] 启动完成
+## info 2021/5/1 20:33:0[info:715] [info] 正在启动...
+## info 2021/5/1 20:33:0[info:718] [info] 启动完成
+## info 2021/5/1 20:33:0[edets_mon:88] [edets_mon] 正在启动...
+## info 2021/5/1 20:33:0[edets_mon:95] [edets_mon] 启动完成
+## info 2021/5/1 20:33:0[role_group:140] [role_group] 正在启动...
+## info 2021/5/1 20:33:0[role_group:149] [role_group] 启动完成
+## info 2021/5/1 20:33:0[map_mgr:219] [map_mgr] 正在启动...
+## info 2021/5/1 20:33:0[map_mgr:235] [map_mgr] 启动完成
+## info 2021/5/1 20:33:0[unit_mgr:334] [unit_mgr] 正在启动...
+## info 2021/5/1 20:33:0[unit_mgr:342] [unit_mgr] 启动完成...
+## info 2021/5/1 20:33:0[battle_mgr:160] [battle_mgr] 正在启动...
+## info 2021/5/1 20:33:0[battle_mgr:171] [battle_mgr] 启动完成...
+## info 2021/5/1 20:33:0[c_big_world_mgr:174] [c_big_world_mgr] 正在启动...
+## info 2021/5/1 20:33:0[c_big_world_mgr:180] [c_big_world_mgr] 启动完成
+## info 2021/5/1 20:33:0[tournament:272] 开始启动...
+## debug [agenda:329] IsToday:true, Zero: 1619798400 Start: 45000 PrepareSec: 900, Now: 1619872380
+## debug [agenda:329] IsToday:false, Zero: 1619798400 Start: 45000 PrepareSec: 900, Now: 1619872380
+## info 2021/5/1 20:33:0[tournament:843] 下一场开始时间2028 1 6120
+## info 2021/5/1 20:33:0[tournament:882] 没有数据需要加载
+## info 2021/5/1 20:33:0[tournament:901] 没有数据需要加载
+## info 2021/5/1 20:33:0[tournament:313] 启动完成 state_name: idle, pk_type: 1 , timeout: 6120000
+## info 2021/5/1 20:33:0[friend_circle:112] 开始启动...
+## info 2021/5/1 20:33:0[friend_circle:872] 没有数据需要加载
+## info 2021/5/1 20:33:0[friend_circle:891] 没有数据需要加载
+## info 2021/5/1 20:33:0[friend_circle:138] 启动完成
+## info 2021/5/1 20:33:0[lottery_asyn:29] [lottery_asyn] 正在启动...
+## info 2021/5/1 20:33:0[lottery_asyn:30] 启动完成
+## info 2021/5/1 20:33:0[lottery_mgr:127] [lottery_mgr] 正在启动...
+## info 2021/5/1 20:33:0[lottery_mgr:1032] 一元夺宝邮件没有数据需要加载
+## info 2021/5/1 20:33:0[lottery_mgr:1076] 一元夺宝历史记录没有数据需要加载
+## info 2021/5/1 20:33:0[lottery_mgr:1053] 一元夺宝邮件没有数据需要加载
+## info 2021/5/1 20:33:0[lottery_mgr:154] 一元夺宝没有数据需要加载
+## debug [lottery:113] ==============={1582421400,1582428600,{{2021,5,1},{20,33,0}},{{2020,2,23},{9,30,0}},{{2020,2,23},{11,30,0}}}
+## debug [lottery:113] ==============={1582450200,1582455600,{{2021,5,1},{20,33,0}},{{2020,2,23},{17,30,0}},{{2020,2,23},{19,0,0}}}
+## debug [lottery:113] ==============={1583026200,1583033400,{{2021,5,1},{20,33,0}},{{2020,3,1},{9,30,0}},{{2020,3,1},{11,30,0}}}
+## debug [lottery:113] ==============={1583055000,1583060400,{{2021,5,1},{20,33,0}},{{2020,3,1},{17,30,0}},{{2020,3,1},{19,0,0}}}
+## debug [lottery:113] ==============={1583631000,1583638200,{{2021,5,1},{20,33,0}},{{2020,3,8},{9,30,0}},{{2020,3,8},{11,30,0}}}
+## debug [lottery:113] ==============={1583659800,1583665200,{{2021,5,1},{20,33,0}},{{2020,3,8},{17,30,0}},{{2020,3,8},{19,0,0}}}
+## debug [lottery:113] ==============={1584235800,1584243000,{{2021,5,1},{20,33,0}},{{2020,3,15},{9,30,0}},{{2020,3,15},{11,30,0}}}
+## debug [lottery:113] ==============={1584264600,1584270000,{{2021,5,1},{20,33,0}},{{2020,3,15},{17,30,0}},{{2020,3,15},{19,0,0}}}
+## debug [lottery:113] ==============={1584840600,1584847800,{{2021,5,1},{20,33,0}},{{2020,3,22},{9,30,0}},{{2020,3,22},{11,30,0}}}
+## debug [lottery:113] ==============={1584869400,1584874800,{{2021,5,1},{20,33,0}},{{2020,3,22},{17,30,0}},{{2020,3,22},{19,0,0}}}
+## debug [lottery:113] ==============={1585531800,1585539000,{{2021,5,1},{20,33,0}},{{2020,3,30},{9,30,0}},{{2020,3,30},{11,30,0}}}
+## debug [lottery:113] ==============={1585560600,1585566000,{{2021,5,1},{20,33,0}},{{2020,3,30},{17,30,0}},{{2020,3,30},{19,0,0}}}
+## debug [lottery:113] ==============={1586050200,1586057400,{{2021,5,1},{20,33,0}},{{2020,4,5},{9,30,0}},{{2020,4,5},{11,30,0}}}
+## debug [lottery:113] ==============={1586079000,1586084400,{{2021,5,1},{20,33,0}},{{2020,4,5},{17,30,0}},{{2020,4,5},{19,0,0}}}
+## debug [lottery:113] ==============={1586655000,1586662200,{{2021,5,1},{20,33,0}},{{2020,4,12},{9,30,0}},{{2020,4,12},{11,30,0}}}
+## debug [lottery:113] ==============={1586683800,1586689200,{{2021,5,1},{20,33,0}},{{2020,4,12},{17,30,0}},{{2020,4,12},{19,0,0}}}
+## debug [lottery:113] ==============={1587259800,1587267000,{{2021,5,1},{20,33,0}},{{2020,4,19},{9,30,0}},{{2020,4,19},{11,30,0}}}
+## debug [lottery:113] ==============={1587288600,1587294000,{{2021,5,1},{20,33,0}},{{2020,4,19},{17,30,0}},{{2020,4,19},{19,0,0}}}
+## debug [lottery:113] ==============={1587864600,1587871800,{{2021,5,1},{20,33,0}},{{2020,4,26},{9,30,0}},{{2020,4,26},{11,30,0}}}
+## debug [lottery:113] ==============={1587893400,1587898800,{{2021,5,1},{20,33,0}},{{2020,4,26},{17,30,0}},{{2020,4,26},{19,0,0}}}
+## debug [lottery:113] ==============={1588555800,1588563000,{{2021,5,1},{20,33,0}},{{2020,5,4},{9,30,0}},{{2020,5,4},{11,30,0}}}
+## debug [lottery:113] ==============={1588584600,1588590000,{{2021,5,1},{20,33,0}},{{2020,5,4},{17,30,0}},{{2020,5,4},{19,0,0}}}
+## debug [lottery_mgr:539] ==========time_refresh======{no_open,{{1970,1,1},{8,0,0}},{{1970,1,1},{8,0,0}}}
+## info 2021/5/1 20:33:0[lottery_mgr:1174] 一元夺宝活动跨度时间 {1619872380,1619872380}
+## debug [lottery_mgr:176] ================={infinity,no_open}
+## info 2021/5/1 20:33:0[lottery_mgr:179] 启动完成
+## info 2021/5/1 20:33:0[c_goodvoice_mgr:67] [c_goodvoice_mgr] 正在启动...
+## info 2021/5/1 20:33:0[goodvoice_mgr:1365] 没有数据需要加载
+## info 2021/5/1 20:33:0[goodvoice_mgr:1384] 没有数据需要加载
+## info 2021/5/1 20:33:0[c_goodvoice_mgr:79] 好声音当前状态是[1],进入下个状态还需[0]秒
+## info 2021/5/1 20:33:0[c_goodvoice_mgr:97] [c_goodvoice_mgr] 启动完成
+## info 2021/5/1 20:33:0[c_extension_mgr:94] [c_extension_mgr] 正在启动...
+## info 2021/5/1 20:33:0[c_extension_mgr:100] [c_extension_mgr] 启动完成
+## info 2021/5/1 20:33:0[guild_league:216] 开始启动...
+## info 2021/5/1 20:33:0[guild_league:271] 启动完成 state_name: idle, timeout: infinity
+## info 2021/5/1 20:33:0[gods_duel_mgr:706] 启动诸神之战赛季管理进程...
+## info 2021/5/1 20:33:0[gods_duel_match:188] 没有数据需要加载
+## info 2021/5/1 20:33:0[rencounter_mgr:58] 英雄擂台管理器启动...
+## debug [gods_duel_mgr:1363] 重置初始化:{0,12420000,idle,[]}
+## info 2021/5/1 20:33:0[gods_duel_mgr:1386] 重置诸神之战赛季完成...
+## debug [agenda:329] IsToday:true, Zero: 1619798400 Start: 61200 PrepareSec: 300, Now: 1619872380
+## info 2021/5/1 20:33:0[rencounter_mgr:117] 英雄擂台管理器启动完成...
+## info 2021/5/1 20:33:0[preparation:38] 开始启动...
+## info 2021/5/1 20:33:0[preparation:48] 启动完成
+## info 2021/5/1 20:33:0[combat_record_cross:53] [combat_record_cross] 正在启动...
+## info 2021/5/1 20:33:0[combat_record_cross:72] [combat_record_cross] 启动完成
+## info 2021/5/1 20:33:0[dungeon_mgr:274] [dungeon_mgr] 正在启动...
+## info 2021/5/1 20:33:0[dungeon_mgr:297] [dungeon_mgr] 启动完成...
+## info 2021/5/1 20:33:0[team_mgr:1349] 开始启动...
+## info 2021/5/1 20:33:0[team_mgr:1358] 启动完成
+## info 2021/5/1 20:33:0[dungeon_team:612] 开始启动...
+## info 2021/5/1 20:33:0[dungeon_team:628] 启动完成
+## info 2021/5/1 20:33:0[roll_mgr:71] [roll_mgr] 正在启动...
+## info 2021/5/1 20:33:0[roll_mgr:74] [roll_mgr] 启动完成...
+## info 2021/5/1 20:33:0[c_guild_siege_mgr:222] [c_guild_siege_mgr] 正在启动...
+## info 2021/5/1 20:33:0[c_guild_siege_mgr:1450] 没有公会战攻城战匹配数据需要加载
+## info 2021/5/1 20:33:0[c_guild_siege_mgr:1466] 没有公会战攻城战公会数据需要加载
+## info 2021/5/1 20:33:0[c_guild_siege_mgr:1484] 没有公会战攻城战排行数据需要加载
+## info 2021/5/1 20:33:0[c_guild_siege_mgr:1503] 没有公会战攻城战个人数据需要加载
+## info 2021/5/1 20:33:0[c_guild_siege_mgr:251] [c_guild_siege_mgr] 启动完成
+## info 2021/5/1 20:33:0[review:269] 开始启动...
+## info 2021/5/1 20:33:0[review:519] 没有数据需要加载
+## info 2021/5/1 20:33:0[review:538] 没有数据需要加载
+## info 2021/5/1 20:33:0[review:289] 启动完成
+## info 2021/5/1 20:33:0[c_camp_whiteday:43] [c_camp_whiteday] 正在启动...
+## info 2021/5/1 20:33:0[c_camp_whiteday:48] [c_camp_whiteday] 启动完成
+## info 2021/5/1 20:33:0[c_camp_pet_egg:58] [c_camp_pet_egg] 正在启动...
+## info 2021/5/1 20:33:0[c_camp_pet_egg:64] [c_camp_pet_egg] 启动完成
+## info 2021/5/1 20:33:0[c_camp_fashion_vote:81] 央服时装评选活动开始启动...
+## debug [c_camp_fashion_vote:285] 时装评选活动时间已结束
+## info 2021/5/1 20:33:0[c_camp_fashion_vote:113] 央服时装评选活动启动完成
+## info 2021/5/1 20:33:0[c_camp_rushing_top:94] 央服冲顶答题活动开始启动...
+## info 2021/5/1 20:33:0[c_camp_rushing_top:117] 央服冲顶答题活动启动完成
+## debug [agenda:329] IsToday:false, Zero: 1619798400 Start: 75900 PrepareSec: 300, Now: 1619872380
+## info 2021/5/1 20:33:0[gods_place_mgr:126] 诸神殿堂活动启动完成
+## info 2021/5/1 20:33:0[camp_black_white_chess_mgr:455] 龙凤棋管理器开始启动...
+## debug [agenda:329] IsToday:false, Zero: 1619798400 Start: 61200 PrepareSec: 60, Now: 1619872380
+## debug [camp_black_white_chess_mgr:676] Result:{idle,332760}
+## info 2021/5/1 20:33:0[camp_black_white_chess_mgr:462] 下一个状态{idle,332760}
+## info 2021/5/1 20:33:0[camp_black_white_chess_mgr:470] 启动完成
+## info 2021/5/1 20:33:0[sys_boot:57] -------开始进行GC-------
+## info 2021/5/1 20:33:0[sys_boot:59] --------GC完成----------
+-------------------------------------------------------------
+>> 系统第[1]次启动完成，用时 0秒
+## error 2021/5/1 20:33:5[log_proc:196] flume 服务器连接失败 {error,timeout}
+## error 2021/5/1 20:33:5[log_proc:196] flume 服务器连接失败 {error,timeout}
+## error 2021/5/1 20:33:5[log_proc:196] flume 服务器连接失败 {error,timeout}
+## error 2021/5/1 20:33:5[log_proc:196] flume 服务器连接失败 {error,timeout}
+## error 2021/5/1 20:33:5[log_proc:196] flume 服务器连接失败 {error,timeout}
+## error 2021/5/1 20:33:5[log_proc:196] flume 服务器连接失败 {error,timeout}
+## error 2021/5/1 20:33:5[log_proc:196] flume 服务器连接失败 {error,timeout}
+## error 2021/5/1 20:33:5[log_proc:196] flume 服务器连接失败 {error,timeout}
+## error 2021/5/1 20:33:5[log_proc:196] flume 服务器连接失败 {error,timeout}
+## error 2021/5/1 20:33:5[log_proc:196] flume 服务器连接失败 {error,timeout}
+## info 2021/5/1 20:33:5[c_guild_siege_mgr:413] 上次关机时无状态，重新计算超时时间[undefined]
+## debug [unit_mgr:393] 加载主城雕像数据
+## debug [lottery_mgr:395] 竞拍结束,最后一次全部更新一遍
+## debug [lottery_mgr:503] 开服更新其他服务器数据
+## info 2021/5/1 20:43:0[guild_league:308] 已经初始化过
+## info 2021/5/1 21:28:11[c_camp_pet_egg:68] 开始关闭
+## info 2021/5/1 21:28:11[c_camp_pet_egg:71] 关闭完成
+## info 2021/5/1 21:28:11[c_camp_whiteday:106] 开始关闭
+## info 2021/5/1 21:28:11[c_camp_whiteday:107] 关闭完成
+## info 2021/5/1 21:28:11[roll_mgr:165] [roll_mgr] 正在关闭...
+## info 2021/5/1 21:28:11[roll_mgr:166] [roll_mgr] 关闭完成
+## info 2021/5/1 21:28:11[dungeon_mgr:433] [dungeon_mgr] 正在关闭...
+## info 2021/5/1 21:28:11[dungeon_mgr:434] [dungeon_mgr] 关闭完成
+## info 2021/5/1 21:28:11[c_extension_mgr:125] [c_extension_mgr] 正在关闭...
+## info 2021/5/1 21:28:11[c_extension_mgr:126] [c_extension_mgr] 关闭完成
+## info 2021/5/1 21:28:11[c_goodvoice_mgr:299] [c_goodvoice_mgr] 正在关闭...
+## info 2021/5/1 21:28:11[c_goodvoice_mgr:300] [c_goodvoice_mgr] 关闭完成
+## info 2021/5/1 21:28:11[lottery_mgr:403] [lottery_mgr] 正在关闭...
+## info 2021/5/1 21:28:11[lottery_mgr:409] [lottery_mgr] 关闭完成
+## info 2021/5/1 21:28:11[battle_mgr:188] [battle_mgr] 正在关闭...
+## info 2021/5/1 21:28:11[battle_mgr:189] [battle_mgr] 关闭完成
+## info 2021/5/1 21:28:11[unit_mgr:408] [unit_mgr] 正在关闭...
+## info 2021/5/1 21:28:11[unit_mgr:409] [unit_mgr] 关闭完成
+## info 2021/5/1 21:28:11[map_mgr:263] [map_mgr] 正在关闭...
+## info 2021/5/1 21:28:11[map_mgr:264] [map_mgr] 关闭完成
+## info 2021/5/1 21:28:11[role_group:162] [role_group] 正在关闭...
+## info 2021/5/1 21:28:11[role_group:163] [role_group] 关闭完成
+## info 2021/5/1 21:28:11[edets_mon:120] [edets_mon] 正在关闭...
+## info 2021/5/1 21:28:11[edets_mon:123] [edets_mon] 关闭完成
+## info 2021/5/1 21:28:11[log_old:1154] [log_old] 正在关闭...
+## info 2021/5/1 21:28:11[log_old:1156] [log_old] 关闭完成
+## info 2021/5/1 21:28:11[log_db:71] 数据库日志[11]开始关闭: length:0
+## info 2021/5/1 21:28:11[log_db:71] 数据库日志[12]开始关闭: length:0
+## info 2021/5/1 21:28:11[log_db:73] 数据库日志[12]关闭完成
+## info 2021/5/1 21:28:11[log_db:73] 数据库日志[11]关闭完成
+## info 2021/5/1 21:28:11[log:2230] [log] 正在关闭...
+
+=ERROR REPORT==== 1-May-2021::21:28:11 ===
+** Generic server log terminating 
+** Last message in was {'EXIT',<0.62.0>,shutdown}
+** When Server state == {state,1}
+** Reason for termination == 
+** {badarg,[{ets,insert,[env,{log_next_id,1}],[]},
+            {env,save,2,[{file,"src/sys/env.erl"},{line,104}]},
+            {log,terminate,2,[{file,"src/log/log.erl"},{line,2231}]},
+            {gen_server,terminate,6,[{file,"gen_server.erl"},{line,721}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+
+=ERROR REPORT==== 1-May-2021::21:28:11 ===
+** Generic server <0.109.0> terminating 
+** Last message in was {'EXIT',<0.75.0>,
+                           {badarg,
+                               [{ets,insert,[env,{log_next_id,1}],[]},
+                                {env,save,2,
+                                    [{file,"src/sys/env.erl"},{line,104}]},
+                                {log,terminate,2,
+                                    [{file,"src/log/log.erl"},{line,2231}]},
+                                {gen_server,terminate,6,
+                                    [{file,"gen_server.erl"},{line,721}]},
+                                {proc_lib,init_p_do_apply,3,
+                                    [{file,"proc_lib.erl"},{line,239}]}]}}
+** When Server state == {state,[]}
+** Reason for termination == 
+** {badarg,[{ets,insert,[env,{log_next_id,1}],[]},
+            {env,save,2,[{file,"src/sys/env.erl"},{line,104}]},
+            {log,terminate,2,[{file,"src/log/log.erl"},{line,2231}]},
+            {gen_server,terminate,6,[{file,"gen_server.erl"},{line,721}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+
+=ERROR REPORT==== 1-May-2021::21:28:11 ===
+** Generic server <0.108.0> terminating 
+** Last message in was {'EXIT',<0.75.0>,
+                           {badarg,
+                               [{ets,insert,[env,{log_next_id,1}],[]},
+                                {env,save,2,
+                                    [{file,"src/sys/env.erl"},{line,104}]},
+                                {log,terminate,2,
+                                    [{file,"src/log/log.erl"},{line,2231}]},
+                                {gen_server,terminate,6,
+                                    [{file,"gen_server.erl"},{line,721}]},
+                                {proc_lib,init_p_do_apply,3,
+                                    [{file,"proc_lib.erl"},{line,239}]}]}}
+** When Server state == {state,[]}
+** Reason for termination == 
+** {badarg,[{ets,insert,[env,{log_next_id,1}],[]},
+            {env,save,2,[{file,"src/sys/env.erl"},{line,104}]},
+            {log,terminate,2,[{file,"src/log/log.erl"},{line,2231}]},
+            {gen_server,terminate,6,[{file,"gen_server.erl"},{line,721}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+
+=INFO REPORT==== 1-May-2021::21:28:11 ===
+    application: main
+    exited: stopped
+    type: temporary
+
+=INFO REPORT==== 1-May-2021::21:28:11 ===
+    application: emysql
+    exited: stopped
+    type: temporary
+
+=INFO REPORT==== 1-May-2021::21:28:11 ===
+    application: inets
+    exited: stopped
+    type: temporary
+
+=INFO REPORT==== 1-May-2021::21:28:11 ===
+    application: crypto
+    exited: stopped
+    type: temporary

@@ -1,0 +1,26 @@
+# ===== 大文件 / 可再生成 / 第三方运行时（不进 git，单独拷贝）=====
+# 见 docs/迁移到另一台电脑.md
+*.apk
+/tmp/
+/tools/
+/wsa/
+/extracted/
+/lua_decoded/
+/rea/
+/rea_out/
+/XYserver/
+
+# ===== 运行时状态 / 日志 =====
+**/__pycache__/
+**/*.log
+**/*.out
+**/*.pid
+/YCserver/run/**
+/YCserver/data/android/
+/YCserver/home/otp_src_19.3/
+
+# ===== 杂项 =====
+.qoder/
+.venv/
+Thumbs.db
+desktop.ini

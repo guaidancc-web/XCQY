@@ -1,0 +1,313 @@
+Erlang/OTP 17 [erts-6.1] [source] [64-bit] [smp:2:2] [async-threads:10] [kernel-poll:true]
+
+Eshell V6.1  (abort with ^G)
+(fswy_dev_9000@42.192.118.16)1> 
+
++------------------------------------------------------------+
+|                             o.O                            |
++------------------------------------------------------------+
+## info 2021/5/1 20:32:18[env:168] 已载入[env.cfg]的配置内容
+## info 2021/5/1 20:32:19[log:2170] [log] 正在启动...
+## info 2021/5/1 20:32:19[log_db:36] [log_db] 正在启动...
+## info 2021/5/1 20:32:19[log_db:41] [log_db] 启动完成
+## info 2021/5/1 20:32:19[log_db:36] [log_db] 正在启动...
+## info 2021/5/1 20:32:19[log_db:41] [log_db] 启动完成
+## info 2021/5/1 20:32:19[log_web:40] [log_web] 正在启动...
+## info 2021/5/1 20:32:19[log_web:46] [log_web] 启动完成
+## info 2021/5/1 20:32:19[log_web:40] [log_web] 正在启动...
+## info 2021/5/1 20:32:19[log_web:46] [log_web] 启动完成
+## info 2021/5/1 20:32:19[log_web:40] [log_web] 正在启动...
+## info 2021/5/1 20:32:19[log_web:46] [log_web] 启动完成
+## info 2021/5/1 20:32:19[log_web_3k:60] [log_web_3k] 正在启动...
+## info 2021/5/1 20:32:19[log_web_3k:66] [log_web_3k] 启动完成...
+## info 2021/5/1 20:32:19[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:32:19[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:32:19[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:32:19[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:32:19[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:32:19[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:32:19[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:32:19[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:32:19[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:32:19[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:32:19[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:32:19[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:32:19[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:32:19[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:32:19[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:32:19[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:32:19[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:32:19[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:32:19[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:32:19[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:32:19[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:32:19[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:32:19[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:32:19[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:32:19[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:32:19[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:32:19[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:32:19[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:32:19[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:32:19[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:32:19[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:32:19[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:32:19[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:32:19[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:32:19[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:32:19[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:32:19[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:32:19[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:32:19[log_file:116] [log_file] 正在启动...
+## info 2021/5/1 20:32:19[log_file:124] [log_file] 启动完成
+## info 2021/5/1 20:32:19[log:2190] [log] 启动完成
+## info 2021/5/1 20:32:19[log_old:1100] [log_old] 正在启动...
+## info 2021/5/1 20:32:19[log_db:36] [log_db] 正在启动...
+## info 2021/5/1 20:32:19[log_db:41] [log_db] 启动完成
+## info 2021/5/1 20:32:19[log_db:36] [log_db] 正在启动...
+## info 2021/5/1 20:32:19[log_db:41] [log_db] 启动完成
+## info 2021/5/1 20:32:19[log_web:40] [log_web] 正在启动...
+## info 2021/5/1 20:32:19[log_web:46] [log_web] 启动完成
+## info 2021/5/1 20:32:19[log_web:40] [log_web] 正在启动...
+## info 2021/5/1 20:32:19[log_web:46] [log_web] 启动完成
+## info 2021/5/1 20:32:19[log_web:40] [log_web] 正在启动...
+## info 2021/5/1 20:32:19[log_web:46] [log_web] 启动完成
+## info 2021/5/1 20:32:19[log_old:1119] [log_old] 启动完成
+## info 2021/5/1 20:32:19[info:715] [info] 正在启动...
+## info 2021/5/1 20:32:19[info:718] [info] 启动完成
+## info 2021/5/1 20:32:19[edets_mon:88] [edets_mon] 正在启动...
+## info 2021/5/1 20:32:19[edets_mon:95] [edets_mon] 启动完成
+## info 2021/5/1 20:32:19[treasure:150] 正在启动:[treasure]
+## info 2021/5/1 20:32:19[treasure:158] 启动完成:[treasure]
+## info 2021/5/1 20:32:19[role_group:140] [role_group] 正在启动...
+## info 2021/5/1 20:32:19[role_group:149] [role_group] 启动完成
+## info 2021/5/1 20:32:19[cross_group_mgr:72] [cross_group_mgr] 正在启动...
+## info 2021/5/1 20:32:19[cross_group_mgr:96] [cross_group_mgr] 启动完成...
+## info 2021/5/1 20:32:19[map_mgr:219] [map_mgr] 正在启动...
+## info 2021/5/1 20:32:19[map_mgr:235] [map_mgr] 启动完成
+## info 2021/5/1 20:32:19[roll_mgr:71] [roll_mgr] 正在启动...
+## info 2021/5/1 20:32:19[roll_mgr:74] [roll_mgr] 启动完成...
+## info 2021/5/1 20:32:19[dungeon_mgr:274] [dungeon_mgr] 正在启动...
+## info 2021/5/1 20:32:19[dungeon_mgr:297] [dungeon_mgr] 启动完成...
+## info 2021/5/1 20:32:19[unit_mgr:334] [unit_mgr] 正在启动...
+## info 2021/5/1 20:32:19[unit_mgr:342] [unit_mgr] 启动完成...
+## info 2021/5/1 20:32:19[battle_mgr:160] [battle_mgr] 正在启动...
+## error 2021/5/1 20:32:19[battle_fun:324] 战场[battle_world]无法找到动态地图[53005]，单位[43074]无法创建
+## error 2021/5/1 20:32:19[battle_fun:324] 战场[battle_world]无法找到动态地图[53005]，单位[43075]无法创建
+## error 2021/5/1 20:32:19[battle_fun:324] 战场[battle_world]无法找到动态地图[53005]，单位[43076]无法创建
+## error 2021/5/1 20:32:19[battle_fun:324] 战场[battle_world]无法找到动态地图[53005]，单位[43077]无法创建
+## error 2021/5/1 20:32:19[battle_fun:324] 战场[battle_world]无法找到动态地图[53014]，单位[20072]无法创建
+## info 2021/5/1 20:32:19[battle_mgr:171] [battle_mgr] 启动完成...
+## info 2021/5/1 20:32:19[combat_mgr:297] [combat_mgr] 正在启动...
+## info 2021/5/1 20:32:19[combat_mgr:306] [combat_mgr] 启动完成
+## info 2021/5/1 20:32:19[c_trip_mgr:156] [c_trip_mgr] 正在启动...
+## info 2021/5/1 20:32:19[c_trip_mgr:159] [c_trip_mgr] 启动完成
+## info 2021/5/1 20:32:19[c_mirror_mgr:181] [c_mirror_mgr] 正在启动...
+## info 2021/5/1 20:32:19[c_mirror_mgr:187] [c_mirror_mgr] 启动完成
+## info 2021/5/1 20:32:19[team_mgr:1349] 开始启动...
+## info 2021/5/1 20:32:19[team_mgr:1358] 启动完成
+## info 2021/5/1 20:32:19[team_recruit:547] 聊天窗口招募进程正在启动:[team_recruit]
+## info 2021/5/1 20:32:19[team_recruit:550] 聊天窗口招募进程启动完成:[team_recruit]
+## info 2021/5/1 20:32:19[camp_halloween_mgr:539] 开始启动...
+## debug [agenda:329] IsToday:true, Zero: 1619798400 Start: 57600 PrepareSec: 300, Now: 1619872339
+## info 2021/5/1 20:32:19[camp_halloween_mgr:544] 下一个状态{idel,69761}
+## info 2021/5/1 20:32:19[camp_halloween_mgr:551] 启动完成
+## info 2021/5/1 20:32:19[guild_war:822] 开始启动...
+## debug [agenda:329] IsToday:false, Zero: 1619798400 Start: 72000 PrepareSec: 1200, Now: 1619872339
+## debug [guild_war:832] guild_war_guild_log dets : {ok,guild_war_guild_log}
+## info 2021/5/1 20:32:19[guild_war:1783] 下次匹配时间 239261, 距离开始时间 256060999
+## info 2021/5/1 20:32:19[guild_war:896] 启动完成 state_name: idle, timeout: 256061000
+## info 2021/5/1 20:32:19[guild_hero:560] 开始启动...
+## info 2021/5/1 20:32:19[guild_hero:586] 启动完成 state_name: idle, timeout: 498461000
+## info 2021/5/1 20:32:19[warrior_mgr:446] [warrior_mgr] 正在启动...
+## info 2021/5/1 20:32:19[warrior_mgr:456] 勇士战场下次开启时间:undefined
+## info 2021/5/1 20:32:19[warrior_mgr:467] [warrior_mgr] 启动完成...
+## info 2021/5/1 20:32:19[elf_mgr:119] 开始启动...
+## debug [server_timer:165] 下一个定时器[Id:create_npc][T:444461000]
+## info 2021/5/1 20:32:19[elf_mgr:130] 启动完成
+## info 2021/5/1 20:32:19[qualifying_mgr:282] [qualifying_mgr] 正在启动...
+## info 2021/5/1 20:32:19[qualifying_mgr:295] 没有数据需要加载
+## info 2021/5/1 20:32:19[qualifying_match:49] [qualifying_match] 正在启动...
+## info 2021/5/1 20:32:19[qualifying_match:55] [qualifying_match] 启动完成
+## info 2021/5/1 20:32:19[qualifying_rank:96] [qualifying_rank] 正在启动...
+## info 2021/5/1 20:32:19[qualifying_rank:102] [qualifying_rank] 启动完成
+## info 2021/5/1 20:32:19[qualifying_mgr:347] 启动完成，模式2
+## info 2021/5/1 20:32:19[qualifying_mgr:353] 下次段位赛开启时间[3161000]
+## info 2021/5/1 20:32:19[camp_animal_chess_mgr:244] 开始启动...
+## debug [agenda:329] IsToday:false, Zero: 1619798400 Start: 61200 PrepareSec: 60, Now: 1619872339
+## info 2021/5/1 20:32:19[camp_animal_chess_mgr:250] 下一个状态{idel,160001}
+## info 2021/5/1 20:32:19[camp_animal_chess_mgr:258] 启动完成
+## info 2021/5/1 20:32:19[question_match_mgr:84] question_match_mgr开始启动...
+## debug [agenda:329] IsToday:false, Zero: 1619798400 Start: 59400 PrepareSec: 0, Now: 1619872339
+## info 2021/5/1 20:32:19[question_match_mgr:92] 下一个状态{idle,158261000}
+## info 2021/5/1 20:32:19[question_match_mgr:99] question_match_mgr启动完成
+## info 2021/5/1 20:32:19[gold_league_mgr:539] [gold_league_mgr] 正在启动...
+## debug [agenda:329] IsToday:true, Zero: 1619798400 Start: 72300 PrepareSec: 0, Now: 1619872339
+## info 2021/5/1 20:32:19[gold_league_mgr:554] 钻石联赛状态 idle 钻石联赛下次开启时间:undefined
+## info 2021/5/1 20:32:19[gold_league_mgr:565] [gold_league_mgr] 启动完成...
+## info 2021/5/1 20:32:19[spirit_treasure_mgr:133] spirit_treasure_mgr开始启动...
+## info 2021/5/1 20:32:19[spirit_treasure_mgr:1710] 没有数据需要加载
+## info 2021/5/1 20:32:19[exquisite_shelf_mgr:64] [exquisite_shelf_mgr] 正在启动...
+## info 2021/5/1 20:32:19[exquisite_shelf_mgr:89] [exquisite_shelf_mgr] 启动完成...
+## debug [exquisite_shelf_mgr:218] ======================:[#{lev=>1,ratio=>100,type=>2,unit_id=>58049},#{lev=>1,ratio=>100,type=>2,unit_id=>58050},#{lev=>1,ratio=>100,type=>2,unit_id=>58045},#{lev=>1,ratio=>100,type=>2,unit_id=>58047},#{lev=>1,ratio=>100,type=>2,unit_id=>58046},#{lev=>1,ratio=>100,type=>2,unit_id=>58042},#{lev=>1,ratio=>100,type=>2,unit_id=>58048}]
+## debug [exquisite_shelf_mgr:218] ======================:[#{lev=>2,ratio=>100,type=>2,unit_id=>58058},#{lev=>2,ratio=>100,type=>2,unit_id=>58055},#{lev=>2,ratio=>100,type=>2,unit_id=>58056},#{lev=>2,ratio=>100,type=>2,unit_id=>58059},#{lev=>2,ratio=>100,type=>2,unit_id=>58053},#{lev=>2,ratio=>100,type=>2,unit_id=>58060},#{lev=>2,ratio=>100,type=>2,unit_id=>58052}]
+## info 2021/5/1 20:32:19[provocation_mgr:92] 跨服约战管理器启动...
+## info 2021/5/1 20:32:19[provocation_mgr:1069] 没有数据需要加载
+## info 2021/5/1 20:32:19[provocation_mgr:125] [provocation_mgr] 启动完成...
+## info 2021/5/1 20:32:19[oracle_treasure_mgr:134] oracle_treasure_mgr开始启动...
+## info 2021/5/1 20:32:19[oracle_treasure_mgr:1677] 没有数据需要加载
+## info 2021/5/1 20:32:19[camp_black_white_chess_mgr:455] 龙凤棋管理器开始启动...
+## debug [agenda:329] IsToday:false, Zero: 1619798400 Start: 61200 PrepareSec: 60, Now: 1619872339
+## debug [camp_black_white_chess_mgr:676] Result:{idle,332801}
+## info 2021/5/1 20:32:19[camp_black_white_chess_mgr:462] 下一个状态{idle,332801}
+## info 2021/5/1 20:32:19[camp_black_white_chess_mgr:470] 启动完成
+## debug [agenda:329] IsToday:false, Zero: 1619798400 Start: 72000 PrepareSec: 900, Now: 1619872339
+## info 2021/5/1 20:32:19[canyon_summit_mgr:124] 峡谷之巅活动启动完成
+## info 2021/5/1 20:32:19[sys_boot:57] -------开始进行GC-------
+## info 2021/5/1 20:32:19[sys_boot:59] --------GC完成----------
+-------------------------------------------------------------
+>> 系统第[1]次启动完成，用时 0秒
+## error 2021/5/1 20:32:24[log_proc:196] flume 服务器连接失败 {error,timeout}
+## error 2021/5/1 20:32:24[log_proc:196] flume 服务器连接失败 {error,timeout}
+## error 2021/5/1 20:32:24[log_proc:196] flume 服务器连接失败 {error,timeout}
+## error 2021/5/1 20:32:24[log_proc:196] flume 服务器连接失败 {error,timeout}
+## error 2021/5/1 20:32:24[log_proc:196] flume 服务器连接失败 {error,timeout}
+## error 2021/5/1 20:32:24[log_proc:196] flume 服务器连接失败 {error,timeout}
+## error 2021/5/1 20:32:24[log_proc:196] flume 服务器连接失败 {error,timeout}
+## error 2021/5/1 20:32:24[log_proc:196] flume 服务器连接失败 {error,timeout}
+## error 2021/5/1 20:32:24[log_proc:196] flume 服务器连接失败 {error,timeout}
+## error 2021/5/1 20:32:24[log_proc:196] flume 服务器连接失败 {error,timeout}
+## debug [unit_mgr:393] 加载主城雕像数据
+## debug [treasure:1234] 补充封妖列表:[{10007,78007,55},{10007,78007,55},{10007,78007,55},{10007,78006,55},{50021,78008,65},{50021,78009,65},{50021,78008,65},{50021,78009,65},{50022,78008,65},{50022,78008,65},{50022,78009,65},{50022,78008,65},{50023,78010,75},{50023,78010,75},{50023,78010,75},{50023,78011,75},{50031,78013,85},{50031,78013,85},{50031,78012,85},{50031,78013,85},{50032,78014,85},{50032,78013,85},{50032,78014,85},{50032,78013,85},{50033,78015,95},{50033,78015,95},{50033,78017,95},{50033,78017,95},{10009,78018,106},{10009,78019,106},{10009,78018,106},{10009,78018,106},{50002,78001,25},{50002,78000,25},{50002,78001,25},{50002,78000,25},{50003,78000,25},{50003,78000,25},{50003,78001,25},{50003,78000,25},{50011,78003,35},{50011,78002,35},{50011,78003,35},{50011,78003,35},{50012,78002,35},{50012,78003,35},{50012,78002,35},{50012,78002,35},{50013,78005,45},{50013,78005,45},{50013,78004,45},{50013,78004,45}]
+## info 2021/5/1 21:25:0[qualifying_mgr:964] 时空段位赛活动准备区开放, 进入准备区
+## info 2021/5/1 21:28:17[provocation_mgr:867] [provocation_mgr] 正在关闭...
+## info 2021/5/1 21:28:17[provocation_mgr:868] [provocation_mgr] 关闭完成
+## debug [map:804] 关闭地图：Id:100000 BaseId:53014
+## info 2021/5/1 21:28:17[exquisite_shelf_mgr:158] [exquisite_shelf_mgr] 正在关闭...
+## info 2021/5/1 21:28:17[exquisite_shelf_mgr:159] [exquisite_shelf_mgr] 关闭完成
+## info 2021/5/1 21:28:17[qualifying_mgr:648] [qualifying_mgr] 正在关闭...
+## info 2021/5/1 21:28:17[qualifying_mgr:649] [qualifying_mgr] 关闭完成
+## info 2021/5/1 21:28:17[qualifying_rank:162] [qualifying_rank] 正在关闭...
+## info 2021/5/1 21:28:17[qualifying_rank:163] [qualifying_rank] 关闭完成
+## info 2021/5/1 21:28:17[qualifying_match:262] [qualifying_match] 正在关闭...
+## info 2021/5/1 21:28:17[qualifying_match:263] [qualifying_match] 关闭完成
+## info 2021/5/1 21:28:17[team_recruit:663] 聊天窗口招募进程退出:[shutdown]
+## info 2021/5/1 21:28:17[combat_mgr:404] [combat_mgr] 正在关闭...
+## info 2021/5/1 21:28:17[combat_mgr:405] [combat_mgr] 关闭完成
+## info 2021/5/1 21:28:17[battle_mgr:188] [battle_mgr] 正在关闭...
+## info 2021/5/1 21:28:17[battle_mgr:189] [battle_mgr] 关闭完成
+## info 2021/5/1 21:28:17[unit_mgr:408] [unit_mgr] 正在关闭...
+## info 2021/5/1 21:28:17[unit_mgr:409] [unit_mgr] 关闭完成
+## info 2021/5/1 21:28:17[dungeon_mgr:433] [dungeon_mgr] 正在关闭...
+## info 2021/5/1 21:28:17[dungeon_mgr:434] [dungeon_mgr] 关闭完成
+## info 2021/5/1 21:28:17[roll_mgr:165] [roll_mgr] 正在关闭...
+## info 2021/5/1 21:28:17[roll_mgr:166] [roll_mgr] 关闭完成
+## info 2021/5/1 21:28:17[map_mgr:263] [map_mgr] 正在关闭...
+## info 2021/5/1 21:28:17[map_mgr:264] [map_mgr] 关闭完成
+## debug [map:804] 关闭地图：Id:53014 BaseId:53014
+## debug [map:804] 关闭地图：Id:10002 BaseId:10002
+## debug [map:804] 关闭地图：Id:53006 BaseId:53006
+## debug [map:804] 关闭地图：Id:30015 BaseId:30015
+## debug [map:804] 关闭地图：Id:10007 BaseId:10007
+## debug [map:804] 关闭地图：Id:50002 BaseId:50002
+## debug [map:804] 关闭地图：Id:50032 BaseId:50032
+## debug [map:804] 关闭地图：Id:50001 BaseId:50001
+## debug [map:804] 关闭地图：Id:50021 BaseId:50021
+## debug [map:804] 关闭地图：Id:50013 BaseId:50013
+## debug [map:804] 关闭地图：Id:41002 BaseId:41002
+## debug [map:804] 关闭地图：Id:50022 BaseId:50022
+## debug [map:804] 关闭地图：Id:50031 BaseId:50031
+## debug [map:804] 关闭地图：Id:50023 BaseId:50023
+## debug [map:804] 关闭地图：Id:50033 BaseId:50033
+## debug [map:804] 关闭地图：Id:10001 BaseId:10001
+## debug [map:804] 关闭地图：Id:42000 BaseId:42000
+## debug [map:804] 关闭地图：Id:53005 BaseId:53005
+## debug [map:804] 关闭地图：Id:10004 BaseId:10004
+## debug [map:804] 关闭地图：Id:41001 BaseId:41001
+## debug [map:804] 关闭地图：Id:10003 BaseId:10003
+## debug [map:804] 关闭地图：Id:41003 BaseId:41003
+## debug [map:804] 关闭地图：Id:50011 BaseId:50011
+## info 2021/5/1 21:28:17[cross_group_mgr:167] [cross_group_mgr] 正在关闭...
+## debug [map:804] 关闭地图：Id:50012 BaseId:50012
+## debug [map:804] 关闭地图：Id:50003 BaseId:50003
+## debug [map:804] 关闭地图：Id:42100 BaseId:42100
+## info 2021/5/1 21:28:17[cross_group_mgr:168] [cross_group_mgr] 关闭完成
+## info 2021/5/1 21:28:17[role_group:162] [role_group] 正在关闭...
+## info 2021/5/1 21:28:17[role_group:163] [role_group] 关闭完成
+## error 2021/5/1 21:28:17[treasure:258] 由Supervisor主动shutdown上古妖魔进程
+## debug [unit:533] 单位[上古狼妖]进程退出
+## debug [unit:533] 单位[上古狼妖]进程退出
+## debug [unit:533] 单位[上古巨人]进程退出
+## debug [unit:533] 单位[上古剑虎]进程退出
+## debug [unit:533] 单位[上古功夫熊]进程退出
+## debug [unit:533] 单位[上古狼妖]进程退出
+## debug [unit:533] 单位[上古剑虎]进程退出
+## debug [unit:533] 单位[上古功夫熊]进程退出
+## debug [unit:533] 单位[上古功夫熊]进程退出
+## debug [unit:533] 单位[上古功夫熊]进程退出
+## debug [unit:533] 单位[上古石魔]进程退出
+## debug [unit:533] 单位[上古石魔]进程退出
+## debug [unit:533] 单位[上古剑虎]进程退出
+## debug [unit:533] 单位[上古功夫熊]进程退出
+## debug [unit:533] 单位[上古风灵]进程退出
+## debug [unit:533] 单位[上古雷霆]进程退出
+## debug [unit:533] 单位[上古雷霆]进程退出
+## debug [unit:533] 单位[上古雷霆]进程退出
+## debug [unit:533] 单位[上古雷霆]进程退出
+## debug [unit:533] 单位[上古月光女]进程退出
+## debug [unit:533] 单位[上古虫灵]进程退出
+## debug [unit:533] 单位[上古虫灵]进程退出
+## debug [unit:533] 单位[上古树人]进程退出
+## debug [unit:533] 单位[上古虫灵]进程退出
+## debug [unit:533] 单位[上古虫灵]进程退出
+## debug [unit:533] 单位[上古树人]进程退出
+## debug [unit:533] 单位[上古虫灵]进程退出
+## debug [unit:533] 单位[上古树人]进程退出
+## debug [unit:533] 单位[上古熊妖]进程退出
+## info 2021/5/1 21:28:17[edets_mon:120] [edets_mon] 正在关闭...
+## info 2021/5/1 21:28:17[edets_mon:123] [edets_mon] 关闭完成
+## info 2021/5/1 21:28:17[log_old:1154] [log_old] 正在关闭...
+## debug [unit:533] 单位[上古血伯爵]进程退出
+## debug [unit:533] 单位[上古雷霆]进程退出
+## debug [unit:533] 单位[上古蝴蝶花姬]进程退出
+## debug [unit:533] 单位[上古蝴蝶花姬]进程退出
+## debug [unit:533] 单位[上古幻影剑客]进程退出
+## debug [unit:533] 单位[上古龟妖]进程退出
+## debug [unit:533] 单位[上古熊妖]进程退出
+## debug [unit:533] 单位[上古幻影剑客]进程退出
+## debug [unit:533] 单位[上古月光女]进程退出
+## debug [unit:533] 单位[上古石魔]进程退出
+## debug [unit:533] 单位[上古龟妖]进程退出
+## debug [unit:533] 单位[上古龟妖]进程退出
+## debug [unit:533] 单位[上古龟妖]进程退出
+## debug [unit:533] 单位[上古龟妖]进程退出
+## debug [unit:533] 单位[上古虫灵]进程退出
+## debug [unit:533] 单位[上古树人]进程退出
+## debug [unit:533] 单位[上古熊妖]进程退出
+## debug [unit:533] 单位[上古树人]进程退出
+## debug [unit:533] 单位[上古树人]进程退出
+## info 2021/5/1 21:28:17[log_old:1156] [log_old] 关闭完成
+## info 2021/5/1 21:28:17[log_db:71] 数据库日志[11]开始关闭: length:0
+## info 2021/5/1 21:28:17[log_db:73] 数据库日志[11]关闭完成
+## info 2021/5/1 21:28:17[log_db:71] 数据库日志[12]开始关闭: length:0
+## info 2021/5/1 21:28:17[log_db:73] 数据库日志[12]关闭完成
+
+=INFO REPORT==== 1-May-2021::21:28:17 ===
+    application: main
+    exited: stopped
+    type: temporary
+
+=INFO REPORT==== 1-May-2021::21:28:17 ===
+    application: emysql
+    exited: stopped
+    type: temporary
+
+=INFO REPORT==== 1-May-2021::21:28:17 ===
+    application: inets
+    exited: stopped
+    type: temporary
+
+=INFO REPORT==== 1-May-2021::21:28:17 ===
+    application: crypto
+    exited: stopped
+    type: temporary

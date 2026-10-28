@@ -130,6 +130,33 @@ tmp/mariadb/mariadb-10.6.28-winx64/bin/mysqldump.exe -uroot -p123456 -h127.0.0.1
   --routines --events --single-transaction > db/fswy_current.sql
 ```
 
+## 保存存档与进度
+
+游戏存档就是 MariaDB 里的角色数据（等级、背包、宠物、技能等），仓库里的 `db/fswy_current.sql` 是它的完整导出。
+
+一键保存（推荐每次玩完/改完后运行）：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts\save_progress.ps1
+```
+
+它依次做四件事：
+
+1. 通过 Erlang RPC 强制把在线角色写回数据库（含刚获得的宠物/物品）；
+2. 用 `mysqldump` 导出 `fswy_dev_1/2/9000/9999` 到 `db/fswy_current.sql`；
+3. `git add -A` + 提交（时间戳消息）；
+4. `git push origin main`。
+
+离线时加 `-NoPush` 只提交不推送；网络恢复后再 `git push`。想定时自动保存可以单独开一个窗口运行：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts\auto_save.ps1 -IntervalMinutes 5
+```
+
+窗口保持打开即可，关闭窗口停止。注意：定时保存会按间隔产生提交（角色心跳/时间戳也会变），按需使用。
+
+换电脑后：`git pull` → `powershell -ExecutionPolicy Bypass -File scripts\init_db.ps1 -Force` 导入最新存档，再按启动流程开服。
+
 ## 迁移到另一台电脑
 
 见 [docs/迁移到另一台电脑.md](docs/迁移到另一台电脑.md)。

@@ -7,9 +7,9 @@
 ```
 Windows 11
 ├─ WSA（Android 13）── 游戏 APK（base_icon.apk，重签+卡通图标）
-│    └─ files/res*/textures/textures_business.unity3d   覆盖版客户端 Lua
+│    └─ files/res_theone/textures/textures_business.unity3d   2025 版客户端 Lua（含本地服补丁）
 │
-├─ local_server/server.py      HTTP :8081（base_setting / list / 登录 / 遥测兼容）
+├─ local_server/server.py      HTTP :8081（base_setting / list / 登录 / 遥测兼容 / 官方 CDN 镜像）
 ├─ YCserver（Erlang OTP 19.3） TCP :8001（zone1/zone2/center9000/center9999）
 └─ MariaDB 10.6                :3306（4 个 fswy_dev_* 库）
 ```
@@ -47,19 +47,38 @@ WSA 里的 `127.0.0.1:8081 / :8001` 通过 `adb reverse` 转到 Windows 本机�
 | `YCserver/data/server/ebin/` | 编译好的服务端 beam |
 | `YCserver/data/zone/` | 4 个节点的静态数据 |
 | `YCserver/run/` | 启动脚本、节点 env.cfg（运行状态不入库） |
-| `dist/textures_business.unity3d` | 已打补丁的客户端 Lua bundle（含图鉴新宠物置顶等修改） |
-| `client_data/` | 当前客户端资源目录打包（7.6MB，含已推送的 bundle 和地图） |
+| `dist/textures_business.unity3d` | 2025 版客户端 Lua bundle，已打本地服补丁（登录/列表指向 127.0.0.1、图鉴新宠物置顶等） |
+| `client_data/` | 2021 版客户端资源目录打包（6.3MB，作为全新安装的基底，之后靠在线更新升到 2025） |
 | `db/fswy_current.sql` | 当前 4 个数据库导出（含角色进度） |
 | `scripts/` | 新电脑部署脚本 |
 | `docs/` | 迁移与修改说明 |
 
+## 2025 官方资源更新（约 147MB）
+
+原版客户端会从官方 CDN `http://106.52.8.88:81/xcqy_dev` 拉一份 2025 年资源包（`res_version=202506251639`，相对 APK 的 2021 资源是 1,865 个文件、约 147MB）。现在 `local_server/server.py` 兼任镜像和回源代理：
+
+- 客户端请求 `/xcqy_dev/...` 时，先找本地 `cdn/` 缓存，找不到再回源下载并写入 `cdn/`。
+- 默认 `RES_VERSION=202506251639`、`UPSTREAM_CDN=http://106.52.8.88:81/xcqy_dev`，可用同名环境变量覆盖；`UPSTREAM_CDN=`（置空）可禁外网。
+- `cdn/` 约 158MB，不进 git。想离线部署就把整个目录拷到新电脑；不拷也能联网自动重建。
+
+更新流程（新电脑第一次跑必做）：
+
+1. 启动服务，进游戏，等客户端自动下载并应用 2025 资源（约 147MB，结束时会到 2025 版登录界面）。
+2. 官方更新会把 `textures_business.unity3d` 覆盖成原版，因此要再推一次本地补丁：
+   `powershell -ExecutionPolicy Bypass -File scripts\deploy_client.ps1 -BundleOnly`
+3. 重启游戏。`-BundleOnly` 只推 bundle，不动 `res`/`res_theone` 的其它资源，可在游戏运行时执行。
+
+2025 客户端在本地 `base_setting.json` 的 `check_apk` 为 `true` 时会请求 `GET <check_apk_path>/check_apk_version.php`；本服默认返回 `check_apk=false` 且该接口返回完整 JSON，避免卡在「检查游戏版本」。
+
 ## 继续修改
 
-### 客户端 Lua
-1. 原始 bundle 从 APK 解出：`python scripts/extract_assets.py`（生成 `extracted/assets`）。
-2. 在 `local_server/patch_bundle.py` 里给目标 TextAsset 增加补丁函数并注册到 `PATCHERS`。
-3. 运行 `python local_server/patch_bundle.py`，产物在 `tmp/bundle_patched/`。
-4. 推到设备 `files/res/textures/` 和 `files/res_theone/textures/`（`scripts/deploy_client.ps1` 会自动做），重启游戏生效。
+### 客户端 Lua（2025）
+1. 准备官方 2025 bundle：进游戏更新一次后会自动缓存在 `cdn/patch_android/202505180009/textures/textures_business.unity3d`，也可放到 `tmp/updated_client/business_2025.unity3d`。
+2. 在 `local_server/patch_bundle_2025.py` 里给目标 TextAsset 增加补丁函数并注册到 `PATCHERS`。
+3. 运行 `python local_server/patch_bundle_2025.py`，产物在 `tmp/bundle_2025_patched/textures_business.unity3d`；复制到 `dist/`。
+4. `deploy_client.ps1 -BundleOnly` 推到设备的 `res`/`res_theone`，重启游戏生效。
+
+2021 版（APK 内置）bundle 的旧流程仍保留在 `local_server/patch_bundle.py`，仅作参考。
 
 依赖：`pip install -r requirements.txt`（UnityPy、Pillow）。
 
@@ -83,6 +102,6 @@ tmp/mariadb/mariadb-10.6.28-winx64/bin/mysqldump.exe -uroot -p123456 -h127.0.0.1
 
 ## 注意
 
-- 仓库为私有：`local_server/debug.keystore` 是本地测试签名，不要公开或复用到正式包。
-- APK、运行时（Erlang/MariaDB/JDK/adb）、WSA 安装包不进 git，需单独拷贝。
+- **GitHub 仓库目前实际是公开状态**（2026-10-28 检查），里面有游戏资源和本地测试签名 `local_server/debug.keystore`，请尽快在仓库 Settings → Danger Zone 改成 Private。
+- APK、运行时（Erlang/MariaDB/JDK/adb）、WSA 安装包、`cdn/` 资源镜像不进 git，需单独拷贝。
 - APK、`tmp/`、`tools/`、`wsa/`、`extracted/`、`XYserver/` 等见 `.gitignore`。

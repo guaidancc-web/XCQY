@@ -6,6 +6,7 @@ import struct
 import threading
 import time
 import urllib.parse
+import urllib.request
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
@@ -13,13 +14,17 @@ import protocol
 
 BASE = Path(__file__).resolve().parent.parent
 ASSETS = BASE / "extracted" / "assets"
+CDN_DIR = BASE / "cdn"
 LOG_DIR = Path(__file__).resolve().parent
 PUBLIC_HOST = os.environ.get("PUBLIC_HOST", "127.0.0.1")
 HTTP_PORT = int(os.environ.get("HTTP_PORT", "81"))
 TCP_PORT = int(os.environ.get("TCP_PORT", "8001"))
 RESPOND_ALL = os.environ.get("RESPOND_ALL", "1") == "1"
 ENABLE_TCP = os.environ.get("ENABLE_TCP", "1") == "1"
+RES_VERSION = os.environ.get("RES_VERSION", "202506251639")
+UPSTREAM_CDN = os.environ.get("UPSTREAM_CDN", "http://106.52.8.88:81/xcqy_dev").rstrip("/")
 HANDSHAKE = b"game_client------------"
+_upstream_sem = threading.Semaphore(int(os.environ.get("UPSTREAM_CONCURRENCY", "4")))
 
 RECV_SCHEMAS, SEND_SCHEMAS = protocol.load_protocols(BASE / "lua_decoded" / "data" / "data_protocol.lua")
 
@@ -57,13 +62,64 @@ def local_base_setting():
         "apk_version": "15122615",
         "remote_log": "false",
         "server_list_path": f"http://{PUBLIC_HOST}:{HTTP_PORT}/list.php",
-        "check_apk": "true",
+        "check_apk": "false",
         "check_apk_path": f"http://{PUBLIC_HOST}:{HTTP_PORT}/apkcheck",
-        "res_version": "2021004090734",
+        "res_version": RES_VERSION,
         "cdn_path": f"http://{PUBLIC_HOST}:{HTTP_PORT}/xcqy_dev",
         "download_apk_path": f"http://{PUBLIC_HOST}:{HTTP_PORT}/res/apk",
         "first_cdn_path": f"http://{PUBLIC_HOST}:{HTTP_PORT}/xcqy_dev",
     }
+
+
+def _content_type(path: Path) -> str:
+    return {
+        ".json": "application/json; charset=utf-8",
+        ".lua": "application/octet-stream",
+        ".erl": "application/octet-stream",
+        ".unity3d": "application/octet-stream",
+        ".map": "application/octet-stream",
+        ".png": "image/png",
+        ".xml": "application/xml",
+        ".txt": "text/plain; charset=utf-8",
+    }.get(path.suffix.lower(), "application/octet-stream")
+
+
+def _resolve_file(root: Path, rel: str):
+    try:
+        resolved = (root / rel).resolve()
+        resolved.relative_to(root.resolve())
+    except (ValueError, OSError):
+        return None
+    return resolved if resolved.is_file() else None
+
+
+def _safe_dest(root: Path, rel: str):
+    try:
+        dest = (root / rel).resolve()
+        dest.relative_to(root.resolve())
+    except (ValueError, OSError):
+        return None
+    return dest
+
+
+def _fetch_upstream(rel: str, query: str):
+    if not UPSTREAM_CDN or not rel:
+        return None
+    url = f"{UPSTREAM_CDN}/{rel}"
+    if query:
+        url += "?" + query
+    last_exc = None
+    for attempt in range(3):
+        try:
+            with _upstream_sem:
+                req = urllib.request.Request(url, headers={"User-Agent": "xcqy-local/1.0"})
+                with urllib.request.urlopen(req, timeout=60) as resp:
+                    return resp.read()
+        except Exception as exc:
+            last_exc = exc
+            time.sleep(1 + attempt * 2)
+    log("HTTP", f"UPSTREAM FAIL {rel}: {last_exc}")
+    return None
 
 
 def server_list():
@@ -139,12 +195,12 @@ class Handler(BaseHTTPRequestHandler):
             })
             return
 
-        if path.endswith("/patch_list.json"):
+        if path.endswith("/patch_list.json") and not path.startswith("/xcqy_dev/"):
             file_path = ASSETS / "patch_list.json"
             self._send(200, file_path.read_bytes() if file_path.exists() else b"[]")
             return
 
-        if path.endswith("/version.json"):
+        if path.endswith("/version.json") and not path.startswith("/xcqy_dev/"):
             file_path = ASSETS / "version.json"
             if file_path.exists():
                 self._send(200, file_path.read_bytes(), "application/octet-stream")
@@ -165,38 +221,55 @@ class Handler(BaseHTTPRequestHandler):
             self._send(200, "0", "text/plain; charset=utf-8")
             return
 
-        if path in ("/apkcheck", "/apkcheck/"):
-            self._send(200, {"error": "0"})
+        if path.startswith("/apkcheck/"):
+            # CheckRemotApkProcessor.DoCheck parses this as a base_setting-like object:
+            # ConvertBaseSettingJson() requires the four path keys, then it reads
+            # apk_version / size / apkName. A missing apk_version throws and the
+            # loading page stays on "检查游戏版本" forever.
+            body = local_base_setting()
+            body.update({"apkName": "", "size": "0"})
+            self._send(200, body)
             return
 
         if path.startswith("/xcqy_dev/"):
             rel = path[len("/xcqy_dev/"):]
-            candidates = [ASSETS / rel]
-            if rel.startswith(("android/", "ios/")):
-                candidates.append(ASSETS / rel.split("/", 1)[1])
-            file_path = None
-            for candidate in candidates:
-                resolved = candidate.resolve()
-                try:
-                    resolved.relative_to(ASSETS.resolve())
-                except ValueError:
-                    continue
-                if resolved.is_file():
-                    file_path = resolved
-                    break
+            file_path = _resolve_file(CDN_DIR, rel)
+            if file_path is None:
+                file_path = _resolve_file(ASSETS, rel)
+            if file_path is None and rel.startswith(("android/", "ios/")):
+                file_path = _resolve_file(ASSETS, rel.split("/", 1)[1])
             if file_path is not None:
-                suffix = file_path.suffix.lower()
-                content_type = {
-                    ".json": "application/json; charset=utf-8",
-                    ".lua": "application/octet-stream",
-                    ".erl": "application/octet-stream",
-                    ".unity3d": "application/octet-stream",
-                    ".map": "application/octet-stream",
-                    ".png": "image/png",
-                }.get(suffix, "application/octet-stream")
-                self._send(200, file_path.read_bytes(), content_type)
-            else:
-                self._send(404, {"error": "not found", "path": rel})
+                self._send(200, file_path.read_bytes(), _content_type(file_path))
+                return
+
+            data = _fetch_upstream(rel, parsed.query)
+            if data is not None:
+                dest = _safe_dest(CDN_DIR, rel)
+                if dest is not None and not dest.exists():
+                    try:
+                        dest.parent.mkdir(parents=True, exist_ok=True)
+                        tmp = dest.with_name(dest.name + f".{threading.get_ident()}.part")
+                        tmp.write_bytes(data)
+                        tmp.replace(dest)
+                    except OSError as exc:
+                        log("HTTP", f"UPSTREAM CACHE FAIL {rel}: {exc}")
+                log("HTTP", f"UPSTREAM {rel} -> {len(data)} bytes")
+                self._send(200, data, _content_type(Path(rel)))
+                return
+
+            if rel.endswith("/patch_list.json") or rel == "patch_list.json":
+                file_path = ASSETS / "patch_list.json"
+                self._send(200, file_path.read_bytes() if file_path.exists() else b"[]")
+                return
+            if rel.endswith("/version.json") or rel == "version.json":
+                file_path = ASSETS / "version.json"
+                if file_path.exists():
+                    self._send(200, file_path.read_bytes(), "application/octet-stream")
+                else:
+                    self._send(404, {"error": "missing version.json"})
+                return
+
+            self._send(404, {"error": "not found", "path": rel})
             return
 
         # Any other path: log it so unexpected client polls are discoverable instead of

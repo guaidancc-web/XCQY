@@ -1,4 +1,4 @@
-﻿param([switch]$Reinstall)
+﻿param([switch]$Reinstall, [switch]$BundleOnly)
 $ErrorActionPreference = "Stop"
 
 $Root = Split-Path -Parent $PSScriptRoot
@@ -17,20 +17,25 @@ if ($state -notmatch ([regex]::Escape($dev) + "\s+device")) {
     throw "WSA 未连接。先启动 Windows Subsystem for Android，并在设置里开启开发人员模式(ADB)。"
 }
 
-$installed = & $adb -s $dev shell pm path $pkg 2>$null
-if ($Reinstall -or -not ($installed -match "package:")) {
-    if (-not (Test-Path $apk)) { throw "缺少 APK：$apk" }
-    Write-Host "安装 APK（约 441MB，请稍等）..."
-    & $adb -s $dev install -r -d $apk
+if (-not $BundleOnly) {
+    $installed = & $adb -s $dev shell pm path $pkg 2>$null
+    if ($Reinstall -or -not ($installed -match "package:")) {
+        if (-not (Test-Path $apk)) { throw "缺少 APK：$apk" }
+        Write-Host "安装 APK（约 441MB，请稍等）..."
+        & $adb -s $dev install -r -d $apk
+    }
 }
 
 Write-Host "推送客户端 Lua bundle ..."
+$staging = "/sdcard/Android/data/$pkg/files/xcqy_bundle.unity3d"
+& $adb -s $dev push $bundle $staging | Out-Null
 foreach ($d in @("/sdcard/Android/data/$pkg/files/res/textures", "/sdcard/Android/data/$pkg/files/res_theone/textures")) {
     & $adb -s $dev shell mkdir -p $d | Out-Null
-    & $adb -s $dev push $bundle "$d/" | Out-Null
+    & $adb -s $dev shell "cp $staging $d/textures_business.unity3d && chmod 777 $d/textures_business.unity3d" | Out-Null
 }
+& $adb -s $dev shell rm -f $staging | Out-Null
 
-if (Test-Path $zip) {
+if (-not $BundleOnly -and (Test-Path $zip)) {
     Write-Host "恢复客户端资源包 ..."
     $tmp = Join-Path $env:TEMP ("xcqy_files_" + [guid]::NewGuid().ToString("N"))
     Expand-Archive -Path $zip -DestinationPath $tmp -Force
@@ -48,12 +53,15 @@ foreach ($port in 8081, 8001) {
     & $adb -s $dev reverse "tcp:$port" "tcp:$port" | Out-Null
 }
 
-Write-Host "启动游戏 ..."
-$wsa = Join-Path $env:LOCALAPPDATA "Microsoft\WindowsApps\MicrosoftCorporationII.WindowsSubsystemForAndroid_8wekyb3d8bbwe\WsaClient.exe"
-if (Test-Path $wsa) {
-    Start-Process -FilePath $wsa -ArgumentList "/launch", "wsa://$pkg"
+if (-not $BundleOnly) {
+    Write-Host "启动游戏 ..."
+    $wsa = Join-Path $env:LOCALAPPDATA "Microsoft\WindowsApps\MicrosoftCorporationII.WindowsSubsystemForAndroid_8wekyb3d8bbwe\WsaClient.exe"
+    if (Test-Path $wsa) {
+        Start-Process -FilePath $wsa -ArgumentList "/launch", "wsa://$pkg"
+    } else {
+        & $adb -s $dev shell am start -n "$pkg/cn.kkk.commonsdk.WelcomeAcitivity" | Out-Null
+    }
+    Write-Host "完成。首次启动会自动填 test123 并登录。"
 } else {
-    & $adb -s $dev shell am start -n "$pkg/cn.kkk.commonsdk.WelcomeAcitivity" | Out-Null
+    Write-Host "bundle 已推送。重启游戏后生效。"
 }
-
-Write-Host "完成。首次启动会自动填 test123 并登录。"

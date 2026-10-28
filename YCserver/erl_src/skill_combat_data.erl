@@ -113446,19 +113446,22 @@ get_combat({60304, 1}) ->
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
            script_id = 60047, script_args = [100]};
 get_combat({60590, 1}) ->
-    #skill{id = 60590, lev = 1, name = lang:get("灵魂超度"),
-           type = 1, sub_type = 0, acc_ratio = 1000,
-           acc_low = 1000, acc_high = 1000, attack_type = 1,
-           elem_type = 0, target_type = 1, attack_times = 1,
-           target_list = [{1, 2, 1}], dmg_ratio = [1000],
-           script_id = 60047, script_args = [100]};
+        #skill{id = 60590, lev = 1, name = lang:get("灵魂超度"),
+           speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
+           acc_low = 500, acc_high = 1000, attack_type = 1,
+           elem_type = 1, target_type = 1, attack_times = 1,
+           target_list = [{1, 2, 4}], dmg_ratio = [1800], script_id = 50000, script_args = [20],
+           addt_scripts =
+               [{1, 1001, [1, 1, 50]}, {1, 1016, [1001]}]};
+
 get_combat({60603, 1}) ->
-    #skill{id = 60603, lev = 1, name = lang:get("枭刃"),
-           type = 1, sub_type = 0, acc_ratio = 1000,
+        #skill{id = 60603, lev = 1, name = lang:get("枭刃"),
+           type = 0, sub_type = 0, acc_ratio = 1000,
            acc_low = 1000, acc_high = 1000, attack_type = 1,
            elem_type = 0, target_type = 1, attack_times = 1,
-           target_list = [{1, 2, 1}], dmg_ratio = [1000],
+           target_list = [{1, 2, 1}], dmg_ratio = [1400],
            script_id = 60047, script_args = [100]};
+
 get_combat({67074, 1}) ->
     #skill{id = 67074, lev = 1, name = lang:get("推气过穴"),
            type = 1, sub_type = 0, acc_ratio = 1000,
@@ -113467,12 +113470,15 @@ get_combat({67074, 1}) ->
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
            script_id = 60047, script_args = [100]};
 get_combat({67075, 1}) ->
-    #skill{id = 67075, lev = 1, name = lang:get("郎神共舞"),
-           type = 1, sub_type = 0, acc_ratio = 1000,
-           acc_low = 1000, acc_high = 1000, attack_type = 1,
-           elem_type = 0, target_type = 1, attack_times = 1,
-           target_list = [{1, 2, 1}], dmg_ratio = [1000],
-           script_id = 60047, script_args = [100]};
+        #skill{id = 67075, lev = 1, name = lang:get("郎神共舞"),
+           speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
+           acc_low = 500, acc_high = 1000, attack_type = 1,
+           elem_type = 1, target_type = 1, attack_times = 1,
+           target_list = [{1, 2, 3}], dmg_ratio = [1600],
+           cost_mp = 99, script_id = 50000, script_args = [20],
+           addt_scripts =
+               [{1, 1001, [1, 1, 50]}, {1, 1016, [1001]}]};
+
 get_combat({67083, 1}) ->
     #skill{id = 67083, lev = 1, name = lang:get("神牛意志"),
            type = 1, sub_type = 0, acc_ratio = 1000,
@@ -113481,19 +113487,21 @@ get_combat({67083, 1}) ->
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
            script_id = 60047, script_args = [100]};
 get_combat({67085, 1}) ->
-    #skill{id = 67085, lev = 1, name = lang:get("天诛"),
-           type = 1, sub_type = 0, acc_ratio = 1000,
-           acc_low = 1000, acc_high = 1000, attack_type = 1,
+        #skill{id = 67085, lev = 1, name = lang:get("天诛"),
+           speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
+           acc_low = 800, acc_high = 1000, attack_type = 1,
            elem_type = 0, target_type = 1, attack_times = 1,
-           target_list = [{1, 2, 1}], dmg_ratio = [1000],
-           script_id = 60047, script_args = [100]};
+           target_list = [{1, 2, 4}], dmg_ratio = [1800], script_id = 50026, script_args = [200],
+           addt_scripts = [{1, 1016, [1001]}]};
+
 get_combat({67110, 1}) ->
-    #skill{id = 67110, lev = 1, name = lang:get("君皇横斩"),
-           type = 1, sub_type = 0, acc_ratio = 1000,
-           acc_low = 1000, acc_high = 1000, attack_type = 1,
+        #skill{id = 67110, lev = 1, name = lang:get("君皇横斩"),
+           speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
+           acc_low = 800, acc_high = 1000, attack_type = 1,
            elem_type = 0, target_type = 1, attack_times = 1,
-           target_list = [{1, 2, 1}], dmg_ratio = [1000],
-           script_id = 60047, script_args = [100]};
+           target_list = [{1, 2, 4}], dmg_ratio = [1800], script_id = 50026, script_args = [200],
+           addt_scripts = [{1, 1016, [1001]}]};
+
 get_combat({67111, 1}) ->
     #skill{id = 67111, lev = 1, name = lang:get("暗域"),
            type = 1, sub_type = 0, acc_ratio = 1000,
@@ -113544,26 +113552,33 @@ get_combat({67119, 1}) ->
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
            script_id = 60047, script_args = [100]};
 get_combat({67130, 1}) ->
-    #skill{id = 67130, lev = 1, name = lang:get("兔击长空"),
-           type = 1, sub_type = 0, acc_ratio = 1000,
-           acc_low = 1000, acc_high = 1000, attack_type = 1,
+        #skill{id = 67130, lev = 1, name = lang:get("兔击长空"),
+           speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
+           acc_low = 800, acc_high = 1000, attack_type = 1,
            elem_type = 0, target_type = 1, attack_times = 1,
-           target_list = [{1, 2, 1}], dmg_ratio = [1000],
-           script_id = 60047, script_args = [100]};
+           target_list = [{1, 2, 7}], dmg_ratio = [1200],
+           cost_mp = 1,
+           cooldown = 1,
+           script_id = 50026, script_args = [200],
+           addt_scripts = [{1, 1016, [1001]}]};
+
 get_combat({67131, 1}) ->
-    #skill{id = 67131, lev = 1, name = lang:get("正义审判"),
-           type = 1, sub_type = 0, acc_ratio = 1000,
+        #skill{id = 67131, lev = 1, name = lang:get("正义审判"),
+           type = 0, sub_type = 0, acc_ratio = 1000,
            acc_low = 1000, acc_high = 1000, attack_type = 1,
            elem_type = 0, target_type = 1, attack_times = 1,
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
            script_id = 60047, script_args = [100]};
+
 get_combat({67200, 1}) ->
-    #skill{id = 67200, lev = 1, name = lang:get("阴阳怒焱"),
-           type = 1, sub_type = 0, acc_ratio = 1000,
-           acc_low = 1000, acc_high = 1000, attack_type = 1,
-           elem_type = 0, target_type = 1, attack_times = 1,
-           target_list = [{1, 2, 1}], dmg_ratio = [1000],
-           script_id = 60047, script_args = [100]};
+        #skill{id = 67200, lev = 1, name = lang:get("阴阳怒焱"),
+           speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
+           acc_low = 500, acc_high = 1000, attack_type = 1,
+           elem_type = 1, target_type = 1, attack_times = 1,
+           target_list = [{1, 2, 2}], dmg_ratio = [1800], script_id = 50000, script_args = [20],
+           addt_scripts =
+               [{1, 1001, [1, 1, 50]}, {1, 1016, [1001]}]};
+
 get_combat({67207, 1}) ->
     #skill{id = 67207, lev = 1, name = lang:get("麒麟庇护"),
            type = 1, sub_type = 0, acc_ratio = 1000,
@@ -113579,12 +113594,13 @@ get_combat({67304, 1}) ->
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
            script_id = 60047, script_args = [100]};
 get_combat({67309, 1}) ->
-    #skill{id = 67309, lev = 1, name = lang:get("金箍棒头"),
-           type = 1, sub_type = 0, acc_ratio = 1000,
-           acc_low = 1000, acc_high = 1000, attack_type = 1,
+        #skill{id = 67309, lev = 1, name = lang:get("金箍棒头"),
+           speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
+           acc_low = 800, acc_high = 1000, attack_type = 1,
            elem_type = 0, target_type = 1, attack_times = 1,
-           target_list = [{1, 2, 1}], dmg_ratio = [1000],
-           script_id = 60047, script_args = [100]};
+           target_list = [{1, 2, 3}], dmg_ratio = [1400], script_id = 50026, script_args = [200],
+           addt_scripts = [{1, 1016, [1001]}]};
+
 get_combat({67311, 1}) ->
     #skill{id = 67311, lev = 1, name = lang:get("法天象地"),
            type = 1, sub_type = 0, acc_ratio = 1000,
@@ -113600,26 +113616,31 @@ get_combat({67315, 1}) ->
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
            script_id = 60047, script_args = [100]};
 get_combat({67316, 1}) ->
-    #skill{id = 67316, lev = 1, name = lang:get("三味真火"),
-           type = 1, sub_type = 0, acc_ratio = 1000,
-           acc_low = 1000, acc_high = 1000, attack_type = 1,
-           elem_type = 0, target_type = 1, attack_times = 1,
-           target_list = [{1, 2, 1}], dmg_ratio = [1000],
-           script_id = 60047, script_args = [100]};
+        #skill{id = 67316, lev = 1, name = lang:get("三味真火"),
+           speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
+           acc_low = 500, acc_high = 1000, attack_type = 1,
+           elem_type = 1, target_type = 1, attack_times = 1,
+           target_list = [{1, 2, 3}], dmg_ratio = [1400], script_id = 50000, script_args = [20],
+           addt_scripts =
+               [{1, 1001, [1, 1, 50]}, {1, 1016, [1001]}]};
+
 get_combat({67330, 1}) ->
-    #skill{id = 67330, lev = 1, name = lang:get("八方俱灭"),
-           type = 1, sub_type = 0, acc_ratio = 1000,
-           acc_low = 1000, acc_high = 1000, attack_type = 1,
+        #skill{id = 67330, lev = 1, name = lang:get("八方俱灭"),
+           speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
+           acc_low = 800, acc_high = 1000, attack_type = 1,
            elem_type = 0, target_type = 1, attack_times = 1,
-           target_list = [{1, 2, 1}], dmg_ratio = [1000],
-           script_id = 60047, script_args = [100]};
+           target_list = [{1, 2, 4}], dmg_ratio = [1400], script_id = 50026, script_args = [200],
+           addt_scripts = [{1, 1016, [1001]}]};
+
 get_combat({67334, 1}) ->
-    #skill{id = 67334, lev = 1, name = lang:get("神龙吐珠"),
-           type = 1, sub_type = 0, acc_ratio = 1000,
-           acc_low = 1000, acc_high = 1000, attack_type = 1,
-           elem_type = 0, target_type = 1, attack_times = 1,
-           target_list = [{1, 2, 1}], dmg_ratio = [1000],
-           script_id = 60047, script_args = [100]};
+        #skill{id = 67334, lev = 1, name = lang:get("神龙吐珠"),
+           speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
+           acc_low = 500, acc_high = 1000, attack_type = 1,
+           elem_type = 1, target_type = 1, attack_times = 1,
+           target_list = [{1, 2, 4}], dmg_ratio = [1400], script_id = 50000, script_args = [20],
+           addt_scripts =
+               [{1, 1001, [1, 1, 50]}, {1, 1016, [1001]}]};
+
 get_combat({67335, 1}) ->
     #skill{id = 67335, lev = 1, name = lang:get("死亡追击"),
            type = 1, sub_type = 0, acc_ratio = 1000,
@@ -113628,12 +113649,13 @@ get_combat({67335, 1}) ->
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
            script_id = 60047, script_args = [100]};
 get_combat({67338, 1}) ->
-    #skill{id = 67338, lev = 1, name = lang:get("玄女功"),
-           type = 1, sub_type = 0, acc_ratio = 1000,
-           acc_low = 1000, acc_high = 1000, attack_type = 1,
+        #skill{id = 67338, lev = 1, name = lang:get("玄女功"),
+           speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
+           acc_low = 800, acc_high = 1000, attack_type = 1,
            elem_type = 0, target_type = 1, attack_times = 1,
-           target_list = [{1, 2, 1}], dmg_ratio = [1000],
-           script_id = 60047, script_args = [100]};
+           target_list = [{1, 2, 5}], dmg_ratio = [1400], script_id = 50026, script_args = [200],
+           addt_scripts = [{1, 1016, [1001]}]};
+
 get_combat({67342, 1}) ->
     #skill{id = 67342, lev = 1, name = lang:get("玄女圣体"),
            type = 1, sub_type = 0, acc_ratio = 1000,
@@ -113642,12 +113664,14 @@ get_combat({67342, 1}) ->
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
            script_id = 60047, script_args = [100]};
 get_combat({67343, 1}) ->
-    #skill{id = 67343, lev = 1, name = lang:get("初音飓风"),
-           type = 1, sub_type = 0, acc_ratio = 1000,
-           acc_low = 1000, acc_high = 1000, attack_type = 1,
-           elem_type = 0, target_type = 1, attack_times = 1,
-           target_list = [{1, 2, 1}], dmg_ratio = [1000],
-           script_id = 60047, script_args = [100]};
+        #skill{id = 67343, lev = 1, name = lang:get("初音飓风"),
+           speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
+           acc_low = 500, acc_high = 1000, attack_type = 1,
+           elem_type = 1, target_type = 1, attack_times = 1,
+           target_list = [{1, 2, 6}], dmg_ratio = [1400], script_id = 50000, script_args = [20],
+           addt_scripts =
+               [{1, 1001, [1, 1, 50]}, {1, 1016, [1001]}]};
+
 get_combat({67347, 1}) ->
     #skill{id = 67347, lev = 1, name = lang:get("初音圣体"),
            type = 1, sub_type = 0, acc_ratio = 1000,
@@ -113656,12 +113680,13 @@ get_combat({67347, 1}) ->
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
            script_id = 60047, script_args = [100]};
 get_combat({67348, 1}) ->
-    #skill{id = 67348, lev = 1, name = lang:get("穷凶烈爪"),
-           type = 1, sub_type = 0, acc_ratio = 1000,
-           acc_low = 1000, acc_high = 1000, attack_type = 1,
+        #skill{id = 67348, lev = 1, name = lang:get("穷凶烈爪"),
+           speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
+           acc_low = 800, acc_high = 1000, attack_type = 1,
            elem_type = 0, target_type = 1, attack_times = 1,
-           target_list = [{1, 2, 1}], dmg_ratio = [1000],
-           script_id = 60047, script_args = [100]};
+           target_list = [{1, 2, 3}], dmg_ratio = [1400], script_id = 50026, script_args = [200],
+           addt_scripts = [{1, 1016, [1001]}]};
+
 get_combat({67349, 1}) ->
     #skill{id = 67349, lev = 1, name = lang:get("列字秘"),
            type = 1, sub_type = 0, acc_ratio = 1000,
@@ -113677,33 +113702,38 @@ get_combat({67352, 1}) ->
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
            script_id = 60047, script_args = [100]};
 get_combat({67353, 1}) ->
-    #skill{id = 67353, lev = 1, name = lang:get("封阳击"),
-           type = 1, sub_type = 0, acc_ratio = 1000,
+        #skill{id = 67353, lev = 1, name = lang:get("封阳击"),
+           type = 0, sub_type = 0, acc_ratio = 1000,
            acc_low = 1000, acc_high = 1000, attack_type = 1,
            elem_type = 0, target_type = 1, attack_times = 1,
-           target_list = [{1, 2, 1}], dmg_ratio = [1000],
+           target_list = [{1, 2, 1}], dmg_ratio = [1300],
            script_id = 60047, script_args = [100]};
+
 get_combat({67358, 1}) ->
-    #skill{id = 67358, lev = 1, name = lang:get("太初决"),
-           type = 1, sub_type = 0, acc_ratio = 1000,
-           acc_low = 1000, acc_high = 1000, attack_type = 1,
-           elem_type = 0, target_type = 1, attack_times = 1,
-           target_list = [{1, 2, 1}], dmg_ratio = [1000],
-           script_id = 60047, script_args = [100]};
+        #skill{id = 67358, lev = 1, name = lang:get("太初决"),
+           speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
+           acc_low = 500, acc_high = 1000, attack_type = 1,
+           elem_type = 1, target_type = 1, attack_times = 1,
+           target_list = [{1, 2, 10}], dmg_ratio = [1400], script_id = 50000, script_args = [20],
+           addt_scripts =
+               [{1, 1001, [1, 1, 50]}, {1, 1016, [1001]}]};
+
 get_combat({67363, 1}) ->
-    #skill{id = 67363, lev = 1, name = lang:get("死亡镰刀"),
-           type = 1, sub_type = 0, acc_ratio = 1000,
-           acc_low = 1000, acc_high = 1000, attack_type = 1,
-           elem_type = 0, target_type = 1, attack_times = 1,
-           target_list = [{1, 2, 1}], dmg_ratio = [1000],
-           script_id = 60047, script_args = [100]};
+        #skill{id = 67363, lev = 1, name = lang:get("死亡镰刀"),
+           speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
+           acc_low = 500, acc_high = 1000, attack_type = 1,
+           elem_type = 1, target_type = 1, attack_times = 1,
+           target_list = [{1, 2, 1}], dmg_ratio = [1300], script_id = 50000, script_args = [50],
+           addt_scripts = [{1, 1016, [1002]}]};
+
 get_combat({67368, 1}) ->
-    #skill{id = 67368, lev = 1, name = lang:get("无忧击"),
-           type = 1, sub_type = 0, acc_ratio = 1000,
-           acc_low = 1000, acc_high = 1000, attack_type = 1,
+        #skill{id = 67368, lev = 1, name = lang:get("无忧击"),
+           speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
+           acc_low = 800, acc_high = 1000, attack_type = 1,
            elem_type = 0, target_type = 1, attack_times = 1,
-           target_list = [{1, 2, 1}], dmg_ratio = [1000],
-           script_id = 60047, script_args = [100]};
+           target_list = [{1, 2, 4}], dmg_ratio = [1400], script_id = 50026, script_args = [200],
+           addt_scripts = [{1, 1016, [1001]}]};
+
 get_combat({67370, 1}) ->
     #skill{id = 67370, lev = 1, name = lang:get("叠法"),
            type = 1, sub_type = 0, acc_ratio = 1000,
@@ -113712,12 +113742,13 @@ get_combat({67370, 1}) ->
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
            script_id = 60047, script_args = [100]};
 get_combat({67378, 1}) ->
-    #skill{id = 67378, lev = 1, name = lang:get("乾坤天降"),
-           type = 1, sub_type = 0, acc_ratio = 1000,
-           acc_low = 1000, acc_high = 1000, attack_type = 1,
+        #skill{id = 67378, lev = 1, name = lang:get("乾坤天降"),
+           speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
+           acc_low = 800, acc_high = 1000, attack_type = 1,
            elem_type = 0, target_type = 1, attack_times = 1,
-           target_list = [{1, 2, 1}], dmg_ratio = [1000],
-           script_id = 60047, script_args = [100]};
+           target_list = [{1, 2, 6}], dmg_ratio = [1200], script_id = 50026, script_args = [200],
+           addt_scripts = [{1, 1016, [1001]}]};
+
 get_combat(_) -> false.
 
 get_skill_cd(50014) -> 50004;

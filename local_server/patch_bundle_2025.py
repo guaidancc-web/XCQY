@@ -135,6 +135,68 @@ def patch_pet_manual(text):
     return text.replace(old, new, 1)
 
 
+def patch_recharge_click(text):
+    """充值页点击不再走已失效的 SDK 支付，改为直接发 GM 9900 走服务端原生充值链路。"""
+    old = "    self.btn.onClick:AddListener(function() self.callback(self.model.chargeList[index]) end)"
+    new = '    self.btn.onClick:AddListener(function() Connection.Instance:send(9900, {msg = "充值 " .. tostring(self.model.chargeList[index].gold) .. " 0"}) end)'
+    if new in text:
+        return text
+    if text.count(old) != 1:
+        raise SystemExit(f"recharge click handler matched {text.count(old)} times")
+    return text.replace(old, new, 1)
+
+
+def patch_sdk_charge(text):
+    """所有充值入口都走 SdkManager:ShowChargeView，在函数开头直接发 GM 9900 充值命令并返回，
+    绕开已失效的 SDK 支付与渠道屏蔽。"""
+    sig = "function SdkManager:ShowChargeView(productId, amount, gold, extInfo)"
+    send = ('    NoticeManager.Instance:FloatTipsByString("充值已提交")' + chr(10)
+            + '    Connection.Instance:send(9900, {cmd = "充值 " .. tostring(gold or 0) .. " 0"})')
+    inject = sig + chr(10) + send + chr(10) + "    do return end" + chr(10)
+    if send in text:
+        return text
+    if text.count(sig) != 1:
+        raise SystemExit(f"ShowChargeView signature matched {text.count(sig)} times")
+    return text.replace(sig + chr(10), inject, 1)
+
+
+def patch_recharge_gift_item(text):
+    """itemidToRes[data.item_list[1][1]] 会拿到 nil，导致 InitPanel 中途抛错、
+    buyData 一直为 nil，点击充值好礼的卡片等于点空气。加 nil 保护让初始化走完。"""
+    old = """    self.diamondImage.sprite = self.assetWrapper:GetSprite(AssetConfig.shop_textures, self.model.itemidToRes[data.item_list[1][1]])"""
+    new = """    do
+        local __res = nil
+        local __map = self.model.itemidToRes
+        local __list = data and data.item_list
+        if __map ~= nil and __list ~= nil and __list[1] ~= nil then
+            __res = __map[__list[1][1]]
+        end
+        if __res ~= nil then
+            self.diamondImage.sprite = self.assetWrapper:GetSprite(AssetConfig.shop_textures, __res)
+        end
+    end"""
+    if 'local __res = nil' in text:
+        return text
+    if text.count(old) != 1:
+        raise SystemExit(f"recharge_gift_item 目标行匹配 {text.count(old)} 次")
+    return text.replace(old, new, 1)
+
+CHARGE_PANELS = [
+    "recharge_gift_panel", "rechargepackage_panel", "shop_recharge_panel", "shop_window", "bible_daily_gift_panel", "bible_invest_panel", "multi_invest_panel", "direct_buy_panel", "directpackagewindow", "grow_fund_panel", "open_server_direct_buy_panel", "shop_monthly_panel",
+]
+
+RUNSDK_GUARD = "SdkManager.Instance:RunSdk()"
+
+
+def _make_guard_patcher(name):
+    """充值/礼包面板的支付都被 RunSdk() 挡住（该函数被原作者硬编码 return false），
+    这里只在充值相关面板把它当 true，让调用落到 SdkManager:ShowChargeView。"""
+    def patch(text):
+        if RUNSDK_GUARD not in text:
+            raise SystemExit(name + ": 未找到 RunSdk 守卫")
+        return text.replace(RUNSDK_GUARD, "true")
+    return patch
+
 PATCHERS = {
     "connection": patch_connection,
     "login_config": patch_login_config,
@@ -142,6 +204,20 @@ PATCHERS = {
     "login_manager": patch_login_manager,
     "login_view": patch_login_view,
     "pet_view_manual": patch_pet_manual,
+    "sdk_manager": patch_sdk_charge,
+    "recharge_gift_item": patch_recharge_gift_item,
+    "recharge_gift_panel": _make_guard_patcher("recharge_gift_panel"),
+    "rechargepackage_panel": _make_guard_patcher("rechargepackage_panel"),
+    "shop_recharge_panel": _make_guard_patcher("shop_recharge_panel"),
+    "shop_window": _make_guard_patcher("shop_window"),
+    "bible_daily_gift_panel": _make_guard_patcher("bible_daily_gift_panel"),
+    "bible_invest_panel": _make_guard_patcher("bible_invest_panel"),
+    "multi_invest_panel": _make_guard_patcher("multi_invest_panel"),
+    "direct_buy_panel": _make_guard_patcher("direct_buy_panel"),
+    "directpackagewindow": _make_guard_patcher("directpackagewindow"),
+    "grow_fund_panel": _make_guard_patcher("grow_fund_panel"),
+    "open_server_direct_buy_panel": _make_guard_patcher("open_server_direct_buy_panel"),
+    "shop_monthly_panel": _make_guard_patcher("shop_monthly_panel"),
 }
 
 

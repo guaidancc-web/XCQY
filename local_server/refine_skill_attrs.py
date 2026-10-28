@@ -60,6 +60,7 @@ FLAT_RE = re.compile(
     + '|'.join(k for k, _ in LEVEL_ATTR) + r')')
 PCT_MAP = dict(PCT_ATTR)
 LEVEL_MAP = dict(LEVEL_ATTR)
+SPECIAL_ATTRS = {60326: {10: 140}}
 
 
 def read(p):
@@ -248,6 +249,8 @@ def main():
             continue
         name, desc = descs[sid]
         attrs, matched, unmatched = parse_attrs(desc)
+        for k, v in SPECIAL_ATTRS.get(sid, {}).items():
+            attrs[k] = v
         new = attr_text(attrs)
         rows.append((sid, name, cur or '-', new, len(matched), ' | '.join(x for _, fs in matched for x in fs)))
         if unmatched:

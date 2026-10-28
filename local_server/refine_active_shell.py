@@ -34,6 +34,13 @@ ATTACK = {
 }
 DMG_BY_TIER = {365: 1800, 265: 1600, 200: 1400, 150: 1300, 100: 1200}
 
+# sid: (hits, average target count)
+MULTI = {
+    60603: (2, 1), 67309: (3, 3), 67316: (3, 3), 67330: (2, 4),
+    67334: (2, 4), 67338: (3, 4), 67343: (3, 4), 67348: (2, 3),
+    67353: (5, 1), 67358: (3, 6), 67363: (5, 1), 67368: (3, 4),
+}
+
 
 def read(p):
     with open(p, encoding='utf-8', newline='') as f:
@@ -114,13 +121,17 @@ def get_template(src, count, magic):
     raise SystemExit('no combat template')
 
 
-def update_body(body, sid, name, m, count, dmg):
+def update_body(body, sid, name, m, count, dmg, hits=1):
     body = re.sub(r'id = \d+', 'id = %d' % sid, body, count=1)
     body = re.sub(r'name = lang:get\("[^"]*"\)', 'name = lang:get("%s")' % name.replace('"', '\\"'), body, count=1)
     body = re.sub(r'\btype = \d+', 'type = %d' % m['type'], body, count=1)
     body = re.sub(r'\bsub_type = \d+', 'sub_type = %d' % m['sub'], body, count=1)
     body = re.sub(r'target_list = \[.*?\]', 'target_list = [{1, 2, %d}]' % count, body, count=1)
-    body = re.sub(r'dmg_ratio = \[.*?\]', 'dmg_ratio = [%d]' % dmg, body, count=1)
+    base = dmg // hits
+    ratios = [base] * hits
+    ratios[-1] += dmg - base * hits
+    body = re.sub(r'\battack_times = \d+', 'attack_times = %d' % hits, body, count=1)
+    body = re.sub(r'dmg_ratio = \[.*?\]', 'dmg_ratio = [%s]' % ', '.join(map(str, ratios)), body, count=1)
     if re.search(r'\bcost_mp = \d+', body):
         if m.get('mp', 0) > 0:
             body = re.sub(r'\bcost_mp = \d+', 'cost_mp = %d' % m['mp'], body, count=1)
@@ -150,6 +161,9 @@ def main():
         name, desc = descs.get(sid, ('?', ''))
         m = meta.get(sid, {'type': 0, 'sub': 0, 'target': 1, 'cd': 0, 'mp': 0, 'tier': 0})
         count = target_count(desc, m.get('target', 1))
+        hits, tcount = MULTI.get(sid, (1, None))
+        if tcount:
+            count = tcount
         cd_cn = {'一': 1, '二': 2, '三': 3, '四': 4, '五': 5}
         cm = re.search(r'冷却([一二三四五\d]+)回合', desc)
         if cm:
@@ -158,8 +172,8 @@ def main():
         dmg = 1000 if sid == 67131 else infer_dmg(m)  # 67131 is current-HP%, needs a script
         magic = bool(re.search(r'魔法|法术', desc))
         tpl, tpl_body = get_template(src, count, magic)
-        body = update_body(tpl_body, sid, name, m, count, dmg)
-        rows.append((sid, name, count, m.get('mp', 0), m.get('cd', 0), dmg, tpl, magic))
+        body = update_body(tpl_body, sid, name, m, count, dmg, hits)
+        rows.append((sid, name, count, m.get('mp', 0), m.get('cd', 0), dmg, hits, tpl, magic))
         if sid in blocks:
             new_src = new_src.replace(blocks[sid], 'get_combat({%d, 1}) ->\n    %s;\n' % (sid, body), 1)
         else:
@@ -167,7 +181,7 @@ def main():
                                       'get_combat({%d, 1}) ->\n    %s;\n' % (sid, body) +
                                       'get_combat(_) -> false.\n', 1)
     with open(REPORT, 'w', encoding='utf-8', newline='') as f:
-        f.write('id\tname\ttarget\tmp\tcd\tdmg\ttemplate\tmagic\n')
+        f.write('id\tname\ttarget\tmp\tcd\tdmg\thits\ttemplate\tmagic\n')
         for r in rows:
             f.write('\t'.join(map(str, r)) + '\n')
     print('report:', REPORT, 'rows:', len(rows))

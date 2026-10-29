@@ -7,6 +7,7 @@
          calc_attr/2,
          all_skill/1,
          gm_study/2,
+         learn_book/2,
          skill_name/1,
          comprehend/2,
          combat_comprehend/3,
@@ -2980,6 +2981,41 @@ gm_study(SkillIds,
             pet:push_10511(Nr, NewPet),
             pet:push_10503(Nr, NewPet),
             {ok, role_trigger:fire(#evt_pet_skill{}, Nr)};
+        _ -> {false, lang:get("没有找到出战宠物")}
+    end.
+
+%% 技能书使用：把技能学会到出战宠物身上（保留原有技能）
+learn_book(SkillIds,
+           Role = #role{m_pet = Mpet = #m_pet{pets = Pets}}) ->
+    case lists:keyfind(1, #pet.status, Pets) of
+        Pet = #pet{skills = Skills} ->
+            Have = [Id || #pet_skill{id = Id} <- Skills],
+            Add = [Id
+                   || Id <- SkillIds,
+                      not lists:member(Id, Have),
+                      skill_data:get_pet({Id, 1}) =/= false],
+            case Add of
+                [] -> {false, lang:get("使用物品失败")};
+                _ ->
+                    NewSkills = [begin
+                                     #pet_base_skill{type = Type, step = Step} =
+                                         skill_data:get_pet({Id, 1}),
+                                     #pet_skill{id = Id, step = Step,
+                                                type = Type, source = 1}
+                                 end
+                                 || Id <- Add],
+                    Pet1 = Pet#pet{skills = NewSkills ++ Skills},
+                    {ok, NewPet, Role1} = pet_attr:calc(Pet1, Role),
+                    NewPets = lists:keystore(1,
+                                             #pet.status,
+                                             Pets,
+                                             NewPet),
+                    Nr = Role1#role{m_pet = Mpet#m_pet{pets = NewPets}},
+                    pet:push_10511(Nr, NewPet),
+                    pet:push_10503(Nr, NewPet),
+                    notice:send(Nr, 3, lang:get("宠物学会了新技能")),
+                    {ok, role_trigger:fire(#evt_pet_skill{}, Nr)}
+            end;
         _ -> {false, lang:get("没有找到出战宠物")}
     end.
 

@@ -4684,6 +4684,45 @@ do({77, Model}, _ItemBase, Role = #role{lev = Lev}) ->
                          1418),
             {false, lang:get("使用物品失败")}
     end;
+do(Effect, _ItemBase, Role)
+    when is_tuple(Effect), tuple_size(Effect) >= 2,
+         element(1, Effect) =:= 3 ->
+    SkillIds = [element(I, Effect)
+                || I <- lists:seq(2, tuple_size(Effect))],
+    pet_skill:learn_book(SkillIds, Role);
+do({78, Money}, _ItemBase,
+   Role = #role{id = {Rid, P, Z}, channel_reg = ChannelReg,
+                account = Account, name = Name, lev = Lev,
+                classes = Classes}) ->
+    Gold = Money * 10,
+    Sn = lists:concat([p, date:unixtime(ms) * 100000000, Rid]),
+    case db:exec("insert into charge(sn, type, status, gold, "
+                 "charge_type, money, account, rid, platform, "
+                 "zone_id, channel_reg, name, classes, lev, is_test, "
+                 "ts) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, "
+                 "?, ?, ?)",
+                 [Sn,
+                  1,
+                  0,
+                  Gold,
+                  0,
+                  Gold,
+                  Account,
+                  Rid,
+                  P,
+                  Z,
+                  ChannelReg,
+                  Name,
+                  Classes,
+                  Lev,
+                  1,
+                  date:unixtime()])
+        of
+        ok ->
+            charge:notice(Rid, P, Z, Sn),
+            {ok, Role};
+        _ -> {false, lang:get("使用物品失败")}
+    end;
 do(_Eff, _ItemBase, _Role) ->
     logger:error("错误的物品使用效果:~w", [_Eff], item_effect, 1424),
     {false, lang:get("使用物品失败")}.

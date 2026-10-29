@@ -2864,6 +2864,150 @@ get(39034) ->
     #honor_base{id = 39034, name = lang:get("器宇不凡"),
                 show_type = 2, type = 1, mode_type = 1, classes = 0,
                 sex = 2, is_cast = 1, is_can_pre = 1, collect_val = 0};
+get(39044) ->
+    #honor_base{id = 39044, name = lang:get("一夜暴富"),
+                show_type = 2, type = 1, mode_type = 1, classes = 0,
+                sex = 2, is_cast = 1, is_can_pre = 1, collect_val = 0};
+get(39049) ->
+    #honor_base{id = 39049, name = lang:get("腰缠万贯.富可敌国"),
+                show_type = 2, type = 1, mode_type = 1, classes = 0,
+                sex = 2, is_cast = 1, is_can_pre = 1, collect_val = 0};
+get(39063) ->
+    #honor_base{id = 39063, name = lang:get("无敌小霸王"),
+                show_type = 2, type = 1, mode_type = 1, classes = 0,
+                sex = 2, is_cast = 1, is_can_pre = 1, collect_val = 0};
+get(39064) ->
+    #honor_base{id = 39064, name = lang:get("统领三界"),
+                show_type = 2, type = 1, mode_type = 1, classes = 0,
+                sex = 2, is_cast = 1, is_can_pre = 1, collect_val = 0};
+get(39065) ->
+    #honor_base{id = 39065, name = lang:get("真.最强王者"),
+                show_type = 2, type = 1, mode_type = 1, classes = 0,
+                sex = 2, is_cast = 1, is_can_pre = 1, collect_val = 0};
+get(39066) ->
+    #honor_base{id = 39066, name = lang:get("圣.最强王者"),
+                show_type = 2, type = 1, mode_type = 1, classes = 0,
+                sex = 2, is_cast = 1, is_can_pre = 1, collect_val = 0};
+get(39112) ->
+    #honor_base{id = 39112, name = lang:get("天选之子"),
+                show_type = 2, type = 1, mode_type = 1, classes = 0,
+                sex = 2, is_cast = 1, is_can_pre = 1, collect_val = 0};
+get(39156) ->
+    #honor_base{id = 39156, name = lang:get("炼气·初期"),
+                show_type = 2, type = 1, mode_type = 1, classes = 0,
+                sex = 2, is_cast = 1, is_can_pre = 1, collect_val = 0};
+get(39157) ->
+    #honor_base{id = 39157, name = lang:get("炼气·中期"),
+                show_type = 2, type = 1, mode_type = 1, classes = 0,
+                sex = 2, is_cast = 1, is_can_pre = 1, collect_val = 0};
+get(39158) ->
+    #honor_base{id = 39158, name = lang:get("炼气·后期"),
+                show_type = 2, type = 1, mode_type = 1, classes = 0,
+                sex = 2, is_cast = 1, is_can_pre = 1, collect_val = 0};
+get(39159) ->
+    #honor_base{id = 39159, name = lang:get("炼气·大圆满"),
+                show_type = 2, type = 1, mode_type = 1, classes = 0,
+                sex = 2, is_cast = 1, is_can_pre = 1, collect_val = 0};
+get(39160) ->
+    #honor_base{id = 39160, name = lang:get("筑基·初期"),
+                show_type = 2, type = 1, mode_type = 1, classes = 0,
+                sex = 2, is_cast = 1, is_can_pre = 1, collect_val = 0};
+get(39161) ->
+    #honor_base{id = 39161, name = lang:get("筑基·中期"),
+                show_type = 2, type = 1, mode_type = 1, classes = 0,
+                sex = 2, is_cast = 1, is_can_pre = 1, collect_val = 0};
+get(39162) ->
+    #honor_base{id = 39162, name = lang:get("筑基·后期"),
+                show_type = 2, type = 1, mode_type = 1, classes = 0,
+                sex = 2, is_cast = 1, is_can_pre = 1, collect_val = 0};
+get(39163) ->
+    #honor_base{id = 39163, name = lang:get("筑基·大圆满"),
+                show_type = 2, type = 1, mode_type = 1, classes = 0,
+                sex = 2, is_cast = 1, is_can_pre = 1, collect_val = 0};
+get(39164) ->
+    #honor_base{id = 39164, name = lang:get("金丹·初期"),
+                show_type = 2, type = 1, mode_type = 1, classes = 0,
+                sex = 2, is_cast = 1, is_can_pre = 1, collect_val = 0};
+get(39165) ->
+    #honor_base{id = 39165, name = lang:get("金丹·中期"),
+                show_type = 2, type = 1, mode_type = 1, classes = 0,
+                sex = 2, is_cast = 1, is_can_pre = 1, collect_val = 0};
+get(39166) ->
+    #honor_base{id = 39166, name = lang:get("金丹·后期"),
+                show_type = 2, type = 1, mode_type = 1, classes = 0,
+                sex = 2, is_cast = 1, is_can_pre = 1, collect_val = 0};
+get(39167) ->
+    #honor_base{id = 39167, name = lang:get("金丹·大圆满"),
+                show_type = 2, type = 1, mode_type = 1, classes = 0,
+                sex = 2, is_cast = 1, is_can_pre = 1, collect_val = 0};
+get(39168) ->
+    #honor_base{id = 39168, name = lang:get("元婴·初期"),
+                show_type = 2, type = 1, mode_type = 1, classes = 0,
+                sex = 2, is_cast = 1, is_can_pre = 1, collect_val = 0};
+get(39169) ->
+    #honor_base{id = 39169, name = lang:get("元婴·中期"),
+                show_type = 2, type = 1, mode_type = 1, classes = 0,
+                sex = 2, is_cast = 1, is_can_pre = 1, collect_val = 0};
+get(39170) ->
+    #honor_base{id = 39170, name = lang:get("元婴·后期"),
+                show_type = 2, type = 1, mode_type = 1, classes = 0,
+                sex = 2, is_cast = 1, is_can_pre = 1, collect_val = 0};
+get(39171) ->
+    #honor_base{id = 39171, name = lang:get("元婴·大圆满"),
+                show_type = 2, type = 1, mode_type = 1, classes = 0,
+                sex = 2, is_cast = 1, is_can_pre = 1, collect_val = 0};
+get(39172) ->
+    #honor_base{id = 39172, name = lang:get("化神·初期"),
+                show_type = 2, type = 1, mode_type = 1, classes = 0,
+                sex = 2, is_cast = 1, is_can_pre = 1, collect_val = 0};
+get(39173) ->
+    #honor_base{id = 39173, name = lang:get("化神·中期"),
+                show_type = 2, type = 1, mode_type = 1, classes = 0,
+                sex = 2, is_cast = 1, is_can_pre = 1, collect_val = 0};
+get(39174) ->
+    #honor_base{id = 39174, name = lang:get("化神·后期"),
+                show_type = 2, type = 1, mode_type = 1, classes = 0,
+                sex = 2, is_cast = 1, is_can_pre = 1, collect_val = 0};
+get(39175) ->
+    #honor_base{id = 39175, name = lang:get("化神·大圆满"),
+                show_type = 2, type = 1, mode_type = 1, classes = 0,
+                sex = 2, is_cast = 1, is_can_pre = 1, collect_val = 0};
+get(39176) ->
+    #honor_base{id = 39176, name = lang:get("婴变·初期"),
+                show_type = 2, type = 1, mode_type = 1, classes = 0,
+                sex = 2, is_cast = 1, is_can_pre = 1, collect_val = 0};
+get(39177) ->
+    #honor_base{id = 39177, name = lang:get("婴变·中期"),
+                show_type = 2, type = 1, mode_type = 1, classes = 0,
+                sex = 2, is_cast = 1, is_can_pre = 1, collect_val = 0};
+get(39178) ->
+    #honor_base{id = 39178, name = lang:get("婴变·后期"),
+                show_type = 2, type = 1, mode_type = 1, classes = 0,
+                sex = 2, is_cast = 1, is_can_pre = 1, collect_val = 0};
+get(39179) ->
+    #honor_base{id = 39179, name = lang:get("婴变·大圆满"),
+                show_type = 2, type = 1, mode_type = 1, classes = 0,
+                sex = 2, is_cast = 1, is_can_pre = 1, collect_val = 0};
+get(39180) ->
+    #honor_base{id = 39180, name = lang:get("问鼎·初期"),
+                show_type = 2, type = 1, mode_type = 1, classes = 0,
+                sex = 2, is_cast = 1, is_can_pre = 1, collect_val = 0};
+get(39181) ->
+    #honor_base{id = 39181, name = lang:get("问鼎·中期"),
+                show_type = 2, type = 1, mode_type = 1, classes = 0,
+                sex = 2, is_cast = 1, is_can_pre = 1, collect_val = 0};
+get(39182) ->
+    #honor_base{id = 39182, name = lang:get("问鼎·后期"),
+                show_type = 2, type = 1, mode_type = 1, classes = 0,
+                sex = 2, is_cast = 1, is_can_pre = 1, collect_val = 0};
+get(39183) ->
+    #honor_base{id = 39183, name = lang:get("问鼎·大圆满"),
+                show_type = 2, type = 1, mode_type = 1, classes = 0,
+                sex = 2, is_cast = 1, is_can_pre = 1, collect_val = 0};
+get(39184) ->
+    #honor_base{id = 39184, name = lang:get("圣人·初期"),
+                show_type = 2, type = 1, mode_type = 1, classes = 0,
+                sex = 2, is_cast = 1, is_can_pre = 1, collect_val = 0};
 get(_Id) -> false.
 
 -spec to_classes({Id :: pos_integer(),

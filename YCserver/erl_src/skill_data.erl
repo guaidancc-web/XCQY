@@ -51213,6 +51213,460 @@ get_pet({67503, 1}) ->
                     name = lang:get("者字秘"), type = 1118, step = 1,
                     max_exp = 1,
                     attr = [{3, 1, {800, 1000}}]};
+get_pet({60332, 1}) ->
+    #pet_base_skill{id = 60332, lev = 1,
+                    name = lang:get("神级防御"), type = 1119, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60340, 1}) ->
+    #pet_base_skill{id = 60340, lev = 1,
+                    name = lang:get("神级魔防"), type = 1120, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60334, 1}) ->
+    #pet_base_skill{id = 60334, lev = 1,
+                    name = lang:get("神级敏捷"), type = 1121, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60335, 1}) ->
+    #pet_base_skill{id = 60335, lev = 1,
+                    name = lang:get("神级强击"), type = 1122, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60336, 1}) ->
+    #pet_base_skill{id = 60336, lev = 1,
+                    name = lang:get("神级慈悲"), type = 1123, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60337, 1}) ->
+    #pet_base_skill{id = 60337, lev = 1,
+                    name = lang:get("神级禁魂"), type = 1124, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60338, 1}) ->
+    #pet_base_skill{id = 60338, lev = 1,
+                    name = lang:get("神级自愈"), type = 1125, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60339, 1}) ->
+    #pet_base_skill{id = 60339, lev = 1,
+                    name = lang:get("神级魔法吸收"), type = 1126, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({67079, 1}) ->
+    #pet_base_skill{id = 67079, lev = 1,
+                    name = lang:get("法防圣盾"), type = 1127, step = 2,
+                    max_exp = 1};
+get_pet({67092, 1}) ->
+    #pet_base_skill{id = 67092, lev = 1,
+                    name = lang:get("须弥真言"), type = 1128, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({67094, 1}) ->
+    #pet_base_skill{id = 67094, lev = 1,
+                    name = lang:get("神圣免伤"), type = 1129, step = 2,
+                    max_exp = 1};
+get_pet({67303, 1}) ->
+    #pet_base_skill{id = 67303, lev = 1,
+                    name = lang:get("龟速迟钝"), type = 1130, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60341, 1}) ->
+    #pet_base_skill{id = 60341, lev = 1,
+                    name = lang:get("神级飞行"), type = 1131, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60342, 1}) ->
+    #pet_base_skill{id = 60342, lev = 1,
+                    name = lang:get("净台妙谛"), type = 1132, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60343, 1}) ->
+    #pet_base_skill{id = 60343, lev = 1,
+                    name = lang:get("神级涅槃"), type = 1133, step = 2,
+                    max_exp = 1};
+get_pet({60344, 1}) ->
+    #pet_base_skill{id = 60344, lev = 1,
+                    name = lang:get("神级法穿"), type = 1134, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60345, 1}) ->
+    #pet_base_skill{id = 60345, lev = 1,
+                    name = lang:get("乾坤借法·体"), type = 1135, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60346, 1}) ->
+    #pet_base_skill{id = 60346, lev = 1,
+                    name = lang:get("乾坤借法·耐"), type = 1136, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60347, 1}) ->
+    #pet_base_skill{id = 60347, lev = 1,
+                    name = lang:get("乾坤借法·智"), type = 1137, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60348, 1}) ->
+    #pet_base_skill{id = 60348, lev = 1,
+                    name = lang:get("乾坤借法·力"), type = 1138, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60349, 1}) ->
+    #pet_base_skill{id = 60349, lev = 1,
+                    name = lang:get("乾坤借法·敏"), type = 1139, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60350, 1}) ->
+    #pet_base_skill{id = 60350, lev = 1,
+                    name = lang:get("神级雷霆"), type = 1140, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60351, 1}) ->
+    #pet_base_skill{id = 60351, lev = 1,
+                    name = lang:get("匿影藏形"), type = 1141, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60354, 1}) ->
+    #pet_base_skill{id = 60354, lev = 1,
+                    name = lang:get("神级振奋"), type = 1142, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60355, 1}) ->
+    #pet_base_skill{id = 60355, lev = 1,
+                    name = lang:get("神级冥思"), type = 1143, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60356, 1}) ->
+    #pet_base_skill{id = 60356, lev = 1,
+                    name = lang:get("神级物攻祝福"), type = 1144, step = 2,
+                    max_exp = 1};
+get_pet({60357, 1}) ->
+    #pet_base_skill{id = 60357, lev = 1,
+                    name = lang:get("神级魔攻祝福"), type = 1145, step = 2,
+                    max_exp = 1};
+get_pet({60358, 1}) ->
+    #pet_base_skill{id = 60358, lev = 1,
+                    name = lang:get("神级防御祝福"), type = 1146, step = 2,
+                    max_exp = 1};
+get_pet({67500, 1}) ->
+    #pet_base_skill{id = 67500, lev = 1,
+                    name = lang:get("绝处逢生"), type = 1147, step = 2,
+                    max_exp = 1};
+get_pet({67501, 1}) ->
+    #pet_base_skill{id = 67501, lev = 1,
+                    name = lang:get("逃出生天"), type = 1148, step = 2,
+                    max_exp = 1};
+get_pet({67502, 1}) ->
+    #pet_base_skill{id = 67502, lev = 1,
+                    name = lang:get("固若金汤"), type = 1149, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60445, 1}) ->
+    #pet_base_skill{id = 60445, lev = 1,
+                    name = lang:get("皆字秘"), type = 1150, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({67403, 1}) ->
+    #pet_base_skill{id = 67403, lev = 1,
+                    name = lang:get("神级瞬击（物）"), type = 1151, step = 2,
+                    max_exp = 1};
+get_pet({67404, 1}) ->
+    #pet_base_skill{id = 67404, lev = 1,
+                    name = lang:get("神级瞬击（法）"), type = 1152, step = 2,
+                    max_exp = 1};
+
+get_pet({60451, 1}) ->
+    #pet_base_skill{id = 60451, lev = 1,
+                    name = lang:get("临字秘"), type = 1153, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60588, 1}) ->
+    #pet_base_skill{id = 60588, lev = 1,
+                    name = lang:get("风之极"), type = 1154, step = 2,
+                    max_exp = 1};
+get_pet({60593, 1}) ->
+    #pet_base_skill{id = 60593, lev = 1,
+                    name = lang:get("舍己为人"), type = 1155, step = 2,
+                    max_exp = 1};
+get_pet({60595, 1}) ->
+    #pet_base_skill{id = 60595, lev = 1,
+                    name = lang:get("极速顺风"), type = 1156, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60596, 1}) ->
+    #pet_base_skill{id = 60596, lev = 1,
+                    name = lang:get("魔浪滔天"), type = 1157, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60597, 1}) ->
+    #pet_base_skill{id = 60597, lev = 1,
+                    name = lang:get("六道轮回"), type = 1158, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60600, 1}) ->
+    #pet_base_skill{id = 60600, lev = 1,
+                    name = lang:get("剑客之道"), type = 1159, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60601, 1}) ->
+    #pet_base_skill{id = 60601, lev = 1,
+                    name = lang:get("双剑华斩"), type = 1160, step = 2,
+                    max_exp = 1};
+get_pet({60602, 1}) ->
+    #pet_base_skill{id = 60602, lev = 1,
+                    name = lang:get("蚩尤武魂"), type = 1161, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60604, 1}) ->
+    #pet_base_skill{id = 60604, lev = 1,
+                    name = lang:get("圣锤觉醒"), type = 1162, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60605, 1}) ->
+    #pet_base_skill{id = 60605, lev = 1,
+                    name = lang:get("圣锤猛击"), type = 1163, step = 2,
+                    max_exp = 1};
+get_pet({67014, 1}) ->
+    #pet_base_skill{id = 67014, lev = 1,
+                    name = lang:get("龙盾"), type = 1164, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({67015, 1}) ->
+    #pet_base_skill{id = 67015, lev = 1,
+                    name = lang:get("龙王守护"), type = 1165, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({67022, 1}) ->
+    #pet_base_skill{id = 67022, lev = 1,
+                    name = lang:get("救死扶伤"), type = 1166, step = 2,
+                    max_exp = 1};
+get_pet({67023, 1}) ->
+    #pet_base_skill{id = 67023, lev = 1,
+                    name = lang:get("生命圣体"), type = 1167, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({67024, 1}) ->
+    #pet_base_skill{id = 67024, lev = 1,
+                    name = lang:get("三拳结束"), type = 1168, step = 2,
+                    max_exp = 1};
+get_pet({67025, 1}) ->
+    #pet_base_skill{id = 67025, lev = 1,
+                    name = lang:get("拳法大成"), type = 1169, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({67026, 1}) ->
+    #pet_base_skill{id = 67026, lev = 1,
+                    name = lang:get("万法朝宗"), type = 1170, step = 2,
+                    max_exp = 1};
+get_pet({67027, 1}) ->
+    #pet_base_skill{id = 67027, lev = 1,
+                    name = lang:get("万法归一"), type = 1171, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({67028, 1}) ->
+    #pet_base_skill{id = 67028, lev = 1,
+                    name = lang:get("星辰守护"), type = 1172, step = 2,
+                    max_exp = 1};
+get_pet({67029, 1}) ->
+    #pet_base_skill{id = 67029, lev = 1,
+                    name = lang:get("不动如山"), type = 1173, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({67032, 1}) ->
+    #pet_base_skill{id = 67032, lev = 1,
+                    name = lang:get("死亡审判"), type = 1174, step = 2,
+                    max_exp = 1};
+get_pet({67033, 1}) ->
+    #pet_base_skill{id = 67033, lev = 1,
+                    name = lang:get("死亡凝视"), type = 1175, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({67034, 1}) ->
+    #pet_base_skill{id = 67034, lev = 1,
+                    name = lang:get("暗夜潜行"), type = 1176, step = 2,
+                    max_exp = 1};
+get_pet({67035, 1}) ->
+    #pet_base_skill{id = 67035, lev = 1,
+                    name = lang:get("潜行觉醒"), type = 1177, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({67036, 1}) ->
+    #pet_base_skill{id = 67036, lev = 1,
+                    name = lang:get("枪出入龙"), type = 1178, step = 2,
+                    max_exp = 1};
+get_pet({67037, 1}) ->
+    #pet_base_skill{id = 67037, lev = 1,
+                    name = lang:get("枪魂觉醒"), type = 1179, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({67084, 1}) ->
+    #pet_base_skill{id = 67084, lev = 1,
+                    name = lang:get("仙女散花"), type = 1180, step = 2,
+                    max_exp = 1};
+get_pet({67088, 1}) ->
+    #pet_base_skill{id = 67088, lev = 1,
+                    name = lang:get("星君加持"), type = 1181, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({67089, 1}) ->
+    #pet_base_skill{id = 67089, lev = 1,
+                    name = lang:get("陆虎天威"), type = 1182, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({67095, 1}) ->
+    #pet_base_skill{id = 67095, lev = 1,
+                    name = lang:get("武魂镰刀"), type = 1183, step = 2,
+                    max_exp = 1};
+get_pet({67099, 1}) ->
+    #pet_base_skill{id = 67099, lev = 1,
+                    name = lang:get("普惠众生"), type = 1184, step = 2,
+                    max_exp = 1};
+get_pet({67317, 1}) ->
+    #pet_base_skill{id = 67317, lev = 1,
+                    name = lang:get("天地同寿"), type = 1185, step = 2,
+                    max_exp = 1};
+get_pet({67318, 1}) ->
+    #pet_base_skill{id = 67318, lev = 1,
+                    name = lang:get("万寿无疆"), type = 1186, step = 2,
+                    max_exp = 1};
+get_pet({67319, 1}) ->
+    #pet_base_skill{id = 67319, lev = 1,
+                    name = lang:get("混沌反噬"), type = 1187, step = 2,
+                    max_exp = 1};
+get_pet({67320, 1}) ->
+    #pet_base_skill{id = 67320, lev = 1,
+                    name = lang:get("万法道体"), type = 1188, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({67323, 1}) ->
+    #pet_base_skill{id = 67323, lev = 1,
+                    name = lang:get("舍身侍主"), type = 1189, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({67324, 1}) ->
+    #pet_base_skill{id = 67324, lev = 1,
+                    name = lang:get("龙神护体"), type = 1190, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({67325, 1}) ->
+    #pet_base_skill{id = 67325, lev = 1,
+                    name = lang:get("雷刃"), type = 1191, step = 2,
+                    max_exp = 1};
+get_pet({67326, 1}) ->
+    #pet_base_skill{id = 67326, lev = 1,
+                    name = lang:get("蝶魂"), type = 1192, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({67327, 1}) ->
+    #pet_base_skill{id = 67327, lev = 1,
+                    name = lang:get("雷魂"), type = 1193, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({67328, 1}) ->
+    #pet_base_skill{id = 67328, lev = 1,
+                    name = lang:get("雷神赐福"), type = 1194, step = 2,
+                    max_exp = 1};
+get_pet({60273, 1}) ->
+    #pet_base_skill{id = 60273, lev = 1,
+                    name = lang:get("超级穿透"), type = 1195, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60274, 1}) ->
+    #pet_base_skill{id = 60274, lev = 1,
+                    name = lang:get("超级流血"), type = 1196, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60275, 1}) ->
+    #pet_base_skill{id = 60275, lev = 1,
+                    name = lang:get("超级暴戾"), type = 1197, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60276, 1}) ->
+    #pet_base_skill{id = 60276, lev = 1,
+                    name = lang:get("超级狂暴追击"), type = 1198, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60277, 1}) ->
+    #pet_base_skill{id = 60277, lev = 1,
+                    name = lang:get("超级封心"), type = 1199, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60278, 1}) ->
+    #pet_base_skill{id = 60278, lev = 1,
+                    name = lang:get("超级禁魂"), type = 1200, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60287, 1}) ->
+    #pet_base_skill{id = 60287, lev = 1,
+                    name = lang:get("超级隐匿"), type = 1201, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60289, 1}) ->
+    #pet_base_skill{id = 60289, lev = 1,
+                    name = lang:get("超级还击"), type = 1202, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60292, 1}) ->
+    #pet_base_skill{id = 60292, lev = 1,
+                    name = lang:get("超级影袭"), type = 1203, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60293, 1}) ->
+    #pet_base_skill{id = 60293, lev = 1,
+                    name = lang:get("超级连击"), type = 1204, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60294, 1}) ->
+    #pet_base_skill{id = 60294, lev = 1,
+                    name = lang:get("超级吸血"), type = 1205, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60295, 1}) ->
+    #pet_base_skill{id = 60295, lev = 1,
+                    name = lang:get("超级追击"), type = 1206, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60296, 1}) ->
+    #pet_base_skill{id = 60296, lev = 1,
+                    name = lang:get("超级暴击"), type = 1207, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60297, 1}) ->
+    #pet_base_skill{id = 60297, lev = 1,
+                    name = lang:get("超级魔法连击"), type = 1208, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60298, 1}) ->
+    #pet_base_skill{id = 60298, lev = 1,
+                    name = lang:get("超级魔法暴击"), type = 1209, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60299, 1}) ->
+    #pet_base_skill{id = 60299, lev = 1,
+                    name = lang:get("超级精通"), type = 1210, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60300, 1}) ->
+    #pet_base_skill{id = 60300, lev = 1,
+                    name = lang:get("超级侦查"), type = 1211, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60303, 1}) ->
+    #pet_base_skill{id = 60303, lev = 1,
+                    name = lang:get("超级鬼魂"), type = 1212, step = 2,
+                    max_exp = 1};
+get_pet({60305, 1}) ->
+    #pet_base_skill{id = 60305, lev = 1,
+                    name = lang:get("超级元素祝福"), type = 1213, step = 2,
+                    max_exp = 1};
+get_pet({60306, 1}) ->
+    #pet_base_skill{id = 60306, lev = 1,
+                    name = lang:get("超级防御祝福"), type = 1214, step = 2,
+                    max_exp = 1};
+get_pet({60307, 1}) ->
+    #pet_base_skill{id = 60307, lev = 1,
+                    name = lang:get("超级蛮力"), type = 1215, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60309, 1}) ->
+    #pet_base_skill{id = 60309, lev = 1,
+                    name = lang:get("超级恐惧"), type = 1216, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60310, 1}) ->
+    #pet_base_skill{id = 60310, lev = 1,
+                    name = lang:get("超级冲击"), type = 1217, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60315, 1}) ->
+    #pet_base_skill{id = 60315, lev = 1,
+                    name = lang:get("超级魔法波动"), type = 1218, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60316, 1}) ->
+    #pet_base_skill{id = 60316, lev = 1,
+                    name = lang:get("超级自愈"), type = 1219, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60317, 1}) ->
+    #pet_base_skill{id = 60317, lev = 1,
+                    name = lang:get("超级幸运"), type = 1220, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60318, 1}) ->
+    #pet_base_skill{id = 60318, lev = 1,
+                    name = lang:get("超级剧毒"), type = 1221, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60319, 1}) ->
+    #pet_base_skill{id = 60319, lev = 1,
+                    name = lang:get("超级振奋"), type = 1222, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60320, 1}) ->
+    #pet_base_skill{id = 60320, lev = 1,
+                    name = lang:get("超级致盲"), type = 1223, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60321, 1}) ->
+    #pet_base_skill{id = 60321, lev = 1,
+                    name = lang:get("超级闪现"), type = 1224, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60322, 1}) ->
+    #pet_base_skill{id = 60322, lev = 1,
+                    name = lang:get("超级反哺"), type = 1225, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60324, 1}) ->
+    #pet_base_skill{id = 60324, lev = 1,
+                    name = lang:get("超级冰封"), type = 1226, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60325, 1}) ->
+    #pet_base_skill{id = 60325, lev = 1,
+                    name = lang:get("超级无畏"), type = 1227, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60327, 1}) ->
+    #pet_base_skill{id = 60327, lev = 1,
+                    name = lang:get("超级英勇"), type = 1228, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60328, 1}) ->
+    #pet_base_skill{id = 60328, lev = 1,
+                    name = lang:get("超级专注"), type = 1229, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60329, 1}) ->
+    #pet_base_skill{id = 60329, lev = 1,
+                    name = lang:get("超级还击暴击"), type = 1230, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+get_pet({60330, 1}) ->
+    #pet_base_skill{id = 60330, lev = 1,
+                    name = lang:get("超级魔法吸收"), type = 1231, step = 1,
+                    max_exp = 1, attr = [{1, 23, 15}]};
+
 get_pet(_) -> false.
 
 get_child({60001, 1}) ->

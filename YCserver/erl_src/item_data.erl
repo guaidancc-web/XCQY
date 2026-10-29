@@ -35679,7 +35679,7 @@ get(24067) ->
 get(24068) ->
     #item_base{id = 24068, name = lang:get("一夜暴富称号"),
                type = 0, quality = 4, overlap = 99, use_type = 1,
-               expire_type = 0, effect = [{9, {39044}}], lev = 1,
+               expire_type = 0, effect = [{9, 39044}], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
 get(24069) ->
     #item_base{id = 24069, name = lang:get("三界主宰称号"),
@@ -35704,7 +35704,7 @@ get(24072) ->
 get(24073) ->
     #item_base{id = 24073, name = lang:get("腰缠万贯.富可敌国称号"),
                type = 0, quality = 4, overlap = 99, use_type = 1,
-               expire_type = 0, effect = [{9, {39049}}], lev = 1,
+               expire_type = 0, effect = [{9, 39049}], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
 get(24074) ->
     #item_base{id = 24074, name = lang:get("尊.最强王者称号"),
@@ -35769,22 +35769,22 @@ get(24085) ->
 get(24086) ->
     #item_base{id = 24086, name = lang:get("无敌小霸王称号"),
                type = 0, quality = 4, overlap = 99, use_type = 1,
-               expire_type = 0, effect = [{9, {39063}}], lev = 1,
+               expire_type = 0, effect = [{9, 39063}], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
 get(24087) ->
     #item_base{id = 24087, name = lang:get("统领三界称号"),
                type = 0, quality = 4, overlap = 99, use_type = 1,
-               expire_type = 0, effect = [{9, {39064}}], lev = 1,
+               expire_type = 0, effect = [{9, 39064}], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
 get(24088) ->
     #item_base{id = 24088, name = lang:get("真.最强王者称号"),
                type = 0, quality = 4, overlap = 99, use_type = 1,
-               expire_type = 0, effect = [{9, {39065}}], lev = 1,
+               expire_type = 0, effect = [{9, 39065}], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
 get(24089) ->
     #item_base{id = 24089, name = lang:get("圣.最强王者称号"),
                type = 0, quality = 4, overlap = 99, use_type = 1,
-               expire_type = 0, effect = [{9, {39066}}], lev = 1,
+               expire_type = 0, effect = [{9, 39066}], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
 get(24090) ->
     #item_base{id = 24090, name = lang:get("神仙眷侣称号"),
@@ -35994,7 +35994,7 @@ get(24353) ->
 get(24354) ->
     #item_base{id = 24354, name = lang:get("天选之子称号"),
                type = 0, quality = 4, overlap = 99, use_type = 1,
-               expire_type = 0, effect = [{9, {39112}}], lev = 1,
+               expire_type = 0, effect = [{9, 39112}], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
 get(24355) ->
     #item_base{id = 24355, name = lang:get("修罗王称号"),
@@ -36244,147 +36244,147 @@ get(24403) ->
 get(24404) ->
     #item_base{id = 24404, name = lang:get("炼气·初期"),
                type = 0, quality = 4, overlap = 99, use_type = 1,
-               expire_type = 0, effect = [{9, {39156}}], lev = 1,
+               expire_type = 0, effect = [{9, 39156}], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
 get(24405) ->
     #item_base{id = 24405, name = lang:get("炼气·中期"),
                type = 0, quality = 4, overlap = 99, use_type = 1,
-               expire_type = 0, effect = [{9, {39157}}], lev = 1,
+               expire_type = 0, effect = [{9, 39157}], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
 get(24406) ->
     #item_base{id = 24406, name = lang:get("炼气·后期"),
                type = 0, quality = 4, overlap = 99, use_type = 1,
-               expire_type = 0, effect = [{9, {39158}}], lev = 1,
+               expire_type = 0, effect = [{9, 39158}], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
 get(24407) ->
     #item_base{id = 24407, name = lang:get("炼气·大圆满"),
                type = 0, quality = 4, overlap = 99, use_type = 1,
-               expire_type = 0, effect = [{9, {39159}}], lev = 1,
+               expire_type = 0, effect = [{9, 39159}], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
 get(24408) ->
     #item_base{id = 24408, name = lang:get("筑基·初期"),
                type = 0, quality = 4, overlap = 99, use_type = 1,
-               expire_type = 0, effect = [{9, {39160}}], lev = 1,
+               expire_type = 0, effect = [{9, 39160}], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
 get(24409) ->
     #item_base{id = 24409, name = lang:get("筑基·中期"),
                type = 0, quality = 4, overlap = 99, use_type = 1,
-               expire_type = 0, effect = [{9, {39161}}], lev = 1,
+               expire_type = 0, effect = [{9, 39161}], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
 get(24410) ->
     #item_base{id = 24410, name = lang:get("筑基·后期"),
                type = 0, quality = 4, overlap = 99, use_type = 1,
-               expire_type = 0, effect = [{9, {39162}}], lev = 1,
+               expire_type = 0, effect = [{9, 39162}], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
 get(24411) ->
     #item_base{id = 24411, name = lang:get("筑基·大圆满"),
                type = 0, quality = 4, overlap = 99, use_type = 1,
-               expire_type = 0, effect = [{9, {39163}}], lev = 1,
+               expire_type = 0, effect = [{9, 39163}], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
 get(24412) ->
     #item_base{id = 24412, name = lang:get("金丹·初期"),
                type = 0, quality = 4, overlap = 99, use_type = 1,
-               expire_type = 0, effect = [{9, {39164}}], lev = 1,
+               expire_type = 0, effect = [{9, 39164}], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
 get(24413) ->
     #item_base{id = 24413, name = lang:get("金丹·中期"),
                type = 0, quality = 4, overlap = 99, use_type = 1,
-               expire_type = 0, effect = [{9, {39165}}], lev = 1,
+               expire_type = 0, effect = [{9, 39165}], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
 get(24414) ->
     #item_base{id = 24414, name = lang:get("金丹·后期"),
                type = 0, quality = 4, overlap = 99, use_type = 1,
-               expire_type = 0, effect = [{9, {39166}}], lev = 1,
+               expire_type = 0, effect = [{9, 39166}], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
 get(24415) ->
     #item_base{id = 24415, name = lang:get("金丹·大圆满"),
                type = 0, quality = 4, overlap = 99, use_type = 1,
-               expire_type = 0, effect = [{9, {39167}}], lev = 1,
+               expire_type = 0, effect = [{9, 39167}], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
 get(24416) ->
     #item_base{id = 24416, name = lang:get("元婴·初期"),
                type = 0, quality = 4, overlap = 99, use_type = 1,
-               expire_type = 0, effect = [{9, {39168}}], lev = 1,
+               expire_type = 0, effect = [{9, 39168}], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
 get(24417) ->
     #item_base{id = 24417, name = lang:get("元婴·中期"),
                type = 0, quality = 4, overlap = 99, use_type = 1,
-               expire_type = 0, effect = [{9, {39169}}], lev = 1,
+               expire_type = 0, effect = [{9, 39169}], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
 get(24418) ->
     #item_base{id = 24418, name = lang:get("元婴·后期"),
                type = 0, quality = 4, overlap = 99, use_type = 1,
-               expire_type = 0, effect = [{9, {39170}}], lev = 1,
+               expire_type = 0, effect = [{9, 39170}], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
 get(24419) ->
     #item_base{id = 24419, name = lang:get("元婴·大圆满"),
                type = 0, quality = 4, overlap = 99, use_type = 1,
-               expire_type = 0, effect = [{9, {39171}}], lev = 1,
+               expire_type = 0, effect = [{9, 39171}], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
 get(24420) ->
     #item_base{id = 24420, name = lang:get("化神·初期"),
                type = 0, quality = 4, overlap = 99, use_type = 1,
-               expire_type = 0, effect = [{9, {39172}}], lev = 1,
+               expire_type = 0, effect = [{9, 39172}], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
 get(24421) ->
     #item_base{id = 24421, name = lang:get("化神·中期"),
                type = 0, quality = 4, overlap = 99, use_type = 1,
-               expire_type = 0, effect = [{9, {39173}}], lev = 1,
+               expire_type = 0, effect = [{9, 39173}], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
 get(24422) ->
     #item_base{id = 24422, name = lang:get("化神·后期"),
                type = 0, quality = 4, overlap = 99, use_type = 1,
-               expire_type = 0, effect = [{9, {39174}}], lev = 1,
+               expire_type = 0, effect = [{9, 39174}], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
 get(24423) ->
     #item_base{id = 24423, name = lang:get("化神·大圆满"),
                type = 0, quality = 4, overlap = 99, use_type = 1,
-               expire_type = 0, effect = [{9, {39175}}], lev = 1,
+               expire_type = 0, effect = [{9, 39175}], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
 get(24424) ->
     #item_base{id = 24424, name = lang:get("婴变·初期"),
                type = 0, quality = 4, overlap = 99, use_type = 1,
-               expire_type = 0, effect = [{9, {39176}}], lev = 1,
+               expire_type = 0, effect = [{9, 39176}], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
 get(24425) ->
     #item_base{id = 24425, name = lang:get("婴变·中期"),
                type = 0, quality = 4, overlap = 99, use_type = 1,
-               expire_type = 0, effect = [{9, {39177}}], lev = 1,
+               expire_type = 0, effect = [{9, 39177}], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
 get(24426) ->
     #item_base{id = 24426, name = lang:get("婴变·后期"),
                type = 0, quality = 4, overlap = 99, use_type = 1,
-               expire_type = 0, effect = [{9, {39178}}], lev = 1,
+               expire_type = 0, effect = [{9, 39178}], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
 get(24427) ->
     #item_base{id = 24427, name = lang:get("婴变·大圆满"),
                type = 0, quality = 4, overlap = 99, use_type = 1,
-               expire_type = 0, effect = [{9, {39179}}], lev = 1,
+               expire_type = 0, effect = [{9, 39179}], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
 get(24428) ->
     #item_base{id = 24428, name = lang:get("问鼎·初期"),
                type = 0, quality = 4, overlap = 99, use_type = 1,
-               expire_type = 0, effect = [{9, {39180}}], lev = 1,
+               expire_type = 0, effect = [{9, 39180}], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
 get(24429) ->
     #item_base{id = 24429, name = lang:get("问鼎·中期"),
                type = 0, quality = 4, overlap = 99, use_type = 1,
-               expire_type = 0, effect = [{9, {39181}}], lev = 1,
+               expire_type = 0, effect = [{9, 39181}], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
 get(24430) ->
     #item_base{id = 24430, name = lang:get("问鼎·后期"),
                type = 0, quality = 4, overlap = 99, use_type = 1,
-               expire_type = 0, effect = [{9, {39182}}], lev = 1,
+               expire_type = 0, effect = [{9, 39182}], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
 get(24431) ->
     #item_base{id = 24431, name = lang:get("问鼎·大圆满"),
                type = 0, quality = 4, overlap = 99, use_type = 1,
-               expire_type = 0, effect = [{9, {39183}}], lev = 1,
+               expire_type = 0, effect = [{9, 39183}], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
 get(24432) ->
     #item_base{id = 24432, name = lang:get("圣人·初期"),
                type = 0, quality = 4, overlap = 99, use_type = 1,
-               expire_type = 0, effect = [{9, {39184}}], lev = 1,
+               expire_type = 0, effect = [{9, 39184}], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
 get(25100) ->
     #item_base{id = 25100, name = lang:get("超级穿透"),

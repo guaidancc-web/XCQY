@@ -371,6 +371,7 @@
          script_700028/4,
          script_700029/4,
          script_700030/4,
+         script_700031/4,
          script_60191/4,
          script_60192/4,
          script_60193/4,
@@ -3345,6 +3346,10 @@ append_action(Cs = #c_skill{skill =
             Skill#c_skill{action =
                               {combat_script_skill, script_700030},
                           passive_type = [1, 102]};
+        700031 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700031},
+                          passive_type = [100, 1]};
         60194 ->
             Skill#c_skill{action =
                               {combat_script_skill, script_60194},
@@ -15391,3 +15396,30 @@ script_700030(#c_skill{id = SkillId},
         false -> #passive_effect{}
     end;
 script_700030(_, _, _, _) -> #passive_effect{}.
+
+%% 2025 pet skill 60284: +25% MP cost, attacks burn target max MP.
+script_700031(#c_skill{}, #fighter{id = Sid}, _Target,
+              #c_skill_addt_arg{passive_flag = init}) ->
+    case get({cost_mp_60284, Sid}) of
+        true -> #passive_effect{};
+        _ ->
+            put({cost_mp_60284, Sid}, true),
+            F = combat_cache:f(by_id, Sid),
+            NewRatio = round(F#fighter.cost_mp_ratio * 1250 / 1000),
+            combat_cache:u(F#fighter{cost_mp_ratio = NewRatio}),
+            #passive_effect{}
+    end;
+script_700031(#c_skill{skill =
+                           #skill{script_args = [DmgMpRatio, DmgMp]}},
+              #fighter{},
+              #fighter{mp_max = MpMax,
+                       special_attr =
+                           #special_attr{be_dmg_mp_times = BeTimes}},
+              _SkillAddtArg) ->
+    AllDmgMp = round(MpMax * DmgMpRatio / 1000 + DmgMp),
+    DoDmgMp = round(AllDmgMp * math:pow(2 / 3, BeTimes)),
+    Tvc = [{mp, 1, -DoDmgMp}, {be_dmg_mp_times, 1, 1}],
+    Tc = [{1, -DoDmgMp, 0}],
+    #passive_effect{target_val_changed = Tvc,
+                    target_changed = Tc};
+script_700031(_, _, _, _) -> #passive_effect{}.

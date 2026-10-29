@@ -114338,7 +114338,7 @@ get_combat({60284, 1}) ->
            elem_type = 0, target_type = 1, attack_times = 1,
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
            buff_self = [],
-           script_id = 700003,
+           script_id = 700031,
            script_args =
                [100, 0]};
 get_combat({67080, 1}) ->

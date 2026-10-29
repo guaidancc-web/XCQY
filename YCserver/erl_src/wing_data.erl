@@ -267,6 +267,68 @@ get_wing(30017) ->
     #{grade => 4000, name => lang:get("审判寒羽"), lev => 11};
 get_wing(30018) ->
     #{grade => 4000, name => lang:get("凝纸灵珏"), lev => 12};
+get_wing(30019) ->
+    #{grade => 5001, name => lang:get("游梦麾旗"), lev => 1};
+get_wing(30020) ->
+    #{grade => 5002, name => lang:get("超能负荷"), lev => 1};
+get_wing(30021) ->
+    #{grade => 5003, name => lang:get("罔极之轮"), lev => 1};
+get_wing(30022) ->
+    #{grade => 5004, name => lang:get("秋日私语"), lev => 1};
+get_wing(30023) ->
+    #{grade => 5005, name => lang:get("紫渊魅影"), lev => 1};
+get_wing(30024) ->
+    #{grade => 5006, name => lang:get("琉璃冰羽"), lev => 1};
+get_wing(30025) ->
+    #{grade => 5007, name => lang:get("雍和容扇"), lev => 1};
+get_wing(30026) ->
+    #{grade => 5008, name => lang:get("一梦罗曼"), lev => 1};
+get_wing(30027) ->
+    #{grade => 5009, name => lang:get("恶魔天使"), lev => 1};
+get_wing(30028) ->
+    #{grade => 5010, name => lang:get("天玄翎翼"), lev => 1};
+get_wing(30029) ->
+    #{grade => 5011, name => lang:get("未来之约"), lev => 1};
+get_wing(30030) ->
+    #{grade => 5012, name => lang:get("极限神羽"), lev => 1};
+get_wing(30031) ->
+    #{grade => 5013, name => lang:get("缠绵云翼"), lev => 1};
+get_wing(30032) ->
+    #{grade => 5014, name => lang:get("旧欢如梦"), lev => 1};
+get_wing(30033) ->
+    #{grade => 5015, name => lang:get("翡翠之翼"), lev => 1};
+get_wing(30034) ->
+    #{grade => 5016, name => lang:get("紫煞"), lev => 1};
+get_wing(30035) ->
+    #{grade => 5017, name => lang:get("金鹏展翅"), lev => 1};
+get_wing(30036) ->
+    #{grade => 5018, name => lang:get("蔚蓝天空"), lev => 1};
+get_wing(30037) ->
+    #{grade => 5019, name => lang:get("指环银翼"), lev => 1};
+get_wing(30038) ->
+    #{grade => 5020, name => lang:get("黄金之翼"), lev => 1};
+get_wing(30039) ->
+    #{grade => 5021, name => lang:get("决战黄沙"), lev => 1};
+get_wing(30040) ->
+    #{grade => 5022, name => lang:get("恶魔印记"), lev => 1};
+get_wing(30041) ->
+    #{grade => 5023, name => lang:get("苍穹之翼"), lev => 1};
+get_wing(30042) ->
+    #{grade => 5024, name => lang:get("幽蓝玄翼"), lev => 1};
+get_wing(30043) ->
+    #{grade => 5025, name => lang:get("龙魂之翼"), lev => 1};
+get_wing(30051) ->
+    #{grade => 5026, name => lang:get("宇宙星轮"), lev => 1};
+get_wing(30052) ->
+    #{grade => 5027, name => lang:get("风云变幻"), lev => 1};
+get_wing(30053) ->
+    #{grade => 5028, name => lang:get("鲁班战翼"), lev => 1};
+get_wing(30054) ->
+    #{grade => 5029, name => lang:get("深蓝之翼"), lev => 1};
+get_wing(30055) ->
+    #{grade => 5030, name => lang:get("奏乐之光"), lev => 1};
+get_wing(30057) ->
+    #{grade => 5031, name => lang:get("红粉诱惑"), lev => 1};
 get_wing(_) -> false.
 
 wing_list(1) -> [{20000, 50}];

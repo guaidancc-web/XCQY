@@ -37964,7 +37964,7 @@ get(31214) ->
 get(31215) ->
     #item_base{id = 31215, name = lang:get("幻翼·琉璃冰羽"),
                type = 0, quality = 4, overlap = 1, use_type = 1,
-               expire_type = 0, effect = [{67, 330024, 604800}], lev = 1,
+               expire_type = 0, effect = [{67, 30024, 604800}], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
 get(31216) ->
     #item_base{id = 31216, name = lang:get("幻翼·琉璃冰羽"),

@@ -113453,7 +113453,7 @@ get_combat({60590, 1}) ->
            speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
            acc_low = 500, acc_high = 1000, attack_type = 1,
            elem_type = 1, target_type = 1, attack_times = 1,
-           target_list = [{1, 2, 4}], dmg_ratio = [1800], script_id = 50000, script_args = [20],
+           target_list = [{1, 2, 4}], dmg_ratio = [1800], script_id = 50000, script_args = [0],
            addt_scripts =
                [{1, 1001, [1, 1, 50]}, {1, 1016, [1001]}]};
 
@@ -113463,7 +113463,7 @@ get_combat({60603, 1}) ->
            acc_low = 1000, acc_high = 1000, attack_type = 1,
            elem_type = 0, target_type = 1, attack_times = 2,
            target_list = [{1, 2, 1}], dmg_ratio = [700, 700],
-           script_id = 60047, script_args = [100]};
+           script_id = 60047, script_args = [0]};
 
 get_combat({67075, 1}) ->
         #skill{id = 67075, lev = 1, name = lang:get("郎神共舞"),
@@ -113471,7 +113471,10 @@ get_combat({67075, 1}) ->
            acc_low = 500, acc_high = 1000, attack_type = 1,
            elem_type = 1, target_type = 1, attack_times = 1,
            target_list = [{1, 2, 3}], dmg_ratio = [1600],
-           cost_mp = 99, script_id = 50000, script_args = [20],
+           cost_mp = 99,
+           buff_self = [{70055, 1000, 2, 0, [2000, 0]}],
+           buff_target = [[{70000, 1000, 2, 1, [500]}]],
+           script_id = 50000, script_args = [0],
            addt_scripts =
                [{1, 1001, [1, 1, 50]}, {1, 1016, [1001]}]};
 
@@ -113488,7 +113491,7 @@ get_combat({67110, 1}) ->
            speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
            acc_low = 800, acc_high = 1000, attack_type = 1,
            elem_type = 0, target_type = 1, attack_times = 1,
-           target_list = [{1, 2, 4}], dmg_ratio = [1800], script_id = 50026, script_args = [200],
+           target_list = [{1, 2, 4}], dmg_ratio = [1800], script_id = 50026, script_args = [0],
            addt_scripts = [{1, 1016, [1001]}]};
 
 get_combat({67130, 1}) ->
@@ -113499,7 +113502,7 @@ get_combat({67130, 1}) ->
            target_list = [{1, 2, 7}], dmg_ratio = [1200],
            cost_mp = 1,
            cooldown = 1,
-           script_id = 50026, script_args = [200],
+           script_id = 50026, script_args = [0],
            addt_scripts = [{1, 1016, [1001]}]};
 
 get_combat({67131, 1}) ->
@@ -113508,14 +113511,14 @@ get_combat({67131, 1}) ->
            acc_low = 1000, acc_high = 1000, attack_type = 1,
            elem_type = 0, target_type = 1, attack_times = 1,
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
-           script_id = 60047, script_args = [100]};
+           script_id = 60047, script_args = [0]};
 
 get_combat({67200, 1}) ->
         #skill{id = 67200, lev = 1, name = lang:get("阴阳怒焱"),
            speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
            acc_low = 500, acc_high = 1000, attack_type = 1,
            elem_type = 1, target_type = 1, attack_times = 1,
-           target_list = [{1, 2, 2}], dmg_ratio = [1800], script_id = 50000, script_args = [20],
+           target_list = [{1, 2, 2}], dmg_ratio = [1800], script_id = 50000, script_args = [0],
            addt_scripts =
                [{1, 1001, [1, 1, 50]}, {1, 1016, [1001]}]};
 
@@ -113524,7 +113527,7 @@ get_combat({67309, 1}) ->
            speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
            acc_low = 800, acc_high = 1000, attack_type = 1,
            elem_type = 0, target_type = 1, attack_times = 3,
-           target_list = [{1, 2, 3}], dmg_ratio = [466, 466, 468], script_id = 50026, script_args = [200],
+           target_list = [{1, 2, 3}], dmg_ratio = [466, 466, 468], script_id = 50026, script_args = [0],
            addt_scripts = [{1, 1016, [1001]}]};
 
 get_combat({67316, 1}) ->
@@ -113532,7 +113535,7 @@ get_combat({67316, 1}) ->
            speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
            acc_low = 500, acc_high = 1000, attack_type = 1,
            elem_type = 1, target_type = 1, attack_times = 3,
-           target_list = [{1, 2, 3}], dmg_ratio = [466, 466, 468], script_id = 50000, script_args = [20],
+           target_list = [{1, 2, 3}], dmg_ratio = [466, 466, 468], script_id = 50000, script_args = [0],
            addt_scripts =
                [{1, 1001, [1, 1, 50]}, {1, 1016, [1001]}]};
 
@@ -113541,7 +113544,7 @@ get_combat({67330, 1}) ->
            speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
            acc_low = 800, acc_high = 1000, attack_type = 1,
            elem_type = 0, target_type = 1, attack_times = 2,
-           target_list = [{1, 2, 4}], dmg_ratio = [700, 700], script_id = 50026, script_args = [200],
+           target_list = [{1, 2, 4}], dmg_ratio = [700, 700], script_id = 50026, script_args = [500],
            addt_scripts = [{1, 1016, [1001]}]};
 
 get_combat({67334, 1}) ->
@@ -113549,7 +113552,9 @@ get_combat({67334, 1}) ->
            speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
            acc_low = 500, acc_high = 1000, attack_type = 1,
            elem_type = 1, target_type = 1, attack_times = 2,
-           target_list = [{1, 2, 4}], dmg_ratio = [700, 700], script_id = 50000, script_args = [20],
+           target_list = [{1, 2, 4}], dmg_ratio = [700, 700],
+           buff_self = [{90304, 1000, 1, 0, [100]}],
+           script_id = 50000, script_args = [0],
            addt_scripts =
                [{1, 1001, [1, 1, 50]}, {1, 1016, [1001]}]};
 
@@ -113558,7 +113563,7 @@ get_combat({67338, 1}) ->
            speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
            acc_low = 800, acc_high = 1000, attack_type = 1,
            elem_type = 0, target_type = 1, attack_times = 3,
-           target_list = [{1, 2, 4}], dmg_ratio = [466, 466, 468], script_id = 50026, script_args = [200],
+           target_list = [{1, 2, 4}], dmg_ratio = [466, 466, 468], script_id = 50026, script_args = [0],
            addt_scripts = [{1, 1016, [1001]}]};
 
 get_combat({67343, 1}) ->
@@ -113566,7 +113571,7 @@ get_combat({67343, 1}) ->
            speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
            acc_low = 500, acc_high = 1000, attack_type = 1,
            elem_type = 1, target_type = 1, attack_times = 3,
-           target_list = [{1, 2, 4}], dmg_ratio = [466, 466, 468], script_id = 50000, script_args = [20],
+           target_list = [{1, 2, 4}], dmg_ratio = [466, 466, 468], script_id = 50000, script_args = [0],
            addt_scripts =
                [{1, 1001, [1, 1, 50]}, {1, 1016, [1001]}]};
 
@@ -113575,7 +113580,7 @@ get_combat({67348, 1}) ->
            speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
            acc_low = 800, acc_high = 1000, attack_type = 1,
            elem_type = 0, target_type = 1, attack_times = 2,
-           target_list = [{1, 2, 3}], dmg_ratio = [700, 700], script_id = 50026, script_args = [200],
+           target_list = [{1, 2, 3}], dmg_ratio = [700, 700], script_id = 50026, script_args = [0],
            addt_scripts = [{1, 1016, [1001]}]};
 
 get_combat({67349, 1}) ->
@@ -113598,14 +113603,14 @@ get_combat({67353, 1}) ->
            acc_low = 1000, acc_high = 1000, attack_type = 1,
            elem_type = 0, target_type = 1, attack_times = 5,
            target_list = [{1, 2, 1}], dmg_ratio = [260, 260, 260, 260, 260],
-           script_id = 60047, script_args = [100]};
+           script_id = 60047, script_args = [0]};
 
 get_combat({67358, 1}) ->
         #skill{id = 67358, lev = 1, name = lang:get("太初决"),
            speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
            acc_low = 500, acc_high = 1000, attack_type = 1,
            elem_type = 1, target_type = 1, attack_times = 3,
-           target_list = [{1, 2, 6}], dmg_ratio = [466, 466, 468], script_id = 50000, script_args = [20],
+           target_list = [{1, 2, 6}], dmg_ratio = [466, 466, 468], script_id = 50000, script_args = [0],
            addt_scripts =
                [{1, 1001, [1, 1, 50]}, {1, 1016, [1001]}]};
 
@@ -113614,7 +113619,7 @@ get_combat({67363, 1}) ->
            speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
            acc_low = 500, acc_high = 1000, attack_type = 1,
            elem_type = 1, target_type = 1, attack_times = 5,
-           target_list = [{1, 2, 1}], dmg_ratio = [260, 260, 260, 260, 260], script_id = 50000, script_args = [50],
+           target_list = [{1, 2, 1}], dmg_ratio = [260, 260, 260, 260, 260], script_id = 50000, script_args = [0],
            addt_scripts = [{1, 1016, [1002]}]};
 
 get_combat({67368, 1}) ->
@@ -113622,7 +113627,7 @@ get_combat({67368, 1}) ->
            speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
            acc_low = 800, acc_high = 1000, attack_type = 1,
            elem_type = 0, target_type = 1, attack_times = 3,
-           target_list = [{1, 2, 4}], dmg_ratio = [466, 466, 468], script_id = 50026, script_args = [200],
+           target_list = [{1, 2, 4}], dmg_ratio = [466, 466, 468], script_id = 50026, script_args = [0],
            addt_scripts = [{1, 1016, [1001]}]};
 
 get_combat({67370, 1}) ->
@@ -113637,7 +113642,7 @@ get_combat({67378, 1}) ->
            speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
            acc_low = 800, acc_high = 1000, attack_type = 1,
            elem_type = 0, target_type = 1, attack_times = 1,
-           target_list = [{1, 2, 6}], dmg_ratio = [1200], script_id = 50026, script_args = [200],
+           target_list = [{1, 2, 6}], dmg_ratio = [1200], script_id = 50026, script_args = [0],
            addt_scripts = [{1, 1016, [1001]}]};
 
 get_combat({60282, 1}) ->

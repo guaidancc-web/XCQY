@@ -41,6 +41,41 @@ MULTI = {
     67353: (5, 1), 67358: (3, 6), 67363: (5, 1), 67368: (3, 4),
 }
 
+# template scripts carry side effects: 50026 = crit lifesteal, 50000 = crit,
+# 60047 = physical penetration. Zero them out unless the description asks for it.
+EXTRAS = {
+    67085: {'script_args': [200]},
+    67330: {'script_args': [500]},
+    67334: {'script_args': [0], 'buff_self': [(90304, 1000, 1, 0, [100])]},
+    67075: {'script_args': [0],
+            'buff_self': [(70055, 1000, 2, 0, [2000, 0])],
+            'buff_target': [[(70000, 1000, 2, 1, [500])]]},
+}
+
+
+def erl(v):
+    if isinstance(v, tuple):
+        return '{' + ', '.join(erl(x) for x in v) + '}'
+    if isinstance(v, list):
+        return '[' + ', '.join(erl(x) for x in v) + ']'
+    return str(v)
+
+
+def replace_list_field(body, key, value):
+    m = re.search(r'\b%s\s*=\s*\[' % key, body)
+    if not m:
+        ins = ',' + chr(10) + '           %s = %s,' % (key, value) + chr(10) + '           script_id ='
+        return re.sub(r',\s*script_id =', ins, body, count=1)
+    start = m.end() - 1
+    depth = 0
+    for i in range(start, len(body)):
+        if body[i] == '[':
+            depth += 1
+        elif body[i] == ']':
+            depth -= 1
+            if depth == 0:
+                return body[:start] + value + body[i + 1:]
+    raise SystemExit('unbalanced %s' % key)
 
 def read(p):
     with open(p, encoding='utf-8', newline='') as f:
@@ -121,7 +156,7 @@ def get_template(src, count, magic):
     raise SystemExit('no combat template')
 
 
-def update_body(body, sid, name, m, count, dmg, hits=1):
+def update_body(body, sid, name, m, count, dmg, hits=1, extra=None):
     body = re.sub(r'id = \d+', 'id = %d' % sid, body, count=1)
     body = re.sub(r'name = lang:get\("[^"]*"\)', 'name = lang:get("%s")' % name.replace('"', '\\"'), body, count=1)
     body = re.sub(r'\btype = \d+', 'type = %d' % m['type'], body, count=1)
@@ -132,6 +167,12 @@ def update_body(body, sid, name, m, count, dmg, hits=1):
     ratios[-1] += dmg - base * hits
     body = re.sub(r'\battack_times = \d+', 'attack_times = %d' % hits, body, count=1)
     body = re.sub(r'dmg_ratio = \[.*?\]', 'dmg_ratio = [%s]' % ', '.join(map(str, ratios)), body, count=1)
+    extra = extra or {}
+    body = replace_list_field(body, 'script_args', erl(extra.get('script_args', [0])))
+    if extra.get('buff_self') is not None:
+        body = replace_list_field(body, 'buff_self', erl(extra['buff_self']))
+    if extra.get('buff_target') is not None:
+        body = replace_list_field(body, 'buff_target', erl(extra['buff_target']))
     if re.search(r'\bcost_mp = \d+', body):
         if m.get('mp', 0) > 0:
             body = re.sub(r'\bcost_mp = \d+', 'cost_mp = %d' % m['mp'], body, count=1)
@@ -172,7 +213,7 @@ def main():
         dmg = 1000 if sid == 67131 else infer_dmg(m)  # 67131 is current-HP%, needs a script
         magic = bool(re.search(r'魔法|法术', desc))
         tpl, tpl_body = get_template(src, count, magic)
-        body = update_body(tpl_body, sid, name, m, count, dmg, hits)
+        body = update_body(tpl_body, sid, name, m, count, dmg, hits, EXTRAS.get(sid))
         rows.append((sid, name, count, m.get('mp', 0), m.get('cd', 0), dmg, hits, tpl, magic))
         if sid in blocks:
             new_src = new_src.replace(blocks[sid], 'get_combat({%d, 1}) ->\n    %s;\n' % (sid, body), 1)

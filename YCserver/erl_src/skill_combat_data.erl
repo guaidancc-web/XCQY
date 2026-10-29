@@ -114146,6 +114146,13 @@ get_combat({67360, 1}) ->
            script_id = 60146,
            script_args =
                [[], [], 0]};
+get_combat({67116, 1}) ->
+    #skill{id = 67116, lev = 1, name = lang:get("冥王庇佑"),
+           speed = 1, type = 1, sub_type = 2, acc_ratio = 1000,
+           acc_low = 1000, acc_high = 1000, attack_type = 1,
+           elem_type = 0, target_type = 1, attack_times = 1,
+           target_list = [{1, 2, 1}], dmg_ratio = [1000],
+           cooldown = 1, script_id = 700002, script_args = [200, 300, 2]};
 get_combat(_) -> false.
 
 get_skill_cd(50014) -> 50004;

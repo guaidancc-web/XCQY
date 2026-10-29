@@ -342,6 +342,7 @@
          script_60189/4,
          script_60190/4,
          script_700001/4,
+         script_700002/4,
          script_60191/4,
          script_60192/4,
          script_60193/4,
@@ -3202,6 +3203,10 @@ append_action(Cs = #c_skill{skill =
         700001 ->
             Skill#c_skill{action =
                               {combat_script_skill, script_700001}};
+        700002 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700002},
+                          passive_type = [1, 2]};
         60194 ->
             Skill#c_skill{action =
                               {combat_script_skill, script_60194},
@@ -14506,3 +14511,25 @@ script_700001(Skill = #c_skill{skill =
                                     SkillAddtArg,
                                     ActionEffect);
 script_700001(Skill, Self, _, _) -> err_ai(Skill, Self).
+
+
+%% 2025 pet skill: on being hit, chance to gain a damage-reduction buff.
+script_700002(Skill = #c_skill{id = SkillId,
+                               skill = #skill{script_args = [Chance, Ratio, Duration]}},
+              #fighter{id = Sid}, #fighter{},
+              #c_skill_addt_arg{passive_flag = defence}) ->
+    case combat_skill:is_skill_in_cooldown(Sid, Skill) of
+        true -> #passive_effect{};
+        _ ->
+            case util:rand(1, 1000) =< Chance of
+                true ->
+                    combat_skill:add_skill_cooldown(Sid, Skill, 1),
+                    #passive_effect{
+                        buff_self_to_self =
+                            [{69514, 1000, Duration, 1, [Ratio]}],
+                        show_passive_skills = [{Sid, SkillId, 1}]};
+                false -> #passive_effect{}
+            end
+    end;
+script_700002(_Skill, _Self, _Target, _AddtArg) ->
+    #passive_effect{}.

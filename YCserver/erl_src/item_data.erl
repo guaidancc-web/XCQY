@@ -34636,6 +34636,12316 @@ get(44112) ->
     #item_base{id = 44112, name = lang:get("110级守护鞋子"),
                type = 18, quality = 4, expire_type = 0, lev = 0,
                classes = 0, sex = 2, alchemy = 0};
+get(19004) ->
+    #item_base{id = 19004, name = lang:get("648钻石礼盒"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19005) ->
+    #item_base{id = 19005, name = lang:get("10元钻石卡"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19006) ->
+    #item_base{id = 19006, name = lang:get("20元钻石卡"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19007) ->
+    #item_base{id = 19007, name = lang:get("50元钻石卡"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19008) ->
+    #item_base{id = 19008, name = lang:get("100元钻石卡"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19009) ->
+    #item_base{id = 19009, name = lang:get("200元钻石卡"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19010) ->
+    #item_base{id = 19010, name = lang:get("500元钻石卡"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19011) ->
+    #item_base{id = 19011, name = lang:get("648钻石礼盒"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19012) ->
+    #item_base{id = 19012, name = lang:get("648钻石礼盒"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19013) ->
+    #item_base{id = 19013, name = lang:get("天神内侧大礼盒"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19014) ->
+    #item_base{id = 19014, name = lang:get("298双倍钻石礼包"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19015) ->
+    #item_base{id = 19015, name = lang:get("488双倍钻石礼包"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19016) ->
+    #item_base{id = 19016, name = lang:get("648双倍钻石礼包"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19017) ->
+    #item_base{id = 19017, name = lang:get("1000双倍钻石礼包"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19018) ->
+    #item_base{id = 19018, name = lang:get("2000双倍钻石礼包"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19300) ->
+    #item_base{id = 19300, name = lang:get("5元真实充值卡"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{78, 5}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19301) ->
+    #item_base{id = 19301, name = lang:get("6元真实充值卡"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{78, 6}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19302) ->
+    #item_base{id = 19302, name = lang:get("10元真实充值卡"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{78, 10}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19303) ->
+    #item_base{id = 19303, name = lang:get("20元真实充值卡"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{78, 20}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19304) ->
+    #item_base{id = 19304, name = lang:get("30元真实充值卡"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{78, 30}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19305) ->
+    #item_base{id = 19305, name = lang:get("50元真实充值卡"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{78, 50}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19306) ->
+    #item_base{id = 19306, name = lang:get("98元真实充值卡"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{78, 98}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19307) ->
+    #item_base{id = 19307, name = lang:get("100元真实充值卡"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{78, 100}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19308) ->
+    #item_base{id = 19308, name = lang:get("198元真实充值卡"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{78, 198}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19309) ->
+    #item_base{id = 19309, name = lang:get("200元真实充值卡"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{78, 200}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19310) ->
+    #item_base{id = 19310, name = lang:get("298元真实充值卡"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{78, 298}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19311) ->
+    #item_base{id = 19311, name = lang:get("300元真实充值卡"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{78, 300}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19312) ->
+    #item_base{id = 19312, name = lang:get("488元真实充值卡"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{78, 488}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19313) ->
+    #item_base{id = 19313, name = lang:get("500元真实充值卡"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{78, 500}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19314) ->
+    #item_base{id = 19314, name = lang:get("648元真实充值卡"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{78, 648}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19315) ->
+    #item_base{id = 19315, name = lang:get("1000元真实充值卡"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{78, 1000}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19316) ->
+    #item_base{id = 19316, name = lang:get("2000元真实充值卡"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{78, 2000}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19317) ->
+    #item_base{id = 19317, name = lang:get("5000元真实充值卡"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{78, 5000}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19318) ->
+    #item_base{id = 19318, name = lang:get("648元真实充值卡"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{78, 648}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19319) ->
+    #item_base{id = 19319, name = lang:get("648元真实充值卡"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{78, 648}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19320) ->
+    #item_base{id = 19320, name = lang:get("648元真实充值卡"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{78, 648}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19321) ->
+    #item_base{id = 19321, name = lang:get("648元真实充值卡"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{78, 648}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19322) ->
+    #item_base{id = 19322, name = lang:get("5元黑钻卡"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19323) ->
+    #item_base{id = 19323, name = lang:get("10元黑钻卡"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19324) ->
+    #item_base{id = 19324, name = lang:get("20元黑钻卡"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19325) ->
+    #item_base{id = 19325, name = lang:get("30元黑钻卡"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19326) ->
+    #item_base{id = 19326, name = lang:get("50元黑钻卡"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19327) ->
+    #item_base{id = 19327, name = lang:get("100元黑钻卡"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19328) ->
+    #item_base{id = 19328, name = lang:get("200元黑钻卡"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19329) ->
+    #item_base{id = 19329, name = lang:get("300元黑钻卡"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19330) ->
+    #item_base{id = 19330, name = lang:get("500元黑钻卡"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19331) ->
+    #item_base{id = 19331, name = lang:get("648元黑钻卡"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19332) ->
+    #item_base{id = 19332, name = lang:get("648元黑钻卡"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19333) ->
+    #item_base{id = 19333, name = lang:get("648元黑钻卡"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19334) ->
+    #item_base{id = 19334, name = lang:get("648元黑钻卡"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19335) ->
+    #item_base{id = 19335, name = lang:get("3000元真实充值卡"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{78, 3000}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19336) ->
+    #item_base{id = 19336, name = lang:get("1000元黑钻卡"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19337) ->
+    #item_base{id = 19337, name = lang:get("6元黑钻卡"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(19338) ->
+    #item_base{id = 19338, name = lang:get("10元真实充值卡"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{78, 10}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20186) ->
+    #item_base{id = 20186, name = lang:get("极品幸运石"),
+               type = 0, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20187) ->
+    #item_base{id = 20187, name = lang:get("传奇幸运石"),
+               type = 0, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20188) ->
+    #item_base{id = 20188, name = lang:get("至尊幸运石"),
+               type = 0, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20189) ->
+    #item_base{id = 20189, name = lang:get("王者幸运石"),
+               type = 0, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20190) ->
+    #item_base{id = 20190, name = lang:get("极品保护符"),
+               type = 0, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20191) ->
+    #item_base{id = 20191, name = lang:get("传奇保护符"),
+               type = 0, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20192) ->
+    #item_base{id = 20192, name = lang:get("至尊保护符"),
+               type = 0, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20193) ->
+    #item_base{id = 20193, name = lang:get("王者保护符"),
+               type = 0, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20194) ->
+    #item_base{id = 20194, name = lang:get("圣者幸运石"),
+               type = 0, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20195) ->
+    #item_base{id = 20195, name = lang:get("圣者保护符"),
+               type = 0, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20276) ->
+    #item_base{id = 20276, name = lang:get("前字秘"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60333}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20365) ->
+    #item_base{id = 20365, name = lang:get("爆裂萝莉原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 40}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20366) ->
+    #item_base{id = 20366, name = lang:get("龙太子原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 41}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20367) ->
+    #item_base{id = 20367, name = lang:get("玄天战姬原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 45}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20368) ->
+    #item_base{id = 20368, name = lang:get("双剑天尊原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 47}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20370) ->
+    #item_base{id = 20370, name = lang:get("箭神虞姬原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 44}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20371) ->
+    #item_base{id = 20371, name = lang:get("通臂雪猿原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 43}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20372) ->
+    #item_base{id = 20372, name = lang:get("倩女幽魂原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 42}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20373) ->
+    #item_base{id = 20373, name = lang:get("天耀陆虎原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 46}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20374) ->
+    #item_base{id = 20374, name = lang:get("诛邪武魂原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 48}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20375) ->
+    #item_base{id = 20375, name = lang:get("霹雳拳手原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 49}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20376) ->
+    #item_base{id = 20376, name = lang:get("炎黄星君原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 50}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20377) ->
+    #item_base{id = 20377, name = lang:get("龙魄卫士原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 51}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20378) ->
+    #item_base{id = 20378, name = lang:get("倾城少女源生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 52}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20379) ->
+    #item_base{id = 20379, name = lang:get("美杜莎原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 53}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20380) ->
+    #item_base{id = 20380, name = lang:get("东宫少主原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 54}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20381) ->
+    #item_base{id = 20381, name = lang:get("雷震子原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 55}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20382) ->
+    #item_base{id = 20382, name = lang:get("通天罗刹原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 56}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20383) ->
+    #item_base{id = 20383, name = lang:get("神族精卫原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 57}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20384) ->
+    #item_base{id = 20384, name = lang:get("幻灵剑尊原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 58}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20385) ->
+    #item_base{id = 20385, name = lang:get("暗夜君王原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 59}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20386) ->
+    #item_base{id = 20386, name = lang:get("天门战神原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 60}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20387) ->
+    #item_base{id = 20387, name = lang:get("碧海神猿原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 61}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20388) ->
+    #item_base{id = 20388, name = lang:get("枭原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 62}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20389) ->
+    #item_base{id = 20389, name = lang:get("天兵原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 63}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20390) ->
+    #item_base{id = 20390, name = lang:get("赤焰白灵原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 64}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20391) ->
+    #item_base{id = 20391, name = lang:get("擎天神牛原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 65}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20392) ->
+    #item_base{id = 20392, name = lang:get("修罗王原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 66}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20393) ->
+    #item_base{id = 20393, name = lang:get("孔雀冥王原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 67}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20394) ->
+    #item_base{id = 20394, name = lang:get("玉兔原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 68}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20395) ->
+    #item_base{id = 20395, name = lang:get("火麒麟原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 69}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20407) ->
+    #item_base{id = 20407, name = lang:get("极品强化石"),
+               type = 0, quality = 4, overlap = 999999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20408) ->
+    #item_base{id = 20408, name = lang:get("传奇强化石"),
+               type = 0, quality = 4, overlap = 999999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20409) ->
+    #item_base{id = 20409, name = lang:get("至尊强化石"),
+               type = 0, quality = 4, overlap = 999999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20665) ->
+    #item_base{id = 20665, name = lang:get("银河护符"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20666) ->
+    #item_base{id = 20666, name = lang:get("银河重置丹"),
+               type = 125, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20667) ->
+    #item_base{id = 20667, name = lang:get("吞天魔功"),
+               type = 100, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60273, 60274, 60275, 60276, 60277, 60278, 60279, 60280, 60281, 60282, 60283, 60284, 60285, 60286, 60287, 60288, 60289, 60290, 60291, 60292, 60293, 60294, 60295, 60296, 60297, 60298, 60299, 60300, 60301, 60302, 60303, 60304, 60305, 60306, 60307, 60308, 60309, 60310, 60311, 60312, 60313, 60314, 60315, 60316, 60317, 60318, 60319, 60320, 60321, 60322, 60324, 60325, 60326, 60327, 60328, 60329, 60330}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20668) ->
+    #item_base{id = 20668, name = lang:get("符石洗炼石"),
+               type = 0, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20669) ->
+    #item_base{id = 20669, name = lang:get("印记·超级修罗诀"),
+               type = 120, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{44, 84019}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20670) ->
+    #item_base{id = 20670, name = lang:get("印记·超级金刚诀"),
+               type = 120, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{44, 84020}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20671) ->
+    #item_base{id = 20671, name = lang:get("印记·超级元素引"),
+               type = 120, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{44, 84021}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20672) ->
+    #item_base{id = 20672, name = lang:get("印记·超级魔之心"),
+               type = 120, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{44, 84022}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20673) ->
+    #item_base{id = 20673, name = lang:get("印记·超级莲华"),
+               type = 120, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{44, 84023}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20674) ->
+    #item_base{id = 20674, name = lang:get("印记·超级彻地"),
+               type = 120, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{44, 84027}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20675) ->
+    #item_base{id = 20675, name = lang:get("印记·超级狂暴"),
+               type = 120, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{44, 84026}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20676) ->
+    #item_base{id = 20676, name = lang:get("印记·超级治疗"),
+               type = 120, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{44, 84024}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20677) ->
+    #item_base{id = 20677, name = lang:get("印记·超级控制"),
+               type = 120, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{44, 84025}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20678) ->
+    #item_base{id = 20678, name = lang:get("印记·超级暴伤"),
+               type = 120, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{44, 84028}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20679) ->
+    #item_base{id = 20679, name = lang:get("印记·神奇163"),
+               type = 120, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{44, 84033}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20680) ->
+    #item_base{id = 20680, name = lang:get("印记·疾风步"),
+               type = 120, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{44, 84034}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20681) ->
+    #item_base{id = 20681, name = lang:get("印记·血气方刚"),
+               type = 120, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{44, 84035}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20682) ->
+    #item_base{id = 20682, name = lang:get("印记·坚如磐石"),
+               type = 120, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{44, 84036}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20683) ->
+    #item_base{id = 20683, name = lang:get("印记·神级强体"),
+               type = 120, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{44, 84037}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20684) ->
+    #item_base{id = 20684, name = lang:get("印记·神级防御"),
+               type = 120, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{44, 84038}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20685) ->
+    #item_base{id = 20685, name = lang:get("印记·神级魔防"),
+               type = 120, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{44, 84039}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20686) ->
+    #item_base{id = 20686, name = lang:get("印记·神级敏捷"),
+               type = 120, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{44, 84040}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20687) ->
+    #item_base{id = 20687, name = lang:get("印记·神级慈悲"),
+               type = 120, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{44, 84041}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20688) ->
+    #item_base{id = 20688, name = lang:get("印记·神级自愈"),
+               type = 120, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{44, 84042}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20689) ->
+    #item_base{id = 20689, name = lang:get("印记·神级魔法吸收"),
+               type = 120, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{44, 84043}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20690) ->
+    #item_base{id = 20690, name = lang:get("印记·神级飞行"),
+               type = 120, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{44, 84044}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20691) ->
+    #item_base{id = 20691, name = lang:get("印记·神级涅槃"),
+               type = 120, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{44, 84045}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20692) ->
+    #item_base{id = 20692, name = lang:get("印记·神级雷霆"),
+               type = 120, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{44, 84046}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20693) ->
+    #item_base{id = 20693, name = lang:get("印记·神级瞬击（物）"),
+               type = 120, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{44, 84047}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20694) ->
+    #item_base{id = 20694, name = lang:get("印记·神级瞬击（法）"),
+               type = 120, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{44, 84048}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(20695) ->
+    #item_base{id = 20695, name = lang:get("印记·神级振奋"),
+               type = 120, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{44, 84051}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21096) ->
+    #item_base{id = 21096, name = lang:get("王者英雄宝石"),
+               type = 110, quality = 3, overlap = 999999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21097) ->
+    #item_base{id = 21097, name = lang:get("至尊英雄宝石"),
+               type = 110, quality = 3, overlap = 999999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21218) ->
+    #item_base{id = 21218, name = lang:get("梦幻之翼·90天"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30016, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21219) ->
+    #item_base{id = 21219, name = lang:get("审判寒羽·90天"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30016, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21330) ->
+    #item_base{id = 21330, name = lang:get("圣者英雄宝石"),
+               type = 110, quality = 3, overlap = 999999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21369) ->
+    #item_base{id = 21369, name = lang:get("王者烈焰果"),
+               type = 118, quality = 2, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21393) ->
+    #item_base{id = 21393, name = lang:get("罗娜幻化果"),
+               type = 128, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{52, {212, 6}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21394) ->
+    #item_base{id = 21394, name = lang:get("飞廉幻化果"),
+               type = 128, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{52, {212, 6}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21395) ->
+    #item_base{id = 21395, name = lang:get("波比船长幻化果"),
+               type = 128, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{52, {212, 6}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21396) ->
+    #item_base{id = 21396, name = lang:get("疯狂导师幻化果"),
+               type = 128, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{52, {212, 6}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21415) ->
+    #item_base{id = 21415, name = lang:get("水月桂"),
+               type = 118, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21416) ->
+    #item_base{id = 21416, name = lang:get("极品水月桂"),
+               type = 118, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21417) ->
+    #item_base{id = 21417, name = lang:get("仙品水月桂"),
+               type = 118, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21418) ->
+    #item_base{id = 21418, name = lang:get("青苹果"),
+               type = 118, quality = 2, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21419) ->
+    #item_base{id = 21419, name = lang:get("极品青苹果"),
+               type = 118, quality = 2, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21436) ->
+    #item_base{id = 21436, name = lang:get("神品水月桂"),
+               type = 118, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21437) ->
+    #item_base{id = 21437, name = lang:get("仙品青苹果"),
+               type = 118, quality = 2, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21438) ->
+    #item_base{id = 21438, name = lang:get("神品青苹果"),
+               type = 118, quality = 2, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21439) ->
+    #item_base{id = 21439, name = lang:get("回天神丹"),
+               type = 118, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21440) ->
+    #item_base{id = 21440, name = lang:get("极品回天神丹"),
+               type = 118, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21441) ->
+    #item_base{id = 21441, name = lang:get("仙品回天神丹"),
+               type = 118, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21442) ->
+    #item_base{id = 21442, name = lang:get("神品回天神丹"),
+               type = 118, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21584) ->
+    #item_base{id = 21584, name = lang:get("极品生命雕文"),
+               type = 115, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{10, 11221}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21585) ->
+    #item_base{id = 21585, name = lang:get("极品攻击雕文"),
+               type = 115, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{10, 11222}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21586) ->
+    #item_base{id = 21586, name = lang:get("极品速度雕文"),
+               type = 115, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{10, 11224}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21587) ->
+    #item_base{id = 21587, name = lang:get("极品防御雕文"),
+               type = 115, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{10, 11225}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21588) ->
+    #item_base{id = 21588, name = lang:get("极品魔攻雕文"),
+               type = 115, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{10, 11226}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21589) ->
+    #item_base{id = 21589, name = lang:get("极品魔抗雕文"),
+               type = 115, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{10, 11227}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21590) ->
+    #item_base{id = 21590, name = lang:get("极品坚韧雕文"),
+               type = 115, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{10, 11229}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21591) ->
+    #item_base{id = 21591, name = lang:get("超品生命雕文"),
+               type = 115, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{10, 11230}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21592) ->
+    #item_base{id = 21592, name = lang:get("超品攻击雕文"),
+               type = 115, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{10, 11231}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21593) ->
+    #item_base{id = 21593, name = lang:get("超品速度雕文"),
+               type = 115, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{10, 11233}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21594) ->
+    #item_base{id = 21594, name = lang:get("超品防御雕文"),
+               type = 115, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{10, 11234}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21595) ->
+    #item_base{id = 21595, name = lang:get("超品魔攻雕文"),
+               type = 115, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{10, 11235}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21596) ->
+    #item_base{id = 21596, name = lang:get("超品魔抗雕文"),
+               type = 115, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{10, 11236}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21597) ->
+    #item_base{id = 21597, name = lang:get("超品坚韧雕文"),
+               type = 115, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{10, 11238}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21630) ->
+    #item_base{id = 21630, name = lang:get("孙悟空幻化果"),
+               type = 128, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{52, {361, 6}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21631) ->
+    #item_base{id = 21631, name = lang:get("六耳猕猴幻化果"),
+               type = 128, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{52, {360, 6}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21632) ->
+    #item_base{id = 21632, name = lang:get("天兵幻化果"),
+               type = 128, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{52, {341, 6}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21633) ->
+    #item_base{id = 21633, name = lang:get("枭幻化果"),
+               type = 128, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{52, {358, 6}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21634) ->
+    #item_base{id = 21634, name = lang:get("龙太子幻化果"),
+               type = 128, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{52, {339, 6}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21635) ->
+    #item_base{id = 21635, name = lang:get("玄天战姬幻化果"),
+               type = 128, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{52, {350, 6}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21636) ->
+    #item_base{id = 21636, name = lang:get("炎黄星君幻化果"),
+               type = 128, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{52, {344, 6}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21637) ->
+    #item_base{id = 21637, name = lang:get("东宫少主幻化果"),
+               type = 128, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{52, {332, 6}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21638) ->
+    #item_base{id = 21638, name = lang:get("雷震子幻化果"),
+               type = 128, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{52, {349, 6}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21639) ->
+    #item_base{id = 21639, name = lang:get("修罗王幻化果"),
+               type = 128, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{52, {357, 6}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21640) ->
+    #item_base{id = 21640, name = lang:get("百花仙子幻化果"),
+               type = 128, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{52, {359, 6}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21641) ->
+    #item_base{id = 21641, name = lang:get("孔雀明王幻化果"),
+               type = 128, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{52, {354, 6}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21642) ->
+    #item_base{id = 21642, name = lang:get("暗夜君王幻化果"),
+               type = 128, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{52, {337, 6}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21643) ->
+    #item_base{id = 21643, name = lang:get("幻灵剑尊幻化果"),
+               type = 128, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{52, {353, 6}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21644) ->
+    #item_base{id = 21644, name = lang:get("天门战神幻化果"),
+               type = 128, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{52, {342, 6}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(21645) ->
+    #item_base{id = 21645, name = lang:get("爆裂萝莉幻化果"),
+               type = 128, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{52, {338, 6}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(23774) ->
+    #item_base{id = 23774, name = lang:get("仙兽饰品"),
+               type = 0, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(23775) ->
+    #item_base{id = 23775, name = lang:get("圣兽饰品"),
+               type = 0, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(23952) ->
+    #item_base{id = 23952, name = lang:get("法防"),
+               type = 106, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(23953) ->
+    #item_base{id = 23953, name = lang:get("物防"),
+               type = 106, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(23954) ->
+    #item_base{id = 23954, name = lang:get("坚韧"),
+               type = 106, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(23955) ->
+    #item_base{id = 23955, name = lang:get("怒气"),
+               type = 106, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(23956) ->
+    #item_base{id = 23956, name = lang:get("强身"),
+               type = 106, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(23957) ->
+    #item_base{id = 23957, name = lang:get("血皇护体"),
+               type = 106, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(23958) ->
+    #item_base{id = 23958, name = lang:get("不坏之身"),
+               type = 106, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(23959) ->
+    #item_base{id = 23959, name = lang:get("超级魔防"),
+               type = 106, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(23960) ->
+    #item_base{id = 23960, name = lang:get("超级物防"),
+               type = 106, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(23961) ->
+    #item_base{id = 23961, name = lang:get("超级速度"),
+               type = 106, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(23962) ->
+    #item_base{id = 23962, name = lang:get("闪身躲避"),
+               type = 106, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(23963) ->
+    #item_base{id = 23963, name = lang:get("战无不胜"),
+               type = 106, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(23964) ->
+    #item_base{id = 23964, name = lang:get("疯狂怒击"),
+               type = 106, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(23965) ->
+    #item_base{id = 23965, name = lang:get("偷袭"),
+               type = 106, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(23966) ->
+    #item_base{id = 23966, name = lang:get("尖刀"),
+               type = 106, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(23967) ->
+    #item_base{id = 23967, name = lang:get("法穿"),
+               type = 106, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(23968) ->
+    #item_base{id = 23968, name = lang:get("魔刺"),
+               type = 106, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(23969) ->
+    #item_base{id = 23969, name = lang:get("魔力掌控"),
+               type = 106, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24061) ->
+    #item_base{id = 24061, name = lang:get("独孤求败称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39038}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24062) ->
+    #item_base{id = 24062, name = lang:get("天下无双称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39050}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24063) ->
+    #item_base{id = 24063, name = lang:get("最强王者称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39039}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24064) ->
+    #item_base{id = 24064, name = lang:get("全村人的希望称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39040}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24065) ->
+    #item_base{id = 24065, name = lang:get("穷得只剩钱称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39041}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24066) ->
+    #item_base{id = 24066, name = lang:get("坐拥金山银山称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39042}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24067) ->
+    #item_base{id = 24067, name = lang:get("有钱能使鬼推磨称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39043}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24068) ->
+    #item_base{id = 24068, name = lang:get("一夜暴富称号"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, {39044}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24069) ->
+    #item_base{id = 24069, name = lang:get("三界主宰称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39045}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24070) ->
+    #item_base{id = 24070, name = lang:get("天下第一称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39046}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24071) ->
+    #item_base{id = 24071, name = lang:get("有钱真爽称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39047}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24072) ->
+    #item_base{id = 24072, name = lang:get("天下第一公会称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39048}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24073) ->
+    #item_base{id = 24073, name = lang:get("腰缠万贯.富可敌国称号"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, {39049}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24074) ->
+    #item_base{id = 24074, name = lang:get("尊.最强王者称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39051}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24075) ->
+    #item_base{id = 24075, name = lang:get("神.最强王者称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39052}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24076) ->
+    #item_base{id = 24076, name = lang:get("三界传奇称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39053}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24077) ->
+    #item_base{id = 24077, name = lang:get("富甲天下称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39054}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24078) ->
+    #item_base{id = 24078, name = lang:get("三界无敌称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39055}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24079) ->
+    #item_base{id = 24079, name = lang:get("三界战神称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39056}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24080) ->
+    #item_base{id = 24080, name = lang:get("三界第一人称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39057}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24081) ->
+    #item_base{id = 24081, name = lang:get("我是传奇称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39058}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24082) ->
+    #item_base{id = 24082, name = lang:get("护花使者称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39059}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24083) ->
+    #item_base{id = 24083, name = lang:get("执子之手称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39060}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24084) ->
+    #item_base{id = 24084, name = lang:get("在地愿为连理枝称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39061}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24085) ->
+    #item_base{id = 24085, name = lang:get("在天愿做比翼鸟称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39062}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24086) ->
+    #item_base{id = 24086, name = lang:get("无敌小霸王称号"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, {39063}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24087) ->
+    #item_base{id = 24087, name = lang:get("统领三界称号"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, {39064}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24088) ->
+    #item_base{id = 24088, name = lang:get("真.最强王者称号"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, {39065}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24089) ->
+    #item_base{id = 24089, name = lang:get("圣.最强王者称号"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, {39066}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24090) ->
+    #item_base{id = 24090, name = lang:get("神仙眷侣称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39067}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24091) ->
+    #item_base{id = 24091, name = lang:get("愿得一人心称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39068}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24092) ->
+    #item_base{id = 24092, name = lang:get("白首不分离称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39069}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24093) ->
+    #item_base{id = 24093, name = lang:get("壕称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39070}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24094) ->
+    #item_base{id = 24094, name = lang:get("千金酬一笑称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39071}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24095) ->
+    #item_base{id = 24095, name = lang:get("横财神称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39072}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24096) ->
+    #item_base{id = 24096, name = lang:get("至尊武财神称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39073}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24320) ->
+    #item_base{id = 24320, name = lang:get("天帝称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39074}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24321) ->
+    #item_base{id = 24321, name = lang:get("天外飞仙称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39075}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24322) ->
+    #item_base{id = 24322, name = lang:get("与子偕老称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39076}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24323) ->
+    #item_base{id = 24323, name = lang:get("凤歌楚狂人称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39077}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24324) ->
+    #item_base{id = 24324, name = lang:get("劳动最光荣称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39078}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24325) ->
+    #item_base{id = 24325, name = lang:get("带头大哥称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39079}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24326) ->
+    #item_base{id = 24326, name = lang:get("锋芒逼人称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39080}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24327) ->
+    #item_base{id = 24327, name = lang:get("齐天大圣称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39081}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24328) ->
+    #item_base{id = 24328, name = lang:get("独领风骚称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39082}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24329) ->
+    #item_base{id = 24329, name = lang:get("我最牛称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39083}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24330) ->
+    #item_base{id = 24330, name = lang:get("驯兽宗师称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39084}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24331) ->
+    #item_base{id = 24331, name = lang:get("好的女王称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39085}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24332) ->
+    #item_base{id = 24332, name = lang:get("初代大圣称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39086}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24333) ->
+    #item_base{id = 24333, name = lang:get("一掷千金称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39087}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24334) ->
+    #item_base{id = 24334, name = lang:get("威震八方称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39088}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24335) ->
+    #item_base{id = 24335, name = lang:get("你是我的小星星称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39089}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24336) ->
+    #item_base{id = 24336, name = lang:get("无尽宝藏称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39090}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24337) ->
+    #item_base{id = 24337, name = lang:get("红星光耀照我心称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39091}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24338) ->
+    #item_base{id = 24338, name = lang:get("头号玩家称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39092}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24339) ->
+    #item_base{id = 24339, name = lang:get("春风十里不如你称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39093}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24340) ->
+    #item_base{id = 24340, name = lang:get("脉脉不得语称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39094}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24341) ->
+    #item_base{id = 24341, name = lang:get("飞龙在天称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39095}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24342) ->
+    #item_base{id = 24342, name = lang:get("龙章凤姿称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39096}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24343) ->
+    #item_base{id = 24343, name = lang:get("云想衣裳花想容称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39097}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24344) ->
+    #item_base{id = 24344, name = lang:get("爆竹声声响称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39099}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24345) ->
+    #item_base{id = 24345, name = lang:get("万古天尊称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39100}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24346) ->
+    #item_base{id = 24346, name = lang:get("大罗天尊称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39101}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24347) ->
+    #item_base{id = 24347, name = lang:get("至尊称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39103}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24348) ->
+    #item_base{id = 24348, name = lang:get("飞花风流客称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39104}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24349) ->
+    #item_base{id = 24349, name = lang:get("龙抬头称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39105}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24350) ->
+    #item_base{id = 24350, name = lang:get("龙王称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39106}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24351) ->
+    #item_base{id = 24351, name = lang:get("陪你痴狂千生称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39107}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24352) ->
+    #item_base{id = 24352, name = lang:get("伴你万世轮回称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39108}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24353) ->
+    #item_base{id = 24353, name = lang:get("不仅仅是喜欢称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39109}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24354) ->
+    #item_base{id = 24354, name = lang:get("天选之子称号"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, {39112}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24355) ->
+    #item_base{id = 24355, name = lang:get("修罗王称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39113}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24356) ->
+    #item_base{id = 24356, name = lang:get("至尊花少称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39110}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24357) ->
+    #item_base{id = 24357, name = lang:get("气度不凡称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39117}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24358) ->
+    #item_base{id = 24358, name = lang:get("白首不相离称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39118}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24359) ->
+    #item_base{id = 24359, name = lang:get("问鼎仙人称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39119}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24360) ->
+    #item_base{id = 24360, name = lang:get("九曜天尊称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39120}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24361) ->
+    #item_base{id = 24361, name = lang:get("情诗圣手称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39121}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24362) ->
+    #item_base{id = 24362, name = lang:get("至尊天王称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39122}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24363) ->
+    #item_base{id = 24363, name = lang:get("深林守望者称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39123}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24364) ->
+    #item_base{id = 24364, name = lang:get("任性土豪称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39124}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24365) ->
+    #item_base{id = 24365, name = lang:get("缘定三生称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39125}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24366) ->
+    #item_base{id = 24366, name = lang:get("霜降芦花红称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39126}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24367) ->
+    #item_base{id = 24367, name = lang:get("周年庆大使称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39127}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24368) ->
+    #item_base{id = 24368, name = lang:get("我心永恒称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39128}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24369) ->
+    #item_base{id = 24369, name = lang:get("小年迎灶君称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39130}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24370) ->
+    #item_base{id = 24370, name = lang:get("人约黄昏后称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39131}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24371) ->
+    #item_base{id = 24371, name = lang:get("合韵似鸣琴称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39132}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24372) ->
+    #item_base{id = 24372, name = lang:get("撩妹圣手称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39133}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24373) ->
+    #item_base{id = 24373, name = lang:get("盖世英雄称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39135}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24374) ->
+    #item_base{id = 24374, name = lang:get("挥金如土称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39137}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24375) ->
+    #item_base{id = 24375, name = lang:get("登高望远称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39138}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24376) ->
+    #item_base{id = 24376, name = lang:get("柔情万千称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39139}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24377) ->
+    #item_base{id = 24377, name = lang:get("粽意蛊然称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39141}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24378) ->
+    #item_base{id = 24378, name = lang:get("踮脚亲你称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39144}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24379) ->
+    #item_base{id = 24379, name = lang:get("中华护卫者称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39145}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24380) ->
+    #item_base{id = 24380, name = lang:get("风雪夜归人称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39146}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24381) ->
+    #item_base{id = 24381, name = lang:get("国色天香称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39147}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24382) ->
+    #item_base{id = 24382, name = lang:get("新娘称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39149}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24383) ->
+    #item_base{id = 24383, name = lang:get("新郎称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39151}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24384) ->
+    #item_base{id = 24384, name = lang:get("盈盈一水间称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39150}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24385) ->
+    #item_base{id = 24385, name = lang:get("花果山萌主称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39152}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24386) ->
+    #item_base{id = 24386, name = lang:get("永不止步称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39154}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24387) ->
+    #item_base{id = 24387, name = lang:get("玉树临风称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39155}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24388) ->
+    #item_base{id = 24388, name = lang:get("宝宝有钱不说称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39087}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24389) ->
+    #item_base{id = 24389, name = lang:get("如同杀神称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39098}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24390) ->
+    #item_base{id = 24390, name = lang:get("情圣称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39102}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24391) ->
+    #item_base{id = 24391, name = lang:get("至尊花少称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39110}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24392) ->
+    #item_base{id = 24392, name = lang:get("红包拿来称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39111}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24393) ->
+    #item_base{id = 24393, name = lang:get("巅峰王者称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39114}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24394) ->
+    #item_base{id = 24394, name = lang:get("钱多多称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39115}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24395) ->
+    #item_base{id = 24395, name = lang:get("无人能挡称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39116}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24396) ->
+    #item_base{id = 24396, name = lang:get("仙法大成称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39129}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24397) ->
+    #item_base{id = 24397, name = lang:get("心心相印称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39134}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24398) ->
+    #item_base{id = 24398, name = lang:get("天长地久称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39136}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24399) ->
+    #item_base{id = 24399, name = lang:get("森林卫士称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39140}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24400) ->
+    #item_base{id = 24400, name = lang:get("冬天来了称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39142}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24401) ->
+    #item_base{id = 24401, name = lang:get("护花领袖称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39148}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24402) ->
+    #item_base{id = 24402, name = lang:get("荷灯寄相思称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39153}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24403) ->
+    #item_base{id = 24403, name = lang:get("单身情歌称号"),
+               type = 0, quality = 3, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, 39143}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24404) ->
+    #item_base{id = 24404, name = lang:get("炼气·初期"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, {39156}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24405) ->
+    #item_base{id = 24405, name = lang:get("炼气·中期"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, {39157}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24406) ->
+    #item_base{id = 24406, name = lang:get("炼气·后期"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, {39158}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24407) ->
+    #item_base{id = 24407, name = lang:get("炼气·大圆满"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, {39159}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24408) ->
+    #item_base{id = 24408, name = lang:get("筑基·初期"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, {39160}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24409) ->
+    #item_base{id = 24409, name = lang:get("筑基·中期"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, {39161}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24410) ->
+    #item_base{id = 24410, name = lang:get("筑基·后期"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, {39162}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24411) ->
+    #item_base{id = 24411, name = lang:get("筑基·大圆满"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, {39163}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24412) ->
+    #item_base{id = 24412, name = lang:get("金丹·初期"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, {39164}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24413) ->
+    #item_base{id = 24413, name = lang:get("金丹·中期"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, {39165}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24414) ->
+    #item_base{id = 24414, name = lang:get("金丹·后期"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, {39166}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24415) ->
+    #item_base{id = 24415, name = lang:get("金丹·大圆满"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, {39167}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24416) ->
+    #item_base{id = 24416, name = lang:get("元婴·初期"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, {39168}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24417) ->
+    #item_base{id = 24417, name = lang:get("元婴·中期"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, {39169}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24418) ->
+    #item_base{id = 24418, name = lang:get("元婴·后期"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, {39170}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24419) ->
+    #item_base{id = 24419, name = lang:get("元婴·大圆满"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, {39171}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24420) ->
+    #item_base{id = 24420, name = lang:get("化神·初期"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, {39172}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24421) ->
+    #item_base{id = 24421, name = lang:get("化神·中期"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, {39173}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24422) ->
+    #item_base{id = 24422, name = lang:get("化神·后期"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, {39174}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24423) ->
+    #item_base{id = 24423, name = lang:get("化神·大圆满"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, {39175}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24424) ->
+    #item_base{id = 24424, name = lang:get("婴变·初期"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, {39176}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24425) ->
+    #item_base{id = 24425, name = lang:get("婴变·中期"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, {39177}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24426) ->
+    #item_base{id = 24426, name = lang:get("婴变·后期"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, {39178}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24427) ->
+    #item_base{id = 24427, name = lang:get("婴变·大圆满"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, {39179}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24428) ->
+    #item_base{id = 24428, name = lang:get("问鼎·初期"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, {39180}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24429) ->
+    #item_base{id = 24429, name = lang:get("问鼎·中期"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, {39181}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24430) ->
+    #item_base{id = 24430, name = lang:get("问鼎·后期"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, {39182}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24431) ->
+    #item_base{id = 24431, name = lang:get("问鼎·大圆满"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, {39183}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(24432) ->
+    #item_base{id = 24432, name = lang:get("圣人·初期"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [{9, {39184}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25100) ->
+    #item_base{id = 25100, name = lang:get("超级穿透"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60273}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25101) ->
+    #item_base{id = 25101, name = lang:get("超级流血"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60274}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25102) ->
+    #item_base{id = 25102, name = lang:get("超级暴戾"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60275}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25103) ->
+    #item_base{id = 25103, name = lang:get("超级狂暴追击"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60276}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25104) ->
+    #item_base{id = 25104, name = lang:get("超级封心"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60277}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25105) ->
+    #item_base{id = 25105, name = lang:get("超级禁魂"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60278}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25106) ->
+    #item_base{id = 25106, name = lang:get("超级慈悲"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60279}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25107) ->
+    #item_base{id = 25107, name = lang:get("超级雷霆"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60280}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25108) ->
+    #item_base{id = 25108, name = lang:get("超级清心"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60281}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25109) ->
+    #item_base{id = 25109, name = lang:get("超级护主"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60282}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25110) ->
+    #item_base{id = 25110, name = lang:get("超级涅槃"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60283}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25111) ->
+    #item_base{id = 25111, name = lang:get("超级破魔"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60284}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25112) ->
+    #item_base{id = 25112, name = lang:get("超级神佑"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60285}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25113) ->
+    #item_base{id = 25113, name = lang:get("超级逃生"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60286}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25114) ->
+    #item_base{id = 25114, name = lang:get("超级隐匿"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60287}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25115) ->
+    #item_base{id = 25115, name = lang:get("超级反弹"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60288}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25116) ->
+    #item_base{id = 25116, name = lang:get("超级还击"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60289}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25117) ->
+    #item_base{id = 25117, name = lang:get("超级魔法还击"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60290}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25118) ->
+    #item_base{id = 25118, name = lang:get("超级报复"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60291}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25119) ->
+    #item_base{id = 25119, name = lang:get("超级影袭"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60292}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25120) ->
+    #item_base{id = 25120, name = lang:get("超级连击"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60293}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25121) ->
+    #item_base{id = 25121, name = lang:get("超级吸血"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60294}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25122) ->
+    #item_base{id = 25122, name = lang:get("超级追击"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60295}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25123) ->
+    #item_base{id = 25123, name = lang:get("超级暴击"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60296}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25124) ->
+    #item_base{id = 25124, name = lang:get("超级魔法连击"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60297}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25125) ->
+    #item_base{id = 25125, name = lang:get("超级魔法暴击"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60298}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25126) ->
+    #item_base{id = 25126, name = lang:get("超级精通"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60299}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25127) ->
+    #item_base{id = 25127, name = lang:get("超级侦查"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60300}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25128) ->
+    #item_base{id = 25128, name = lang:get("超级审判"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60301}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25129) ->
+    #item_base{id = 25129, name = lang:get("超级驱鬼"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60302}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25130) ->
+    #item_base{id = 25130, name = lang:get("超级鬼魂"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60303}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25131) ->
+    #item_base{id = 25131, name = lang:get("超级物攻祝福"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60304}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25132) ->
+    #item_base{id = 25132, name = lang:get("超级元素祝福"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60305}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25133) ->
+    #item_base{id = 25133, name = lang:get("超级防御祝福"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60306}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25134) ->
+    #item_base{id = 25134, name = lang:get("超级蛮力"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60307}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25135) ->
+    #item_base{id = 25135, name = lang:get("超级强体"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60308}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25136) ->
+    #item_base{id = 25136, name = lang:get("超级恐惧"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60309}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25137) ->
+    #item_base{id = 25137, name = lang:get("超级冲击"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60310}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25138) ->
+    #item_base{id = 25138, name = lang:get("超级逆击"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60311}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25139) ->
+    #item_base{id = 25139, name = lang:get("超级敏捷"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60312}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25140) ->
+    #item_base{id = 25140, name = lang:get("超级防御"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60313}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25141) ->
+    #item_base{id = 25141, name = lang:get("超级魔法防御"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60314}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25142) ->
+    #item_base{id = 25142, name = lang:get("超级魔法波动"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60315}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25143) ->
+    #item_base{id = 25143, name = lang:get("超级自愈"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60316}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25144) ->
+    #item_base{id = 25144, name = lang:get("超级幸运"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60317}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25145) ->
+    #item_base{id = 25145, name = lang:get("超级剧毒"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60318}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25146) ->
+    #item_base{id = 25146, name = lang:get("超级振奋"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60319}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25147) ->
+    #item_base{id = 25147, name = lang:get("超级致盲"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60320}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25148) ->
+    #item_base{id = 25148, name = lang:get("超级闪现"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60321}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25149) ->
+    #item_base{id = 25149, name = lang:get("超级反哺"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60322}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25150) ->
+    #item_base{id = 25150, name = lang:get("超级爆破"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60323}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25151) ->
+    #item_base{id = 25151, name = lang:get("超级冰封"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60324}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25152) ->
+    #item_base{id = 25152, name = lang:get("超级无畏"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60325}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25153) ->
+    #item_base{id = 25153, name = lang:get("超级强击"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60326}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25154) ->
+    #item_base{id = 25154, name = lang:get("超级英勇"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60327}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25155) ->
+    #item_base{id = 25155, name = lang:get("超级专注"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60328}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25156) ->
+    #item_base{id = 25156, name = lang:get("超级还击暴击"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60329}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25157) ->
+    #item_base{id = 25157, name = lang:get("超级魔法吸收"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60330}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25158) ->
+    #item_base{id = 25158, name = lang:get("飞火流星"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60588}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25159) ->
+    #item_base{id = 25159, name = lang:get("刀光剑影"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60589}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25160) ->
+    #item_base{id = 25160, name = lang:get("龙卷雨击"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60590}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25161) ->
+    #item_base{id = 25161, name = lang:get("横扫千军"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60591}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25162) ->
+    #item_base{id = 25162, name = lang:get("似玉生香"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60592}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25163) ->
+    #item_base{id = 25163, name = lang:get("舍己为人"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60593}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25164) ->
+    #item_base{id = 25164, name = lang:get("神兵护法"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60594}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25165) ->
+    #item_base{id = 25165, name = lang:get("浮云神马"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 67073}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25166) ->
+    #item_base{id = 25166, name = lang:get("魔浪滔天"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60596}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25167) ->
+    #item_base{id = 25167, name = lang:get("六道轮回"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60597}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25168) ->
+    #item_base{id = 25168, name = lang:get("风雷之刃"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60514}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25169) ->
+    #item_base{id = 25169, name = lang:get("刀刃连环"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60088}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25170) ->
+    #item_base{id = 25170, name = lang:get("阴阳灯"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60099}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25171) ->
+    #item_base{id = 25171, name = lang:get("螺旋剑"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60098}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25172) ->
+    #item_base{id = 25172, name = lang:get("绝世剑心"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60086}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25173) ->
+    #item_base{id = 25173, name = lang:get("雷霆之怒"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60074}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25174) ->
+    #item_base{id = 25174, name = lang:get("神圣裁决"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60534}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25175) ->
+    #item_base{id = 25175, name = lang:get("神技·超级物免"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 67001}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25176) ->
+    #item_base{id = 25176, name = lang:get("神技·超级魔免"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 67002}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25177) ->
+    #item_base{id = 25177, name = lang:get("神技·极速"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 67003}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25178) ->
+    #item_base{id = 25178, name = lang:get("七娃合体"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60586}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25179) ->
+    #item_base{id = 25179, name = lang:get("葫芦娃觉醒"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60587}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25180) ->
+    #item_base{id = 25180, name = lang:get("夜舞倾城"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60598}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25181) ->
+    #item_base{id = 25181, name = lang:get("罗煞降临"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60599}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25182) ->
+    #item_base{id = 25182, name = lang:get("剑客之道"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60600}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25183) ->
+    #item_base{id = 25183, name = lang:get("双剑华斩"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60601}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25184) ->
+    #item_base{id = 25184, name = lang:get("蚩尤武魂"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60602}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25185) ->
+    #item_base{id = 25185, name = lang:get("枭刃"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60603}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25186) ->
+    #item_base{id = 25186, name = lang:get("圣锤觉醒"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60604}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25187) ->
+    #item_base{id = 25187, name = lang:get("圣锤猛击"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60605}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25188) ->
+    #item_base{id = 25188, name = lang:get("隐龙盾"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 67014}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25189) ->
+    #item_base{id = 25189, name = lang:get("荆棘"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 67015}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25190) ->
+    #item_base{id = 25190, name = lang:get("神封降临"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 60573}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25191) ->
+    #item_base{id = 25191, name = lang:get("万法朝宗"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 67026}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25192) ->
+    #item_base{id = 25192, name = lang:get("万法归一"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 67027}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25193) ->
+    #item_base{id = 25193, name = lang:get("星辰守护"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 67028}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25194) ->
+    #item_base{id = 25194, name = lang:get("不动如山"),
+               type = 100, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 67029}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25195) ->
+    #item_base{id = 25195, name = lang:get("神级瞬击（雷震子专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67039}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25196) ->
+    #item_base{id = 25196, name = lang:get("神级瞬击（东宫少主专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67040}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25197) ->
+    #item_base{id = 25197, name = lang:get("神级瞬击（神族精卫专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67041}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25198) ->
+    #item_base{id = 25198, name = lang:get("神级瞬击（霹雳拳手专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67042}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25199) ->
+    #item_base{id = 25199, name = lang:get("神级瞬击（诛邪武魂专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67043}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25200) ->
+    #item_base{id = 25200, name = lang:get("神级瞬击（天耀陆虎专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67044}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25201) ->
+    #item_base{id = 25201, name = lang:get("神级瞬击（玄天战姬专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67045}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25202) ->
+    #item_base{id = 25202, name = lang:get("神级强体"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60331}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25203) ->
+    #item_base{id = 25203, name = lang:get("神级瞬击（通天罗刹专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67046}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25204) ->
+    #item_base{id = 25204, name = lang:get("神级瞬击（倾城少女专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67047}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25205) ->
+    #item_base{id = 25205, name = lang:get("神级瞬击（倩女幽魂专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67048}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25206) ->
+    #item_base{id = 25206, name = lang:get("神级瞬击（通臂雪猿专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67049}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25207) ->
+    #item_base{id = 25207, name = lang:get("神级瞬击（箭神虞姬专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67050}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25208) ->
+    #item_base{id = 25208, name = lang:get("神级瞬击（爆裂萝莉专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67051}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25209) ->
+    #item_base{id = 25209, name = lang:get("超级瞬击（雷震子专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67052}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25210) ->
+    #item_base{id = 25210, name = lang:get("超级瞬击（东宫少主专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67053}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25211) ->
+    #item_base{id = 25211, name = lang:get("超级瞬击（神族精卫专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67054}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25212) ->
+    #item_base{id = 25212, name = lang:get("超级瞬击（霹雳拳手专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67055}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25213) ->
+    #item_base{id = 25213, name = lang:get("超级瞬击（诛邪武魂专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67056}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25214) ->
+    #item_base{id = 25214, name = lang:get("超级瞬击（天耀陆虎专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67057}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25215) ->
+    #item_base{id = 25215, name = lang:get("超级瞬击（玄天战姬专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67058}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25216) ->
+    #item_base{id = 25216, name = lang:get("超级瞬击（通天罗刹专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67059}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25217) ->
+    #item_base{id = 25217, name = lang:get("超级瞬击（凤鸾女神专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67060}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25218) ->
+    #item_base{id = 25218, name = lang:get("超级瞬击（倩女幽魂专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67061}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25219) ->
+    #item_base{id = 25219, name = lang:get("超级瞬击（通臂雪猿专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67062}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25220) ->
+    #item_base{id = 25220, name = lang:get("超级瞬击（箭神虞姬专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67063}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25221) ->
+    #item_base{id = 25221, name = lang:get("超级瞬击（爆裂萝莉专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67064}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25222) ->
+    #item_base{id = 25222, name = lang:get("超级瞬击（双剑天尊专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67065}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25223) ->
+    #item_base{id = 25223, name = lang:get("超级瞬击（龙三太子专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67066}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25224) ->
+    #item_base{id = 25224, name = lang:get("神级瞬击（幻灵剑尊专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67071}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25225) ->
+    #item_base{id = 25225, name = lang:get("神级防御"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60332}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25226) ->
+    #item_base{id = 25226, name = lang:get("神级魔法防御"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60340}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25227) ->
+    #item_base{id = 25227, name = lang:get("神级敏捷"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60334}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25228) ->
+    #item_base{id = 25228, name = lang:get("神级强击"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60335}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25229) ->
+    #item_base{id = 25229, name = lang:get("神级慈悲"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60336}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25230) ->
+    #item_base{id = 25230, name = lang:get("神级禁魂"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60337}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25231) ->
+    #item_base{id = 25231, name = lang:get("神级自愈"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60338}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25232) ->
+    #item_base{id = 25232, name = lang:get("神级魔法吸收"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60339}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25233) ->
+    #item_base{id = 25233, name = lang:get("神级瞬击（擎天神牛专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67072}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25240) ->
+    #item_base{id = 25240, name = lang:get("法防圣盾"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67079}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25241) ->
+    #item_base{id = 25241, name = lang:get("须弥真言"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67092}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25242) ->
+    #item_base{id = 25242, name = lang:get("超级瞬击（天门战神专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67120}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25243) ->
+    #item_base{id = 25243, name = lang:get("超级瞬击（天兵专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67121}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25244) ->
+    #item_base{id = 25244, name = lang:get("超级瞬击（赤焰白灵专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67122}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25245) ->
+    #item_base{id = 25245, name = lang:get("超级瞬击（擎天神牛专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67123}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25246) ->
+    #item_base{id = 25246, name = lang:get("超级瞬击（幻灵剑尊专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67124}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25247) ->
+    #item_base{id = 25247, name = lang:get("神圣免伤"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67094}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25250) ->
+    #item_base{id = 25250, name = lang:get("超级瞬击（修罗王专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67125}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25251) ->
+    #item_base{id = 25251, name = lang:get("超级瞬击（枭专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67126}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25252) ->
+    #item_base{id = 25252, name = lang:get("超级瞬击（暗夜君王专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 66005}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25253) ->
+    #item_base{id = 25253, name = lang:get("神级瞬击（暗夜君王专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 66003}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25254) ->
+    #item_base{id = 25254, name = lang:get("超级瞬击（玉兔专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 66006}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25255) ->
+    #item_base{id = 25255, name = lang:get("神级瞬击（玉兔专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 66004}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25260) ->
+    #item_base{id = 25260, name = lang:get("龟速迟钝"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67303}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25261) ->
+    #item_base{id = 25261, name = lang:get("神级飞行"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60341}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25262) ->
+    #item_base{id = 25262, name = lang:get("净台妙谛"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60342}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25263) ->
+    #item_base{id = 25263, name = lang:get("神级涅槃"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60343}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25264) ->
+    #item_base{id = 25264, name = lang:get("神级法穿"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60344}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25265) ->
+    #item_base{id = 25265, name = lang:get("乾坤借法·体"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60345}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25266) ->
+    #item_base{id = 25266, name = lang:get("乾坤借法·耐"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60346}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25267) ->
+    #item_base{id = 25267, name = lang:get("乾坤借法·智"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60347}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25268) ->
+    #item_base{id = 25268, name = lang:get("乾坤借法·力"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60348}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25269) ->
+    #item_base{id = 25269, name = lang:get("乾坤借法·敏"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60349}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25270) ->
+    #item_base{id = 25270, name = lang:get("神级雷霆"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60350}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25271) ->
+    #item_base{id = 25271, name = lang:get("匿影藏形"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60351}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25272) ->
+    #item_base{id = 25272, name = lang:get("神级振奋"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60354}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25273) ->
+    #item_base{id = 25273, name = lang:get("神级冥思"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60355}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25274) ->
+    #item_base{id = 25274, name = lang:get("神级物攻祝福"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60356}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25275) ->
+    #item_base{id = 25275, name = lang:get("神级魔攻祝福"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60357}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25276) ->
+    #item_base{id = 25276, name = lang:get("神级防御祝福"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60358}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25277) ->
+    #item_base{id = 25277, name = lang:get("绝处逢生"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67500}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25278) ->
+    #item_base{id = 25278, name = lang:get("逃出生天"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67501}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25279) ->
+    #item_base{id = 25279, name = lang:get("固若金汤"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67502}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25280) ->
+    #item_base{id = 25280, name = lang:get("者字秘"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67503}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25281) ->
+    #item_base{id = 25281, name = lang:get("兵字秘"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60444}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25282) ->
+    #item_base{id = 25282, name = lang:get("列字秘"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67349}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25283) ->
+    #item_base{id = 25283, name = lang:get("皆字秘"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60445}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25284) ->
+    #item_base{id = 25284, name = lang:get("斗字秘"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60447}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25285) ->
+    #item_base{id = 25285, name = lang:get("行字秘"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60448}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25286) ->
+    #item_base{id = 25286, name = lang:get("冰火觉醒"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60094}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25287) ->
+    #item_base{id = 25287, name = lang:get("神隐"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67314}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25300) ->
+    #item_base{id = 25300, name = lang:get("高级穿透+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60201}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25301) ->
+    #item_base{id = 25301, name = lang:get("高级流血+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60202}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25302) ->
+    #item_base{id = 25302, name = lang:get("高级暴戾+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60203}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25303) ->
+    #item_base{id = 25303, name = lang:get("高级狂暴追击+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60204}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25304) ->
+    #item_base{id = 25304, name = lang:get("高级封心+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60205}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25305) ->
+    #item_base{id = 25305, name = lang:get("高级禁魂+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60206}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25306) ->
+    #item_base{id = 25306, name = lang:get("高级慈悲+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60207}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25307) ->
+    #item_base{id = 25307, name = lang:get("高级雷霆+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60208}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25308) ->
+    #item_base{id = 25308, name = lang:get("高级清心+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60209}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25309) ->
+    #item_base{id = 25309, name = lang:get("高级还击暴击+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60221}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25310) ->
+    #item_base{id = 25310, name = lang:get("高级魔法吸收+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60222}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25311) ->
+    #item_base{id = 25311, name = lang:get("高级护主+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60226}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25312) ->
+    #item_base{id = 25312, name = lang:get("高级涅槃+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60227}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25313) ->
+    #item_base{id = 25313, name = lang:get("高级破魔+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60228}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25314) ->
+    #item_base{id = 25314, name = lang:get("高级神佑+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60229}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25315) ->
+    #item_base{id = 25315, name = lang:get("高级逃生+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60230}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25316) ->
+    #item_base{id = 25316, name = lang:get("高级隐匿+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60231}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25317) ->
+    #item_base{id = 25317, name = lang:get("高级反弹+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60232}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25318) ->
+    #item_base{id = 25318, name = lang:get("高级还击+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60233}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25319) ->
+    #item_base{id = 25319, name = lang:get("高级魔法还击+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60234}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25320) ->
+    #item_base{id = 25320, name = lang:get("高级报复+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60235}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25321) ->
+    #item_base{id = 25321, name = lang:get("高级影袭+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60236}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25322) ->
+    #item_base{id = 25322, name = lang:get("高级连击+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60237}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25323) ->
+    #item_base{id = 25323, name = lang:get("高级吸血+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60238}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25324) ->
+    #item_base{id = 25324, name = lang:get("高级追击+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60239}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25325) ->
+    #item_base{id = 25325, name = lang:get("高级暴击+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60240}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25326) ->
+    #item_base{id = 25326, name = lang:get("高级魔法连击+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60241}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25327) ->
+    #item_base{id = 25327, name = lang:get("高级魔法暴击+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60242}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25328) ->
+    #item_base{id = 25328, name = lang:get("高级精通+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60243}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25329) ->
+    #item_base{id = 25329, name = lang:get("高级侦查+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60244}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25330) ->
+    #item_base{id = 25330, name = lang:get("高级审判+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60245}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25331) ->
+    #item_base{id = 25331, name = lang:get("高级驱鬼+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60246}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25332) ->
+    #item_base{id = 25332, name = lang:get("高级鬼魂+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60247}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25333) ->
+    #item_base{id = 25333, name = lang:get("高级物攻祝福+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60248}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25334) ->
+    #item_base{id = 25334, name = lang:get("高级元素祝福+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60249}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25335) ->
+    #item_base{id = 25335, name = lang:get("高级防御祝福+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60250}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25336) ->
+    #item_base{id = 25336, name = lang:get("高级蛮力+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60251}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25337) ->
+    #item_base{id = 25337, name = lang:get("高级强体+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60252}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25338) ->
+    #item_base{id = 25338, name = lang:get("高级恐惧+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60253}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25339) ->
+    #item_base{id = 25339, name = lang:get("高级冲击+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60254}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25340) ->
+    #item_base{id = 25340, name = lang:get("高级逆击+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60255}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25341) ->
+    #item_base{id = 25341, name = lang:get("高级敏捷+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60256}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25342) ->
+    #item_base{id = 25342, name = lang:get("高级防御+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60257}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25343) ->
+    #item_base{id = 25343, name = lang:get("高级魔法防御+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60258}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25344) ->
+    #item_base{id = 25344, name = lang:get("高级魔法波动+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60259}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25345) ->
+    #item_base{id = 25345, name = lang:get("高级自愈+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60260}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25346) ->
+    #item_base{id = 25346, name = lang:get("高级幸运+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60261}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25347) ->
+    #item_base{id = 25347, name = lang:get("高级剧毒+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60262}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25348) ->
+    #item_base{id = 25348, name = lang:get("高级振奋+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60263}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25349) ->
+    #item_base{id = 25349, name = lang:get("高级致盲+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60264}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25350) ->
+    #item_base{id = 25350, name = lang:get("高级闪现+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60265}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25351) ->
+    #item_base{id = 25351, name = lang:get("高级反哺+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60266}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25352) ->
+    #item_base{id = 25352, name = lang:get("高级爆破+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60267}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25353) ->
+    #item_base{id = 25353, name = lang:get("高级冰封+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60268}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25354) ->
+    #item_base{id = 25354, name = lang:get("高级无畏+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60269}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25355) ->
+    #item_base{id = 25355, name = lang:get("高级强击+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60270}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25356) ->
+    #item_base{id = 25356, name = lang:get("高级英勇+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60271}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25357) ->
+    #item_base{id = 25357, name = lang:get("高级专注+1"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 60272}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25400) ->
+    #item_base{id = 25400, name = lang:get("神级瞬击（天门战神专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67201}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25401) ->
+    #item_base{id = 25401, name = lang:get("神级瞬击（天兵专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67202}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25402) ->
+    #item_base{id = 25402, name = lang:get("神级瞬击（赤焰白灵专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67203}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25403) ->
+    #item_base{id = 25403, name = lang:get("神级瞬击（修罗王专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 66001}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25404) ->
+    #item_base{id = 25404, name = lang:get("神级瞬击（枭专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 66002}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25405) ->
+    #item_base{id = 25405, name = lang:get("神级瞬击（火麒麟专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67400}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25406) ->
+    #item_base{id = 25406, name = lang:get("神级瞬击（孙悟空专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67401}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25407) ->
+    #item_base{id = 25407, name = lang:get("神级瞬击（六耳猕猴专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67402}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25408) ->
+    #item_base{id = 25408, name = lang:get("神级瞬击（物）"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67403}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25409) ->
+    #item_base{id = 25409, name = lang:get("神级瞬击（法）"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67404}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25410) ->
+    #item_base{id = 25410, name = lang:get("神级瞬击（刑天战神专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67405}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25411) ->
+    #item_base{id = 25411, name = lang:get("神级瞬击（龙尊专用）"),
+               type = 100, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67406}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25412) ->
+    #item_base{id = 25412, name = lang:get("神级瞬击（九天玄女专用）"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67407}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25413) ->
+    #item_base{id = 25413, name = lang:get("神级瞬击（言初音专用）"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67408}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25414) ->
+    #item_base{id = 25414, name = lang:get("究极瞬击（烈火穷奇专用）"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67409}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25415) ->
+    #item_base{id = 25415, name = lang:get("究极瞬击（封阳专用）"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67410}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25416) ->
+    #item_base{id = 25416, name = lang:get("究极瞬击（太初专用）"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67411}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25417) ->
+    #item_base{id = 25417, name = lang:get("究极瞬击（死神专用）"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67412}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(25418) ->
+    #item_base{id = 25418, name = lang:get("究极瞬击（亡川专用）"),
+               type = 100, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [{3, 67413}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28726) ->
+    #item_base{id = 28726, name = lang:get("通臂雪猿碎片"),
+               type = 136, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28727) ->
+    #item_base{id = 28727, name = lang:get("倾城少女碎片"),
+               type = 136, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28728) ->
+    #item_base{id = 28728, name = lang:get("双剑天尊碎片"),
+               type = 136, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28729) ->
+    #item_base{id = 28729, name = lang:get("箭神虞姬碎片"),
+               type = 136, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28730) ->
+    #item_base{id = 28730, name = lang:get("暗夜君王碎片"),
+               type = 136, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28731) ->
+    #item_base{id = 28731, name = lang:get("爆裂萝莉碎片"),
+               type = 136, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28732) ->
+    #item_base{id = 28732, name = lang:get("龙太子碎片"),
+               type = 136, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28733) ->
+    #item_base{id = 28733, name = lang:get("赤焰白灵碎片"),
+               type = 136, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28734) ->
+    #item_base{id = 28734, name = lang:get("天兵碎片"),
+               type = 136, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28735) ->
+    #item_base{id = 28735, name = lang:get("天门战神碎片"),
+               type = 136, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28736) ->
+    #item_base{id = 28736, name = lang:get("天耀陆虎碎片"),
+               type = 136, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28737) ->
+    #item_base{id = 28737, name = lang:get("炎黄星君碎片"),
+               type = 136, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28738) ->
+    #item_base{id = 28738, name = lang:get("通天罗刹碎片"),
+               type = 136, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28739) ->
+    #item_base{id = 28739, name = lang:get("诛邪武魂碎片"),
+               type = 136, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28740) ->
+    #item_base{id = 28740, name = lang:get("霹雳拳手碎片"),
+               type = 136, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28741) ->
+    #item_base{id = 28741, name = lang:get("龙魄卫士碎片"),
+               type = 136, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28742) ->
+    #item_base{id = 28742, name = lang:get("雷震子碎片"),
+               type = 136, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28743) ->
+    #item_base{id = 28743, name = lang:get("玄天战姬碎片"),
+               type = 136, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28744) ->
+    #item_base{id = 28744, name = lang:get("神族精卫碎片"),
+               type = 136, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28745) ->
+    #item_base{id = 28745, name = lang:get("火麒麟碎片"),
+               type = 136, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28746) ->
+    #item_base{id = 28746, name = lang:get("幻灵剑尊碎片"),
+               type = 136, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28747) ->
+    #item_base{id = 28747, name = lang:get("孔雀冥王碎片"),
+               type = 136, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28748) ->
+    #item_base{id = 28748, name = lang:get("倩女幽魂碎片"),
+               type = 136, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28749) ->
+    #item_base{id = 28749, name = lang:get("擎天神牛碎片"),
+               type = 136, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28750) ->
+    #item_base{id = 28750, name = lang:get("修罗王碎片"),
+               type = 136, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28751) ->
+    #item_base{id = 28751, name = lang:get("枭碎片"),
+               type = 136, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28752) ->
+    #item_base{id = 28752, name = lang:get("百花仙子碎片"),
+               type = 136, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28753) ->
+    #item_base{id = 28753, name = lang:get("六耳猕猴碎片"),
+               type = 136, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28754) ->
+    #item_base{id = 28754, name = lang:get("孙悟空碎片"),
+               type = 136, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28755) ->
+    #item_base{id = 28755, name = lang:get("仙兽万能碎片"),
+               type = 136, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28756) ->
+    #item_base{id = 28756, name = lang:get("圣兽万能碎片"),
+               type = 136, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28757) ->
+    #item_base{id = 28757, name = lang:get("玉兔碎片"),
+               type = 136, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28758) ->
+    #item_base{id = 28758, name = lang:get("公会议长碎片"),
+               type = 136, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28759) ->
+    #item_base{id = 28759, name = lang:get("教皇圣者碎片"),
+               type = 136, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28760) ->
+    #item_base{id = 28760, name = lang:get("利贝尔教官碎片"),
+               type = 136, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28761) ->
+    #item_base{id = 28761, name = lang:get("彩衣碎片"),
+               type = 136, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28762) ->
+    #item_base{id = 28762, name = lang:get("萌小乖碎片"),
+               type = 136, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28763) ->
+    #item_base{id = 28763, name = lang:get("导师助理碎片"),
+               type = 136, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(28764) ->
+    #item_base{id = 28764, name = lang:get("利贝利教官碎片"),
+               type = 136, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31100) ->
+    #item_base{id = 31100, name = lang:get("游梦麾旗"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 10300, 3, 1}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31101) ->
+    #item_base{id = 31101, name = lang:get("超能负荷"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 10300, 3, 1}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31102) ->
+    #item_base{id = 31102, name = lang:get("罔极之轮"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 10300, 3, 1}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31103) ->
+    #item_base{id = 31103, name = lang:get("秋日私语"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 10300, 3, 1}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31104) ->
+    #item_base{id = 31104, name = lang:get("紫渊魅影"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 10300, 3, 1}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31105) ->
+    #item_base{id = 31105, name = lang:get("琉璃冰羽"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 10300, 3, 1}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31106) ->
+    #item_base{id = 31106, name = lang:get("雍和容扇"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30025, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31107) ->
+    #item_base{id = 31107, name = lang:get("一梦罗曼"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 10300, 3, 1}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31200) ->
+    #item_base{id = 31200, name = lang:get("幻翼·游梦麾旗"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30019, 604800}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31201) ->
+    #item_base{id = 31201, name = lang:get("幻翼·游梦麾旗"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30019, 1296000}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31202) ->
+    #item_base{id = 31202, name = lang:get("幻翼·游梦麾旗"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30019, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31203) ->
+    #item_base{id = 31203, name = lang:get("幻翼·超能负荷"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30020, 604800}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31204) ->
+    #item_base{id = 31204, name = lang:get("幻翼·超能负荷"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30020, 1296000}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31205) ->
+    #item_base{id = 31205, name = lang:get("幻翼·超能负荷"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30020, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31206) ->
+    #item_base{id = 31206, name = lang:get("幻翼·罔极之轮"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30021, 604800}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31207) ->
+    #item_base{id = 31207, name = lang:get("幻翼·罔极之轮"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30021, 1296000}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31208) ->
+    #item_base{id = 31208, name = lang:get("幻翼·罔极之轮"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30021, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31209) ->
+    #item_base{id = 31209, name = lang:get("幻翼·秋日私语"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30022, 604800}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31210) ->
+    #item_base{id = 31210, name = lang:get("幻翼·秋日私语"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30022, 1296000}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31211) ->
+    #item_base{id = 31211, name = lang:get("幻翼·秋日私语"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30022, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31212) ->
+    #item_base{id = 31212, name = lang:get("幻翼·紫渊魅影"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30023, 604800}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31213) ->
+    #item_base{id = 31213, name = lang:get("幻翼·紫渊魅影"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30023, 1296000}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31214) ->
+    #item_base{id = 31214, name = lang:get("幻翼·紫渊魅影"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30023, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31215) ->
+    #item_base{id = 31215, name = lang:get("幻翼·琉璃冰羽"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 330024, 604800}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31216) ->
+    #item_base{id = 31216, name = lang:get("幻翼·琉璃冰羽"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30024, 1296000}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31217) ->
+    #item_base{id = 31217, name = lang:get("幻翼·琉璃冰羽"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30024, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31218) ->
+    #item_base{id = 31218, name = lang:get("幻翼·游梦麾旗"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30019, 7776000}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31219) ->
+    #item_base{id = 31219, name = lang:get("幻翼·雍和容扇"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30025, 604800}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31220) ->
+    #item_base{id = 31220, name = lang:get("幻翼·雍和容扇"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30025, 1296000}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31221) ->
+    #item_base{id = 31221, name = lang:get("幻翼·雍和容扇"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30025, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31222) ->
+    #item_base{id = 31222, name = lang:get("幻翼·一梦罗曼"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30026, 604800}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31223) ->
+    #item_base{id = 31223, name = lang:get("幻翼·一梦罗曼"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30026, 1296000}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31224) ->
+    #item_base{id = 31224, name = lang:get("幻翼·一梦罗曼"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30026, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31225) ->
+    #item_base{id = 31225, name = lang:get("一梦罗曼"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30026, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31228) ->
+    #item_base{id = 31228, name = lang:get("宇宙星轮"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30051, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31229) ->
+    #item_base{id = 31229, name = lang:get("风云变幻"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30052, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31230) ->
+    #item_base{id = 31230, name = lang:get("鲁班战翼"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30053, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31231) ->
+    #item_base{id = 31231, name = lang:get("深蓝之翼"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30054, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31232) ->
+    #item_base{id = 31232, name = lang:get("奏乐之光"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30055, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31234) ->
+    #item_base{id = 31234, name = lang:get("红粉诱惑"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30057, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31235) ->
+    #item_base{id = 31235, name = lang:get("游梦麾旗"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30019, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31236) ->
+    #item_base{id = 31236, name = lang:get("恶魔天使"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30027, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31237) ->
+    #item_base{id = 31237, name = lang:get("天玄翎翼"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30028, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31238) ->
+    #item_base{id = 31238, name = lang:get("未来之约"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30029, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31239) ->
+    #item_base{id = 31239, name = lang:get("极限神羽"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30030, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31240) ->
+    #item_base{id = 31240, name = lang:get("缠绵云翼"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30031, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31241) ->
+    #item_base{id = 31241, name = lang:get("旧欢如梦"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30032, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31242) ->
+    #item_base{id = 31242, name = lang:get("翡翠之翼"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30033, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31243) ->
+    #item_base{id = 31243, name = lang:get("紫煞"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30034, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31244) ->
+    #item_base{id = 31244, name = lang:get("金鹏展翅"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30035, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31245) ->
+    #item_base{id = 31245, name = lang:get("蔚蓝天空"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30036, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31246) ->
+    #item_base{id = 31246, name = lang:get("指环银翼"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30037, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31247) ->
+    #item_base{id = 31247, name = lang:get("黄金之翼"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30038, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31248) ->
+    #item_base{id = 31248, name = lang:get("决战黄沙"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30039, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31249) ->
+    #item_base{id = 31249, name = lang:get("恶魔印记"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30040, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31251) ->
+    #item_base{id = 31251, name = lang:get("苍穹之翼"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30041, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(31252) ->
+    #item_base{id = 31252, name = lang:get("幽蓝玄翼"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30042, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(50172) ->
+    #item_base{id = 50172, name = lang:get("中华小当家"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50173) ->
+    #item_base{id = 50173, name = lang:get("中华小当家"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50174) ->
+    #item_base{id = 50174, name = lang:get("风华正茂"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50175) ->
+    #item_base{id = 50175, name = lang:get("风华正茂"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50176) ->
+    #item_base{id = 50176, name = lang:get("沙滩派对"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50177) ->
+    #item_base{id = 50177, name = lang:get("沙滩派对"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50178) ->
+    #item_base{id = 50178, name = lang:get("学院新生"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50179) ->
+    #item_base{id = 50179, name = lang:get("学院新生"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50180) ->
+    #item_base{id = 50180, name = lang:get("爱宠特工"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50181) ->
+    #item_base{id = 50181, name = lang:get("爱宠特工"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50182) ->
+    #item_base{id = 50182, name = lang:get("星夜礼服"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50183) ->
+    #item_base{id = 50183, name = lang:get("星夜礼服"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50184) ->
+    #item_base{id = 50184, name = lang:get("屠龙勇士"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50185) ->
+    #item_base{id = 50185, name = lang:get("屠龙勇士"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50186) ->
+    #item_base{id = 50186, name = lang:get("小黄鸡吖"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50187) ->
+    #item_base{id = 50187, name = lang:get("小黄鸡吖"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50188) ->
+    #item_base{id = 50188, name = lang:get("漫游温泉"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50189) ->
+    #item_base{id = 50189, name = lang:get("漫游温泉"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50190) ->
+    #item_base{id = 50190, name = lang:get("落樱满座"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50191) ->
+    #item_base{id = 50191, name = lang:get("落樱满座"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50192) ->
+    #item_base{id = 50192, name = lang:get("春日水果茶"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50193) ->
+    #item_base{id = 50193, name = lang:get("春日水果茶"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50194) ->
+    #item_base{id = 50194, name = lang:get("皎如日星"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50195) ->
+    #item_base{id = 50195, name = lang:get("皎如日星"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50196) ->
+    #item_base{id = 50196, name = lang:get("花间少年"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(50197) ->
+    #item_base{id = 50197, name = lang:get("花间少年"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50198) ->
+    #item_base{id = 50198, name = lang:get("仲夏梦精灵"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(50199) ->
+    #item_base{id = 50199, name = lang:get("仲夏梦精灵"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50200) ->
+    #item_base{id = 50200, name = lang:get("狂欢派对"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(50201) ->
+    #item_base{id = 50201, name = lang:get("狂欢派对"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50202) ->
+    #item_base{id = 50202, name = lang:get("云霓甜梦"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(50203) ->
+    #item_base{id = 50203, name = lang:get("云霓甜梦"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50204) ->
+    #item_base{id = 50204, name = lang:get("时空猎人"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(50205) ->
+    #item_base{id = 50205, name = lang:get("时空猎人"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50206) ->
+    #item_base{id = 50206, name = lang:get("暗夜枫糖"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(50207) ->
+    #item_base{id = 50207, name = lang:get("暗夜枫糖"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50208) ->
+    #item_base{id = 50208, name = lang:get("梦境漫游者"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(50209) ->
+    #item_base{id = 50209, name = lang:get("梦境漫游者"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50210) ->
+    #item_base{id = 50210, name = lang:get("圣诞时光"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(50211) ->
+    #item_base{id = 50211, name = lang:get("圣诞时光"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50212) ->
+    #item_base{id = 50212, name = lang:get("鸿运羽裳"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(50213) ->
+    #item_base{id = 50213, name = lang:get("鸿运羽裳"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50214) ->
+    #item_base{id = 50214, name = lang:get("圣铠光辉"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(50215) ->
+    #item_base{id = 50215, name = lang:get("圣铠光辉"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50216) ->
+    #item_base{id = 50216, name = lang:get("偶像天团"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(50217) ->
+    #item_base{id = 50217, name = lang:get("偶像天团"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50218) ->
+    #item_base{id = 50218, name = lang:get("狐仙缘起"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(50219) ->
+    #item_base{id = 50219, name = lang:get("狐仙缘起"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50220) ->
+    #item_base{id = 50220, name = lang:get("青春礼遇"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(50221) ->
+    #item_base{id = 50221, name = lang:get("青春礼遇"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50222) ->
+    #item_base{id = 50222, name = lang:get("花样旅行者"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(50223) ->
+    #item_base{id = 50223, name = lang:get("花样旅行者"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50224) ->
+    #item_base{id = 50224, name = lang:get("泳池派对"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(50225) ->
+    #item_base{id = 50225, name = lang:get("泳池派对"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50226) ->
+    #item_base{id = 50226, name = lang:get("街头艺术家"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(50227) ->
+    #item_base{id = 50227, name = lang:get("街头艺术家"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50228) ->
+    #item_base{id = 50228, name = lang:get("奇幻太空喵"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(50229) ->
+    #item_base{id = 50229, name = lang:get("奇幻太空喵"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50230) ->
+    #item_base{id = 50230, name = lang:get("速度与激情"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(50231) ->
+    #item_base{id = 50231, name = lang:get("速度与激情"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50232) ->
+    #item_base{id = 50232, name = lang:get("青云碧鸢"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(50233) ->
+    #item_base{id = 50233, name = lang:get("青云碧鸢"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50234) ->
+    #item_base{id = 50234, name = lang:get("圣诞恋歌"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(50235) ->
+    #item_base{id = 50235, name = lang:get("圣诞恋歌"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50236) ->
+    #item_base{id = 50236, name = lang:get("鸾凤和鸣"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(50237) ->
+    #item_base{id = 50237, name = lang:get("鸾凤和鸣"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50238) ->
+    #item_base{id = 50238, name = lang:get("花之礼赞"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(50239) ->
+    #item_base{id = 50239, name = lang:get("花之礼赞"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50240) ->
+    #item_base{id = 50240, name = lang:get("鲤跃龙门"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(50241) ->
+    #item_base{id = 50241, name = lang:get("鲤跃龙门"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50242) ->
+    #item_base{id = 50242, name = lang:get("苍蓝慧星"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(50243) ->
+    #item_base{id = 50243, name = lang:get("苍蓝慧星"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(50300) ->
+    #item_base{id = 50300, name = lang:get("天煞孤星"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(50301) ->
+    #item_base{id = 50301, name = lang:get("天煞孤星"),
+               type = 52, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(51172) ->
+    #item_base{id = 51172, name = lang:get("中华小当家"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(51173) ->
+    #item_base{id = 51173, name = lang:get("中华小当家"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(51174) ->
+    #item_base{id = 51174, name = lang:get("风华正茂"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(51175) ->
+    #item_base{id = 51175, name = lang:get("风华正茂"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(51176) ->
+    #item_base{id = 51176, name = lang:get("沙滩派对"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(51177) ->
+    #item_base{id = 51177, name = lang:get("沙滩派对"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(51178) ->
+    #item_base{id = 51178, name = lang:get("学院新生"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(51179) ->
+    #item_base{id = 51179, name = lang:get("学院新生"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(51180) ->
+    #item_base{id = 51180, name = lang:get("爱宠特工"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(51181) ->
+    #item_base{id = 51181, name = lang:get("爱宠特工"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(51182) ->
+    #item_base{id = 51182, name = lang:get("星夜礼服"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(51183) ->
+    #item_base{id = 51183, name = lang:get("星夜礼服"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(51184) ->
+    #item_base{id = 51184, name = lang:get("屠龙勇士"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(51185) ->
+    #item_base{id = 51185, name = lang:get("屠龙勇士"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(51186) ->
+    #item_base{id = 51186, name = lang:get("小黄鸡吖"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(51187) ->
+    #item_base{id = 51187, name = lang:get("小黄鸡吖"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(51188) ->
+    #item_base{id = 51188, name = lang:get("漫游温泉"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(51189) ->
+    #item_base{id = 51189, name = lang:get("漫游温泉"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(51190) ->
+    #item_base{id = 51190, name = lang:get("落樱满座"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(51191) ->
+    #item_base{id = 51191, name = lang:get("落樱满座"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(51192) ->
+    #item_base{id = 51192, name = lang:get("春日水果茶"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(51193) ->
+    #item_base{id = 51193, name = lang:get("春日水果茶"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(51194) ->
+    #item_base{id = 51194, name = lang:get("皎如日星"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(51195) ->
+    #item_base{id = 51195, name = lang:get("皎如日星"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(51196) ->
+    #item_base{id = 51196, name = lang:get("花间少年"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(51197) ->
+    #item_base{id = 51197, name = lang:get("花间少年"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(51198) ->
+    #item_base{id = 51198, name = lang:get("仲夏梦精灵"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(51199) ->
+    #item_base{id = 51199, name = lang:get("仲夏梦精灵"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(51200) ->
+    #item_base{id = 51200, name = lang:get("狂欢派对"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(51201) ->
+    #item_base{id = 51201, name = lang:get("狂欢派对"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(51202) ->
+    #item_base{id = 51202, name = lang:get("云霓甜梦"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(51203) ->
+    #item_base{id = 51203, name = lang:get("云霓甜梦"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(51204) ->
+    #item_base{id = 51204, name = lang:get("时空猎人"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(51205) ->
+    #item_base{id = 51205, name = lang:get("时空猎人"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(51206) ->
+    #item_base{id = 51206, name = lang:get("暗夜枫糖"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(51207) ->
+    #item_base{id = 51207, name = lang:get("暗夜枫糖"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(51208) ->
+    #item_base{id = 51208, name = lang:get("梦境漫游者"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(51209) ->
+    #item_base{id = 51209, name = lang:get("梦境漫游者"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(51210) ->
+    #item_base{id = 51210, name = lang:get("圣诞时光"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(51211) ->
+    #item_base{id = 51211, name = lang:get("圣诞时光"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(51212) ->
+    #item_base{id = 51212, name = lang:get("鸿运羽裳"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(51213) ->
+    #item_base{id = 51213, name = lang:get("鸿运羽裳"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(51214) ->
+    #item_base{id = 51214, name = lang:get("圣铠光辉"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(51215) ->
+    #item_base{id = 51215, name = lang:get("圣铠光辉"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(51216) ->
+    #item_base{id = 51216, name = lang:get("偶像天团"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(51217) ->
+    #item_base{id = 51217, name = lang:get("偶像天团"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(51218) ->
+    #item_base{id = 51218, name = lang:get("狐仙缘起"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(51219) ->
+    #item_base{id = 51219, name = lang:get("狐仙缘起"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(51220) ->
+    #item_base{id = 51220, name = lang:get("青春礼遇"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(51221) ->
+    #item_base{id = 51221, name = lang:get("青春礼遇"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(51222) ->
+    #item_base{id = 51222, name = lang:get("花样旅行者"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(51223) ->
+    #item_base{id = 51223, name = lang:get("花样旅行者"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(51224) ->
+    #item_base{id = 51224, name = lang:get("泳池派对"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(51225) ->
+    #item_base{id = 51225, name = lang:get("泳池派对"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(51226) ->
+    #item_base{id = 51226, name = lang:get("街头艺术家"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(51227) ->
+    #item_base{id = 51227, name = lang:get("街头艺术家"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(51228) ->
+    #item_base{id = 51228, name = lang:get("奇幻太空喵"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(51229) ->
+    #item_base{id = 51229, name = lang:get("奇幻太空喵"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(51230) ->
+    #item_base{id = 51230, name = lang:get("速度与激情"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(51231) ->
+    #item_base{id = 51231, name = lang:get("速度与激情"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(51232) ->
+    #item_base{id = 51232, name = lang:get("青云碧鸢"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(51233) ->
+    #item_base{id = 51233, name = lang:get("青云碧鸢"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(51234) ->
+    #item_base{id = 51234, name = lang:get("圣诞恋歌"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(51235) ->
+    #item_base{id = 51235, name = lang:get("圣诞恋歌"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(51236) ->
+    #item_base{id = 51236, name = lang:get("鸾凤和鸣"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(51237) ->
+    #item_base{id = 51237, name = lang:get("鸾凤和鸣"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(51238) ->
+    #item_base{id = 51238, name = lang:get("花之礼赞"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(51239) ->
+    #item_base{id = 51239, name = lang:get("花之礼赞"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(51240) ->
+    #item_base{id = 51240, name = lang:get("鲤跃龙门"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(51241) ->
+    #item_base{id = 51241, name = lang:get("鲤跃龙门"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(51242) ->
+    #item_base{id = 51242, name = lang:get("苍蓝彗星"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(51243) ->
+    #item_base{id = 51243, name = lang:get("苍蓝彗星"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(51300) ->
+    #item_base{id = 51300, name = lang:get("天煞孤星"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(51301) ->
+    #item_base{id = 51301, name = lang:get("天煞孤星"),
+               type = 53, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(52097) ->
+    #item_base{id = 52097, name = lang:get("猪猪米缸"),
+               type = 54, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(52098) ->
+    #item_base{id = 52098, name = lang:get("油纸伞"),
+               type = 54, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(52099) ->
+    #item_base{id = 52099, name = lang:get("天龙宝宝"),
+               type = 54, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(52100) ->
+    #item_base{id = 52100, name = lang:get("微型反应堆"),
+               type = 54, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(52101) ->
+    #item_base{id = 52101, name = lang:get("鲨鱼冲浪板"),
+               type = 54, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(52102) ->
+    #item_base{id = 52102, name = lang:get("潜龙之证"),
+               type = 54, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(52103) ->
+    #item_base{id = 52103, name = lang:get("开学啦"),
+               type = 54, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(52104) ->
+    #item_base{id = 52104, name = lang:get("绝魔之斩"),
+               type = 54, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(52105) ->
+    #item_base{id = 52105, name = lang:get("十字圣心"),
+               type = 54, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(52106) ->
+    #item_base{id = 52106, name = lang:get("琉璃星梦"),
+               type = 54, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(52107) ->
+    #item_base{id = 52107, name = lang:get("恶魔小尾巴"),
+               type = 54, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(52108) ->
+    #item_base{id = 52108, name = lang:get("龙门圣环"),
+               type = 54, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(52109) ->
+    #item_base{id = 52109, name = lang:get("小破蛋"),
+               type = 54, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(52110) ->
+    #item_base{id = 52110, name = lang:get("镂月裁云"),
+               type = 54, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(52111) ->
+    #item_base{id = 52111, name = lang:get("华清蒲扇"),
+               type = 54, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(52112) ->
+    #item_base{id = 52112, name = lang:get("雾樱灯"),
+               type = 54, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(52113) ->
+    #item_base{id = 52113, name = lang:get("华灯初上"),
+               type = 54, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(52114) ->
+    #item_base{id = 52114, name = lang:get("奶熊甜筒"),
+               type = 54, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(53140) ->
+    #item_base{id = 53140, name = lang:get("传统顶碗"),
+               type = 56, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(53141) ->
+    #item_base{id = 53141, name = lang:get("游龙"),
+               type = 56, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(53142) ->
+    #item_base{id = 53142, name = lang:get("戏凤"),
+               type = 56, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(53143) ->
+    #item_base{id = 53143, name = lang:get("熊猫果果"),
+               type = 56, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(53144) ->
+    #item_base{id = 53144, name = lang:get("粒子通讯器"),
+               type = 56, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(53145) ->
+    #item_base{id = 53145, name = lang:get("晚风凉花"),
+               type = 56, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(53146) ->
+    #item_base{id = 53146, name = lang:get("斜阳消暑"),
+               type = 56, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(53147) ->
+    #item_base{id = 53147, name = lang:get("祥云之引"),
+               type = 56, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(53148) ->
+    #item_base{id = 53148, name = lang:get("元气满满"),
+               type = 56, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(53149) ->
+    #item_base{id = 53149, name = lang:get("恶灵退散"),
+               type = 56, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(53150) ->
+    #item_base{id = 53150, name = lang:get("高冷护目镜"),
+               type = 56, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(53151) ->
+    #item_base{id = 53151, name = lang:get("猫娘护士帽"),
+               type = 56, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(53152) ->
+    #item_base{id = 53152, name = lang:get("盛装皇冠"),
+               type = 56, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(53153) ->
+    #item_base{id = 53153, name = lang:get("盛装皇冠"),
+               type = 56, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(53154) ->
+    #item_base{id = 53154, name = lang:get("魔灵绷带"),
+               type = 56, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(53155) ->
+    #item_base{id = 53155, name = lang:get("魔灵绷带"),
+               type = 56, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(53156) ->
+    #item_base{id = 53156, name = lang:get("龙犄"),
+               type = 56, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(53157) ->
+    #item_base{id = 53157, name = lang:get("龙犄"),
+               type = 56, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(53158) ->
+    #item_base{id = 53158, name = lang:get("萌萌小黄鸡"),
+               type = 56, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(53159) ->
+    #item_base{id = 53159, name = lang:get("萌萌小黄鸡"),
+               type = 56, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(53160) ->
+    #item_base{id = 53160, name = lang:get("顽熊绒帽"),
+               type = 56, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(53161) ->
+    #item_base{id = 53161, name = lang:get("魅影假面"),
+               type = 56, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(53162) ->
+    #item_base{id = 53162, name = lang:get("魅影假面"),
+               type = 56, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(53163) ->
+    #item_base{id = 53163, name = lang:get("福到啦"),
+               type = 56, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(53164) ->
+    #item_base{id = 53164, name = lang:get("绒绒猫耳"),
+               type = 56, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(53165) ->
+    #item_base{id = 53165, name = lang:get("菠萝草帽"),
+               type = 56, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(53166) ->
+    #item_base{id = 53166, name = lang:get("菠萝草帽"),
+               type = 56, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(71560) ->
+    #item_base{id = 71560, name = lang:get("1千至尊英雄宝石礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71561) ->
+    #item_base{id = 71561, name = lang:get("1万至尊英雄宝石礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71575) ->
+    #item_base{id = 71575, name = lang:get("黄金头饰自选礼盒"),
+               type = 159, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71576) ->
+    #item_base{id = 71576, name = lang:get("钻石头饰自选礼盒"),
+               type = 159, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71577) ->
+    #item_base{id = 71577, name = lang:get("青铜背饰自选礼盒"),
+               type = 159, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71578) ->
+    #item_base{id = 71578, name = lang:get("白银背饰自选礼盒"),
+               type = 159, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71579) ->
+    #item_base{id = 71579, name = lang:get("黄金背饰自选礼盒"),
+               type = 159, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71580) ->
+    #item_base{id = 71580, name = lang:get("钻石背饰自选礼盒"),
+               type = 159, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71581) ->
+    #item_base{id = 71581, name = lang:get("超级瞬击自选礼包"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71582) ->
+    #item_base{id = 71582, name = lang:get("神级瞬击自选礼包"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71583) ->
+    #item_base{id = 71583, name = lang:get("100个珍珠袋子礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71584) ->
+    #item_base{id = 71584, name = lang:get("100个英勇蓝魂礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71585) ->
+    #item_base{id = 71585, name = lang:get("超级技能自选礼包"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71586) ->
+    #item_base{id = 71586, name = lang:get("神级技能自选礼包"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71587) ->
+    #item_base{id = 71587, name = lang:get("超级印记自选礼包"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71588) ->
+    #item_base{id = 71588, name = lang:get("超品普通内丹自选"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71589) ->
+    #item_base{id = 71589, name = lang:get("超品高级内丹自选"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71590) ->
+    #item_base{id = 71590, name = lang:get("超级技能随机礼包"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71591) ->
+    #item_base{id = 71591, name = lang:get("神级技能随机"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71592) ->
+    #item_base{id = 71592, name = lang:get("超级印记随机礼包"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71593) ->
+    #item_base{id = 71593, name = lang:get("超品普通内丹随机"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71594) ->
+    #item_base{id = 71594, name = lang:get("超品高级内丹随机"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71595) ->
+    #item_base{id = 71595, name = lang:get("钻石坐骑碎片随机"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71596) ->
+    #item_base{id = 71596, name = lang:get("钻石坐骑碎片自选"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71597) ->
+    #item_base{id = 71597, name = lang:get("钻石时装随机礼盒"),
+               type = 111, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71598) ->
+    #item_base{id = 71598, name = lang:get("钻石翅膀随机礼盒"),
+               type = 111, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71599) ->
+    #item_base{id = 71599, name = lang:get("黄金武饰随机礼盒"),
+               type = 111, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71600) ->
+    #item_base{id = 71600, name = lang:get("罗刹之魂"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71601) ->
+    #item_base{id = 71601, name = lang:get("精卫之心"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71603) ->
+    #item_base{id = 71603, name = lang:get("战神之魂"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71604) ->
+    #item_base{id = 71604, name = lang:get("神猿之心"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71605) ->
+    #item_base{id = 71605, name = lang:get("剑尊之魂"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71606) ->
+    #item_base{id = 71606, name = lang:get("罗刹魂"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71607) ->
+    #item_base{id = 71607, name = lang:get("精卫魂"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71609) ->
+    #item_base{id = 71609, name = lang:get("战神魂"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71610) ->
+    #item_base{id = 71610, name = lang:get("神猿魂"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71611) ->
+    #item_base{id = 71611, name = lang:get("剑尊魂"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71612) ->
+    #item_base{id = 71612, name = lang:get("君王之心"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71613) ->
+    #item_base{id = 71613, name = lang:get("君王魂"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71614) ->
+    #item_base{id = 71614, name = lang:get("中华小当家·女"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50172,13}, {51172,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(71615) ->
+    #item_base{id = 71615, name = lang:get("青铜翅膀随机礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71616) ->
+    #item_base{id = 71616, name = lang:get("白银翅膀随机礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71617) ->
+    #item_base{id = 71617, name = lang:get("黄金翅膀随机礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71618) ->
+    #item_base{id = 71618, name = lang:get("中华小当家·男"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50173,13}, {51173,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(71619) ->
+    #item_base{id = 71619, name = lang:get("青铜战斗称号随机"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71620) ->
+    #item_base{id = 71620, name = lang:get("白银战斗称号随机"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71621) ->
+    #item_base{id = 71621, name = lang:get("黄金战斗称号随机"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71622) ->
+    #item_base{id = 71622, name = lang:get("青铜甜蜜称号随机"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71623) ->
+    #item_base{id = 71623, name = lang:get("白银甜蜜称号随机"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71624) ->
+    #item_base{id = 71624, name = lang:get("青铜魅力称号随机"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71625) ->
+    #item_base{id = 71625, name = lang:get("青铜节日称号随机"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71626) ->
+    #item_base{id = 71626, name = lang:get("青铜财富称号随机"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71634) ->
+    #item_base{id = 71634, name = lang:get("仙兽之心随机1"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71635) ->
+    #item_base{id = 71635, name = lang:get("仙兽之心随机2"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71636) ->
+    #item_base{id = 71636, name = lang:get("仙兽之心随机3"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71637) ->
+    #item_base{id = 71637, name = lang:get("仙兽之心自选1"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71638) ->
+    #item_base{id = 71638, name = lang:get("仙兽之心自选2"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71639) ->
+    #item_base{id = 71639, name = lang:get("仙兽之心自选3"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71640) ->
+    #item_base{id = 71640, name = lang:get("仙兽超瞬击随机1"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71641) ->
+    #item_base{id = 71641, name = lang:get("圣兽超级瞬击随机"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71642) ->
+    #item_base{id = 71642, name = lang:get("仙兽神瞬击随机1"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71643) ->
+    #item_base{id = 71643, name = lang:get("圣兽神级瞬击随机"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71644) ->
+    #item_base{id = 71644, name = lang:get("仙兽超瞬击自选1"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71645) ->
+    #item_base{id = 71645, name = lang:get("圣兽超级瞬击自选"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71646) ->
+    #item_base{id = 71646, name = lang:get("仙兽神瞬击自选1"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71647) ->
+    #item_base{id = 71647, name = lang:get("圣兽神级瞬击自选"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71648) ->
+    #item_base{id = 71648, name = lang:get("仙兽超瞬击随机2"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71649) ->
+    #item_base{id = 71649, name = lang:get("仙兽神瞬击随机2"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71650) ->
+    #item_base{id = 71650, name = lang:get("仙兽自选礼盒"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71651) ->
+    #item_base{id = 71651, name = lang:get("仙兽超瞬击自选2"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71652) ->
+    #item_base{id = 71652, name = lang:get("仙兽神瞬击自选2"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71654) ->
+    #item_base{id = 71654, name = lang:get("仙兽进阶自选A"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71655) ->
+    #item_base{id = 71655, name = lang:get("钻石翅膀自选礼盒"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71660) ->
+    #item_base{id = 71660, name = lang:get("钻石坐骑随机礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71661) ->
+    #item_base{id = 71661, name = lang:get("仙兽进阶自选B"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71662) ->
+    #item_base{id = 71662, name = lang:get("钻石坐骑自选礼盒"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71663) ->
+    #item_base{id = 71663, name = lang:get("仙兽进阶自选C"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71664) ->
+    #item_base{id = 71664, name = lang:get("仙兽进阶自选D"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71665) ->
+    #item_base{id = 71665, name = lang:get("稀有坐骑随机1"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71666) ->
+    #item_base{id = 71666, name = lang:get("稀有坐骑自选1"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71667) ->
+    #item_base{id = 71667, name = lang:get("稀有坐骑随机2"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71668) ->
+    #item_base{id = 71668, name = lang:get("稀有坐骑自选2"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71680) ->
+    #item_base{id = 71680, name = lang:get("稀有时装随机1"),
+               type = 111, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71681) ->
+    #item_base{id = 71681, name = lang:get("钻石时装自选礼盒"),
+               type = 159, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71682) ->
+    #item_base{id = 71682, name = lang:get("稀有时装自选1"),
+               type = 159, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71683) ->
+    #item_base{id = 71683, name = lang:get("妖王钻石宝盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71684) ->
+    #item_base{id = 71684, name = lang:get("银月钻石宝盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71685) ->
+    #item_base{id = 71685, name = lang:get("极品幻化果随机礼包"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71690) ->
+    #item_base{id = 71690, name = lang:get("稀有翅膀自选1"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71691) ->
+    #item_base{id = 71691, name = lang:get("稀有翅膀自选2"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71692) ->
+    #item_base{id = 71692, name = lang:get("稀有翅膀自选3"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71700) ->
+    #item_base{id = 71700, name = lang:get("勇士青铜礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71701) ->
+    #item_base{id = 71701, name = lang:get("勇士白银礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71702) ->
+    #item_base{id = 71702, name = lang:get("勇士黄金礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71703) ->
+    #item_base{id = 71703, name = lang:get("风华正茂·女"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50174,13}, {51174,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(71704) ->
+    #item_base{id = 71704, name = lang:get("勇士钻石礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71705) ->
+    #item_base{id = 71705, name = lang:get("荣耀青铜礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71706) ->
+    #item_base{id = 71706, name = lang:get("荣耀白银礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71707) ->
+    #item_base{id = 71707, name = lang:get("风华正茂·男"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50175,13}, {51175,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(71708) ->
+    #item_base{id = 71708, name = lang:get("荣耀黄金礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71709) ->
+    #item_base{id = 71709, name = lang:get("荣耀钻石礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71710) ->
+    #item_base{id = 71710, name = lang:get("峡谷青铜礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71711) ->
+    #item_base{id = 71711, name = lang:get("峡谷白银礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71712) ->
+    #item_base{id = 71712, name = lang:get("峡谷黄金礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71713) ->
+    #item_base{id = 71713, name = lang:get("峡谷钻石礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71714) ->
+    #item_base{id = 71714, name = lang:get("公会青铜财富礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71715) ->
+    #item_base{id = 71715, name = lang:get("公会白银财富礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71716) ->
+    #item_base{id = 71716, name = lang:get("龙舟战鼓"),
+               type = 0, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71717) ->
+    #item_base{id = 71717, name = lang:get("公会黄金财富礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71718) ->
+    #item_base{id = 71718, name = lang:get("公会钻石财富礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71719) ->
+    #item_base{id = 71719, name = lang:get("段位首胜战神礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71720) ->
+    #item_base{id = 71720, name = lang:get("段位五战战神礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71721) ->
+    #item_base{id = 71721, name = lang:get("段位黄金战神礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71722) ->
+    #item_base{id = 71722, name = lang:get("段位钻石战神礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71723) ->
+    #item_base{id = 71723, name = lang:get("巅峰青铜礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71724) ->
+    #item_base{id = 71724, name = lang:get("巅峰白银礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71725) ->
+    #item_base{id = 71725, name = lang:get("巅峰黄金礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71726) ->
+    #item_base{id = 71726, name = lang:get("巅峰钻石礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71727) ->
+    #item_base{id = 71727, name = lang:get("武道青铜礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71728) ->
+    #item_base{id = 71728, name = lang:get("武道白银礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71729) ->
+    #item_base{id = 71729, name = lang:get("武道黄金礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71730) ->
+    #item_base{id = 71730, name = lang:get("武道钻石礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71731) ->
+    #item_base{id = 71731, name = lang:get("公会青铜工资礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71732) ->
+    #item_base{id = 71732, name = lang:get("公会白银工资礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71733) ->
+    #item_base{id = 71733, name = lang:get("公会黄金工资礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71734) ->
+    #item_base{id = 71734, name = lang:get("公会钻石工资礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71765) ->
+    #item_base{id = 71765, name = lang:get("沙滩派对·女"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50176,13}, {51176,13}}, {28, 15}], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(71769) ->
+    #item_base{id = 71769, name = lang:get("沙滩派对·男"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50177,13}, {51177,13}}, {28, 15}], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(71800) ->
+    #item_base{id = 71800, name = lang:get("蓝钻5千万"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71801) ->
+    #item_base{id = 71801, name = lang:get("星辰积分3千万"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71802) ->
+    #item_base{id = 71802, name = lang:get("蓝钻10亿"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71803) ->
+    #item_base{id = 71803, name = lang:get("星辰积分10亿"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71804) ->
+    #item_base{id = 71804, name = lang:get("翅膀认证宝典"),
+               type = 0, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71805) ->
+    #item_base{id = 71805, name = lang:get("物防圣盾"),
+               type = 100, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [{3, 67129}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71806) ->
+    #item_base{id = 71806, name = lang:get("仙兽醒觉丹"),
+               type = 164, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [{27, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71807) ->
+    #item_base{id = 71807, name = lang:get("神之物免"),
+               type = 100, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [{3, 67134}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71808) ->
+    #item_base{id = 71808, name = lang:get("神之魔免"),
+               type = 100, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [{3, 67135}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71829) ->
+    #item_base{id = 71829, name = lang:get("学院新生·女"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50178,13}, {51178,13}}, {28, 5}], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(71833) ->
+    #item_base{id = 71833, name = lang:get("学院新生·男"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50179,13}, {51179,13}}, {28, 5}], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(71842) ->
+    #item_base{id = 71842, name = lang:get("凌云魔法扇"),
+               type = 0, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(71889) ->
+    #item_base{id = 71889, name = lang:get("爱宠特工·女"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50180,13}, {51180,13}}, {28, 5}], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(71893) ->
+    #item_base{id = 71893, name = lang:get("爱宠特工·男"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50181,13}, {51181,13}}, {28, 5}], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(71960) ->
+    #item_base{id = 71960, name = lang:get("星夜礼服·女"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50182,13}, {51182,13}}, {28, 12}], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(71964) ->
+    #item_base{id = 71964, name = lang:get("星夜礼服·男"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50183,13}, {51183,13}}, {28, 12}], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(71977) ->
+    #item_base{id = 71977, name = lang:get("奇巧风铃"),
+               type = 0, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(72000) ->
+    #item_base{id = 72000, name = lang:get("萌宠幻想内测宝箱"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(72001) ->
+    #item_base{id = 72001, name = lang:get("萌宠幻想开服礼1"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(72002) ->
+    #item_base{id = 72002, name = lang:get("萌宠幻想开服礼2"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(72003) ->
+    #item_base{id = 72003, name = lang:get("萌宠幻想开服礼3"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(72004) ->
+    #item_base{id = 72004, name = lang:get("萌宠幻想开服礼4"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(72005) ->
+    #item_base{id = 72005, name = lang:get("萌宠幻想开服礼5"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(72006) ->
+    #item_base{id = 72006, name = lang:get("秋风人人爱美大礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(72007) ->
+    #item_base{id = 72007, name = lang:get("秋风我有称号大礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(72008) ->
+    #item_base{id = 72008, name = lang:get("秋风仙兽自选大礼盒1"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(72009) ->
+    #item_base{id = 72009, name = lang:get("秋风仙兽自选大礼盒2"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(72017) ->
+    #item_base{id = 72017, name = lang:get("屠龙勇士·女"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50184,13}, {51184,13}}, {28, 15}], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(72021) ->
+    #item_base{id = 72021, name = lang:get("屠龙勇士·男"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50185,13}, {51185,13}}, {28, 15}], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(72111) ->
+    #item_base{id = 72111, name = lang:get("小黄鸡吖·女"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50186,13}, {51186,13}}, {28, 5}], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(72115) ->
+    #item_base{id = 72115, name = lang:get("小黄鸡吖·男"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50187,13}, {51187,13}}, {28, 5}], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(72128) ->
+    #item_base{id = 72128, name = lang:get("拐杖糖果"),
+               type = 0, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(72175) ->
+    #item_base{id = 72175, name = lang:get("漫游温泉·女"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50188,13}, {51188,13}}, {28, 5}], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(72179) ->
+    #item_base{id = 72179, name = lang:get("漫游温泉·男"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50189,13}, {51189,13}}, {28, 5}], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(72262) ->
+    #item_base{id = 72262, name = lang:get("落樱满座·女"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50190,13}, {51190,13}}, {28, 15}], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(72266) ->
+    #item_base{id = 72266, name = lang:get("落樱满座·男"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50191,13}, {51191,13}}, {28, 15}], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(72279) ->
+    #item_base{id = 72279, name = lang:get("财运铃铛"),
+               type = 0, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(72280) ->
+    #item_base{id = 72280, name = lang:get("坐骑兑换票"),
+               type = 0, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(72281) ->
+    #item_base{id = 72281, name = lang:get("马龙石"),
+               type = 0, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(72282) ->
+    #item_base{id = 72282, name = lang:get("魔龙石"),
+               type = 0, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(72283) ->
+    #item_base{id = 72283, name = lang:get("圣龙石"),
+               type = 0, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(72284) ->
+    #item_base{id = 72284, name = lang:get("冰龙石"),
+               type = 0, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(72285) ->
+    #item_base{id = 72285, name = lang:get("超级宠物进修丹"),
+               type = 117, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [{27, 1}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(72300) ->
+    #item_base{id = 72300, name = lang:get("宠物进修丹"),
+               type = 117, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [{27, 1}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(72301) ->
+    #item_base{id = 72301, name = lang:get("高级宠物进修丹"),
+               type = 117, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [{27, 1}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(72302) ->
+    #item_base{id = 72302, name = lang:get("高级成长丹"),
+               type = 122, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(72303) ->
+    #item_base{id = 72303, name = lang:get("超级成长丹"),
+               type = 122, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(72304) ->
+    #item_base{id = 72304, name = lang:get("春日水果茶·女"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50192,13}, {51192,13}}, {28, 15}], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(72305) ->
+    #item_base{id = 72305, name = lang:get("绿豆天资丹"),
+               type = 121, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [{18, 2}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(72306) ->
+    #item_base{id = 72306, name = lang:get("红豆天资丹"),
+               type = 121, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [{18, 3}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(72307) ->
+    #item_base{id = 72307, name = lang:get("芝麻天资丹"),
+               type = 121, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [{18, 1}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(72308) ->
+    #item_base{id = 72308, name = lang:get("春日水果茶·男"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50193,13}, {51193,13}}, {28, 15}], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(72309) ->
+    #item_base{id = 72309, name = lang:get("豆沙天资丹"),
+               type = 121, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [{18, 4}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(72310) ->
+    #item_base{id = 72310, name = lang:get("莲蓉天资丹"),
+               type = 121, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [{18, 5}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(72311) ->
+    #item_base{id = 72311, name = lang:get("香蕉天资丹"),
+               type = 121, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [{18, 2}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(72312) ->
+    #item_base{id = 72312, name = lang:get("草莓天资丹"),
+               type = 121, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [{18, 3}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(72313) ->
+    #item_base{id = 72313, name = lang:get("西瓜天资丹"),
+               type = 121, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [{18, 1}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(72314) ->
+    #item_base{id = 72314, name = lang:get("菠萝天资丹"),
+               type = 121, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [{18, 4}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(72315) ->
+    #item_base{id = 72315, name = lang:get("榴莲天资丹"),
+               type = 121, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [{18, 5}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(72316) ->
+    #item_base{id = 72316, name = lang:get("玫瑰莲蓉月饼"),
+               type = 0, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [{28, 1}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(72317) ->
+    #item_base{id = 72317, name = lang:get("抹茶杏仁月饼"),
+               type = 0, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [{28, 1}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(72370) ->
+    #item_base{id = 72370, name = lang:get("皎如日星·女"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50194,13}, {51194,13}}, {28, 15}], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(72374) ->
+    #item_base{id = 72374, name = lang:get("皎如日星·男"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50195,13}, {51195,13}}, {28, 15}], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(72375) ->
+    #item_base{id = 72375, name = lang:get("花间少年·女"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50196,13}, {51196,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(72376) ->
+    #item_base{id = 72376, name = lang:get("花间少年·男"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50197,13}, {51197,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(72377) ->
+    #item_base{id = 72377, name = lang:get("仲夏梦精灵·女"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50198,13}, {51198,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(72378) ->
+    #item_base{id = 72378, name = lang:get("仲夏梦精灵·男"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50199,13}, {51199,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(72379) ->
+    #item_base{id = 72379, name = lang:get("狂欢派对·女"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50200,13}, {51200,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(72380) ->
+    #item_base{id = 72380, name = lang:get("狂欢派对·男"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50201,13}, {51201,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(72381) ->
+    #item_base{id = 72381, name = lang:get("云霓甜梦·女"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50202,13}, {51202,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(72382) ->
+    #item_base{id = 72382, name = lang:get("云霓甜梦·男"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50203,13}, {51203,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(72383) ->
+    #item_base{id = 72383, name = lang:get("时空猎人·女"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50204,13}, {51204,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(72384) ->
+    #item_base{id = 72384, name = lang:get("时空猎人·男"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50205,13}, {51205,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(72385) ->
+    #item_base{id = 72385, name = lang:get("暗夜枫糖·女"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50206,13}, {51206,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(72386) ->
+    #item_base{id = 72386, name = lang:get("暗夜枫糖·男"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50207,13}, {51207,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(72387) ->
+    #item_base{id = 72387, name = lang:get("梦境漫游者·女"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50208,13}, {51208,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(72388) ->
+    #item_base{id = 72388, name = lang:get("梦境漫游者·男"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50209,13}, {51209,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(72389) ->
+    #item_base{id = 72389, name = lang:get("圣诞时光·女"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50210,13}, {51210,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(72390) ->
+    #item_base{id = 72390, name = lang:get("圣诞时光·男"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50211,13}, {51211,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(72391) ->
+    #item_base{id = 72391, name = lang:get("鸿运羽裳·女"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50212,13}, {51212,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(72392) ->
+    #item_base{id = 72392, name = lang:get("鸿运羽裳·男"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50213,13}, {51213,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(72393) ->
+    #item_base{id = 72393, name = lang:get("圣铠光辉·女"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50214,13}, {51214,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(72394) ->
+    #item_base{id = 72394, name = lang:get("圣铠光辉·男"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50215,13}, {51215,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(72395) ->
+    #item_base{id = 72395, name = lang:get("偶像天团·女"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50216,13}, {51216,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(72396) ->
+    #item_base{id = 72396, name = lang:get("偶像天团·男"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50217,13}, {51217,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(72397) ->
+    #item_base{id = 72397, name = lang:get("狐仙缘起·女"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50218,13}, {51218,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(72398) ->
+    #item_base{id = 72398, name = lang:get("狐仙缘起·男"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50219,13}, {51219,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(72399) ->
+    #item_base{id = 72399, name = lang:get("天煞孤星·女"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50300,13}, {51300,13}}, {28, 28}], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(72400) ->
+    #item_base{id = 72400, name = lang:get("天煞孤星·男"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50301,13}, {51301,13}}, {28, 28}], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(72401) ->
+    #item_base{id = 72401, name = lang:get("苍蓝彗星·女"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50242,13}, {51242,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(72402) ->
+    #item_base{id = 72402, name = lang:get("苍蓝彗星·男"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50243,13}, {51243,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(72403) ->
+    #item_base{id = 72403, name = lang:get("鲤跃龙门·女"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50240,13}, {51240,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(72404) ->
+    #item_base{id = 72404, name = lang:get("鲤跃龙门·男"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50241,13}, {51241,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(72405) ->
+    #item_base{id = 72405, name = lang:get("花之礼赞·女"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50238,13}, {51238,13}}, {28, 28}], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(72406) ->
+    #item_base{id = 72406, name = lang:get("花之礼赞·男"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50239,13}, {51239,13}}, {28, 28}], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(72407) ->
+    #item_base{id = 72407, name = lang:get("鸾凤和鸣·女"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50236,13}, {51236,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(72408) ->
+    #item_base{id = 72408, name = lang:get("鸾凤和鸣·男"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50237,13}, {51237,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(72409) ->
+    #item_base{id = 72409, name = lang:get("圣诞恋歌·女"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50234,13}, {51234,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(72410) ->
+    #item_base{id = 72410, name = lang:get("圣诞恋歌·男"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50235,13}, {51235,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(72411) ->
+    #item_base{id = 72411, name = lang:get("青云碧鸢·女"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50232,13}, {51232,13}}, {28, 28}], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(72412) ->
+    #item_base{id = 72412, name = lang:get("青云碧鸢·男"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50233,13}, {51233,13}}, {28, 28}], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(72413) ->
+    #item_base{id = 72413, name = lang:get("速度与激情·女"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50230,13}, {51230,13}}, {28, 28}], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(72414) ->
+    #item_base{id = 72414, name = lang:get("速度与激情·男"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50231,13}, {51231,13}}, {28, 28}], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(72415) ->
+    #item_base{id = 72415, name = lang:get("奇幻太空喵·女"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50228,13}, {51228,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(72416) ->
+    #item_base{id = 72416, name = lang:get("奇幻太空喵·男"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50229,13}, {51229,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(72417) ->
+    #item_base{id = 72417, name = lang:get("街头艺术家·女"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50226,13}, {51226,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(72418) ->
+    #item_base{id = 72418, name = lang:get("街头艺术家·男"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50227,13}, {51227,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(72419) ->
+    #item_base{id = 72419, name = lang:get("泳池派对·女"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50224,13}, {51224,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(72420) ->
+    #item_base{id = 72420, name = lang:get("泳池派对·男"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50225,13}, {51225,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(72421) ->
+    #item_base{id = 72421, name = lang:get("花样旅行者·女"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50222,13}, {51222,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(72422) ->
+    #item_base{id = 72422, name = lang:get("花样旅行者·男"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50223,13}, {51223,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(72423) ->
+    #item_base{id = 72423, name = lang:get("青春礼遇·女"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50220,13}, {51220,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 0, alchemy = 0};
+get(72424) ->
+    #item_base{id = 72424, name = lang:get("青春礼遇·男"),
+               type = 0, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {50221,13}, {51221,13}}, {28, 20}], lev = 1,
+               classes = 0, sex = 1, alchemy = 0};
+get(73000) ->
+    #item_base{id = 73000, name = lang:get("11级红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73001) ->
+    #item_base{id = 73001, name = lang:get("11级物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73002) ->
+    #item_base{id = 73002, name = lang:get("11级魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73003) ->
+    #item_base{id = 73003, name = lang:get("11级物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73004) ->
+    #item_base{id = 73004, name = lang:get("11级魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73005) ->
+    #item_base{id = 73005, name = lang:get("11级风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73006) ->
+    #item_base{id = 73006, name = lang:get("11级蓝宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73007) ->
+    #item_base{id = 73007, name = lang:get("11级治愈石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73008) ->
+    #item_base{id = 73008, name = lang:get("12级红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73009) ->
+    #item_base{id = 73009, name = lang:get("12级物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73010) ->
+    #item_base{id = 73010, name = lang:get("12级魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73011) ->
+    #item_base{id = 73011, name = lang:get("12级物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73012) ->
+    #item_base{id = 73012, name = lang:get("12级魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73013) ->
+    #item_base{id = 73013, name = lang:get("12级风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73014) ->
+    #item_base{id = 73014, name = lang:get("12级蓝宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73015) ->
+    #item_base{id = 73015, name = lang:get("12级治愈石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73016) ->
+    #item_base{id = 73016, name = lang:get("13级传奇红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73017) ->
+    #item_base{id = 73017, name = lang:get("13级传奇物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73018) ->
+    #item_base{id = 73018, name = lang:get("13级传奇魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73019) ->
+    #item_base{id = 73019, name = lang:get("13级传奇物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73020) ->
+    #item_base{id = 73020, name = lang:get("13级传奇魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73021) ->
+    #item_base{id = 73021, name = lang:get("13级传奇风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73022) ->
+    #item_base{id = 73022, name = lang:get("13级传奇蓝宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73023) ->
+    #item_base{id = 73023, name = lang:get("13级传奇治愈石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73024) ->
+    #item_base{id = 73024, name = lang:get("13级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73025) ->
+    #item_base{id = 73025, name = lang:get("13级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73026) ->
+    #item_base{id = 73026, name = lang:get("13级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73027) ->
+    #item_base{id = 73027, name = lang:get("13级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73028) ->
+    #item_base{id = 73028, name = lang:get("13级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73029) ->
+    #item_base{id = 73029, name = lang:get("13级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73030) ->
+    #item_base{id = 73030, name = lang:get("13级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73031) ->
+    #item_base{id = 73031, name = lang:get("13级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73032) ->
+    #item_base{id = 73032, name = lang:get("13级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73033) ->
+    #item_base{id = 73033, name = lang:get("13级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73034) ->
+    #item_base{id = 73034, name = lang:get("14级传奇红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73035) ->
+    #item_base{id = 73035, name = lang:get("14级传奇物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73036) ->
+    #item_base{id = 73036, name = lang:get("14级传奇魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73037) ->
+    #item_base{id = 73037, name = lang:get("14级传奇物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73038) ->
+    #item_base{id = 73038, name = lang:get("14级传奇魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73039) ->
+    #item_base{id = 73039, name = lang:get("14级传奇风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73040) ->
+    #item_base{id = 73040, name = lang:get("14级传奇蓝宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73041) ->
+    #item_base{id = 73041, name = lang:get("14级传奇治愈石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73042) ->
+    #item_base{id = 73042, name = lang:get("14级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73043) ->
+    #item_base{id = 73043, name = lang:get("14级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73044) ->
+    #item_base{id = 73044, name = lang:get("14级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73045) ->
+    #item_base{id = 73045, name = lang:get("14级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73046) ->
+    #item_base{id = 73046, name = lang:get("14级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73047) ->
+    #item_base{id = 73047, name = lang:get("14级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73048) ->
+    #item_base{id = 73048, name = lang:get("14级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73049) ->
+    #item_base{id = 73049, name = lang:get("14级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73050) ->
+    #item_base{id = 73050, name = lang:get("14级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73051) ->
+    #item_base{id = 73051, name = lang:get("14级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73052) ->
+    #item_base{id = 73052, name = lang:get("15级传奇红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73053) ->
+    #item_base{id = 73053, name = lang:get("15级传奇物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73054) ->
+    #item_base{id = 73054, name = lang:get("15级传奇魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73055) ->
+    #item_base{id = 73055, name = lang:get("15级传奇物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73056) ->
+    #item_base{id = 73056, name = lang:get("15级传奇魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73057) ->
+    #item_base{id = 73057, name = lang:get("15级传奇风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73058) ->
+    #item_base{id = 73058, name = lang:get("15级传奇蓝宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73059) ->
+    #item_base{id = 73059, name = lang:get("15级传奇治愈石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73060) ->
+    #item_base{id = 73060, name = lang:get("15级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73061) ->
+    #item_base{id = 73061, name = lang:get("15级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73062) ->
+    #item_base{id = 73062, name = lang:get("15级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73063) ->
+    #item_base{id = 73063, name = lang:get("15级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73064) ->
+    #item_base{id = 73064, name = lang:get("15级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73065) ->
+    #item_base{id = 73065, name = lang:get("15级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73066) ->
+    #item_base{id = 73066, name = lang:get("15级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73067) ->
+    #item_base{id = 73067, name = lang:get("15级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73068) ->
+    #item_base{id = 73068, name = lang:get("15级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73069) ->
+    #item_base{id = 73069, name = lang:get("15级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73070) ->
+    #item_base{id = 73070, name = lang:get("传奇红宝石"),
+               type = 110, quality = 2, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73071) ->
+    #item_base{id = 73071, name = lang:get("传奇物攻石"),
+               type = 110, quality = 2, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73072) ->
+    #item_base{id = 73072, name = lang:get("传奇魔攻石"),
+               type = 110, quality = 2, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73073) ->
+    #item_base{id = 73073, name = lang:get("传奇物防石"),
+               type = 110, quality = 2, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73074) ->
+    #item_base{id = 73074, name = lang:get("传奇魔防石"),
+               type = 110, quality = 2, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73075) ->
+    #item_base{id = 73075, name = lang:get("传奇风灵石"),
+               type = 110, quality = 2, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73076) ->
+    #item_base{id = 73076, name = lang:get("传奇蓝宝石"),
+               type = 110, quality = 2, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73077) ->
+    #item_base{id = 73077, name = lang:get("传奇治愈石"),
+               type = 110, quality = 2, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73078) ->
+    #item_base{id = 73078, name = lang:get("至尊红宝石"),
+               type = 110, quality = 2, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73079) ->
+    #item_base{id = 73079, name = lang:get("至尊物攻石"),
+               type = 110, quality = 2, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73080) ->
+    #item_base{id = 73080, name = lang:get("至尊魔攻石"),
+               type = 110, quality = 2, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73081) ->
+    #item_base{id = 73081, name = lang:get("至尊物防石"),
+               type = 110, quality = 2, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73082) ->
+    #item_base{id = 73082, name = lang:get("至尊魔防石"),
+               type = 110, quality = 2, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73083) ->
+    #item_base{id = 73083, name = lang:get("至尊风灵石"),
+               type = 110, quality = 2, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73084) ->
+    #item_base{id = 73084, name = lang:get("至尊蓝宝石"),
+               type = 110, quality = 2, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73085) ->
+    #item_base{id = 73085, name = lang:get("至尊治愈石"),
+               type = 110, quality = 2, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73100) ->
+    #item_base{id = 73100, name = lang:get("16级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73101) ->
+    #item_base{id = 73101, name = lang:get("16级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73102) ->
+    #item_base{id = 73102, name = lang:get("16级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73103) ->
+    #item_base{id = 73103, name = lang:get("16级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73104) ->
+    #item_base{id = 73104, name = lang:get("16级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73105) ->
+    #item_base{id = 73105, name = lang:get("16级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73106) ->
+    #item_base{id = 73106, name = lang:get("16级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73107) ->
+    #item_base{id = 73107, name = lang:get("16级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73108) ->
+    #item_base{id = 73108, name = lang:get("16级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73109) ->
+    #item_base{id = 73109, name = lang:get("16级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73110) ->
+    #item_base{id = 73110, name = lang:get("17级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73111) ->
+    #item_base{id = 73111, name = lang:get("17级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73112) ->
+    #item_base{id = 73112, name = lang:get("17级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73113) ->
+    #item_base{id = 73113, name = lang:get("17级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73114) ->
+    #item_base{id = 73114, name = lang:get("17级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73115) ->
+    #item_base{id = 73115, name = lang:get("17级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73116) ->
+    #item_base{id = 73116, name = lang:get("17级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73117) ->
+    #item_base{id = 73117, name = lang:get("17级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73118) ->
+    #item_base{id = 73118, name = lang:get("17级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73119) ->
+    #item_base{id = 73119, name = lang:get("17级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73120) ->
+    #item_base{id = 73120, name = lang:get("18级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73121) ->
+    #item_base{id = 73121, name = lang:get("18级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73122) ->
+    #item_base{id = 73122, name = lang:get("18级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73123) ->
+    #item_base{id = 73123, name = lang:get("18级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73124) ->
+    #item_base{id = 73124, name = lang:get("18级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73125) ->
+    #item_base{id = 73125, name = lang:get("18级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73126) ->
+    #item_base{id = 73126, name = lang:get("18级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73127) ->
+    #item_base{id = 73127, name = lang:get("18级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73128) ->
+    #item_base{id = 73128, name = lang:get("18级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73129) ->
+    #item_base{id = 73129, name = lang:get("18级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73130) ->
+    #item_base{id = 73130, name = lang:get("19级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73131) ->
+    #item_base{id = 73131, name = lang:get("19级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73132) ->
+    #item_base{id = 73132, name = lang:get("19级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73133) ->
+    #item_base{id = 73133, name = lang:get("19级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73134) ->
+    #item_base{id = 73134, name = lang:get("19级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73135) ->
+    #item_base{id = 73135, name = lang:get("19级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73136) ->
+    #item_base{id = 73136, name = lang:get("19级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73137) ->
+    #item_base{id = 73137, name = lang:get("19级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73138) ->
+    #item_base{id = 73138, name = lang:get("19级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73139) ->
+    #item_base{id = 73139, name = lang:get("19级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73140) ->
+    #item_base{id = 73140, name = lang:get("20级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73141) ->
+    #item_base{id = 73141, name = lang:get("20级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73142) ->
+    #item_base{id = 73142, name = lang:get("20级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73143) ->
+    #item_base{id = 73143, name = lang:get("20级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73144) ->
+    #item_base{id = 73144, name = lang:get("20级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73145) ->
+    #item_base{id = 73145, name = lang:get("20级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73146) ->
+    #item_base{id = 73146, name = lang:get("20级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73147) ->
+    #item_base{id = 73147, name = lang:get("20级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73148) ->
+    #item_base{id = 73148, name = lang:get("20级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73149) ->
+    #item_base{id = 73149, name = lang:get("20级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73150) ->
+    #item_base{id = 73150, name = lang:get("21级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73151) ->
+    #item_base{id = 73151, name = lang:get("21级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73152) ->
+    #item_base{id = 73152, name = lang:get("21级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73153) ->
+    #item_base{id = 73153, name = lang:get("21级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73154) ->
+    #item_base{id = 73154, name = lang:get("21级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73155) ->
+    #item_base{id = 73155, name = lang:get("21级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73156) ->
+    #item_base{id = 73156, name = lang:get("21级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73157) ->
+    #item_base{id = 73157, name = lang:get("21级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73158) ->
+    #item_base{id = 73158, name = lang:get("21级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73159) ->
+    #item_base{id = 73159, name = lang:get("21级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73160) ->
+    #item_base{id = 73160, name = lang:get("22级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73161) ->
+    #item_base{id = 73161, name = lang:get("22级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73162) ->
+    #item_base{id = 73162, name = lang:get("22级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73163) ->
+    #item_base{id = 73163, name = lang:get("22级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73164) ->
+    #item_base{id = 73164, name = lang:get("22级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73165) ->
+    #item_base{id = 73165, name = lang:get("22级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73166) ->
+    #item_base{id = 73166, name = lang:get("22级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73167) ->
+    #item_base{id = 73167, name = lang:get("22级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73168) ->
+    #item_base{id = 73168, name = lang:get("22级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73169) ->
+    #item_base{id = 73169, name = lang:get("22级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73170) ->
+    #item_base{id = 73170, name = lang:get("23级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73171) ->
+    #item_base{id = 73171, name = lang:get("23级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73172) ->
+    #item_base{id = 73172, name = lang:get("23级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73173) ->
+    #item_base{id = 73173, name = lang:get("23级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73174) ->
+    #item_base{id = 73174, name = lang:get("23级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73175) ->
+    #item_base{id = 73175, name = lang:get("23级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73176) ->
+    #item_base{id = 73176, name = lang:get("23级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73177) ->
+    #item_base{id = 73177, name = lang:get("23级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73178) ->
+    #item_base{id = 73178, name = lang:get("23级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73179) ->
+    #item_base{id = 73179, name = lang:get("23级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73180) ->
+    #item_base{id = 73180, name = lang:get("24级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73181) ->
+    #item_base{id = 73181, name = lang:get("24级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73182) ->
+    #item_base{id = 73182, name = lang:get("24级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73183) ->
+    #item_base{id = 73183, name = lang:get("24级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73184) ->
+    #item_base{id = 73184, name = lang:get("24级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73185) ->
+    #item_base{id = 73185, name = lang:get("24级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73186) ->
+    #item_base{id = 73186, name = lang:get("24级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73187) ->
+    #item_base{id = 73187, name = lang:get("24级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73188) ->
+    #item_base{id = 73188, name = lang:get("24级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73189) ->
+    #item_base{id = 73189, name = lang:get("24级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73190) ->
+    #item_base{id = 73190, name = lang:get("25级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73191) ->
+    #item_base{id = 73191, name = lang:get("25级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73192) ->
+    #item_base{id = 73192, name = lang:get("25级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73193) ->
+    #item_base{id = 73193, name = lang:get("25级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73194) ->
+    #item_base{id = 73194, name = lang:get("25级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73195) ->
+    #item_base{id = 73195, name = lang:get("25级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73196) ->
+    #item_base{id = 73196, name = lang:get("25级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73197) ->
+    #item_base{id = 73197, name = lang:get("25级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73198) ->
+    #item_base{id = 73198, name = lang:get("25级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73199) ->
+    #item_base{id = 73199, name = lang:get("25级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73200) ->
+    #item_base{id = 73200, name = lang:get("26级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73201) ->
+    #item_base{id = 73201, name = lang:get("26级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73202) ->
+    #item_base{id = 73202, name = lang:get("26级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73203) ->
+    #item_base{id = 73203, name = lang:get("26级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73204) ->
+    #item_base{id = 73204, name = lang:get("26级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73205) ->
+    #item_base{id = 73205, name = lang:get("26级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73206) ->
+    #item_base{id = 73206, name = lang:get("26级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73207) ->
+    #item_base{id = 73207, name = lang:get("26级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73208) ->
+    #item_base{id = 73208, name = lang:get("26级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73209) ->
+    #item_base{id = 73209, name = lang:get("26级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73210) ->
+    #item_base{id = 73210, name = lang:get("27级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73211) ->
+    #item_base{id = 73211, name = lang:get("27级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73212) ->
+    #item_base{id = 73212, name = lang:get("27级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73213) ->
+    #item_base{id = 73213, name = lang:get("27级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73214) ->
+    #item_base{id = 73214, name = lang:get("27级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73215) ->
+    #item_base{id = 73215, name = lang:get("27级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73216) ->
+    #item_base{id = 73216, name = lang:get("27级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73217) ->
+    #item_base{id = 73217, name = lang:get("27级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73218) ->
+    #item_base{id = 73218, name = lang:get("27级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73219) ->
+    #item_base{id = 73219, name = lang:get("27级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73220) ->
+    #item_base{id = 73220, name = lang:get("28级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73221) ->
+    #item_base{id = 73221, name = lang:get("28级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73222) ->
+    #item_base{id = 73222, name = lang:get("28级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73223) ->
+    #item_base{id = 73223, name = lang:get("28级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73224) ->
+    #item_base{id = 73224, name = lang:get("28级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73225) ->
+    #item_base{id = 73225, name = lang:get("28级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73226) ->
+    #item_base{id = 73226, name = lang:get("28级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73227) ->
+    #item_base{id = 73227, name = lang:get("28级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73228) ->
+    #item_base{id = 73228, name = lang:get("28级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73229) ->
+    #item_base{id = 73229, name = lang:get("28级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73230) ->
+    #item_base{id = 73230, name = lang:get("29级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73231) ->
+    #item_base{id = 73231, name = lang:get("29级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73232) ->
+    #item_base{id = 73232, name = lang:get("29级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73233) ->
+    #item_base{id = 73233, name = lang:get("29级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73234) ->
+    #item_base{id = 73234, name = lang:get("29级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73235) ->
+    #item_base{id = 73235, name = lang:get("29级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73236) ->
+    #item_base{id = 73236, name = lang:get("29级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73237) ->
+    #item_base{id = 73237, name = lang:get("29级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73238) ->
+    #item_base{id = 73238, name = lang:get("29级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73239) ->
+    #item_base{id = 73239, name = lang:get("29级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73240) ->
+    #item_base{id = 73240, name = lang:get("30级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73241) ->
+    #item_base{id = 73241, name = lang:get("30级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73242) ->
+    #item_base{id = 73242, name = lang:get("30级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73243) ->
+    #item_base{id = 73243, name = lang:get("30级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73244) ->
+    #item_base{id = 73244, name = lang:get("30级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73245) ->
+    #item_base{id = 73245, name = lang:get("30级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73246) ->
+    #item_base{id = 73246, name = lang:get("30级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73247) ->
+    #item_base{id = 73247, name = lang:get("30级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73248) ->
+    #item_base{id = 73248, name = lang:get("30级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73249) ->
+    #item_base{id = 73249, name = lang:get("30级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73250) ->
+    #item_base{id = 73250, name = lang:get("31级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73251) ->
+    #item_base{id = 73251, name = lang:get("31级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73252) ->
+    #item_base{id = 73252, name = lang:get("31级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73253) ->
+    #item_base{id = 73253, name = lang:get("31级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73254) ->
+    #item_base{id = 73254, name = lang:get("31级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73255) ->
+    #item_base{id = 73255, name = lang:get("31级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73256) ->
+    #item_base{id = 73256, name = lang:get("31级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73257) ->
+    #item_base{id = 73257, name = lang:get("31级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73258) ->
+    #item_base{id = 73258, name = lang:get("31级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73259) ->
+    #item_base{id = 73259, name = lang:get("31级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73260) ->
+    #item_base{id = 73260, name = lang:get("32级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73261) ->
+    #item_base{id = 73261, name = lang:get("32级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73262) ->
+    #item_base{id = 73262, name = lang:get("32级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73263) ->
+    #item_base{id = 73263, name = lang:get("32级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73264) ->
+    #item_base{id = 73264, name = lang:get("32级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73265) ->
+    #item_base{id = 73265, name = lang:get("32级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73266) ->
+    #item_base{id = 73266, name = lang:get("32级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73267) ->
+    #item_base{id = 73267, name = lang:get("32级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73268) ->
+    #item_base{id = 73268, name = lang:get("32级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73269) ->
+    #item_base{id = 73269, name = lang:get("32级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73270) ->
+    #item_base{id = 73270, name = lang:get("33级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73271) ->
+    #item_base{id = 73271, name = lang:get("33级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73272) ->
+    #item_base{id = 73272, name = lang:get("33级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73273) ->
+    #item_base{id = 73273, name = lang:get("33级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73274) ->
+    #item_base{id = 73274, name = lang:get("33级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73275) ->
+    #item_base{id = 73275, name = lang:get("33级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73276) ->
+    #item_base{id = 73276, name = lang:get("33级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73277) ->
+    #item_base{id = 73277, name = lang:get("33级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73278) ->
+    #item_base{id = 73278, name = lang:get("33级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73279) ->
+    #item_base{id = 73279, name = lang:get("33级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73280) ->
+    #item_base{id = 73280, name = lang:get("34级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73281) ->
+    #item_base{id = 73281, name = lang:get("34级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73282) ->
+    #item_base{id = 73282, name = lang:get("34级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73283) ->
+    #item_base{id = 73283, name = lang:get("34级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73284) ->
+    #item_base{id = 73284, name = lang:get("34级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73285) ->
+    #item_base{id = 73285, name = lang:get("34级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73286) ->
+    #item_base{id = 73286, name = lang:get("34级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73287) ->
+    #item_base{id = 73287, name = lang:get("34级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73288) ->
+    #item_base{id = 73288, name = lang:get("34级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73289) ->
+    #item_base{id = 73289, name = lang:get("34级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73290) ->
+    #item_base{id = 73290, name = lang:get("35级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73291) ->
+    #item_base{id = 73291, name = lang:get("35级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73292) ->
+    #item_base{id = 73292, name = lang:get("35级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73293) ->
+    #item_base{id = 73293, name = lang:get("35级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73294) ->
+    #item_base{id = 73294, name = lang:get("35级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73295) ->
+    #item_base{id = 73295, name = lang:get("35级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73296) ->
+    #item_base{id = 73296, name = lang:get("35级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73297) ->
+    #item_base{id = 73297, name = lang:get("35级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73298) ->
+    #item_base{id = 73298, name = lang:get("35级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73299) ->
+    #item_base{id = 73299, name = lang:get("35级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73300) ->
+    #item_base{id = 73300, name = lang:get("36级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73301) ->
+    #item_base{id = 73301, name = lang:get("36级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73302) ->
+    #item_base{id = 73302, name = lang:get("36级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73303) ->
+    #item_base{id = 73303, name = lang:get("36级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73304) ->
+    #item_base{id = 73304, name = lang:get("36级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73305) ->
+    #item_base{id = 73305, name = lang:get("36级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73306) ->
+    #item_base{id = 73306, name = lang:get("36级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73307) ->
+    #item_base{id = 73307, name = lang:get("36级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73308) ->
+    #item_base{id = 73308, name = lang:get("36级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73309) ->
+    #item_base{id = 73309, name = lang:get("36级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73310) ->
+    #item_base{id = 73310, name = lang:get("37级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73311) ->
+    #item_base{id = 73311, name = lang:get("37级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73312) ->
+    #item_base{id = 73312, name = lang:get("37级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73313) ->
+    #item_base{id = 73313, name = lang:get("37级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73314) ->
+    #item_base{id = 73314, name = lang:get("37级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73315) ->
+    #item_base{id = 73315, name = lang:get("37级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73316) ->
+    #item_base{id = 73316, name = lang:get("37级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73317) ->
+    #item_base{id = 73317, name = lang:get("37级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73318) ->
+    #item_base{id = 73318, name = lang:get("37级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73319) ->
+    #item_base{id = 73319, name = lang:get("37级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73320) ->
+    #item_base{id = 73320, name = lang:get("38级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73321) ->
+    #item_base{id = 73321, name = lang:get("38级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73322) ->
+    #item_base{id = 73322, name = lang:get("38级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73323) ->
+    #item_base{id = 73323, name = lang:get("38级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73324) ->
+    #item_base{id = 73324, name = lang:get("38级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73325) ->
+    #item_base{id = 73325, name = lang:get("38级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73326) ->
+    #item_base{id = 73326, name = lang:get("38级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73327) ->
+    #item_base{id = 73327, name = lang:get("38级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73328) ->
+    #item_base{id = 73328, name = lang:get("38级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73329) ->
+    #item_base{id = 73329, name = lang:get("38级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73330) ->
+    #item_base{id = 73330, name = lang:get("39级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73331) ->
+    #item_base{id = 73331, name = lang:get("39级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73332) ->
+    #item_base{id = 73332, name = lang:get("39级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73333) ->
+    #item_base{id = 73333, name = lang:get("39级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73334) ->
+    #item_base{id = 73334, name = lang:get("39级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73335) ->
+    #item_base{id = 73335, name = lang:get("39级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73336) ->
+    #item_base{id = 73336, name = lang:get("39级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73337) ->
+    #item_base{id = 73337, name = lang:get("39级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73338) ->
+    #item_base{id = 73338, name = lang:get("39级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73339) ->
+    #item_base{id = 73339, name = lang:get("39级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73340) ->
+    #item_base{id = 73340, name = lang:get("40级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73341) ->
+    #item_base{id = 73341, name = lang:get("40级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73342) ->
+    #item_base{id = 73342, name = lang:get("40级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73343) ->
+    #item_base{id = 73343, name = lang:get("40级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73344) ->
+    #item_base{id = 73344, name = lang:get("40级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73345) ->
+    #item_base{id = 73345, name = lang:get("40级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73346) ->
+    #item_base{id = 73346, name = lang:get("40级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73347) ->
+    #item_base{id = 73347, name = lang:get("40级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73348) ->
+    #item_base{id = 73348, name = lang:get("40级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73349) ->
+    #item_base{id = 73349, name = lang:get("40级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73350) ->
+    #item_base{id = 73350, name = lang:get("41级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73351) ->
+    #item_base{id = 73351, name = lang:get("41级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73352) ->
+    #item_base{id = 73352, name = lang:get("41级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73353) ->
+    #item_base{id = 73353, name = lang:get("41级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73354) ->
+    #item_base{id = 73354, name = lang:get("41级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73355) ->
+    #item_base{id = 73355, name = lang:get("41级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73356) ->
+    #item_base{id = 73356, name = lang:get("41级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73357) ->
+    #item_base{id = 73357, name = lang:get("41级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73358) ->
+    #item_base{id = 73358, name = lang:get("41级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73359) ->
+    #item_base{id = 73359, name = lang:get("41级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73360) ->
+    #item_base{id = 73360, name = lang:get("42级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73361) ->
+    #item_base{id = 73361, name = lang:get("42级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73362) ->
+    #item_base{id = 73362, name = lang:get("42级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73363) ->
+    #item_base{id = 73363, name = lang:get("42级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73364) ->
+    #item_base{id = 73364, name = lang:get("42级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73365) ->
+    #item_base{id = 73365, name = lang:get("42级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73366) ->
+    #item_base{id = 73366, name = lang:get("42级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73367) ->
+    #item_base{id = 73367, name = lang:get("42级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73368) ->
+    #item_base{id = 73368, name = lang:get("42级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73369) ->
+    #item_base{id = 73369, name = lang:get("42级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73370) ->
+    #item_base{id = 73370, name = lang:get("43级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73371) ->
+    #item_base{id = 73371, name = lang:get("43级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73372) ->
+    #item_base{id = 73372, name = lang:get("43级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73373) ->
+    #item_base{id = 73373, name = lang:get("43级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73374) ->
+    #item_base{id = 73374, name = lang:get("43级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73375) ->
+    #item_base{id = 73375, name = lang:get("43级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73376) ->
+    #item_base{id = 73376, name = lang:get("43级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73377) ->
+    #item_base{id = 73377, name = lang:get("43级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73378) ->
+    #item_base{id = 73378, name = lang:get("43级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73379) ->
+    #item_base{id = 73379, name = lang:get("43级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73380) ->
+    #item_base{id = 73380, name = lang:get("44级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73381) ->
+    #item_base{id = 73381, name = lang:get("44级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73382) ->
+    #item_base{id = 73382, name = lang:get("44级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73383) ->
+    #item_base{id = 73383, name = lang:get("44级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73384) ->
+    #item_base{id = 73384, name = lang:get("44级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73385) ->
+    #item_base{id = 73385, name = lang:get("44级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73386) ->
+    #item_base{id = 73386, name = lang:get("44级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73387) ->
+    #item_base{id = 73387, name = lang:get("44级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73388) ->
+    #item_base{id = 73388, name = lang:get("44级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73389) ->
+    #item_base{id = 73389, name = lang:get("44级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73390) ->
+    #item_base{id = 73390, name = lang:get("45级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73391) ->
+    #item_base{id = 73391, name = lang:get("45级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73392) ->
+    #item_base{id = 73392, name = lang:get("45级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73393) ->
+    #item_base{id = 73393, name = lang:get("45级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73394) ->
+    #item_base{id = 73394, name = lang:get("45级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73395) ->
+    #item_base{id = 73395, name = lang:get("45级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73396) ->
+    #item_base{id = 73396, name = lang:get("45级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73397) ->
+    #item_base{id = 73397, name = lang:get("45级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73398) ->
+    #item_base{id = 73398, name = lang:get("45级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73399) ->
+    #item_base{id = 73399, name = lang:get("45级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73400) ->
+    #item_base{id = 73400, name = lang:get("16级传奇红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73401) ->
+    #item_base{id = 73401, name = lang:get("16级传奇物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73402) ->
+    #item_base{id = 73402, name = lang:get("16级传奇魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73403) ->
+    #item_base{id = 73403, name = lang:get("16级传奇物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73404) ->
+    #item_base{id = 73404, name = lang:get("16级传奇魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73405) ->
+    #item_base{id = 73405, name = lang:get("16级传奇风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73406) ->
+    #item_base{id = 73406, name = lang:get("16级传奇蓝宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73407) ->
+    #item_base{id = 73407, name = lang:get("16级传奇治愈石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73408) ->
+    #item_base{id = 73408, name = lang:get("17级传奇红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73409) ->
+    #item_base{id = 73409, name = lang:get("17级传奇物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73410) ->
+    #item_base{id = 73410, name = lang:get("17级传奇魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73411) ->
+    #item_base{id = 73411, name = lang:get("17级传奇物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73412) ->
+    #item_base{id = 73412, name = lang:get("17级传奇魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73413) ->
+    #item_base{id = 73413, name = lang:get("17级传奇风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73414) ->
+    #item_base{id = 73414, name = lang:get("17级传奇蓝宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73415) ->
+    #item_base{id = 73415, name = lang:get("17级传奇治愈石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73416) ->
+    #item_base{id = 73416, name = lang:get("18级传奇红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73417) ->
+    #item_base{id = 73417, name = lang:get("18级传奇物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73418) ->
+    #item_base{id = 73418, name = lang:get("18级传奇魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73419) ->
+    #item_base{id = 73419, name = lang:get("18级传奇物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73420) ->
+    #item_base{id = 73420, name = lang:get("18级传奇魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73421) ->
+    #item_base{id = 73421, name = lang:get("18级传奇风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73422) ->
+    #item_base{id = 73422, name = lang:get("18级传奇蓝宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73423) ->
+    #item_base{id = 73423, name = lang:get("18级传奇治愈石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73424) ->
+    #item_base{id = 73424, name = lang:get("19级传奇红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73425) ->
+    #item_base{id = 73425, name = lang:get("19级传奇物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73426) ->
+    #item_base{id = 73426, name = lang:get("19级传奇魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73427) ->
+    #item_base{id = 73427, name = lang:get("19级传奇物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73428) ->
+    #item_base{id = 73428, name = lang:get("19级传奇魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73429) ->
+    #item_base{id = 73429, name = lang:get("19级传奇风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73430) ->
+    #item_base{id = 73430, name = lang:get("19级传奇蓝宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73431) ->
+    #item_base{id = 73431, name = lang:get("19级传奇治愈石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73432) ->
+    #item_base{id = 73432, name = lang:get("20级传奇红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73433) ->
+    #item_base{id = 73433, name = lang:get("20级传奇物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73434) ->
+    #item_base{id = 73434, name = lang:get("20级传奇魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73435) ->
+    #item_base{id = 73435, name = lang:get("20级传奇物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73436) ->
+    #item_base{id = 73436, name = lang:get("20级传奇魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73437) ->
+    #item_base{id = 73437, name = lang:get("20级传奇风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73438) ->
+    #item_base{id = 73438, name = lang:get("20级传奇蓝宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73439) ->
+    #item_base{id = 73439, name = lang:get("20级传奇治愈石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73440) ->
+    #item_base{id = 73440, name = lang:get("21级传奇红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73441) ->
+    #item_base{id = 73441, name = lang:get("21级传奇物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73442) ->
+    #item_base{id = 73442, name = lang:get("21级传奇魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73443) ->
+    #item_base{id = 73443, name = lang:get("21级传奇物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73444) ->
+    #item_base{id = 73444, name = lang:get("21级传奇魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73445) ->
+    #item_base{id = 73445, name = lang:get("21级传奇风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73446) ->
+    #item_base{id = 73446, name = lang:get("21级传奇蓝宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73447) ->
+    #item_base{id = 73447, name = lang:get("21级传奇治愈石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73448) ->
+    #item_base{id = 73448, name = lang:get("22级传奇红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73449) ->
+    #item_base{id = 73449, name = lang:get("22级传奇物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73450) ->
+    #item_base{id = 73450, name = lang:get("22级传奇魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73451) ->
+    #item_base{id = 73451, name = lang:get("22级传奇物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73452) ->
+    #item_base{id = 73452, name = lang:get("22级传奇魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73453) ->
+    #item_base{id = 73453, name = lang:get("22级传奇风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73454) ->
+    #item_base{id = 73454, name = lang:get("22级传奇蓝宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73455) ->
+    #item_base{id = 73455, name = lang:get("22级传奇治愈石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73456) ->
+    #item_base{id = 73456, name = lang:get("23级传奇红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73457) ->
+    #item_base{id = 73457, name = lang:get("23级传奇物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73458) ->
+    #item_base{id = 73458, name = lang:get("23级传奇魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73459) ->
+    #item_base{id = 73459, name = lang:get("23级传奇物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73460) ->
+    #item_base{id = 73460, name = lang:get("23级传奇魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73461) ->
+    #item_base{id = 73461, name = lang:get("23级传奇风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73462) ->
+    #item_base{id = 73462, name = lang:get("23级传奇蓝宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73463) ->
+    #item_base{id = 73463, name = lang:get("23级传奇治愈石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73464) ->
+    #item_base{id = 73464, name = lang:get("24级传奇红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73465) ->
+    #item_base{id = 73465, name = lang:get("24级传奇物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73466) ->
+    #item_base{id = 73466, name = lang:get("24级传奇魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73467) ->
+    #item_base{id = 73467, name = lang:get("24级传奇物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73468) ->
+    #item_base{id = 73468, name = lang:get("24级传奇魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73469) ->
+    #item_base{id = 73469, name = lang:get("24级传奇风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73470) ->
+    #item_base{id = 73470, name = lang:get("24级传奇蓝宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73471) ->
+    #item_base{id = 73471, name = lang:get("24级传奇治愈石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73472) ->
+    #item_base{id = 73472, name = lang:get("25级传奇红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73473) ->
+    #item_base{id = 73473, name = lang:get("25级传奇物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73474) ->
+    #item_base{id = 73474, name = lang:get("25级传奇魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73475) ->
+    #item_base{id = 73475, name = lang:get("25级传奇物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73476) ->
+    #item_base{id = 73476, name = lang:get("25级传奇魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73477) ->
+    #item_base{id = 73477, name = lang:get("25级传奇风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73478) ->
+    #item_base{id = 73478, name = lang:get("25级传奇蓝宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73479) ->
+    #item_base{id = 73479, name = lang:get("25级传奇治愈石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73480) ->
+    #item_base{id = 73480, name = lang:get("26级传奇红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73481) ->
+    #item_base{id = 73481, name = lang:get("26级传奇物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73482) ->
+    #item_base{id = 73482, name = lang:get("26级传奇魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73483) ->
+    #item_base{id = 73483, name = lang:get("26级传奇物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73484) ->
+    #item_base{id = 73484, name = lang:get("26级传奇魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73485) ->
+    #item_base{id = 73485, name = lang:get("26级传奇风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73486) ->
+    #item_base{id = 73486, name = lang:get("26级传奇蓝宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73487) ->
+    #item_base{id = 73487, name = lang:get("26级传奇治愈石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73488) ->
+    #item_base{id = 73488, name = lang:get("27级传奇红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73489) ->
+    #item_base{id = 73489, name = lang:get("27级传奇物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73490) ->
+    #item_base{id = 73490, name = lang:get("27级传奇魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73491) ->
+    #item_base{id = 73491, name = lang:get("27级传奇物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73492) ->
+    #item_base{id = 73492, name = lang:get("27级传奇魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73493) ->
+    #item_base{id = 73493, name = lang:get("27级传奇风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73494) ->
+    #item_base{id = 73494, name = lang:get("27级传奇蓝宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73495) ->
+    #item_base{id = 73495, name = lang:get("27级传奇治愈石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73496) ->
+    #item_base{id = 73496, name = lang:get("28级传奇红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73497) ->
+    #item_base{id = 73497, name = lang:get("28级传奇物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73498) ->
+    #item_base{id = 73498, name = lang:get("28级传奇魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73499) ->
+    #item_base{id = 73499, name = lang:get("28级传奇物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73500) ->
+    #item_base{id = 73500, name = lang:get("28级传奇魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73501) ->
+    #item_base{id = 73501, name = lang:get("28级传奇风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73502) ->
+    #item_base{id = 73502, name = lang:get("28级传奇蓝宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73503) ->
+    #item_base{id = 73503, name = lang:get("28级传奇治愈石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73504) ->
+    #item_base{id = 73504, name = lang:get("29级传奇红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73505) ->
+    #item_base{id = 73505, name = lang:get("29级传奇物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73506) ->
+    #item_base{id = 73506, name = lang:get("29级传奇魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73507) ->
+    #item_base{id = 73507, name = lang:get("29级传奇物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73508) ->
+    #item_base{id = 73508, name = lang:get("29级传奇魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73509) ->
+    #item_base{id = 73509, name = lang:get("29级传奇风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73510) ->
+    #item_base{id = 73510, name = lang:get("29级传奇蓝宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73511) ->
+    #item_base{id = 73511, name = lang:get("29级传奇治愈石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73512) ->
+    #item_base{id = 73512, name = lang:get("30级传奇红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73513) ->
+    #item_base{id = 73513, name = lang:get("30级传奇物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73514) ->
+    #item_base{id = 73514, name = lang:get("30级传奇魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73515) ->
+    #item_base{id = 73515, name = lang:get("30级传奇物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73516) ->
+    #item_base{id = 73516, name = lang:get("30级传奇魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73517) ->
+    #item_base{id = 73517, name = lang:get("30级传奇风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73518) ->
+    #item_base{id = 73518, name = lang:get("30级传奇蓝宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73519) ->
+    #item_base{id = 73519, name = lang:get("30级传奇治愈石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73520) ->
+    #item_base{id = 73520, name = lang:get("31级传奇红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73521) ->
+    #item_base{id = 73521, name = lang:get("31级传奇物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73522) ->
+    #item_base{id = 73522, name = lang:get("31级传奇魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73523) ->
+    #item_base{id = 73523, name = lang:get("31级传奇物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73524) ->
+    #item_base{id = 73524, name = lang:get("31级传奇魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73525) ->
+    #item_base{id = 73525, name = lang:get("31级传奇风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73526) ->
+    #item_base{id = 73526, name = lang:get("31级传奇蓝宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73527) ->
+    #item_base{id = 73527, name = lang:get("31级传奇治愈石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73528) ->
+    #item_base{id = 73528, name = lang:get("32级传奇红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73529) ->
+    #item_base{id = 73529, name = lang:get("32级传奇物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73530) ->
+    #item_base{id = 73530, name = lang:get("32级传奇魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73531) ->
+    #item_base{id = 73531, name = lang:get("32级传奇物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73532) ->
+    #item_base{id = 73532, name = lang:get("32级传奇魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73533) ->
+    #item_base{id = 73533, name = lang:get("32级传奇风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73534) ->
+    #item_base{id = 73534, name = lang:get("32级传奇蓝宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73535) ->
+    #item_base{id = 73535, name = lang:get("32级传奇治愈石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73536) ->
+    #item_base{id = 73536, name = lang:get("33级传奇红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73537) ->
+    #item_base{id = 73537, name = lang:get("33级传奇物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73538) ->
+    #item_base{id = 73538, name = lang:get("33级传奇魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73539) ->
+    #item_base{id = 73539, name = lang:get("33级传奇物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73540) ->
+    #item_base{id = 73540, name = lang:get("33级传奇魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73541) ->
+    #item_base{id = 73541, name = lang:get("33级传奇风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73542) ->
+    #item_base{id = 73542, name = lang:get("33级传奇蓝宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73543) ->
+    #item_base{id = 73543, name = lang:get("33级传奇治愈石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73544) ->
+    #item_base{id = 73544, name = lang:get("34级传奇红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73545) ->
+    #item_base{id = 73545, name = lang:get("34级传奇物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73546) ->
+    #item_base{id = 73546, name = lang:get("34级传奇魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73547) ->
+    #item_base{id = 73547, name = lang:get("34级传奇物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73548) ->
+    #item_base{id = 73548, name = lang:get("34级传奇魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73549) ->
+    #item_base{id = 73549, name = lang:get("34级传奇风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73550) ->
+    #item_base{id = 73550, name = lang:get("34级传奇蓝宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73551) ->
+    #item_base{id = 73551, name = lang:get("34级传奇治愈石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73552) ->
+    #item_base{id = 73552, name = lang:get("35级传奇红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73553) ->
+    #item_base{id = 73553, name = lang:get("35级传奇物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73554) ->
+    #item_base{id = 73554, name = lang:get("35级传奇魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73555) ->
+    #item_base{id = 73555, name = lang:get("35级传奇物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73556) ->
+    #item_base{id = 73556, name = lang:get("35级传奇魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73557) ->
+    #item_base{id = 73557, name = lang:get("35级传奇风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73558) ->
+    #item_base{id = 73558, name = lang:get("35级传奇蓝宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73559) ->
+    #item_base{id = 73559, name = lang:get("35级传奇治愈石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73560) ->
+    #item_base{id = 73560, name = lang:get("36级传奇红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73561) ->
+    #item_base{id = 73561, name = lang:get("36级传奇物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73562) ->
+    #item_base{id = 73562, name = lang:get("36级传奇魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73563) ->
+    #item_base{id = 73563, name = lang:get("36级传奇物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73564) ->
+    #item_base{id = 73564, name = lang:get("36级传奇魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73565) ->
+    #item_base{id = 73565, name = lang:get("36级传奇风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73566) ->
+    #item_base{id = 73566, name = lang:get("36级传奇蓝宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73567) ->
+    #item_base{id = 73567, name = lang:get("36级传奇治愈石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73568) ->
+    #item_base{id = 73568, name = lang:get("37级传奇红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73569) ->
+    #item_base{id = 73569, name = lang:get("37级传奇物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73570) ->
+    #item_base{id = 73570, name = lang:get("37级传奇魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73571) ->
+    #item_base{id = 73571, name = lang:get("37级传奇物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73572) ->
+    #item_base{id = 73572, name = lang:get("37级传奇魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73573) ->
+    #item_base{id = 73573, name = lang:get("37级传奇风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73574) ->
+    #item_base{id = 73574, name = lang:get("37级传奇蓝宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73575) ->
+    #item_base{id = 73575, name = lang:get("37级传奇治愈石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73576) ->
+    #item_base{id = 73576, name = lang:get("38级传奇红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73577) ->
+    #item_base{id = 73577, name = lang:get("38级传奇物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73578) ->
+    #item_base{id = 73578, name = lang:get("38级传奇魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73579) ->
+    #item_base{id = 73579, name = lang:get("38级传奇物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73580) ->
+    #item_base{id = 73580, name = lang:get("38级传奇魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73581) ->
+    #item_base{id = 73581, name = lang:get("38级传奇风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73582) ->
+    #item_base{id = 73582, name = lang:get("38级传奇蓝宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73583) ->
+    #item_base{id = 73583, name = lang:get("38级传奇治愈石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73584) ->
+    #item_base{id = 73584, name = lang:get("39级传奇红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73585) ->
+    #item_base{id = 73585, name = lang:get("39级传奇物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73586) ->
+    #item_base{id = 73586, name = lang:get("39级传奇魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73587) ->
+    #item_base{id = 73587, name = lang:get("39级传奇物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73588) ->
+    #item_base{id = 73588, name = lang:get("39级传奇魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73589) ->
+    #item_base{id = 73589, name = lang:get("39级传奇风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73590) ->
+    #item_base{id = 73590, name = lang:get("39级传奇蓝宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73591) ->
+    #item_base{id = 73591, name = lang:get("39级传奇治愈石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73592) ->
+    #item_base{id = 73592, name = lang:get("40级传奇红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73593) ->
+    #item_base{id = 73593, name = lang:get("40级传奇物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73594) ->
+    #item_base{id = 73594, name = lang:get("40级传奇魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73595) ->
+    #item_base{id = 73595, name = lang:get("40级传奇物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73596) ->
+    #item_base{id = 73596, name = lang:get("40级传奇魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73597) ->
+    #item_base{id = 73597, name = lang:get("40级传奇风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73598) ->
+    #item_base{id = 73598, name = lang:get("40级传奇蓝宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73599) ->
+    #item_base{id = 73599, name = lang:get("40级传奇治愈石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73600) ->
+    #item_base{id = 73600, name = lang:get("41级传奇红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73601) ->
+    #item_base{id = 73601, name = lang:get("41级传奇物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73602) ->
+    #item_base{id = 73602, name = lang:get("41级传奇魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73603) ->
+    #item_base{id = 73603, name = lang:get("41级传奇物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73604) ->
+    #item_base{id = 73604, name = lang:get("41级传奇魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73605) ->
+    #item_base{id = 73605, name = lang:get("41级传奇风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73606) ->
+    #item_base{id = 73606, name = lang:get("41级传奇蓝宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73607) ->
+    #item_base{id = 73607, name = lang:get("41级传奇治愈石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73608) ->
+    #item_base{id = 73608, name = lang:get("42级传奇红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73609) ->
+    #item_base{id = 73609, name = lang:get("42级传奇物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73610) ->
+    #item_base{id = 73610, name = lang:get("42级传奇魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73611) ->
+    #item_base{id = 73611, name = lang:get("42级传奇物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73612) ->
+    #item_base{id = 73612, name = lang:get("42级传奇魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73613) ->
+    #item_base{id = 73613, name = lang:get("42级传奇风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73614) ->
+    #item_base{id = 73614, name = lang:get("42级传奇蓝宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73615) ->
+    #item_base{id = 73615, name = lang:get("42级传奇治愈石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73616) ->
+    #item_base{id = 73616, name = lang:get("43级传奇红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73617) ->
+    #item_base{id = 73617, name = lang:get("43级传奇物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73618) ->
+    #item_base{id = 73618, name = lang:get("43级传奇魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73619) ->
+    #item_base{id = 73619, name = lang:get("43级传奇物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73620) ->
+    #item_base{id = 73620, name = lang:get("43级传奇魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73621) ->
+    #item_base{id = 73621, name = lang:get("43级传奇风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73622) ->
+    #item_base{id = 73622, name = lang:get("43级传奇蓝宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73623) ->
+    #item_base{id = 73623, name = lang:get("43级传奇治愈石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73624) ->
+    #item_base{id = 73624, name = lang:get("44级传奇红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73625) ->
+    #item_base{id = 73625, name = lang:get("44级传奇物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73626) ->
+    #item_base{id = 73626, name = lang:get("44级传奇魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73627) ->
+    #item_base{id = 73627, name = lang:get("44级传奇物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73628) ->
+    #item_base{id = 73628, name = lang:get("44级传奇魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73629) ->
+    #item_base{id = 73629, name = lang:get("44级传奇风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73630) ->
+    #item_base{id = 73630, name = lang:get("44级传奇蓝宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73631) ->
+    #item_base{id = 73631, name = lang:get("44级传奇治愈石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73632) ->
+    #item_base{id = 73632, name = lang:get("45级传奇红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73633) ->
+    #item_base{id = 73633, name = lang:get("45级传奇物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73634) ->
+    #item_base{id = 73634, name = lang:get("45级传奇魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73635) ->
+    #item_base{id = 73635, name = lang:get("45级传奇物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73636) ->
+    #item_base{id = 73636, name = lang:get("45级传奇魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73637) ->
+    #item_base{id = 73637, name = lang:get("45级传奇风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73638) ->
+    #item_base{id = 73638, name = lang:get("45级传奇蓝宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(73639) ->
+    #item_base{id = 73639, name = lang:get("45级传奇治愈石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74370) ->
+    #item_base{id = 74370, name = lang:get("披荆斩棘"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 1, effect = [{25, {12233,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74371) ->
+    #item_base{id = 74371, name = lang:get("披荆斩棘"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 2, effect = [{25, {12234,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74372) ->
+    #item_base{id = 74372, name = lang:get("披荆斩棘"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 3, effect = [{25, {12235,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74373) ->
+    #item_base{id = 74373, name = lang:get("披荆斩棘"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 4, effect = [{25, {12236,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74374) ->
+    #item_base{id = 74374, name = lang:get("披荆斩棘"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 5, effect = [{25, {12237,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74375) ->
+    #item_base{id = 74375, name = lang:get("披荆斩棘"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 6, effect = [{25, {12238,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74376) ->
+    #item_base{id = 74376, name = lang:get("披荆斩棘"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 7, effect = [{25, {12239,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74377) ->
+    #item_base{id = 74377, name = lang:get("梦幻乐章"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 1, effect = [{25, {12240,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74378) ->
+    #item_base{id = 74378, name = lang:get("梦幻乐章"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 2, effect = [{25, {12241,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74379) ->
+    #item_base{id = 74379, name = lang:get("梦幻乐章"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 3, effect = [{25, {12242,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74380) ->
+    #item_base{id = 74380, name = lang:get("梦幻乐章"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 4, effect = [{25, {12243,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74381) ->
+    #item_base{id = 74381, name = lang:get("梦幻乐章"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 5, effect = [{25, {12244,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74382) ->
+    #item_base{id = 74382, name = lang:get("梦幻乐章"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 6, effect = [{25, {12245,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74383) ->
+    #item_base{id = 74383, name = lang:get("梦幻乐章"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 7, effect = [{25, {12246,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74384) ->
+    #item_base{id = 74384, name = lang:get("轮回之境"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 1, effect = [{25, {12247,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74385) ->
+    #item_base{id = 74385, name = lang:get("轮回之境"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 2, effect = [{25, {12248,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74386) ->
+    #item_base{id = 74386, name = lang:get("轮回之境"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 3, effect = [{25, {12249,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74387) ->
+    #item_base{id = 74387, name = lang:get("轮回之境"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 4, effect = [{25, {12250,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74388) ->
+    #item_base{id = 74388, name = lang:get("轮回之境"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 5, effect = [{25, {12251,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74389) ->
+    #item_base{id = 74389, name = lang:get("轮回之境"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 6, effect = [{25, {12252,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74390) ->
+    #item_base{id = 74390, name = lang:get("轮回之境"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 7, effect = [{25, {12253,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74391) ->
+    #item_base{id = 74391, name = lang:get("萌猫大作战"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 1, effect = [{25, {12254,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74392) ->
+    #item_base{id = 74392, name = lang:get("萌猫大作战"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 2, effect = [{25, {12255,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74393) ->
+    #item_base{id = 74393, name = lang:get("萌猫大作战"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 3, effect = [{25, {12256,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74394) ->
+    #item_base{id = 74394, name = lang:get("萌猫大作战"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 4, effect = [{25, {12257,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74395) ->
+    #item_base{id = 74395, name = lang:get("萌猫大作战"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 5, effect = [{25, {12258,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74396) ->
+    #item_base{id = 74396, name = lang:get("萌猫大作战"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 6, effect = [{25, {12259,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74397) ->
+    #item_base{id = 74397, name = lang:get("萌猫大作战"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 7, effect = [{25, {12260,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74398) ->
+    #item_base{id = 74398, name = lang:get("命转乾坤"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 1, effect = [{25, {12261,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74399) ->
+    #item_base{id = 74399, name = lang:get("命转乾坤"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 2, effect = [{25, {12262,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74400) ->
+    #item_base{id = 74400, name = lang:get("命转乾坤"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 3, effect = [{25, {12263,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74401) ->
+    #item_base{id = 74401, name = lang:get("命转乾坤"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 4, effect = [{25, {12264,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74402) ->
+    #item_base{id = 74402, name = lang:get("命转乾坤"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 5, effect = [{25, {12265,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74403) ->
+    #item_base{id = 74403, name = lang:get("命转乾坤"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 6, effect = [{25, {12266,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74404) ->
+    #item_base{id = 74404, name = lang:get("命转乾坤"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 7, effect = [{25, {12267,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74405) ->
+    #item_base{id = 74405, name = lang:get("余音绕梁"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 1, effect = [{25, {12268,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74406) ->
+    #item_base{id = 74406, name = lang:get("余音绕梁"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 2, effect = [{25, {12269,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74407) ->
+    #item_base{id = 74407, name = lang:get("余音绕梁"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 3, effect = [{25, {12270,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74408) ->
+    #item_base{id = 74408, name = lang:get("余音绕梁"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 4, effect = [{25, {12271,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74409) ->
+    #item_base{id = 74409, name = lang:get("余音绕梁"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 5, effect = [{25, {12272,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74410) ->
+    #item_base{id = 74410, name = lang:get("余音绕梁"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 6, effect = [{25, {12273,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74411) ->
+    #item_base{id = 74411, name = lang:get("余音绕梁"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 7, effect = [{25, {12274,7}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74454) ->
+    #item_base{id = 74454, name = lang:get("披荆斩棘"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 1, effect = [{25, {12233,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74455) ->
+    #item_base{id = 74455, name = lang:get("披荆斩棘"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 2, effect = [{25, {12234,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74456) ->
+    #item_base{id = 74456, name = lang:get("披荆斩棘"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 3, effect = [{25, {12235,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74457) ->
+    #item_base{id = 74457, name = lang:get("披荆斩棘"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 4, effect = [{25, {12236,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74458) ->
+    #item_base{id = 74458, name = lang:get("披荆斩棘"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 5, effect = [{25, {12237,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74459) ->
+    #item_base{id = 74459, name = lang:get("披荆斩棘"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 6, effect = [{25, {12238,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74460) ->
+    #item_base{id = 74460, name = lang:get("披荆斩棘"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 7, effect = [{25, {12239,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74461) ->
+    #item_base{id = 74461, name = lang:get("梦幻乐章"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 1, effect = [{25, {12240,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74462) ->
+    #item_base{id = 74462, name = lang:get("梦幻乐章"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 2, effect = [{25, {12241,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74463) ->
+    #item_base{id = 74463, name = lang:get("梦幻乐章"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 3, effect = [{25, {12242,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74464) ->
+    #item_base{id = 74464, name = lang:get("梦幻乐章"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 4, effect = [{25, {12243,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74465) ->
+    #item_base{id = 74465, name = lang:get("梦幻乐章"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 5, effect = [{25, {12244,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74466) ->
+    #item_base{id = 74466, name = lang:get("梦幻乐章"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 6, effect = [{25, {12245,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74467) ->
+    #item_base{id = 74467, name = lang:get("梦幻乐章"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 7, effect = [{25, {12246,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74468) ->
+    #item_base{id = 74468, name = lang:get("轮回之境"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 1, effect = [{25, {12247,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74469) ->
+    #item_base{id = 74469, name = lang:get("轮回之境"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 2, effect = [{25, {12248,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74470) ->
+    #item_base{id = 74470, name = lang:get("轮回之境"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 3, effect = [{25, {12249,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74471) ->
+    #item_base{id = 74471, name = lang:get("轮回之境"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 4, effect = [{25, {12250,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74472) ->
+    #item_base{id = 74472, name = lang:get("轮回之境"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 5, effect = [{25, {12251,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74473) ->
+    #item_base{id = 74473, name = lang:get("轮回之境"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 6, effect = [{25, {12252,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74474) ->
+    #item_base{id = 74474, name = lang:get("轮回之境"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 7, effect = [{25, {12253,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74475) ->
+    #item_base{id = 74475, name = lang:get("萌猫大作战"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 1, effect = [{25, {12254,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74476) ->
+    #item_base{id = 74476, name = lang:get("萌猫大作战"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 2, effect = [{25, {12255,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74477) ->
+    #item_base{id = 74477, name = lang:get("萌猫大作战"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 3, effect = [{25, {12256,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74478) ->
+    #item_base{id = 74478, name = lang:get("萌猫大作战"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 4, effect = [{25, {12257,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74479) ->
+    #item_base{id = 74479, name = lang:get("萌猫大作战"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 5, effect = [{25, {12258,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74480) ->
+    #item_base{id = 74480, name = lang:get("萌猫大作战"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 6, effect = [{25, {12259,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74481) ->
+    #item_base{id = 74481, name = lang:get("萌猫大作战"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 7, effect = [{25, {12260,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74482) ->
+    #item_base{id = 74482, name = lang:get("命转乾坤"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 1, effect = [{25, {12261,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74483) ->
+    #item_base{id = 74483, name = lang:get("命转乾坤"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 2, effect = [{25, {12262,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74484) ->
+    #item_base{id = 74484, name = lang:get("命转乾坤"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 3, effect = [{25, {12263,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74485) ->
+    #item_base{id = 74485, name = lang:get("命转乾坤"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 4, effect = [{25, {12264,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74486) ->
+    #item_base{id = 74486, name = lang:get("命转乾坤"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 5, effect = [{25, {12265,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74487) ->
+    #item_base{id = 74487, name = lang:get("命转乾坤"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 6, effect = [{25, {12266,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74488) ->
+    #item_base{id = 74488, name = lang:get("命转乾坤"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 7, effect = [{25, {12267,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74489) ->
+    #item_base{id = 74489, name = lang:get("余音绕梁"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 1, effect = [{25, {12268,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74490) ->
+    #item_base{id = 74490, name = lang:get("余音绕梁"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 2, effect = [{25, {12269,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74491) ->
+    #item_base{id = 74491, name = lang:get("余音绕梁"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 3, effect = [{25, {12270,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74492) ->
+    #item_base{id = 74492, name = lang:get("余音绕梁"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 4, effect = [{25, {12271,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74493) ->
+    #item_base{id = 74493, name = lang:get("余音绕梁"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 5, effect = [{25, {12272,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74494) ->
+    #item_base{id = 74494, name = lang:get("余音绕梁"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 6, effect = [{25, {12273,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74495) ->
+    #item_base{id = 74495, name = lang:get("余音绕梁"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 7, effect = [{25, {12274,11}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76000) ->
+    #item_base{id = 76000, name = lang:get("青龙灵铠"),
+               type = 101, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76001) ->
+    #item_base{id = 76001, name = lang:get("青龙头盔"),
+               type = 101, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76002) ->
+    #item_base{id = 76002, name = lang:get("青龙护腿"),
+               type = 101, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76100) ->
+    #item_base{id = 76100, name = lang:get("幻想之力·瞬影"),
+               type = 155, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76101) ->
+    #item_base{id = 76101, name = lang:get("幻想之力·空灵"),
+               type = 155, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76102) ->
+    #item_base{id = 76102, name = lang:get("幻想之力·瞬影"),
+               type = 155, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76103) ->
+    #item_base{id = 76103, name = lang:get("幻想之力·空灵"),
+               type = 155, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76104) ->
+    #item_base{id = 76104, name = lang:get("幻想之力·瞬影"),
+               type = 155, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76105) ->
+    #item_base{id = 76105, name = lang:get("幻想之力·空灵"),
+               type = 155, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76106) ->
+    #item_base{id = 76106, name = lang:get("幻想之力·瞬影"),
+               type = 155, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76107) ->
+    #item_base{id = 76107, name = lang:get("幻想之力·空灵"),
+               type = 155, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76108) ->
+    #item_base{id = 76108, name = lang:get("幻想之力·玄天"),
+               type = 155, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76109) ->
+    #item_base{id = 76109, name = lang:get("幻想之力·玄天"),
+               type = 155, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76110) ->
+    #item_base{id = 76110, name = lang:get("幻想之力·玄天"),
+               type = 155, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76111) ->
+    #item_base{id = 76111, name = lang:get("幻想之力·玄天"),
+               type = 155, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76112) ->
+    #item_base{id = 76112, name = lang:get("幻想之力·洪荒"),
+               type = 155, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76113) ->
+    #item_base{id = 76113, name = lang:get("幻想之力·洪荒"),
+               type = 155, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76114) ->
+    #item_base{id = 76114, name = lang:get("幻想之力·洪荒"),
+               type = 155, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76115) ->
+    #item_base{id = 76115, name = lang:get("幻想之力·洪荒"),
+               type = 155, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76116) ->
+    #item_base{id = 76116, name = lang:get("幻想之力·瞬影"),
+               type = 155, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76117) ->
+    #item_base{id = 76117, name = lang:get("幻想之力·空灵"),
+               type = 155, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76118) ->
+    #item_base{id = 76118, name = lang:get("幻想之力·玄天"),
+               type = 155, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76119) ->
+    #item_base{id = 76119, name = lang:get("幻想之力·洪荒"),
+               type = 155, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76155) ->
+    #item_base{id = 76155, name = lang:get("龙魂之翼"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{67, 30043, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76200) ->
+    #item_base{id = 76200, name = lang:get("枭之心"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76201) ->
+    #item_base{id = 76201, name = lang:get("天兵之心"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76202) ->
+    #item_base{id = 76202, name = lang:get("白灵之心"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76220) ->
+    #item_base{id = 76220, name = lang:get("枭魂"),
+               type = 0, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76221) ->
+    #item_base{id = 76221, name = lang:get("天兵魂"),
+               type = 0, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76222) ->
+    #item_base{id = 76222, name = lang:get("白灵魂"),
+               type = 0, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76223) ->
+    #item_base{id = 76223, name = lang:get("神牛之心"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76224) ->
+    #item_base{id = 76224, name = lang:get("修罗之心"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76225) ->
+    #item_base{id = 76225, name = lang:get("神牛魂"),
+               type = 0, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76226) ->
+    #item_base{id = 76226, name = lang:get("修罗魂"),
+               type = 0, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76227) ->
+    #item_base{id = 76227, name = lang:get("孔雀之心"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76228) ->
+    #item_base{id = 76228, name = lang:get("玉兔之心"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76229) ->
+    #item_base{id = 76229, name = lang:get("麒麟之心"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76230) ->
+    #item_base{id = 76230, name = lang:get("孔雀魂"),
+               type = 0, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76231) ->
+    #item_base{id = 76231, name = lang:get("玉兔魂"),
+               type = 0, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76232) ->
+    #item_base{id = 76232, name = lang:get("麒麟魂"),
+               type = 0, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76300) ->
+    #item_base{id = 76300, name = lang:get("彩虹护符"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76301) ->
+    #item_base{id = 76301, name = lang:get("彩虹护符"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76302) ->
+    #item_base{id = 76302, name = lang:get("彩虹护符"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76303) ->
+    #item_base{id = 76303, name = lang:get("彩虹护符"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76304) ->
+    #item_base{id = 76304, name = lang:get("彩虹护符"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76305) ->
+    #item_base{id = 76305, name = lang:get("银河护符·蓝"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76306) ->
+    #item_base{id = 76306, name = lang:get("银河护符·紫"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76307) ->
+    #item_base{id = 76307, name = lang:get("银河护符·白"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76308) ->
+    #item_base{id = 76308, name = lang:get("银河护符·黑"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76309) ->
+    #item_base{id = 76309, name = lang:get("银河护符·粉"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76312) ->
+    #item_base{id = 76312, name = lang:get("银河护符·自选"),
+               type = 154, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76313) ->
+    #item_base{id = 76313, name = lang:get("银河护符·随机"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76400) ->
+    #item_base{id = 76400, name = lang:get("赤银稀有宠书"),
+               type = 111, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76401) ->
+    #item_base{id = 76401, name = lang:get("赤银稀有护符"),
+               type = 111, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76402) ->
+    #item_base{id = 76402, name = lang:get("赤银宠物成长"),
+               type = 111, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76403) ->
+    #item_base{id = 76403, name = lang:get("赤银宠物增强"),
+               type = 111, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76404) ->
+    #item_base{id = 76404, name = lang:get("赤银黄金万两"),
+               type = 111, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76405) ->
+    #item_base{id = 76405, name = lang:get("赤银人物宝物"),
+               type = 111, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76406) ->
+    #item_base{id = 76406, name = lang:get("赤银人物时装"),
+               type = 111, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76407) ->
+    #item_base{id = 76407, name = lang:get("赤银稀有物品"),
+               type = 111, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76408) ->
+    #item_base{id = 76408, name = lang:get("铂金稀有神宠"),
+               type = 111, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76409) ->
+    #item_base{id = 76409, name = lang:get("铂金神技宠书"),
+               type = 111, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76410) ->
+    #item_base{id = 76410, name = lang:get("铂金人物成长"),
+               type = 111, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76411) ->
+    #item_base{id = 76411, name = lang:get("铂金宠物增强"),
+               type = 111, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76412) ->
+    #item_base{id = 76412, name = lang:get("铂金人物宝物"),
+               type = 111, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76413) ->
+    #item_base{id = 76413, name = lang:get("铂金人物时装"),
+               type = 111, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76414) ->
+    #item_base{id = 76414, name = lang:get("铂金黄金万两"),
+               type = 111, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76415) ->
+    #item_base{id = 76415, name = lang:get("铂金稀有物品"),
+               type = 111, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76430) ->
+    #item_base{id = 76430, name = lang:get("仙兽原生之灵1"),
+               type = 111, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76431) ->
+    #item_base{id = 76431, name = lang:get("仙兽原生之灵2"),
+               type = 111, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(76432) ->
+    #item_base{id = 76432, name = lang:get("圣兽随机原生灵"),
+               type = 111, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78000) ->
+    #item_base{id = 78000, name = lang:get("异彩晶石"),
+               type = 0, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78001) ->
+    #item_base{id = 78001, name = lang:get("灵动羊驼"),
+               type = 0, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78002) ->
+    #item_base{id = 78002, name = lang:get("寻梦灵晶"),
+               type = 0, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78003) ->
+    #item_base{id = 78003, name = lang:get("金色飞贼"),
+               type = 0, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78004) ->
+    #item_base{id = 78004, name = lang:get("双人成行"),
+               type = 0, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78005) ->
+    #item_base{id = 78005, name = lang:get("巨龙宝珠"),
+               type = 0, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78006) ->
+    #item_base{id = 78006, name = lang:get("微抚风铃"),
+               type = 0, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78007) ->
+    #item_base{id = 78007, name = lang:get("兔兔勋章"),
+               type = 0, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78008) ->
+    #item_base{id = 78008, name = lang:get("机械胡萝卜"),
+               type = 0, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78009) ->
+    #item_base{id = 78009, name = lang:get("海边时光"),
+               type = 0, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78010) ->
+    #item_base{id = 78010, name = lang:get("团团灯"),
+               type = 0, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78011) ->
+    #item_base{id = 78011, name = lang:get("赤红核心"),
+               type = 0, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78012) ->
+    #item_base{id = 78012, name = lang:get("花语灵鹿·绿"),
+               type = 0, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78013) ->
+    #item_base{id = 78013, name = lang:get("花语灵鹿·红"),
+               type = 0, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78014) ->
+    #item_base{id = 78014, name = lang:get("花语灵鹿·黄"),
+               type = 0, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78015) ->
+    #item_base{id = 78015, name = lang:get("花语灵鹿·彩"),
+               type = 0, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78016) ->
+    #item_base{id = 78016, name = lang:get("花语灵鹿·夜"),
+               type = 0, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78017) ->
+    #item_base{id = 78017, name = lang:get("灵狐闪"),
+               type = 0, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78018) ->
+    #item_base{id = 78018, name = lang:get("霜狼核"),
+               type = 0, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78019) ->
+    #item_base{id = 78019, name = lang:get("扇魂"),
+               type = 0, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78020) ->
+    #item_base{id = 78020, name = lang:get("圣座子"),
+               type = 0, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78021) ->
+    #item_base{id = 78021, name = lang:get("绮灵梦"),
+               type = 0, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78022) ->
+    #item_base{id = 78022, name = lang:get("18特惠套餐"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78023) ->
+    #item_base{id = 78023, name = lang:get("58特惠套餐"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78024) ->
+    #item_base{id = 78024, name = lang:get("98蓝钻积分套餐"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78025) ->
+    #item_base{id = 78025, name = lang:get("98积分特惠套餐"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78026) ->
+    #item_base{id = 78026, name = lang:get("新区仙兽礼包"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78027) ->
+    #item_base{id = 78027, name = lang:get("特殊技能随机"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78028) ->
+    #item_base{id = 78028, name = lang:get("188特惠套餐"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78029) ->
+    #item_base{id = 78029, name = lang:get("488特惠套餐"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78030) ->
+    #item_base{id = 78030, name = lang:get("38折扣套餐"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78031) ->
+    #item_base{id = 78031, name = lang:get("68折扣套餐"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78032) ->
+    #item_base{id = 78032, name = lang:get("158折扣套餐"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78033) ->
+    #item_base{id = 78033, name = lang:get("368折扣套餐"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78034) ->
+    #item_base{id = 78034, name = lang:get("688折扣套餐"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78035) ->
+    #item_base{id = 78035, name = lang:get("988折扣套餐"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78036) ->
+    #item_base{id = 78036, name = lang:get("特殊技能自选"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78037) ->
+    #item_base{id = 78037, name = lang:get("新区宠进阶礼包"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78038) ->
+    #item_base{id = 78038, name = lang:get("1388折扣套餐"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78039) ->
+    #item_base{id = 78039, name = lang:get("1888折扣套餐"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78040) ->
+    #item_base{id = 78040, name = lang:get("2888折扣套餐"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78041) ->
+    #item_base{id = 78041, name = lang:get("1388圣兽自选"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78042) ->
+    #item_base{id = 78042, name = lang:get("1888圣兽自选"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78043) ->
+    #item_base{id = 78043, name = lang:get("2888圣兽自选"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78044) ->
+    #item_base{id = 78044, name = lang:get("3388折扣套餐"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78045) ->
+    #item_base{id = 78045, name = lang:get("6888折扣套餐2"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78046) ->
+    #item_base{id = 78046, name = lang:get("2388折扣套餐"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78047) ->
+    #item_base{id = 78047, name = lang:get("3988折扣套餐"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78048) ->
+    #item_base{id = 78048, name = lang:get("1988折扣套餐"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78100) ->
+    #item_base{id = 78100, name = lang:get("瞬击·修罗王"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78101) ->
+    #item_base{id = 78101, name = lang:get("瞬击·玉兔"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78102) ->
+    #item_base{id = 78102, name = lang:get("瞬击·枭"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78103) ->
+    #item_base{id = 78103, name = lang:get("瞬击·擎天神牛"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78104) ->
+    #item_base{id = 78104, name = lang:get("瞬击·赤焰白灵"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78105) ->
+    #item_base{id = 78105, name = lang:get("瞬击·天兵"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78106) ->
+    #item_base{id = 78106, name = lang:get("瞬击·天门战神"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78107) ->
+    #item_base{id = 78107, name = lang:get("瞬击·暗夜君王"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78108) ->
+    #item_base{id = 78108, name = lang:get("瞬击·爆裂萝莉"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78109) ->
+    #item_base{id = 78109, name = lang:get("瞬击·箭神虞姬"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78110) ->
+    #item_base{id = 78110, name = lang:get("瞬击·通天罗刹"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78111) ->
+    #item_base{id = 78111, name = lang:get("瞬击·玄天战姬"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78112) ->
+    #item_base{id = 78112, name = lang:get("瞬击·天耀陆虎"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78113) ->
+    #item_base{id = 78113, name = lang:get("瞬击·诛邪武魂"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78114) ->
+    #item_base{id = 78114, name = lang:get("瞬击·霹雳拳手"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78115) ->
+    #item_base{id = 78115, name = lang:get("瞬击·神族精卫"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78116) ->
+    #item_base{id = 78116, name = lang:get("瞬击·东宫少主"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78117) ->
+    #item_base{id = 78117, name = lang:get("瞬击·雷震子"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78118) ->
+    #item_base{id = 78118, name = lang:get("瞬击·火麒麟"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78119) ->
+    #item_base{id = 78119, name = lang:get("瞬击·孙悟空"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78120) ->
+    #item_base{id = 78120, name = lang:get("瞬击·六耳猕猴"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78121) ->
+    #item_base{id = 78121, name = lang:get("瞬击·刑天战神"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78122) ->
+    #item_base{id = 78122, name = lang:get("瞬击·龙尊"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78123) ->
+    #item_base{id = 78123, name = lang:get("神级瞬击·九天玄女"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78124) ->
+    #item_base{id = 78124, name = lang:get("神级瞬击·言初音"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78125) ->
+    #item_base{id = 78125, name = lang:get("究极瞬击·烈火穷奇"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78126) ->
+    #item_base{id = 78126, name = lang:get("究极瞬击·封阳"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78127) ->
+    #item_base{id = 78127, name = lang:get("究极瞬击·太初"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78128) ->
+    #item_base{id = 78128, name = lang:get("究极瞬击·死神"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78129) ->
+    #item_base{id = 78129, name = lang:get("究极瞬击·亡川"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78300) ->
+    #item_base{id = 78300, name = lang:get("仙瞬击·未鉴定"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78301) ->
+    #item_base{id = 78301, name = lang:get("圣瞬击·未鉴定"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78302) ->
+    #item_base{id = 78302, name = lang:get("仙瞬击·自选"),
+               type = 154, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78303) ->
+    #item_base{id = 78303, name = lang:get("圣瞬击·自选"),
+               type = 154, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78304) ->
+    #item_base{id = 78304, name = lang:get("宠物幻化盲盒"),
+               type = 111, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78305) ->
+    #item_base{id = 78305, name = lang:get("区冠名大礼包"),
+               type = 111, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78306) ->
+    #item_base{id = 78306, name = lang:get("职业挑战大礼包"),
+               type = 111, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78307) ->
+    #item_base{id = 78307, name = lang:get("988圣兽选择礼包"),
+               type = 154, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78308) ->
+    #item_base{id = 78308, name = lang:get("60强化折扣礼包"),
+               type = 111, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78309) ->
+    #item_base{id = 78309, name = lang:get("360强化折扣礼包"),
+               type = 111, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78310) ->
+    #item_base{id = 78310, name = lang:get("十万历练值"),
+               type = 111, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78311) ->
+    #item_base{id = 78311, name = lang:get("足迹随机礼盒"),
+               type = 111, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78312) ->
+    #item_base{id = 78312, name = lang:get("时尚精华"),
+               type = 0, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78313) ->
+    #item_base{id = 78313, name = lang:get("稀有时装随机2"),
+               type = 111, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78314) ->
+    #item_base{id = 78314, name = lang:get("稀有时装自选2"),
+               type = 159, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78320) ->
+    #item_base{id = 78320, name = lang:get("超级冒险宝典"),
+               type = 0, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{7, 5000}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78321) ->
+    #item_base{id = 78321, name = lang:get("10亿金币"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78322) ->
+    #item_base{id = 78322, name = lang:get("10亿银币"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78323) ->
+    #item_base{id = 78323, name = lang:get("1千公会贡献"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78324) ->
+    #item_base{id = 78324, name = lang:get("1亿钻石+积分"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78325) ->
+    #item_base{id = 78325, name = lang:get("2亿钻石+积分"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78326) ->
+    #item_base{id = 78326, name = lang:get("主播礼包"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78327) ->
+    #item_base{id = 78327, name = lang:get("全套礼包1"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78328) ->
+    #item_base{id = 78328, name = lang:get("全套礼包2"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78329) ->
+    #item_base{id = 78329, name = lang:get("全套礼包3"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78330) ->
+    #item_base{id = 78330, name = lang:get("全套礼包4"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78331) ->
+    #item_base{id = 78331, name = lang:get("1千圣者英雄宝石礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78332) ->
+    #item_base{id = 78332, name = lang:get("步步高顶级礼包"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78333) ->
+    #item_base{id = 78333, name = lang:get("悟空自选礼包"),
+               type = 154, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78334) ->
+    #item_base{id = 78334, name = lang:get("圣兽自选礼包"),
+               type = 154, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78335) ->
+    #item_base{id = 78335, name = lang:get("仙兽之心自选A"),
+               type = 154, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78336) ->
+    #item_base{id = 78336, name = lang:get("仙兽魂自选A"),
+               type = 154, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78337) ->
+    #item_base{id = 78337, name = lang:get("仙兽之心自选B"),
+               type = 154, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78338) ->
+    #item_base{id = 78338, name = lang:get("仙兽魂自选B"),
+               type = 154, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78339) ->
+    #item_base{id = 78339, name = lang:get("仙兽之心随机A"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78340) ->
+    #item_base{id = 78340, name = lang:get("仙兽魂随机A"),
+               type = 111, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78341) ->
+    #item_base{id = 78341, name = lang:get("仙兽之心随机B"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78342) ->
+    #item_base{id = 78342, name = lang:get("仙兽魂随机B"),
+               type = 111, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78343) ->
+    #item_base{id = 78343, name = lang:get("圣兽之心随机A"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78344) ->
+    #item_base{id = 78344, name = lang:get("圣兽魂随机A"),
+               type = 111, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78400) ->
+    #item_base{id = 78400, name = lang:get("悟空之心"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78401) ->
+    #item_base{id = 78401, name = lang:get("悟空魂"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78402) ->
+    #item_base{id = 78402, name = lang:get("猕猴之心"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78403) ->
+    #item_base{id = 78403, name = lang:get("猕猴魂"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78404) ->
+    #item_base{id = 78404, name = lang:get("孙悟空原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 70}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78405) ->
+    #item_base{id = 78405, name = lang:get("六耳猕猴原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 71}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78406) ->
+    #item_base{id = 78406, name = lang:get("花仙之心"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78407) ->
+    #item_base{id = 78407, name = lang:get("花仙魂"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78408) ->
+    #item_base{id = 78408, name = lang:get("百花仙子原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 72}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78409) ->
+    #item_base{id = 78409, name = lang:get("刑天战神原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 73}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78411) ->
+    #item_base{id = 78411, name = lang:get("龙尊原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 75}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78412) ->
+    #item_base{id = 78412, name = lang:get("九天玄女原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 76}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78413) ->
+    #item_base{id = 78413, name = lang:get("梦蝶仙原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 77}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78414) ->
+    #item_base{id = 78414, name = lang:get("言初音原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 78}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78415) ->
+    #item_base{id = 78415, name = lang:get("烈火穷奇原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 79}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78416) ->
+    #item_base{id = 78416, name = lang:get("封阳原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 80}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78417) ->
+    #item_base{id = 78417, name = lang:get("太初原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 81}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78418) ->
+    #item_base{id = 78418, name = lang:get("死神原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 82}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78419) ->
+    #item_base{id = 78419, name = lang:get("亡川原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 83}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78420) ->
+    #item_base{id = 78420, name = lang:get("哪吒原生之灵"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{19, 84}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78500) ->
+    #item_base{id = 78500, name = lang:get("结丹之羽"),
+               type = 0, quality = 3, overlap = 999999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78501) ->
+    #item_base{id = 78501, name = lang:get("银丹之羽"),
+               type = 0, quality = 3, overlap = 999999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78502) ->
+    #item_base{id = 78502, name = lang:get("金丹之羽"),
+               type = 0, quality = 3, overlap = 999999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78503) ->
+    #item_base{id = 78503, name = lang:get("圣丹之羽"),
+               type = 0, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78600) ->
+    #item_base{id = 78600, name = lang:get("萌宠青铜礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78601) ->
+    #item_base{id = 78601, name = lang:get("萌宠白银礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78602) ->
+    #item_base{id = 78602, name = lang:get("萌宠黄金礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78603) ->
+    #item_base{id = 78603, name = lang:get("萌宠钻石礼盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78700) ->
+    #item_base{id = 78700, name = lang:get("神圣敏捷符石"),
+               type = 101, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78701) ->
+    #item_base{id = 78701, name = lang:get("神圣生命符石"),
+               type = 101, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78702) ->
+    #item_base{id = 78702, name = lang:get("神圣智力符石"),
+               type = 101, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78703) ->
+    #item_base{id = 78703, name = lang:get("神圣力量符石"),
+               type = 101, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78704) ->
+    #item_base{id = 78704, name = lang:get("神圣符石盲盒"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78705) ->
+    #item_base{id = 78705, name = lang:get("648主播币充值卡"),
+               type = 111, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78706) ->
+    #item_base{id = 78706, name = lang:get("超品阵图"),
+               type = 0, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78707) ->
+    #item_base{id = 78707, name = lang:get("神品阵图"),
+               type = 0, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78708) ->
+    #item_base{id = 78708, name = lang:get("圣品阵图"),
+               type = 0, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78709) ->
+    #item_base{id = 78709, name = lang:get("宇宙护符"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78710) ->
+    #item_base{id = 78710, name = lang:get("宇宙重置丹"),
+               type = 125, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78711) ->
+    #item_base{id = 78711, name = lang:get("特殊印记随机"),
+               type = 111, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78712) ->
+    #item_base{id = 78712, name = lang:get("特殊印记自选"),
+               type = 154, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78713) ->
+    #item_base{id = 78713, name = lang:get("装备重铸卷轴"),
+               type = 0, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78714) ->
+    #item_base{id = 78714, name = lang:get("彩虹护符"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78715) ->
+    #item_base{id = 78715, name = lang:get("神·宇宙护符(未鉴定)"),
+               type = 105, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78716) ->
+    #item_base{id = 78716, name = lang:get("洪荒护符"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78717) ->
+    #item_base{id = 78717, name = lang:get("洪荒重置丹"),
+               type = 125, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78718) ->
+    #item_base{id = 78718, name = lang:get("洪荒护符(未鉴定)"),
+               type = 105, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78719) ->
+    #item_base{id = 78719, name = lang:get("神·洪荒护符"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78720) ->
+    #item_base{id = 78720, name = lang:get("神·洪荒重置丹"),
+               type = 125, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78800) ->
+    #item_base{id = 78800, name = lang:get("10级助力礼盒"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78801) ->
+    #item_base{id = 78801, name = lang:get("20级助力礼盒"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78802) ->
+    #item_base{id = 78802, name = lang:get("30级助力礼盒"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78803) ->
+    #item_base{id = 78803, name = lang:get("40级助力礼盒"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78804) ->
+    #item_base{id = 78804, name = lang:get("50级助力礼盒"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78805) ->
+    #item_base{id = 78805, name = lang:get("60级助力礼盒"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78806) ->
+    #item_base{id = 78806, name = lang:get("70级助力礼盒"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78807) ->
+    #item_base{id = 78807, name = lang:get("80级助力礼盒"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78808) ->
+    #item_base{id = 78808, name = lang:get("90级助力礼盒"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78809) ->
+    #item_base{id = 78809, name = lang:get("100级助力礼盒"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78810) ->
+    #item_base{id = 78810, name = lang:get("仙兽图鉴盲盒"),
+               type = 111, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78811) ->
+    #item_base{id = 78811, name = lang:get("圣兽图鉴盲盒"),
+               type = 111, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78812) ->
+    #item_base{id = 78812, name = lang:get("仙兽图鉴自选"),
+               type = 154, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78813) ->
+    #item_base{id = 78813, name = lang:get("圣兽图鉴自选"),
+               type = 154, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78814) ->
+    #item_base{id = 78814, name = lang:get("全套礼包5"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78815) ->
+    #item_base{id = 78815, name = lang:get("全套礼包6"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78816) ->
+    #item_base{id = 78816, name = lang:get("全套礼包7"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78817) ->
+    #item_base{id = 78817, name = lang:get("全套礼包8"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78818) ->
+    #item_base{id = 78818, name = lang:get("装备重铸幸运石"),
+               type = 0, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78820) ->
+    #item_base{id = 78820, name = lang:get("99元材料宝盒"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78821) ->
+    #item_base{id = 78821, name = lang:get("全套礼包9"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78822) ->
+    #item_base{id = 78822, name = lang:get("10级豪华礼盒"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78823) ->
+    #item_base{id = 78823, name = lang:get("20级豪华礼盒"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78824) ->
+    #item_base{id = 78824, name = lang:get("30级豪华礼盒"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78825) ->
+    #item_base{id = 78825, name = lang:get("40级豪华礼盒"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78826) ->
+    #item_base{id = 78826, name = lang:get("50级豪华礼盒"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78827) ->
+    #item_base{id = 78827, name = lang:get("60级豪华礼盒"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78828) ->
+    #item_base{id = 78828, name = lang:get("70级豪华礼盒"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78829) ->
+    #item_base{id = 78829, name = lang:get("80级豪华礼盒"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78830) ->
+    #item_base{id = 78830, name = lang:get("90级豪华礼盒"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78831) ->
+    #item_base{id = 78831, name = lang:get("100级豪华礼盒"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78832) ->
+    #item_base{id = 78832, name = lang:get("98元宠物成长宝盒"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78833) ->
+    #item_base{id = 78833, name = lang:get("全套礼包（全）"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78834) ->
+    #item_base{id = 78834, name = lang:get("主播礼包2"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78835) ->
+    #item_base{id = 78835, name = lang:get("神圣符石自选"),
+               type = 154, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78836) ->
+    #item_base{id = 78836, name = lang:get("188元钜惠折扣宝盒"),
+               type = 111, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78837) ->
+    #item_base{id = 78837, name = lang:get("宠物幻化自选"),
+               type = 154, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78838) ->
+    #item_base{id = 78838, name = lang:get("28元天天享宝盒"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78839) ->
+    #item_base{id = 78839, name = lang:get("超级幻化果礼盒"),
+               type = 111, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78840) ->
+    #item_base{id = 78840, name = lang:get("超级幻化果自选"),
+               type = 154, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78841) ->
+    #item_base{id = 78841, name = lang:get("彩虹护符"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78842) ->
+    #item_base{id = 78842, name = lang:get("彩虹护符"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78843) ->
+    #item_base{id = 78843, name = lang:get("彩虹护符"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78844) ->
+    #item_base{id = 78844, name = lang:get("椒图石"),
+               type = 0, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78845) ->
+    #item_base{id = 78845, name = lang:get("饕餮石"),
+               type = 0, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78846) ->
+    #item_base{id = 78846, name = lang:get("狻猊石"),
+               type = 0, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78847) ->
+    #item_base{id = 78847, name = lang:get("狴犴石"),
+               type = 0, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78848) ->
+    #item_base{id = 78848, name = lang:get("睚眦石"),
+               type = 0, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78849) ->
+    #item_base{id = 78849, name = lang:get("囚牛石"),
+               type = 0, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78899) ->
+    #item_base{id = 78899, name = lang:get("钻石武饰随机礼盒"),
+               type = 111, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78900) ->
+    #item_base{id = 78900, name = lang:get("钻石武饰自选礼盒"),
+               type = 159, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78901) ->
+    #item_base{id = 78901, name = lang:get("勇士黑钻随机礼包"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78902) ->
+    #item_base{id = 78902, name = lang:get("98元每日礼包"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78903) ->
+    #item_base{id = 78903, name = lang:get("198元每日礼包"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78904) ->
+    #item_base{id = 78904, name = lang:get("298元每日礼包"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78905) ->
+    #item_base{id = 78905, name = lang:get("648元每日礼包"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78906) ->
+    #item_base{id = 78906, name = lang:get("1000元每日礼包"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78907) ->
+    #item_base{id = 78907, name = lang:get("2000元每日礼包"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78908) ->
+    #item_base{id = 78908, name = lang:get("28元荣誉勋章"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78909) ->
+    #item_base{id = 78909, name = lang:get("68元荣誉勋章"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78910) ->
+    #item_base{id = 78910, name = lang:get("88元荣誉勋章"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78911) ->
+    #item_base{id = 78911, name = lang:get("98元荣誉勋章"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78912) ->
+    #item_base{id = 78912, name = lang:get("99元荣誉勋章"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78913) ->
+    #item_base{id = 78913, name = lang:get("168元荣誉勋章"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78914) ->
+    #item_base{id = 78914, name = lang:get("188元荣誉勋章"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78915) ->
+    #item_base{id = 78915, name = lang:get("198元荣誉勋章"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78916) ->
+    #item_base{id = 78916, name = lang:get("388元荣誉勋章"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78917) ->
+    #item_base{id = 78917, name = lang:get("398元荣誉勋章"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78918) ->
+    #item_base{id = 78918, name = lang:get("648元荣誉勋章"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78919) ->
+    #item_base{id = 78919, name = lang:get("688元荣誉勋章"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78920) ->
+    #item_base{id = 78920, name = lang:get("1000元荣誉勋章"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78921) ->
+    #item_base{id = 78921, name = lang:get("1288元荣誉勋章"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78922) ->
+    #item_base{id = 78922, name = lang:get("1888元荣誉勋章"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78923) ->
+    #item_base{id = 78923, name = lang:get("2888元荣誉勋章"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78924) ->
+    #item_base{id = 78924, name = lang:get("3888元荣誉勋章"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78925) ->
+    #item_base{id = 78925, name = lang:get("5888元荣誉勋章"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78926) ->
+    #item_base{id = 78926, name = lang:get("新区圣兽礼包"),
+               type = 154, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78927) ->
+    #item_base{id = 78927, name = lang:get("刑天之心"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78928) ->
+    #item_base{id = 78928, name = lang:get("刑天魂"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78929) ->
+    #item_base{id = 78929, name = lang:get("龙兔之心"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78930) ->
+    #item_base{id = 78930, name = lang:get("龙兔魂"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78931) ->
+    #item_base{id = 78931, name = lang:get("龙尊之心"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78932) ->
+    #item_base{id = 78932, name = lang:get("龙尊魂"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78933) ->
+    #item_base{id = 78933, name = lang:get("玄女之心"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78934) ->
+    #item_base{id = 78934, name = lang:get("玄女魂"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78935) ->
+    #item_base{id = 78935, name = lang:get("哪吒之心"),
+               type = 0, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78936) ->
+    #item_base{id = 78936, name = lang:get("哪吒魂"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78944) ->
+    #item_base{id = 78944, name = lang:get("分享礼包"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78945) ->
+    #item_base{id = 78945, name = lang:get("1万传奇英雄宝石礼包"),
+               type = 111, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78946) ->
+    #item_base{id = 78946, name = lang:get("1万圣者英雄宝石礼包"),
+               type = 111, quality = 3, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78947) ->
+    #item_base{id = 78947, name = lang:get("天籁之旅\\n·\\n音"),
+               type = 0, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78948) ->
+    #item_base{id = 78948, name = lang:get("天籁之旅·幻"),
+               type = 0, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78949) ->
+    #item_base{id = 78949, name = lang:get("粽叶飘香"),
+               type = 0, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78950) ->
+    #item_base{id = 78950, name = lang:get("梦之旅"),
+               type = 0, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78951) ->
+    #item_base{id = 78951, name = lang:get("骨龙化石"),
+               type = 0, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78952) ->
+    #item_base{id = 78952, name = lang:get("鬼谷梨花"),
+               type = 0, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78953) ->
+    #item_base{id = 78953, name = lang:get("深海之心"),
+               type = 0, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78954) ->
+    #item_base{id = 78954, name = lang:get("青莲之魄"),
+               type = 0, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78955) ->
+    #item_base{id = 78955, name = lang:get("剑灵石"),
+               type = 0, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78956) ->
+    #item_base{id = 78956, name = lang:get("龙翼结晶"),
+               type = 0, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78957) ->
+    #item_base{id = 78957, name = lang:get("1000元每日礼包"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78958) ->
+    #item_base{id = 78958, name = lang:get("6888元荣誉勋章"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78959) ->
+    #item_base{id = 78959, name = lang:get("4888元荣誉勋章"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78960) ->
+    #item_base{id = 78960, name = lang:get("王者强化石"),
+               type = 0, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78961) ->
+    #item_base{id = 78961, name = lang:get("圣者强化石"),
+               type = 0, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78962) ->
+    #item_base{id = 78962, name = lang:get("新区圣兽魂自选"),
+               type = 154, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78963) ->
+    #item_base{id = 78963, name = lang:get("CDK全套物品"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78964) ->
+    #item_base{id = 78964, name = lang:get("累充648一版"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78965) ->
+    #item_base{id = 78965, name = lang:get("3988元荣誉勋章"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(78966) ->
+    #item_base{id = 78966, name = lang:get("1988元荣誉勋章"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79000) ->
+    #item_base{id = 79000, name = lang:get("46级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79001) ->
+    #item_base{id = 79001, name = lang:get("46级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79002) ->
+    #item_base{id = 79002, name = lang:get("46级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79003) ->
+    #item_base{id = 79003, name = lang:get("46级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79004) ->
+    #item_base{id = 79004, name = lang:get("46级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79005) ->
+    #item_base{id = 79005, name = lang:get("46级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79006) ->
+    #item_base{id = 79006, name = lang:get("46级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79007) ->
+    #item_base{id = 79007, name = lang:get("46级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79008) ->
+    #item_base{id = 79008, name = lang:get("46级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79009) ->
+    #item_base{id = 79009, name = lang:get("46级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79010) ->
+    #item_base{id = 79010, name = lang:get("47级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79011) ->
+    #item_base{id = 79011, name = lang:get("47级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79012) ->
+    #item_base{id = 79012, name = lang:get("47级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79013) ->
+    #item_base{id = 79013, name = lang:get("47级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79014) ->
+    #item_base{id = 79014, name = lang:get("47级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79015) ->
+    #item_base{id = 79015, name = lang:get("47级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79016) ->
+    #item_base{id = 79016, name = lang:get("47级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79017) ->
+    #item_base{id = 79017, name = lang:get("47级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79018) ->
+    #item_base{id = 79018, name = lang:get("47级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79019) ->
+    #item_base{id = 79019, name = lang:get("47级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79020) ->
+    #item_base{id = 79020, name = lang:get("48级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79021) ->
+    #item_base{id = 79021, name = lang:get("48级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79022) ->
+    #item_base{id = 79022, name = lang:get("48级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79023) ->
+    #item_base{id = 79023, name = lang:get("48级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79024) ->
+    #item_base{id = 79024, name = lang:get("48级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79025) ->
+    #item_base{id = 79025, name = lang:get("48级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79026) ->
+    #item_base{id = 79026, name = lang:get("48级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79027) ->
+    #item_base{id = 79027, name = lang:get("48级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79028) ->
+    #item_base{id = 79028, name = lang:get("48级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79029) ->
+    #item_base{id = 79029, name = lang:get("48级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79030) ->
+    #item_base{id = 79030, name = lang:get("49级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79031) ->
+    #item_base{id = 79031, name = lang:get("49级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79032) ->
+    #item_base{id = 79032, name = lang:get("49级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79033) ->
+    #item_base{id = 79033, name = lang:get("49级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79034) ->
+    #item_base{id = 79034, name = lang:get("49级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79035) ->
+    #item_base{id = 79035, name = lang:get("49级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79036) ->
+    #item_base{id = 79036, name = lang:get("49级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79037) ->
+    #item_base{id = 79037, name = lang:get("49级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79038) ->
+    #item_base{id = 79038, name = lang:get("49级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79039) ->
+    #item_base{id = 79039, name = lang:get("49级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79040) ->
+    #item_base{id = 79040, name = lang:get("50级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79041) ->
+    #item_base{id = 79041, name = lang:get("50级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79042) ->
+    #item_base{id = 79042, name = lang:get("50级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79043) ->
+    #item_base{id = 79043, name = lang:get("50级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79044) ->
+    #item_base{id = 79044, name = lang:get("50级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79045) ->
+    #item_base{id = 79045, name = lang:get("50级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79046) ->
+    #item_base{id = 79046, name = lang:get("50级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79047) ->
+    #item_base{id = 79047, name = lang:get("50级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79048) ->
+    #item_base{id = 79048, name = lang:get("50级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79049) ->
+    #item_base{id = 79049, name = lang:get("50级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79050) ->
+    #item_base{id = 79050, name = lang:get("51级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79051) ->
+    #item_base{id = 79051, name = lang:get("51级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79052) ->
+    #item_base{id = 79052, name = lang:get("51级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79053) ->
+    #item_base{id = 79053, name = lang:get("51级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79054) ->
+    #item_base{id = 79054, name = lang:get("51级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79055) ->
+    #item_base{id = 79055, name = lang:get("51级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79056) ->
+    #item_base{id = 79056, name = lang:get("51级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79057) ->
+    #item_base{id = 79057, name = lang:get("51级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79058) ->
+    #item_base{id = 79058, name = lang:get("51级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79059) ->
+    #item_base{id = 79059, name = lang:get("51级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79060) ->
+    #item_base{id = 79060, name = lang:get("52级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79061) ->
+    #item_base{id = 79061, name = lang:get("52级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79062) ->
+    #item_base{id = 79062, name = lang:get("52级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79063) ->
+    #item_base{id = 79063, name = lang:get("52级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79064) ->
+    #item_base{id = 79064, name = lang:get("52级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79065) ->
+    #item_base{id = 79065, name = lang:get("52级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79066) ->
+    #item_base{id = 79066, name = lang:get("52级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79067) ->
+    #item_base{id = 79067, name = lang:get("52级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79068) ->
+    #item_base{id = 79068, name = lang:get("52级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79069) ->
+    #item_base{id = 79069, name = lang:get("52级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79070) ->
+    #item_base{id = 79070, name = lang:get("53级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79071) ->
+    #item_base{id = 79071, name = lang:get("53级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79072) ->
+    #item_base{id = 79072, name = lang:get("53级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79073) ->
+    #item_base{id = 79073, name = lang:get("53级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79074) ->
+    #item_base{id = 79074, name = lang:get("53级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79075) ->
+    #item_base{id = 79075, name = lang:get("53级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79076) ->
+    #item_base{id = 79076, name = lang:get("53级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79077) ->
+    #item_base{id = 79077, name = lang:get("53级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79078) ->
+    #item_base{id = 79078, name = lang:get("53级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79079) ->
+    #item_base{id = 79079, name = lang:get("53级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79080) ->
+    #item_base{id = 79080, name = lang:get("54级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79081) ->
+    #item_base{id = 79081, name = lang:get("54级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79082) ->
+    #item_base{id = 79082, name = lang:get("54级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79083) ->
+    #item_base{id = 79083, name = lang:get("54级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79084) ->
+    #item_base{id = 79084, name = lang:get("54级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79085) ->
+    #item_base{id = 79085, name = lang:get("54级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79086) ->
+    #item_base{id = 79086, name = lang:get("54级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79087) ->
+    #item_base{id = 79087, name = lang:get("54级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79088) ->
+    #item_base{id = 79088, name = lang:get("54级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79089) ->
+    #item_base{id = 79089, name = lang:get("54级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79090) ->
+    #item_base{id = 79090, name = lang:get("55级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79091) ->
+    #item_base{id = 79091, name = lang:get("55级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79092) ->
+    #item_base{id = 79092, name = lang:get("55级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79093) ->
+    #item_base{id = 79093, name = lang:get("55级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79094) ->
+    #item_base{id = 79094, name = lang:get("55级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79095) ->
+    #item_base{id = 79095, name = lang:get("55级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79096) ->
+    #item_base{id = 79096, name = lang:get("55级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79097) ->
+    #item_base{id = 79097, name = lang:get("55级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79098) ->
+    #item_base{id = 79098, name = lang:get("55级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79099) ->
+    #item_base{id = 79099, name = lang:get("55级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79100) ->
+    #item_base{id = 79100, name = lang:get("56级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79101) ->
+    #item_base{id = 79101, name = lang:get("56级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79102) ->
+    #item_base{id = 79102, name = lang:get("56级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79103) ->
+    #item_base{id = 79103, name = lang:get("56级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79104) ->
+    #item_base{id = 79104, name = lang:get("56级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79105) ->
+    #item_base{id = 79105, name = lang:get("56级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79106) ->
+    #item_base{id = 79106, name = lang:get("56级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79107) ->
+    #item_base{id = 79107, name = lang:get("56级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79108) ->
+    #item_base{id = 79108, name = lang:get("56级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79109) ->
+    #item_base{id = 79109, name = lang:get("56级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79110) ->
+    #item_base{id = 79110, name = lang:get("57级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79111) ->
+    #item_base{id = 79111, name = lang:get("57级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79112) ->
+    #item_base{id = 79112, name = lang:get("57级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79113) ->
+    #item_base{id = 79113, name = lang:get("57级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79114) ->
+    #item_base{id = 79114, name = lang:get("57级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79115) ->
+    #item_base{id = 79115, name = lang:get("57级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79116) ->
+    #item_base{id = 79116, name = lang:get("57级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79117) ->
+    #item_base{id = 79117, name = lang:get("57级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79118) ->
+    #item_base{id = 79118, name = lang:get("57级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79119) ->
+    #item_base{id = 79119, name = lang:get("57级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79120) ->
+    #item_base{id = 79120, name = lang:get("58级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79121) ->
+    #item_base{id = 79121, name = lang:get("58级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79122) ->
+    #item_base{id = 79122, name = lang:get("58级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79123) ->
+    #item_base{id = 79123, name = lang:get("58级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79124) ->
+    #item_base{id = 79124, name = lang:get("58级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79125) ->
+    #item_base{id = 79125, name = lang:get("58级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79126) ->
+    #item_base{id = 79126, name = lang:get("58级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79127) ->
+    #item_base{id = 79127, name = lang:get("58级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79128) ->
+    #item_base{id = 79128, name = lang:get("58级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79129) ->
+    #item_base{id = 79129, name = lang:get("58级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79130) ->
+    #item_base{id = 79130, name = lang:get("59级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79131) ->
+    #item_base{id = 79131, name = lang:get("59级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79132) ->
+    #item_base{id = 79132, name = lang:get("59级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79133) ->
+    #item_base{id = 79133, name = lang:get("59级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79134) ->
+    #item_base{id = 79134, name = lang:get("59级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79135) ->
+    #item_base{id = 79135, name = lang:get("59级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79136) ->
+    #item_base{id = 79136, name = lang:get("59级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79137) ->
+    #item_base{id = 79137, name = lang:get("59级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79138) ->
+    #item_base{id = 79138, name = lang:get("59级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79139) ->
+    #item_base{id = 79139, name = lang:get("59级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79140) ->
+    #item_base{id = 79140, name = lang:get("60级英雄红宝石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79141) ->
+    #item_base{id = 79141, name = lang:get("60级英雄物攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79142) ->
+    #item_base{id = 79142, name = lang:get("60级英雄魔攻石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79143) ->
+    #item_base{id = 79143, name = lang:get("60级英雄物防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79144) ->
+    #item_base{id = 79144, name = lang:get("60级英雄魔防石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79145) ->
+    #item_base{id = 79145, name = lang:get("60级英雄风灵石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79146) ->
+    #item_base{id = 79146, name = lang:get("60级英雄暴击石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79147) ->
+    #item_base{id = 79147, name = lang:get("60级英雄坚韧石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79148) ->
+    #item_base{id = 79148, name = lang:get("60级英雄命中石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79149) ->
+    #item_base{id = 79149, name = lang:get("60级英雄闪避石"),
+               type = 110, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79200) ->
+    #item_base{id = 79200, name = lang:get("超级成长丹"),
+               type = 163, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79201) ->
+    #item_base{id = 79201, name = lang:get("高级成长重置丹"),
+               type = 162, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79202) ->
+    #item_base{id = 79202, name = lang:get("宠物开格神书"),
+               type = 164, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{27, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79203) ->
+    #item_base{id = 79203, name = lang:get("玄级宠物丹"),
+               type = 117, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{27, 1}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79204) ->
+    #item_base{id = 79204, name = lang:get("地级宠物丹"),
+               type = 117, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{27, 1}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79205) ->
+    #item_base{id = 79205, name = lang:get("天级宠物丹"),
+               type = 117, quality = 3, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{27, 1}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79206) ->
+    #item_base{id = 79206, name = lang:get("圣兽重置丹"),
+               type = 0, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79207) ->
+    #item_base{id = 79207, name = lang:get("天赋瞬击恢复卷"),
+               type = 100, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 1}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79208) ->
+    #item_base{id = 79208, name = lang:get("特殊天赋恢复卷"),
+               type = 100, quality = 4, overlap = 99999, use_type = 1,
+               expire_type = 0, effect = [{3, 2}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79212) ->
+    #item_base{id = 79212, name = lang:get("圣兽黄阶醒觉丹"),
+               type = 166, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [{27, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79213) ->
+    #item_base{id = 79213, name = lang:get("圣兽玄阶醒觉丹"),
+               type = 167, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [{27, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79214) ->
+    #item_base{id = 79214, name = lang:get("梦蝶仙之心"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79215) ->
+    #item_base{id = 79215, name = lang:get("蝶仙魂"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79216) ->
+    #item_base{id = 79216, name = lang:get("言初音之心"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79217) ->
+    #item_base{id = 79217, name = lang:get("初音魂"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79218) ->
+    #item_base{id = 79218, name = lang:get("烈火穷奇之心"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79219) ->
+    #item_base{id = 79219, name = lang:get("穷奇魂"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79220) ->
+    #item_base{id = 79220, name = lang:get("封阳之心"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79221) ->
+    #item_base{id = 79221, name = lang:get("封阳魂"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79222) ->
+    #item_base{id = 79222, name = lang:get("太初之心"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79223) ->
+    #item_base{id = 79223, name = lang:get("太初魂"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79224) ->
+    #item_base{id = 79224, name = lang:get("死神之心"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79225) ->
+    #item_base{id = 79225, name = lang:get("死神魂"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79226) ->
+    #item_base{id = 79226, name = lang:get("亡川之心"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79227) ->
+    #item_base{id = 79227, name = lang:get("亡川魂"),
+               type = 0, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79300) ->
+    #item_base{id = 79300, name = lang:get("68钜惠套餐"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79301) ->
+    #item_base{id = 79301, name = lang:get("168钜惠套餐"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79302) ->
+    #item_base{id = 79302, name = lang:get("388钜惠套餐"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79303) ->
+    #item_base{id = 79303, name = lang:get("698钜惠套餐"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79304) ->
+    #item_base{id = 79304, name = lang:get("1288钜惠套餐"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79305) ->
+    #item_base{id = 79305, name = lang:get("1988钜惠套餐"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79306) ->
+    #item_base{id = 79306, name = lang:get("2488钜惠套餐"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79307) ->
+    #item_base{id = 79307, name = lang:get("3688钜惠套餐"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79308) ->
+    #item_base{id = 79308, name = lang:get("4388钜惠套餐"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79309) ->
+    #item_base{id = 79309, name = lang:get("5388钜惠套餐"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79310) ->
+    #item_base{id = 79310, name = lang:get("5688钜惠套餐"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79311) ->
+    #item_base{id = 79311, name = lang:get("6388钜惠套餐"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79312) ->
+    #item_base{id = 79312, name = lang:get("5988钜惠套餐"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79313) ->
+    #item_base{id = 79313, name = lang:get("6788钜惠套餐"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79330) ->
+    #item_base{id = 79330, name = lang:get("68元荣誉勋章"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79331) ->
+    #item_base{id = 79331, name = lang:get("168元荣誉勋章"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79332) ->
+    #item_base{id = 79332, name = lang:get("388元荣誉勋章"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79333) ->
+    #item_base{id = 79333, name = lang:get("698元荣誉勋章"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79334) ->
+    #item_base{id = 79334, name = lang:get("1288元荣誉勋章"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79335) ->
+    #item_base{id = 79335, name = lang:get("1988元荣誉勋章"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79336) ->
+    #item_base{id = 79336, name = lang:get("2488元荣誉勋章"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79337) ->
+    #item_base{id = 79337, name = lang:get("3688元荣誉勋章"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79338) ->
+    #item_base{id = 79338, name = lang:get("4388元荣誉勋章"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79339) ->
+    #item_base{id = 79339, name = lang:get("5388元荣誉勋章"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79340) ->
+    #item_base{id = 79340, name = lang:get("5688元荣誉勋章"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79341) ->
+    #item_base{id = 79341, name = lang:get("6388元荣誉勋章"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79342) ->
+    #item_base{id = 79342, name = lang:get("5988元荣誉勋章"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79343) ->
+    #item_base{id = 79343, name = lang:get("6788元荣誉勋章"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79350) ->
+    #item_base{id = 79350, name = lang:get("698圣兽自选"),
+               type = 154, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79351) ->
+    #item_base{id = 79351, name = lang:get("1288圣兽自选"),
+               type = 154, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79352) ->
+    #item_base{id = 79352, name = lang:get("3级家具自选"),
+               type = 154, quality = 4, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79400) ->
+    #item_base{id = 79400, name = lang:get("68折扣套餐（旧）"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79401) ->
+    #item_base{id = 79401, name = lang:get("168折扣套餐（旧）"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79402) ->
+    #item_base{id = 79402, name = lang:get("388折扣套餐（旧）"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79403) ->
+    #item_base{id = 79403, name = lang:get("688折扣套餐（旧）"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79404) ->
+    #item_base{id = 79404, name = lang:get("1288折扣套餐（旧）"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79405) ->
+    #item_base{id = 79405, name = lang:get("1888折扣套餐（旧）"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79406) ->
+    #item_base{id = 79406, name = lang:get("2888折扣套餐（旧）"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79407) ->
+    #item_base{id = 79407, name = lang:get("3888折扣套餐（旧）"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79408) ->
+    #item_base{id = 79408, name = lang:get("5888折扣套餐（旧）"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79409) ->
+    #item_base{id = 79409, name = lang:get("6888折扣套餐（旧）"),
+               type = 111, quality = 3, overlap = 9999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79410) ->
+    #item_base{id = 79410, name = lang:get("68钜惠套餐(节日)"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79411) ->
+    #item_base{id = 79411, name = lang:get("168钜惠套餐(节日)"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79412) ->
+    #item_base{id = 79412, name = lang:get("388钜惠套餐(节日)"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79413) ->
+    #item_base{id = 79413, name = lang:get("698钜惠套餐(节日)"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79414) ->
+    #item_base{id = 79414, name = lang:get("1288钜惠套餐(节日)"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79415) ->
+    #item_base{id = 79415, name = lang:get("1988钜惠套餐(节日)"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79416) ->
+    #item_base{id = 79416, name = lang:get("2488钜惠套餐(节日)"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79417) ->
+    #item_base{id = 79417, name = lang:get("3688钜惠套餐(节日)"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79418) ->
+    #item_base{id = 79418, name = lang:get("4388钜惠套餐(节日)"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79419) ->
+    #item_base{id = 79419, name = lang:get("68元荣誉勋章(节日)"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79420) ->
+    #item_base{id = 79420, name = lang:get("168元荣誉勋章(节日)"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79421) ->
+    #item_base{id = 79421, name = lang:get("388元荣誉勋章(节日)"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79422) ->
+    #item_base{id = 79422, name = lang:get("698元荣誉勋章(节日)"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79423) ->
+    #item_base{id = 79423, name = lang:get("1288元荣誉勋章(节日)"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79424) ->
+    #item_base{id = 79424, name = lang:get("1988元荣誉勋章(节日)"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79425) ->
+    #item_base{id = 79425, name = lang:get("2488元荣誉勋章(节日)"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79426) ->
+    #item_base{id = 79426, name = lang:get("3688元荣誉勋章(节日)"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79427) ->
+    #item_base{id = 79427, name = lang:get("4388元荣誉勋章(节日)"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79428) ->
+    #item_base{id = 79428, name = lang:get("超级经验卷轴（永）"),
+               type = 0, quality = 3, overlap = 200, use_type = 1,
+               expire_type = 0, effect = [{15, 0}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79429) ->
+    #item_base{id = 79429, name = lang:get("互动礼包直播"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79430) ->
+    #item_base{id = 79430, name = lang:get("30万黑钻"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79431) ->
+    #item_base{id = 79431, name = lang:get("988玄女礼包"),
+               type = 111, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79432) ->
+    #item_base{id = 79432, name = lang:get("1588初音礼包"),
+               type = 111, quality = 3, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79433) ->
+    #item_base{id = 79433, name = lang:get("首充礼包"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79434) ->
+    #item_base{id = 79434, name = lang:get("互动礼包微群"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79435) ->
+    #item_base{id = 79435, name = lang:get("10-30真充卡"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79436) ->
+    #item_base{id = 79436, name = lang:get("直播+微群互动"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79437) ->
+    #item_base{id = 79437, name = lang:get("全套时装礼包"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79438) ->
+    #item_base{id = 79438, name = lang:get("全套武饰礼包"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79439) ->
+    #item_base{id = 79439, name = lang:get("全套翅膀礼包"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79440) ->
+    #item_base{id = 79440, name = lang:get("全套坐骑礼包"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79441) ->
+    #item_base{id = 79441, name = lang:get("全套称号礼包"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79442) ->
+    #item_base{id = 79442, name = lang:get("10万黑钻"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79443) ->
+    #item_base{id = 79443, name = lang:get("15万黑钻"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79444) ->
+    #item_base{id = 79444, name = lang:get("全套时装礼包B"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79445) ->
+    #item_base{id = 79445, name = lang:get("全套武饰礼包B"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79446) ->
+    #item_base{id = 79446, name = lang:get("全套翅膀礼包B"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79447) ->
+    #item_base{id = 79447, name = lang:get("全套坐骑礼包B"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79448) ->
+    #item_base{id = 79448, name = lang:get("全套称号礼包B"),
+               type = 111, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79449) ->
+    #item_base{id = 79449, name = lang:get("圣·洪荒护符"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79450) ->
+    #item_base{id = 79450, name = lang:get("圣·洪荒护符"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79451) ->
+    #item_base{id = 79451, name = lang:get("圣·洪荒护符"),
+               type = 102, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79452) ->
+    #item_base{id = 79452, name = lang:get("圣兽之心盲盒"),
+               type = 111, quality = 4, overlap = 99, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79453) ->
+    #item_base{id = 79453, name = lang:get("宇宙神力·天赐"),
+               type = 155, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79454) ->
+    #item_base{id = 79454, name = lang:get("宇宙神力·天赐"),
+               type = 155, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79455) ->
+    #item_base{id = 79455, name = lang:get("宇宙神力·天赐"),
+               type = 155, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79456) ->
+    #item_base{id = 79456, name = lang:get("宇宙神力·天赐"),
+               type = 155, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79457) ->
+    #item_base{id = 79457, name = lang:get("宇宙神力·天赐"),
+               type = 155, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79458) ->
+    #item_base{id = 79458, name = lang:get("宇宙神力·青冥"),
+               type = 155, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79459) ->
+    #item_base{id = 79459, name = lang:get("宇宙神力·青冥"),
+               type = 155, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79460) ->
+    #item_base{id = 79460, name = lang:get("宇宙神力·青冥"),
+               type = 155, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79461) ->
+    #item_base{id = 79461, name = lang:get("宇宙神力·青冥"),
+               type = 155, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79462) ->
+    #item_base{id = 79462, name = lang:get("宇宙神力·青冥"),
+               type = 155, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(79463) ->
+    #item_base{id = 79463, name = lang:get("宠物特殊幻化"),
+               type = 154, quality = 4, overlap = 999, use_type = 1,
+               expire_type = 0, effect = [], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
 get(_Id) -> false.
 
 get_buy_source(19001) -> {19001, val_not_exist};

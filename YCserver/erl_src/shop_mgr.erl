@@ -2475,7 +2475,7 @@ do_reload() ->
                   NewL = lists:keysort(#shop_item.sort, L),
                   [Fun1(SI) || SI <- NewL]
           end,
-    AllList = shop_data:get_list(),
+    AllList = shop_data:get_list() ++ shop_data_2025:extra_list(),
     GoldList = [Si || Si = #shop_item{tab = 1} <- AllList],
     DiscountGoldList =
         calc_campaign_discount_price(GoldList),

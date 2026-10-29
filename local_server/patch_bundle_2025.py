@@ -181,6 +181,26 @@ def patch_recharge_gift_item(text):
         raise SystemExit(f"recharge_gift_item 目标行匹配 {text.count(old)} 次")
     return text.replace(old, new, 1)
 
+def patch_shop_recharge_item(text):
+    """充值档位赠送图标取 base 图集的 Assets90029，2025 资源里没有这张图，
+    会画出白框；取不到时回退成钻石物品图标。"""
+    old = ('    self.tokesCurrencyLoader:SetOtherSprite(PreloadManager.Instance:'
+           'GetSprite(AssetConfig.base_textures, "Assets90029"))')
+    new = """    do
+        local __cur = PreloadManager.Instance:GetSprite(AssetConfig.base_textures, "Assets90029")
+        if __cur ~= nil then
+            self.tokesCurrencyLoader:SetOtherSprite(__cur)
+        else
+            self.tokesCurrencyLoader:SetSprite(SingleIconType.Item, 90002)
+        end
+    end"""
+    if 'local __cur = PreloadManager' in text:
+        return text
+    if text.count(old) != 1:
+        raise SystemExit(f"shop_recharge_item 目标行匹配 {text.count(old)} 次")
+    return text.replace(old, new, 1)
+
+
 CHARGE_PANELS = [
     "recharge_gift_panel", "rechargepackage_panel", "shop_recharge_panel", "shop_window", "bible_daily_gift_panel", "bible_invest_panel", "multi_invest_panel", "direct_buy_panel", "directpackagewindow", "grow_fund_panel", "open_server_direct_buy_panel", "shop_monthly_panel",
 ]
@@ -206,6 +226,7 @@ PATCHERS = {
     "pet_view_manual": patch_pet_manual,
     "sdk_manager": patch_sdk_charge,
     "recharge_gift_item": patch_recharge_gift_item,
+    "shop_recharge_item": patch_shop_recharge_item,
     "recharge_gift_panel": _make_guard_patcher("recharge_gift_panel"),
     "rechargepackage_panel": _make_guard_patcher("rechargepackage_panel"),
     "shop_recharge_panel": _make_guard_patcher("shop_recharge_panel"),

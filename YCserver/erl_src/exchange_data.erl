@@ -33,18 +33,18 @@
 
 -file("src/data/exchange_data.erl", 18).
 
-const_exchange(1) -> {60, gold_bind, 3000, 0};
-const_exchange(2) -> {160, gold_bind, 8000, 0};
-const_exchange(3) -> {320, gold_bind, 16000, 0};
-const_exchange(4) -> {640, gold_bind, 32000, 0};
-const_exchange(5) -> {1280, gold_bind, 64000, 0};
-const_exchange(6) -> {2560, gold_bind, 128000, 0};
-const_exchange(7) -> {60, coin, 300000, 0};
-const_exchange(8) -> {160, coin, 800000, 0};
-const_exchange(9) -> {320, coin, 1600000, 0};
-const_exchange(10) -> {640, coin, 3200000, 0};
-const_exchange(11) -> {1280, coin, 6400000, 0};
-const_exchange(12) -> {2560, coin, 12800000, 0};
+const_exchange(1) -> {600, gold_bind, 12000, 0};
+const_exchange(2) -> {1600, gold_bind, 32000, 0};
+const_exchange(3) -> {3200, gold_bind, 64000, 0};
+const_exchange(4) -> {6400, gold_bind, 128000, 0};
+const_exchange(5) -> {12800, gold_bind, 256000, 0};
+const_exchange(6) -> {25600, gold_bind, 512000, 0};
+const_exchange(7) -> {600, coin, 120000, 0};
+const_exchange(8) -> {1600, coin, 320000, 0};
+const_exchange(9) -> {3200, coin, 640000, 0};
+const_exchange(10) -> {6400, coin, 1280000, 0};
+const_exchange(11) -> {12800, coin, 2560000, 0};
+const_exchange(12) -> {25600, coin, 5120000, 0};
 const_exchange(_Id) -> false.
 
 get_gift_ratio({6, Lev}) when Lev >= 130 -> 600;

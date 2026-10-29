@@ -50904,7 +50904,7 @@ get_pet({67110, 1}) ->
 get_pet({67111, 1}) ->
     #pet_base_skill{id = 67111, lev = 1,
                     name = lang:get("暗域"), type = 1046, step = 1,
-                    max_exp = 1};
+                    max_exp = 1, attr = [{1, 45, 100}, {1, 54, 200}]};
 get_pet({67112, 1}) ->
     #pet_base_skill{id = 67112, lev = 1,
                     name = lang:get("君王体魄"), type = 1047, step = 1,

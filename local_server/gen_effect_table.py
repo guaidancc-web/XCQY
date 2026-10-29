@@ -38,12 +38,24 @@ SCRIPT = {
     700010: '随机双倍/三倍+速度增伤',
     700011: '召唤清心+控制免疫',
     700012: '速度条件增伤/减伤',
+    700013: '召唤减主人冷却',
+    700014: '同宠增伤',
+    700015: '周期攻速/物攻',
+    700016: '击杀法术追击',
+    700017: '复活+伤害分担',
+    700018: '搬山护盾/增伤/复活',
+    700019: '攻击为主人加怒',
+    700020: '攻击不加怒/扣目标怒',
+    700021: '附加治疗/护盾',
+    700022: '叠层+伤害分担',
 }
 BUFF = {
     70055: '生命护盾', 70065: '反伤', 80005: '持续回血', 69514: '减伤',
     90350: '增伤', 70025: '控制免疫', 90009: '隐身', 90335: '复活',
     88047: '伤害免疫', 70000: '封心', 30002: '次数护盾', 90500: '叠层增伤99',
     90501: '叠层增伤3', 90304: '法术吸血', 70012: '物攻祝福',
+    90503: '攻速', 90504: '物攻', 90505: '灼烧', 90506: '伤害分担',
+    90507: '魔伤', 90508: '攻速',
 }
 ACTIVE = {60590, 60603, 67075, 67085, 67110, 67130, 67131, 67200, 67309,
           67316, 67330, 67334, 67338, 67343, 67348, 67353, 67358, 67363,
@@ -67,22 +79,27 @@ SPECIAL = {
     67340: '独立脚本（随机双/三倍+速度增伤）',
     60281: '独立脚本（召唤清心+控制免疫）',
     67310: '独立脚本（速度条件增伤/减伤）',
+    60280: '独立脚本（召唤时主人技能冷却-3）',
+    67111: '独立脚本（同阵营暗夜君王每只+5%横斩伤害，上限20%；另+10%物伤+20%物攻）',
+    67331: '独立脚本（每2回合攻速+20%/物攻+30%，持续2回合）',
+    67335: '独立脚本（法术技能击杀后追击一次技能）',
+    67361: '独立脚本（前3回合魔伤+40%/攻速+30%；出场200%护盾1回合；首次死亡60%复活）',
     67119: '近似（群增伤20%）',
     67075: '近似（封心+护盾已接）',
     67085: '近似（20%暴击吸血）',
     67330: '近似（50%暴击吸血）',
     67334: '近似（10%法术吸血）',
     67341: '近似（护盾+10%免疫）',
-    67300: '部分（叠层已做，伤害分担未做）',
-    67345: '未实现（伤害分担）',
-    67333: '仅属性（怒气未做）',
-    67342: '仅属性（怒气未做）',
-    67367: '部分（属性/法穿已做，怒气未做）',
+    67300: '独立脚本（叠层增伤+55%几率35%伤害分担）',
+    67345: '独立脚本（首次死亡50%复活；每回合40%几率35%伤害分担2回合）',
+    67333: '独立脚本（60%攻击为主人+5怒气；属性已生效）',
+    67342: '独立脚本（攻击不涨怒并扣第一目标5怒；属性已生效）',
+    67367: '部分（属性/法穿已做；阵亡单位增伤/魔防未做）',
     67200: '部分（随机形态未做）',
-    67353: '部分（击杀转火未做）',
-    67363: '部分（击杀转火未做）',
-    67368: '部分（附加治疗/护盾未做）',
-    67378: '部分（溅射近似）',
+    67353: '部分（5段固定；击杀后自动转火已生效）',
+    67363: '部分（5段固定；击杀后自动转火已生效）',
+    67368: '独立脚本（每段附加治疗+20%护盾近似）',
+    67378: '部分（相邻6目标同倍率溅射）',
 }
 
 
@@ -153,6 +170,16 @@ def buff_text(bid, rate=None, dur=None, args=None):
             extra.append('%s%%吸血' % (int(args[0]) / 10))
         elif bid == 90335 and len(args) >= 5:
             extra.append('%s%%生命复活' % (int(args[4]) / 10))
+        elif bid in (90503, 90508) and len(args) >= 1:
+            extra.append('攻速+%s%%' % (int(args[0]) / 10))
+        elif bid == 90504 and len(args) >= 1:
+            extra.append('物攻+%s%%' % (int(args[0]) / 10))
+        elif bid == 90505 and len(args) >= 1:
+            extra.append('每回合%s%%生命' % (int(args[0]) / 10))
+        elif bid == 90506 and len(args) >= 1:
+            extra.append('%s%%伤害分担' % (int(args[0]) / 10))
+        elif bid == 90507 and len(args) >= 1:
+            extra.append('魔伤+%s%%' % (int(args[0]) / 10))
     if dur:
         extra.append('%s回合' % dur)
     return name + ('(' + '，'.join(extra) + ')' if extra else '')
@@ -161,8 +188,13 @@ def buff_text(bid, rate=None, dur=None, args=None):
 def combat_text(block):
     if not block:
         return ''
-    m = re.search(r'target_list = \[\{1, 2, (\d+)\}\]', block)
-    target = m.group(1) if m else '?'
+    nums = re.findall(r'\{\d+, \d+, (\d+)\}', block)
+    if not nums:
+        target = '?'
+    elif len(set(nums)) == 1:
+        target = '%s×%s' % (nums[0], len(nums)) if len(nums) > 1 else nums[0]
+    else:
+        target = '/'.join(nums)
     dr = re.search(r'dmg_ratio = \[([^\]]*)\]', block)
     dmg = dr.group(1).strip() if dr else ''
     at = re.search(r'attack_times = (\d+)', block)
@@ -193,6 +225,20 @@ def combat_text(block):
     if buffs:
         parts.append('buff:' + '、'.join(buffs))
     return '；'.join(parts)
+
+
+def status_cat(s):
+    if '独立' in s:
+        return '独立脚本'
+    if '精确' in s:
+        return '精确'
+    if '仅属性' in s:
+        return '仅属性'
+    if '部分' in s:
+        return '部分'
+    if '未实现' in s:
+        return '未实现'
+    return '近似'
 
 
 def write_xlsx(rows, counts):
@@ -228,11 +274,12 @@ def write_xlsx(rows, counts):
         r += 1
     r += 1
     ws.cell(r, 1, '说明').font = Font(bold=True)
-    for line in ['独立脚本：700001-700005 等专用脚本',
+    for line in ['独立脚本：700001-700022 专用脚本',
                  '精确：属性/公式按说明落表',
                  '近似：属性/目标/消耗准确，伤害倍率或 buff 参数推断',
                  '部分：部分机制已做，剩余机制未做',
                  '未实现：目前没有生效记录',
+                 '独立脚本均已编译、差分校验并热加载，战斗内触发仍建议实战确认',
                  '伤害倍率无法从客户端取得，均为推断值']:
         r += 1
         ws.cell(r, 1, line)
@@ -336,19 +383,20 @@ def main():
         f.write('## 总览\n\n')
         f.write('- 技能总数：%d\n' % len(rows))
         from collections import Counter
-        c = Counter(r[4] for r in rows)
-        for k, v in c.items():
+        c = Counter(status_cat(r[4]) for r in rows)
+        for k, v in c.most_common():
             f.write('- %s：%d\n' % (k, v))
         f.write('\n- “独立脚本”=新增 700001/700002 等专用脚本；\n')
         f.write('- “近似”=属性/目标/消耗精确，但伤害倍率或 buff 参数按描述推断；\n')
         f.write('- “仅属性”=属性已生效，特殊触发尚未写脚本；\n')
-        f.write('- “未实现”=目前没有可生效的战斗记录。\n\n')
+        f.write('- “未实现”=目前没有可生效的战斗记录；\n')
+        f.write('- 独立脚本均已编译、差分校验并热加载，战斗内触发仍建议实战确认。\n\n')
         f.write('## 详细表\n\n')
         f.write('| ID | 技能 | 类型 | 当前效果 | 状态 |\n')
         f.write('|---|---|---|---|---|\n')
         for sid, name, typ, effect, status, _ in rows:
             f.write('| %d | %s | %s | %s | %s |\n' % (sid, name, typ, effect, status))
-    counts = Counter(r[4] for r in rows)
+    counts = Counter(status_cat(r[4]) for r in rows)
     write_xlsx(rows, counts)
     print('wrote', OUT, 'and docs/技能效果表.xlsx rows', len(rows))
 

@@ -353,6 +353,16 @@
          script_700010/4,
          script_700011/4,
          script_700012/4,
+         script_700013/4,
+         script_700014/4,
+         script_700015/4,
+         script_700016/4,
+         script_700017/4,
+         script_700018/4,
+         script_700019/4,
+         script_700020/4,
+         script_700021/4,
+         script_700022/4,
          script_60191/4,
          script_60192/4,
          script_60193/4,
@@ -3257,6 +3267,45 @@ append_action(Cs = #c_skill{skill =
             Skill#c_skill{action =
                               {combat_script_skill, script_700012},
                           passive_type = [1, 2]};
+        700013 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700013},
+                          passive_type = [12]};
+        700014 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700014},
+                          passive_type = [1]};
+        700015 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700015},
+                          passive_type = [5]};
+        700016 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700016},
+                          passive_type = [9]};
+        700017 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700017},
+                          passive_type = [100, 102]};
+        700018 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700018},
+                          passive_type = [100, 12]};
+        700019 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700019},
+                          passive_type = [1]};
+        700020 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700020},
+                          passive_type = [100, 1]};
+        700021 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700021}};
+        700022 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700022},
+                          passive_type = [5, 1]};
         60194 ->
             Skill#c_skill{action =
                               {combat_script_skill, script_60194},
@@ -14576,7 +14625,7 @@ script_700002(Skill = #c_skill{id = SkillId,
                     combat_skill:add_skill_cooldown(Sid, Skill, 1),
                     #passive_effect{
                         buff_self_to_self =
-                            [{90273, 1000, Duration, 1, [Ratio]}],
+                            combat_script_buff:convert_buff([{90273, 1000, Duration, 1, [Ratio]}]),
                         show_passive_skills = [{Sid, SkillId, 1}]};
                 false -> #passive_effect{}
             end
@@ -14614,7 +14663,7 @@ script_700004(Skill = #c_skill{id = SkillId,
             combat_skill:add_skill_cooldown(Sid, Skill, 99),
             #passive_effect{
                 buff_self_to_self =
-                    [{70055, 1000, ShieldDur, 0, [ShieldRatio, 0]}],
+                    combat_script_buff:convert_buff([{70055, 1000, ShieldDur, 0, [ShieldRatio, 0]}]),
                 show_passive_skills = [{Sid, SkillId, 0}],
                 flag = 1}
     end;
@@ -14630,7 +14679,7 @@ script_700004(Skill = #c_skill{id = SkillId,
                     combat_skill:add_skill_cooldown(Sid, Skill, 1),
                     #passive_effect{
                         buff_self_to_self =
-                            [{90502, 1000, ReduceDur, 1, [ReduceRatio]}],
+                            combat_script_buff:convert_buff([{90502, 1000, ReduceDur, 1, [ReduceRatio]}]),
                         show_passive_skills = [{Sid, SkillId, 1}]};
                 false -> #passive_effect{}
             end
@@ -14648,8 +14697,8 @@ script_700005(Skill = #c_skill{id = SkillId,
             combat_skill:add_skill_cooldown(Sid, Skill, 99),
             #passive_effect{
                 buff_self_to_self =
-                    [{69514, 1000, 999, 1, [ReduceRatio]},
-                     {70065, 1000, 999, 0, [ReflectNum, ReflectRatio]}],
+                    combat_script_buff:convert_buff([{69514, 1000, 999, 1, [ReduceRatio]},
+                                             {70065, 1000, 999, 0, [ReflectNum, ReflectRatio]}]),
                 show_passive_skills = [{Sid, SkillId, 0}],
                 flag = 1}
     end;
@@ -14665,7 +14714,7 @@ script_700005(Skill = #c_skill{id = SkillId,
                     combat_skill:add_skill_cooldown(Sid, Skill, 1),
                     #passive_effect{
                         buff_self_to_target =
-                            [{90338, 1000, Dur, 1, [1000]}],
+                            combat_script_buff:convert_buff([{90338, 1000, Dur, 1, [1000]}]),
                         show_passive_skills = [{Sid, SkillId, 1}]};
                 false -> #passive_effect{}
             end
@@ -14686,7 +14735,7 @@ script_700006(Skill = #c_skill{id = SkillId,
                     combat_skill:add_skill_cooldown(Sid, Skill, 1),
                     #passive_effect{
                         buff_self_to_self =
-                            [{69514, 1000, Duration, 1, [ReduceRatio]}],
+                            combat_script_buff:convert_buff([{69514, 1000, Duration, 1, [ReduceRatio]}]),
                         show_passive_skills = [{Sid, SkillId, 1}]};
                 false -> #passive_effect{}
             end
@@ -14713,7 +14762,7 @@ script_700007(#c_skill{id = SkillId,
     #passive_effect{self_val_changed = Svc,
                     self_changed = Sc,
                     buff_self_to_self =
-                        [{90350, 1000, Duration, 1, [DmgRatio]}],
+                        combat_script_buff:convert_buff([{90350, 1000, Duration, 1, [DmgRatio]}]),
                     show_passive_skills = [{Sid, SkillId, 1}]};
 script_700007(_, _, _, _) -> #passive_effect{}.
 
@@ -14805,8 +14854,276 @@ script_700012(#c_skill{id = SkillId},
               #c_skill_addt_arg{passive_flag = defence}) ->
     case SSpeed > TSpeed of
         true -> #passive_effect{
-                    buff_self_to_self = [{69514, 1000, 1, 1, [300]}],
+                    buff_self_to_self = combat_script_buff:convert_buff([{69514, 1000, 1, 1, [300]}]),
                     show_passive_skills = [{Sid, SkillId, 1}]};
         false -> #passive_effect{}
     end;
 script_700012(_, _, _, _) -> #passive_effect{}.
+
+%% 2025 pet skill 60280: on entering battle reduce master cooldowns.
+script_700013(#c_skill{skill = #skill{script_args = [Reduce]}},
+              #fighter{master_fid = MasterFid}, _Master, _AddtArg)
+    when MasterFid =/= 0 ->
+    combat_skill:skill_cooldown_reduce(MasterFid, Reduce),
+    true;
+script_700013(_, _, _, _) -> true.
+
+%% 2025 pet skill 67111: count same-pet allies, boost the listed skill.
+script_700014(#c_skill{id = SkillId,
+                       skill =
+                           #skill{script_args =
+                                      [Per, Max, TargetSkillId, BaseId]}},
+              #fighter{id = Sid, group = Group, action = Action},
+              _Target,
+              #c_skill_addt_arg{passive_flag = attack}) ->
+    case Action of
+        {#c_skill{skill = #skill{id = TargetSkillId}}, _} ->
+            Count =
+                length([1
+                        || #fighter{base_id = BaseId, is_die = 0,
+                                    is_escape = 0}
+                               <- combat_cache:all(Group)]),
+            case Count > 0 of
+                true ->
+                    #passive_effect{dmg_ratio_add = min(Max, Count * Per),
+                                    show_passive_skills = [{Sid, SkillId, 1}]};
+                false -> #passive_effect{}
+            end;
+        _ -> #passive_effect{}
+    end;
+script_700014(_, _, _, _) -> #passive_effect{}.
+
+%% 2025 pet skill 67331: every 2 rounds buff self attack speed / phy attack.
+script_700015(Skill = #c_skill{id = SkillId,
+                               skill = #skill{buff_self = BuffSelf}},
+              #fighter{id = Fid}, _Target, _AddtArg) ->
+    case combat_skill:is_skill_in_cooldown(Fid, Skill) of
+        false ->
+            combat_skill:add_skill_cooldown(Fid, Skill),
+            #passive_effect{buff_self_to_self = BuffSelf,
+                            show_passive_skills = [{Fid, SkillId, 0}],
+                            flag = 1};
+        true -> #passive_effect{}
+    end.
+
+%% 2025 pet skill 67335: magic skill kill triggers one skill pursuit.
+script_700016(#c_skill{id = SkillId},
+              #fighter{id = Sid, action = Action},
+              _Target,
+              #c_skill_addt_arg{passive_flag = kill}) ->
+    case Action of
+        {Cs = #c_skill{skill = #skill{elem_type = 1}}, _} ->
+            case
+                combat_cache:get_context_elem([#combat_context.pursue_attack_list])
+                of
+                [[]] ->
+                    case
+                        combat_cache:get_context_elem([#combat_context.passive_skill_attack])
+                        of
+                        [[]] ->
+                            combat_cache:save_context([{#combat_context.passive_skill_attack,
+                                                        [{0, 1, Cs}]}]),
+                            #passive_effect{show_passive_skills =
+                                                [{Sid, SkillId, 1}]};
+                        _ -> #passive_effect{}
+                    end;
+                _ -> #passive_effect{}
+            end;
+        _ -> #passive_effect{}
+    end;
+script_700016(_, _, _, _) -> #passive_effect{}.
+
+%% 2025 pet skill 67345: first death revive 50%; round-start damage share.
+script_700017(#c_skill{skill =
+                           #skill{script_args = [ReviveRatio, _, _]}},
+              #fighter{id = _Sid}, _Target,
+              #c_skill_addt_arg{passive_flag = init}) ->
+    Buffs =
+        combat_script_buff:convert_buff([{90335,
+                                          1000,
+                                          999,
+                                          0,
+                                          [0, 1000, 50100, 0, ReviveRatio]}]),
+    #passive_effect{buff_self_to_self = Buffs};
+script_700017(#c_skill{skill =
+                           #skill{script_args = [_, ShareRate, ShareRatio]}},
+              Self = #fighter{id = _Sid, is_die = 0}, _Target,
+              #c_skill_addt_arg{passive_flag = round}) ->
+    case util:rand(1, 1000) =< ShareRate of
+        true ->
+            Buffs =
+                combat_script_buff:convert_buff([{90506,
+                                                  1000,
+                                                  2,
+                                                  0,
+                                                  [ShareRatio]}]),
+            lists:foreach(fun (Buff) ->
+                                  combat_buff:buff_add(Buff, Self, Self)
+                          end,
+                          Buffs),
+            #passive_effect{};
+        false -> #passive_effect{}
+    end;
+script_700017(_, _, _, _) -> #passive_effect{}.
+
+%% 2025 pet skill 67361: entry shield + 3-round magic buff + first-death revive.
+script_700018(#c_skill{}, Self = #fighter{},
+              _Target, #c_skill_addt_arg{passive_flag = init}) ->
+    #passive_effect{buff_self_to_self =
+                        combat_script_buff:convert_buff(buffs_700018())};
+script_700018(#c_skill{}, Self = #fighter{}, _Target, _AddtArg) ->
+    lists:foreach(fun (Buff) ->
+                          combat_buff:buff_add(Buff, Self, Self)
+                  end,
+                  combat_script_buff:convert_buff(buffs_700018())),
+    true.
+
+buffs_700018() ->
+    [{70055, 1000, 1, 0, [2000, 0]},
+     {90507, 1000, 3, 0, [400]},
+     {90508, 1000, 3, 0, [300]},
+     {90335, 1000, 999, 0, [0, 1000, 50100, 0, 600]}].
+
+%% 2025 pet skill 67333: chance to add anger to the master on attack.
+script_700019(#c_skill{id = SkillId,
+                       target_no = 1,
+                       skill = #skill{script_args = [Rate, AngerVal]}},
+              Self = #fighter{id = Sid, master_fid = MasterFid},
+              _Target,
+              #c_skill_addt_arg{passive_flag = attack}) ->
+    case util:rand(1, 1000) =< Rate of
+        true ->
+            case combat_cache:f(by_id, MasterFid) of
+                Master = #fighter{is_die = 0, is_escape = 0} ->
+                    Tvc = [{anger, 1, AngerVal}],
+                    Tc = [{9, AngerVal, 0}],
+                    Effect =
+                        combat_play:gen_sub_skill_play(die_master_effect,
+                                                       {Self,
+                                                        Master,
+                                                        Tc,
+                                                        0,
+                                                        0,
+                                                        [{Sid, SkillId, 1}]}),
+                    combat_play:add_sub_play(Effect),
+                    combat_cache:u(MasterFid, Tvc),
+                    #passive_effect{};
+                _ -> #passive_effect{}
+            end;
+        false -> #passive_effect{}
+    end;
+script_700019(_, _, _, _) -> #passive_effect{}.
+
+%% 2025 pet skill 67342: attacks add no anger; first target loses 5 anger.
+script_700020(#c_skill{skill = #skill{script_args = [_DecAnger]}},
+              #fighter{id = Sid}, _Target,
+              #c_skill_addt_arg{passive_flag = init}) ->
+    combat_cache:u(Sid, [{i_atk_not_anger, 0, 1}]),
+    #passive_effect{};
+script_700020(#c_skill{id = SkillId,
+                       target_no = 1,
+                       skill = #skill{script_args = [DecAnger]}},
+              #fighter{id = Sid}, _Target,
+              #c_skill_addt_arg{passive_flag = attack}) ->
+    #passive_effect{target_val_changed = [{anger, 1, -DecAnger}],
+                    target_changed = [{9, -DecAnger, 0}],
+                    show_passive_skills = [{Sid, SkillId, 1}]};
+script_700020(_, _, _, _) -> #passive_effect{}.
+
+%% 2025 pet skill 67368: after each segment heal a random ally and shield it.
+script_700021(Skill = #c_skill{target_no = 1, action_no = ActionNo},
+              Self = #fighter{id = _Sid, group = Group}, Target,
+              AddtArg) ->
+    combat_script_skill_calc:attack(Skill,
+                                    Self,
+                                    Target,
+                                    AddtArg,
+                                    #action_effect{}),
+    case
+        combat_cache:get_context_elem([#combat_context.skill_dmg])
+        of
+        [Dmg] when is_integer(Dmg), Dmg > 0 ->
+            Allies =
+                [F
+                 || F = #fighter{is_die = 0, is_escape = 0}
+                        <- combat_cache:all(Group)],
+            case Allies of
+                [] -> ok;
+                _ ->
+                    Ally =
+                        lists:nth(util:rand(1, length(Allies)), Allies),
+                    EnemyCount =
+                        min(4,
+                            length([1
+                                    || #fighter{is_die = 0,
+                                                is_escape = 0}
+                                           <- combat_cache:all(combat_cache:op(Group))])),
+                    HealHp = round(Dmg * EnemyCount * 500 / 1000),
+                    combat_script_skill_calc:heal(Skill,
+                                                  Self,
+                                                  Ally,
+                                                  AddtArg,
+                                                  #action_effect{heal_hp =
+                                                                     HealHp,
+                                                                 can_anti_heal
+                                                                     = 1}),
+                    case ActionNo =:= 1 of
+                        true ->
+                            lists:foreach(fun (Buff) ->
+                                                  combat_buff:buff_add(Buff,
+                                                                       Self,
+                                                                       Ally)
+                                          end,
+                                          combat_script_buff:convert_buff([{70055,
+                                                                            1000,
+                                                                            2,
+                                                                            0,
+                                                                            [200,
+                                                                             0]}])),
+                            ok;
+                        false -> ok
+                    end
+            end;
+        _ -> ok
+    end;
+script_700021(Skill, Self, Target, AddtArg) ->
+    combat_script_skill_calc:attack(Skill,
+                                    Self,
+                                    Target,
+                                    AddtArg,
+                                    #action_effect{}).
+
+%% 2025 pet skill 67300: pre-action stacking + 55% damage-share on attack.
+script_700022(Skill = #c_skill{id = SkillId,
+                               skill = #skill{buff_self = BuffSelf}},
+              #fighter{id = Sid}, _Target,
+              #c_skill_addt_arg{passive_flag = pre_action}) ->
+    case combat_skill:is_skill_in_cooldown(Sid, Skill) of
+        true -> #passive_effect{};
+        _ ->
+            case BuffSelf of
+                [] -> #passive_effect{};
+                _ ->
+                    combat_skill:add_skill_cooldown(Sid, Skill),
+                    #passive_effect{buff_self_to_self = BuffSelf,
+                                    show_passive_skills = [{Sid, SkillId, 0}],
+                                    flag = 1}
+            end
+    end;
+script_700022(#c_skill{id = SkillId},
+              Self = #fighter{id = Sid}, _Target,
+              #c_skill_addt_arg{passive_flag = attack}) ->
+    case util:rand(1, 1000) =< 550 of
+        true ->
+            lists:foreach(fun (Buff) ->
+                                  combat_buff:buff_add(Buff, Self, Self)
+                          end,
+                          combat_script_buff:convert_buff([{90506,
+                                                            1000,
+                                                            2,
+                                                            0,
+                                                            [350]}])),
+            #passive_effect{show_passive_skills = [{Sid, SkillId, 1}]};
+        false -> #passive_effect{}
+    end;
+script_700022(_, _, _, _) -> #passive_effect{}.

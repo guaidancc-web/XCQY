@@ -6028,5 +6028,49 @@ get_script(417001 = ScriptId) ->
                                      5028),
                         []
                 end};
+get_script(256001 = ScriptId) ->
+    #c_buff{script_id = ScriptId, eff_type = buff,
+            eff_val_before =
+                fun (#c_buff{args = [Ratio]}, _Caster,
+                     Target = #fighter{}) ->
+                        case rand_enemy_id(Target) of
+                            false -> [];
+                            {true, EnemyId} ->
+                                [{protector, 0, {EnemyId, 2, Ratio}}]
+                        end;
+                    (#c_buff{id = BuffId, args = Args}, _Caster,
+                     _Target) ->
+                        logger:error("错误的buff:~w, 参数:~w",
+                                     [BuffId, Args],
+                                     combat_script_buff,
+                                     6100),
+                        []
+                end,
+            eff_val_after =
+                fun (#c_buff{}, _Caster, #fighter{}) ->
+                        [{protector, 0, del}];
+                    (#c_buff{id = BuffId, args = Args}, _Caster,
+                     _Target) ->
+                        logger:error("错误的buff:~w, 参数:~w",
+                                     [BuffId, Args],
+                                     combat_script_buff,
+                                     6110),
+                        []
+                end,
+            compare = fun (_, _, _) -> -1 end};
+
 get_script(_) -> false.
+
+rand_enemy_id(#fighter{group = Group}) ->
+    Enemies =
+        [F
+         || F = #fighter{is_die = 0, is_escape = 0}
+                <- combat_cache:all(combat_cache:op(Group))],
+    case Enemies of
+        [] -> false;
+        _ ->
+            Enemy = lists:nth(util:rand(1, length(Enemies)), Enemies),
+            {true, Enemy#fighter.id}
+    end.
+
 

@@ -2896,6 +2896,24 @@ get_buff(90350) ->
 get_buff(90502) ->
     #c_buff_base{id = 90502, eff_type = buff, type = 90502,
                  max_layer = 1, script_id = 125003};
+get_buff(90503) ->
+    #c_buff_base{id = 90503, eff_type = buff, type = 90503,
+                 max_layer = 1, script_id = 111020};
+get_buff(90504) ->
+    #c_buff_base{id = 90504, eff_type = buff, type = 90504,
+                 max_layer = 1, script_id = 103020};
+get_buff(90505) ->
+    #c_buff_base{id = 90505, eff_type = debuff, type = 90505,
+                 max_layer = 1, script_id = 202020};
+get_buff(90506) ->
+    #c_buff_base{id = 90506, eff_type = buff, type = 90506,
+                 max_layer = 1, script_id = 256001};
+get_buff(90507) ->
+    #c_buff_base{id = 90507, eff_type = buff, type = 90507,
+                 max_layer = 1, script_id = 104020};
+get_buff(90508) ->
+    #c_buff_base{id = 90508, eff_type = buff, type = 90508,
+                 max_layer = 1, script_id = 111020};
 get_buff(90500) ->
     #c_buff_base{id = 90500, eff_type = buff, type = 90500,
                  max_layer = 99, script_id = 417001};

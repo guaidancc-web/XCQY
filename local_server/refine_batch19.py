@@ -164,7 +164,7 @@ def edit_block(src, sid, fields):
     block = m.group(1)
     for key, value in fields.items():
         if key in ('target_list', 'dmg_ratio', 'script_args',
-                   'addt_scripts', 'buff_target'):
+                   'addt_scripts', 'buff_target', 'buff_self'):
             block = um.replace_list_field(block, key, value)
         else:
             block = um.set_scalar(block, key, value)

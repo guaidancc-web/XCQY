@@ -390,6 +390,12 @@
          script_700046/4,
          script_700047/4,
          script_700048/4,
+         script_700049/4,
+         script_700050/4,
+         script_700051/4,
+         script_700052/4,
+         script_700053/4,
+         script_700054/4,
          script_60191/4,
          script_60192/4,
          script_60193/4,
@@ -3420,6 +3426,25 @@ append_action(Cs = #c_skill{skill =
         700048 ->
             Skill#c_skill{action =
                               {combat_script_skill, script_700048}};
+        700049 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700049}};
+        700050 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700050}};
+        700051 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700051}};
+        700052 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700052}};
+        700053 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700053}};
+        700054 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700054},
+                          passive_type = [100, 12, 116]};
         60194 ->
             Skill#c_skill{action =
                               {combat_script_skill, script_60194},
@@ -15716,3 +15741,79 @@ script_700046(Skill = #c_skill{skill =
 script_700047(_, _, _, _) -> ok.
 
 script_700048(_, _, _, _) -> ok.
+
+%% 2025 special skills: independent scripts.
+maybe_buff(Target, Buff, Rate) ->
+    case util:rand(1, 1000) =< Rate of
+        true ->
+            lists:foreach(fun (B) ->
+                                  combat_buff:buff_add(B, Target, Target)
+                          end,
+                          combat_script_buff:convert_buff([Buff])),
+            ok;
+        false -> ok
+    end.
+
+%% 67075: attack + 50% main-target heal-cut + 70% one-hit immunity.
+script_700049(Skill = #c_skill{target_no = 1},
+              Self = #fighter{}, Target = #fighter{}, AddtArg) ->
+    plain_attack(Skill, Self, Target, AddtArg),
+    maybe_buff(Target, {70000, 1000, 2, 1, [500]}, 500),
+    maybe_buff(Self, {90513, 1000, 2, 1, [1000, 0, 1, 1]}, 700);
+script_700049(Skill, Self, Target, AddtArg) ->
+    plain_attack(Skill, Self, Target, AddtArg).
+
+%% 67085: 20% crit lifesteal on all targets.
+script_700050(Skill, Self, Target, AddtArg) ->
+    combat_script_skill_calc:attack(Skill,
+                                    Self,
+                                    Target,
+                                    AddtArg,
+                                    #action_effect{crit_suck_hp = 200}).
+
+%% 67119: buff_target is applied by the engine.
+script_700051(_, _, _, _) -> ok.
+
+%% 67330: main-target 50% crit lifesteal.
+script_700052(Skill = #c_skill{action_no = 1, target_no = 1},
+              Self, Target, AddtArg) ->
+    combat_script_skill_calc:attack(Skill,
+                                    Self,
+                                    Target,
+                                    AddtArg,
+                                    #action_effect{crit_suck_hp = 500});
+script_700052(Skill, Self, Target, AddtArg) ->
+    plain_attack(Skill, Self, Target, AddtArg).
+
+%% 67334: attack; buff_self 90304 provides 10% spell lifesteal.
+script_700053(Skill, Self, Target, AddtArg) ->
+    plain_attack(Skill, Self, Target, AddtArg).
+
+%% 67341: entry shield + 10% lethal immunity.
+script_700054(#c_skill{}, #fighter{}, _Target,
+              #c_skill_addt_arg{passive_flag = init}) ->
+    #passive_effect{buff_self_to_self =
+                        combat_script_buff:convert_buff([{70055,
+                                                          1000,
+                                                          1,
+                                                          0,
+                                                          [1000, 0]}])};
+script_700054(#c_skill{}, Self = #fighter{}, _Target,
+              #c_skill_addt_arg{}) ->
+    lists:foreach(fun (Buff) ->
+                          combat_buff:buff_add(Buff, Self, Self)
+                  end,
+                  combat_script_buff:convert_buff([{70055,
+                                                    1000,
+                                                    1,
+                                                    0,
+                                                    [1000, 0]}])),
+    true;
+script_700054(#c_skill{}, _Self,
+              #fighter{hp = Hp, hp_max = _HpMax}, DmgTotal)
+    when is_integer(DmgTotal) ->
+    case DmgTotal >= Hp andalso util:rand(1, 1000) =< 100 of
+        true -> {ok, 0};
+        false -> {ok, 1000}
+    end;
+script_700054(_, _, _, _) -> {ok, 1000}.

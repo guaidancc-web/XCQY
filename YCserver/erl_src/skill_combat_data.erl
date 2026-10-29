@@ -114040,10 +114040,10 @@ get_combat({67091, 1}) ->
            elem_type = 0, target_type = 1, attack_times = 1,
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
            cooldown = 99,
-           buff_self = [{70055, 1000, 2, 0, [2000, 0]}],
-           script_id = 60146,
+           buff_self = [],
+           script_id = 700083,
            script_args =
-               [[], [], 0]};
+               []};
 get_combat({67093, 1}) ->
         #skill{id = 67093, lev = 1, name = lang:get("神猿加持"),
            type = 1, sub_type = 2, acc_ratio = 1000,
@@ -114051,10 +114051,10 @@ get_combat({67093, 1}) ->
            elem_type = 0, target_type = 1, attack_times = 1,
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
            cooldown = 99,
-           buff_self = [{70055, 1000, 2, 0, [2000, 0]}, {70065, 1000, 999, 0, [999, 200]}],
-           script_id = 60146,
+           buff_self = [],
+           script_id = 700084,
            script_args =
-               [[], [], 0]};
+               []};
 get_combat({67113, 1}) ->
         #skill{id = 67113, lev = 1, name = lang:get("生命化泉"),
            speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
@@ -114132,10 +114132,10 @@ get_combat({67302, 1}) ->
            elem_type = 0, target_type = 1, attack_times = 1,
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
            cooldown = 99,
-           buff_self = [{70055, 1000, 2, 0, [2000, 0]}],
-           script_id = 60146,
+           buff_self = [],
+           script_id = 700085,
            script_args =
-               [[], [], 0]};
+               []};
 get_combat({67305, 1}) ->
         #skill{id = 67305, lev = 1, name = lang:get("百花盾"),
            type = 1, sub_type = 2, acc_ratio = 1000,
@@ -114152,11 +114152,11 @@ get_combat({67307, 1}) ->
            acc_low = 1000, acc_high = 1000, attack_type = 1,
            elem_type = 0, target_type = 1, attack_times = 1,
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
-           cooldown = 99,
-           buff_self = [{69514, 1000, 2, 0, [700]}],
-           script_id = 60146,
+           cooldown = 4,
+           buff_self = [],
+           script_id = 700086,
            script_args =
-               [[], [], 0]};
+               []};
 get_combat({67314, 1}) ->
         #skill{id = 67314, lev = 1, name = lang:get("神隐"),
            type = 1, sub_type = 2, acc_ratio = 1000,
@@ -114186,10 +114186,10 @@ get_combat({67336, 1}) ->
            elem_type = 0, target_type = 1, attack_times = 1,
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
            cooldown = 99,
-           buff_self = [{70055, 1000, 1, 0, [1000, 0]}],
-           script_id = 60146,
+           buff_self = [],
+           script_id = 700087,
            script_args =
-               [[], [], 0]};
+               []};
 get_combat({67341, 1}) ->
         #skill{id = 67341, lev = 1, name = lang:get("玄天盾"),
            type = 1, sub_type = 2, acc_ratio = 1000,
@@ -114208,10 +114208,10 @@ get_combat({67346, 1}) ->
            elem_type = 0, target_type = 1, attack_times = 1,
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
            cooldown = 99,
-           buff_self = [{70055, 1000, 1, 0, [2000, 0]}],
-           script_id = 60146,
+           buff_self = [],
+           script_id = 700088,
            script_args =
-               [[], [], 0]};
+               []};
 get_combat({67356, 1}) ->
         #skill{id = 67356, lev = 1, name = lang:get("封盾"),
            type = 1, sub_type = 2, acc_ratio = 1000,
@@ -114219,10 +114219,10 @@ get_combat({67356, 1}) ->
            elem_type = 0, target_type = 1, attack_times = 1,
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
            cooldown = 99,
-           buff_self = [{70055, 1000, 1, 0, [2000, 0]}],
-           script_id = 60146,
+           buff_self = [],
+           script_id = 700089,
            script_args =
-               [[], [], 0]};
+               []};
 get_combat({67366, 1}) ->
         #skill{id = 67366, lev = 1, name = lang:get("死神盾"),
            type = 1, sub_type = 2, acc_ratio = 1000,
@@ -114230,10 +114230,10 @@ get_combat({67366, 1}) ->
            elem_type = 0, target_type = 1, attack_times = 1,
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
            cooldown = 99,
-           buff_self = [{30002, 1000, 1, 0, [6, 0]}],
-           script_id = 60146,
+           buff_self = [],
+           script_id = 700090,
            script_args =
-               [[], [], 0]};
+               []};
 get_combat({67371, 1}) ->
         #skill{id = 67371, lev = 1, name = lang:get("亡川盾"),
            type = 1, sub_type = 2, acc_ratio = 1000,
@@ -114241,10 +114241,10 @@ get_combat({67371, 1}) ->
            elem_type = 0, target_type = 1, attack_times = 1,
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
            cooldown = 99,
-           buff_self = [{30002, 1000, 1, 0, [6, 0]}],
-           script_id = 60146,
+           buff_self = [],
+           script_id = 700091,
            script_args =
-               [[], [], 0]};
+               []};
 get_combat({67304, 1}) ->
         #skill{id = 67304, lev = 1, name = lang:get("花仙守护"),
            type = 1, sub_type = 2, acc_ratio = 1000,

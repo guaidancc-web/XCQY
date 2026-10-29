@@ -424,6 +424,15 @@
          script_700080/4,
          script_700081/4,
          script_700082/4,
+         script_700083/4,
+         script_700084/4,
+         script_700085/4,
+         script_700086/4,
+         script_700087/4,
+         script_700088/4,
+         script_700089/4,
+         script_700090/4,
+         script_700091/4,
          script_60191/4,
          script_60192/4,
          script_60193/4,
@@ -3585,6 +3594,42 @@ append_action(Cs = #c_skill{skill =
             Skill#c_skill{action =
                               {combat_script_skill, script_700082},
                           passive_type = [1]};
+        700083 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700083},
+                          passive_type = [100, 12]};
+        700084 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700084},
+                          passive_type = [100, 12]};
+        700085 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700085},
+                          passive_type = [100, 12]};
+        700087 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700087},
+                          passive_type = [100, 12]};
+        700088 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700088},
+                          passive_type = [100, 12]};
+        700089 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700089},
+                          passive_type = [100, 12]};
+        700090 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700090},
+                          passive_type = [100, 12]};
+        700091 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700091},
+                          passive_type = [100, 12]};
+        700086 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700086},
+                          passive_type = [100, 102]};
         60194 ->
             Skill#c_skill{action =
                               {combat_script_skill, script_60194},
@@ -16218,3 +16263,103 @@ script_700081(_Skill, _Self, Target, _AddtArg) ->
 
 script_700082(_Skill, _Self, Target, _AddtArg) ->
     type_pen(Target, 350, 350).
+
+%% Entry/summon shield helper.
+entry_shield(Buffs, _Skill, Self, _Target, Arg) ->
+    case Arg of
+        #c_skill_addt_arg{passive_flag = init} ->
+            #passive_effect{buff_self_to_self =
+                                combat_script_buff:convert_buff(Buffs)};
+        #c_skill_addt_arg{passive_flag = undefined} ->
+            lists:foreach(fun (Buff) ->
+                                  combat_buff:buff_add(Buff, Self, Self)
+                          end,
+                          combat_script_buff:convert_buff(Buffs)),
+            true;
+        _ -> #passive_effect{}
+    end.
+
+buffs_700083() -> [{70055, 1000, 2, 0, [2000, 0]}].
+
+buffs_700084() ->
+    [{70055, 1000, 2, 0, [2000, 0]},
+     {70065, 1000, 2, 0, [999, 200]}].
+
+buffs_700085() -> [{70055, 1000, 2, 0, [2000, 0]}].
+
+buffs_700087() -> [{70055, 1000, 1, 0, [1000, 0]}].
+
+buffs_700088() ->
+    [{70055, 1000, 1, 0, [2000, 0]},
+     {90350, 1000, 2, 0, [200]},
+     {90503, 1000, 2, 0, [200]}].
+
+buffs_700089() ->
+    [{70055, 1000, 1, 0, [2000, 0]},
+     {90350, 1000, 3, 0, [300]},
+     {90503, 1000, 3, 0, [400]}].
+
+buffs_700090() ->
+    [{30002, 1000, 1, 0, [6, 0]},
+     {90350, 1000, 3, 0, [300]},
+     {90503, 1000, 3, 0, [400]}].
+
+buffs_700091() ->
+    [{30002, 1000, 1, 0, [6, 0]},
+     {90350, 1000, 3, 0, [300]},
+     {90503, 1000, 3, 0, [300]}].
+
+script_700083(Skill, Self, Target, AddtArg) ->
+    entry_shield(buffs_700083(), Skill, Self, Target, AddtArg).
+
+script_700084(Skill, Self, Target, AddtArg) ->
+    entry_shield(buffs_700084(), Skill, Self, Target, AddtArg).
+
+script_700085(Skill, Self, Target, AddtArg) ->
+    entry_shield(buffs_700085(), Skill, Self, Target, AddtArg).
+
+script_700087(Skill, Self, Target, AddtArg) ->
+    entry_shield(buffs_700087(), Skill, Self, Target, AddtArg).
+
+script_700088(Skill, Self, Target, AddtArg) ->
+    entry_shield(buffs_700088(), Skill, Self, Target, AddtArg).
+
+script_700089(Skill, Self, Target, AddtArg) ->
+    entry_shield(buffs_700089(), Skill, Self, Target, AddtArg).
+
+script_700090(Skill, Self, Target, AddtArg) ->
+    entry_shield(buffs_700090(), Skill, Self, Target, AddtArg).
+
+script_700091(Skill, Self, Target, AddtArg) ->
+    entry_shield(buffs_700091(), Skill, Self, Target, AddtArg).
+
+%% 67307: initial 70% reduction shield 2 rounds, cooldown 5.
+script_700086(Skill = #c_skill{},
+              #fighter{id = Sid}, _Target,
+              #c_skill_addt_arg{passive_flag = init}) ->
+    combat_skill:add_skill_cooldown(Sid, Skill),
+    #passive_effect{buff_self_to_self =
+                        combat_script_buff:convert_buff([{69514,
+                                                          1000,
+                                                          2,
+                                                          0,
+                                                          [700]}])};
+script_700086(Skill = #c_skill{id = SkillId},
+              #fighter{id = Sid}, _Target,
+              #c_skill_addt_arg{passive_flag = round}) ->
+    case combat_skill:is_skill_in_cooldown(Sid, Skill) of
+        true -> #passive_effect{};
+        false ->
+            combat_skill:add_skill_cooldown(Sid, Skill),
+            Self = combat_cache:f(by_id, Sid),
+            lists:foreach(fun (Buff) ->
+                                  combat_buff:buff_add(Buff, Self, Self)
+                          end,
+                          combat_script_buff:convert_buff([{69514,
+                                                            1000,
+                                                            2,
+                                                            0,
+                                                            [700]}])),
+            #passive_effect{show_passive_skills = [{Sid, SkillId, 1}]}
+    end;
+script_700086(_, _, _, _) -> #passive_effect{}.

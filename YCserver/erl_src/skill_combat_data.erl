@@ -113423,7 +113423,7 @@ get_combat({60283, 1}) ->
            acc_low = 500, acc_high = 1000, attack_type = 1,
            elem_type = 0, target_type = 4, attack_times = 1,
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
-           cooldown = 4, script_id = 32001,
+           cooldown = 4, script_id = 700055,
            script_args = [400, 350, 0, 75]};
 get_combat({60285, 1}) ->
         #skill{id = 60285, lev = 1, name = lang:get("超级神佑"),
@@ -113431,7 +113431,7 @@ get_combat({60285, 1}) ->
            acc_low = 500, acc_high = 1000, attack_type = 1,
            elem_type = 0, target_type = 2, attack_times = 1,
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
-           script_id = 60053,
+           script_id = 700056,
            script_args = [140, 180, 220, 280, 1000, 0]};
 get_combat({60286, 1}) ->
         #skill{id = 60286, lev = 1, name = lang:get("超级逃生"),
@@ -113439,7 +113439,7 @@ get_combat({60286, 1}) ->
            acc_low = 500, acc_high = 1000, attack_type = 1,
            elem_type = 0, target_type = 2, attack_times = 1,
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
-           script_id = 60118, script_args = [490, 0, 150]};
+           script_id = 700057, script_args = [490, 0, 150]};
 get_combat({60304, 1}) ->
         #skill{id = 60304, lev = 1, name = lang:get("超级物攻祝福"),
            speed = 3, type = 1, sub_type = 2, acc_ratio = 1000,
@@ -114079,10 +114079,10 @@ get_combat({67115, 1}) ->
            elem_type = 0, target_type = 1, attack_times = 1,
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
            cooldown = 99,
-           buff_self = [{70055, 1000, 2, 0, [2000, 0]}, {70065, 1000, 999, 0, [999, 200]}],
-           script_id = 60146,
+           buff_self = [],
+           script_id = 700059,
            script_args =
-               [[], [], 0]};
+               []};
 get_combat({67117, 1}) ->
         #skill{id = 67117, lev = 1, name = lang:get("罗汉金钟"),
            speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
@@ -114252,10 +114252,10 @@ get_combat({67304, 1}) ->
            elem_type = 0, target_type = 1, attack_times = 1,
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
            cooldown = 99,
-           buff_self = [{90335, 1000, 999, 0, [0, 1000, 50100, 0, 1000]}],
-           script_id = 60146,
+           buff_self = [{90510, 1000, 3, 0, [300]}],
+           script_id = 700058,
            script_args =
-               [[], [], 0]};
+               []};
 get_combat({67308, 1}) ->
         #skill{id = 67308, lev = 1, name = lang:get("身外化身"),
            type = 1, sub_type = 2, acc_ratio = 1000,
@@ -114274,10 +114274,10 @@ get_combat({67337, 1}) ->
            elem_type = 0, target_type = 1, attack_times = 1,
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
            cooldown = 1,
-           buff_self = [{88047, 1000, 1, 0, [500, 0, 1]}],
-           script_id = 60146,
+           buff_self = [],
+           script_id = 700060,
            script_args =
-               [[], [], 0]};
+               []};
 get_combat({67369, 1}) ->
         #skill{id = 67369, lev = 1, name = lang:get("化魂"),
            type = 1, sub_type = 2, acc_ratio = 1000,

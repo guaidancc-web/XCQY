@@ -396,6 +396,12 @@
          script_700052/4,
          script_700053/4,
          script_700054/4,
+         script_700055/4,
+         script_700056/4,
+         script_700057/4,
+         script_700058/4,
+         script_700059/4,
+         script_700060/4,
          script_60191/4,
          script_60192/4,
          script_60193/4,
@@ -3445,6 +3451,30 @@ append_action(Cs = #c_skill{skill =
             Skill#c_skill{action =
                               {combat_script_skill, script_700054},
                           passive_type = [100, 12, 116]};
+        700055 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700055},
+                          passive_type = [6]};
+        700056 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700056},
+                          passive_type = [100, 8]};
+        700057 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700057},
+                          passive_type = [8]};
+        700058 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700058},
+                          passive_type = [100, 8]};
+        700059 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700059},
+                          passive_type = [100, 12, 8]};
+        700060 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700060},
+                          passive_type = [100, 102, 116]};
         60194 ->
             Skill#c_skill{action =
                               {combat_script_skill, script_60194},
@@ -15817,3 +15847,107 @@ script_700054(#c_skill{}, _Self,
         false -> {ok, 1000}
     end;
 script_700054(_, _, _, _) -> {ok, 1000}.
+
+%% 2025 revive category: independent wrappers.
+script_700055(Skill, Self, Target, AddtArg) ->
+    script_32001(Skill, Self, Target, AddtArg).
+
+script_700056(Skill, Self, Target, AddtArg) ->
+    script_60053(Skill, Self, Target, AddtArg).
+
+script_700057(Skill, Self, Target, AddtArg) ->
+    script_60118(Skill, Self, Target, AddtArg).
+
+%% 67304: fixed 100% revive at 100% HP; buff_self 90510 is applied on revive.
+script_700058(Skill = #c_skill{skill = S = #skill{}},
+              Self, Target, AddtArg) ->
+    NewSkill = Skill#c_skill{skill =
+                                 S#skill{script_args =
+                                             [1000, 1000, 1000, 1000, 1000, 0]}},
+    script_60053(NewSkill, Self, Target, AddtArg).
+
+%% 67115: entry shield/reflect + first-death 20% revive.
+script_700059(#c_skill{}, #fighter{}, _Target,
+              #c_skill_addt_arg{passive_flag = init}) ->
+    #passive_effect{buff_self_to_self =
+                        combat_script_buff:convert_buff([{70055,
+                                                          1000,
+                                                          2,
+                                                          0,
+                                                          [2000, 0]},
+                                                         {70065,
+                                                          1000,
+                                                          2,
+                                                          0,
+                                                          [999, 200]}])};
+script_700059(#c_skill{}, Self = #fighter{}, _Target,
+              #c_skill_addt_arg{passive_flag = undefined}) ->
+    lists:foreach(fun (Buff) ->
+                          combat_buff:buff_add(Buff, Self, Self)
+                  end,
+                  combat_script_buff:convert_buff([{70055,
+                                                    1000,
+                                                    2,
+                                                    0,
+                                                    [2000, 0]},
+                                                   {70065,
+                                                    1000,
+                                                    2,
+                                                    0,
+                                                    [999, 200]}])),
+    true;
+script_700059(Skill = #c_skill{},
+              #fighter{id = Fid, hp_max = HpMax}, #fighter{},
+              #c_skill_addt_arg{passive_flag = revive_self}) ->
+    case combat_skill:is_skill_in_cooldown(Fid, Skill) of
+        true -> #passive_effect{};
+        false ->
+            combat_skill:add_skill_cooldown(Fid, Skill),
+            HealHp = round(HpMax * 200 / 1000),
+            Ae = #action_effect{heal_hp = HealHp},
+            [ReviveSelf] =
+                combat_cache:get_context_elem([#combat_context.revive_self]),
+            NewReviveSelf = lists:keystore(Fid,
+                                           1,
+                                           ReviveSelf,
+                                           {Fid, Skill, Ae, []}),
+            combat_cache:save_context([{#combat_context.revive_self,
+                                        NewReviveSelf}]),
+            #passive_effect{}
+    end;
+script_700059(_, _, _, _) -> #passive_effect{}.
+
+%% 67337: 50% lethal immunity once per round; 80% with 60352/60353.
+script_700060(#c_skill{}, #fighter{id = Sid}, _Target,
+              #c_skill_addt_arg{passive_flag = init}) ->
+    put({lethal_immune_67337, Sid}, false),
+    #passive_effect{};
+script_700060(#c_skill{}, #fighter{id = Sid}, _Target,
+              #c_skill_addt_arg{passive_flag = round}) ->
+    put({lethal_immune_67337, Sid}, false),
+    #passive_effect{};
+script_700060(#c_skill{}, _Self,
+              Target = #fighter{id = Tid, hp = Hp}, DmgTotal)
+    when is_integer(DmgTotal) ->
+    case DmgTotal >= Hp andalso
+             get({lethal_immune_67337, Tid}) =/= true
+        of
+        true ->
+            HasInstant =
+                lists:any(fun (#c_skill{id = Id}) ->
+                                  Id =:= 60352 orelse Id =:= 60353
+                          end,
+                          Target#fighter.passive_skills),
+            Rate = case HasInstant of
+                       true -> 800;
+                       false -> 500
+                   end,
+            case util:rand(1, 1000) =< Rate of
+                true ->
+                    put({lethal_immune_67337, Tid}, true),
+                    {ok, 0};
+                false -> {ok, 1000}
+            end;
+        false -> {ok, 1000}
+    end;
+script_700060(_, _, _, _) -> {ok, 1000}.

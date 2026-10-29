@@ -442,6 +442,9 @@
          script_700098/4,
          script_700099/4,
          script_700100/4,
+         script_700101/4,
+         script_700102/4,
+         script_700103/4,
          script_60191/4,
          script_60192/4,
          script_60193/4,
@@ -3670,6 +3673,18 @@ append_action(Cs = #c_skill{skill =
         700100 ->
             Skill#c_skill{action =
                               {combat_script_skill, script_700100},
+                          passive_type = [5, 1]};
+        700101 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700101},
+                          passive_type = [7]};
+        700102 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700102},
+                          passive_type = [5, 1, 102, 116]};
+        700103 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700103},
                           passive_type = [5, 1]};
         700086 ->
             Skill#c_skill{action =
@@ -16518,3 +16533,92 @@ script_700100(#c_skill{id = SkillId},
             end
     end;
 script_700100(_, _, _, _) -> #passive_effect{}.
+
+script_700101(Skill, Self, Target, AddtArg) ->
+    script_32000(Skill, Self, Target, AddtArg).
+
+%% 67082: +10% magic damage each round, random slow/atk-down,
+%% and immunity to the first damage each round.
+script_700102(Skill = #c_skill{id = SkillId,
+                               skill = #skill{buff_self = BuffSelf}},
+              #fighter{id = Sid}, _Target,
+              #c_skill_addt_arg{passive_flag = pre_action}) ->
+    case combat_skill:is_skill_in_cooldown(Sid, Skill) of
+        true -> #passive_effect{};
+        false ->
+            case BuffSelf of
+                [] -> #passive_effect{};
+                _ ->
+                    combat_skill:add_skill_cooldown(Sid, Skill, 1),
+                    #passive_effect{buff_self_to_self = BuffSelf,
+                                    show_passive_skills = [{Sid, SkillId, 0}],
+                                    flag = 1}
+            end
+    end;
+script_700102(#c_skill{id = SkillId, target_no = 1},
+              #fighter{id = Sid}, #fighter{id = Tid},
+              #c_skill_addt_arg{passive_flag = attack}) ->
+    case util:rand(1, 1000) =< 700 of
+        true ->
+            Buff = case util:rand(1, 2) of
+                       1 -> {90514, 1000, 2, 0, []};
+                       2 -> {90515, 1000, 2, 0, [350]}
+                   end,
+            Target = combat_cache:f(by_id, Tid),
+            lists:foreach(fun (B) ->
+                                  combat_buff:buff_add(B, Target, Target)
+                          end,
+                          combat_script_buff:convert_buff([Buff])),
+            #passive_effect{show_passive_skills = [{Sid, SkillId, 1}]};
+        false -> #passive_effect{}
+    end;
+script_700102(#c_skill{}, #fighter{id = Sid}, _Target,
+              #c_skill_addt_arg{passive_flag = round}) ->
+    put({first_dmg_67082, Sid}, false),
+    #passive_effect{};
+script_700102(#c_skill{}, _Self,
+              #fighter{id = Tid}, DmgTotal)
+    when is_integer(DmgTotal) ->
+    case get({first_dmg_67082, Tid}) =/= true of
+        true ->
+            put({first_dmg_67082, Tid}, true),
+            {ok, 0};
+        false -> {ok, 1000}
+    end;
+script_700102(_, _, _, _) -> #passive_effect{}.
+
+%% 67132: +15% physical attack each round (3 stacks), 30% atk-down.
+script_700103(Skill = #c_skill{id = SkillId,
+                               skill = #skill{buff_self = BuffSelf}},
+              #fighter{id = Sid}, _Target,
+              #c_skill_addt_arg{passive_flag = pre_action}) ->
+    case combat_skill:is_skill_in_cooldown(Sid, Skill) of
+        true -> #passive_effect{};
+        false ->
+            case BuffSelf of
+                [] -> #passive_effect{};
+                _ ->
+                    combat_skill:add_skill_cooldown(Sid, Skill, 1),
+                    #passive_effect{buff_self_to_self = BuffSelf,
+                                    show_passive_skills = [{Sid, SkillId, 0}],
+                                    flag = 1}
+            end
+    end;
+script_700103(#c_skill{id = SkillId, target_no = 1},
+              #fighter{id = Sid}, #fighter{id = Tid},
+              #c_skill_addt_arg{passive_flag = attack}) ->
+    case util:rand(1, 1000) =< 300 of
+        true ->
+            Target = combat_cache:f(by_id, Tid),
+            lists:foreach(fun (B) ->
+                                  combat_buff:buff_add(B, Target, Target)
+                          end,
+                          combat_script_buff:convert_buff([{90515,
+                                                            1000,
+                                                            2,
+                                                            0,
+                                                            [200]}])),
+            #passive_effect{show_passive_skills = [{Sid, SkillId, 1}]};
+        false -> #passive_effect{}
+    end;
+script_700103(_, _, _, _) -> #passive_effect{}.

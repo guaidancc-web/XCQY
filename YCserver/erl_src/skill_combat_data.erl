@@ -113847,7 +113847,7 @@ get_combat({60282, 1}) ->
            acc_low = 500, acc_high = 1000, attack_type = 1,
            elem_type = 0, target_type = 4, attack_times = 1,
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
-           cooldown = 1, script_id = 32000,
+           cooldown = 1, script_id = 700101,
            script_args = [610, 550, 1000]};
 get_combat({60288, 1}) ->
         #skill{id = 60288, lev = 1, name = lang:get("超级反弹"),
@@ -114295,22 +114295,22 @@ get_combat({67082, 1}) ->
            acc_low = 1000, acc_high = 1000, attack_type = 1,
            elem_type = 0, target_type = 1, attack_times = 1,
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
-           cooldown = 1,
+           cooldown = 0,
            buff_self = [{90500, 1000, 999, 1, [100]}],
-           script_id = 60146,
+           script_id = 700102,
            script_args =
-               [[], [], 0]};
+               []};
 get_combat({67132, 1}) ->
         #skill{id = 67132, lev = 1, name = lang:get("野蛮增长"),
            type = 1, sub_type = 2, acc_ratio = 1000,
            acc_low = 1000, acc_high = 1000, attack_type = 1,
            elem_type = 0, target_type = 1, attack_times = 1,
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
-           cooldown = 1,
+           cooldown = 0,
            buff_self = [{90501, 1000, 999, 1, [150]}],
-           script_id = 60146,
+           script_id = 700103,
            script_args =
-               [[], [], 0]};
+               []};
 get_combat({67300, 1}) ->
         #skill{id = 67300, lev = 1, name = lang:get("麒麟浴火"),
            type = 1, sub_type = 2, acc_ratio = 1000,

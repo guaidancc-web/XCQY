@@ -343,6 +343,9 @@
          script_60190/4,
          script_700001/4,
          script_700002/4,
+         script_700003/4,
+         script_700004/4,
+         script_700005/4,
          script_60191/4,
          script_60192/4,
          script_60193/4,
@@ -3207,6 +3210,18 @@ append_action(Cs = #c_skill{skill =
             Skill#c_skill{action =
                               {combat_script_skill, script_700002},
                           passive_type = [1, 2]};
+        700003 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700003},
+                          passive_type = [1]};
+        700004 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700004},
+                          passive_type = [100, 11, 5, 1, 2]};
+        700005 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700005},
+                          passive_type = [100, 11, 5, 1, 2]};
         60194 ->
             Skill#c_skill{action =
                               {combat_script_skill, script_60194},
@@ -14526,10 +14541,98 @@ script_700002(Skill = #c_skill{id = SkillId,
                     combat_skill:add_skill_cooldown(Sid, Skill, 1),
                     #passive_effect{
                         buff_self_to_self =
-                            [{69514, 1000, Duration, 1, [Ratio]}],
+                            [{90273, 1000, Duration, 1, [Ratio]}],
                         show_passive_skills = [{Sid, SkillId, 1}]};
                 false -> #passive_effect{}
             end
     end;
 script_700002(_Skill, _Self, _Target, _AddtArg) ->
     #passive_effect{}.
+
+
+%% 2025 pet skill: burn target MP by a ratio of target max MP (decays per hit).
+script_700003(#c_skill{skill =
+                           #skill{script_args = [DmgMpRatio, DmgMp]}},
+              #fighter{},
+              #fighter{mp_max = MpMax,
+                       special_attr =
+                           #special_attr{be_dmg_mp_times = BeTimes}},
+              _SkillAddtArg) ->
+    AllDmgMp = round(MpMax * DmgMpRatio / 1000 + DmgMp),
+    DoDmgMp = round(AllDmgMp * math:pow(2 / 3, BeTimes)),
+    Tvc = [{mp, 1, -DoDmgMp}, {be_dmg_mp_times, 1, 1}],
+    Tc = [{1, -DoDmgMp, 0}],
+    #passive_effect{target_val_changed = Tvc,
+                    target_changed = Tc};
+script_700003(_Skill, _Self, _Target, _AddtArg) ->
+    #passive_effect{}.
+
+
+%% 2025 pet skill: battle-start shield + on-hit damage reduction.
+script_700004(Skill = #c_skill{id = SkillId,
+                               skill = #skill{script_args = [ShieldRatio, ShieldDur, _, _, _]}},
+              #fighter{id = Sid}, #fighter{},
+              #c_skill_addt_arg{passive_flag = pre_action}) ->
+    case combat_skill:is_skill_in_cooldown(Sid, Skill) of
+        true -> #passive_effect{};
+        _ ->
+            combat_skill:add_skill_cooldown(Sid, Skill, 99),
+            #passive_effect{
+                buff_self_to_self =
+                    [{70055, 1000, ShieldDur, 0, [ShieldRatio, 0]}],
+                show_passive_skills = [{Sid, SkillId, 0}],
+                flag = 1}
+    end;
+script_700004(Skill = #c_skill{id = SkillId,
+                               skill = #skill{script_args = [_, _, Chance, ReduceRatio, ReduceDur]}},
+              #fighter{id = Sid}, #fighter{},
+              #c_skill_addt_arg{passive_flag = defence}) ->
+    case combat_skill:is_skill_in_cooldown(Sid, Skill) of
+        true -> #passive_effect{};
+        _ ->
+            case util:rand(1, 1000) =< Chance of
+                true ->
+                    combat_skill:add_skill_cooldown(Sid, Skill, 1),
+                    #passive_effect{
+                        buff_self_to_self =
+                            [{90502, 1000, ReduceDur, 1, [ReduceRatio]}],
+                        show_passive_skills = [{Sid, SkillId, 1}]};
+                false -> #passive_effect{}
+            end
+    end;
+script_700004(_, _, _, _) -> #passive_effect{}.
+
+%% 2025 pet skill: permanent reduction/reflect + on-hit silence.
+script_700005(Skill = #c_skill{id = SkillId,
+                               skill = #skill{script_args = [ReduceRatio, ReflectNum, ReflectRatio, _, _]}},
+              #fighter{id = Sid}, #fighter{},
+              #c_skill_addt_arg{passive_flag = pre_action}) ->
+    case combat_skill:is_skill_in_cooldown(Sid, Skill) of
+        true -> #passive_effect{};
+        _ ->
+            combat_skill:add_skill_cooldown(Sid, Skill, 99),
+            #passive_effect{
+                buff_self_to_self =
+                    [{69514, 1000, 999, 1, [ReduceRatio]},
+                     {70065, 1000, 999, 0, [ReflectNum, ReflectRatio]}],
+                show_passive_skills = [{Sid, SkillId, 0}],
+                flag = 1}
+    end;
+script_700005(Skill = #c_skill{id = SkillId,
+                               skill = #skill{script_args = [_, _, _, Chance, Dur]}},
+              #fighter{id = Sid}, #fighter{},
+              #c_skill_addt_arg{passive_flag = defence}) ->
+    case combat_skill:is_skill_in_cooldown(Sid, Skill) of
+        true -> #passive_effect{};
+        _ ->
+            case util:rand(1, 1000) =< Chance of
+                true ->
+                    combat_skill:add_skill_cooldown(Sid, Skill, 1),
+                    #passive_effect{
+                        buff_self_to_target =
+                            [{90338, 1000, Dur, 1, [1000]}],
+                        show_passive_skills = [{Sid, SkillId, 1}]};
+                false -> #passive_effect{}
+            end
+    end;
+script_700005(_, _, _, _) -> #passive_effect{}.

@@ -113921,11 +113921,10 @@ get_combat({67127, 1}) ->
            acc_low = 1000, acc_high = 1000, attack_type = 1,
            elem_type = 0, target_type = 1, attack_times = 1,
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
-           cooldown = 99,
-           buff_self = [{70055, 1000, 2, 0, [2000, 0]}],
-           script_id = 60146,
+           buff_self = [],
+           script_id = 700004,
            script_args =
-               [[], [], 0]};
+               [2000, 2, 200, 300, 2]};
 get_combat({67302, 1}) ->
         #skill{id = 67302, lev = 1, name = lang:get("麒麟御风"),
            type = 1, sub_type = 2, acc_ratio = 1000,
@@ -113943,11 +113942,10 @@ get_combat({67305, 1}) ->
            acc_low = 1000, acc_high = 1000, attack_type = 1,
            elem_type = 0, target_type = 1, attack_times = 1,
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
-           cooldown = 99,
-           buff_self = [{69514, 1000, 999, 0, [300]}, {70065, 1000, 999, 0, [999, 300]}],
-           script_id = 60146,
+           buff_self = [],
+           script_id = 700005,
            script_args =
-               [[], [], 0]};
+               [300, 999, 300, 400, 2]};
 get_combat({67307, 1}) ->
         #skill{id = 67307, lev = 1, name = lang:get("仙道神体"),
            type = 1, sub_type = 2, acc_ratio = 1000,
@@ -114153,6 +114151,26 @@ get_combat({67116, 1}) ->
            elem_type = 0, target_type = 1, attack_times = 1,
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
            cooldown = 1, script_id = 700002, script_args = [200, 300, 2]};
+get_combat({60284, 1}) ->
+        #skill{id = 60284, lev = 1, name = lang:get("超级破魔"),
+           type = 1, sub_type = 2, acc_ratio = 1000,
+           acc_low = 1000, acc_high = 1000, attack_type = 1,
+           elem_type = 0, target_type = 1, attack_times = 1,
+           target_list = [{1, 2, 1}], dmg_ratio = [1000],
+           buff_self = [],
+           script_id = 700003,
+           script_args =
+               [100, 0]};
+get_combat({67080, 1}) ->
+        #skill{id = 67080, lev = 1, name = lang:get("炸蓝"),
+           type = 1, sub_type = 2, acc_ratio = 1000,
+           acc_low = 1000, acc_high = 1000, attack_type = 1,
+           elem_type = 0, target_type = 1, attack_times = 1,
+           target_list = [{1, 2, 1}], dmg_ratio = [1000],
+           buff_self = [],
+           script_id = 700003,
+           script_args =
+               [150, 0]};
 get_combat(_) -> false.
 
 get_skill_cd(50014) -> 50004;

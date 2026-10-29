@@ -351,6 +351,8 @@
          script_700008/4,
          script_700009/4,
          script_700010/4,
+         script_700011/4,
+         script_700012/4,
          script_60191/4,
          script_60192/4,
          script_60193/4,
@@ -3247,6 +3249,14 @@ append_action(Cs = #c_skill{skill =
             Skill#c_skill{action =
                               {combat_script_skill, script_700010},
                           passive_type = [1]};
+        700011 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700011},
+                          passive_type = [100, 10]};
+        700012 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700012},
+                          passive_type = [1, 2]};
         60194 ->
             Skill#c_skill{action =
                               {combat_script_skill, script_60194},
@@ -14754,3 +14764,49 @@ script_700010(#c_skill{id = SkillId,
     #passive_effect{dmg_ratio_add = Add,
                     show_passive_skills = [{Sid, SkillId, 1}]};
 script_700010(_, _, _, _) -> #passive_effect{}.
+
+
+%% 2025 pet skill: on entering battle cleanse the master and grant control immunity.
+script_700011(#c_skill{skill = #skill{script_args = [Duration]}},
+              Self = #fighter{id = Sid, master_fid = MasterFid}, #fighter{},
+              #c_skill_addt_arg{passive_flag = init})
+    when MasterFid =/= 0 ->
+    case combat_cache:f(by_id, MasterFid) of
+        Master = #fighter{id = Mid, buffs = Buffs, is_die = 0} ->
+            Clear = [B || B = #c_buff{can_dispel = 1, eff_type = debuff}
+                              <- Buffs],
+            lists:foreach(fun (B) ->
+                                  combat_buff:buff_del(Mid, Sid, B)
+                          end,
+                          Clear),
+            Buffs1 = combat_script_buff:convert_buff([{70025, 1000, Duration, 1, [1000]}]),
+            lists:foreach(fun (B) ->
+                                  combat_buff:buff_add(B, Self, Master, true)
+                          end,
+                          Buffs1),
+            #passive_effect{};
+        _ -> #passive_effect{}
+    end;
+script_700011(_, _, _, _) -> #passive_effect{}.
+
+%% 2025 pet skill: speed advantage -> +15% damage; when hit by slower target -30%.
+script_700012(#c_skill{id = SkillId},
+              #fighter{id = Sid, attr = #attr{speed = SSpeed}},
+              #fighter{attr = #attr{speed = TSpeed}},
+              #c_skill_addt_arg{passive_flag = attack}) ->
+    case SSpeed > TSpeed of
+        true -> #passive_effect{dmg_ratio_add = 150,
+                                show_passive_skills = [{Sid, SkillId, 1}]};
+        false -> #passive_effect{}
+    end;
+script_700012(#c_skill{id = SkillId},
+              #fighter{id = Sid, attr = #attr{speed = SSpeed}},
+              #fighter{attr = #attr{speed = TSpeed}},
+              #c_skill_addt_arg{passive_flag = defence}) ->
+    case SSpeed > TSpeed of
+        true -> #passive_effect{
+                    buff_self_to_self = [{69514, 1000, 1, 1, [300]}],
+                    show_passive_skills = [{Sid, SkillId, 1}]};
+        false -> #passive_effect{}
+    end;
+script_700012(_, _, _, _) -> #passive_effect{}.

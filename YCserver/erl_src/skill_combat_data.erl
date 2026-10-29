@@ -114221,6 +114221,26 @@ get_combat({67340, 1}) ->
            script_id = 700010,
            script_args =
                [100, 1000, 50, 2000, 200]};
+get_combat({60281, 1}) ->
+        #skill{id = 60281, lev = 1, name = lang:get("超级清心"),
+           type = 1, sub_type = 2, acc_ratio = 1000,
+           acc_low = 1000, acc_high = 1000, attack_type = 1,
+           elem_type = 0, target_type = 1, attack_times = 1,
+           target_list = [{1, 2, 1}], dmg_ratio = [1000],
+           buff_self = [],
+           script_id = 700011,
+           script_args =
+               [3]};
+get_combat({67310, 1}) ->
+        #skill{id = 67310, lev = 1, name = lang:get("筋斗云决"),
+           type = 1, sub_type = 2, acc_ratio = 1000,
+           acc_low = 1000, acc_high = 1000, attack_type = 1,
+           elem_type = 0, target_type = 1, attack_times = 1,
+           target_list = [{1, 2, 1}], dmg_ratio = [1000],
+           buff_self = [],
+           script_id = 700012,
+           script_args =
+               []};
 get_combat(_) -> false.
 
 get_skill_cd(50014) -> 50004;

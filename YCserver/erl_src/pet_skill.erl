@@ -3020,12 +3020,23 @@ learn_book(SkillIds,
         _ -> {false, lang:get("没有找到出战宠物")}
     end.
 
-%% 多技能书（如吞天魔功）：从书里的技能池随机学一个，走普通打书规则
-%% （已有技能会按概率顶替，等同“仙兽内丹”的描述）。
+%% 多技能书（如吞天魔功）：从书里的技能池随机学一个。
+%% 普通技能不足 8 个时必定新增一个格子（与“第一次使用必然增加技能格子”一致），
+%% 满了以后按普通打书规则随机顶替一个已有技能。
 use_book_multi(Item, SkillIds, PetId,
-               Role = #role{m_pet = #m_pet{pets = Pets}}) ->
+               Role = #role{m_pet = Mpet = #m_pet{pets = Pets}}) ->
     case lists:keyfind(PetId, #pet.id, Pets) of
-        #pet{skills = Skills} ->
+        #pet{genre = 6} -> {false, lang:get("宠物无法学习技能")};
+        #pet{lock = 1} -> {false, lang:get("宠物处于锁定状态，请先解除锁定")};
+        #pet{genre = 3} -> {false, lang:get("野生宠物无法学习技能")};
+        #pet{spirit_attached_id = SpiritAttachedId,
+             spirit_child_flag = SpiritChildFlag}
+            when SpiritAttachedId =/= 0 orelse
+                     SpiritChildFlag =/= 0 ->
+            Msg = notice:format(lang:get("请先~ts{face_1,3}"),
+                                [{string_2, 5, lang:get("卸下附灵")}]),
+            {false, Msg};
+        Pet = #pet{skills = Skills, name = PetName} ->
             Have = [Id || #pet_skill{id = Id} <- Skills],
             Candidates = [Id
                           || Id <- SkillIds,
@@ -3035,9 +3046,51 @@ use_book_multi(Item, SkillIds, PetId,
                 [] -> {false, lang:get("已有相同技能, 无法使用")};
                 _ ->
                     SkillId = util:rand_list(Candidates),
-                    use_item(Item, SkillId, PetId, Role)
+                    NormalLen = length([S
+                                        || S = #pet_skill{source = 1}
+                                               <- Skills]),
+                    case NormalLen < 8 of
+                        true ->
+                            add_new_slot(Item, SkillId, Pet, PetName, Skills,
+                                         PetId, Mpet, Role);
+                        false -> use_item(Item, SkillId, PetId, Role)
+                    end
             end;
         _ -> {false, lang:get("不存在的宠物, 无法操作")}
+    end.
+
+add_new_slot(Item, SkillId, Pet, PetName, Skills, PetId, Mpet, Role) ->
+    {Loss, LossFun} =
+        case Item of
+            {id, ItemId} ->
+                {[#loss{label = item_id, val = [{ItemId, 1}],
+                        msg = lang:get("技能书不存在，无法使用")}], do};
+            {base_id, ItemBaseId} ->
+                {[#loss{label = item_base_id_auto_buy,
+                        val = [{ItemBaseId, 1}],
+                        msg = lang:get("技能书不存在，无法使用"),
+                        auto_scene = lang:get("快捷学习技能")}], do_notice}
+        end,
+    LockLoss = lock_loss(Skills),
+    case role_gain:LossFun(Loss ++ LockLoss, Role) of
+        {false, #loss{msg = Msg}} -> {false, Msg};
+        {ok, NewRole} ->
+            #pet_base_skill{type = Type, step = Step} =
+                skill_data:get_pet({SkillId, 1}),
+            Skill = #pet_skill{id = SkillId, step = Step, type = Type,
+                               source = 1},
+            Pet1 = Pet#pet{skills = [Skill | Skills]},
+            {ok, NewPet, NewRole1} = pet_attr:calc(Pet1, NewRole),
+            NewPets = lists:keystore(PetId, #pet.id, element(5, Mpet), NewPet),
+            Nr = NewRole1#role{m_pet = setelement(5, Mpet, NewPets)},
+            pet:push_10511(Nr, NewPet),
+            pet:push_10503(Nr, NewPet),
+            notice:send(Nr, 3,
+                        notice:format(lang:get("您的~ts学会了~ts"),
+                                      [{string_2, 5, PetName},
+                                       {string_2, 1, skill_name(Skill)}])),
+            log:pet(Nr, "宠物学技能", Pet, NewPet),
+            {ok, role_trigger:fire(#evt_pet_skill{}, Nr)}
     end.
 
 attr_to_skill(A, Source) when is_list(A) ->

@@ -375,6 +375,16 @@
          script_700031/4,
          script_700032/4,
          script_700033/4,
+         script_700034/4,
+         script_700035/4,
+         script_700036/4,
+         script_700037/4,
+         script_700038/4,
+         script_700039/4,
+         script_700040/4,
+         script_700041/4,
+         script_700042/4,
+         script_700043/4,
          script_60191/4,
          script_60192/4,
          script_60193/4,
@@ -3360,6 +3370,36 @@ append_action(Cs = #c_skill{skill =
             Skill#c_skill{action =
                               {combat_script_skill, script_700033},
                           passive_type = [116]};
+        700034 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700034}};
+        700035 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700035}};
+        700036 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700036}};
+        700037 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700037}};
+        700038 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700038}};
+        700039 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700039}};
+        700040 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700040}};
+        700041 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700041}};
+        700042 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700042}};
+        700043 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700043}};
         60194 ->
             Skill#c_skill{action =
                               {combat_script_skill, script_60194},
@@ -15534,3 +15574,84 @@ script_700033(Skill = #c_skill{id = _SkillId},
                 false -> {ok, 1000}
             end
     end.
+
+%% 2025 active skills: independent attack shells.
+plain_attack(Skill, Self, Target, AddtArg) ->
+    combat_script_skill_calc:attack(Skill,
+                                    Self,
+                                    Target,
+                                    AddtArg,
+                                    #action_effect{}).
+
+dispel_buffs(Sid, Tid) ->
+    case combat_cache:f(by_id, Tid) of
+        #fighter{is_die = 0, buffs = Buffs} ->
+            Clear = [Buff
+                     || Buff = #c_buff{can_dispel = 1, eff_type = buff}
+                            <- Buffs],
+            lists:foreach(fun (Buff) ->
+                                  combat_buff:buff_del(Tid, Sid, Buff)
+                          end,
+                          Clear),
+            ok;
+        _ -> ok
+    end.
+
+%% 60590: <50% HP -> 200% magic damage, otherwise 150%.
+script_700034(Skill = #c_skill{skill = S = #skill{}},
+              Self,
+              Target = #fighter{hp = Hp, hp_max = HpMax},
+              AddtArg) ->
+    Ratio = case Hp * 1000 < HpMax * 500 of
+                true -> 2000;
+                false -> 1500
+            end,
+    combat_script_skill_calc:attack(Skill#c_skill{skill =
+                                                      S#skill{dmg_ratio =
+                                                                  [Ratio]}},
+                                    Self,
+                                    Target,
+                                    AddtArg,
+                                    #action_effect{}).
+
+script_700035(Skill, Self, Target, AddtArg) ->
+    plain_attack(Skill, Self, Target, AddtArg).
+
+script_700036(Skill, Self, Target, AddtArg) ->
+    plain_attack(Skill, Self, Target, AddtArg).
+
+script_700037(Skill, Self, Target, AddtArg) ->
+    plain_attack(Skill, Self, Target, AddtArg).
+
+script_700038(Skill, Self, Target, AddtArg) ->
+    plain_attack(Skill, Self, Target, AddtArg).
+
+script_700039(Skill, Self, Target, AddtArg) ->
+    plain_attack(Skill, Self, Target, AddtArg).
+
+%% 67343: magic attack + dispel all buffs on every hit target.
+script_700040(Skill, Self = #fighter{id = Sid},
+              Target = #fighter{id = Tid}, AddtArg) ->
+    plain_attack(Skill, Self, Target, AddtArg),
+    dispel_buffs(Sid, Tid).
+
+%% 67348: main target crit lifesteal 30%.
+script_700041(Skill = #c_skill{action_no = 1, target_no = 1},
+              Self, Target, AddtArg) ->
+    combat_script_skill_calc:attack(Skill,
+                                    Self,
+                                    Target,
+                                    AddtArg,
+                                    #action_effect{crit_suck_hp = 300});
+script_700041(Skill, Self, Target, AddtArg) ->
+    plain_attack(Skill, Self, Target, AddtArg).
+
+%% 67358: magic attack + dispel all buffs.
+script_700042(Skill, Self = #fighter{id = Sid},
+              Target = #fighter{id = Tid}, AddtArg) ->
+    plain_attack(Skill, Self, Target, AddtArg),
+    dispel_buffs(Sid, Tid).
+
+%% 67353: plain attack shell; 5-8 hits handled by addt script 1003.
+script_700043(Skill, Self, Target, AddtArg) ->
+    plain_attack(Skill, Self, Target, AddtArg).

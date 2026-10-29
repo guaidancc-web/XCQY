@@ -113518,9 +113518,8 @@ get_combat({67200, 1}) ->
            speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
            acc_low = 500, acc_high = 1000, attack_type = 1,
            elem_type = 1, target_type = 1, attack_times = 1,
-           target_list = [{1, 2, 2}], dmg_ratio = [1800], script_id = 50000, script_args = [0],
-           addt_scripts =
-               [{1, 1001, [1, 1, 50]}, {1, 1016, [1001]}]};
+           target_list = [{1, 2, 1}], dmg_ratio = [1800], script_id = 700023, script_args = [],
+           addt_scripts = [{1, 1016, [1001]}]};
 
 get_combat({67309, 1}) ->
         #skill{id = 67309, lev = 1, name = lang:get("金箍棒头"),

@@ -363,6 +363,7 @@
          script_700020/4,
          script_700021/4,
          script_700022/4,
+         script_700023/4,
          script_60191/4,
          script_60192/4,
          script_60193/4,
@@ -3306,6 +3307,9 @@ append_action(Cs = #c_skill{skill =
             Skill#c_skill{action =
                               {combat_script_skill, script_700022},
                           passive_type = [5, 1]};
+        700023 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700023}};
         60194 ->
             Skill#c_skill{action =
                               {combat_script_skill, script_60194},
@@ -15129,3 +15133,48 @@ script_700022(#c_skill{id = SkillId},
         false -> #passive_effect{}
     end;
 script_700022(_, _, _, _) -> #passive_effect{}.
+
+%% 2025 pet skill 67200: 40% yang (AoE + burn) / 60% yin (2 targets x2 + stun).
+script_700023(Skill = #c_skill{skill = S = #skill{}},
+              Self = #fighter{}, Target = #fighter{}, AddtArg) ->
+    case util:rand(1, 1000) =< 400 of
+        true ->
+            NewS = S#skill{elem_type = 1,
+                           attack_times = 1,
+                           target_list = [{1, 2, 13}],
+                           dmg_ratio = [1800],
+                           buff_target = [[{90505, 1000, 5, 1, [50, 0]}]]},
+            NewSkill = Skill#c_skill{skill = NewS},
+            run_67200(NewSkill, Self, Target, AddtArg);
+        false ->
+            StunArgs = [86009, 200, 0,
+                        [{3, 1000}, {2, 1000}, {1, 1000}, {0, 1000}],
+                        20000],
+            NewS = S#skill{elem_type = 1,
+                           attack_times = 2,
+                           target_list = [{1, 2, 2}, {2, 2, 2}],
+                           dmg_ratio = [1500, 1500],
+                           buff_target =
+                               [[{90247, 500, 2, 1, StunArgs}],
+                                [{90247, 500, 2, 1, StunArgs}]]},
+            NewSkill = Skill#c_skill{skill = NewS},
+            run_67200(NewSkill, Self, Target, AddtArg)
+    end;
+script_700023(_, _, _, _) -> ok.
+
+run_67200(NewSkill = #c_skill{skill = #skill{target_list = TargetList,
+                                             attack_times = AttackTimes}},
+          Self = #fighter{id = Sid}, Target = #fighter{id = Tid},
+          AddtArg) ->
+    Inner = NewSkill#c_skill{action =
+                                 {combat_script_skill, script_50000}},
+    Self1 = combat_cache:f(by_id, Sid),
+    combat_cache:u(Self1#fighter{action = {Inner, Tid}}),
+    combat:for_attack_start(1,
+                            AttackTimes,
+                            Inner,
+                            Self1,
+                            Target,
+                            AddtArg,
+                            TargetList),
+    ok.

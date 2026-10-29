@@ -14912,7 +14912,7 @@ script_700016(#c_skill{id = SkillId},
               _Target,
               #c_skill_addt_arg{passive_flag = kill}) ->
     case Action of
-        {Cs = #c_skill{skill = #skill{elem_type = 1}}, _} ->
+        {Cs = #c_skill{skill = CsSkill = #skill{elem_type = 1}}, _} ->
             case
                 combat_cache:get_context_elem([#combat_context.pursue_attack_list])
                 of
@@ -14921,8 +14921,10 @@ script_700016(#c_skill{id = SkillId},
                         combat_cache:get_context_elem([#combat_context.passive_skill_attack])
                         of
                         [[]] ->
+                            AttackTimes =
+                                max(1, length(CsSkill#skill.target_list)),
                             combat_cache:save_context([{#combat_context.passive_skill_attack,
-                                                        [{0, 1, Cs}]}]),
+                                                        [{0, AttackTimes, Cs}]}]),
                             #passive_effect{show_passive_skills =
                                                 [{Sid, SkillId, 1}]};
                         _ -> #passive_effect{}

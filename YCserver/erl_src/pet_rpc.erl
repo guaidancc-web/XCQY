@@ -2170,6 +2170,30 @@ handle(10508, {PetId, ItemId},
                             role:send_buff_clean(),
                             {reply, {0, Reason}}
                     end;
+                [Eff | _]
+                    when is_tuple(Eff), tuple_size(Eff) > 2,
+                         element(1, Eff) =:= 3 ->
+                    SkillIds = [element(I, Eff)
+                                || I <- lists:seq(2, tuple_size(Eff))],
+                    role:send_buff_begin(),
+                    case pet_skill:use_book_multi({id, ItemId},
+                                                  SkillIds,
+                                                  PetId,
+                                                  Role)
+                        of
+                        {ok, Role1} ->
+                            NewRole = role_trigger:fire([#evt_pet_skill{},
+                                                         #evt_pet_use_item{base_id
+                                                                               =
+                                                                               BaseId},
+                                                         #evt_pet{}],
+                                                        Role1),
+                            role:send_buff_flush(),
+                            {reply, {1, ""}, NewRole};
+                        {false, Reason} ->
+                            role:send_buff_clean(),
+                            {reply, {0, Reason}}
+                    end;
                 _ -> {reply, {0, lang:get("无法读取技能数据")}}
             end;
         #item{type = Type, base_id = BaseId, step = Step}
@@ -2644,6 +2668,29 @@ handle(10546, {PetId, ItemBaseId}, Role) ->
                                     SkillId,
                                     PetId,
                                     Role)
+                of
+                {ok, Role1} ->
+                    NewRole = role_trigger:fire([#evt_pet_skill{},
+                                                 #evt_pet_use_item{base_id =
+                                                                       ItemBaseId},
+                                                 #evt_pet{}],
+                                                Role1),
+                    role:send_buff_flush(),
+                    {reply, {1, ""}, NewRole};
+                {false, Reason} ->
+                    role:send_buff_clean(),
+                    {reply, {0, Reason}}
+            end;
+        [Eff | _]
+            when is_tuple(Eff), tuple_size(Eff) > 2,
+                 element(1, Eff) =:= 3 ->
+            SkillIds = [element(I, Eff)
+                        || I <- lists:seq(2, tuple_size(Eff))],
+            role:send_buff_begin(),
+            case pet_skill:use_book_multi({base_id, ItemBaseId},
+                                          SkillIds,
+                                          PetId,
+                                          Role)
                 of
                 {ok, Role1} ->
                     NewRole = role_trigger:fire([#evt_pet_skill{},

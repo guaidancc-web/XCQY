@@ -8,6 +8,7 @@
          all_skill/1,
          gm_study/2,
          learn_book/2,
+         use_book_multi/4,
          skill_name/1,
          comprehend/2,
          combat_comprehend/3,
@@ -3017,6 +3018,26 @@ learn_book(SkillIds,
                     {ok, role_trigger:fire(#evt_pet_skill{}, Nr)}
             end;
         _ -> {false, lang:get("没有找到出战宠物")}
+    end.
+
+%% 多技能书（如吞天魔功）：从书里的技能池随机学一个，走普通打书规则
+%% （已有技能会按概率顶替，等同“仙兽内丹”的描述）。
+use_book_multi(Item, SkillIds, PetId,
+               Role = #role{m_pet = #m_pet{pets = Pets}}) ->
+    case lists:keyfind(PetId, #pet.id, Pets) of
+        #pet{skills = Skills} ->
+            Have = [Id || #pet_skill{id = Id} <- Skills],
+            Candidates = [Id
+                          || Id <- SkillIds,
+                             not lists:member(Id, Have),
+                             skill_data:get_pet({Id, 1}) =/= false],
+            case Candidates of
+                [] -> {false, lang:get("已有相同技能, 无法使用")};
+                _ ->
+                    SkillId = util:rand_list(Candidates),
+                    use_item(Item, SkillId, PetId, Role)
+            end;
+        _ -> {false, lang:get("不存在的宠物, 无法操作")}
     end.
 
 attr_to_skill(A, Source) when is_list(A) ->

@@ -4,6 +4,9 @@
 import os
 import re
 import UnityPy
+from collections import Counter
+from openpyxl import Workbook
+from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, 'cdn', 'patch_android', '202506251639', 'textures', 'textures_business_data.unity3d')
@@ -28,6 +31,8 @@ SCRIPT = {
     700003: '攻击扣蓝',
     700004: '出场盾+受击魔法盾',
     700005: '减伤/反伤/沉默',
+    700006: '法术吸血+受击减伤',
+    700007: '击杀回血+燃火',
 }
 BUFF = {
     70055: '生命护盾', 70065: '反伤', 80005: '持续回血', 69514: '减伤',
@@ -50,6 +55,8 @@ SPECIAL = {
     67080: '独立脚本（攻击扣蓝15%）',
     67127: '独立脚本（出场盾+受击魔法盾）',
     67305: '独立脚本（减伤/反伤/沉默）',
+    67359: '独立脚本（25%法术吸血+受击减伤）',
+    67365: '独立脚本（击杀回血+燃火增伤）',
     67119: '近似（群增伤20%）',
     67075: '近似（封心+护盾已接）',
     67085: '近似（20%暴击吸血）',
@@ -178,6 +185,87 @@ def combat_text(block):
     return '；'.join(parts)
 
 
+def write_xlsx(rows, counts):
+    wb = Workbook()
+    thin = Side(style='thin', color='B0B0B0')
+    border = Border(left=thin, right=thin, top=thin, bottom=thin)
+    head_fill = PatternFill('solid', fgColor='1F4E78')
+    head_font = Font(color='FFFFFF', bold=True)
+    green = PatternFill('solid', fgColor='C6EFCE')
+    yellow = PatternFill('solid', fgColor='FFEB9C')
+    orange = PatternFill('solid', fgColor='FCE4D6')
+    red = PatternFill('solid', fgColor='FFC7CE')
+    wrap = Alignment(wrap_text=True, vertical='top')
+
+    ws = wb.active
+    ws.title = '总览'
+    ws['A1'] = '2025 新宠技能当前效果表'
+    ws['A1'].font = Font(bold=True, size=14)
+    ws['A2'] = '更新时间'
+    ws['B2'] = '2026-10-29'
+    ws['A3'] = '技能总数'
+    ws['B3'] = len(rows)
+    r = 5
+    ws.cell(r, 1, '状态').font = head_font
+    ws.cell(r, 1).fill = head_fill
+    ws.cell(r, 2, '数量').font = head_font
+    ws.cell(r, 2).fill = head_fill
+    r += 1
+    for k, v in counts.most_common():
+        ws.cell(r, 1, k)
+        ws.cell(r, 2, v)
+        ws.cell(r, 1).fill = green if ('独立' in k or '精确' in k) else (red if '未实现' in k else (orange if ('部分' in k or '仅属性' in k) else yellow))
+        r += 1
+    r += 1
+    ws.cell(r, 1, '说明').font = Font(bold=True)
+    for line in ['独立脚本：700001-700005 等专用脚本',
+                 '精确：属性/公式按说明落表',
+                 '近似：属性/目标/消耗准确，伤害倍率或 buff 参数推断',
+                 '部分：部分机制已做，剩余机制未做',
+                 '未实现：目前没有生效记录',
+                 '伤害倍率无法从客户端取得，均为推断值']:
+        r += 1
+        ws.cell(r, 1, line)
+    ws.column_dimensions['A'].width = 60
+    ws.column_dimensions['B'].width = 12
+
+    def add_detail(title, data):
+        sh = wb.create_sheet(title)
+        headers = ['ID', '技能', '类型', '当前效果', '状态', '技能说明']
+        for c, h in enumerate(headers, 1):
+            cell = sh.cell(1, c, h)
+            cell.font = head_font
+            cell.fill = head_fill
+            cell.alignment = Alignment(horizontal='center', vertical='center')
+            cell.border = border
+        for i, row in enumerate(data, 2):
+            sid, name, typ, effect, status, desc = row
+            vals = [sid, name, typ, effect, status, desc]
+            for c, v in enumerate(vals, 1):
+                cell = sh.cell(i, c, v)
+                cell.alignment = wrap
+                cell.border = border
+            st = sh.cell(i, 5)
+            if '独立' in status or '精确' in status:
+                st.fill = green
+            elif '未实现' in status:
+                st.fill = red
+            elif '部分' in status or '仅属性' in status:
+                st.fill = orange
+            else:
+                st.fill = yellow
+        sh.freeze_panes = 'A2'
+        sh.auto_filter.ref = 'A1:F%d' % (len(data) + 1)
+        for col, w in zip('ABCDEF', [8, 18, 10, 80, 34, 80]):
+            sh.column_dimensions[col].width = w
+        sh.row_dimensions[1].height = 22
+
+    add_detail('详细表', rows)
+    todo = [x for x in rows if ('未实现' in x[4] or '部分' in x[4] or '仅属性' in x[4])]
+    add_detail('待补-部分', todo)
+    wb.save(os.path.join(ROOT, 'docs', '技能效果表.xlsx'))
+
+
 def main():
     client = read_client()
     skill = open(os.path.join(ROOT, 'YCserver', 'erl_src', 'skill_data.erl'), encoding='utf-8').read()
@@ -250,7 +338,9 @@ def main():
         f.write('|---|---|---|---|---|\n')
         for sid, name, typ, effect, status, _ in rows:
             f.write('| %d | %s | %s | %s | %s |\n' % (sid, name, typ, effect, status))
-    print('wrote', OUT, 'rows', len(rows))
+    counts = Counter(r[4] for r in rows)
+    write_xlsx(rows, counts)
+    print('wrote', OUT, 'and docs/技能效果表.xlsx rows', len(rows))
 
 
 if __name__ == '__main__':

@@ -346,6 +346,8 @@
          script_700003/4,
          script_700004/4,
          script_700005/4,
+         script_700006/4,
+         script_700007/4,
          script_60191/4,
          script_60192/4,
          script_60193/4,
@@ -3222,6 +3224,14 @@ append_action(Cs = #c_skill{skill =
             Skill#c_skill{action =
                               {combat_script_skill, script_700005},
                           passive_type = [100, 11, 5, 1, 2]};
+        700006 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700006},
+                          passive_type = [1, 2], special_type = [anti_attack]};
+        700007 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700007},
+                          passive_type = [9, 11]};
         60194 ->
             Skill#c_skill{action =
                               {combat_script_skill, script_60194},
@@ -14636,3 +14646,48 @@ script_700005(Skill = #c_skill{id = SkillId,
             end
     end;
 script_700005(_, _, _, _) -> #passive_effect{}.
+
+
+%% 2025 pet skill: magic lifesteal + on-hit damage reduction.
+script_700006(Skill = #c_skill{id = SkillId,
+                               skill = #skill{script_args = [_, Chance, ReduceRatio, Duration]}},
+              #fighter{id = Sid}, #fighter{},
+              #c_skill_addt_arg{passive_flag = defence}) ->
+    case combat_skill:is_skill_in_cooldown(Sid, Skill) of
+        true -> #passive_effect{};
+        _ ->
+            case util:rand(1, 1000) =< Chance of
+                true ->
+                    combat_skill:add_skill_cooldown(Sid, Skill, 1),
+                    #passive_effect{
+                        buff_self_to_self =
+                            [{69514, 1000, Duration, 1, [ReduceRatio]}],
+                        show_passive_skills = [{Sid, SkillId, 1}]};
+                false -> #passive_effect{}
+            end
+    end;
+script_700006(#c_skill{id = SkillId,
+                       skill = #skill{script_args = [SuckRatio, _, _, _]}},
+              #fighter{id = Fid, action = Action}, _Target, _AddtArg) ->
+    case Action of
+        {#c_skill{skill = #skill{elem_type = 0, attack_type = 0}}, _} ->
+            #passive_effect{suck_hp = SuckRatio,
+                            show_passive_skills = [{Fid, SkillId, 1}]};
+        _ -> #passive_effect{}
+    end;
+script_700006(_, _, _, _) -> #passive_effect{}.
+
+%% 2025 pet skill: on kill heal self and gain a damage buff.
+script_700007(#c_skill{id = SkillId,
+                       skill = #skill{script_args = [HpBase, HpRatio, DmgRatio, Duration]}},
+              #fighter{id = Sid, hp_max = HpMax}, #fighter{},
+              #c_skill_addt_arg{passive_flag = kill}) ->
+    HealHp = round(HpBase + HpMax * HpRatio / 1000),
+    Svc = [{hp, 1, HealHp}],
+    Sc = [{0, HealHp, 0}],
+    #passive_effect{self_val_changed = Svc,
+                    self_changed = Sc,
+                    buff_self_to_self =
+                        [{90350, 1000, Duration, 1, [DmgRatio]}],
+                    show_passive_skills = [{Sid, SkillId, 1}]};
+script_700007(_, _, _, _) -> #passive_effect{}.

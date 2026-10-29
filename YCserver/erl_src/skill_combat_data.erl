@@ -114171,6 +114171,26 @@ get_combat({67080, 1}) ->
            script_id = 700003,
            script_args =
                [150, 0]};
+get_combat({67359, 1}) ->
+        #skill{id = 67359, lev = 1, name = lang:get("破竹"),
+           type = 1, sub_type = 2, acc_ratio = 1000,
+           acc_low = 1000, acc_high = 1000, attack_type = 1,
+           elem_type = 0, target_type = 1, attack_times = 1,
+           target_list = [{1, 2, 1}], dmg_ratio = [1000],
+           buff_self = [],
+           script_id = 700006,
+           script_args =
+               [250, 400, 300, 2]};
+get_combat({67365, 1}) ->
+        #skill{id = 67365, lev = 1, name = lang:get("转阳"),
+           type = 1, sub_type = 2, acc_ratio = 1000,
+           acc_low = 1000, acc_high = 1000, attack_type = 1,
+           elem_type = 0, target_type = 1, attack_times = 1,
+           target_list = [{1, 2, 1}], dmg_ratio = [1000],
+           buff_self = [],
+           script_id = 700007,
+           script_args =
+               [0, 800, 200, 2]};
 get_combat(_) -> false.
 
 get_skill_cd(50014) -> 50004;

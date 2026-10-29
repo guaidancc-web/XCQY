@@ -113491,7 +113491,7 @@ get_combat({67110, 1}) ->
            speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
            acc_low = 800, acc_high = 1000, attack_type = 1,
            elem_type = 0, target_type = 1, attack_times = 1,
-           target_list = [{1, 2, 4}], dmg_ratio = [1800], script_id = 50026, script_args = [0],
+           target_list = [{1, 2, 4}], dmg_ratio = [1800], script_id = 700001, script_args = [500],
            addt_scripts = [{1, 1016, [1001]}]};
 
 get_combat({67130, 1}) ->

@@ -341,6 +341,7 @@
          script_60188/4,
          script_60189/4,
          script_60190/4,
+         script_700001/4,
          script_60191/4,
          script_60192/4,
          script_60193/4,
@@ -3198,6 +3199,9 @@ append_action(Cs = #c_skill{skill =
             Skill#c_skill{action =
                               {combat_script_skill, script_60193},
                           passive_type = [1]};
+        700001 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700001}};
         60194 ->
             Skill#c_skill{action =
                               {combat_script_skill, script_60194},
@@ -14488,3 +14492,17 @@ calc_special_self_changes(_Skill = #c_skill{target_no =
     end;
 calc_special_self_changes(_, _) -> {[], {}}.
 
+
+%% 2025 pet skill: true damage = own phy_dmg * Ratio / 1000
+script_700001(Skill = #c_skill{skill =
+                                   #skill{script_args = [Ratio]}},
+              Self = #fighter{attr = #attr{phy_dmg = PhyDmg}},
+              Target, SkillAddtArg) ->
+    DirectDmg = round(PhyDmg * Ratio / 1000),
+    ActionEffect = #action_effect{direct_dmg = DirectDmg},
+    combat_script_skill_calc:attack(Skill,
+                                    Self,
+                                    Target,
+                                    SkillAddtArg,
+                                    ActionEffect);
+script_700001(Skill, Self, _, _) -> err_ai(Skill, Self).

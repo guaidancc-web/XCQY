@@ -45,6 +45,7 @@ MULTI = {
 # 60047 = physical penetration. Zero them out unless the description asks for it.
 EXTRAS = {
     67131: {'script_id': 20023, 'script_args': [1, 250, 0]},
+    67110: {'script_id': 700001, 'script_args': [500]},
     67085: {'script_args': [200]},
     67330: {'script_args': [500]},
     67334: {'script_args': [0], 'buff_self': [(90304, 1000, 1, 0, [100])]},

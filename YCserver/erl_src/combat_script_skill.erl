@@ -364,6 +364,13 @@
          script_700021/4,
          script_700022/4,
          script_700023/4,
+         script_700024/4,
+         script_700025/4,
+         script_700026/4,
+         script_700027/4,
+         script_700028/4,
+         script_700029/4,
+         script_700030/4,
          script_60191/4,
          script_60192/4,
          script_60193/4,
@@ -3310,6 +3317,34 @@ append_action(Cs = #c_skill{skill =
         700023 ->
             Skill#c_skill{action =
                               {combat_script_skill, script_700023}};
+        700024 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700024},
+                          passive_type = [1]};
+        700025 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700025},
+                          passive_type = [102]};
+        700026 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700026},
+                          passive_type = [9]};
+        700027 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700027},
+                          passive_type = [1]};
+        700028 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700028},
+                          passive_type = [2]};
+        700029 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700029},
+                          passive_type = [2]};
+        700030 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700030},
+                          passive_type = [1, 102]};
         60194 ->
             Skill#c_skill{action =
                               {combat_script_skill, script_60194},
@@ -15178,3 +15213,181 @@ run_67200(NewSkill = #c_skill{skill = #skill{target_list = TargetList,
                             AddtArg,
                             TargetList),
     ok.
+
+%% 2025 pet skill 60450: attack chance grants a 40% damage-share buff.
+script_700024(#c_skill{id = SkillId, target_no = 1,
+                       skill = #skill{script_args = [Rate, ShareRatio, Dur]}},
+              Self = #fighter{id = Sid, buffs = Buffs}, _Target,
+              #c_skill_addt_arg{passive_flag = attack}) ->
+    case lists:keyfind(90506, #c_buff.id, Buffs) of
+        #c_buff{} -> #passive_effect{};
+        _ ->
+            case util:rand(1, 1000) =< Rate of
+                true ->
+                    lists:foreach(fun (Buff) ->
+                                          combat_buff:buff_add(Buff, Self, Self)
+                                  end,
+                                  combat_script_buff:convert_buff([{90506,
+                                                                    1000,
+                                                                    Dur,
+                                                                    1,
+                                                                    [ShareRatio]}])),
+                    #passive_effect{show_passive_skills = [{Sid, SkillId, 1}]};
+                false -> #passive_effect{}
+            end
+    end;
+script_700024(_, _, _, _) -> #passive_effect{}.
+
+%% 2025 pet skill 67068: 50% at round end cleanse own abnormal states.
+script_700025(#c_skill{id = SkillId},
+              #fighter{id = Sid, buffs = Buffs}, _Target,
+              #c_skill_addt_arg{passive_flag = round}) ->
+    case util:rand(1, 1000) =< 500 of
+        true ->
+            Clear = [Buff
+                     || Buff = #c_buff{can_dispel = 1, eff_type = debuff}
+                            <- Buffs],
+            lists:foreach(fun (Buff) ->
+                                  combat_buff:buff_del(Sid, Sid, Buff)
+                          end,
+                          Clear),
+            #passive_effect{show_passive_skills = [{Sid, SkillId, 1}]};
+        false -> #passive_effect{}
+    end;
+script_700025(_, _, _, _) -> #passive_effect{}.
+
+%% 2025 pet skill 67077: on kill heal 10% max HP.
+script_700026(#c_skill{id = SkillId},
+              #fighter{id = Sid, hp_max = HpMax}, _Target,
+              #c_skill_addt_arg{passive_flag = kill}) ->
+    Heal = round(HpMax * 100 / 1000),
+    #passive_effect{self_val_changed = [{hp, 1, Heal}],
+                    self_changed = [{0, Heal, 0}],
+                    show_passive_skills = [{Sid, SkillId, 1}]};
+script_700026(_, _, _, _) -> #passive_effect{}.
+
+%% 2025 pet skill 67083/67207: attack removes one buff from the first target.
+script_700027(#c_skill{id = SkillId, target_no = 1,
+                       skill = #skill{script_args = [Rate]}},
+              #fighter{id = Sid}, #fighter{id = Tid, buffs = TBuffs},
+              #c_skill_addt_arg{passive_flag = attack}) ->
+    case util:rand(1, 1000) =< Rate of
+        true ->
+            case [Buff
+                  || Buff = #c_buff{can_dispel = 1, eff_type = buff}
+                         <- TBuffs]
+                of
+                [Buff | _] ->
+                    combat_buff:buff_del(Tid, Sid, Buff),
+                    #passive_effect{show_passive_skills = [{Sid, SkillId, 1}]};
+                [] -> #passive_effect{}
+            end;
+        false -> #passive_effect{}
+    end;
+script_700027(_, _, _, _) -> #passive_effect{}.
+
+%% 2025 pet skill 67097: first hit each round grants +20% physical damage.
+script_700028(#c_skill{id = SkillId},
+              Self = #fighter{id = Sid, buffs = Buffs}, _Target,
+              #c_skill_addt_arg{passive_flag = defence}) ->
+    case lists:keyfind(90509, #c_buff.id, Buffs) of
+        #c_buff{} -> #passive_effect{};
+        _ ->
+            lists:foreach(fun (Buff) ->
+                                  combat_buff:buff_add(Buff, Self, Self)
+                          end,
+                          combat_script_buff:convert_buff([{90509,
+                                                            1000,
+                                                            1,
+                                                            0,
+                                                            [200]}])),
+            #passive_effect{show_passive_skills = [{Sid, SkillId, 1}]}
+    end;
+script_700028(_, _, _, _) -> #passive_effect{}.
+
+%% 2025 pet skill 67133: first-hit buff + chance 30% damage reduction.
+script_700029(#c_skill{id = SkillId},
+              Self = #fighter{id = Sid, buffs = Buffs}, _Target,
+              #c_skill_addt_arg{passive_flag = defence}) ->
+    {FirstBuffs, HasFirst} =
+        case lists:keyfind(90509, #c_buff.id, Buffs) of
+            #c_buff{} -> {[], true};
+            _ ->
+                {combat_script_buff:convert_buff([{90509, 1000, 1, 0, [200]}]),
+                 false}
+        end,
+    lists:foreach(fun (Buff) ->
+                          combat_buff:buff_add(Buff, Self, Self)
+                  end,
+                  FirstBuffs),
+    ShieldBuffs =
+        case lists:keyfind(69514, #c_buff.id, Buffs) of
+            #c_buff{} -> [];
+            _ ->
+                case util:rand(1, 1000) =< 300 of
+                    true ->
+                        combat_script_buff:convert_buff([{69514,
+                                                          1000,
+                                                          3,
+                                                          0,
+                                                          [300]}]);
+                    false -> []
+                end
+        end,
+    lists:foreach(fun (Buff) ->
+                          combat_buff:buff_add(Buff, Self, Self)
+                  end,
+                  ShieldBuffs),
+    case HasFirst andalso ShieldBuffs =:= [] of
+        true -> #passive_effect{};
+        false ->
+            #passive_effect{show_passive_skills = [{Sid, SkillId, 1}]}
+    end;
+script_700029(_, _, _, _) -> #passive_effect{}.
+
+%% 2025 pet skill 67367: ignore defenses vs characters; dead allies buff self.
+script_700030(#c_skill{id = SkillId},
+              #fighter{id = Sid, group = Group},
+              Target = #fighter{type = TType},
+              #c_skill_addt_arg{passive_flag = attack}) ->
+    Dead = length([1
+                   || #fighter{is_die = 1} <- combat_cache:all(Group)]),
+    Add = Dead * 100,
+    case TType =:= 1 orelse Add > 0 of
+        true ->
+            case TType =:= 1 of
+                true ->
+                    #passive_effect{dmg_ratio_add = Add,
+                                    dec_phy_def_ratio = 300,
+                                    dec_magic_def_ratio = 300,
+                                    show_passive_skills = [{Sid, SkillId, 1}]};
+                false ->
+                    #passive_effect{dmg_ratio_add = Add,
+                                    show_passive_skills = [{Sid, SkillId, 1}]}
+            end;
+        false -> #passive_effect{}
+    end;
+script_700030(#c_skill{id = SkillId},
+              Self = #fighter{id = Sid, group = Group, buffs = Buffs},
+              _Target,
+              #c_skill_addt_arg{passive_flag = round}) ->
+    Dead = length([1
+                   || #fighter{is_die = 1} <- combat_cache:all(Group)]),
+    lists:foreach(fun (Buff) ->
+                          combat_buff:buff_del(Sid, Sid, Buff)
+                  end,
+                  [Buff || Buff = #c_buff{id = 90510} <- Buffs]),
+    case Dead > 0 of
+        true ->
+            lists:foreach(fun (Buff) ->
+                                  combat_buff:buff_add(Buff, Self, Self)
+                          end,
+                          combat_script_buff:convert_buff([{90510,
+                                                            1000,
+                                                            1,
+                                                            0,
+                                                            [Dead * 200]}])),
+            #passive_effect{show_passive_skills = [{Sid, SkillId, 1}]};
+        false -> #passive_effect{}
+    end;
+script_700030(_, _, _, _) -> #passive_effect{}.

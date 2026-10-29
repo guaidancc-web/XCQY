@@ -113772,7 +113772,7 @@ get_combat({60450, 1}) ->
            buff_self = [],
            script_id = 700024,
            script_args =
-               [300, 400, 2]};
+               [700, 400, 2]};
 get_combat({67068, 1}) ->
         #skill{id = 67068, lev = 1, name = lang:get("修罗觉醒"),
            type = 1, sub_type = 2, acc_ratio = 1000,
@@ -113810,7 +113810,7 @@ get_combat({67207, 1}) ->
            buff_self = [],
            script_id = 700027,
            script_args =
-               [300]};
+               [700]};
 get_combat({67097, 1}) ->
         #skill{id = 67097, lev = 1, name = lang:get("神枭觉醒"),
            type = 1, sub_type = 2, acc_ratio = 1000,
@@ -113922,7 +113922,7 @@ get_combat({60449, 1}) ->
            elem_type = 0, target_type = 1, attack_times = 1,
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
            buff_target = [[{70019, 1000, 1, 1, [1000]}]],
-           script_id = 700066, script_args = [700, 700, 700, 700]};
+           script_id = 700066, script_args = [900, 900, 900, 900]};
 get_combat({61064, 1}) ->
         #skill{id = 61064, lev = 1, name = lang:get("法术吸血"),
            speed = 1, type = 1, sub_type = 2, acc_ratio = 1000,

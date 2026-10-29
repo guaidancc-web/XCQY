@@ -15533,7 +15533,7 @@ script_700023(Skill = #c_skill{skill = S = #skill{}},
                            attack_times = 1,
                            target_list = [{1, 2, 13}],
                            dmg_ratio = [1800],
-                           buff_target = [[{90505, 1000, 5, 1, [50, 0]}]]},
+                           buff_target = [[{90505, 500, 5, 1, [50, 0]}]]},
             NewSkill = Skill#c_skill{skill = NewS},
             run_67200(NewSkill, Self, Target, AddtArg);
         false ->
@@ -15679,7 +15679,7 @@ script_700029(#c_skill{id = SkillId},
         case lists:keyfind(69514, #c_buff.id, Buffs) of
             #c_buff{} -> [];
             _ ->
-                case util:rand(1, 1000) =< 300 of
+                case util:rand(1, 1000) =< 500 of
                     true ->
                         combat_script_buff:convert_buff([{69514,
                                                           1000,
@@ -15794,7 +15794,7 @@ script_700032(Skill = #c_skill{target_no = 1},
                           combat_buff:buff_add(Buff, Self, Self)
                   end,
                   Buffs1),
-    case util:rand(1, 1000) =< 700 of
+    case util:rand(1, 1000) =< 500 of
         true ->
             lists:foreach(fun (Buff) ->
                                   combat_buff:buff_add(Buff, Self, Self)
@@ -16014,7 +16014,7 @@ script_700049(Skill = #c_skill{target_no = 1},
               Self = #fighter{}, Target = #fighter{}, AddtArg) ->
     plain_attack(Skill, Self, Target, AddtArg),
     maybe_buff(Target, {70000, 1000, 2, 1, [500]}, 500),
-    maybe_buff(Self, {90513, 1000, 2, 1, [1000, 0, 1, 1]}, 700);
+    maybe_buff(Self, {90513, 1000, 2, 1, [1000, 0, 1, 1]}, 900);
 script_700049(Skill, Self, Target, AddtArg) ->
     plain_attack(Skill, Self, Target, AddtArg).
 

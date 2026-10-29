@@ -385,6 +385,11 @@
          script_700041/4,
          script_700042/4,
          script_700043/4,
+         script_700044/4,
+         script_700045/4,
+         script_700046/4,
+         script_700047/4,
+         script_700048/4,
          script_60191/4,
          script_60192/4,
          script_60193/4,
@@ -3400,6 +3405,21 @@ append_action(Cs = #c_skill{skill =
         700043 ->
             Skill#c_skill{action =
                               {combat_script_skill, script_700043}};
+        700044 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700044}};
+        700045 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700045}};
+        700046 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700046}};
+        700047 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700047}};
+        700048 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700048}};
         60194 ->
             Skill#c_skill{action =
                               {combat_script_skill, script_60194},
@@ -15655,3 +15675,44 @@ script_700042(Skill, Self = #fighter{id = Sid},
 %% 67353: plain attack shell; 5-8 hits handled by addt script 1003.
 script_700043(Skill, Self, Target, AddtArg) ->
     plain_attack(Skill, Self, Target, AddtArg).
+
+%% 2025 support skills: independent heal / shield shells.
+heal_target(Skill = #c_skill{skill =
+                                 #skill{script_args = [HealRatio, HealHp]}},
+            Self, Target = #fighter{hp_max = HpMax}, AddtArg) ->
+    HealHp1 = round(HealHp + HpMax * HealRatio / 1000),
+    combat_script_skill_calc:heal(Skill,
+                                  Self,
+                                  Target,
+                                  AddtArg,
+                                  #action_effect{heal_hp = HealHp1,
+                                                 can_anti_heal = 1}).
+
+script_700044(Skill, Self, Target, AddtArg) ->
+    heal_target(Skill, Self, Target, AddtArg).
+
+script_700045(Skill, Self, Target, AddtArg) ->
+    heal_target(Skill, Self, Target, AddtArg).
+
+%% 67114: restore 30% max MP.
+script_700046(Skill = #c_skill{skill =
+                                   #skill{script_args = [Ratio, Val]}},
+              Self, Target = #fighter{mp_max = MpMax}, AddtArg) ->
+    AddMp = round(Val + MpMax * Ratio / 1000),
+    {Tvc, Tc} = case AddMp > 0 of
+                    true -> {[{mp, 1, AddMp}], [{1, AddMp, 0}]};
+                    false -> {[], []}
+                end,
+    AddtArg1 = AddtArg#c_skill_addt_arg{target_val_changed = Tvc,
+                                       target_changed = Tc},
+    combat_script_skill_calc:cast(attack,
+                                  Skill,
+                                  Self,
+                                  Target,
+                                  AddtArg1,
+                                  #action_effect{}).
+
+%% 67117 / 67118: buff_target is applied by the engine; no extra action.
+script_700047(_, _, _, _) -> ok.
+
+script_700048(_, _, _, _) -> ok.

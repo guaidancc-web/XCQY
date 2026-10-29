@@ -114032,7 +114032,7 @@ get_combat({67074, 1}) ->
            elem_type = 1, target_type = 0, attack_times = 1,
            target_list = [{1, 2, 3}], dmg_ratio = [1000],
            buff_target = [[{80005, 1000, 3, 1, [50, 0, 0]}]],
-           script_id = 20002, script_args = [80, 200]};
+           script_id = 700044, script_args = [80, 200]};
 get_combat({67091, 1}) ->
         #skill{id = 67091, lev = 1, name = lang:get("白灵祝福"),
            type = 1, sub_type = 2, acc_ratio = 1000,
@@ -114062,7 +114062,7 @@ get_combat({67113, 1}) ->
            elem_type = 1, target_type = 0, attack_times = 1,
            target_list = [{1, 2, 4}], dmg_ratio = [1000],
            buff_target = [[{80005, 1000, 3, 1, [80, 0, 0]}]],
-           script_id = 20002, script_args = [120, 200]};
+           script_id = 700045, script_args = [120, 200]};
 get_combat({67114, 1}) ->
         #skill{id = 67114, lev = 1, name = lang:get("炼气化神"),
            speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
@@ -114070,7 +114070,8 @@ get_combat({67114, 1}) ->
            elem_type = 1, target_type = 0, attack_times = 1,
            target_list = [{1, 2, 5}], dmg_ratio = [1000], cost_mp = 3,
            buff_target = [],
-           script_id = 20049, script_args = [300, 0]};
+           cooldown = 3,
+           script_id = 700046, script_args = [300, 0]};
 get_combat({67115, 1}) ->
         #skill{id = 67115, lev = 1, name = lang:get("换天之术"),
            type = 1, sub_type = 2, acc_ratio = 1000,
@@ -114090,8 +114091,9 @@ get_combat({67117, 1}) ->
            target_list = [{1, 2, 13}], dmg_ratio = [1000],
            cooldown = 2, cost_mp = 4,
            buff_target =
-               [[{69514, 1000, 3, 1, [500]}]],
-           script_id = 20000};
+               [[{90502, 1000, 3, 1, [500]}]],
+           script_args = [],
+           script_id = 700047};
 get_combat({67118, 1}) ->
         #skill{id = 67118, lev = 1, name = lang:get("菩提明镜"),
            speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
@@ -114100,7 +114102,8 @@ get_combat({67118, 1}) ->
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
            buff_target =
                [[{70065, 1000, 3, 1, [999, 350]}]],
-           script_id = 20000};
+           script_args = [],
+           script_id = 700048};
 get_combat({67119, 1}) ->
         #skill{id = 67119, lev = 1, name = lang:get("燃烧之光"),
            speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,

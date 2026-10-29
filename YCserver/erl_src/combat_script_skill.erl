@@ -402,6 +402,16 @@
          script_700058/4,
          script_700059/4,
          script_700060/4,
+         script_700061/4,
+         script_700062/4,
+         script_700063/4,
+         script_700064/4,
+         script_700065/4,
+         script_700066/4,
+         script_700067/4,
+         script_700068/4,
+         script_700069/4,
+         script_700070/4,
          script_60191/4,
          script_60192/4,
          script_60193/4,
@@ -3475,6 +3485,46 @@ append_action(Cs = #c_skill{skill =
             Skill#c_skill{action =
                               {combat_script_skill, script_700060},
                           passive_type = [100, 102, 116]};
+        700061 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700061},
+                          passive_type = [2]};
+        700062 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700062},
+                          passive_type = [2]};
+        700063 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700063},
+                          act_flag = more_attack, passive_type = [3]};
+        700064 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700064},
+                          act_flag = more_attack, passive_type = [3]};
+        700065 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700065},
+                          act_flag = more_attack, passive_type = [3]};
+        700066 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700066},
+                          passive_type = [1]};
+        700067 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700067},
+                          passive_type = [9]};
+        700068 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700068},
+                          passive_type = [1]};
+        700069 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700069},
+                          passive_type = [1]};
+        700070 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700070},
+                          passive_type = [1]};
         60194 ->
             Skill#c_skill{action =
                               {combat_script_skill, script_60194},
@@ -15951,3 +16001,114 @@ script_700060(#c_skill{}, _Self,
         false -> {ok, 1000}
     end;
 script_700060(_, _, _, _) -> {ok, 1000}.
+
+%% 2025 reflect/counter/combo triggers: independent wrappers.
+script_700061(Skill, Self, Target, AddtArg) ->
+    script_60021(Skill, Self, Target, AddtArg).
+
+script_700062(Skill, Self, Target, AddtArg) ->
+    script_60022(Skill, Self, Target, AddtArg).
+
+script_700063(Skill, Self, Target, AddtArg) ->
+    script_60001(Skill, Self, Target, AddtArg).
+
+script_700064(Skill, Self, Target, AddtArg) ->
+    script_60001(Skill, Self, Target, AddtArg).
+
+script_700065(Skill, Self, Target, AddtArg) ->
+    script_60002(Skill, Self, Target, AddtArg).
+
+script_700066(Skill, Self, Target, AddtArg) ->
+    script_60054(Skill, Self, Target, AddtArg).
+
+%% Queue an extra skill release through passive_skill_attack.
+pursuit_idle() ->
+    case
+        combat_cache:get_context_elem([#combat_context.pursue_attack_list])
+        of
+        [[]] -> true;
+        _ -> false
+    end.
+
+queue_pursuit(SkillId, Sid, CS0, Target) ->
+    CS = combat_script_skill_ext:exec_trigger_before(CS0,
+                                                     combat_cache:f(by_id,
+                                                                    Sid),
+                                                     Target),
+    #c_skill{skill = S} = CS,
+    case
+        combat_cache:get_context_elem([#combat_context.passive_skill_attack])
+        of
+        [[]] ->
+            AttackTimes = max(1, S#skill.attack_times),
+            combat_cache:save_context([{#combat_context.passive_skill_attack,
+                                        [{0, AttackTimes, CS}]}]),
+            #passive_effect{show_passive_skills = [{Sid, SkillId, 1}]};
+        _ -> #passive_effect{}
+    end.
+
+%% 67349: skill kill pursuit, max 2 times.
+script_700067(#c_skill{id = SkillId},
+              #fighter{id = Sid, action = Action}, Target,
+              #c_skill_addt_arg{passive_flag = kill}) ->
+    case Action of
+        {Cs = #c_skill{}, _} ->
+            case
+                combat_cache:get_context_elem([#combat_context.pursue_attack_list])
+                of
+                [PursueList]
+                    when is_list(PursueList), length(PursueList) < 2 ->
+                    queue_pursuit(SkillId, Sid, Cs, Target);
+                _ -> #passive_effect{}
+            end;
+        _ -> #passive_effect{}
+    end;
+script_700067(_, _, _, _) -> #passive_effect{}.
+
+%% 67370: 30% re-cast 67368 at 70% damage.
+script_700068(#c_skill{id = SkillId, target_no = 1},
+              #fighter{id = Sid}, Target, _Arg) ->
+    case pursuit_idle() andalso util:rand(1, 1000) =< 300 of
+        true ->
+            CS0 = combat_script_skill:to_combat_skill({67368, 1}),
+            #c_skill{skill = S0} = CS0,
+            Ratios = [round(R * 700 / 1000) || R <- S0#skill.dmg_ratio],
+            queue_pursuit(SkillId, Sid,
+                          CS0#c_skill{skill = S0#skill{dmg_ratio = Ratios}},
+                          Target);
+        false -> #passive_effect{}
+    end;
+script_700068(_, _, _, _) -> #passive_effect{}.
+
+%% 67087: 50% re-cast 67085.
+script_700069(#c_skill{id = SkillId, target_no = 1},
+              #fighter{id = Sid}, Target, _Arg) ->
+    case pursuit_idle() andalso util:rand(1, 1000) =< 500 of
+        true ->
+            CS = combat_script_skill:to_combat_skill({67085, 1}),
+            queue_pursuit(SkillId, Sid, CS, Target);
+        false -> #passive_effect{}
+    end;
+script_700069(_, _, _, _) -> #passive_effect{}.
+
+%% 67379: 40% extra plain 67378 when casting 67378.
+script_700070(#c_skill{id = SkillId, target_no = 1},
+              #fighter{id = Sid, action = Action}, Target, _Arg) ->
+    case Action of
+        {#c_skill{skill = #skill{id = 67378}}, _} ->
+            case pursuit_idle() andalso util:rand(1, 1000) =< 400 of
+                true ->
+                    CS0 = combat_script_skill:to_combat_skill({67378, 1}),
+                    #c_skill{skill = S0} = CS0,
+                    Plain = CS0#c_skill{action =
+                                            {combat_script_skill, script_10000},
+                                        skill =
+                                            S0#skill{attack_times = 1,
+                                                     target_list = [{1, 3, 6}],
+                                                     dmg_ratio = [1200]}},
+                    queue_pursuit(SkillId, Sid, Plain, Target);
+                false -> #passive_effect{}
+            end;
+        _ -> #passive_effect{}
+    end;
+script_700070(_, _, _, _) -> #passive_effect{}.

@@ -51206,7 +51206,8 @@ get_pet({67378, 1}) ->
 get_pet({67379, 1}) ->
     #pet_base_skill{id = 67379, lev = 1,
                     name = lang:get("九龙神火"), type = 1117, step = 1,
-                    max_exp = 1};
+                    max_exp = 1,
+                    attr = [{1, 23, 300}, {1, 53, 300}, {1, 57, 300}]};
 get_pet({67503, 1}) ->
     #pet_base_skill{id = 67503, lev = 1,
                     name = lang:get("者字秘"), type = 1118, step = 1,

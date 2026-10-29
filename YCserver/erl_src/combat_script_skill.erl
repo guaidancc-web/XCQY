@@ -5,7 +5,8 @@
 -export([convert_skill/1,
          to_combat_skill/1,
          convert_anger_skill/1,
-         calc_special_self_changes/2]).
+         calc_special_self_changes/2,
+         hurt_before/5]).
 
 -export([script_10000/4,
          script_10001/4,
@@ -372,6 +373,8 @@
          script_700029/4,
          script_700030/4,
          script_700031/4,
+         script_700032/4,
+         script_700033/4,
          script_60191/4,
          script_60192/4,
          script_60193/4,
@@ -3350,6 +3353,13 @@ append_action(Cs = #c_skill{skill =
             Skill#c_skill{action =
                               {combat_script_skill, script_700031},
                           passive_type = [100, 1]};
+        700032 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700032}};
+        700033 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700033},
+                          passive_type = [116]};
         60194 ->
             Skill#c_skill{action =
                               {combat_script_skill, script_60194},
@@ -15421,3 +15431,106 @@ script_700031(#c_skill{skill =
     #passive_effect{target_val_changed = Tvc,
                     target_changed = Tc};
 script_700031(_, _, _, _) -> #passive_effect{}.
+
+%% 2025 pet skill 67378: attack + permanent wind-thunder stats + chance shield.
+script_700032(Skill = #c_skill{target_no = 1},
+              Self = #fighter{id = _Sid, buffs = Buffs}, Target, AddtArg) ->
+    combat_script_skill_calc:attack(Skill,
+                                    Self,
+                                    Target,
+                                    AddtArg,
+                                    #action_effect{}),
+    Buffs1 =
+        case lists:keyfind(90511, #c_buff.id, Buffs) of
+            #c_buff{} -> [];
+            _ ->
+                combat_script_buff:convert_buff([{90511,
+                                                  1000,
+                                                  999,
+                                                  0,
+                                                  [150, 150, 150]}])
+        end,
+    lists:foreach(fun (Buff) ->
+                          combat_buff:buff_add(Buff, Self, Self)
+                  end,
+                  Buffs1),
+    case util:rand(1, 1000) =< 300 of
+        true ->
+            lists:foreach(fun (Buff) ->
+                                  combat_buff:buff_add(Buff, Self, Self)
+                          end,
+                          combat_script_buff:convert_buff([{70055,
+                                                            1000,
+                                                            2,
+                                                            0,
+                                                            [250, 0]}])) ,
+            ok;
+        false -> ok
+    end;
+script_700032(Skill, Self, Target, AddtArg) ->
+    combat_script_skill_calc:attack(Skill,
+                                    Self,
+                                    Target,
+                                    AddtArg,
+                                    #action_effect{}).
+
+%% 67347: threshold damage cut, called from combat_script_skill_calc:dmg/6.
+hurt_before(Skill, Self, Target = #fighter{id = Tid}, DmgHp, DmgHoly) ->
+    case combat_cache:f(by_id, Tid) of
+        #fighter{passive_skills = Passives} ->
+            Skills = [S
+                      || S = #c_skill{passive_type = T} <- Passives,
+                         lists:member(116, T)],
+            lists:foldl(fun (S, {DH, DHoly}) ->
+                                case S#c_skill.action of
+                                    {Mod, Fun} ->
+                                        case
+                                            combat_util:run({Mod, Fun},
+                                                            [S,
+                                                             Self,
+                                                             Target,
+                                                             DH + DHoly])
+                                            of
+                                            {ok, Ratio}
+                                                when is_integer(Ratio) ->
+                                                {round(DH * Ratio / 1000),
+                                                 round(DHoly * Ratio / 1000)};
+                                            _ -> {DH, DHoly}
+                                        end;
+                                    _ -> {DH, DHoly}
+                                end
+                        end,
+                        {DmgHp, DmgHoly},
+                        Skills);
+        _ -> {DmgHp, DmgHoly}
+    end.
+
+script_700033(Skill = #c_skill{id = _SkillId},
+              _Self,
+              #fighter{id = Tid, hp = Hp, hp_max = HpMax},
+              DmgTotal) ->
+    case combat_skill:is_skill_in_cooldown(Tid, Skill) of
+        true -> {ok, 1000};
+        false ->
+            case Hp > 0 andalso DmgTotal > round(HpMax * 500 / 1000) of
+                true ->
+                    case util:rand(1, 1000) =< 800 of
+                        true ->
+                            combat_skill:add_skill_cooldown(Tid, Skill),
+                            Target = combat_cache:f(by_id, Tid),
+                            lists:foreach(fun (Buff) ->
+                                                  combat_buff:buff_add(Buff,
+                                                                       Target,
+                                                                       Target)
+                                          end,
+                                          combat_script_buff:convert_buff([{90350,
+                                                                            1000,
+                                                                            2,
+                                                                            0,
+                                                                            [200]}])),
+                            {ok, 400};
+                        false -> {ok, 1000}
+                    end;
+                false -> {ok, 1000}
+            end
+    end.

@@ -1454,6 +1454,20 @@ do_u(F, [{Key, Type, Val} | T], Flag) ->
                                                                            Val /
                                                                                1000)),
                                                             0)}};
+             speed when Type =:= 1 ->
+                 Attr = #attr{speed = Speed} = F#fighter.attr,
+                 F#fighter{attr =
+                               Attr#attr{speed =
+                                             util:check_min(Speed + Val, 0)}};
+             speed when Type =:= 3 ->
+                 Attr = #attr{speed = Speed} = F#fighter.attr,
+                 F#fighter{attr =
+                               Attr#attr{speed =
+                                             util:check_min(round(Speed *
+                                                                      (1 +
+                                                                           Val /
+                                                                               1000)),
+                                                            0)}};
              phy_dmg when Type =:= 1 ->
                  Attr = #attr{phy_dmg = PhyDmg} = F#fighter.attr,
                  F#fighter{attr =

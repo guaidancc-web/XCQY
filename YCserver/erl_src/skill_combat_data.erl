@@ -113675,7 +113675,7 @@ get_combat({67378, 1}) ->
            speed = 1, type = 0, sub_type = 0, acc_ratio = 1000,
            acc_low = 800, acc_high = 1000, attack_type = 1,
            elem_type = 0, target_type = 1, attack_times = 1,
-           target_list = [{1, 3, 6}], dmg_ratio = [1200], script_id = 50026, script_args = [0],
+           target_list = [{1, 3, 6}], dmg_ratio = [1200], script_id = 700032, script_args = [],
            addt_scripts = [{1, 1016, [1001]}]};
 
 get_combat({60280, 1}) ->
@@ -113823,6 +113823,17 @@ get_combat({67133, 1}) ->
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
            buff_self = [],
            script_id = 700029,
+           script_args = []};
+
+get_combat({67347, 1}) ->
+        #skill{id = 67347, lev = 1, name = lang:get("初音圣体"),
+           type = 1, sub_type = 2, acc_ratio = 1000,
+           acc_low = 1000, acc_high = 1000, attack_type = 1,
+           elem_type = 0, target_type = 1, attack_times = 1,
+           target_list = [{1, 2, 1}], dmg_ratio = [1000],
+           cooldown = 2,
+           buff_self = [],
+           script_id = 700033,
            script_args = []};
 
 get_combat({60282, 1}) ->

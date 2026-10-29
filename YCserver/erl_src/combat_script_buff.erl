@@ -6059,6 +6059,30 @@ get_script(256001 = ScriptId) ->
                 end,
             compare = fun (_, _, _) -> -1 end};
 
+get_script(256002 = ScriptId) ->
+    #c_buff{script_id = ScriptId, eff_type = buff,
+            recalc =
+                fun (#c_buff{args = [SpeedRatio, PhyRatio, HpRatio]},
+                     _Caster, #fighter{id = Tid}) ->
+                        BaseSpeed =
+                            case combat_cache:f_origin(by_id, Tid) of
+                                #fighter{attr = #attr{speed = S}} -> S;
+                                _ -> 0
+                            end,
+                        Delta = round(BaseSpeed * SpeedRatio / 1000),
+                        [{speed, 1, Delta},
+                         {phy_dmg, 3, PhyRatio},
+                         {hp_max, 3, HpRatio}];
+                    (#c_buff{id = BuffId, args = Args}, _Caster,
+                     _Target) ->
+                        logger:error("错误的buff:~w, 参数:~w",
+                                     [BuffId, Args],
+                                     combat_script_buff,
+                                     6120),
+                        []
+                end,
+            compare = fun (_, _, _) -> -1 end};
+
 get_script(_) -> false.
 
 rand_enemy_id(#fighter{group = Group}) ->

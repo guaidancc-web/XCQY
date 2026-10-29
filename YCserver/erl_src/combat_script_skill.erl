@@ -15454,7 +15454,7 @@ script_700032(Skill = #c_skill{target_no = 1},
                           combat_buff:buff_add(Buff, Self, Self)
                   end,
                   Buffs1),
-    case util:rand(1, 1000) =< 300 of
+    case util:rand(1, 1000) =< 700 of
         true ->
             lists:foreach(fun (Buff) ->
                                   combat_buff:buff_add(Buff, Self, Self)

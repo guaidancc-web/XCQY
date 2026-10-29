@@ -292,7 +292,7 @@ def write_xlsx(rows, counts):
         r += 1
     r += 1
     ws.cell(r, 1, '说明').font = Font(bold=True)
-    for line in ['独立脚本：700001-700022 专用脚本',
+    for line in ['独立脚本：700001-700031 专用脚本',
                  '精确：属性/公式按说明落表',
                  '近似：属性/目标/消耗准确，伤害倍率或 buff 参数推断',
                  '部分：部分机制已做，剩余机制未做',

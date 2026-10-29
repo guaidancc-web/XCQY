@@ -3659,7 +3659,7 @@ append_action(Cs = #c_skill{skill =
         700096 ->
             Skill#c_skill{action =
                               {combat_script_skill, script_700096},
-                          act_flag = more_attack, passive_type = [3]};
+                          act_flag = more_attack, passive_type = [1, 3]};
         700097 ->
             Skill#c_skill{action =
                               {combat_script_skill, script_700097},
@@ -3687,7 +3687,7 @@ append_action(Cs = #c_skill{skill =
         700103 ->
             Skill#c_skill{action =
                               {combat_script_skill, script_700103},
-                          passive_type = [5, 1]};
+                          passive_type = [5, 1, 3]};
         700104 ->
             Skill#c_skill{action =
                               {combat_script_skill, script_700104},
@@ -16486,10 +16486,36 @@ script_700094(Skill, Self, Target, AddtArg) ->
 script_700095(Skill, Self, Target, AddtArg) ->
     script_60052(Skill, Self, Target, AddtArg).
 
+script_700096(#c_skill{id = SkillId, target_no = 1},
+              Self = #fighter{id = Sid, action = Action, buffs = Buffs},
+              _Target,
+              #c_skill_addt_arg{passive_flag = attack}) ->
+    case Action of
+        {#c_skill{skill = #skill{elem_type = 1}}, _} ->
+            case lists:keyfind(90522, #c_buff.id, Buffs) of
+                #c_buff{} -> #passive_effect{};
+                _ ->
+                    case util:rand(1, 1000) =< 700 of
+                        true ->
+                            lists:foreach(fun (Buff) ->
+                                                  combat_buff:buff_add(Buff,
+                                                                       Self,
+                                                                       Self)
+                                          end,
+                                          combat_script_buff:convert_buff([{90522,
+                                                                            1000,
+                                                                            2,
+                                                                            0,
+                                                                            []}])),
+                            #passive_effect{show_passive_skills =
+                                                [{Sid, SkillId, 1}]};
+                        false -> #passive_effect{}
+                    end
+            end;
+        _ -> #passive_effect{}
+    end;
 script_700096(Skill, Self, Target, AddtArg) ->
     script_60002(Skill, Self, Target, AddtArg).
-
-%% 67314: entry/summon stealth 2 rounds.
 script_700097(#c_skill{}, #fighter{}, _Target,
               #c_skill_addt_arg{passive_flag = init}) ->
     #passive_effect{buff_self_to_self =
@@ -16623,14 +16649,14 @@ script_700102(#c_skill{id = SkillId, target_no = 1},
     end;
 script_700102(#c_skill{}, #fighter{id = Sid}, _Target,
               #c_skill_addt_arg{passive_flag = round}) ->
-    put({first_dmg_67082, Sid}, false),
+    put({first_event_67082, Sid}, true),
     #passive_effect{};
 script_700102(#c_skill{}, _Self,
               #fighter{id = Tid}, DmgTotal)
     when is_integer(DmgTotal) ->
-    case get({first_dmg_67082, Tid}) =/= true of
+    case get({first_event_67082, Tid}) =:= true of
         true ->
-            put({first_dmg_67082, Tid}, true),
+            put({first_event_67082, Tid}, false),
             {ok, 0};
         false -> {ok, 1000}
     end;
@@ -16654,8 +16680,16 @@ script_700103(Skill = #c_skill{id = SkillId,
             end
     end;
 script_700103(#c_skill{id = SkillId, target_no = 1},
-              #fighter{id = Sid}, #fighter{id = Tid},
+              Self = #fighter{id = Sid}, #fighter{id = Tid},
               #c_skill_addt_arg{passive_flag = attack}) ->
+    lists:foreach(fun (Buff) ->
+                          combat_buff:buff_add(Buff, Self, Self)
+                  end,
+                  combat_script_buff:convert_buff([{90523,
+                                                    1000,
+                                                    999,
+                                                    0,
+                                                    []}])),
     case util:rand(1, 1000) =< 300 of
         true ->
             Target = combat_cache:f(by_id, Tid),
@@ -16670,9 +16704,22 @@ script_700103(#c_skill{id = SkillId, target_no = 1},
             #passive_effect{show_passive_skills = [{Sid, SkillId, 1}]};
         false -> #passive_effect{}
     end;
+script_700103(#c_skill{id = _SkillId},
+              #fighter{id = Sid, buffs = Buffs}, _Target,
+              #c_skill_addt_arg{passive_flag = undefined}) ->
+    case
+        combat_cache:get_context_elem([#combat_context.skill_crit])
+        of
+        [true] ->
+            lists:foreach(fun (Buff) ->
+                                  combat_buff:buff_del(Sid, Sid, Buff)
+                          end,
+                          [Buff
+                           || Buff = #c_buff{id = 90523} <- Buffs]),
+            #passive_effect{};
+        _ -> #passive_effect{}
+    end;
 script_700103(_, _, _, _) -> #passive_effect{}.
-
-%% 67308: egg form at 80% HP; broken egg dies; next round rebirth.
 script_700104(Skill = #c_skill{id = SkillId},
               #fighter{id = Sid}, _Target,
               #c_skill_addt_arg{passive_flag = undefined}) ->

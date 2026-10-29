@@ -1507,10 +1507,20 @@ buff_add(Buff = #c_buff{id = BuffId,
                                       TargetAttr#attr{anti_control =
                                                           TargetAntiControl +
                                                               TargetTlsmAntiControl}},
-    IsHit = case Hit of
-                undefined ->
-                    combat_script_buff:default_hit(Buff, Caster, Target);
-                _ -> Hit(Buff, Caster, Target)
+    IsHit = case SecBuffType =:= control andalso
+                     get({first_event_67082, Tid}) =:= true
+                of
+                true ->
+                    put({first_event_67082, Tid}, false),
+                    false;
+                false ->
+                    case Hit of
+                        undefined ->
+                            combat_script_buff:default_hit(Buff,
+                                                           Caster,
+                                                           Target);
+                        _ -> Hit(Buff, Caster, Target)
+                    end
             end,
     case IsHit of
         false ->

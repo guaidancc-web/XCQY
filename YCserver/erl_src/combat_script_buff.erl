@@ -6192,6 +6192,35 @@ get_script(256009 = ScriptId) ->
                 end,
             compare = fun (_, _, _) -> -1 end};
 
+get_script(256010 = ScriptId) ->
+    #c_buff{script_id = ScriptId, eff_type = buff,
+            recalc =
+                fun (#c_buff{}, _Caster, _Target) ->
+                        [{d_magic_dmg_ratio, 1, 1000}];
+                    (#c_buff{id = BuffId, args = Args}, _Caster,
+                     _Target) ->
+                        logger:error("错误的buff:~w, 参数:~w",
+                                     [BuffId, Args],
+                                     combat_script_buff,
+                                     6200),
+                        []
+                end,
+            compare = fun (_, _, _) -> -1 end};
+get_script(256011 = ScriptId) ->
+    #c_buff{script_id = ScriptId, eff_type = buff,
+            recalc =
+                fun (#c_buff{layer = Layer}, _Caster, _Target) ->
+                        [{crit, 1, 100 * Layer}];
+                    (#c_buff{id = BuffId, args = Args}, _Caster,
+                     _Target) ->
+                        logger:error("错误的buff:~w, 参数:~w",
+                                     [BuffId, Args],
+                                     combat_script_buff,
+                                     6210),
+                        []
+                end,
+            compare = fun (_, _, _) -> -1 end};
+
 get_script(_) -> false.
 
 rand_enemy_id(#fighter{group = Group}) ->

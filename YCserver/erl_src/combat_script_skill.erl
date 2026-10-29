@@ -412,6 +412,18 @@
          script_700068/4,
          script_700069/4,
          script_700070/4,
+         script_700071/4,
+         script_700072/4,
+         script_700073/4,
+         script_700074/4,
+         script_700075/4,
+         script_700076/4,
+         script_700077/4,
+         script_700078/4,
+         script_700079/4,
+         script_700080/4,
+         script_700081/4,
+         script_700082/4,
          script_60191/4,
          script_60192/4,
          script_60193/4,
@@ -3524,6 +3536,54 @@ append_action(Cs = #c_skill{skill =
         700070 ->
             Skill#c_skill{action =
                               {combat_script_skill, script_700070},
+                          passive_type = [1]};
+        700071 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700071},
+                          passive_type = [1], special_type = [anti_attack]};
+        700072 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700072},
+                          passive_type = [1], special_type = [anti_attack]};
+        700073 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700073},
+                          passive_type = [1], special_type = [anti_attack]};
+        700074 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700074},
+                          passive_type = [1]};
+        700075 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700075},
+                          passive_type = [1]};
+        700076 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700076},
+                          passive_type = [1], special_type = [anti_attack]};
+        700077 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700077},
+                          passive_type = [1], special_type = [anti_attack]};
+        700078 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700078},
+                          passive_type = [1]};
+        700079 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700079},
+                          passive_type = [1]};
+        700080 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700080},
+                          passive_type = [1]};
+        700081 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700081},
+                          passive_type = [1]};
+        700082 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700082},
                           passive_type = [1]};
         60194 ->
             Skill#c_skill{action =
@@ -16112,3 +16172,49 @@ script_700070(#c_skill{id = SkillId, target_no = 1},
         _ -> #passive_effect{}
     end;
 script_700070(_, _, _, _) -> #passive_effect{}.
+
+%% 2025 lifesteal/judgment/ghost/soul-ban: independent wrappers.
+script_700071(Skill, Self, Target, AddtArg) ->
+    script_60006(Skill, Self, Target, AddtArg).
+
+script_700072(Skill, Self, Target, AddtArg) ->
+    script_60028(Skill, Self, Target, AddtArg).
+
+script_700073(Skill, Self, Target, AddtArg) ->
+    script_60029(Skill, Self, Target, AddtArg).
+
+script_700074(Skill, Self, Target, AddtArg) ->
+    script_60173(Skill, Self, Target, AddtArg).
+
+script_700075(Skill, Self, Target, AddtArg) ->
+    script_60173(Skill, Self, Target, AddtArg).
+
+script_700076(Skill, Self, Target, AddtArg) ->
+    script_60047(Skill, Self, Target, AddtArg).
+
+script_700077(Skill, Self, Target, AddtArg) ->
+    script_60047(Skill, Self, Target, AddtArg).
+
+script_700078(Skill, Self, Target, AddtArg) ->
+    script_60058(Skill, Self, Target, AddtArg).
+
+%% Body skills: ignore both defenses only when the target is a character.
+type_pen(Target, PhyRatio, MagicRatio) ->
+    case Target of
+        #fighter{type = 1} ->
+            #passive_effect{dec_phy_def_ratio = PhyRatio,
+                            dec_magic_def_ratio = MagicRatio};
+        _ -> #passive_effect{}
+    end.
+
+script_700079(_Skill, _Self, Target, _AddtArg) ->
+    type_pen(Target, 100, 100).
+
+script_700080(_Skill, _Self, Target, _AddtArg) ->
+    type_pen(Target, 350, 350).
+
+script_700081(_Skill, _Self, Target, _AddtArg) ->
+    type_pen(Target, 300, 300).
+
+script_700082(_Skill, _Self, Target, _AddtArg) ->
+    type_pen(Target, 350, 350).

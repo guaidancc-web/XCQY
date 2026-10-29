@@ -15435,6 +15435,11 @@ script_700021(Skill = #c_skill{target_no = 1, action_no = ActionNo},
                                     Target,
                                     AddtArg,
                                     #action_effect{}),
+    Debuff = case util:rand(1, 2) of
+                 1 -> {90517, 1000, 2, 0, [300]};
+                 2 -> {90518, 1000, 2, 0, [300]}
+             end,
+    maybe_buff(Target, Debuff, 500),
     case
         combat_cache:get_context_elem([#combat_context.skill_dmg])
         of
@@ -15917,15 +15922,32 @@ script_700034(Skill = #c_skill{skill = S = #skill{}},
 script_700035(Skill, Self, Target, AddtArg) ->
     plain_attack(Skill, Self, Target, AddtArg).
 
+script_700036(Skill = #c_skill{action_no = 1, target_no = 1},
+              Self, Target, AddtArg) ->
+    plain_attack(Skill, Self, Target, AddtArg),
+    maybe_buff(Target, {90514, 1000, 3, 0, [200]}, 500);
 script_700036(Skill, Self, Target, AddtArg) ->
     plain_attack(Skill, Self, Target, AddtArg).
-
+script_700037(Skill = #c_skill{action_no = 1, target_no = 1},
+              Self, Target, AddtArg) ->
+    plain_attack(Skill, Self, Target, AddtArg),
+    Buff = case util:rand(1, 2) of
+               1 -> {90519, 1000, 2, 0, []};
+               2 -> {90520, 1000, 2, 0, []}
+           end,
+    maybe_buff(Self, Buff, 500);
 script_700037(Skill, Self, Target, AddtArg) ->
     plain_attack(Skill, Self, Target, AddtArg).
-
+script_700038(Skill = #c_skill{action_no = 1, target_no = 1},
+              Self, Target, AddtArg) ->
+    plain_attack(Skill, Self, Target, AddtArg),
+    Buff = case util:rand(1, 2) of
+               1 -> {90521, 1000, 2, 0, [500]};
+               2 -> {90518, 1000, 2, 0, [200]}
+           end,
+    maybe_buff(Target, Buff, 500);
 script_700038(Skill, Self, Target, AddtArg) ->
     plain_attack(Skill, Self, Target, AddtArg).
-
 script_700039(Skill, Self, Target, AddtArg) ->
     plain_attack(Skill, Self, Target, AddtArg).
 
@@ -15937,16 +15959,33 @@ script_700040(Skill, Self = #fighter{id = Sid},
 
 %% 67348: main target crit lifesteal 30%.
 script_700041(Skill = #c_skill{action_no = 1, target_no = 1},
-              Self, Target, AddtArg) ->
+              Self = #fighter{id = Sid}, Target, AddtArg) ->
     combat_script_skill_calc:attack(Skill,
                                     Self,
                                     Target,
                                     AddtArg,
-                                    #action_effect{crit_suck_hp = 300});
+                                    #action_effect{crit_suck_hp = 300}),
+    [Round] = combat_cache:get_context_elem([#combat_context.round]),
+    case get({shield_67348, Sid}) of
+        Round -> ok;
+        _ ->
+            case util:rand(1, 1000) =< 900 of
+                true ->
+                    put({shield_67348, Sid}, Round),
+                    lists:foreach(fun (Buff) ->
+                                          combat_buff:buff_add(Buff, Self, Self)
+                                  end,
+                                  combat_script_buff:convert_buff([{30002,
+                                                                    1000,
+                                                                    1,
+                                                                    0,
+                                                                    [1, 0]}])),
+                    ok;
+                false -> ok
+            end
+    end;
 script_700041(Skill, Self, Target, AddtArg) ->
     plain_attack(Skill, Self, Target, AddtArg).
-
-%% 67358: magic attack + dispel all buffs.
 script_700042(Skill, Self = #fighter{id = Sid},
               Target = #fighter{id = Tid}, AddtArg) ->
     plain_attack(Skill, Self, Target, AddtArg),

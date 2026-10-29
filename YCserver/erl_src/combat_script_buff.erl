@@ -6147,6 +6147,51 @@ get_script(256006 = ScriptId) ->
                 end,
             compare = fun (_, _, _) -> -1 end};
 
+get_script(256007 = ScriptId) ->
+    #c_buff{script_id = ScriptId, eff_type = debuff,
+            recalc =
+                fun (#c_buff{args = [Ratio]}, _Caster, _Target) ->
+                        [{d_dmg_ratio, 1, -Ratio}];
+                    (#c_buff{id = BuffId, args = Args}, _Caster,
+                     _Target) ->
+                        logger:error("错误的buff:~w, 参数:~w",
+                                     [BuffId, Args],
+                                     combat_script_buff,
+                                     6170),
+                        []
+                end,
+            compare = fun (#c_buff{args = [Ratio]}, _, _) -> Ratio;
+                          (_, _, _) -> -1
+                      end};
+get_script(256008 = ScriptId) ->
+    #c_buff{script_id = ScriptId, eff_type = buff,
+            recalc =
+                fun (#c_buff{}, _Caster, _Target) ->
+                        [{crit, 1, 500}];
+                    (#c_buff{id = BuffId, args = Args}, _Caster,
+                     _Target) ->
+                        logger:error("错误的buff:~w, 参数:~w",
+                                     [BuffId, Args],
+                                     combat_script_buff,
+                                     6180),
+                        []
+                end,
+            compare = fun (_, _, _) -> -1 end};
+get_script(256009 = ScriptId) ->
+    #c_buff{script_id = ScriptId, eff_type = buff,
+            recalc =
+                fun (#c_buff{}, _Caster, _Target) ->
+                        [{speed, 3, 50}, {d_dmg_ratio, 1, 500}];
+                    (#c_buff{id = BuffId, args = Args}, _Caster,
+                     _Target) ->
+                        logger:error("错误的buff:~w, 参数:~w",
+                                     [BuffId, Args],
+                                     combat_script_buff,
+                                     6190),
+                        []
+                end,
+            compare = fun (_, _, _) -> -1 end};
+
 get_script(_) -> false.
 
 rand_enemy_id(#fighter{group = Group}) ->

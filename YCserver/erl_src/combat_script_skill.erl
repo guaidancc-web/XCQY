@@ -15400,14 +15400,12 @@ script_700030(_, _, _, _) -> #passive_effect{}.
 %% 2025 pet skill 60284: +25% MP cost, attacks burn target max MP.
 script_700031(#c_skill{}, #fighter{id = Sid}, _Target,
               #c_skill_addt_arg{passive_flag = init}) ->
-    case get({cost_mp_60284, Sid}) of
-        true -> #passive_effect{};
-        _ ->
-            put({cost_mp_60284, Sid}, true),
-            F = combat_cache:f(by_id, Sid),
-            NewRatio = round(F#fighter.cost_mp_ratio * 1250 / 1000),
-            combat_cache:u(F#fighter{cost_mp_ratio = NewRatio}),
-            #passive_effect{}
+    F = combat_cache:f(by_id, Sid),
+    case F#fighter.cost_mp_ratio of
+        1000 ->
+            combat_cache:u(F#fighter{cost_mp_ratio = 1250}),
+            #passive_effect{};
+        _ -> #passive_effect{}
     end;
 script_700031(#c_skill{skill =
                            #skill{script_args = [DmgMpRatio, DmgMp]}},

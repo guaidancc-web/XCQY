@@ -445,6 +445,8 @@
          script_700101/4,
          script_700102/4,
          script_700103/4,
+         script_700104/4,
+         script_700105/4,
          script_60191/4,
          script_60192/4,
          script_60193/4,
@@ -3686,6 +3688,14 @@ append_action(Cs = #c_skill{skill =
             Skill#c_skill{action =
                               {combat_script_skill, script_700103},
                           passive_type = [5, 1]};
+        700104 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700104},
+                          passive_type = [4, 102, 116]};
+        700105 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700105},
+                          passive_type = [4, 102, 116]};
         700086 ->
             Skill#c_skill{action =
                               {combat_script_skill, script_700086},
@@ -16622,3 +16632,101 @@ script_700103(#c_skill{id = SkillId, target_no = 1},
         false -> #passive_effect{}
     end;
 script_700103(_, _, _, _) -> #passive_effect{}.
+
+%% 67308: egg form at 80% HP; broken egg dies; next round rebirth.
+script_700104(Skill = #c_skill{id = SkillId},
+              #fighter{id = Sid}, _Target,
+              #c_skill_addt_arg{passive_flag = undefined}) ->
+    case get({egg_pending_67308, Sid}) of
+        true ->
+            put({egg_pending_67308, Sid}, false),
+            put({egg_67308, Sid}, true),
+            combat_skill:add_skill_cooldown(Sid, Skill),
+            F = combat_cache:f(by_id, Sid),
+            NewHp = round(F#fighter.hp_max * 800 / 1000),
+            combat_cache:u(F#fighter{hp = NewHp, is_die = 0}),
+            #passive_effect{show_passive_skills = [{Sid, SkillId, 1}]};
+        _ -> #passive_effect{}
+    end;
+script_700104(#c_skill{id = SkillId},
+              #fighter{id = Sid}, _Target,
+              #c_skill_addt_arg{passive_flag = round}) ->
+    case get({egg_67308, Sid}) of
+        true ->
+            put({egg_67308, Sid}, false),
+            F = combat_cache:f(by_id, Sid),
+            NewHp = round(F#fighter.hp_max * 800 / 1000),
+            combat_cache:u(F#fighter{hp = NewHp, is_die = 0}),
+            #passive_effect{show_passive_skills = [{Sid, SkillId, 1}]};
+        _ -> #passive_effect{}
+    end;
+script_700104(Skill = #c_skill{},
+              _Self,
+              #fighter{id = Tid, hp = Hp}, DmgTotal)
+    when is_integer(DmgTotal) ->
+    case DmgTotal >= Hp andalso
+             get({egg_67308, Tid}) =/= true andalso
+             combat_skill:is_skill_in_cooldown(Tid, Skill) =:= false
+        of
+        true ->
+            put({egg_pending_67308, Tid}, true),
+            {ok, 0};
+        false -> {ok, 1000}
+    end;
+script_700104(_, _, _, _) -> #passive_effect{}.
+
+%% 67369: egg form at 150% HP via a temporary +50% max HP buff.
+script_700105(Skill = #c_skill{id = SkillId},
+              Self = #fighter{id = Sid}, _Target,
+              #c_skill_addt_arg{passive_flag = undefined}) ->
+    case get({egg_pending_67369, Sid}) of
+        true ->
+            put({egg_pending_67369, Sid}, false),
+            put({egg_67369, Sid}, true),
+            combat_skill:add_skill_cooldown(Sid, Skill),
+            lists:foreach(fun (Buff) ->
+                                  combat_buff:buff_add(Buff, Self, Self)
+                          end,
+                          combat_script_buff:convert_buff([{90516,
+                                                            1000,
+                                                            1,
+                                                            0,
+                                                            [500]}])),
+            F = combat_cache:f(by_id, Sid),
+            combat_cache:u(F#fighter{hp = F#fighter.hp_max, is_die = 0}),
+            #passive_effect{show_passive_skills = [{Sid, SkillId, 1}]};
+        _ -> #passive_effect{}
+    end;
+script_700105(#c_skill{id = SkillId},
+              #fighter{id = Sid}, _Target,
+              #c_skill_addt_arg{passive_flag = round}) ->
+    case get({egg_67369, Sid}) of
+        true ->
+            put({egg_67369, Sid}, false),
+            F0 = combat_cache:f(by_id, Sid),
+            lists:foreach(fun (Buff) ->
+                                  combat_buff:buff_del(Sid, Sid, Buff)
+                          end,
+                          [Buff
+                           || Buff = #c_buff{id = 90516}
+                                  <- F0#fighter.buffs]),
+            F = combat_cache:f(by_id, Sid),
+            NewHp = round(F#fighter.hp_max * 800 / 1000),
+            combat_cache:u(F#fighter{hp = NewHp, is_die = 0}),
+            #passive_effect{show_passive_skills = [{Sid, SkillId, 1}]};
+        _ -> #passive_effect{}
+    end;
+script_700105(Skill = #c_skill{},
+              _Self,
+              #fighter{id = Tid, hp = Hp}, DmgTotal)
+    when is_integer(DmgTotal) ->
+    case DmgTotal >= Hp andalso
+             get({egg_67369, Tid}) =/= true andalso
+             combat_skill:is_skill_in_cooldown(Tid, Skill) =:= false
+        of
+        true ->
+            put({egg_pending_67369, Tid}, true),
+            {ok, 0};
+        false -> {ok, 1000}
+    end;
+script_700105(_, _, _, _) -> #passive_effect{}.

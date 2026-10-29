@@ -6132,6 +6132,21 @@ get_script(256005 = ScriptId) ->
                           (_, _, _) -> -1
                       end};
 
+get_script(256006 = ScriptId) ->
+    #c_buff{script_id = ScriptId, eff_type = buff,
+            recalc =
+                fun (#c_buff{args = [Ratio]}, _Caster, _Target) ->
+                        [{hp_max, 3, Ratio}];
+                    (#c_buff{id = BuffId, args = Args}, _Caster,
+                     _Target) ->
+                        logger:error("错误的buff:~w, 参数:~w",
+                                     [BuffId, Args],
+                                     combat_script_buff,
+                                     6160),
+                        []
+                end,
+            compare = fun (_, _, _) -> -1 end};
+
 get_script(_) -> false.
 
 rand_enemy_id(#fighter{group = Group}) ->

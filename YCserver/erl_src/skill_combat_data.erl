@@ -114262,11 +114262,11 @@ get_combat({67308, 1}) ->
            acc_low = 1000, acc_high = 1000, attack_type = 1,
            elem_type = 0, target_type = 1, attack_times = 1,
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
-           cooldown = 99,
-           buff_self = [{90335, 1000, 999, 0, [0, 1000, 50100, 0, 800]}],
-           script_id = 60146,
+           cooldown = 2,
+           buff_self = [],
+           script_id = 700104,
            script_args =
-               [[], [], 0]};
+               []};
 get_combat({67337, 1}) ->
         #skill{id = 67337, lev = 1, name = lang:get("龙尊道体"),
            type = 1, sub_type = 2, acc_ratio = 1000,
@@ -114284,11 +114284,11 @@ get_combat({67369, 1}) ->
            acc_low = 1000, acc_high = 1000, attack_type = 1,
            elem_type = 0, target_type = 1, attack_times = 1,
            target_list = [{1, 2, 1}], dmg_ratio = [1000],
-           cooldown = 99,
-           buff_self = [{90335, 1000, 999, 0, [0, 1000, 50100, 0, 1500]}],
-           script_id = 60146,
+           cooldown = 2,
+           buff_self = [],
+           script_id = 700105,
            script_args =
-               [[], [], 0]};
+               []};
 get_combat({67082, 1}) ->
         #skill{id = 67082, lev = 1, name = lang:get("牛威"),
            type = 1, sub_type = 2, acc_ratio = 1000,

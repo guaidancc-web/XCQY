@@ -97,8 +97,9 @@ python local_server/patch_pets_2025.py --install  # 服务端 + 差分验证 + �
 | 119 个技能的属性（百分比×10、等级公式 type3/8） | **已精确还原**（`refine_skill_attrs.py`） |
 | 20 个主动攻击技能的目标数/MP/冷却/类型 | **已精确还原**；12 个多段技能改为 2/3/5 段，目标数取各段平均；伤害倍率按档位推断（`refine_active_shell.py`） |
 | 32 个触发脚本（复活/神佑/逃生/护主/反弹/还击/连击/吸血/禁魂/审判/驱鬼/物穿/法穿等） | **已映射**，描述里写明的概率/比例已传入（`refine_skill_triggers.py`） |
+| 叠层（67082/67132/67300/67344/67360）、67131 当前生命25%、67341 10%免疫、67085/67330/67334 吸血、67075 封心+护盾 | **已接入**（`refine_stacking.py` / `refine_active_shell.py` / `refine_unique_mechanics.py`）；叠层用通用增伤 90500/90501 近似 |
 | 治疗/回蓝/群盾/减伤/增伤/反伤/隐身/复活/免疫（25 个） | **已接入**现有 buff/脚本（`refine_unique_mechanics.py`）；复活用 90335 近似（未做蛋形），67116 保持仅属性 |
-| 伤害分担/叠层/特殊公式/特殊条件（当前生命%、溅射、随机形态、击杀转火、附加吸血/治疗、怒气、沉默等） | **待写新脚本**；目前不会错误攻击，但也尚未生效 |
+| 伤害分担、怒气、沉默、67116/67127 受击护盾、溅射/随机形态/击杀转火/附加治疗/真实伤害 | **待写新脚本**；目前不会错误攻击，但也尚未生效 |
 | 未写明的伤害倍率/命中系数 | 只能按同档技能推断，客户端没有这些数据 |
 
 第三阶段脚本：`refine_skill_triggers.py`（触发）与 `refine_unique_mechanics.py`（治疗/护盾等），可重复执行；旧调用点差分验证必须保持 0 回归。
@@ -156,6 +157,12 @@ powershell -ExecutionPolicy Bypass -File scripts\auto_save.ps1 -IntervalMinutes 
 窗口保持打开即可，关闭窗口停止。注意：定时保存会按间隔产生提交（角色心跳/时间戳也会变），按需使用。
 
 换电脑后：`git pull` → `powershell -ExecutionPolicy Bypass -File scripts\init_db.ps1 -Force` 导入最新存档，再按启动流程开服。
+
+### 充值（本地直充）
+
+客户端 `SdkManager:ShowChargeView` 已被 `patch_bundle_2025.py` 改为发送 GM 9900 `充值 <钻石> 0`，不再调用已失效的 SDK 支付。服务端 `gm_cmd` 的“充值”命令会写 `charge` 订单并走原生 `charge:notice/charge:pay` 发货（含档位赠送）。
+
+入口：**商城 → 充值**，点档位即可；福利页的“充值好礼”是抽奖，不是充值档位。服务端命令已用 RPC 实测能生成 charge 订单。
 
 ## 迁移到另一台电脑
 

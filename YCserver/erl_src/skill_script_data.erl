@@ -2893,6 +2893,12 @@ get_buff(90349) ->
 get_buff(90350) ->
     #c_buff_base{id = 90350, eff_type = buff, type = 90350,
                  max_layer = 1, script_id = 417001};
+get_buff(90500) ->
+    #c_buff_base{id = 90500, eff_type = buff, type = 90500,
+                 max_layer = 99, script_id = 417001};
+get_buff(90501) ->
+    #c_buff_base{id = 90501, eff_type = buff, type = 90501,
+                 max_layer = 3, script_id = 417001};
 get_buff(90351) ->
     #c_buff_base{id = 90351, eff_type = buff, type = 90346,
                  max_layer = 1, script_id = 125000};

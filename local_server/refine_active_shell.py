@@ -44,6 +44,7 @@ MULTI = {
 # template scripts carry side effects: 50026 = crit lifesteal, 50000 = crit,
 # 60047 = physical penetration. Zero them out unless the description asks for it.
 EXTRAS = {
+    67131: {'script_id': 20023, 'script_args': [1, 250, 0]},
     67085: {'script_args': [200]},
     67330: {'script_args': [500]},
     67334: {'script_args': [0], 'buff_self': [(90304, 1000, 1, 0, [100])]},
@@ -168,6 +169,8 @@ def update_body(body, sid, name, m, count, dmg, hits=1, extra=None):
     body = re.sub(r'\battack_times = \d+', 'attack_times = %d' % hits, body, count=1)
     body = re.sub(r'dmg_ratio = \[.*?\]', 'dmg_ratio = [%s]' % ', '.join(map(str, ratios)), body, count=1)
     extra = extra or {}
+    if extra.get('script_id') is not None:
+        body = re.sub(r'script_id = \d+', 'script_id = %d' % extra['script_id'], body, count=1)
     body = replace_list_field(body, 'script_args', erl(extra.get('script_args', [0])))
     if extra.get('buff_self') is not None:
         body = replace_list_field(body, 'buff_self', erl(extra['buff_self']))
@@ -210,7 +213,7 @@ def main():
         if cm:
             val = cd_cn.get(cm.group(1)) or int(cm.group(1))
             m['cd'] = max(m.get('cd', 0), val)
-        dmg = 1000 if sid == 67131 else infer_dmg(m)  # 67131 is current-HP%, needs a script
+        dmg = 0 if sid == 67131 else infer_dmg(m)  # 67131 uses script 20023 current-HP%
         magic = bool(re.search(r'魔法|法术', desc))
         tpl, tpl_body = get_template(src, count, magic)
         body = update_body(tpl_body, sid, name, m, count, dmg, hits, EXTRAS.get(sid))

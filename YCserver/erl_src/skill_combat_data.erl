@@ -114191,6 +114191,36 @@ get_combat({67365, 1}) ->
            script_id = 700007,
            script_args =
                [0, 800, 200, 2]};
+get_combat({60279, 1}) ->
+        #skill{id = 60279, lev = 1, name = lang:get("超级慈悲"),
+           type = 1, sub_type = 2, acc_ratio = 1000,
+           acc_low = 1000, acc_high = 1000, attack_type = 1,
+           elem_type = 0, target_type = 1, attack_times = 1,
+           target_list = [{1, 2, 1}], dmg_ratio = [1000],
+           buff_self = [],
+           script_id = 700008,
+           script_args =
+               [280, 0, 40]};
+get_combat({67306, 1}) ->
+        #skill{id = 67306, lev = 1, name = lang:get("仙泽福佑"),
+           type = 1, sub_type = 2, acc_ratio = 1000,
+           acc_low = 1000, acc_high = 1000, attack_type = 1,
+           elem_type = 0, target_type = 1, attack_times = 1,
+           target_list = [{1, 2, 1}], dmg_ratio = [1000],
+           buff_self = [],
+           script_id = 700009,
+           script_args =
+               [400]};
+get_combat({67340, 1}) ->
+        #skill{id = 67340, lev = 1, name = lang:get("玄天暴"),
+           type = 1, sub_type = 2, acc_ratio = 1000,
+           acc_low = 1000, acc_high = 1000, attack_type = 1,
+           elem_type = 0, target_type = 1, attack_times = 1,
+           target_list = [{1, 2, 1}], dmg_ratio = [1000],
+           buff_self = [],
+           script_id = 700010,
+           script_args =
+               [100, 1000, 50, 2000, 200]};
 get_combat(_) -> false.
 
 get_skill_cd(50014) -> 50004;

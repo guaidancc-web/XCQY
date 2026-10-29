@@ -348,6 +348,9 @@
          script_700005/4,
          script_700006/4,
          script_700007/4,
+         script_700008/4,
+         script_700009/4,
+         script_700010/4,
          script_60191/4,
          script_60192/4,
          script_60193/4,
@@ -3232,6 +3235,18 @@ append_action(Cs = #c_skill{skill =
             Skill#c_skill{action =
                               {combat_script_skill, script_700007},
                           passive_type = [9, 11]};
+        700008 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700008},
+                          passive_type = [100, 10]};
+        700009 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700009},
+                          passive_type = [10]};
+        700010 ->
+            Skill#c_skill{action =
+                              {combat_script_skill, script_700010},
+                          passive_type = [1]};
         60194 ->
             Skill#c_skill{action =
                               {combat_script_skill, script_60194},
@@ -14691,3 +14706,51 @@ script_700007(#c_skill{id = SkillId,
                         [{90350, 1000, Duration, 1, [DmgRatio]}],
                     show_passive_skills = [{Sid, SkillId, 1}]};
 script_700007(_, _, _, _) -> #passive_effect{}.
+
+
+%% 2025 pet skill: on entering battle heal the master.
+script_700008(#c_skill{skill =
+                           #skill{script_args = [HpRatio, HpBase, LevRatio]}},
+              #fighter{master_fid = MasterFid}, #fighter{},
+              #c_skill_addt_arg{passive_flag = init})
+    when MasterFid =/= 0 ->
+    case combat_cache:f(by_id, MasterFid) of
+        #fighter{id = Mid, hp_max = HpMax, lev = Lev, is_die = 0} ->
+            HealHp = min(round(HpMax * HpRatio / 1000 + HpBase),
+                         Lev * LevRatio),
+            combat_cache:u(Mid, [{hp, 1, HealHp}]),
+            #passive_effect{};
+        _ -> #passive_effect{}
+    end;
+script_700008(_, _, _, _) -> #passive_effect{}.
+
+%% 2025 pet skill: on death heal all living allies.
+script_700009(#c_skill{skill = #skill{script_args = [HealRatio]}},
+              #fighter{id = Sid, group = Group}, #fighter{},
+              #c_skill_addt_arg{passive_flag = die}) ->
+    lists:foreach(fun
+                      (#fighter{id = Tid, hp_max = HpMax, is_die = 0})
+                          when Tid =/= Sid ->
+                          HealHp = round(HpMax * HealRatio / 1000),
+                          combat_cache:u(Tid, [{hp, 1, HealHp}]);
+                      (_) -> ok
+                  end,
+                  combat_cache:all_living(Group)),
+    #passive_effect{};
+script_700009(_, _, _, _) -> #passive_effect{}.
+
+%% 2025 pet skill: random double/triple damage, plus speed advantage damage.
+script_700010(#c_skill{id = SkillId,
+                       skill = #skill{script_args = [DblChance, DblAdd, TripleChance, TripleAdd, SpeedAdd]}},
+              #fighter{id = Sid, attr = #attr{speed = SSpeed}},
+              #fighter{attr = #attr{speed = TSpeed}},
+              #c_skill_addt_arg{passive_flag = attack}) ->
+    R = util:rand(1, 1000),
+    Add = if R =< TripleChance -> TripleAdd;
+             R =< TripleChance + DblChance -> DblAdd;
+             SSpeed > TSpeed -> SpeedAdd;
+             true -> 0
+          end,
+    #passive_effect{dmg_ratio_add = Add,
+                    show_passive_skills = [{Sid, SkillId, 1}]};
+script_700010(_, _, _, _) -> #passive_effect{}.

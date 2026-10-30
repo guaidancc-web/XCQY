@@ -38,12 +38,10 @@ dedupe(List) ->
     dedupe(List, [], []).
 
 dedupe([], Acc, _Seen) -> lists:reverse(Acc);
-dedupe([Item = #shop_item{name = Name, tab = Tab, tab2 = Tab2} | T],
-       Acc, Seen) ->
-    Key = {Name, Tab, Tab2},
-    case lists:member(Key, Seen) of
+dedupe([Item = #shop_item{name = Name} | T], Acc, Seen) ->
+    case lists:member(Name, Seen) of
         true -> dedupe(T, Acc, Seen);
-        false -> dedupe(T, [Item | Acc], [Key | Seen])
+        false -> dedupe(T, [Item | Acc], [Name | Seen])
     end.
 
 part_merit() ->

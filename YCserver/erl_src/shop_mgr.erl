@@ -2464,6 +2464,46 @@ list_tab(Type) ->
         _ -> []
     end.
 
+%% Keep only the permanent variant when a timed variant shares the same base name.
+dedupe_shop(Items) ->
+    PermanentBases =
+        [Base
+         || #shop_item{name = Name} <- Items,
+            {Base, true} <- [shop_name_info(Name)]],
+    Filtered =
+        [I
+         || I = #shop_item{name = Name} <- Items,
+            keep_shop_item(Name, PermanentBases)],
+    dedupe_names(Filtered, [], []).
+
+keep_shop_item(Name, PermanentBases) ->
+    {Base, IsPermanent} = shop_name_info(Name),
+    IsPermanent orelse not lists:member(Base, PermanentBases).
+
+dedupe_names([], Acc, _Seen) -> lists:reverse(Acc);
+dedupe_names([I = #shop_item{name = Name} | T], Acc, Seen) ->
+    case lists:member(Name, Seen) of
+        true -> dedupe_names(T, Acc, Seen);
+        false -> dedupe_names(T, [I | Acc], [Name | Seen])
+    end.
+
+shop_name_info(Name0) ->
+    Name = case is_binary(Name0) of
+               true -> unicode:characters_to_list(Name0);
+               false -> Name0
+           end,
+    case string:rstr(Name, "·") of
+        0 -> {Name, false};
+        Pos ->
+            Suffix = lists:nthtail(Pos - 1, Name),
+            IsTimed = string:str(Suffix, "天") > 0,
+            IsPermanent = string:str(Suffix, "永久") > 0,
+            case IsTimed orelse IsPermanent of
+                true -> {lists:sublist(Name, Pos - 1), IsPermanent};
+                false -> {Name, false}
+            end
+    end.
+
 do_reload() ->
     ets:delete_all_objects(ets_shop_item),
     ets:delete_all_objects(ets_shop),
@@ -2475,7 +2515,7 @@ do_reload() ->
                   NewL = lists:keysort(#shop_item.sort, L),
                   [Fun1(SI) || SI <- NewL]
           end,
-    AllList = shop_data:get_list() ++ shop_data_2025:extra_list(),
+    AllList = dedupe_shop(shop_data:get_list() ++ shop_data_2025:extra_list()),
     GoldList = [Si || Si = #shop_item{tab = 1} <- AllList],
     DiscountGoldList =
         calc_campaign_discount_price(GoldList),

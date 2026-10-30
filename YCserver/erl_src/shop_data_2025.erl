@@ -32,7 +32,19 @@
          market_change = 0}).
 
 extra_list() ->
-    part_merit() ++ part_shop().
+    dedupe(part_merit() ++ part_shop()).
+
+dedupe(List) ->
+    dedupe(List, [], []).
+
+dedupe([], Acc, _Seen) -> lists:reverse(Acc);
+dedupe([Item = #shop_item{name = Name, tab = Tab, tab2 = Tab2} | T],
+       Acc, Seen) ->
+    Key = {Name, Tab, Tab2},
+    case lists:member(Key, Seen) of
+        true -> dedupe(T, Acc, Seen);
+        false -> dedupe(T, [Item | Acc], [Key | Seen])
+    end.
 
 part_merit() ->
     [

@@ -2127,7 +2127,31 @@ all() ->
      996,
      997,
      998,
-     999].
+     999,
+     3248,
+     3249,
+     3250,
+     3251,
+     3252,
+     3253,
+     3254,
+     3255,
+     3256,
+     3257,
+     3258,
+     3259,
+     3260,
+     3261,
+     3262,
+     3263,
+     3270,
+     3300,
+     3301,
+     3302,
+     3303,
+     3304,
+     3305
+    ].
 
 ico() ->
     [#camp_ico{id = 107, ico_id = 107,
@@ -2559,8 +2583,8 @@ ico() ->
                name = lang:get("摇滚派对"), is_show = 1,
                start_time = 1524844800, end_time = 1526486399},
      #camp_ico{id = 154, ico_id = 415,
-               name = lang:get("玉米秋日"), is_show = 1,
-               start_time = 1524844800, end_time = 1526486399},
+               name = lang:get("星辰累充"), is_show = 1,
+               start_time = 1719558000, end_time = 1798646399},
      #camp_ico{id = 155, ico_id = 416,
                name = lang:get("战令活动"), is_show = 1,
                start_time = 1519488000, end_time = 1520351999},
@@ -23404,6 +23428,213 @@ get(3205) ->
               reward_content =
                   lang:get("感谢您参与<color=#ffff00>乐享狂欢</color>活动，现向您发放充值奖励："),
               min_open_time = 15};
+get(3248) ->
+    #camp_cfg{id = 3248, name = lang:get("星辰累充"),
+              group_id = 154, settlement = 2, reward_type = 1,
+              reward_max = 1, type = 1, sec_type = 10002, status = 1,
+              camp_cond = {180}, start_time = 1719558000, end_time = 1798646399,
+              cli_start_time = 1719558000, cli_end_time = 1798646399,
+              reward = [{1, 200, 0, 2, 72301, 200}, {1, 200, 0, 2, 20171, 30}, {1, 200, 0, 2, 22248, 5}, {1, 200, 0, 2, 71529, 5}, {1, 200, 0, 2, 71804, 20}],
+              reward_title = lang:get("萌兔限时累充"),
+              reward_content = lang:get("0|385")};
+get(3249) ->
+    #camp_cfg{id = 3249, name = lang:get("星辰累充"),
+              group_id = 154, settlement = 2, reward_type = 1,
+              reward_max = 1, type = 1, sec_type = 10002, status = 1,
+              camp_cond = {680}, start_time = 1719558000, end_time = 1798646399,
+              cli_start_time = 1719558000, cli_end_time = 1798646399,
+              reward = [{1, 200, 0, 2, 78844, 10}, {1, 200, 0, 2, 29103, 100}, {1, 200, 0, 2, 78818, 50}, {1, 200, 0, 2, 78713, 50}, {1, 200, 0, 2, 71588, 20}],
+              reward_title = lang:get("萌兔限时累充"),
+              reward_content = lang:get("0|385")};
+get(3250) ->
+    #camp_cfg{id = 3250, name = lang:get("星辰累充"),
+              group_id = 154, settlement = 2, reward_type = 1,
+              reward_max = 1, type = 1, sec_type = 10002, status = 1,
+              camp_cond = {3980}, start_time = 1719558000, end_time = 1798646399,
+              cli_start_time = 1719558000, cli_end_time = 1798646399,
+              reward = [{1, 200, 0, 2, 71562, 10}, {1, 200, 0, 2, 78331, 5}, {1, 200, 0, 2, 78835, 3}, {1, 200, 0, 2, 79208, 2}, {1, 200, 0, 2, 20189, 20}],
+              reward_title = lang:get("萌兔限时累充"),
+              reward_content = lang:get("0|385")};
+get(3251) ->
+    #camp_cfg{id = 3251, name = lang:get("星辰累充"),
+              group_id = 154, settlement = 2, reward_type = 1,
+              reward_max = 1, type = 1, sec_type = 10002, status = 1,
+              camp_cond = {8880}, start_time = 1719558000, end_time = 1798646399,
+              cli_start_time = 1719558000, cli_end_time = 1798646399,
+              reward = [{1, 200, 0, 2, 78950, 10}, {1, 200, 0, 2, 78712, 2}, {1, 200, 0, 2, 78036, 2}, {1, 200, 0, 2, 78710, 100}, {1, 200, 0, 2, 78717, 50}],
+              reward_title = lang:get("萌兔限时累充"),
+              reward_content = lang:get("0|385")};
+get(3252) ->
+    #camp_cfg{id = 3252, name = lang:get("星辰累充"),
+              group_id = 154, settlement = 2, reward_type = 1,
+              reward_max = 1, type = 1, sec_type = 10002, status = 1,
+              camp_cond = {20000}, start_time = 1719558000, end_time = 1798646399,
+              cli_start_time = 1719558000, cli_end_time = 1798646399,
+              reward = [{1, 200, 0, 2, 78719, 1}, {1, 200, 0, 2, 78720, 60}, {1, 200, 0, 2, 78010, 10}, {1, 200, 0, 2, 78837, 10}, {1, 200, 0, 2, 78840, 10}],
+              reward_title = lang:get("萌兔限时累充"),
+              reward_content = lang:get("0|385")};
+get(3253) ->
+    #camp_cfg{id = 3253, name = lang:get("星辰累充"),
+              group_id = 154, settlement = 2, reward_type = 1,
+              reward_max = 1, type = 1, sec_type = 10002, status = 1,
+              camp_cond = {60000}, start_time = 1719558000, end_time = 1798646399,
+              cli_start_time = 1719558000, cli_end_time = 1798646399,
+              reward = [{1, 200, 0, 2, 24078, 1}, {1, 200, 0, 2, 76432, 1}, {1, 200, 0, 2, 20407, 20000}, {1, 200, 0, 2, 20186, 300}, {1, 200, 0, 2, 20190, 100}],
+              reward_title = lang:get("萌兔限时累充"),
+              reward_content = lang:get("0|385")};
+get(3254) ->
+    #camp_cfg{id = 3254, name = lang:get("星辰累充"),
+              group_id = 154, settlement = 2, reward_type = 1,
+              reward_max = 1, type = 1, sec_type = 10002, status = 1,
+              camp_cond = {90000}, start_time = 1719558000, end_time = 1798646399,
+              cli_start_time = 1719558000, cli_end_time = 1798646399,
+              reward = [{1, 200, 0, 2, 24061, 1}, {1, 200, 0, 2, 78412, 1}, {1, 200, 0, 2, 78500, 10000}, {1, 200, 0, 2, 21096, 30000}, {1, 200, 0, 2, 21330, 20000}],
+              reward_title = lang:get("萌兔限时累充"),
+              reward_content = lang:get("0|385")};
+get(3255) ->
+    #camp_cfg{id = 3255, name = lang:get("星辰累充"),
+              group_id = 154, settlement = 2, reward_type = 1,
+              reward_max = 1, type = 1, sec_type = 10002, status = 1,
+              camp_cond = {980}, start_time = 1719558000, end_time = 1798646399,
+              cli_start_time = 1719558000, cli_end_time = 1798646399,
+              reward = [{1, 200, 0, 2, 78953, 10}, {1, 200, 0, 2, 72416, 1}, {1, 200, 0, 2, 29547, 1}, {1, 200, 0, 2, 71591, 5}, {1, 200, 0, 2, 78027, 2}],
+              reward_title = lang:get("萌兔每日累充"),
+              reward_content = lang:get("0|385")};
+get(3256) ->
+    #camp_cfg{id = 3256, name = lang:get("星辰累充"),
+              group_id = 154, settlement = 2, reward_type = 1,
+              reward_max = 1, type = 1, sec_type = 10002, status = 1,
+              camp_cond = {1680}, start_time = 1719558000, end_time = 1798646399,
+              cli_start_time = 1719558000, cli_end_time = 1798646399,
+              reward = [{1, 200, 0, 2, 78011, 30}, {1, 200, 0, 2, 72410, 1}, {1, 200, 0, 2, 29370, 1}, {1, 200, 0, 2, 29369, 1}, {1, 200, 0, 2, 78840, 3}],
+              reward_title = lang:get("萌兔每日累充"),
+              reward_content = lang:get("0|385")};
+get(3257) ->
+    #camp_cfg{id = 3257, name = lang:get("星辰累充"),
+              group_id = 154, settlement = 2, reward_type = 1,
+              reward_max = 1, type = 1, sec_type = 10002, status = 1,
+              camp_cond = {4880}, start_time = 1719558000, end_time = 1798646399,
+              cli_start_time = 1719558000, cli_end_time = 1798646399,
+              reward = [{1, 200, 0, 2, 31235, 1}, {1, 200, 0, 2, 72412, 1}, {1, 200, 0, 2, 29530, 1}, {1, 200, 0, 2, 29526, 1}, {1, 200, 0, 2, 20194, 20}],
+              reward_title = lang:get("萌兔每日累充"),
+              reward_content = lang:get("0|385")};
+get(3258) ->
+    #camp_cfg{id = 3258, name = lang:get("星辰累充"),
+              group_id = 154, settlement = 2, reward_type = 1,
+              reward_max = 1, type = 1, sec_type = 10002, status = 1,
+              camp_cond = {13880}, start_time = 1719558000, end_time = 1798646399,
+              cli_start_time = 1719558000, cli_end_time = 1798646399,
+              reward = [{1, 200, 0, 2, 31243, 1}, {1, 200, 0, 2, 72418, 1}, {1, 200, 0, 2, 29585, 1}, {1, 200, 0, 2, 79208, 2}, {1, 200, 0, 2, 78036, 3}],
+              reward_title = lang:get("萌兔每日累充"),
+              reward_content = lang:get("0|385")};
+get(3259) ->
+    #camp_cfg{id = 3259, name = lang:get("星辰累充"),
+              group_id = 154, settlement = 2, reward_type = 1,
+              reward_max = 1, type = 1, sec_type = 10002, status = 1,
+              camp_cond = {24880}, start_time = 1719558000, end_time = 1798646399,
+              cli_start_time = 1719558000, cli_end_time = 1798646399,
+              reward = [{1, 200, 0, 2, 31252, 1}, {1, 200, 0, 2, 72414, 1}, {1, 200, 0, 2, 74363, 1}, {1, 200, 0, 2, 29523, 1}, {1, 200, 0, 2, 21330, 20000}],
+              reward_title = lang:get("萌兔每日累充"),
+              reward_content = lang:get("0|385")};
+get(3260) ->
+    #camp_cfg{id = 3260, name = lang:get("星辰累充"),
+              group_id = 154, settlement = 2, reward_type = 1,
+              reward_max = 1, type = 1, sec_type = 10002, status = 1,
+              camp_cond = {44880}, start_time = 1719558000, end_time = 1798646399,
+              cli_start_time = 1719558000, cli_end_time = 1798646399,
+              reward = [{1, 200, 0, 2, 24074, 1}, {1, 200, 0, 2, 72422, 1}, {1, 200, 0, 2, 29528, 1}, {1, 200, 0, 2, 25272, 2}, {1, 200, 0, 2, 78712, 2}],
+              reward_title = lang:get("萌兔每日累充"),
+              reward_content = lang:get("0|385")};
+get(3261) ->
+    #camp_cfg{id = 3261, name = lang:get("星辰累充"),
+              group_id = 154, settlement = 2, reward_type = 1,
+              reward_max = 1, type = 1, sec_type = 10002, status = 1,
+              camp_cond = {73880}, start_time = 1719558000, end_time = 1798646399,
+              cli_start_time = 1719558000, cli_end_time = 1798646399,
+              reward = [{1, 200, 0, 2, 24075, 1}, {1, 200, 0, 2, 72406, 1}, {1, 200, 0, 2, 31242, 1}, {1, 200, 0, 2, 29383, 1}, {1, 200, 0, 2, 78719, 1}],
+              reward_title = lang:get("萌兔每日累充"),
+              reward_content = lang:get("0|385")};
+get(3262) ->
+    #camp_cfg{id = 3262, name = lang:get("星辰累充"),
+              group_id = 154, settlement = 2, reward_type = 1,
+              reward_max = 1, type = 1, sec_type = 10002, status = 1,
+              camp_cond = {98880}, start_time = 1719558000, end_time = 1798646399,
+              cli_start_time = 1719558000, cli_end_time = 1798646399,
+              reward = [{1, 200, 0, 2, 24081, 1}, {1, 200, 0, 2, 72400, 1}, {1, 200, 0, 2, 71232, 1}, {1, 200, 0, 2, 29584, 1}, {1, 200, 0, 2, 78036, 3}],
+              reward_title = lang:get("萌兔每日累充"),
+              reward_content = lang:get("0|385")};
+get(3263) ->
+    #camp_cfg{id = 3263, name = lang:get("星辰累充"),
+              group_id = 154, settlement = 2, reward_type = 1,
+              reward_max = 1, type = 1, sec_type = 10002, status = 1,
+              camp_cond = {138880}, start_time = 1719558000, end_time = 1798646399,
+              cli_start_time = 1719558000, cli_end_time = 1798646399,
+              reward = [{1, 200, 0, 2, 24088, 1}, {1, 200, 0, 2, 71586, 10}, {1, 200, 0, 2, 78036, 5}, {1, 200, 0, 2, 79208, 5}, {1, 200, 0, 2, 22616, 20}],
+              reward_title = lang:get("萌兔每日累充"),
+              reward_content = lang:get("0|385")};
+get(3270) ->
+    #camp_cfg{id = 3270, name = lang:get("星辰累充"),
+              group_id = 154, settlement = 2, reward_type = 1,
+              reward_max = 1, type = 1, sec_type = 10002, status = 1,
+              camp_cond = {150000}, start_time = 1719558000, end_time = 1798646399,
+              cli_start_time = 1719558000, cli_end_time = 1798646399,
+              reward = [{1, 200, 0, 2, 24067, 1}, {1, 200, 0, 2, 78414, 1}, {1, 200, 0, 2, 20407, 50000}, {1, 200, 0, 2, 20186, 5000}, {1, 200, 0, 2, 25272, 2}],
+              reward_title = lang:get("萌兔限时累充"),
+              reward_content = lang:get("0|385")};
+get(3300) ->
+    #camp_cfg{id = 3300, name = lang:get("黑钻派对"),
+              group_id = 154, settlement = 2, reward_type = 2,
+              reward_max = 10, type = 1, sec_type = 10001, status = 1,
+              camp_cond = {50, 50}, start_time = 1679414400, end_time = 1798646399,
+              cli_start_time = 1679414400, cli_end_time = 1798646399,
+              reward = [{90029, 500}],
+              reward_title = lang:get("充值邮件"),
+              reward_content = lang:get("充值赠送黑钻，请查收~")};
+get(3301) ->
+    #camp_cfg{id = 3301, name = lang:get("黑钻派对"),
+              group_id = 154, settlement = 2, reward_type = 2,
+              reward_max = 10, type = 1, sec_type = 10001, status = 1,
+              camp_cond = {100, 100}, start_time = 1679414400, end_time = 1798646399,
+              cli_start_time = 1679414400, cli_end_time = 1798646399,
+              reward = [{90029, 1000}],
+              reward_title = lang:get("充值邮件"),
+              reward_content = lang:get("充值赠送黑钻，请查收~")};
+get(3302) ->
+    #camp_cfg{id = 3302, name = lang:get("黑钻派对"),
+              group_id = 154, settlement = 2, reward_type = 2,
+              reward_max = 10, type = 1, sec_type = 10001, status = 1,
+              camp_cond = {200, 200}, start_time = 1679414400, end_time = 1798646399,
+              cli_start_time = 1679414400, cli_end_time = 1798646399,
+              reward = [{90029, 2000}],
+              reward_title = lang:get("充值邮件"),
+              reward_content = lang:get("充值赠送黑钻，请查收~")};
+get(3303) ->
+    #camp_cfg{id = 3303, name = lang:get("黑钻派对"),
+              group_id = 154, settlement = 2, reward_type = 2,
+              reward_max = 10, type = 1, sec_type = 10001, status = 1,
+              camp_cond = {300, 300}, start_time = 1679414400, end_time = 1798646399,
+              cli_start_time = 1679414400, cli_end_time = 1798646399,
+              reward = [{90029, 3000}],
+              reward_title = lang:get("充值邮件"),
+              reward_content = lang:get("充值赠送黑钻，请查收~")};
+get(3304) ->
+    #camp_cfg{id = 3304, name = lang:get("黑钻派对"),
+              group_id = 154, settlement = 2, reward_type = 2,
+              reward_max = 10, type = 1, sec_type = 10001, status = 1,
+              camp_cond = {500, 500}, start_time = 1679414400, end_time = 1798646399,
+              cli_start_time = 1679414400, cli_end_time = 1798646399,
+              reward = [{90029, 5000}],
+              reward_title = lang:get("充值邮件"),
+              reward_content = lang:get("充值赠送黑钻，请查收~")};
+get(3305) ->
+    #camp_cfg{id = 3305, name = lang:get("黑钻派对"),
+              group_id = 154, settlement = 2, reward_type = 2,
+              reward_max = 10, type = 1, sec_type = 10001, status = 1,
+              camp_cond = {1000, 1000}, start_time = 1679414400, end_time = 1798646399,
+              cli_start_time = 1679414400, cli_end_time = 1798646399,
+              reward = [{90029, 10000}],
+              reward_title = lang:get("充值邮件"),
+              reward_content = lang:get("充值赠送黑钻，请查收~")};
 get(_) -> false.
 
 guild_reward(_) -> false.

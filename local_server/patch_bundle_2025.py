@@ -181,6 +181,14 @@ def patch_recharge_gift_item(text):
         raise SystemExit(f"recharge_gift_item 目标行匹配 {text.count(old)} 次")
     return text.replace(old, new, 1)
 
+def patch_firstrecharge_levels(text):
+    old = 'self.levelList = {60,1000,2000,10000,30000}'
+    new = 'self.levelList = {980,35000,70000,175000,345000}'
+    if text.count(old) != 1:
+        raise SystemExit('firstrecharge levelList not found')
+    return text.replace(old, new, 1)
+
+
 def patch_shop_recharge_item(text):
     """充值档位赠送图标取 base 图集的 Assets90029，2025 资源里没有这张图，
     会画出白框；取不到时回退成钻石物品图标。"""
@@ -227,6 +235,7 @@ PATCHERS = {
     "sdk_manager": patch_sdk_charge,
     "recharge_gift_item": patch_recharge_gift_item,
     "shop_recharge_item": patch_shop_recharge_item,
+    "firstrecharge_develop_window": patch_firstrecharge_levels,
     "recharge_gift_panel": _make_guard_patcher("recharge_gift_panel"),
     "rechargepackage_panel": _make_guard_patcher("rechargepackage_panel"),
     "shop_recharge_panel": _make_guard_patcher("shop_recharge_panel"),

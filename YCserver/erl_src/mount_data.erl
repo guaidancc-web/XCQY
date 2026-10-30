@@ -1112,6 +1112,462 @@ get(2105) ->
     #{base_id => 2105, name => lang:get("傲霜青云雀"),
       classes => 0, index => 1, ratio => 0,
       speed_attr => [{12, 50}], multiplayer => 0};
+get(2106) ->
+    #{base_id => 2106, name => lang:get("激浪龙舟"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 1};
+get(2107) ->
+    #{base_id => 2107, name => lang:get("怒海龙舟"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 1};
+get(2108) ->
+    #{base_id => 2108, name => lang:get("青林龙舟"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 1};
+get(2109) ->
+    #{base_id => 2109, name => lang:get("紫气龙舟"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 1};
+get(2110) ->
+    #{base_id => 2110, name => lang:get("铸金龙舟"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 1};
+get(2111) ->
+    #{base_id => 2111, name => lang:get("天宫龙舟"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 1};
+get(2112) ->
+    #{base_id => 2112, name => lang:get("星辰旅行者"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2113) ->
+    #{base_id => 2113, name => lang:get("浪漫徘徊者"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2114) ->
+    #{base_id => 2114, name => lang:get("寒流抵御者"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2115) ->
+    #{base_id => 2115, name => lang:get("天穹遨游者"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2116) ->
+    #{base_id => 2116, name => lang:get("西漠拓荒者"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2117) ->
+    #{base_id => 2117, name => lang:get("草原驰骋者"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2118) ->
+    #{base_id => 2118, name => lang:get("绚烂花球"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2119) ->
+    #{base_id => 2119, name => lang:get("朝曦花球"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2120) ->
+    #{base_id => 2120, name => lang:get("紫英花球"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2121) ->
+    #{base_id => 2121, name => lang:get("薰兰绣球"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2122) ->
+    #{base_id => 2122, name => lang:get("冰莹绣球"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2123) ->
+    #{base_id => 2123, name => lang:get("稚樱绣球"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2124) ->
+    #{base_id => 2124, name => lang:get("勇气雪橇犬"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2125) ->
+    #{base_id => 2125, name => lang:get("阳光雪橇犬"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2126) ->
+    #{base_id => 2126, name => lang:get("圣诞雪橇犬"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2127) ->
+    #{base_id => 2127, name => lang:get("甜蜜雪橇犬"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2128) ->
+    #{base_id => 2128, name => lang:get("绅士雪橇犬"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2129) ->
+    #{base_id => 2129, name => lang:get("梦幻雪橇犬"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2130) ->
+    #{base_id => 2130, name => lang:get("福运喵喵"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2131) ->
+    #{base_id => 2131, name => lang:get("鸿运喵神"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2132) ->
+    #{base_id => 2132, name => lang:get("安康喵喵"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2133) ->
+    #{base_id => 2133, name => lang:get("长康喵神"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2134) ->
+    #{base_id => 2134, name => lang:get("福禄喵喵"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2135) ->
+    #{base_id => 2135, name => lang:get("泽禄喵神"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2136) ->
+    #{base_id => 2136, name => lang:get("韶华小狸"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2137) ->
+    #{base_id => 2137, name => lang:get("静谧小狸"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2138) ->
+    #{base_id => 2138, name => lang:get("沧澜小狸"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2139) ->
+    #{base_id => 2139, name => lang:get("夜渺灵狸"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2140) ->
+    #{base_id => 2140, name => lang:get("瑞雪灵狸"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2141) ->
+    #{base_id => 2141, name => lang:get("羽裳灵狸"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2142) ->
+    #{base_id => 2142, name => lang:get("灵动羊驼"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2143) ->
+    #{base_id => 2143, name => lang:get("依蕴羊驼"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2144) ->
+    #{base_id => 2144, name => lang:get("金主羊驼"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2145) ->
+    #{base_id => 2145, name => lang:get("暴富羊驼"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2146) ->
+    #{base_id => 2146, name => lang:get("海盗羊驼"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2147) ->
+    #{base_id => 2147, name => lang:get("怪盗羊驼"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2148) ->
+    #{base_id => 2148, name => lang:get("绿茵之梦"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2149) ->
+    #{base_id => 2149, name => lang:get("秋风之梦"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2150) ->
+    #{base_id => 2150, name => lang:get("蔚蓝星梦"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2151) ->
+    #{base_id => 2151, name => lang:get("海棠甜梦"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2152) ->
+    #{base_id => 2152, name => lang:get("木槿甜梦"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2153) ->
+    #{base_id => 2153, name => lang:get("绯色之梦"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2154) ->
+    #{base_id => 2154, name => lang:get("暗夜光轮"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2155) ->
+    #{base_id => 2155, name => lang:get("黎明光轮"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2156) ->
+    #{base_id => 2156, name => lang:get("薄暮光轮"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2157) ->
+    #{base_id => 2157, name => lang:get("灼目光轮"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2158) ->
+    #{base_id => 2158, name => lang:get("幽曳光轮"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2159) ->
+    #{base_id => 2159, name => lang:get("密林光轮"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2164) ->
+    #{base_id => 2164, name => lang:get("彩虹天堂"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 1};
+get(2165) ->
+    #{base_id => 2165, name => lang:get("宝石龙骑"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2166) ->
+    #{base_id => 2166, name => lang:get("绯红龙骑"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2167) ->
+    #{base_id => 2167, name => lang:get("浮花龙骑"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2168) ->
+    #{base_id => 2168, name => lang:get("苍松龙骑"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2169) ->
+    #{base_id => 2169, name => lang:get("繁星机甲"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2170) ->
+    #{base_id => 2170, name => lang:get("圣光机甲"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2171) ->
+    #{base_id => 2171, name => lang:get("烟波锦鲤"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2172) ->
+    #{base_id => 2172, name => lang:get("海棠锦鲤"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2173) ->
+    #{base_id => 2173, name => lang:get("落樱锦鲤"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2174) ->
+    #{base_id => 2174, name => lang:get("青黛龙鲤"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2175) ->
+    #{base_id => 2175, name => lang:get("祥和龙鲤"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2176) ->
+    #{base_id => 2176, name => lang:get("辉煌龙鲤"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2177) ->
+    #{base_id => 2177, name => lang:get("奶糖兔"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2178) ->
+    #{base_id => 2178, name => lang:get("班尼兔"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2179) ->
+    #{base_id => 2179, name => lang:get("布丁兔"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2180) ->
+    #{base_id => 2180, name => lang:get("咖啡兔"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2181) ->
+    #{base_id => 2181, name => lang:get("名媛兔小姐"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2182) ->
+    #{base_id => 2182, name => lang:get("王牌领航员"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2183) ->
+    #{base_id => 2183, name => lang:get("悠闲假日"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2184) ->
+    #{base_id => 2184, name => lang:get("烟波团子"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2185) ->
+    #{base_id => 2185, name => lang:get("暖阳团子"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2186) ->
+    #{base_id => 2186, name => lang:get("花韵团子"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2187) ->
+    #{base_id => 2187, name => lang:get("闪电小团团"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2188) ->
+    #{base_id => 2188, name => lang:get("碧波小团团"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2189) ->
+    #{base_id => 2189, name => lang:get("恶魔小团团"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2191) ->
+    #{base_id => 2191, name => lang:get("疾风"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2192) ->
+    #{base_id => 2192, name => lang:get("疾风·炫酷"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2193) ->
+    #{base_id => 2193, name => lang:get("疾风·超我"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2197) ->
+    #{base_id => 2197, name => lang:get("花语灵鹿·绿"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2198) ->
+    #{base_id => 2198, name => lang:get("花语灵鹿·红"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2199) ->
+    #{base_id => 2199, name => lang:get("花语灵鹿·黄"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2200) ->
+    #{base_id => 2200, name => lang:get("花语灵鹿·彩"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2201) ->
+    #{base_id => 2201, name => lang:get("花语灵鹿·夜"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2206) ->
+    #{base_id => 2206, name => lang:get("天籁之旅·音"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2207) ->
+    #{base_id => 2207, name => lang:get("天籁之旅·音"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2208) ->
+    #{base_id => 2208, name => lang:get("天籁之旅·旅"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(2209) ->
+    #{base_id => 2209, name => lang:get("一叶孤行"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 300}], multiplayer => 0};
+get(2210) ->
+    #{base_id => 2210, name => lang:get("万象梦之旅"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 300}], multiplayer => 0};
+get(2211) ->
+    #{base_id => 2211, name => lang:get("幽骨战龙"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 300}], multiplayer => 0};
+get(2212) ->
+    #{base_id => 2212, name => lang:get("鬼谷八荒葫芦"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 300}], multiplayer => 0};
+get(2213) ->
+    #{base_id => 2213, name => lang:get("深海蛞蝓"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 300}], multiplayer => 0};
+get(2214) ->
+    #{base_id => 2214, name => lang:get("法相青莲"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 300}], multiplayer => 0};
+get(2215) ->
+    #{base_id => 2215, name => lang:get("千里灵剑"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 300}], multiplayer => 0};
+get(2216) ->
+    #{base_id => 2216, name => lang:get("幻翼龙兽"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 300}], multiplayer => 0};
+get(3094) ->
+    #{base_id => 3094, name => lang:get("深渊魔龙"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(3095) ->
+    #{base_id => 3095, name => lang:get("九韶灵狐"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(3096) ->
+    #{base_id => 3096, name => lang:get("冰晶霜狼"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(3097) ->
+    #{base_id => 3097, name => lang:get("四翼冰龙"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(3098) ->
+    #{base_id => 3098, name => lang:get("天工画扇"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(3099) ->
+    #{base_id => 3099, name => lang:get("白泽"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(3100) ->
+    #{base_id => 3100, name => lang:get("碧蓝圣座"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(3101) ->
+    #{base_id => 3101, name => lang:get("绮灵羽翼"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(3102) ->
+    #{base_id => 3102, name => lang:get("黄金圣龙"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 250}], multiplayer => 0};
+get(3229) ->
+    #{base_id => 3229, name => lang:get("龙子老六·椒图"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 300}], multiplayer => 0};
+get(3230) ->
+    #{base_id => 3230, name => lang:get("龙子老五·饕餮"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 300}], multiplayer => 0};
+get(3231) ->
+    #{base_id => 3231, name => lang:get("龙子老四·狻猊"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 300}], multiplayer => 0};
+get(3232) ->
+    #{base_id => 3232, name => lang:get("龙子老三·狴犴"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 300}], multiplayer => 0};
+get(3233) ->
+    #{base_id => 3233, name => lang:get("老子老二·睚眦"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 300}], multiplayer => 0};
+get(3234) ->
+    #{base_id => 3234, name => lang:get("龙子老大·囚牛"),
+      classes => 0, index => 1, ratio => 0,
+      speed_attr => [{12, 300}], multiplayer => 0};
 get(_) -> false.
 
 get_lev({0, 1}) ->
@@ -4070,6 +4526,120 @@ get_speed_attr(2102) -> [{12, 50}];
 get_speed_attr(2103) -> [{12, 50}];
 get_speed_attr(2104) -> [{12, 50}];
 get_speed_attr(2105) -> [{12, 50}];
+get_speed_attr(2106) -> [{12, 250}];
+get_speed_attr(2107) -> [{12, 250}];
+get_speed_attr(2108) -> [{12, 250}];
+get_speed_attr(2109) -> [{12, 250}];
+get_speed_attr(2110) -> [{12, 250}];
+get_speed_attr(2111) -> [{12, 250}];
+get_speed_attr(2112) -> [{12, 250}];
+get_speed_attr(2113) -> [{12, 250}];
+get_speed_attr(2114) -> [{12, 250}];
+get_speed_attr(2115) -> [{12, 250}];
+get_speed_attr(2116) -> [{12, 250}];
+get_speed_attr(2117) -> [{12, 250}];
+get_speed_attr(2118) -> [{12, 250}];
+get_speed_attr(2119) -> [{12, 250}];
+get_speed_attr(2120) -> [{12, 250}];
+get_speed_attr(2121) -> [{12, 250}];
+get_speed_attr(2122) -> [{12, 250}];
+get_speed_attr(2123) -> [{12, 250}];
+get_speed_attr(2124) -> [{12, 250}];
+get_speed_attr(2125) -> [{12, 250}];
+get_speed_attr(2126) -> [{12, 250}];
+get_speed_attr(2127) -> [{12, 250}];
+get_speed_attr(2128) -> [{12, 250}];
+get_speed_attr(2129) -> [{12, 250}];
+get_speed_attr(2130) -> [{12, 250}];
+get_speed_attr(2131) -> [{12, 250}];
+get_speed_attr(2132) -> [{12, 250}];
+get_speed_attr(2133) -> [{12, 250}];
+get_speed_attr(2134) -> [{12, 250}];
+get_speed_attr(2135) -> [{12, 250}];
+get_speed_attr(2136) -> [{12, 250}];
+get_speed_attr(2137) -> [{12, 250}];
+get_speed_attr(2138) -> [{12, 250}];
+get_speed_attr(2139) -> [{12, 250}];
+get_speed_attr(2140) -> [{12, 250}];
+get_speed_attr(2141) -> [{12, 250}];
+get_speed_attr(2142) -> [{12, 250}];
+get_speed_attr(2143) -> [{12, 250}];
+get_speed_attr(2144) -> [{12, 250}];
+get_speed_attr(2145) -> [{12, 250}];
+get_speed_attr(2146) -> [{12, 250}];
+get_speed_attr(2147) -> [{12, 250}];
+get_speed_attr(2148) -> [{12, 250}];
+get_speed_attr(2149) -> [{12, 250}];
+get_speed_attr(2150) -> [{12, 250}];
+get_speed_attr(2151) -> [{12, 250}];
+get_speed_attr(2152) -> [{12, 250}];
+get_speed_attr(2153) -> [{12, 250}];
+get_speed_attr(2154) -> [{12, 250}];
+get_speed_attr(2155) -> [{12, 250}];
+get_speed_attr(2156) -> [{12, 250}];
+get_speed_attr(2157) -> [{12, 250}];
+get_speed_attr(2158) -> [{12, 250}];
+get_speed_attr(2159) -> [{12, 250}];
+get_speed_attr(2164) -> [{12, 250}];
+get_speed_attr(2165) -> [{12, 250}];
+get_speed_attr(2166) -> [{12, 250}];
+get_speed_attr(2167) -> [{12, 250}];
+get_speed_attr(2168) -> [{12, 250}];
+get_speed_attr(2169) -> [{12, 250}];
+get_speed_attr(2170) -> [{12, 250}];
+get_speed_attr(2171) -> [{12, 250}];
+get_speed_attr(2172) -> [{12, 250}];
+get_speed_attr(2173) -> [{12, 250}];
+get_speed_attr(2174) -> [{12, 250}];
+get_speed_attr(2175) -> [{12, 250}];
+get_speed_attr(2176) -> [{12, 250}];
+get_speed_attr(2177) -> [{12, 250}];
+get_speed_attr(2178) -> [{12, 250}];
+get_speed_attr(2179) -> [{12, 250}];
+get_speed_attr(2180) -> [{12, 250}];
+get_speed_attr(2181) -> [{12, 250}];
+get_speed_attr(2182) -> [{12, 250}];
+get_speed_attr(2183) -> [{12, 250}];
+get_speed_attr(2184) -> [{12, 250}];
+get_speed_attr(2185) -> [{12, 250}];
+get_speed_attr(2186) -> [{12, 250}];
+get_speed_attr(2187) -> [{12, 250}];
+get_speed_attr(2188) -> [{12, 250}];
+get_speed_attr(2189) -> [{12, 250}];
+get_speed_attr(2191) -> [{12, 250}];
+get_speed_attr(2192) -> [{12, 250}];
+get_speed_attr(2193) -> [{12, 250}];
+get_speed_attr(2197) -> [{12, 250}];
+get_speed_attr(2198) -> [{12, 250}];
+get_speed_attr(2199) -> [{12, 250}];
+get_speed_attr(2200) -> [{12, 250}];
+get_speed_attr(2201) -> [{12, 250}];
+get_speed_attr(2206) -> [{12, 250}];
+get_speed_attr(2207) -> [{12, 250}];
+get_speed_attr(2208) -> [{12, 250}];
+get_speed_attr(2209) -> [{12, 300}];
+get_speed_attr(2210) -> [{12, 300}];
+get_speed_attr(2211) -> [{12, 300}];
+get_speed_attr(2212) -> [{12, 300}];
+get_speed_attr(2213) -> [{12, 300}];
+get_speed_attr(2214) -> [{12, 300}];
+get_speed_attr(2215) -> [{12, 300}];
+get_speed_attr(2216) -> [{12, 300}];
+get_speed_attr(3094) -> [{12, 250}];
+get_speed_attr(3095) -> [{12, 250}];
+get_speed_attr(3096) -> [{12, 250}];
+get_speed_attr(3097) -> [{12, 250}];
+get_speed_attr(3098) -> [{12, 250}];
+get_speed_attr(3099) -> [{12, 250}];
+get_speed_attr(3100) -> [{12, 250}];
+get_speed_attr(3101) -> [{12, 250}];
+get_speed_attr(3102) -> [{12, 250}];
+get_speed_attr(3229) -> [{12, 300}];
+get_speed_attr(3230) -> [{12, 300}];
+get_speed_attr(3231) -> [{12, 300}];
+get_speed_attr(3232) -> [{12, 300}];
+get_speed_attr(3233) -> [{12, 300}];
+get_speed_attr(3234) -> [{12, 300}];
 get_speed_attr(_) -> [].
 
 get_incubate(FightTimes)

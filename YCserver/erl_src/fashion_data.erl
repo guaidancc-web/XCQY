@@ -5280,6 +5280,1398 @@ get_dress(12106) ->
                         quality = 3, classes = 7, sex = 2, lev = 1,
                         model_id = 10703, is_origin = 0, loss = [],
                         can_use = 0};
+get_dress(12191) ->
+    #fashion_dress_data{base_id = 12191, name = lang:get("翰园闲情"),
+                        type = 1, quality = 3, classes = 1, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 200}, {5, 35}],
+                        score = 0, can_use = 1, model_id = 10033};
+get_dress(12192) ->
+    #fashion_dress_data{base_id = 12192, name = lang:get("翰园闲情"),
+                        type = 1, quality = 3, classes = 2, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 200}, {5, 35}],
+                        score = 0, can_use = 1, model_id = 10132};
+get_dress(12193) ->
+    #fashion_dress_data{base_id = 12193, name = lang:get("翰园闲情"),
+                        type = 1, quality = 3, classes = 3, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 200}, {5, 35}],
+                        score = 0, can_use = 1, model_id = 10232};
+get_dress(12194) ->
+    #fashion_dress_data{base_id = 12194, name = lang:get("翰园闲情"),
+                        type = 1, quality = 3, classes = 4, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 200}, {5, 35}],
+                        score = 0, can_use = 1, model_id = 10332};
+get_dress(12195) ->
+    #fashion_dress_data{base_id = 12195, name = lang:get("翰园闲情"),
+                        type = 1, quality = 3, classes = 5, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 200}, {5, 35}],
+                        score = 0, can_use = 1, model_id = 10432};
+get_dress(12196) ->
+    #fashion_dress_data{base_id = 12196, name = lang:get("翰园闲情"),
+                        type = 1, quality = 3, classes = 6, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 200}, {5, 35}],
+                        score = 0, can_use = 1, model_id = 10532};
+get_dress(12197) ->
+    #fashion_dress_data{base_id = 12197, name = lang:get("翰园闲情"),
+                        type = 1, quality = 3, classes = 7, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 200}, {5, 35}],
+                        score = 0, can_use = 1, model_id = 10726};
+get_dress(12198) ->
+    #fashion_dress_data{base_id = 12198, name = lang:get("海洋乐园"),
+                        type = 1, quality = 3, classes = 1, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 300}, {4, 55}],
+                        score = 0, can_use = 1, model_id = 10034};
+get_dress(12199) ->
+    #fashion_dress_data{base_id = 12199, name = lang:get("海洋乐园"),
+                        type = 1, quality = 3, classes = 2, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 300}, {4, 55}],
+                        score = 0, can_use = 1, model_id = 10133};
+get_dress(12200) ->
+    #fashion_dress_data{base_id = 12200, name = lang:get("海洋乐园"),
+                        type = 1, quality = 3, classes = 3, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 300}, {4, 55}],
+                        score = 0, can_use = 1, model_id = 10233};
+get_dress(12201) ->
+    #fashion_dress_data{base_id = 12201, name = lang:get("海洋乐园"),
+                        type = 1, quality = 3, classes = 4, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 300}, {4, 55}],
+                        score = 0, can_use = 1, model_id = 10333};
+get_dress(12202) ->
+    #fashion_dress_data{base_id = 12202, name = lang:get("海洋乐园"),
+                        type = 1, quality = 3, classes = 5, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 300}, {4, 55}],
+                        score = 0, can_use = 1, model_id = 10433};
+get_dress(12203) ->
+    #fashion_dress_data{base_id = 12203, name = lang:get("海洋乐园"),
+                        type = 1, quality = 3, classes = 6, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 300}, {4, 55}],
+                        score = 0, can_use = 1, model_id = 10533};
+get_dress(12204) ->
+    #fashion_dress_data{base_id = 12204, name = lang:get("海洋乐园"),
+                        type = 1, quality = 3, classes = 7, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 300}, {4, 55}],
+                        score = 0, can_use = 1, model_id = 10727};
+get_dress(12205) ->
+    #fashion_dress_data{base_id = 12205, name = lang:get("铄石流金"),
+                        type = 1, quality = 3, classes = 1, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 300}, {5, 45}],
+                        score = 0, can_use = 1, model_id = 10035};
+get_dress(12206) ->
+    #fashion_dress_data{base_id = 12206, name = lang:get("铄石流金"),
+                        type = 1, quality = 3, classes = 2, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 300}, {5, 45}],
+                        score = 0, can_use = 1, model_id = 10134};
+get_dress(12207) ->
+    #fashion_dress_data{base_id = 12207, name = lang:get("铄石流金"),
+                        type = 1, quality = 3, classes = 3, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 300}, {5, 45}],
+                        score = 0, can_use = 1, model_id = 10234};
+get_dress(12208) ->
+    #fashion_dress_data{base_id = 12208, name = lang:get("铄石流金"),
+                        type = 1, quality = 3, classes = 4, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 300}, {5, 45}],
+                        score = 0, can_use = 1, model_id = 10334};
+get_dress(12209) ->
+    #fashion_dress_data{base_id = 12209, name = lang:get("铄石流金"),
+                        type = 1, quality = 3, classes = 5, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 300}, {5, 45}],
+                        score = 0, can_use = 1, model_id = 10434};
+get_dress(12210) ->
+    #fashion_dress_data{base_id = 12210, name = lang:get("铄石流金"),
+                        type = 1, quality = 3, classes = 6, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 300}, {5, 45}],
+                        score = 0, can_use = 1, model_id = 10534};
+get_dress(12211) ->
+    #fashion_dress_data{base_id = 12211, name = lang:get("铄石流金"),
+                        type = 1, quality = 3, classes = 7, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 300}, {5, 45}],
+                        score = 0, can_use = 1, model_id = 10728};
+get_dress(12212) ->
+    #fashion_dress_data{base_id = 12212, name = lang:get("岩龙炼狱"),
+                        type = 1, quality = 3, classes = 1, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 300}, {5, 45}],
+                        score = 0, can_use = 1, model_id = 10036};
+get_dress(12213) ->
+    #fashion_dress_data{base_id = 12213, name = lang:get("岩龙炼狱"),
+                        type = 1, quality = 3, classes = 2, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 300}, {5, 45}],
+                        score = 0, can_use = 1, model_id = 10135};
+get_dress(12214) ->
+    #fashion_dress_data{base_id = 12214, name = lang:get("岩龙炼狱"),
+                        type = 1, quality = 3, classes = 3, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 300}, {5, 45}],
+                        score = 0, can_use = 1, model_id = 10235};
+get_dress(12215) ->
+    #fashion_dress_data{base_id = 12215, name = lang:get("岩龙炼狱"),
+                        type = 1, quality = 3, classes = 4, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 300}, {5, 45}],
+                        score = 0, can_use = 1, model_id = 10335};
+get_dress(12216) ->
+    #fashion_dress_data{base_id = 12216, name = lang:get("岩龙炼狱"),
+                        type = 1, quality = 3, classes = 5, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 300}, {5, 45}],
+                        score = 0, can_use = 1, model_id = 10435};
+get_dress(12217) ->
+    #fashion_dress_data{base_id = 12217, name = lang:get("岩龙炼狱"),
+                        type = 1, quality = 3, classes = 6, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 300}, {5, 45}],
+                        score = 0, can_use = 1, model_id = 10535};
+get_dress(12218) ->
+    #fashion_dress_data{base_id = 12218, name = lang:get("岩龙炼狱"),
+                        type = 1, quality = 3, classes = 7, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 300}, {5, 45}],
+                        score = 0, can_use = 1, model_id = 10729};
+get_dress(12219) ->
+    #fashion_dress_data{base_id = 12219, name = lang:get("红莲业火"),
+                        type = 1, quality = 3, classes = 1, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 300}, {4, 55}],
+                        score = 0, can_use = 1, model_id = 10037};
+get_dress(12220) ->
+    #fashion_dress_data{base_id = 12220, name = lang:get("红莲业火"),
+                        type = 1, quality = 3, classes = 2, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 300}, {4, 55}],
+                        score = 0, can_use = 1, model_id = 10136};
+get_dress(12221) ->
+    #fashion_dress_data{base_id = 12221, name = lang:get("红莲业火"),
+                        type = 1, quality = 3, classes = 3, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 300}, {4, 55}],
+                        score = 0, can_use = 1, model_id = 10236};
+get_dress(12222) ->
+    #fashion_dress_data{base_id = 12222, name = lang:get("红莲业火"),
+                        type = 1, quality = 3, classes = 4, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 300}, {4, 55}],
+                        score = 0, can_use = 1, model_id = 10336};
+get_dress(12223) ->
+    #fashion_dress_data{base_id = 12223, name = lang:get("红莲业火"),
+                        type = 1, quality = 3, classes = 5, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 300}, {4, 55}],
+                        score = 0, can_use = 1, model_id = 10436};
+get_dress(12224) ->
+    #fashion_dress_data{base_id = 12224, name = lang:get("红莲业火"),
+                        type = 1, quality = 3, classes = 6, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 300}, {4, 55}],
+                        score = 0, can_use = 1, model_id = 10536};
+get_dress(12225) ->
+    #fashion_dress_data{base_id = 12225, name = lang:get("红莲业火"),
+                        type = 1, quality = 3, classes = 7, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 300}, {4, 55}],
+                        score = 0, can_use = 1, model_id = 10730};
+get_dress(12226) ->
+    #fashion_dress_data{base_id = 12226, name = lang:get("春晖寸草"),
+                        type = 1, quality = 3, classes = 1, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 200}, {5, 35}],
+                        score = 0, can_use = 1, model_id = 10038};
+get_dress(12227) ->
+    #fashion_dress_data{base_id = 12227, name = lang:get("春晖寸草"),
+                        type = 1, quality = 3, classes = 2, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 200}, {5, 35}],
+                        score = 0, can_use = 1, model_id = 10137};
+get_dress(12228) ->
+    #fashion_dress_data{base_id = 12228, name = lang:get("春晖寸草"),
+                        type = 1, quality = 3, classes = 3, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 200}, {5, 35}],
+                        score = 0, can_use = 1, model_id = 10237};
+get_dress(12229) ->
+    #fashion_dress_data{base_id = 12229, name = lang:get("春晖寸草"),
+                        type = 1, quality = 3, classes = 4, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 200}, {5, 35}],
+                        score = 0, can_use = 1, model_id = 10337};
+get_dress(12230) ->
+    #fashion_dress_data{base_id = 12230, name = lang:get("春晖寸草"),
+                        type = 1, quality = 3, classes = 5, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 200}, {5, 35}],
+                        score = 0, can_use = 1, model_id = 10437};
+get_dress(12231) ->
+    #fashion_dress_data{base_id = 12231, name = lang:get("春晖寸草"),
+                        type = 1, quality = 3, classes = 6, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 200}, {5, 35}],
+                        score = 0, can_use = 1, model_id = 10537};
+get_dress(12232) ->
+    #fashion_dress_data{base_id = 12232, name = lang:get("春晖寸草"),
+                        type = 1, quality = 3, classes = 7, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 200}, {5, 35}],
+                        score = 0, can_use = 1, model_id = 10731};
+get_dress(12233) ->
+    #fashion_dress_data{base_id = 12233, name = lang:get("披荆斩棘"),
+                        type = 1, quality = 3, classes = 1, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 350}, {7, 40}],
+                        score = 0, can_use = 1, model_id = 10039};
+get_dress(12234) ->
+    #fashion_dress_data{base_id = 12234, name = lang:get("披荆斩棘"),
+                        type = 1, quality = 3, classes = 2, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 350}, {7, 40}],
+                        score = 0, can_use = 1, model_id = 10138};
+get_dress(12235) ->
+    #fashion_dress_data{base_id = 12235, name = lang:get("披荆斩棘"),
+                        type = 1, quality = 3, classes = 3, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 350}, {7, 40}],
+                        score = 0, can_use = 1, model_id = 10238};
+get_dress(12236) ->
+    #fashion_dress_data{base_id = 12236, name = lang:get("披荆斩棘"),
+                        type = 1, quality = 3, classes = 4, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 350}, {7, 40}],
+                        score = 0, can_use = 1, model_id = 10338};
+get_dress(12237) ->
+    #fashion_dress_data{base_id = 12237, name = lang:get("披荆斩棘"),
+                        type = 1, quality = 3, classes = 5, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 350}, {7, 40}],
+                        score = 0, can_use = 1, model_id = 10438};
+get_dress(12238) ->
+    #fashion_dress_data{base_id = 12238, name = lang:get("披荆斩棘"),
+                        type = 1, quality = 3, classes = 6, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 350}, {7, 40}],
+                        score = 0, can_use = 1, model_id = 10538};
+get_dress(12239) ->
+    #fashion_dress_data{base_id = 12239, name = lang:get("披荆斩棘"),
+                        type = 1, quality = 3, classes = 7, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 350}, {7, 40}],
+                        score = 0, can_use = 1, model_id = 10732};
+get_dress(12240) ->
+    #fashion_dress_data{base_id = 12240, name = lang:get("梦幻乐章"),
+                        type = 1, quality = 3, classes = 1, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 350}, {6, 50}],
+                        score = 0, can_use = 1, model_id = 10040};
+get_dress(12241) ->
+    #fashion_dress_data{base_id = 12241, name = lang:get("梦幻乐章"),
+                        type = 1, quality = 3, classes = 2, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 350}, {6, 50}],
+                        score = 0, can_use = 1, model_id = 10139};
+get_dress(12242) ->
+    #fashion_dress_data{base_id = 12242, name = lang:get("梦幻乐章"),
+                        type = 1, quality = 3, classes = 3, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 350}, {6, 50}],
+                        score = 0, can_use = 1, model_id = 10239};
+get_dress(12243) ->
+    #fashion_dress_data{base_id = 12243, name = lang:get("梦幻乐章"),
+                        type = 1, quality = 3, classes = 4, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 350}, {6, 50}],
+                        score = 0, can_use = 1, model_id = 10339};
+get_dress(12244) ->
+    #fashion_dress_data{base_id = 12244, name = lang:get("梦幻乐章"),
+                        type = 1, quality = 3, classes = 5, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 350}, {6, 50}],
+                        score = 0, can_use = 1, model_id = 10439};
+get_dress(12245) ->
+    #fashion_dress_data{base_id = 12245, name = lang:get("梦幻乐章"),
+                        type = 1, quality = 3, classes = 6, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 350}, {6, 50}],
+                        score = 0, can_use = 1, model_id = 10539};
+get_dress(12246) ->
+    #fashion_dress_data{base_id = 12246, name = lang:get("梦幻乐章"),
+                        type = 1, quality = 3, classes = 7, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 350}, {6, 50}],
+                        score = 0, can_use = 1, model_id = 10733};
+get_dress(12247) ->
+    #fashion_dress_data{base_id = 12247, name = lang:get("轮回之境"),
+                        type = 1, quality = 3, classes = 1, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 350}, {7, 40}],
+                        score = 0, can_use = 1, model_id = 10041};
+get_dress(12248) ->
+    #fashion_dress_data{base_id = 12248, name = lang:get("轮回之境"),
+                        type = 1, quality = 3, classes = 2, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 350}, {7, 40}],
+                        score = 0, can_use = 1, model_id = 10140};
+get_dress(12249) ->
+    #fashion_dress_data{base_id = 12249, name = lang:get("轮回之境"),
+                        type = 1, quality = 3, classes = 3, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 350}, {7, 40}],
+                        score = 0, can_use = 1, model_id = 10240};
+get_dress(12250) ->
+    #fashion_dress_data{base_id = 12250, name = lang:get("轮回之境"),
+                        type = 1, quality = 3, classes = 4, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 350}, {7, 40}],
+                        score = 0, can_use = 1, model_id = 10340};
+get_dress(12251) ->
+    #fashion_dress_data{base_id = 12251, name = lang:get("轮回之境"),
+                        type = 1, quality = 3, classes = 5, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 350}, {7, 40}],
+                        score = 0, can_use = 1, model_id = 10440};
+get_dress(12252) ->
+    #fashion_dress_data{base_id = 12252, name = lang:get("轮回之境"),
+                        type = 1, quality = 3, classes = 6, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 350}, {7, 40}],
+                        score = 0, can_use = 1, model_id = 10540};
+get_dress(12253) ->
+    #fashion_dress_data{base_id = 12253, name = lang:get("轮回之境"),
+                        type = 1, quality = 3, classes = 7, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 350}, {7, 40}],
+                        score = 0, can_use = 1, model_id = 10734};
+get_dress(12254) ->
+    #fashion_dress_data{base_id = 12254, name = lang:get("萌猫大作战"),
+                        type = 1, quality = 3, classes = 1, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 400}, {4, 70}],
+                        score = 0, can_use = 1, model_id = 10042};
+get_dress(12255) ->
+    #fashion_dress_data{base_id = 12255, name = lang:get("萌猫大作战"),
+                        type = 1, quality = 3, classes = 2, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 400}, {4, 70}],
+                        score = 0, can_use = 1, model_id = 10141};
+get_dress(12256) ->
+    #fashion_dress_data{base_id = 12256, name = lang:get("萌猫大作战"),
+                        type = 1, quality = 3, classes = 3, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 400}, {4, 70}],
+                        score = 0, can_use = 1, model_id = 10241};
+get_dress(12257) ->
+    #fashion_dress_data{base_id = 12257, name = lang:get("萌猫大作战"),
+                        type = 1, quality = 3, classes = 4, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 400}, {4, 70}],
+                        score = 0, can_use = 1, model_id = 10341};
+get_dress(12258) ->
+    #fashion_dress_data{base_id = 12258, name = lang:get("萌猫大作战"),
+                        type = 1, quality = 3, classes = 5, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 400}, {4, 70}],
+                        score = 0, can_use = 1, model_id = 10441};
+get_dress(12259) ->
+    #fashion_dress_data{base_id = 12259, name = lang:get("萌猫大作战"),
+                        type = 1, quality = 3, classes = 6, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 400}, {4, 70}],
+                        score = 0, can_use = 1, model_id = 10541};
+get_dress(12260) ->
+    #fashion_dress_data{base_id = 12260, name = lang:get("萌猫大作战"),
+                        type = 1, quality = 3, classes = 7, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 400}, {4, 70}],
+                        score = 0, can_use = 1, model_id = 10735};
+get_dress(12261) ->
+    #fashion_dress_data{base_id = 12261, name = lang:get("命转乾坤"),
+                        type = 1, quality = 3, classes = 1, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 400}, {5, 55}],
+                        score = 0, can_use = 1, model_id = 10043};
+get_dress(12262) ->
+    #fashion_dress_data{base_id = 12262, name = lang:get("命转乾坤"),
+                        type = 1, quality = 3, classes = 2, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 400}, {5, 55}],
+                        score = 0, can_use = 1, model_id = 10142};
+get_dress(12263) ->
+    #fashion_dress_data{base_id = 12263, name = lang:get("命转乾坤"),
+                        type = 1, quality = 3, classes = 3, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 400}, {5, 55}],
+                        score = 0, can_use = 1, model_id = 10242};
+get_dress(12264) ->
+    #fashion_dress_data{base_id = 12264, name = lang:get("命转乾坤"),
+                        type = 1, quality = 3, classes = 4, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 400}, {5, 55}],
+                        score = 0, can_use = 1, model_id = 10342};
+get_dress(12265) ->
+    #fashion_dress_data{base_id = 12265, name = lang:get("命转乾坤"),
+                        type = 1, quality = 3, classes = 5, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 400}, {5, 55}],
+                        score = 0, can_use = 1, model_id = 10442};
+get_dress(12266) ->
+    #fashion_dress_data{base_id = 12266, name = lang:get("命转乾坤"),
+                        type = 1, quality = 3, classes = 6, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 400}, {5, 55}],
+                        score = 0, can_use = 1, model_id = 10542};
+get_dress(12267) ->
+    #fashion_dress_data{base_id = 12267, name = lang:get("命转乾坤"),
+                        type = 1, quality = 3, classes = 7, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{1, 400}, {5, 55}],
+                        score = 0, can_use = 1, model_id = 10736};
+get_dress(12268) ->
+    #fashion_dress_data{base_id = 12268, name = lang:get("余音绕梁"),
+                        type = 1, quality = 3, classes = 1, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{58, 20}, {26, 20}],
+                        score = 0, can_use = 1, model_id = 10044};
+get_dress(12269) ->
+    #fashion_dress_data{base_id = 12269, name = lang:get("余音绕梁"),
+                        type = 1, quality = 3, classes = 2, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{58, 20}, {26, 20}],
+                        score = 0, can_use = 1, model_id = 10143};
+get_dress(12270) ->
+    #fashion_dress_data{base_id = 12270, name = lang:get("余音绕梁"),
+                        type = 1, quality = 3, classes = 3, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{58, 20}, {26, 20}],
+                        score = 0, can_use = 1, model_id = 10243};
+get_dress(12271) ->
+    #fashion_dress_data{base_id = 12271, name = lang:get("余音绕梁"),
+                        type = 1, quality = 3, classes = 4, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{58, 20}, {26, 20}],
+                        score = 0, can_use = 1, model_id = 10343};
+get_dress(12272) ->
+    #fashion_dress_data{base_id = 12272, name = lang:get("余音绕梁"),
+                        type = 1, quality = 3, classes = 5, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{58, 20}, {26, 20}],
+                        score = 0, can_use = 1, model_id = 10443};
+get_dress(12273) ->
+    #fashion_dress_data{base_id = 12273, name = lang:get("余音绕梁"),
+                        type = 1, quality = 3, classes = 6, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{58, 20}, {26, 20}],
+                        score = 0, can_use = 1, model_id = 10543};
+get_dress(12274) ->
+    #fashion_dress_data{base_id = 12274, name = lang:get("余音绕梁"),
+                        type = 1, quality = 3, classes = 7, sex = 2,
+                        lev = 1, set_id = 0, texture_id = 0,
+                        is_origin = 0, loss = [], attrs = [{58, 20}, {26, 20}],
+                        score = 0, can_use = 1, model_id = 10737};
+get_dress(50172) ->
+    #fashion_dress_data{base_id = 50172, name = lang:get("中华小当家"),
+                        type = 2, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51172, texture_id = 50172,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50172};
+get_dress(50173) ->
+    #fashion_dress_data{base_id = 50173, name = lang:get("中华小当家"),
+                        type = 2, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51173, texture_id = 50173,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50173};
+get_dress(50174) ->
+    #fashion_dress_data{base_id = 50174, name = lang:get("风华正茂"),
+                        type = 2, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51174, texture_id = 50174,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50174};
+get_dress(50175) ->
+    #fashion_dress_data{base_id = 50175, name = lang:get("风华正茂"),
+                        type = 2, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51175, texture_id = 50175,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50175};
+get_dress(50176) ->
+    #fashion_dress_data{base_id = 50176, name = lang:get("沙滩派对"),
+                        type = 2, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51176, texture_id = 50176,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50176};
+get_dress(50177) ->
+    #fashion_dress_data{base_id = 50177, name = lang:get("沙滩派对"),
+                        type = 2, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51177, texture_id = 50177,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50177};
+get_dress(50178) ->
+    #fashion_dress_data{base_id = 50178, name = lang:get("学院新生"),
+                        type = 2, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51178, texture_id = 50178,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50178};
+get_dress(50179) ->
+    #fashion_dress_data{base_id = 50179, name = lang:get("学院新生"),
+                        type = 2, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51179, texture_id = 50179,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50179};
+get_dress(50180) ->
+    #fashion_dress_data{base_id = 50180, name = lang:get("爱宠特工"),
+                        type = 2, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51180, texture_id = 50180,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50180};
+get_dress(50181) ->
+    #fashion_dress_data{base_id = 50181, name = lang:get("爱宠特工"),
+                        type = 2, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51181, texture_id = 50181,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50181};
+get_dress(50182) ->
+    #fashion_dress_data{base_id = 50182, name = lang:get("星夜礼服"),
+                        type = 2, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51182, texture_id = 50182,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50182};
+get_dress(50183) ->
+    #fashion_dress_data{base_id = 50183, name = lang:get("星夜礼服"),
+                        type = 2, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51183, texture_id = 50183,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50183};
+get_dress(50184) ->
+    #fashion_dress_data{base_id = 50184, name = lang:get("屠龙勇士"),
+                        type = 2, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51184, texture_id = 50184,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50184};
+get_dress(50185) ->
+    #fashion_dress_data{base_id = 50185, name = lang:get("屠龙勇士"),
+                        type = 2, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51185, texture_id = 50185,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50185};
+get_dress(50186) ->
+    #fashion_dress_data{base_id = 50186, name = lang:get("小黄鸡吖"),
+                        type = 2, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51186, texture_id = 50186,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50186};
+get_dress(50187) ->
+    #fashion_dress_data{base_id = 50187, name = lang:get("小黄鸡吖"),
+                        type = 2, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51187, texture_id = 50187,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50187};
+get_dress(50188) ->
+    #fashion_dress_data{base_id = 50188, name = lang:get("漫游温泉"),
+                        type = 2, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51188, texture_id = 50188,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50188};
+get_dress(50189) ->
+    #fashion_dress_data{base_id = 50189, name = lang:get("漫游温泉"),
+                        type = 2, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51189, texture_id = 50189,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50189};
+get_dress(50190) ->
+    #fashion_dress_data{base_id = 50190, name = lang:get("落樱满座"),
+                        type = 2, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51190, texture_id = 50190,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50190};
+get_dress(50191) ->
+    #fashion_dress_data{base_id = 50191, name = lang:get("落樱满座"),
+                        type = 2, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51191, texture_id = 50191,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50191};
+get_dress(50192) ->
+    #fashion_dress_data{base_id = 50192, name = lang:get("春日水果茶"),
+                        type = 2, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51192, texture_id = 50192,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50192};
+get_dress(50193) ->
+    #fashion_dress_data{base_id = 50193, name = lang:get("春日水果茶"),
+                        type = 2, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51193, texture_id = 50193,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50193};
+get_dress(50194) ->
+    #fashion_dress_data{base_id = 50194, name = lang:get("皎如日星"),
+                        type = 2, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51194, texture_id = 50194,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50194};
+get_dress(50195) ->
+    #fashion_dress_data{base_id = 50195, name = lang:get("皎如日星"),
+                        type = 2, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51195, texture_id = 50195,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50195};
+get_dress(50196) ->
+    #fashion_dress_data{base_id = 50196, name = lang:get("花间少年"),
+                        type = 2, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51196, texture_id = 50196,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50196};
+get_dress(50197) ->
+    #fashion_dress_data{base_id = 50197, name = lang:get("花间少年"),
+                        type = 2, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51197, texture_id = 50197,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50197};
+get_dress(50198) ->
+    #fashion_dress_data{base_id = 50198, name = lang:get("仲夏梦精灵"),
+                        type = 2, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51198, texture_id = 50198,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50198};
+get_dress(50199) ->
+    #fashion_dress_data{base_id = 50199, name = lang:get("仲夏梦精灵"),
+                        type = 2, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51199, texture_id = 50199,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50199};
+get_dress(50200) ->
+    #fashion_dress_data{base_id = 50200, name = lang:get("狂欢派对"),
+                        type = 2, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51200, texture_id = 50200,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50200};
+get_dress(50201) ->
+    #fashion_dress_data{base_id = 50201, name = lang:get("狂欢派对"),
+                        type = 2, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51201, texture_id = 50201,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50201};
+get_dress(50202) ->
+    #fashion_dress_data{base_id = 50202, name = lang:get("云霓甜梦"),
+                        type = 2, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51202, texture_id = 50202,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50202};
+get_dress(50203) ->
+    #fashion_dress_data{base_id = 50203, name = lang:get("云霓甜梦"),
+                        type = 2, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51203, texture_id = 50203,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50203};
+get_dress(50204) ->
+    #fashion_dress_data{base_id = 50204, name = lang:get("时空猎人"),
+                        type = 2, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51204, texture_id = 50204,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50204};
+get_dress(50205) ->
+    #fashion_dress_data{base_id = 50205, name = lang:get("时空猎人"),
+                        type = 2, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51205, texture_id = 50205,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50205};
+get_dress(50206) ->
+    #fashion_dress_data{base_id = 50206, name = lang:get("暗夜枫糖"),
+                        type = 2, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51206, texture_id = 50206,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50206};
+get_dress(50207) ->
+    #fashion_dress_data{base_id = 50207, name = lang:get("暗夜枫糖"),
+                        type = 2, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51207, texture_id = 50207,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50207};
+get_dress(50208) ->
+    #fashion_dress_data{base_id = 50208, name = lang:get("梦境漫游者"),
+                        type = 2, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51208, texture_id = 50208,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50208};
+get_dress(50209) ->
+    #fashion_dress_data{base_id = 50209, name = lang:get("梦境漫游者"),
+                        type = 2, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51209, texture_id = 50209,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50209};
+get_dress(50210) ->
+    #fashion_dress_data{base_id = 50210, name = lang:get("圣诞时光"),
+                        type = 2, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51210, texture_id = 50210,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50210};
+get_dress(50211) ->
+    #fashion_dress_data{base_id = 50211, name = lang:get("圣诞时光"),
+                        type = 2, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51211, texture_id = 50211,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50211};
+get_dress(50212) ->
+    #fashion_dress_data{base_id = 50212, name = lang:get("鸿运羽裳"),
+                        type = 2, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51212, texture_id = 50212,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50212};
+get_dress(50213) ->
+    #fashion_dress_data{base_id = 50213, name = lang:get("鸿运羽裳"),
+                        type = 2, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51213, texture_id = 50213,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50213};
+get_dress(50214) ->
+    #fashion_dress_data{base_id = 50214, name = lang:get("圣铠光辉"),
+                        type = 2, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51214, texture_id = 50214,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50214};
+get_dress(50215) ->
+    #fashion_dress_data{base_id = 50215, name = lang:get("圣铠光辉"),
+                        type = 2, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51215, texture_id = 50215,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50215};
+get_dress(50216) ->
+    #fashion_dress_data{base_id = 50216, name = lang:get("偶像天团"),
+                        type = 2, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51216, texture_id = 50216,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50216};
+get_dress(50217) ->
+    #fashion_dress_data{base_id = 50217, name = lang:get("偶像天团"),
+                        type = 2, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51217, texture_id = 50217,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50217};
+get_dress(50218) ->
+    #fashion_dress_data{base_id = 50218, name = lang:get("狐仙缘起"),
+                        type = 2, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51218, texture_id = 50218,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50218};
+get_dress(50219) ->
+    #fashion_dress_data{base_id = 50219, name = lang:get("狐仙缘起"),
+                        type = 2, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51219, texture_id = 50219,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50219};
+get_dress(50220) ->
+    #fashion_dress_data{base_id = 50220, name = lang:get("青春礼遇"),
+                        type = 2, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51220, texture_id = 50220,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50220};
+get_dress(50221) ->
+    #fashion_dress_data{base_id = 50221, name = lang:get("青春礼遇"),
+                        type = 2, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51221, texture_id = 50221,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50221};
+get_dress(50222) ->
+    #fashion_dress_data{base_id = 50222, name = lang:get("花样旅行者"),
+                        type = 2, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51222, texture_id = 50222,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50222};
+get_dress(50223) ->
+    #fashion_dress_data{base_id = 50223, name = lang:get("花样旅行者"),
+                        type = 2, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51223, texture_id = 50223,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50223};
+get_dress(50224) ->
+    #fashion_dress_data{base_id = 50224, name = lang:get("泳池派对"),
+                        type = 2, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51224, texture_id = 50224,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50224};
+get_dress(50225) ->
+    #fashion_dress_data{base_id = 50225, name = lang:get("泳池派对"),
+                        type = 2, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51225, texture_id = 50225,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50225};
+get_dress(50226) ->
+    #fashion_dress_data{base_id = 50226, name = lang:get("街头艺术家"),
+                        type = 2, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51226, texture_id = 50226,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50226};
+get_dress(50227) ->
+    #fashion_dress_data{base_id = 50227, name = lang:get("街头艺术家"),
+                        type = 2, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51227, texture_id = 50227,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50227};
+get_dress(50228) ->
+    #fashion_dress_data{base_id = 50228, name = lang:get("奇幻太空喵"),
+                        type = 2, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51228, texture_id = 50228,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50228};
+get_dress(50229) ->
+    #fashion_dress_data{base_id = 50229, name = lang:get("奇幻太空喵"),
+                        type = 2, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51229, texture_id = 50229,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50229};
+get_dress(50230) ->
+    #fashion_dress_data{base_id = 50230, name = lang:get("速度与激情"),
+                        type = 2, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51230, texture_id = 50230,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50230};
+get_dress(50231) ->
+    #fashion_dress_data{base_id = 50231, name = lang:get("速度与激情"),
+                        type = 2, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51231, texture_id = 50231,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50231};
+get_dress(50232) ->
+    #fashion_dress_data{base_id = 50232, name = lang:get("青云碧鸢"),
+                        type = 2, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51232, texture_id = 50232,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50232};
+get_dress(50233) ->
+    #fashion_dress_data{base_id = 50233, name = lang:get("青云碧鸢"),
+                        type = 2, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51233, texture_id = 50233,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50233};
+get_dress(50234) ->
+    #fashion_dress_data{base_id = 50234, name = lang:get("圣诞恋歌"),
+                        type = 2, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51234, texture_id = 50234,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50234};
+get_dress(50235) ->
+    #fashion_dress_data{base_id = 50235, name = lang:get("圣诞恋歌"),
+                        type = 2, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51235, texture_id = 50235,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50235};
+get_dress(50236) ->
+    #fashion_dress_data{base_id = 50236, name = lang:get("鸾凤和鸣"),
+                        type = 2, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51236, texture_id = 50236,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50236};
+get_dress(50237) ->
+    #fashion_dress_data{base_id = 50237, name = lang:get("鸾凤和鸣"),
+                        type = 2, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51237, texture_id = 50237,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50237};
+get_dress(50238) ->
+    #fashion_dress_data{base_id = 50238, name = lang:get("花之礼赞"),
+                        type = 2, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51238, texture_id = 50238,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50238};
+get_dress(50239) ->
+    #fashion_dress_data{base_id = 50239, name = lang:get("花之礼赞"),
+                        type = 2, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51239, texture_id = 50239,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50239};
+get_dress(50240) ->
+    #fashion_dress_data{base_id = 50240, name = lang:get("鲤跃龙门"),
+                        type = 2, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51240, texture_id = 50240,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50240};
+get_dress(50241) ->
+    #fashion_dress_data{base_id = 50241, name = lang:get("鲤跃龙门"),
+                        type = 2, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51241, texture_id = 50241,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50241};
+get_dress(50242) ->
+    #fashion_dress_data{base_id = 50242, name = lang:get("苍蓝慧星"),
+                        type = 2, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51242, texture_id = 50242,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50242};
+get_dress(50243) ->
+    #fashion_dress_data{base_id = 50243, name = lang:get("苍蓝慧星"),
+                        type = 2, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51243, texture_id = 50243,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50243};
+get_dress(50300) ->
+    #fashion_dress_data{base_id = 50300, name = lang:get("天煞孤星"),
+                        type = 2, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51300, texture_id = 50300,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50300};
+get_dress(50301) ->
+    #fashion_dress_data{base_id = 50301, name = lang:get("天煞孤星"),
+                        type = 2, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51301, texture_id = 50301,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 50301};
+get_dress(51172) ->
+    #fashion_dress_data{base_id = 51172, name = lang:get("中华小当家"),
+                        type = 3, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51172, texture_id = 51172,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51172};
+get_dress(51173) ->
+    #fashion_dress_data{base_id = 51173, name = lang:get("中华小当家"),
+                        type = 3, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51173, texture_id = 51173,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51173};
+get_dress(51174) ->
+    #fashion_dress_data{base_id = 51174, name = lang:get("风华正茂"),
+                        type = 3, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51174, texture_id = 51174,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51174};
+get_dress(51175) ->
+    #fashion_dress_data{base_id = 51175, name = lang:get("风华正茂"),
+                        type = 3, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51175, texture_id = 51175,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51175};
+get_dress(51176) ->
+    #fashion_dress_data{base_id = 51176, name = lang:get("沙滩派对"),
+                        type = 3, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51176, texture_id = 51176,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51176};
+get_dress(51177) ->
+    #fashion_dress_data{base_id = 51177, name = lang:get("沙滩派对"),
+                        type = 3, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51177, texture_id = 51177,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51177};
+get_dress(51178) ->
+    #fashion_dress_data{base_id = 51178, name = lang:get("学院新生"),
+                        type = 3, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51178, texture_id = 51178,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51178};
+get_dress(51179) ->
+    #fashion_dress_data{base_id = 51179, name = lang:get("学院新生"),
+                        type = 3, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51179, texture_id = 51179,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51179};
+get_dress(51180) ->
+    #fashion_dress_data{base_id = 51180, name = lang:get("爱宠特工"),
+                        type = 3, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51180, texture_id = 51180,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51180};
+get_dress(51181) ->
+    #fashion_dress_data{base_id = 51181, name = lang:get("爱宠特工"),
+                        type = 3, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51181, texture_id = 51181,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51181};
+get_dress(51182) ->
+    #fashion_dress_data{base_id = 51182, name = lang:get("星夜礼服"),
+                        type = 3, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51182, texture_id = 51182,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51182};
+get_dress(51183) ->
+    #fashion_dress_data{base_id = 51183, name = lang:get("星夜礼服"),
+                        type = 3, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51183, texture_id = 51183,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51183};
+get_dress(51184) ->
+    #fashion_dress_data{base_id = 51184, name = lang:get("屠龙勇士"),
+                        type = 3, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51184, texture_id = 51184,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51184};
+get_dress(51185) ->
+    #fashion_dress_data{base_id = 51185, name = lang:get("屠龙勇士"),
+                        type = 3, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51185, texture_id = 51185,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51185};
+get_dress(51186) ->
+    #fashion_dress_data{base_id = 51186, name = lang:get("小黄鸡吖"),
+                        type = 3, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51186, texture_id = 51186,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51186};
+get_dress(51187) ->
+    #fashion_dress_data{base_id = 51187, name = lang:get("小黄鸡吖"),
+                        type = 3, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51187, texture_id = 51187,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51187};
+get_dress(51188) ->
+    #fashion_dress_data{base_id = 51188, name = lang:get("漫游温泉"),
+                        type = 3, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51188, texture_id = 51188,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51188};
+get_dress(51189) ->
+    #fashion_dress_data{base_id = 51189, name = lang:get("漫游温泉"),
+                        type = 3, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51189, texture_id = 51189,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51189};
+get_dress(51190) ->
+    #fashion_dress_data{base_id = 51190, name = lang:get("落樱满座"),
+                        type = 3, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51190, texture_id = 51190,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51190};
+get_dress(51191) ->
+    #fashion_dress_data{base_id = 51191, name = lang:get("落樱满座"),
+                        type = 3, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51191, texture_id = 51191,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51191};
+get_dress(51192) ->
+    #fashion_dress_data{base_id = 51192, name = lang:get("春日水果茶"),
+                        type = 3, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51192, texture_id = 51192,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51192};
+get_dress(51193) ->
+    #fashion_dress_data{base_id = 51193, name = lang:get("春日水果茶"),
+                        type = 3, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51193, texture_id = 51193,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51193};
+get_dress(51194) ->
+    #fashion_dress_data{base_id = 51194, name = lang:get("皎如日星"),
+                        type = 3, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51194, texture_id = 51194,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51194};
+get_dress(51195) ->
+    #fashion_dress_data{base_id = 51195, name = lang:get("皎如日星"),
+                        type = 3, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51195, texture_id = 51195,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51195};
+get_dress(51196) ->
+    #fashion_dress_data{base_id = 51196, name = lang:get("花间少年"),
+                        type = 3, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51196, texture_id = 51196,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51196};
+get_dress(51197) ->
+    #fashion_dress_data{base_id = 51197, name = lang:get("花间少年"),
+                        type = 3, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51197, texture_id = 51197,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51197};
+get_dress(51198) ->
+    #fashion_dress_data{base_id = 51198, name = lang:get("仲夏梦精灵"),
+                        type = 3, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51198, texture_id = 51198,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51198};
+get_dress(51199) ->
+    #fashion_dress_data{base_id = 51199, name = lang:get("仲夏梦精灵"),
+                        type = 3, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51199, texture_id = 51199,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51199};
+get_dress(51200) ->
+    #fashion_dress_data{base_id = 51200, name = lang:get("狂欢派对"),
+                        type = 3, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51200, texture_id = 51200,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51200};
+get_dress(51201) ->
+    #fashion_dress_data{base_id = 51201, name = lang:get("狂欢派对"),
+                        type = 3, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51201, texture_id = 51201,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51201};
+get_dress(51202) ->
+    #fashion_dress_data{base_id = 51202, name = lang:get("云霓甜梦"),
+                        type = 3, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51202, texture_id = 51202,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51202};
+get_dress(51203) ->
+    #fashion_dress_data{base_id = 51203, name = lang:get("云霓甜梦"),
+                        type = 3, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51203, texture_id = 51203,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51203};
+get_dress(51204) ->
+    #fashion_dress_data{base_id = 51204, name = lang:get("时空猎人"),
+                        type = 3, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51204, texture_id = 51204,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51204};
+get_dress(51205) ->
+    #fashion_dress_data{base_id = 51205, name = lang:get("时空猎人"),
+                        type = 3, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51205, texture_id = 51205,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51205};
+get_dress(51206) ->
+    #fashion_dress_data{base_id = 51206, name = lang:get("暗夜枫糖"),
+                        type = 3, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51206, texture_id = 51206,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51206};
+get_dress(51207) ->
+    #fashion_dress_data{base_id = 51207, name = lang:get("暗夜枫糖"),
+                        type = 3, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51207, texture_id = 51207,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51207};
+get_dress(51208) ->
+    #fashion_dress_data{base_id = 51208, name = lang:get("梦境漫游者"),
+                        type = 3, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51208, texture_id = 51208,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51208};
+get_dress(51209) ->
+    #fashion_dress_data{base_id = 51209, name = lang:get("梦境漫游者"),
+                        type = 3, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51209, texture_id = 51209,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51209};
+get_dress(51210) ->
+    #fashion_dress_data{base_id = 51210, name = lang:get("圣诞时光"),
+                        type = 3, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51210, texture_id = 51210,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51210};
+get_dress(51211) ->
+    #fashion_dress_data{base_id = 51211, name = lang:get("圣诞时光"),
+                        type = 3, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51211, texture_id = 51211,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51211};
+get_dress(51212) ->
+    #fashion_dress_data{base_id = 51212, name = lang:get("鸿运羽裳"),
+                        type = 3, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51212, texture_id = 51212,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51212};
+get_dress(51213) ->
+    #fashion_dress_data{base_id = 51213, name = lang:get("鸿运羽裳"),
+                        type = 3, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51213, texture_id = 51213,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51213};
+get_dress(51214) ->
+    #fashion_dress_data{base_id = 51214, name = lang:get("圣铠光辉"),
+                        type = 3, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51214, texture_id = 51214,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51214};
+get_dress(51215) ->
+    #fashion_dress_data{base_id = 51215, name = lang:get("圣铠光辉"),
+                        type = 3, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51215, texture_id = 51215,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51215};
+get_dress(51216) ->
+    #fashion_dress_data{base_id = 51216, name = lang:get("偶像天团"),
+                        type = 3, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51216, texture_id = 51216,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51216};
+get_dress(51217) ->
+    #fashion_dress_data{base_id = 51217, name = lang:get("偶像天团"),
+                        type = 3, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51217, texture_id = 51217,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51217};
+get_dress(51218) ->
+    #fashion_dress_data{base_id = 51218, name = lang:get("狐仙缘起"),
+                        type = 3, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51218, texture_id = 51218,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51218};
+get_dress(51219) ->
+    #fashion_dress_data{base_id = 51219, name = lang:get("狐仙缘起"),
+                        type = 3, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51219, texture_id = 51219,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51219};
+get_dress(51220) ->
+    #fashion_dress_data{base_id = 51220, name = lang:get("青春礼遇"),
+                        type = 3, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51220, texture_id = 51220,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51220};
+get_dress(51221) ->
+    #fashion_dress_data{base_id = 51221, name = lang:get("青春礼遇"),
+                        type = 3, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51221, texture_id = 51221,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51221};
+get_dress(51222) ->
+    #fashion_dress_data{base_id = 51222, name = lang:get("花样旅行者"),
+                        type = 3, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51222, texture_id = 51222,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51222};
+get_dress(51223) ->
+    #fashion_dress_data{base_id = 51223, name = lang:get("花样旅行者"),
+                        type = 3, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51223, texture_id = 51223,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51223};
+get_dress(51224) ->
+    #fashion_dress_data{base_id = 51224, name = lang:get("泳池派对"),
+                        type = 3, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51224, texture_id = 51224,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51224};
+get_dress(51225) ->
+    #fashion_dress_data{base_id = 51225, name = lang:get("泳池派对"),
+                        type = 3, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51225, texture_id = 51225,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51225};
+get_dress(51226) ->
+    #fashion_dress_data{base_id = 51226, name = lang:get("街头艺术家"),
+                        type = 3, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51226, texture_id = 51226,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51226};
+get_dress(51227) ->
+    #fashion_dress_data{base_id = 51227, name = lang:get("街头艺术家"),
+                        type = 3, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51227, texture_id = 51227,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51227};
+get_dress(51228) ->
+    #fashion_dress_data{base_id = 51228, name = lang:get("奇幻太空喵"),
+                        type = 3, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51228, texture_id = 51228,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51228};
+get_dress(51229) ->
+    #fashion_dress_data{base_id = 51229, name = lang:get("奇幻太空喵"),
+                        type = 3, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51229, texture_id = 51229,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51229};
+get_dress(51230) ->
+    #fashion_dress_data{base_id = 51230, name = lang:get("速度与激情"),
+                        type = 3, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51230, texture_id = 51230,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51230};
+get_dress(51231) ->
+    #fashion_dress_data{base_id = 51231, name = lang:get("速度与激情"),
+                        type = 3, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51231, texture_id = 51231,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51231};
+get_dress(51232) ->
+    #fashion_dress_data{base_id = 51232, name = lang:get("青云碧鸢"),
+                        type = 3, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51232, texture_id = 51232,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51232};
+get_dress(51233) ->
+    #fashion_dress_data{base_id = 51233, name = lang:get("青云碧鸢"),
+                        type = 3, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51233, texture_id = 51233,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51233};
+get_dress(51234) ->
+    #fashion_dress_data{base_id = 51234, name = lang:get("圣诞恋歌"),
+                        type = 3, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51234, texture_id = 51234,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51234};
+get_dress(51235) ->
+    #fashion_dress_data{base_id = 51235, name = lang:get("圣诞恋歌"),
+                        type = 3, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51235, texture_id = 51235,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51235};
+get_dress(51236) ->
+    #fashion_dress_data{base_id = 51236, name = lang:get("鸾凤和鸣"),
+                        type = 3, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51236, texture_id = 51236,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51236};
+get_dress(51237) ->
+    #fashion_dress_data{base_id = 51237, name = lang:get("鸾凤和鸣"),
+                        type = 3, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51237, texture_id = 51237,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51237};
+get_dress(51238) ->
+    #fashion_dress_data{base_id = 51238, name = lang:get("花之礼赞"),
+                        type = 3, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51238, texture_id = 51238,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51238};
+get_dress(51239) ->
+    #fashion_dress_data{base_id = 51239, name = lang:get("花之礼赞"),
+                        type = 3, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51239, texture_id = 51239,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51239};
+get_dress(51240) ->
+    #fashion_dress_data{base_id = 51240, name = lang:get("鲤跃龙门"),
+                        type = 3, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51240, texture_id = 51240,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51240};
+get_dress(51241) ->
+    #fashion_dress_data{base_id = 51241, name = lang:get("鲤跃龙门"),
+                        type = 3, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51241, texture_id = 51241,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51241};
+get_dress(51242) ->
+    #fashion_dress_data{base_id = 51242, name = lang:get("苍蓝彗星"),
+                        type = 3, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51242, texture_id = 51242,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51242};
+get_dress(51243) ->
+    #fashion_dress_data{base_id = 51243, name = lang:get("苍蓝彗星"),
+                        type = 3, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51243, texture_id = 51243,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51243};
+get_dress(51300) ->
+    #fashion_dress_data{base_id = 51300, name = lang:get("天煞孤星"),
+                        type = 3, quality = 3, classes = 0, sex = 0,
+                        lev = 1, set_id = 51300, texture_id = 51300,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51300};
+get_dress(51301) ->
+    #fashion_dress_data{base_id = 51301, name = lang:get("天煞孤星"),
+                        type = 3, quality = 3, classes = 0, sex = 1,
+                        lev = 1, set_id = 51301, texture_id = 51301,
+                        is_origin = 0, loss = [], attrs = [],
+                        score = 0, can_use = 1, model_id = 51301};
 get_dress(_BaseId) -> none.
 
 get_time(1) ->

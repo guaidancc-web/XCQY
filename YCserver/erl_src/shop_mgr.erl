@@ -2481,10 +2481,16 @@ keep_shop_item(Name, PermanentBases) ->
     IsPermanent orelse not lists:member(Base, PermanentBases).
 
 dedupe_names([], Acc, _Seen) -> lists:reverse(Acc);
-dedupe_names([I = #shop_item{name = Name} | T], Acc, Seen) ->
-    case lists:member(Name, Seen) of
+dedupe_names([I = #shop_item{id = Id, name = Name, base_id = BaseId}
+              | T],
+             Acc, Seen) ->
+    Key = case Id >= 25000 andalso Id =< 25099 of
+              true -> {Name, BaseId};
+              false -> Name
+          end,
+    case lists:member(Key, Seen) of
         true -> dedupe_names(T, Acc, Seen);
-        false -> dedupe_names(T, [I | Acc], [Name | Seen])
+        false -> dedupe_names(T, [I | Acc], [Key | Seen])
     end.
 
 shop_name_info(Name0) ->

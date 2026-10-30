@@ -2069,17 +2069,8 @@ remove_stone(PetId, HoleId,
             Msg = notice:format(lang:get("请先~ts{face_1,3}"),
                                 [{string_2, 5, lang:get("卸下附灵")}]),
             {false, Msg};
-        Pet = #pet{base_id = BaseId, grade = Grade} ->
-            IsMaxGrade = case pet_data:get_grade({BaseId,
-                                                  Grade + 1})
-                             of
-                             {_AddAptitude, _HoleNum} -> 0;
-                             _ -> 1
-                         end,
-            case IsMaxGrade =:= 1 of
-                true -> {false, lang:get("当前进阶阶段无法卸下符石，只能替换")};
-                false -> do_remove_stone(Pet, HoleId, Role)
-            end;
+        Pet = #pet{} ->
+            do_remove_stone(Pet, HoleId, Role);
         _ -> {false, lang:get("不存在的宠物, 无法操作")}
     end.
 
@@ -2121,7 +2112,7 @@ do_remove_stone(Pet = #pet{id = PetId, stones = Stones,
 reset_stone(Stone = #item{id = Id, base_id = BaseId,
                           type = 102, attr = Attr, data = Data},
             Role = #role{}) ->
-    case pet_data:get_reset(BaseId) of
+    case reset_info(BaseId) of
         #{loss := LossVal} ->
             Loss = format:val_to_loss(LossVal,
                                       #{item_base_id_auto_buy => 1,
@@ -2156,25 +2147,41 @@ reset_stone(Stone = #item{id = Id, base_id = BaseId,
     end.
 
 do_reset_stone(BaseId, AttrList) ->
-    case pet_data:get_stone_skill(BaseId) of
-        {0, _} -> {false, lang:get("当前符石不能重置")};
-        {_, List1, List2} ->
-            Len = length([S
-                          || S = #attr_base{name = 100} <- AttrList]),
-            case Len > 0 of
-                true ->
-                    case find_skill(Len, List1, List2) of
-                        {true, SkillList} ->
-                            Skills = [SkillId || {SkillId, _} <- SkillList],
-                            NewAttrList = [#attr_base{type = 0, name = 100,
-                                                      val = SkillId}
-                                           || SkillId <- Skills],
-                            {true, NewAttrList};
-                        {false, Reason} -> {false, Reason}
+    Len = length([S || S = #attr_base{name = 100} <- AttrList]),
+    case pet_amulet_2025:reset_skills(BaseId, Len) of
+        {ok, SkillIds} ->
+            {true,
+             [#attr_base{type = 0, name = 100, val = SkillId}
+              || SkillId <- SkillIds]};
+        {error, Reason} -> {false, Reason};
+        false ->
+            case pet_data:get_stone_skill(BaseId) of
+                {0, _} -> {false, lang:get("当前符石不能重置")};
+                {_, List1, List2} ->
+                    case Len > 0 of
+                        true ->
+                            case find_skill(Len, List1, List2) of
+                                {true, SkillList} ->
+                                    Skills = [SkillId
+                                              || {SkillId, _} <- SkillList],
+                                    NewAttrList = [#attr_base{type = 0,
+                                                              name = 100,
+                                                              val = SkillId}
+                                                   || SkillId <- Skills],
+                                    {true, NewAttrList};
+                                {false, Reason} -> {false, Reason}
+                            end;
+                        false ->
+                            {false, lang:get("只有拥有技能的符石才能重置")}
                     end;
-                false -> {false, lang:get("只有拥有技能的符石才能重置")}
-            end;
-        _ -> {false, lang:get("只有拥有技能的符石才能重置")}
+                _ -> {false, lang:get("只有拥有技能的符石才能重置")}
+            end
+    end.
+
+reset_info(BaseId) ->
+    case pet_data:get_reset(BaseId) of
+        false -> pet_amulet_2025:get_reset(BaseId);
+        Info -> Info
     end.
 
 find_skill(1, List1, List2) ->
@@ -2791,6 +2798,41 @@ check_all_hole(PetBaseId, Grade, Stones, HoleNum) ->
             {false, Msg}
     end.
 
+check_stone(PetBaseId, Grade, HoleId, StoneId)
+    when StoneId =:= 78700;
+         StoneId =:= 78701;
+         StoneId =:= 78702;
+         StoneId =:= 78703 ->
+    case pet_data:get_grade({PetBaseId, Grade + 1}) of
+        false ->
+            case pet_data:allow_stone({PetBaseId, Grade, HoleId}) of
+                [_ | _] when HoleId >= 2 -> true;
+                [_ | _] -> {false, lang:get("当前宠物阶段不可装备此符石")};
+                _ -> {false, lang:get("当前宠物不存在该符石孔数据")}
+            end;
+        _ -> {false, lang:get("宠物进阶至最高级后才能装备此符石")}
+    end;
+check_stone(PetBaseId, Grade, 1, StoneId)
+    when StoneId =:= 20665;
+         StoneId =:= 78709;
+         StoneId =:= 78714;
+         StoneId =:= 78716;
+         StoneId =:= 78719;
+         StoneId =:= 78841;
+         StoneId =:= 78842;
+         StoneId =:= 78843;
+         StoneId =:= 79449;
+         StoneId =:= 79450;
+         StoneId =:= 79451;
+         StoneId =:= 76305;
+         StoneId =:= 76306;
+         StoneId =:= 76307;
+         StoneId =:= 76308;
+         StoneId =:= 76309 ->
+    case pet_data:allow_stone({PetBaseId, Grade, 1}) of
+        [_ | _] -> true;
+        _ -> {false, lang:get("当前宠物不存在该符石孔数据")}
+    end;
 check_stone(PetBaseId, Grade, HoleId, StoneId) ->
     case pet_data:allow_stone({PetBaseId, Grade, HoleId}) of
         AllowStone = [_ | _] ->

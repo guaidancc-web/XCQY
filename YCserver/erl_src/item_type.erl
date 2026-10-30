@@ -1043,26 +1043,36 @@ do_recalc(child_attr_stone,
     Item#item{attr = Attr};
 do_recalc(pet_skill_stone,
           Item = #item{base_id = BaseId}) ->
-    Skills = case pet_data:get_stone_skill(BaseId) of
-                 {0, _List} -> [];
-                 {1, List1, _} -> [util:rand_list(List1, 2)];
-                 {2, List1, List2} ->
-                     {FList, SList} = case util:rand(1, 10) =< 5 of
-                                          true -> {List1, List2};
-                                          false -> {List2, List1}
-                                      end,
-                     {SkillId1, _} = S1 = util:rand_list(FList, 2),
-                     SList1 = lists:keydelete(SkillId1, 1, SList),
-                     S2 = case util:rand(1, 1000) =< 100 of
-                              true -> util:rand_list(SList1, 2);
-                              false -> []
-                          end,
-                     [S1, S2];
-                 {_, _} ->
-                     logger:error("宝石技能无法产生, 暂不支持该技能数量", [], item_type, 115),
-                     [];
-                 false -> []
-             end,
+    Skills =
+        case pet_amulet_2025:roll(BaseId) of
+            {ok, SkillIds} -> [{SkillId, 100} || SkillId <- SkillIds];
+            false ->
+                case pet_data:get_stone_skill(BaseId) of
+                    {0, _List} -> [];
+                    {1, List1, _} -> [util:rand_list(List1, 2)];
+                    {2, List1, List2} ->
+                        {FList, SList} =
+                            case util:rand(1, 10) =< 5 of
+                                true -> {List1, List2};
+                                false -> {List2, List1}
+                            end,
+                        {SkillId1, _} = S1 = util:rand_list(FList, 2),
+                        SList1 = lists:keydelete(SkillId1, 1, SList),
+                        S2 =
+                            case util:rand(1, 1000) =< 100 of
+                                true -> util:rand_list(SList1, 2);
+                                false -> []
+                            end,
+                        [S1, S2];
+                    {_, _} ->
+                        logger:error("宝石技能无法产生, 暂不支持该技能数量",
+                                     [],
+                                     item_type,
+                                     115),
+                        [];
+                    false -> []
+                end
+        end,
     Attr = [#attr_base{type = 0, name = 100, val = SkillId}
             || {SkillId, _} <- Skills],
     Item#item{attr = Attr};
@@ -1241,7 +1251,7 @@ fuse_skill_stone(Role, ItemBaseId, RoleLev) ->
                          270),
             Flag = case RoleLev >= 10 of
                        true ->
-                           case pet_data:get_high_stone(ItemBaseId) of
+                           case high_stone(ItemBaseId) of
                                {Ratio, ItemBaseId2, NewItemBaseId}
                                    when Ratio > 0 ->
                                    case util:rand(1, 1000) =< Ratio of
@@ -1345,34 +1355,48 @@ fuse_high_pet_skill_stone(ItemBaseId1, ItemBaseId2,
         _ -> false
     end.
 
+high_stone(BaseId) ->
+    case pet_data:get_high_stone(BaseId) of
+        false -> pet_amulet_2025:get_high_stone(BaseId);
+        Info -> Info
+    end.
+
 fuse_pet_skill(ItemBaseId) ->
-    Skills1 = case pet_data:get_stone_skill(ItemBaseId) of
-                  {0, _List} -> [];
-                  {1, List1, _} -> [util:rand_list(List1, 2)];
-                  {2, List1, List2} ->
-                      {FList, SList} = case util:rand(1, 10) =< 5 of
-                                           true -> {List1, List2};
-                                           false -> {List2, List1}
-                                       end,
-                      {SkillId1, _} = S1 = util:rand_list(FList, 2),
-                      SList1 = lists:keydelete(SkillId1, 1, SList),
-                      Ratio = case ItemBaseId =:= 20638 of
-                                  true -> 350;
-                                  _ -> 230
-                              end,
-                      S2 = case util:rand(1, 1000) =< Ratio of
-                               true -> util:rand_list(SList1, 2);
-                               false -> []
-                           end,
-                      [S1, S2];
-                  {_, _} ->
-                      logger:error("宝石技能[~w]无法产生, 暂不支持该技能数量",
-                                   [ItemBaseId],
-                                   item_type,
-                                   379),
-                      [];
-                  false -> []
-              end,
+    Skills1 =
+        case pet_amulet_2025:roll(ItemBaseId) of
+            {ok, SkillIds} -> [{SkillId, 100} || SkillId <- SkillIds];
+            false ->
+                case pet_data:get_stone_skill(ItemBaseId) of
+                    {0, _List} -> [];
+                    {1, List1, _} -> [util:rand_list(List1, 2)];
+                    {2, List1, List2} ->
+                        {FList, SList} =
+                            case util:rand(1, 10) =< 5 of
+                                true -> {List1, List2};
+                                false -> {List2, List1}
+                            end,
+                        {SkillId1, _} = S1 = util:rand_list(FList, 2),
+                        SList1 = lists:keydelete(SkillId1, 1, SList),
+                        Ratio =
+                            case ItemBaseId =:= 20638 of
+                                true -> 350;
+                                _ -> 230
+                            end,
+                        S2 =
+                            case util:rand(1, 1000) =< Ratio of
+                                true -> util:rand_list(SList1, 2);
+                                false -> []
+                            end,
+                        [S1, S2];
+                    {_, _} ->
+                        logger:error("宝石技能[~w]无法产生, 暂不支持该技能数量",
+                                     [ItemBaseId],
+                                     item_type,
+                                     379),
+                        [];
+                    false -> []
+                end
+        end,
     Skills1.
 
 choose_pet_skill_stone(Role = #role{},

@@ -46946,6 +46946,436 @@ get(79463) ->
                type = 154, quality = 4, overlap = 999, use_type = 1,
                expire_type = 0, effect = [], lev = 1,
                classes = 0, sex = 2, alchemy = 0};
+get(12191) ->
+    #item_base{id = 12191, name = lang:get("翰园闲情"), type = 1,
+               quality = 4, overlap = 1, look_id = 10033,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 1, sex = 2, alchemy = 0};
+get(12192) ->
+    #item_base{id = 12192, name = lang:get("翰园闲情"), type = 2,
+               quality = 4, overlap = 1, look_id = 10132,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 2, sex = 2, alchemy = 0};
+get(12193) ->
+    #item_base{id = 12193, name = lang:get("翰园闲情"), type = 3,
+               quality = 4, overlap = 1, look_id = 10232,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 3, sex = 2, alchemy = 0};
+get(12194) ->
+    #item_base{id = 12194, name = lang:get("翰园闲情"), type = 4,
+               quality = 4, overlap = 1, look_id = 10332,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 4, sex = 2, alchemy = 0};
+get(12195) ->
+    #item_base{id = 12195, name = lang:get("翰园闲情"), type = 5,
+               quality = 4, overlap = 1, look_id = 10432,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 5, sex = 2, alchemy = 0};
+get(12196) ->
+    #item_base{id = 12196, name = lang:get("翰园闲情"), type = 21,
+               quality = 4, overlap = 1, look_id = 10532,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 6, sex = 2, alchemy = 0};
+get(12197) ->
+    #item_base{id = 12197, name = lang:get("翰园闲情"), type = 22,
+               quality = 4, overlap = 1, look_id = 10726,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 7, sex = 2, alchemy = 0};
+get(12198) ->
+    #item_base{id = 12198, name = lang:get("海洋乐园"), type = 1,
+               quality = 4, overlap = 1, look_id = 10034,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 1, sex = 2, alchemy = 0};
+get(12199) ->
+    #item_base{id = 12199, name = lang:get("海洋乐园"), type = 2,
+               quality = 4, overlap = 1, look_id = 10133,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 2, sex = 2, alchemy = 0};
+get(12200) ->
+    #item_base{id = 12200, name = lang:get("海洋乐园"), type = 3,
+               quality = 4, overlap = 1, look_id = 10233,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 3, sex = 2, alchemy = 0};
+get(12201) ->
+    #item_base{id = 12201, name = lang:get("海洋乐园"), type = 4,
+               quality = 4, overlap = 1, look_id = 10333,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 4, sex = 2, alchemy = 0};
+get(12202) ->
+    #item_base{id = 12202, name = lang:get("海洋乐园"), type = 5,
+               quality = 4, overlap = 1, look_id = 10433,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 5, sex = 2, alchemy = 0};
+get(12203) ->
+    #item_base{id = 12203, name = lang:get("海洋乐园"), type = 21,
+               quality = 4, overlap = 1, look_id = 10533,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 6, sex = 2, alchemy = 0};
+get(12204) ->
+    #item_base{id = 12204, name = lang:get("海洋乐园"), type = 22,
+               quality = 4, overlap = 1, look_id = 10727,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 7, sex = 2, alchemy = 0};
+get(12205) ->
+    #item_base{id = 12205, name = lang:get("铄石流金"), type = 1,
+               quality = 4, overlap = 1, look_id = 10035,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 1, sex = 2, alchemy = 0};
+get(12206) ->
+    #item_base{id = 12206, name = lang:get("铄石流金"), type = 2,
+               quality = 4, overlap = 1, look_id = 10134,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 2, sex = 2, alchemy = 0};
+get(12207) ->
+    #item_base{id = 12207, name = lang:get("铄石流金"), type = 3,
+               quality = 4, overlap = 1, look_id = 10234,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 3, sex = 2, alchemy = 0};
+get(12208) ->
+    #item_base{id = 12208, name = lang:get("铄石流金"), type = 4,
+               quality = 4, overlap = 1, look_id = 10334,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 4, sex = 2, alchemy = 0};
+get(12209) ->
+    #item_base{id = 12209, name = lang:get("铄石流金"), type = 5,
+               quality = 4, overlap = 1, look_id = 10434,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 5, sex = 2, alchemy = 0};
+get(12210) ->
+    #item_base{id = 12210, name = lang:get("铄石流金"), type = 21,
+               quality = 4, overlap = 1, look_id = 10534,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 6, sex = 2, alchemy = 0};
+get(12211) ->
+    #item_base{id = 12211, name = lang:get("铄石流金"), type = 22,
+               quality = 4, overlap = 1, look_id = 10728,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 7, sex = 2, alchemy = 0};
+get(12212) ->
+    #item_base{id = 12212, name = lang:get("岩龙炼狱"), type = 1,
+               quality = 4, overlap = 1, look_id = 10036,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 1, sex = 2, alchemy = 0};
+get(12213) ->
+    #item_base{id = 12213, name = lang:get("岩龙炼狱"), type = 2,
+               quality = 4, overlap = 1, look_id = 10135,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 2, sex = 2, alchemy = 0};
+get(12214) ->
+    #item_base{id = 12214, name = lang:get("岩龙炼狱"), type = 3,
+               quality = 4, overlap = 1, look_id = 10235,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 3, sex = 2, alchemy = 0};
+get(12215) ->
+    #item_base{id = 12215, name = lang:get("岩龙炼狱"), type = 4,
+               quality = 4, overlap = 1, look_id = 10335,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 4, sex = 2, alchemy = 0};
+get(12216) ->
+    #item_base{id = 12216, name = lang:get("岩龙炼狱"), type = 5,
+               quality = 4, overlap = 1, look_id = 10435,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 5, sex = 2, alchemy = 0};
+get(12217) ->
+    #item_base{id = 12217, name = lang:get("岩龙炼狱"), type = 21,
+               quality = 4, overlap = 1, look_id = 10535,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 6, sex = 2, alchemy = 0};
+get(12218) ->
+    #item_base{id = 12218, name = lang:get("岩龙炼狱"), type = 22,
+               quality = 4, overlap = 1, look_id = 10729,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 7, sex = 2, alchemy = 0};
+get(12219) ->
+    #item_base{id = 12219, name = lang:get("红莲业火"), type = 1,
+               quality = 4, overlap = 1, look_id = 10037,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 1, sex = 2, alchemy = 0};
+get(12220) ->
+    #item_base{id = 12220, name = lang:get("红莲业火"), type = 2,
+               quality = 4, overlap = 1, look_id = 10136,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 2, sex = 2, alchemy = 0};
+get(12221) ->
+    #item_base{id = 12221, name = lang:get("红莲业火"), type = 3,
+               quality = 4, overlap = 1, look_id = 10236,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 3, sex = 2, alchemy = 0};
+get(12222) ->
+    #item_base{id = 12222, name = lang:get("红莲业火"), type = 4,
+               quality = 4, overlap = 1, look_id = 10336,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 4, sex = 2, alchemy = 0};
+get(12223) ->
+    #item_base{id = 12223, name = lang:get("红莲业火"), type = 5,
+               quality = 4, overlap = 1, look_id = 10436,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 5, sex = 2, alchemy = 0};
+get(12224) ->
+    #item_base{id = 12224, name = lang:get("红莲业火"), type = 21,
+               quality = 4, overlap = 1, look_id = 10536,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 6, sex = 2, alchemy = 0};
+get(12225) ->
+    #item_base{id = 12225, name = lang:get("红莲业火"), type = 22,
+               quality = 4, overlap = 1, look_id = 10730,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 7, sex = 2, alchemy = 0};
+get(12226) ->
+    #item_base{id = 12226, name = lang:get("春晖寸草"), type = 1,
+               quality = 4, overlap = 1, look_id = 10038,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 1, sex = 2, alchemy = 0};
+get(12227) ->
+    #item_base{id = 12227, name = lang:get("春晖寸草"), type = 2,
+               quality = 4, overlap = 1, look_id = 10137,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 2, sex = 2, alchemy = 0};
+get(12228) ->
+    #item_base{id = 12228, name = lang:get("春晖寸草"), type = 3,
+               quality = 4, overlap = 1, look_id = 10237,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 3, sex = 2, alchemy = 0};
+get(12229) ->
+    #item_base{id = 12229, name = lang:get("春晖寸草"), type = 4,
+               quality = 4, overlap = 1, look_id = 10337,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 4, sex = 2, alchemy = 0};
+get(12230) ->
+    #item_base{id = 12230, name = lang:get("春晖寸草"), type = 5,
+               quality = 4, overlap = 1, look_id = 10437,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 5, sex = 2, alchemy = 0};
+get(12231) ->
+    #item_base{id = 12231, name = lang:get("春晖寸草"), type = 21,
+               quality = 4, overlap = 1, look_id = 10537,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 6, sex = 2, alchemy = 0};
+get(12232) ->
+    #item_base{id = 12232, name = lang:get("春晖寸草"), type = 22,
+               quality = 4, overlap = 1, look_id = 10731,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 7, sex = 2, alchemy = 0};
+get(12233) ->
+    #item_base{id = 12233, name = lang:get("披荆斩棘"), type = 1,
+               quality = 4, overlap = 1, look_id = 10039,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 1, sex = 2, alchemy = 0};
+get(12234) ->
+    #item_base{id = 12234, name = lang:get("披荆斩棘"), type = 2,
+               quality = 4, overlap = 1, look_id = 10138,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 2, sex = 2, alchemy = 0};
+get(12235) ->
+    #item_base{id = 12235, name = lang:get("披荆斩棘"), type = 3,
+               quality = 4, overlap = 1, look_id = 10238,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 3, sex = 2, alchemy = 0};
+get(12236) ->
+    #item_base{id = 12236, name = lang:get("披荆斩棘"), type = 4,
+               quality = 4, overlap = 1, look_id = 10338,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 4, sex = 2, alchemy = 0};
+get(12237) ->
+    #item_base{id = 12237, name = lang:get("披荆斩棘"), type = 5,
+               quality = 4, overlap = 1, look_id = 10438,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 5, sex = 2, alchemy = 0};
+get(12238) ->
+    #item_base{id = 12238, name = lang:get("披荆斩棘"), type = 21,
+               quality = 4, overlap = 1, look_id = 10538,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 6, sex = 2, alchemy = 0};
+get(12239) ->
+    #item_base{id = 12239, name = lang:get("披荆斩棘"), type = 22,
+               quality = 4, overlap = 1, look_id = 10732,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 7, sex = 2, alchemy = 0};
+get(12240) ->
+    #item_base{id = 12240, name = lang:get("梦幻乐章"), type = 1,
+               quality = 4, overlap = 1, look_id = 10040,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 1, sex = 2, alchemy = 0};
+get(12241) ->
+    #item_base{id = 12241, name = lang:get("梦幻乐章"), type = 2,
+               quality = 4, overlap = 1, look_id = 10139,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 2, sex = 2, alchemy = 0};
+get(12242) ->
+    #item_base{id = 12242, name = lang:get("梦幻乐章"), type = 3,
+               quality = 4, overlap = 1, look_id = 10239,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 3, sex = 2, alchemy = 0};
+get(12243) ->
+    #item_base{id = 12243, name = lang:get("梦幻乐章"), type = 4,
+               quality = 4, overlap = 1, look_id = 10339,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 4, sex = 2, alchemy = 0};
+get(12244) ->
+    #item_base{id = 12244, name = lang:get("梦幻乐章"), type = 5,
+               quality = 4, overlap = 1, look_id = 10439,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 5, sex = 2, alchemy = 0};
+get(12245) ->
+    #item_base{id = 12245, name = lang:get("梦幻乐章"), type = 21,
+               quality = 4, overlap = 1, look_id = 10539,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 6, sex = 2, alchemy = 0};
+get(12246) ->
+    #item_base{id = 12246, name = lang:get("梦幻乐章"), type = 22,
+               quality = 4, overlap = 1, look_id = 10733,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 7, sex = 2, alchemy = 0};
+get(12247) ->
+    #item_base{id = 12247, name = lang:get("轮回之境"), type = 1,
+               quality = 4, overlap = 1, look_id = 10041,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 1, sex = 2, alchemy = 0};
+get(12248) ->
+    #item_base{id = 12248, name = lang:get("轮回之境"), type = 2,
+               quality = 4, overlap = 1, look_id = 10140,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 2, sex = 2, alchemy = 0};
+get(12249) ->
+    #item_base{id = 12249, name = lang:get("轮回之境"), type = 3,
+               quality = 4, overlap = 1, look_id = 10240,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 3, sex = 2, alchemy = 0};
+get(12250) ->
+    #item_base{id = 12250, name = lang:get("轮回之境"), type = 4,
+               quality = 4, overlap = 1, look_id = 10340,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 4, sex = 2, alchemy = 0};
+get(12251) ->
+    #item_base{id = 12251, name = lang:get("轮回之境"), type = 5,
+               quality = 4, overlap = 1, look_id = 10440,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 5, sex = 2, alchemy = 0};
+get(12252) ->
+    #item_base{id = 12252, name = lang:get("轮回之境"), type = 21,
+               quality = 4, overlap = 1, look_id = 10540,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 6, sex = 2, alchemy = 0};
+get(12253) ->
+    #item_base{id = 12253, name = lang:get("轮回之境"), type = 22,
+               quality = 4, overlap = 1, look_id = 10734,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 7, sex = 2, alchemy = 0};
+get(12254) ->
+    #item_base{id = 12254, name = lang:get("萌猫大作战"), type = 1,
+               quality = 4, overlap = 1, look_id = 10042,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 1, sex = 2, alchemy = 0};
+get(12255) ->
+    #item_base{id = 12255, name = lang:get("萌猫大作战"), type = 2,
+               quality = 4, overlap = 1, look_id = 10141,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 2, sex = 2, alchemy = 0};
+get(12256) ->
+    #item_base{id = 12256, name = lang:get("萌猫大作战"), type = 3,
+               quality = 4, overlap = 1, look_id = 10241,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 3, sex = 2, alchemy = 0};
+get(12257) ->
+    #item_base{id = 12257, name = lang:get("萌猫大作战"), type = 4,
+               quality = 4, overlap = 1, look_id = 10341,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 4, sex = 2, alchemy = 0};
+get(12258) ->
+    #item_base{id = 12258, name = lang:get("萌猫大作战"), type = 5,
+               quality = 4, overlap = 1, look_id = 10441,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 5, sex = 2, alchemy = 0};
+get(12259) ->
+    #item_base{id = 12259, name = lang:get("萌猫大作战"), type = 21,
+               quality = 4, overlap = 1, look_id = 10541,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 6, sex = 2, alchemy = 0};
+get(12260) ->
+    #item_base{id = 12260, name = lang:get("萌猫大作战"), type = 22,
+               quality = 4, overlap = 1, look_id = 10735,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 7, sex = 2, alchemy = 0};
+get(12261) ->
+    #item_base{id = 12261, name = lang:get("命转乾坤"), type = 1,
+               quality = 4, overlap = 1, look_id = 10043,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 1, sex = 2, alchemy = 0};
+get(12262) ->
+    #item_base{id = 12262, name = lang:get("命转乾坤"), type = 2,
+               quality = 4, overlap = 1, look_id = 10142,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 2, sex = 2, alchemy = 0};
+get(12263) ->
+    #item_base{id = 12263, name = lang:get("命转乾坤"), type = 3,
+               quality = 4, overlap = 1, look_id = 10242,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 3, sex = 2, alchemy = 0};
+get(12264) ->
+    #item_base{id = 12264, name = lang:get("命转乾坤"), type = 4,
+               quality = 4, overlap = 1, look_id = 10342,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 4, sex = 2, alchemy = 0};
+get(12265) ->
+    #item_base{id = 12265, name = lang:get("命转乾坤"), type = 5,
+               quality = 4, overlap = 1, look_id = 10442,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 5, sex = 2, alchemy = 0};
+get(12266) ->
+    #item_base{id = 12266, name = lang:get("命转乾坤"), type = 21,
+               quality = 4, overlap = 1, look_id = 10542,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 6, sex = 2, alchemy = 0};
+get(12267) ->
+    #item_base{id = 12267, name = lang:get("命转乾坤"), type = 22,
+               quality = 4, overlap = 1, look_id = 10736,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 7, sex = 2, alchemy = 0};
+get(12268) ->
+    #item_base{id = 12268, name = lang:get("余音绕梁"), type = 1,
+               quality = 4, overlap = 1, look_id = 10044,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 1, sex = 2, alchemy = 0};
+get(12269) ->
+    #item_base{id = 12269, name = lang:get("余音绕梁"), type = 2,
+               quality = 4, overlap = 1, look_id = 10143,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 2, sex = 2, alchemy = 0};
+get(12270) ->
+    #item_base{id = 12270, name = lang:get("余音绕梁"), type = 3,
+               quality = 4, overlap = 1, look_id = 10243,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 3, sex = 2, alchemy = 0};
+get(12271) ->
+    #item_base{id = 12271, name = lang:get("余音绕梁"), type = 4,
+               quality = 4, overlap = 1, look_id = 10343,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 4, sex = 2, alchemy = 0};
+get(12272) ->
+    #item_base{id = 12272, name = lang:get("余音绕梁"), type = 5,
+               quality = 4, overlap = 1, look_id = 10443,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 5, sex = 2, alchemy = 0};
+get(12273) ->
+    #item_base{id = 12273, name = lang:get("余音绕梁"), type = 21,
+               quality = 4, overlap = 1, look_id = 10543,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 6, sex = 2, alchemy = 0};
+get(12274) ->
+    #item_base{id = 12274, name = lang:get("余音绕梁"), type = 22,
+               quality = 4, overlap = 1, look_id = 10737,
+               use_type = 3, expire_type = 0, effect = [], lev = 200,
+               classes = 7, sex = 2, alchemy = 0};
+get(74363) ->
+    #item_base{id = 74363, name = lang:get("余音绕梁"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {12268, 13}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
+get(74356) ->
+    #item_base{id = 74356, name = lang:get("命转乾坤"),
+               type = 0, quality = 4, overlap = 1, use_type = 1,
+               expire_type = 0, effect = [{25, {12261, 13}}], lev = 1,
+               classes = 0, sex = 2, alchemy = 0};
 get(_Id) -> false.
 
 get_buy_source(19001) -> {19001, val_not_exist};

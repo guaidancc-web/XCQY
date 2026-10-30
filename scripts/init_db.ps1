@@ -32,13 +32,13 @@ if (-not (Test-Port3306)) {
 }
 if (-not (Test-Port3306)) { throw "mysqld 启动失败，3306 未监听" }
 
-$exists = & $mysql -uroot -p123456 -h127.0.0.1 -N -e "SHOW DATABASES LIKE 'fswy_dev_1'" 2>$null
+$exists = & $mysql "--user=root" "--password=123456" "--host=127.0.0.1" "-N" "-e" "SHOW DATABASES LIKE 'fswy_dev_1'" 2>$null
 if ($exists -and -not $Force) {
     Write-Host "数据库已存在，跳过导入（需要覆盖请加 -Force）。"
     exit 0
 }
 
 Write-Host "导入 $dump ..."
-$p = Start-Process -FilePath $mysql -ArgumentList "-uroot", "-p123456", "-h127.0.0.1" -RedirectStandardInput $dump -NoNewWindow -Wait -PassThru
+$p = Start-Process -FilePath $mysql -ArgumentList "--user=root", "--password=123456", "--host=127.0.0.1" -RedirectStandardInput $dump -NoNewWindow -Wait -PassThru
 if ($p.ExitCode -ne 0) { throw "数据库导入失败，退出码 $($p.ExitCode)" }
 Write-Host "数据库导入完成。"

@@ -28,7 +28,7 @@ try {
 Write-Host "[2/4] 导出数据库 ..."
 if (-not (Test-Path $Mysqldump)) { throw "缺少 mysqldump：$Mysqldump" }
 if (Test-Path $DbFile) { Remove-Item $DbFile -Force }
-& $Mysqldump "-uroot" "-p123456" "-h127.0.0.1" "--add-drop-database" `
+& $Mysqldump "--user=root" "--password=123456" "--host=127.0.0.1" "--add-drop-database" `
     "--databases" "fswy_dev_1" "fswy_dev_2" "fswy_dev_9000" "fswy_dev_9999" `
     "--routines" "--events" "--single-transaction" ("--result-file=" + $DbFile)
 if ($LASTEXITCODE -ne 0 -or -not (Test-Path $DbFile)) { throw "mysqldump 导出失败" }

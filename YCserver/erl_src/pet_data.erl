@@ -19059,6 +19059,888 @@ get_add_apt({20020, Ratio})
 get_add_apt({20020, Ratio})
     when Ratio >= 90 andalso Ratio =< 100 ->
     {0, 5};
+get_add_apt({20011, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20011, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20011, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20011, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20011, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20011, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20015, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20015, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20015, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20015, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20015, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20015, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20017, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20017, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20017, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20017, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20017, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20017, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20019, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20019, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20019, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20019, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20019, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20019, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20021, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20021, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20021, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20021, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20021, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20021, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20022, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20022, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20022, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20022, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20022, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20022, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20023, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20023, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20023, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20023, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20023, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20023, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20024, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20024, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20024, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20024, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20024, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20024, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20025, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20025, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20025, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20025, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20025, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20025, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20026, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20026, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20026, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20026, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20026, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20026, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20027, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20027, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20027, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20027, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20027, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20027, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20028, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20028, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20028, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20028, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20028, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20028, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20029, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20029, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20029, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20029, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20029, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20029, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20030, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20030, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20030, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20030, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20030, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20030, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20031, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20031, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20031, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20031, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20031, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20031, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20032, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20032, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20032, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20032, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20032, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20032, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20033, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20033, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20033, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20033, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20033, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20033, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20034, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20034, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20034, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20034, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20034, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20034, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20035, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20035, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20035, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20035, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20035, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20035, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20036, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20036, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20036, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20036, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20036, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20036, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20037, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20037, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20037, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20037, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20037, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20037, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20038, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20038, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20038, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20038, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20038, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20038, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20039, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20039, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20039, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20039, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20039, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20039, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20041, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20041, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20041, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20041, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20041, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20041, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20042, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20042, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20042, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20042, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20042, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20042, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20043, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20043, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20043, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20043, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20043, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20043, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20044, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20044, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20044, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20044, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20044, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20044, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20045, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20045, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20045, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20045, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20045, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20045, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20046, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20046, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20046, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20046, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20046, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20046, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20047, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20047, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20047, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20047, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20047, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20047, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20048, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20048, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20048, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20048, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20048, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20048, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20049, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20049, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20049, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20049, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20049, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20049, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20050, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20050, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20050, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20050, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20050, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20050, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20051, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20051, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20051, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20051, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20051, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20051, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20052, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20052, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20052, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20052, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20052, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20052, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20053, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20053, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20053, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20053, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20053, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20053, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20055, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20055, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20055, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20055, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20055, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20055, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20057, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20057, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20057, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20057, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20057, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20057, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20058, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20058, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20058, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20058, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20058, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20058, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20060, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20060, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20060, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20060, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20060, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20060, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20061, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20061, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20061, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20061, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20061, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20061, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20062, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20062, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20062, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20062, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20062, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20062, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20063, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20063, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20063, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20063, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20063, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20063, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20064, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20064, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20064, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20064, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20064, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20064, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20065, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20065, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20065, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20065, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20065, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20065, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20066, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20066, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20066, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20066, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20066, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20066, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20067, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20067, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20067, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20067, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20067, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20067, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20068, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20068, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20068, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20068, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20068, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20068, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
+get_add_apt({20069, Ratio})
+    when Ratio >= 0 andalso Ratio =< 40 ->
+    {12, 0};
+get_add_apt({20069, Ratio})
+    when Ratio >= 40 andalso Ratio =< 60 ->
+    {9, 0};
+get_add_apt({20069, Ratio})
+    when Ratio >= 60 andalso Ratio =< 70 ->
+    {6, 0};
+get_add_apt({20069, Ratio})
+    when Ratio >= 70 andalso Ratio =< 80 ->
+    {5, 0};
+get_add_apt({20069, Ratio})
+    when Ratio >= 80 andalso Ratio =< 90 ->
+    {3, 1};
+get_add_apt({20069, Ratio})
+    when Ratio >= 90 andalso Ratio =< 100 ->
+    {0, 5};
 get_add_apt(_) -> false.
 
 get_add_max_apt({10000, Ratio})

@@ -2333,6 +2333,30 @@ handle(10508, {PetId, ItemId},
                     role:send_buff_clean(),
                     {reply, {0, Reason}}
             end;
+        #item{type = Type, base_id = BaseId}
+            when Type =:= 164 orelse Type =:= 166 orelse Type =:= 167 ->
+            case pet_skill:awake_skill(BaseId) of
+                false -> {reply, {0, lang:get("无法读取技能数据")}};
+                SkillId ->
+                    role:send_buff_begin(),
+                    case pet_skill:use_awake(ItemId,
+                                             SkillId,
+                                             PetId,
+                                             Role)
+                        of
+                        {ok, Role1} ->
+                            NewRole =
+                                role_trigger:fire([#evt_pet_use_item{base_id =
+                                                                         BaseId},
+                                                   #evt_pet{}],
+                                                  Role1),
+                            role:send_buff_flush(),
+                            {reply, {1, ""}, NewRole};
+                        {false, Reason} ->
+                            role:send_buff_clean(),
+                            {reply, {0, Reason}}
+                    end
+            end;
         #item{type = Type} ->
             logger:error("非宠物道具进行使用:~w", [Type], pet_rpc, 209),
             {reply, {0, lang:get("非宠物道具不可使用")}};

@@ -9,6 +9,8 @@
          gm_study/2,
          learn_book/2,
          use_book_multi/4,
+         use_awake/4,
+         awake_skill/1,
          skill_name/1,
          comprehend/2,
          combat_comprehend/3,
@@ -3091,6 +3093,62 @@ add_new_slot(Item, SkillId, Pet, PetName, Skills, PetId, Mpet, Role) ->
                                        {string_2, 1, skill_name(Skill)}])),
             log:pet(Nr, "宠物学技能", Pet, NewPet),
             {ok, role_trigger:fire(#evt_pet_skill{}, Nr)}
+    end.
+
+%% 醒觉丹：100% 开一个技能格子并习得固定技能
+awake_skill(71806) -> 60165;   %% 仙兽醒觉丹 -> 高级闪现
+awake_skill(79212) -> 60334;   %% 圣兽黄阶醒觉丹 -> 神级敏捷
+awake_skill(79213) -> 67094;   %% 圣兽玄阶醒觉丹 -> 神圣免伤
+awake_skill(_) -> false.
+
+use_awake(ItemId, SkillId, PetId,
+          Role = #role{m_pet = Mpet = #m_pet{pets = Pets}}) ->
+    case lists:keyfind(PetId, #pet.id, Pets) of
+        #pet{genre = 6} -> {false, lang:get("宠物无法学习技能")};
+        #pet{lock = 1} ->
+            {false, lang:get("宠物处于锁定状态，请先解除锁定")};
+        #pet{genre = 3} -> {false, lang:get("野生宠物无法学习技能")};
+        Pet = #pet{skills = Skills, name = PetName} ->
+            case lists:keymember(SkillId, #pet_skill.id, Skills) of
+                true -> {false, lang:get("已有相同技能, 无法使用")};
+                false ->
+                    add_awake_slot(ItemId, SkillId, Pet, PetName, Skills,
+                                   PetId, Mpet, Role)
+            end;
+        _ -> {false, lang:get("不存在的宠物, 无法操作")}
+    end.
+
+add_awake_slot(ItemId, SkillId, Pet, PetName, Skills, PetId, Mpet,
+               Role) ->
+    Loss = [#loss{label = item_id, val = [{ItemId, 1}],
+                  msg = lang:get("道具不存在")}],
+    case role_gain:do(Loss, Role) of
+        {false, #loss{msg = Msg}} -> {false, Msg};
+        {ok, NewRole} ->
+            case skill_data:get_pet({SkillId, 1}) of
+                #pet_base_skill{type = Type, step = Step} ->
+                    Skill = #pet_skill{id = SkillId, step = Step,
+                                       type = Type, source = 1},
+                    Pet1 = Pet#pet{skills = [Skill | Skills]},
+                    {ok, NewPet, NewRole1} = pet_attr:calc(Pet1, NewRole),
+                    NewPets = lists:keystore(PetId,
+                                             #pet.id,
+                                             element(5, Mpet),
+                                             NewPet),
+                    Nr = NewRole1#role{m_pet =
+                                           setelement(5, Mpet, NewPets)},
+                    pet:push_10511(Nr, NewPet),
+                    pet:push_10503(Nr, NewPet),
+                    notice:send(Nr,
+                                3,
+                                notice:format(lang:get("您的~ts学会了~ts"),
+                                              [{string_2, 5, PetName},
+                                               {string_2, 1,
+                                                skill_name(Skill)}])),
+                    log:pet(Nr, "宠物学技能", Pet, NewPet),
+                    {ok, role_trigger:fire(#evt_pet_skill{}, Nr)};
+                _ -> {false, lang:get("无法读取技能数据")}
+            end
     end.
 
 attr_to_skill(A, Source) when is_list(A) ->
